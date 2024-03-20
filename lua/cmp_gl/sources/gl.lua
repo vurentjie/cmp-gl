@@ -1777,11 +1777,11 @@ level. Level n is the n th mipmap reduction image.
 `format` Specifies a pixel format for the returned data. The supported formats are
 `GL_STENCIL_INDEX`, `GL_DEPTH_COMPONENT`, `GL_DEPTH_STENCIL`, `GL_RED`, `GL_GREEN`,
 `GL_BLUE`, `GL_RG`, `GL_RGB`, `GL_RGBA`, `GL_BGR`, `GL_BGRA`, `GL_RED_INTEGER`,
-`GL_GREEN_INTEGER`, `GL_BLUE_INTEGER`, `GL_RG_INTEGER`, `GL_RGB_INTEGER`, `GL_RGBA_INTEGER`
-, `GL_BGR_INTEGER`, `GL_BGRA_INTEGER`.
+`GL_GREEN_INTEGER`, `GL_BLUE_INTEGER`, `GL_RG_INTEGER`, `GL_RGB_INTEGER`, `GL_RGBA_INTEGER`,
+`GL_BGR_INTEGER`, `GL_BGRA_INTEGER`.
 
-`type` Specifies a pixel type for the returned data. The supported types are `GL_UNSIGNED_BYTE`
-, `GL_BYTE`, `GL_UNSIGNED_SHORT`, `GL_SHORT`, `GL_UNSIGNED_INT`, `GL_INT`,
+`type` Specifies a pixel type for the returned data. The supported types are `GL_UNSIGNED_BYTE`,
+`GL_BYTE`, `GL_UNSIGNED_SHORT`, `GL_SHORT`, `GL_UNSIGNED_INT`, `GL_INT`,
 `GL_HALF_FLOAT`, `GL_FLOAT`, `GL_UNSIGNED_BYTE_3_3_2`, `GL_UNSIGNED_BYTE_2_3_3_REV`,
 `GL_UNSIGNED_SHORT_5_6_5`, `GL_UNSIGNED_SHORT_5_6_5_REV`, `GL_UNSIGNED_SHORT_4_4_4_4`,
 `GL_UNSIGNED_SHORT_4_4_4_4_REV`, `GL_UNSIGNED_SHORT_5_5_5_1`, `GL_UNSIGNED_SHORT_1_5_5_5_REV`,
@@ -1866,8 +1866,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -1919,11 +1919,11 @@ level. Level n is the n th mipmap reduction image.
 `format` Specifies a pixel format for the returned data. The supported formats are
 `GL_STENCIL_INDEX`, `GL_DEPTH_COMPONENT`, `GL_DEPTH_STENCIL`, `GL_RED`, `GL_GREEN`,
 `GL_BLUE`, `GL_RG`, `GL_RGB`, `GL_RGBA`, `GL_BGR`, `GL_BGRA`, `GL_RED_INTEGER`,
-`GL_GREEN_INTEGER`, `GL_BLUE_INTEGER`, `GL_RG_INTEGER`, `GL_RGB_INTEGER`, `GL_RGBA_INTEGER`
-, `GL_BGR_INTEGER`, `GL_BGRA_INTEGER`.
+`GL_GREEN_INTEGER`, `GL_BLUE_INTEGER`, `GL_RG_INTEGER`, `GL_RGB_INTEGER`, `GL_RGBA_INTEGER`,
+`GL_BGR_INTEGER`, `GL_BGRA_INTEGER`.
 
-`type` Specifies a pixel type for the returned data. The supported types are `GL_UNSIGNED_BYTE`
-, `GL_BYTE`, `GL_UNSIGNED_SHORT`, `GL_SHORT`, `GL_UNSIGNED_INT`, `GL_INT`,
+`type` Specifies a pixel type for the returned data. The supported types are `GL_UNSIGNED_BYTE`,
+`GL_BYTE`, `GL_UNSIGNED_SHORT`, `GL_SHORT`, `GL_UNSIGNED_INT`, `GL_INT`,
 `GL_HALF_FLOAT`, `GL_FLOAT`, `GL_UNSIGNED_BYTE_3_3_2`, `GL_UNSIGNED_BYTE_2_3_3_REV`,
 `GL_UNSIGNED_SHORT_5_6_5`, `GL_UNSIGNED_SHORT_5_6_5_REV`, `GL_UNSIGNED_SHORT_4_4_4_4`,
 `GL_UNSIGNED_SHORT_4_4_4_4_REV`, `GL_UNSIGNED_SHORT_5_5_5_1`, `GL_UNSIGNED_SHORT_1_5_5_5_REV`,
@@ -2080,11 +2080,11 @@ level. Level n is the n th mipmap reduction image.
 `format` Specifies a pixel format for the returned data. The supported formats are
 `GL_STENCIL_INDEX`, `GL_DEPTH_COMPONENT`, `GL_DEPTH_STENCIL`, `GL_RED`, `GL_GREEN`,
 `GL_BLUE`, `GL_RG`, `GL_RGB`, `GL_RGBA`, `GL_BGR`, `GL_BGRA`, `GL_RED_INTEGER`,
-`GL_GREEN_INTEGER`, `GL_BLUE_INTEGER`, `GL_RG_INTEGER`, `GL_RGB_INTEGER`, `GL_RGBA_INTEGER`
-, `GL_BGR_INTEGER`, `GL_BGRA_INTEGER`.
+`GL_GREEN_INTEGER`, `GL_BLUE_INTEGER`, `GL_RG_INTEGER`, `GL_RGB_INTEGER`, `GL_RGBA_INTEGER`,
+`GL_BGR_INTEGER`, `GL_BGRA_INTEGER`.
 
-`type` Specifies a pixel type for the returned data. The supported types are `GL_UNSIGNED_BYTE`
-, `GL_BYTE`, `GL_UNSIGNED_SHORT`, `GL_SHORT`, `GL_UNSIGNED_INT`, `GL_INT`,
+`type` Specifies a pixel type for the returned data. The supported types are `GL_UNSIGNED_BYTE`,
+`GL_BYTE`, `GL_UNSIGNED_SHORT`, `GL_SHORT`, `GL_UNSIGNED_INT`, `GL_INT`,
 `GL_HALF_FLOAT`, `GL_FLOAT`, `GL_UNSIGNED_BYTE_3_3_2`, `GL_UNSIGNED_BYTE_2_3_3_REV`,
 `GL_UNSIGNED_SHORT_5_6_5`, `GL_UNSIGNED_SHORT_5_6_5_REV`, `GL_UNSIGNED_SHORT_4_4_4_4`,
 `GL_UNSIGNED_SHORT_4_4_4_4_REV`, `GL_UNSIGNED_SHORT_5_5_5_1`, `GL_UNSIGNED_SHORT_1_5_5_5_REV`,
@@ -2399,8 +2399,8 @@ type, NULL); width = max(1, (width / 2)); height = max(1, (height / 2)); } When 
 
 for (i = 0; i < levels; i++) { for (face in (+X, -X, +Y, -Y, +Z, -Z)) { glTexImage2D(face, i,
 internalformat, width, height, 0, format, type, NULL); } width = max(1, (width / 2)); height =
-max(1, (height / 2)); } When `target` is `GL_TEXTURE_1D_ARRAY` or `GL_PROXY_TEXTURE_1D_ARRAY`
-, `glTexStorage2D` is equivalent to:
+max(1, (height / 2)); } When `target` is `GL_TEXTURE_1D_ARRAY` or `GL_PROXY_TEXTURE_1D_ARRAY`,
+`glTexStorage2D` is equivalent to:
 
 for (i = 0; i < levels; i++) { glTexImage2D(target, i, internalformat, width, height, 0, format,
 type, NULL); width = max(1, (width / 2)); } Calling `glTextureStorage2D` is equivalent to the
@@ -2613,8 +2613,8 @@ type, NULL); width = max(1, (width / 2)); height = max(1, (height / 2)); } When 
 
 for (i = 0; i < levels; i++) { for (face in (+X, -X, +Y, -Y, +Z, -Z)) { glTexImage2D(face, i,
 internalformat, width, height, 0, format, type, NULL); } width = max(1, (width / 2)); height =
-max(1, (height / 2)); } When `target` is `GL_TEXTURE_1D_ARRAY` or `GL_PROXY_TEXTURE_1D_ARRAY`
-, `glTexStorage2D` is equivalent to:
+max(1, (height / 2)); } When `target` is `GL_TEXTURE_1D_ARRAY` or `GL_PROXY_TEXTURE_1D_ARRAY`,
+`glTexStorage2D` is equivalent to:
 
 for (i = 0; i < levels; i++) { glTexImage2D(target, i, internalformat, width, height, 0, format,
 type, NULL); width = max(1, (width / 2)); } Calling `glTextureStorage2D` is equivalent to the
@@ -3119,8 +3119,8 @@ functions.
 `GL_TEXTURE_COMPARE_MODE`, `GL_TEXTURE_COMPARE_FUNC`, `GL_TEXTURE_IMMUTABLE_FORMAT`,
 `GL_TEXTURE_IMMUTABLE_LEVELS`, `GL_TEXTURE_LOD_BIAS`, `GL_TEXTURE_MAG_FILTER`,
 `GL_TEXTURE_MAX_LEVEL`, `GL_TEXTURE_MAX_LOD`, `GL_TEXTURE_MIN_FILTER`, `GL_TEXTURE_MIN_LOD`,
-`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`
-, `GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
+`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`,
+`GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
 `GL_TEXTURE_VIEW_MIN_LEVEL`, `GL_TEXTURE_VIEW_NUM_LAYERS`, `GL_TEXTURE_VIEW_NUM_LEVELS`,
 `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, and `GL_TEXTURE_WRAP_R` are accepted.
 
@@ -3352,8 +3352,8 @@ functions.
 `GL_TEXTURE_COMPARE_MODE`, `GL_TEXTURE_COMPARE_FUNC`, `GL_TEXTURE_IMMUTABLE_FORMAT`,
 `GL_TEXTURE_IMMUTABLE_LEVELS`, `GL_TEXTURE_LOD_BIAS`, `GL_TEXTURE_MAG_FILTER`,
 `GL_TEXTURE_MAX_LEVEL`, `GL_TEXTURE_MAX_LOD`, `GL_TEXTURE_MIN_FILTER`, `GL_TEXTURE_MIN_LOD`,
-`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`
-, `GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
+`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`,
+`GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
 `GL_TEXTURE_VIEW_MIN_LEVEL`, `GL_TEXTURE_VIEW_NUM_LAYERS`, `GL_TEXTURE_VIEW_NUM_LEVELS`,
 `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, and `GL_TEXTURE_WRAP_R` are accepted.
 
@@ -3585,8 +3585,8 @@ functions.
 `GL_TEXTURE_COMPARE_MODE`, `GL_TEXTURE_COMPARE_FUNC`, `GL_TEXTURE_IMMUTABLE_FORMAT`,
 `GL_TEXTURE_IMMUTABLE_LEVELS`, `GL_TEXTURE_LOD_BIAS`, `GL_TEXTURE_MAG_FILTER`,
 `GL_TEXTURE_MAX_LEVEL`, `GL_TEXTURE_MAX_LOD`, `GL_TEXTURE_MIN_FILTER`, `GL_TEXTURE_MIN_LOD`,
-`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`
-, `GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
+`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`,
+`GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
 `GL_TEXTURE_VIEW_MIN_LEVEL`, `GL_TEXTURE_VIEW_NUM_LAYERS`, `GL_TEXTURE_VIEW_NUM_LEVELS`,
 `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, and `GL_TEXTURE_WRAP_R` are accepted.
 
@@ -3841,8 +3841,8 @@ functions.
 `GL_TEXTURE_COMPARE_MODE`, `GL_TEXTURE_COMPARE_FUNC`, `GL_TEXTURE_IMMUTABLE_FORMAT`,
 `GL_TEXTURE_IMMUTABLE_LEVELS`, `GL_TEXTURE_LOD_BIAS`, `GL_TEXTURE_MAG_FILTER`,
 `GL_TEXTURE_MAX_LEVEL`, `GL_TEXTURE_MAX_LOD`, `GL_TEXTURE_MIN_FILTER`, `GL_TEXTURE_MIN_LOD`,
-`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`
-, `GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
+`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`,
+`GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
 `GL_TEXTURE_VIEW_MIN_LEVEL`, `GL_TEXTURE_VIEW_NUM_LAYERS`, `GL_TEXTURE_VIEW_NUM_LEVELS`,
 `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, and `GL_TEXTURE_WRAP_R` are accepted.
 
@@ -4097,8 +4097,8 @@ functions.
 `GL_TEXTURE_COMPARE_MODE`, `GL_TEXTURE_COMPARE_FUNC`, `GL_TEXTURE_IMMUTABLE_FORMAT`,
 `GL_TEXTURE_IMMUTABLE_LEVELS`, `GL_TEXTURE_LOD_BIAS`, `GL_TEXTURE_MAG_FILTER`,
 `GL_TEXTURE_MAX_LEVEL`, `GL_TEXTURE_MAX_LOD`, `GL_TEXTURE_MIN_FILTER`, `GL_TEXTURE_MIN_LOD`,
-`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`
-, `GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
+`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`,
+`GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
 `GL_TEXTURE_VIEW_MIN_LEVEL`, `GL_TEXTURE_VIEW_NUM_LAYERS`, `GL_TEXTURE_VIEW_NUM_LEVELS`,
 `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, and `GL_TEXTURE_WRAP_R` are accepted.
 
@@ -4391,8 +4391,8 @@ functions.
 `GL_TEXTURE_COMPARE_MODE`, `GL_TEXTURE_COMPARE_FUNC`, `GL_TEXTURE_IMMUTABLE_FORMAT`,
 `GL_TEXTURE_IMMUTABLE_LEVELS`, `GL_TEXTURE_LOD_BIAS`, `GL_TEXTURE_MAG_FILTER`,
 `GL_TEXTURE_MAX_LEVEL`, `GL_TEXTURE_MAX_LOD`, `GL_TEXTURE_MIN_FILTER`, `GL_TEXTURE_MIN_LOD`,
-`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`
-, `GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
+`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`,
+`GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
 `GL_TEXTURE_VIEW_MIN_LEVEL`, `GL_TEXTURE_VIEW_NUM_LAYERS`, `GL_TEXTURE_VIEW_NUM_LEVELS`,
 `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, and `GL_TEXTURE_WRAP_R` are accepted.
 
@@ -4685,8 +4685,8 @@ functions.
 `GL_TEXTURE_COMPARE_MODE`, `GL_TEXTURE_COMPARE_FUNC`, `GL_TEXTURE_IMMUTABLE_FORMAT`,
 `GL_TEXTURE_IMMUTABLE_LEVELS`, `GL_TEXTURE_LOD_BIAS`, `GL_TEXTURE_MAG_FILTER`,
 `GL_TEXTURE_MAX_LEVEL`, `GL_TEXTURE_MAX_LOD`, `GL_TEXTURE_MIN_FILTER`, `GL_TEXTURE_MIN_LOD`,
-`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`
-, `GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
+`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`,
+`GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
 `GL_TEXTURE_VIEW_MIN_LEVEL`, `GL_TEXTURE_VIEW_NUM_LAYERS`, `GL_TEXTURE_VIEW_NUM_LEVELS`,
 `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, and `GL_TEXTURE_WRAP_R` are accepted.
 
@@ -4984,8 +4984,8 @@ functions.
 `GL_TEXTURE_COMPARE_MODE`, `GL_TEXTURE_COMPARE_FUNC`, `GL_TEXTURE_IMMUTABLE_FORMAT`,
 `GL_TEXTURE_IMMUTABLE_LEVELS`, `GL_TEXTURE_LOD_BIAS`, `GL_TEXTURE_MAG_FILTER`,
 `GL_TEXTURE_MAX_LEVEL`, `GL_TEXTURE_MAX_LOD`, `GL_TEXTURE_MIN_FILTER`, `GL_TEXTURE_MIN_LOD`,
-`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`
-, `GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
+`GL_TEXTURE_SWIZZLE_R`, `GL_TEXTURE_SWIZZLE_G`, `GL_TEXTURE_SWIZZLE_B`, `GL_TEXTURE_SWIZZLE_A`,
+`GL_TEXTURE_SWIZZLE_RGBA`, `GL_TEXTURE_TARGET`, `GL_TEXTURE_VIEW_MIN_LAYER`,
 `GL_TEXTURE_VIEW_MIN_LEVEL`, `GL_TEXTURE_VIEW_NUM_LAYERS`, `GL_TEXTURE_VIEW_NUM_LEVELS`,
 `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, and `GL_TEXTURE_WRAP_R` are accepted.
 
@@ -6029,8 +6029,8 @@ Class Internal Formats 128-bit `GL_RGBA32F`, `GL_RGBA32UI`, `GL_RGBA32I` 96-bit
 `GL_RGBA8_SNORM`, `GL_RG16_SNORM`, `GL_SRGB8_ALPHA8`, `GL_RGB9_E5` 24-bit `GL_RGB8`,
 `GL_RGB8_SNORM`, `GL_SRGB8`, `GL_RGB8UI`, `GL_RGB8I` 16-bit `GL_R16F`, `GL_RG8UI`,
 `GL_R16UI`, `GL_RG8I`, `GL_R16I`, `GL_RG8`, `GL_R16`, `GL_RG8_SNORM`, `GL_R16_SNORM`
-8-bit `GL_R8UI`, `GL_R8I`, `GL_R8`, `GL_R8_SNORM` `GL_RGTC1_RED` `GL_COMPRESSED_RED_RGTC1`
-, `GL_COMPRESSED_SIGNED_RED_RGTC1` `GL_RGTC2_RG` `GL_COMPRESSED_RG_RGTC2`,
+8-bit `GL_R8UI`, `GL_R8I`, `GL_R8`, `GL_R8_SNORM` `GL_RGTC1_RED` `GL_COMPRESSED_RED_RGTC1`,
+`GL_COMPRESSED_SIGNED_RED_RGTC1` `GL_RGTC2_RG` `GL_COMPRESSED_RG_RGTC2`,
 `GL_COMPRESSED_SIGNED_RG_RGTC2` `GL_BPTC_UNORM` `GL_COMPRESSED_RGBA_BPTC_UNORM`,
 `GL_COMPRESSED_SRGB_ALPHA_BPTC_UNORM` `GL_BPTC_FLOAT` `GL_COMPRESSED_RGB_BPTC_SIGNED_FLOAT`,
 `GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT` If the original texture is an array or has multiple mipmap
@@ -6048,8 +6048,8 @@ of the original texture's levels must be equal.
 When the original texture's target is `GL_TEXTURE_CUBE_MAP`, the layer parameters are
 interpreted in the same order as if it were a `GL_TEXTURE_CUBE_MAP_ARRAY` with 6 layer-faces.
 
-If `target` is `GL_TEXTURE_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_3D`, `GL_TEXTURE_RECTANGLE`
-, or `GL_TEXTURE_2D_MULTISAMPLE`, `numlayers` must equal 1.
+If `target` is `GL_TEXTURE_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_3D`, `GL_TEXTURE_RECTANGLE`,
+or `GL_TEXTURE_2D_MULTISAMPLE`, `numlayers` must equal 1.
 
 The dimensions of the original texture must be less than or equal to the maximum supported
 dimensions of the new target. For example, if the original texture has a `GL_TEXTURE_2D_ARRAY`
@@ -8576,8 +8576,8 @@ is less than zero or greater than the value of `GL_MAX_FRAMEBUFFER_SAMPLES`.
 `glFramebufferParameteri` `glNamedFramebufferParameteri`
 ---
 ### See Also
-glBindFramebuffer, glCreateFramebuffers, glFramebufferRenderbuffer, glFramebufferTexture
-, glGenFramebuffers, glGetFramebufferParameter
+glBindFramebuffer, glCreateFramebuffers, glFramebufferRenderbuffer, glFramebufferTexture,
+glGenFramebuffers, glGetFramebufferParameter
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -8679,8 +8679,8 @@ is less than zero or greater than the value of `GL_MAX_FRAMEBUFFER_SAMPLES`.
 `glFramebufferParameteri` `glNamedFramebufferParameteri`
 ---
 ### See Also
-glBindFramebuffer, glCreateFramebuffers, glFramebufferRenderbuffer, glFramebufferTexture
-, glGenFramebuffers, glGetFramebufferParameter
+glBindFramebuffer, glCreateFramebuffers, glFramebufferRenderbuffer, glFramebufferTexture,
+glGenFramebuffers, glGetFramebufferParameter
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -8925,13 +8925,13 @@ For `glFramebufferTexture1D`, `glFramebufferTexture2D` and `glFramebufferTexture
 `textarget` specifies what type of texture is named by `texture`, and for cube map textures,
 specifies the face that is to be attached. If `texture` is not zero, it must be the name of an
 existing texture object with effective target `textarget` unless it is a cube map texture, in
-which case `textarget` must be `GL_TEXTURE_CUBE_MAP_POSITIVE_X` `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`
-, `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
+which case `textarget` must be `GL_TEXTURE_CUBE_MAP_POSITIVE_X` `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`,
+`GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`, or `GL_TEXTURE_CUBE_MAP_NEGATIVE_Z`.
 
 If `texture` is non-zero, the specified `level` of the texture object named `texture` is
-attached to the framebuffer attachment point named by `attachment`. For `glFramebufferTexture1D`
-, `glFramebufferTexture2D`, and `glFramebufferTexture3D`, `texture` must be zero or the name
+attached to the framebuffer attachment point named by `attachment`. For `glFramebufferTexture1D`,
+`glFramebufferTexture2D`, and `glFramebufferTexture3D`, `texture` must be zero or the name
 of an existing texture with an effective target of `textarget`, or `texture` must be the name of
 an existing cube-map texture and `textarget` must be one of `GL_TEXTURE_CUBE_MAP_POSITIVE_X`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`,
@@ -9058,13 +9058,13 @@ For `glFramebufferTexture1D`, `glFramebufferTexture2D` and `glFramebufferTexture
 `textarget` specifies what type of texture is named by `texture`, and for cube map textures,
 specifies the face that is to be attached. If `texture` is not zero, it must be the name of an
 existing texture object with effective target `textarget` unless it is a cube map texture, in
-which case `textarget` must be `GL_TEXTURE_CUBE_MAP_POSITIVE_X` `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`
-, `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
+which case `textarget` must be `GL_TEXTURE_CUBE_MAP_POSITIVE_X` `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`,
+`GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`, or `GL_TEXTURE_CUBE_MAP_NEGATIVE_Z`.
 
 If `texture` is non-zero, the specified `level` of the texture object named `texture` is
-attached to the framebuffer attachment point named by `attachment`. For `glFramebufferTexture1D`
-, `glFramebufferTexture2D`, and `glFramebufferTexture3D`, `texture` must be zero or the name
+attached to the framebuffer attachment point named by `attachment`. For `glFramebufferTexture1D`,
+`glFramebufferTexture2D`, and `glFramebufferTexture3D`, `texture` must be zero or the name
 of an existing texture with an effective target of `textarget`, or `texture` must be the name of
 an existing cube-map texture and `textarget` must be one of `GL_TEXTURE_CUBE_MAP_POSITIVE_X`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`,
@@ -9191,13 +9191,13 @@ For `glFramebufferTexture1D`, `glFramebufferTexture2D` and `glFramebufferTexture
 `textarget` specifies what type of texture is named by `texture`, and for cube map textures,
 specifies the face that is to be attached. If `texture` is not zero, it must be the name of an
 existing texture object with effective target `textarget` unless it is a cube map texture, in
-which case `textarget` must be `GL_TEXTURE_CUBE_MAP_POSITIVE_X` `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`
-, `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
+which case `textarget` must be `GL_TEXTURE_CUBE_MAP_POSITIVE_X` `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`,
+`GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`, or `GL_TEXTURE_CUBE_MAP_NEGATIVE_Z`.
 
 If `texture` is non-zero, the specified `level` of the texture object named `texture` is
-attached to the framebuffer attachment point named by `attachment`. For `glFramebufferTexture1D`
-, `glFramebufferTexture2D`, and `glFramebufferTexture3D`, `texture` must be zero or the name
+attached to the framebuffer attachment point named by `attachment`. For `glFramebufferTexture1D`,
+`glFramebufferTexture2D`, and `glFramebufferTexture3D`, `texture` must be zero or the name
 of an existing texture with an effective target of `textarget`, or `texture` must be the name of
 an existing cube-map texture and `textarget` must be one of `GL_TEXTURE_CUBE_MAP_POSITIVE_X`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`,
@@ -9438,13 +9438,13 @@ For `glFramebufferTexture1D`, `glFramebufferTexture2D` and `glFramebufferTexture
 `textarget` specifies what type of texture is named by `texture`, and for cube map textures,
 specifies the face that is to be attached. If `texture` is not zero, it must be the name of an
 existing texture object with effective target `textarget` unless it is a cube map texture, in
-which case `textarget` must be `GL_TEXTURE_CUBE_MAP_POSITIVE_X` `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`
-, `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
+which case `textarget` must be `GL_TEXTURE_CUBE_MAP_POSITIVE_X` `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`,
+`GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`, or `GL_TEXTURE_CUBE_MAP_NEGATIVE_Z`.
 
 If `texture` is non-zero, the specified `level` of the texture object named `texture` is
-attached to the framebuffer attachment point named by `attachment`. For `glFramebufferTexture1D`
-, `glFramebufferTexture2D`, and `glFramebufferTexture3D`, `texture` must be zero or the name
+attached to the framebuffer attachment point named by `attachment`. For `glFramebufferTexture1D`,
+`glFramebufferTexture2D`, and `glFramebufferTexture3D`, `texture` must be zero or the name
 of an existing texture with an effective target of `textarget`, or `texture` must be the name of
 an existing cube-map texture and `textarget` must be one of `GL_TEXTURE_CUBE_MAP_POSITIVE_X`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`,
@@ -9685,13 +9685,13 @@ For `glFramebufferTexture1D`, `glFramebufferTexture2D` and `glFramebufferTexture
 `textarget` specifies what type of texture is named by `texture`, and for cube map textures,
 specifies the face that is to be attached. If `texture` is not zero, it must be the name of an
 existing texture object with effective target `textarget` unless it is a cube map texture, in
-which case `textarget` must be `GL_TEXTURE_CUBE_MAP_POSITIVE_X` `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`
-, `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
+which case `textarget` must be `GL_TEXTURE_CUBE_MAP_POSITIVE_X` `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`,
+`GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`, or `GL_TEXTURE_CUBE_MAP_NEGATIVE_Z`.
 
 If `texture` is non-zero, the specified `level` of the texture object named `texture` is
-attached to the framebuffer attachment point named by `attachment`. For `glFramebufferTexture1D`
-, `glFramebufferTexture2D`, and `glFramebufferTexture3D`, `texture` must be zero or the name
+attached to the framebuffer attachment point named by `attachment`. For `glFramebufferTexture1D`,
+`glFramebufferTexture2D`, and `glFramebufferTexture3D`, `texture` must be zero or the name
 of an existing texture with an effective target of `textarget`, or `texture` must be the name of
 an existing cube-map texture and `textarget` must be one of `GL_TEXTURE_CUBE_MAP_POSITIVE_X`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`,
@@ -10096,8 +10096,8 @@ If `pname` is `GL_FILTER` the `params` is set to either `GL_TRUE` or `GL_FALSE` 
 indicate support or lack thereof for filter modes other than `GL_NEAREST` or `GL_NEAREST_MIPMAP`
 for the specified internal format.
 
-If `pname` is `GL_VERTEX_TEXTURE`, `GL_TESS_CONTROL_TEXTURE`, `GL_TESS_EVALUATION_TEXTURE`
-, `GL_GEOMETRY_TEXTURE`, `GL_FRAGMENT_TEXTURE`, or `GL_COMPUTE_TEXTURE`, then the value
+If `pname` is `GL_VERTEX_TEXTURE`, `GL_TESS_CONTROL_TEXTURE`, `GL_TESS_EVALUATION_TEXTURE`,
+`GL_GEOMETRY_TEXTURE`, `GL_FRAGMENT_TEXTURE`, or `GL_COMPUTE_TEXTURE`, then the value
 written to `params` indicates support for use of the resource as a source of texturing in the
 vertex, tessellation control, tessellation evaluation, geometry, fragment and compute shader stages,
 respectively. `params` may be set to `GL_FULL_SUPPORT`, `GL_CAVEAT_SUPPORT` or `GL_NONE` to
@@ -10191,13 +10191,13 @@ limited support or no support at all, respectively. If the resource or operation
 
 The tokens `GL_INTERNALFORMAT_SUPPORTED`, `GL_INTERNALFORMAT_PREFERRED`,
 `GL_INTERNALFORMAT_RED_SIZE`, `GL_INTERNALFORMAT_GREEN_SIZE`, `GL_INTERNALFORMAT_BLUE_SIZE`,
-`GL_INTERNALFORMAT_ALPHA_SIZE`, `GL_INTERNALFORMAT_DEPTH_SIZE`, `GL_INTERNALFORMAT_STENCIL_SIZE`
-, `GL_INTERNALFORMAT_SHARED_SIZE`, `GL_INTERNALFORMAT_RED_TYPE`, `GL_INTERNALFORMAT_GREEN_TYPE`
-, `GL_INTERNALFORMAT_BLUE_TYPE`, `GL_INTERNALFORMAT_ALPHA_TYPE`, `GL_INTERNALFORMAT_DEPTH_TYPE`
-, `GL_INTERNALFORMAT_STENCIL_TYPE`, `GL_MAX_WIDTH`, `GL_MAX_HEIGHT`, `GL_MAX_DEPTH`,
+`GL_INTERNALFORMAT_ALPHA_SIZE`, `GL_INTERNALFORMAT_DEPTH_SIZE`, `GL_INTERNALFORMAT_STENCIL_SIZE`,
+`GL_INTERNALFORMAT_SHARED_SIZE`, `GL_INTERNALFORMAT_RED_TYPE`, `GL_INTERNALFORMAT_GREEN_TYPE`,
+`GL_INTERNALFORMAT_BLUE_TYPE`, `GL_INTERNALFORMAT_ALPHA_TYPE`, `GL_INTERNALFORMAT_DEPTH_TYPE`,
+`GL_INTERNALFORMAT_STENCIL_TYPE`, `GL_MAX_WIDTH`, `GL_MAX_HEIGHT`, `GL_MAX_DEPTH`,
 `GL_MAX_LAYERS`, `GL_MAX_COMBINED_DIMENSIONS`, `GL_COLOR_COMPONENTS`, `GL_DEPTH_COMPONENTS`,
-`GL_STENCIL_COMPONENTS`, `GL_COLOR_RENDERABLE`, `GL_DEPTH_RENDERABLE`, `GL_STENCIL_RENDERABLE`
-, `GL_FRAMEBUFFER_RENDERABLE`, `GL_FRAMEBUFFER_RENDERABLE_LAYERED`, `GL_FRAMEBUFFER_BLEND`,
+`GL_STENCIL_COMPONENTS`, `GL_COLOR_RENDERABLE`, `GL_DEPTH_RENDERABLE`, `GL_STENCIL_RENDERABLE`,
+`GL_FRAMEBUFFER_RENDERABLE`, `GL_FRAMEBUFFER_RENDERABLE_LAYERED`, `GL_FRAMEBUFFER_BLEND`,
 `GL_READ_PIXELS`, `GL_READ_PIXELS_FORMAT`, `GL_READ_PIXELS_TYPE`, `GL_TEXTURE_IMAGE_FORMAT`,
 `GL_TEXTURE_IMAGE_TYPE`, `GL_GET_TEXTURE_IMAGE_FORMAT`, `GL_GET_TEXTURE_IMAGE_TYPE`,
 `GL_MIPMAP`, `GL_GENERATE_MIPMAP`, `GL_AUTO_GENERATE_MIPMAP`, `GL_COLOR_ENCODING`,
@@ -10493,8 +10493,8 @@ If `pname` is `GL_FILTER` the `params` is set to either `GL_TRUE` or `GL_FALSE` 
 indicate support or lack thereof for filter modes other than `GL_NEAREST` or `GL_NEAREST_MIPMAP`
 for the specified internal format.
 
-If `pname` is `GL_VERTEX_TEXTURE`, `GL_TESS_CONTROL_TEXTURE`, `GL_TESS_EVALUATION_TEXTURE`
-, `GL_GEOMETRY_TEXTURE`, `GL_FRAGMENT_TEXTURE`, or `GL_COMPUTE_TEXTURE`, then the value
+If `pname` is `GL_VERTEX_TEXTURE`, `GL_TESS_CONTROL_TEXTURE`, `GL_TESS_EVALUATION_TEXTURE`,
+`GL_GEOMETRY_TEXTURE`, `GL_FRAGMENT_TEXTURE`, or `GL_COMPUTE_TEXTURE`, then the value
 written to `params` indicates support for use of the resource as a source of texturing in the
 vertex, tessellation control, tessellation evaluation, geometry, fragment and compute shader stages,
 respectively. `params` may be set to `GL_FULL_SUPPORT`, `GL_CAVEAT_SUPPORT` or `GL_NONE` to
@@ -10588,13 +10588,13 @@ limited support or no support at all, respectively. If the resource or operation
 
 The tokens `GL_INTERNALFORMAT_SUPPORTED`, `GL_INTERNALFORMAT_PREFERRED`,
 `GL_INTERNALFORMAT_RED_SIZE`, `GL_INTERNALFORMAT_GREEN_SIZE`, `GL_INTERNALFORMAT_BLUE_SIZE`,
-`GL_INTERNALFORMAT_ALPHA_SIZE`, `GL_INTERNALFORMAT_DEPTH_SIZE`, `GL_INTERNALFORMAT_STENCIL_SIZE`
-, `GL_INTERNALFORMAT_SHARED_SIZE`, `GL_INTERNALFORMAT_RED_TYPE`, `GL_INTERNALFORMAT_GREEN_TYPE`
-, `GL_INTERNALFORMAT_BLUE_TYPE`, `GL_INTERNALFORMAT_ALPHA_TYPE`, `GL_INTERNALFORMAT_DEPTH_TYPE`
-, `GL_INTERNALFORMAT_STENCIL_TYPE`, `GL_MAX_WIDTH`, `GL_MAX_HEIGHT`, `GL_MAX_DEPTH`,
+`GL_INTERNALFORMAT_ALPHA_SIZE`, `GL_INTERNALFORMAT_DEPTH_SIZE`, `GL_INTERNALFORMAT_STENCIL_SIZE`,
+`GL_INTERNALFORMAT_SHARED_SIZE`, `GL_INTERNALFORMAT_RED_TYPE`, `GL_INTERNALFORMAT_GREEN_TYPE`,
+`GL_INTERNALFORMAT_BLUE_TYPE`, `GL_INTERNALFORMAT_ALPHA_TYPE`, `GL_INTERNALFORMAT_DEPTH_TYPE`,
+`GL_INTERNALFORMAT_STENCIL_TYPE`, `GL_MAX_WIDTH`, `GL_MAX_HEIGHT`, `GL_MAX_DEPTH`,
 `GL_MAX_LAYERS`, `GL_MAX_COMBINED_DIMENSIONS`, `GL_COLOR_COMPONENTS`, `GL_DEPTH_COMPONENTS`,
-`GL_STENCIL_COMPONENTS`, `GL_COLOR_RENDERABLE`, `GL_DEPTH_RENDERABLE`, `GL_STENCIL_RENDERABLE`
-, `GL_FRAMEBUFFER_RENDERABLE`, `GL_FRAMEBUFFER_RENDERABLE_LAYERED`, `GL_FRAMEBUFFER_BLEND`,
+`GL_STENCIL_COMPONENTS`, `GL_COLOR_RENDERABLE`, `GL_DEPTH_RENDERABLE`, `GL_STENCIL_RENDERABLE`,
+`GL_FRAMEBUFFER_RENDERABLE`, `GL_FRAMEBUFFER_RENDERABLE_LAYERED`, `GL_FRAMEBUFFER_BLEND`,
 `GL_READ_PIXELS`, `GL_READ_PIXELS_FORMAT`, `GL_READ_PIXELS_TYPE`, `GL_TEXTURE_IMAGE_FORMAT`,
 `GL_TEXTURE_IMAGE_TYPE`, `GL_GET_TEXTURE_IMAGE_FORMAT`, `GL_GET_TEXTURE_IMAGE_TYPE`,
 `GL_MIPMAP`, `GL_GENERATE_MIPMAP`, `GL_AUTO_GENERATE_MIPMAP`, `GL_COLOR_ENCODING`,
@@ -10811,8 +10811,8 @@ Retrieve the label of a named object identified within a namespace
 ### Description
 `glGetObjectLabel` retrieves the label of the object identified by `name` within the namespace
 given by `identifier`. `identifier` must be one of `GL_BUFFER`, `GL_SHADER`, `GL_PROGRAM`,
-`GL_VERTEX_ARRAY`, `GL_QUERY`, `GL_PROGRAM_PIPELINE`, `GL_TRANSFORM_FEEDBACK`, `GL_SAMPLER`
-, `GL_TEXTURE`, `GL_RENDERBUFFER`, `GL_FRAMEBUFFER`, to indicate the namespace containing the
+`GL_VERTEX_ARRAY`, `GL_QUERY`, `GL_PROGRAM_PIPELINE`, `GL_TRANSFORM_FEEDBACK`, `GL_SAMPLER`,
+`GL_TEXTURE`, `GL_RENDERBUFFER`, `GL_FRAMEBUFFER`, to indicate the namespace containing the
 names of buffers, shaders, programs, vertex array objects, query objects, program pipelines,
 transform feedback objects, samplers, textures, renderbuffers and frame buffers, respectively.
 
@@ -10979,8 +10979,8 @@ glIsProgramPipeline
 `glGenProgramPipelines`
 ---
 ### See Also
-glDeleteProgramPipelines, glBindProgramPipeline, glIsProgramPipeline, glUseProgramStages
-, glUseProgram
+glDeleteProgramPipelines, glBindProgramPipeline, glIsProgramPipeline, glUseProgramStages,
+glUseProgram
 ---
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -11110,8 +11110,8 @@ Returns a parameter from a program object
 `GL_ACTIVE_UNIFORMS`, `GL_ACTIVE_UNIFORM_BLOCKS`, `GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH`,
 `GL_ACTIVE_UNIFORM_MAX_LENGTH`, `GL_COMPUTE_WORK_GROUP_SIZE`, `GL_PROGRAM_BINARY_LENGTH`,
 `GL_TRANSFORM_FEEDBACK_BUFFER_MODE`, `GL_TRANSFORM_FEEDBACK_VARYINGS`,
-`GL_TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH`, `GL_GEOMETRY_VERTICES_OUT`, `GL_GEOMETRY_INPUT_TYPE`
-, and `GL_GEOMETRY_OUTPUT_TYPE`.
+`GL_TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH`, `GL_GEOMETRY_VERTICES_OUT`, `GL_GEOMETRY_INPUT_TYPE`,
+and `GL_GEOMETRY_OUTPUT_TYPE`.
 
 `params` Returns the requested object parameter.
 ---
@@ -11953,11 +11953,11 @@ VERTEX_SUBROUTINE_UNIFORM`, `GL_TESS_CONTROL_SUBROUTINE_UNIFORM`,
 `GL_BUFFER`, `GL_SHADER_STORAGE_BLOCK`, `GL_BUFFER_VARIABLE`, `GL_PROGRAM_INPUT`,
 `GL_PROGRAM_OUTPUT` `GL_REFERENCED_BY_TESS_CONTROL_SHADER` `GL_UNIFORM`, `GL_UNIFORM_BLOCK`,
 `GL_ATOMIC_COUNTER_SHADER`, `GL_BUFFER`, `GL_SHADER_STORAGE_BLOCK`, `GL_BUFFER_VARIABLE`,
-`GL_PROGRAM_INPUT`, `GL_PROGRAM_OUTPUT` `GL_REFERENCED_BY_TESS_EVALUATION_SHADER` `GL_UNIFORM`
-, `GL_UNIFORM_BLOCK`, `GL_ATOMIC_COUNTER_SHADER`, `GL_BUFFER`, `GL_SHADER_STORAGE_BLOCK`,
+`GL_PROGRAM_INPUT`, `GL_PROGRAM_OUTPUT` `GL_REFERENCED_BY_TESS_EVALUATION_SHADER` `GL_UNIFORM`,
+`GL_UNIFORM_BLOCK`, `GL_ATOMIC_COUNTER_SHADER`, `GL_BUFFER`, `GL_SHADER_STORAGE_BLOCK`,
 `GL_BUFFER_VARIABLE`, `GL_PROGRAM_INPUT`, `GL_PROGRAM_OUTPUT`
-`GL_REFERENCED_BY_GEOMETRY_SHADER` `GL_UNIFORM`, `GL_UNIFORM_BLOCK`, `GL_ATOMIC_COUNTER_SHADER`
-, `GL_BUFFER`, `GL_SHADER_STORAGE_BLOCK`, `GL_BUFFER_VARIABLE`, `GL_PROGRAM_INPUT`,
+`GL_REFERENCED_BY_GEOMETRY_SHADER` `GL_UNIFORM`, `GL_UNIFORM_BLOCK`, `GL_ATOMIC_COUNTER_SHADER`,
+`GL_BUFFER`, `GL_SHADER_STORAGE_BLOCK`, `GL_BUFFER_VARIABLE`, `GL_PROGRAM_INPUT`,
 `GL_PROGRAM_OUTPUT` `GL_REFERENCED_BY_FRAGMENT_SHADER` `GL_UNIFORM`, `GL_UNIFORM_BLOCK`,
 `GL_ATOMIC_COUNTER_SHADER`, `GL_BUFFER`, `GL_SHADER_STORAGE_BLOCK`, `GL_BUFFER_VARIABLE`,
 `GL_PROGRAM_INPUT`, `GL_PROGRAM_OUTPUT` `GL_REFERENCED_BY_COMPUTE_SHADER` `GL_UNIFORM`,
@@ -12251,15 +12251,15 @@ to which output variables in the `GL_TRANSFORM_FEEDBACK_VARYING` interface are w
 `GL_SHADER_STORAGE_BLOCK` The query is targeted at the set of active shader storage blocks used
 by `program`.
 
-If `name` exactly matches the name string of one of the active resources for `programInterface`
-, the index of the matched resource is returned. Additionally, if `name` would exactly match the
+If `name` exactly matches the name string of one of the active resources for `programInterface`,
+the index of the matched resource is returned. Additionally, if `name` would exactly match the
 name string of an active resource if "[0]" were appended to `name`, the index of the matched
 resource is returned. Otherwise, `name` is considered not to be the name of an active resource,
 and `GL_INVALID_INDEX` is returned.
 
 For the interface `GL_TRANSFORM_FEEDBACK_VARYING`, the value `GL_INVALID_INDEX` should be
-returned when querying the index assigned to the special names gl_NextBuffer, gl_SkipComponents1
-, gl_SkipComponents2, gl_SkipComponents3, or gl_SkipComponents4.
+returned when querying the index assigned to the special names gl_NextBuffer, gl_SkipComponents1,
+gl_SkipComponents2, gl_SkipComponents3, or gl_SkipComponents4.
 ---
 ### Errors
 `GL_INVALID_ENUM` is generated if `programInterface` is not one of the accepted interface
@@ -13164,8 +13164,8 @@ during the transfer of generic vertex attributes to the GL.
 Many of the boolean parameters can also be queried more easily using glIsEnabled.
 ---
 ### Notes
-The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`
-, `GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
+The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`,
+`GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
 `GL_TEXTURE_BINDING_3D`.
 
 `GL_MAX_VIEWPORTS`, `GL_VIEWPORT_SUBPIXEL_BITS`, `GL_VIEWPORT_BOUNDS_RANGE`,
@@ -14180,8 +14180,8 @@ during the transfer of generic vertex attributes to the GL.
 Many of the boolean parameters can also be queried more easily using glIsEnabled.
 ---
 ### Notes
-The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`
-, `GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
+The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`,
+`GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
 `GL_TEXTURE_BINDING_3D`.
 
 `GL_MAX_VIEWPORTS`, `GL_VIEWPORT_SUBPIXEL_BITS`, `GL_VIEWPORT_BOUNDS_RANGE`,
@@ -15193,8 +15193,8 @@ during the transfer of generic vertex attributes to the GL.
 Many of the boolean parameters can also be queried more easily using glIsEnabled.
 ---
 ### Notes
-The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`
-, `GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
+The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`,
+`GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
 `GL_TEXTURE_BINDING_3D`.
 
 `GL_MAX_VIEWPORTS`, `GL_VIEWPORT_SUBPIXEL_BITS`, `GL_VIEWPORT_BOUNDS_RANGE`,
@@ -16240,8 +16240,8 @@ during the transfer of generic vertex attributes to the GL.
 Many of the boolean parameters can also be queried more easily using glIsEnabled.
 ---
 ### Notes
-The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`
-, `GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
+The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`,
+`GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
 `GL_TEXTURE_BINDING_3D`.
 
 `GL_MAX_VIEWPORTS`, `GL_VIEWPORT_SUBPIXEL_BITS`, `GL_VIEWPORT_BOUNDS_RANGE`,
@@ -17255,8 +17255,8 @@ during the transfer of generic vertex attributes to the GL.
 Many of the boolean parameters can also be queried more easily using glIsEnabled.
 ---
 ### Notes
-The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`
-, `GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
+The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`,
+`GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
 `GL_TEXTURE_BINDING_3D`.
 
 `GL_MAX_VIEWPORTS`, `GL_VIEWPORT_SUBPIXEL_BITS`, `GL_VIEWPORT_BOUNDS_RANGE`,
@@ -18262,8 +18262,8 @@ during the transfer of generic vertex attributes to the GL.
 Many of the boolean parameters can also be queried more easily using glIsEnabled.
 ---
 ### Notes
-The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`
-, `GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
+The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`,
+`GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
 `GL_TEXTURE_BINDING_3D`.
 
 `GL_MAX_VIEWPORTS`, `GL_VIEWPORT_SUBPIXEL_BITS`, `GL_VIEWPORT_BOUNDS_RANGE`,
@@ -19312,8 +19312,8 @@ during the transfer of generic vertex attributes to the GL.
 Many of the boolean parameters can also be queried more easily using glIsEnabled.
 ---
 ### Notes
-The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`
-, `GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
+The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`,
+`GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
 `GL_TEXTURE_BINDING_3D`.
 
 `GL_MAX_VIEWPORTS`, `GL_VIEWPORT_SUBPIXEL_BITS`, `GL_VIEWPORT_BOUNDS_RANGE`,
@@ -20256,8 +20256,8 @@ during the transfer of generic vertex attributes to the GL.
 Many of the boolean parameters can also be queried more easily using glIsEnabled.
 ---
 ### Notes
-The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`
-, `GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
+The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`,
+`GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
 `GL_TEXTURE_BINDING_3D`.
 
 `GL_MAX_VIEWPORTS`, `GL_VIEWPORT_SUBPIXEL_BITS`, `GL_VIEWPORT_BOUNDS_RANGE`,
@@ -21200,8 +21200,8 @@ during the transfer of generic vertex attributes to the GL.
 Many of the boolean parameters can also be queried more easily using glIsEnabled.
 ---
 ### Notes
-The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`
-, `GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
+The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`,
+`GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
 `GL_TEXTURE_BINDING_3D`.
 
 `GL_MAX_VIEWPORTS`, `GL_VIEWPORT_SUBPIXEL_BITS`, `GL_VIEWPORT_BOUNDS_RANGE`,
@@ -22144,8 +22144,8 @@ during the transfer of generic vertex attributes to the GL.
 Many of the boolean parameters can also be queried more easily using glIsEnabled.
 ---
 ### Notes
-The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`
-, `GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
+The following parameters return the associated value for the active texture unit: `GL_TEXTURE_1D`,
+`GL_TEXTURE_BINDING_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_BINDING_2D`, `GL_TEXTURE_3D` and
 `GL_TEXTURE_BINDING_3D`.
 
 `GL_MAX_VIEWPORTS`, `GL_VIEWPORT_SUBPIXEL_BITS`, `GL_VIEWPORT_BOUNDS_RANGE`,
@@ -22724,8 +22724,8 @@ function is called after a link operation that failed. If an error occurs, the r
 ---
 ### Notes
 The double types, `GL_DOUBLE`, `GL_DOUBLE_VEC2`, `GL_DOUBLE_VEC3`, `GL_DOUBLE_VEC4`,
-`GL_DOUBLE_MAT2`, `GL_DOUBLE_MAT3`, `GL_DOUBLE_MAT4`, `GL_DOUBLE_MAT2x3`, `GL_DOUBLE_MAT2x4`
-, `GL_DOUBLE_MAT3x2`, `GL_DOUBLE_MAT3x4`, `GL_DOUBLE_MAT4x2`, and `GL_DOUBLE_MAT4x3` are
+`GL_DOUBLE_MAT2`, `GL_DOUBLE_MAT3`, `GL_DOUBLE_MAT4`, `GL_DOUBLE_MAT2x3`, `GL_DOUBLE_MAT2x4`,
+`GL_DOUBLE_MAT3x2`, `GL_DOUBLE_MAT3x4`, `GL_DOUBLE_MAT4x2`, and `GL_DOUBLE_MAT4x3` are
 only available if the GL version is 4.1 or higher.
 
 The image types, `GL_IMAGE_1D`, `GL_IMAGE_2D`, `GL_IMAGE_3D`, `GL_IMAGE_2D_RECT`,
@@ -22751,8 +22751,8 @@ uniform variables in `program`.
 `GL_INVALID_VALUE` is generated if `bufSize` is less than 0.
 ---
 ### Associated Gets
-glGet with argument `GL_MAX_VERTEX_UNIFORM_COMPONENTS`, `GL_MAX_GEOMETRY_UNIFORM_COMPONENTS`
-, `GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS`, `GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS`,
+glGet with argument `GL_MAX_VERTEX_UNIFORM_COMPONENTS`, `GL_MAX_GEOMETRY_UNIFORM_COMPONENTS`,
+`GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS`, `GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS`,
 `GL_MAX_FRAGMENT_UNIFORM_COMPONENTS`.
 
 glGetProgram with argument `GL_ACTIVE_UNIFORMS` or `GL_ACTIVE_UNIFORM_MAX_LENGTH`.
@@ -22832,8 +22832,8 @@ elements that will be written to `params` is the value of `GL_UNIFORM_BLOCK_ACTI
 If `pname` is `GL_UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER`,
 `GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_CONTROL_SHADER`,
 `GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_EVALUATION_SHADER`,
-`GL_UNIFORM_BLOCK_REFERENCED_BY_GEOMETRY_SHADER`, `GL_UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER`
-, or `GL_UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER` then a boolean value indicating whether the
+`GL_UNIFORM_BLOCK_REFERENCED_BY_GEOMETRY_SHADER`, `GL_UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER`,
+or `GL_UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER` then a boolean value indicating whether the
 uniform block identified by `uniformBlockIndex` is referenced by the vertex, tessellation control,
 tessellation evaluation, geometry, fragment or compute programming stages of program, respectively,
 is returned.
@@ -22905,8 +22905,8 @@ value of `GL_ACTIVE_UNIFORM_BLOCKS`.
 
 Upon success, the name of the uniform block identified by `unifomBlockIndex` is returned into
 `uniformBlockName`. The name is nul-terminated. The actual number of characters written into
-`uniformBlockName`, excluding the nul terminator, is returned in `length`. If `length` is NULL
-, no length is returned.
+`uniformBlockName`, excluding the nul terminator, is returned in `length`. If `length` is NULL,
+no length is returned.
 
 `bufSize` contains the maximum number of characters (including the nul terminator) that will be
 written into `uniformBlockName`.
@@ -23122,8 +23122,8 @@ declaration.
 ---
 ### Notes
 The double types, `GL_DOUBLE`, `GL_DOUBLE_VEC2`, `GL_DOUBLE_VEC3`, `GL_DOUBLE_VEC4`,
-`GL_DOUBLE_MAT2`, `GL_DOUBLE_MAT3`, `GL_DOUBLE_MAT4`, `GL_DOUBLE_MAT2x3`, `GL_DOUBLE_MAT2x4`
-, `GL_DOUBLE_MAT3x2`, `GL_DOUBLE_MAT3x4`, `GL_DOUBLE_MAT4x2`, and `GL_DOUBLE_MAT4x3` are
+`GL_DOUBLE_MAT2`, `GL_DOUBLE_MAT3`, `GL_DOUBLE_MAT4`, `GL_DOUBLE_MAT2x3`, `GL_DOUBLE_MAT2x4`,
+`GL_DOUBLE_MAT3x2`, `GL_DOUBLE_MAT3x4`, `GL_DOUBLE_MAT4x2`, and `GL_DOUBLE_MAT4x3` are
 only available if the GL version is 4.1 or higher.
 
 `GL_UNIFORM_ATOMIC_COUNTER_BUFFER_INDEX` is only accepted by `pname` if the GL version is 4.2
@@ -23910,8 +23910,8 @@ Draw multiple instances of a set of elements with offset applied to instanced at
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY` and `GL_PATCHES` are accepted.
 
 `count` Specifies the number of elements to be rendered.
@@ -24038,8 +24038,8 @@ Render primitives from array data
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY` and `GL_PATCHES` are accepted.
 
 `start` Specifies the minimum array index contained in `indices`.
@@ -24196,8 +24196,8 @@ Render primitives using a count derived from a transform feedback object
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY`, and `GL_PATCHES` are accepted.
 
 `id` Specifies the name of a transform feedback object from which to retrieve a primitive
@@ -24256,8 +24256,8 @@ Render multiple instances of primitives using a count derived from a transform f
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY`, and `GL_PATCHES` are accepted.
 
 `id` Specifies the name of a transform feedback object from which to retrieve a primitive
@@ -24325,8 +24325,8 @@ Render primitives using a count derived from a specifed stream of a transform fe
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY`, and `GL_PATCHES` are accepted.
 
 `id` Specifies the name of a transform feedback object from which to retrieve a primitive
@@ -24395,8 +24395,8 @@ feedback object
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY`, and `GL_PATCHES` are accepted.
 
 `id` Specifies the name of a transform feedback object from which to retrieve a primitive
@@ -24536,8 +24536,8 @@ queries will generate an error.
 If the value of `GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE` is not `GL_NONE`, these queries apply
 to all other framebuffer types:
 
-If `pname` is `GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE`, `GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE`
-, `GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE`, `GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE`,
+If `pname` is `GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE`, `GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE`,
+`GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE`, `GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE`,
 `GL_FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE` or `GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE`, then
 `params` will contain the number of bits in the corresponding red, green, blue, alpha, depth, or
 stencil component of the specified attachment. If the requested component is not present in the
@@ -24586,8 +24586,8 @@ texture is attached. Otherwise, `params` will contain `GL_FALSE`.
 
 If `pname` is `GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER` ; the value of
 `GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME` is the name of a three-dimensional, or a one- or
-two-dimensional array texture; and the value of `GL_FRAMEBUFFER_ATTACHMENT_LAYERED` is `GL_FALSE`
-, then `params` will contain the texture layer which contains the attached image. Otherwise
+two-dimensional array texture; and the value of `GL_FRAMEBUFFER_ATTACHMENT_LAYERED` is `GL_FALSE`,
+then `params` will contain the texture layer which contains the attached image. Otherwise
 `params` will contain zero.
 ---
 ### Notes
@@ -26116,8 +26116,8 @@ glGetVertexAttrib with argument `GL_VERTEX_ATTRIB_RELATIVE_OFFSET`.
 `glVertexAttribFormat` `glVertexAttribIFormat` `glVertexAttribLFormat`
 ---
 ### See Also
-glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor
-, glVertexAttribPointer.
+glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor,
+glVertexAttribPointer.
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -26242,8 +26242,8 @@ glGetVertexAttrib with argument `GL_VERTEX_ATTRIB_RELATIVE_OFFSET`.
 `glVertexAttribFormat` `glVertexAttribIFormat` `glVertexAttribLFormat`
 ---
 ### See Also
-glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor
-, glVertexAttribPointer.
+glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor,
+glVertexAttribPointer.
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -26368,8 +26368,8 @@ glGetVertexAttrib with argument `GL_VERTEX_ATTRIB_RELATIVE_OFFSET`.
 `glVertexAttribFormat` `glVertexAttribIFormat` `glVertexAttribLFormat`
 ---
 ### See Also
-glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor
-, glVertexAttribPointer.
+glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor,
+glVertexAttribPointer.
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -26494,8 +26494,8 @@ glGetVertexAttrib with argument `GL_VERTEX_ATTRIB_RELATIVE_OFFSET`.
 `glVertexAttribFormat` `glVertexAttribIFormat` `glVertexAttribLFormat`
 ---
 ### See Also
-glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor
-, glVertexAttribPointer.
+glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor,
+glVertexAttribPointer.
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -26620,8 +26620,8 @@ glGetVertexAttrib with argument `GL_VERTEX_ATTRIB_RELATIVE_OFFSET`.
 `glVertexAttribFormat` `glVertexAttribIFormat` `glVertexAttribLFormat`
 ---
 ### See Also
-glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor
-, glVertexAttribPointer.
+glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor,
+glVertexAttribPointer.
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -26746,8 +26746,8 @@ glGetVertexAttrib with argument `GL_VERTEX_ATTRIB_RELATIVE_OFFSET`.
 `glVertexAttribFormat` `glVertexAttribIFormat` `glVertexAttribLFormat`
 ---
 ### See Also
-glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor
-, glVertexAttribPointer.
+glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor,
+glVertexAttribPointer.
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -26775,10 +26775,10 @@ Define an array of generic vertex attribute data
 Additionally, the symbolic constant `GL_BGRA` is accepted by `glVertexAttribPointer`. The
 initial value is 4.
 
-`type` Specifies the data type of each component in the array. The symbolic constants `GL_BYTE`
-, `GL_UNSIGNED_BYTE`, `GL_SHORT`, `GL_UNSIGNED_SHORT`, `GL_INT`, and `GL_UNSIGNED_INT` are
-accepted by `glVertexAttribPointer` and `glVertexAttribIPointer`. Additionally `GL_HALF_FLOAT`
-, `GL_FLOAT`, `GL_DOUBLE`, `GL_FIXED`, `GL_INT_2_10_10_10_REV`,
+`type` Specifies the data type of each component in the array. The symbolic constants `GL_BYTE`,
+`GL_UNSIGNED_BYTE`, `GL_SHORT`, `GL_UNSIGNED_SHORT`, `GL_INT`, and `GL_UNSIGNED_INT` are
+accepted by `glVertexAttribPointer` and `glVertexAttribIPointer`. Additionally `GL_HALF_FLOAT`,
+`GL_FLOAT`, `GL_DOUBLE`, `GL_FIXED`, `GL_INT_2_10_10_10_REV`,
 `GL_UNSIGNED_INT_2_10_10_10_REV` and `GL_UNSIGNED_INT_10F_11F_11F_REV` are accepted by
 `glVertexAttribPointer`. `GL_DOUBLE` is also accepted by `glVertexAttribLPointer` and is the
 only token accepted by the `type` parameter for that function. The initial value is `GL_FLOAT`.
@@ -26824,8 +26824,8 @@ treated as a byte offset into the buffer object's data store. The buffer object 
 `GL_ARRAY_BUFFER_BINDING` ) is saved as generic vertex attribute array state (
 `GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING` ) for index `index`.
 
-When a generic vertex attribute array is specified, `size`, `type`, `normalized`, `stride`
-, and `pointer` are saved as vertex array state, in addition to the current vertex array buffer
+When a generic vertex attribute array is specified, `size`, `type`, `normalized`, `stride`,
+and `pointer` are saved as vertex array state, in addition to the current vertex array buffer
 object binding.
 
 To enable and disable a generic vertex attribute array, call glEnableVertexAttribArray and
@@ -26834,8 +26834,8 @@ when glDrawArrays, glMultiDrawArrays, glDrawElements, glMultiDrawElements, or
 glDrawRangeElements is called.
 ---
 ### Notes
-Each generic vertex attribute array is initially disabled and isn't accessed when glDrawElements
-, glDrawRangeElements, glDrawArrays, glMultiDrawArrays, or glMultiDrawElements is
+Each generic vertex attribute array is initially disabled and isn't accessed when glDrawElements,
+glDrawRangeElements, glDrawArrays, glMultiDrawArrays, or glMultiDrawElements is
 called.
 
 `GL_UNSIGNED_INT_10F_11F_11F_REV` is accepted for `type` only if the GL version is 4.4 or
@@ -26919,10 +26919,10 @@ Define an array of generic vertex attribute data
 Additionally, the symbolic constant `GL_BGRA` is accepted by `glVertexAttribPointer`. The
 initial value is 4.
 
-`type` Specifies the data type of each component in the array. The symbolic constants `GL_BYTE`
-, `GL_UNSIGNED_BYTE`, `GL_SHORT`, `GL_UNSIGNED_SHORT`, `GL_INT`, and `GL_UNSIGNED_INT` are
-accepted by `glVertexAttribPointer` and `glVertexAttribIPointer`. Additionally `GL_HALF_FLOAT`
-, `GL_FLOAT`, `GL_DOUBLE`, `GL_FIXED`, `GL_INT_2_10_10_10_REV`,
+`type` Specifies the data type of each component in the array. The symbolic constants `GL_BYTE`,
+`GL_UNSIGNED_BYTE`, `GL_SHORT`, `GL_UNSIGNED_SHORT`, `GL_INT`, and `GL_UNSIGNED_INT` are
+accepted by `glVertexAttribPointer` and `glVertexAttribIPointer`. Additionally `GL_HALF_FLOAT`,
+`GL_FLOAT`, `GL_DOUBLE`, `GL_FIXED`, `GL_INT_2_10_10_10_REV`,
 `GL_UNSIGNED_INT_2_10_10_10_REV` and `GL_UNSIGNED_INT_10F_11F_11F_REV` are accepted by
 `glVertexAttribPointer`. `GL_DOUBLE` is also accepted by `glVertexAttribLPointer` and is the
 only token accepted by the `type` parameter for that function. The initial value is `GL_FLOAT`.
@@ -26968,8 +26968,8 @@ treated as a byte offset into the buffer object's data store. The buffer object 
 `GL_ARRAY_BUFFER_BINDING` ) is saved as generic vertex attribute array state (
 `GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING` ) for index `index`.
 
-When a generic vertex attribute array is specified, `size`, `type`, `normalized`, `stride`
-, and `pointer` are saved as vertex array state, in addition to the current vertex array buffer
+When a generic vertex attribute array is specified, `size`, `type`, `normalized`, `stride`,
+and `pointer` are saved as vertex array state, in addition to the current vertex array buffer
 object binding.
 
 To enable and disable a generic vertex attribute array, call glEnableVertexAttribArray and
@@ -26978,8 +26978,8 @@ when glDrawArrays, glMultiDrawArrays, glDrawElements, glMultiDrawElements, or
 glDrawRangeElements is called.
 ---
 ### Notes
-Each generic vertex attribute array is initially disabled and isn't accessed when glDrawElements
-, glDrawRangeElements, glDrawArrays, glMultiDrawArrays, or glMultiDrawElements is
+Each generic vertex attribute array is initially disabled and isn't accessed when glDrawElements,
+glDrawRangeElements, glDrawArrays, glMultiDrawArrays, or glMultiDrawElements is
 called.
 
 `GL_UNSIGNED_INT_10F_11F_11F_REV` is accepted for `type` only if the GL version is 4.4 or
@@ -27063,10 +27063,10 @@ Define an array of generic vertex attribute data
 Additionally, the symbolic constant `GL_BGRA` is accepted by `glVertexAttribPointer`. The
 initial value is 4.
 
-`type` Specifies the data type of each component in the array. The symbolic constants `GL_BYTE`
-, `GL_UNSIGNED_BYTE`, `GL_SHORT`, `GL_UNSIGNED_SHORT`, `GL_INT`, and `GL_UNSIGNED_INT` are
-accepted by `glVertexAttribPointer` and `glVertexAttribIPointer`. Additionally `GL_HALF_FLOAT`
-, `GL_FLOAT`, `GL_DOUBLE`, `GL_FIXED`, `GL_INT_2_10_10_10_REV`,
+`type` Specifies the data type of each component in the array. The symbolic constants `GL_BYTE`,
+`GL_UNSIGNED_BYTE`, `GL_SHORT`, `GL_UNSIGNED_SHORT`, `GL_INT`, and `GL_UNSIGNED_INT` are
+accepted by `glVertexAttribPointer` and `glVertexAttribIPointer`. Additionally `GL_HALF_FLOAT`,
+`GL_FLOAT`, `GL_DOUBLE`, `GL_FIXED`, `GL_INT_2_10_10_10_REV`,
 `GL_UNSIGNED_INT_2_10_10_10_REV` and `GL_UNSIGNED_INT_10F_11F_11F_REV` are accepted by
 `glVertexAttribPointer`. `GL_DOUBLE` is also accepted by `glVertexAttribLPointer` and is the
 only token accepted by the `type` parameter for that function. The initial value is `GL_FLOAT`.
@@ -27112,8 +27112,8 @@ treated as a byte offset into the buffer object's data store. The buffer object 
 `GL_ARRAY_BUFFER_BINDING` ) is saved as generic vertex attribute array state (
 `GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING` ) for index `index`.
 
-When a generic vertex attribute array is specified, `size`, `type`, `normalized`, `stride`
-, and `pointer` are saved as vertex array state, in addition to the current vertex array buffer
+When a generic vertex attribute array is specified, `size`, `type`, `normalized`, `stride`,
+and `pointer` are saved as vertex array state, in addition to the current vertex array buffer
 object binding.
 
 To enable and disable a generic vertex attribute array, call glEnableVertexAttribArray and
@@ -27122,8 +27122,8 @@ when glDrawArrays, glMultiDrawArrays, glDrawElements, glMultiDrawElements, or
 glDrawRangeElements is called.
 ---
 ### Notes
-Each generic vertex attribute array is initially disabled and isn't accessed when glDrawElements
-, glDrawRangeElements, glDrawArrays, glMultiDrawArrays, or glMultiDrawElements is
+Each generic vertex attribute array is initially disabled and isn't accessed when glDrawElements,
+glDrawRangeElements, glDrawArrays, glMultiDrawArrays, or glMultiDrawElements is
 called.
 
 `GL_UNSIGNED_INT_10F_11F_11F_REV` is accepted for `type` only if the GL version is 4.4 or
@@ -27236,8 +27236,8 @@ glGet with arguments `GL_MAX_VERTEX_ATTRIB_BINDINGS`, `GL_VERTEX_BINDING_DIVISOR
 `glVertexArrayBindingDivisor` `glVertexBindingDivisor`
 ---
 ### See Also
-glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor
-, glVertexAttribPointer.
+glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor,
+glVertexAttribPointer.
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -27294,8 +27294,8 @@ glGet with arguments `GL_MAX_VERTEX_ATTRIB_BINDINGS`, `GL_VERTEX_BINDING_DIVISOR
 `glVertexArrayBindingDivisor` `glVertexBindingDivisor`
 ---
 ### See Also
-glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor
-, glVertexAttribPointer.
+glBindVertexBuffer, glVertexAttribBinding, glVertexAttribPointer, glVertexBindingDivisor,
+glVertexAttribPointer.
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -27480,8 +27480,8 @@ Conditional rendering is started using `glBeginConditionalRender` and ended usin
 glClear and glClearBuffer have no effect if the ( `GL_SAMPLES_PASSED` ) result of the query
 object `id` is zero, or if the ( `GL_ANY_SAMPLES_PASSED` ) result is `GL_FALSE`. The results of
 commands setting the current vertex state, such as glVertexAttrib are undefined. If the (
-`GL_SAMPLES_PASSED` ) result is non-zero or if the ( `GL_ANY_SAMPLES_PASSED` ) result is `GL_TRUE`
-, such commands are not discarded. The `id` parameter to `glBeginConditionalRender` must be the
+`GL_SAMPLES_PASSED` ) result is non-zero or if the ( `GL_ANY_SAMPLES_PASSED` ) result is `GL_TRUE`,
+such commands are not discarded. The `id` parameter to `glBeginConditionalRender` must be the
 name of a query object previously returned from a call to glGenQueries. `mode` specifies how
 the results of the query object are to be interpreted. If `mode` is `GL_QUERY_WAIT`, the GL
 waits for the results of the query to be available and then uses the results to determine if
@@ -27559,8 +27559,8 @@ Conditional rendering is started using `glBeginConditionalRender` and ended usin
 glClear and glClearBuffer have no effect if the ( `GL_SAMPLES_PASSED` ) result of the query
 object `id` is zero, or if the ( `GL_ANY_SAMPLES_PASSED` ) result is `GL_FALSE`. The results of
 commands setting the current vertex state, such as glVertexAttrib are undefined. If the (
-`GL_SAMPLES_PASSED` ) result is non-zero or if the ( `GL_ANY_SAMPLES_PASSED` ) result is `GL_TRUE`
-, such commands are not discarded. The `id` parameter to `glBeginConditionalRender` must be the
+`GL_SAMPLES_PASSED` ) result is non-zero or if the ( `GL_ANY_SAMPLES_PASSED` ) result is `GL_TRUE`,
+such commands are not discarded. The `id` parameter to `glBeginConditionalRender` must be the
 name of a query object previously returned from a call to glGenQueries. `mode` specifies how
 the results of the query object are to be interpreted. If `mode` is `GL_QUERY_WAIT`, the GL
 waits for the results of the query to be available and then uses the results to determine if
@@ -27972,8 +27972,8 @@ timer query object previously bound to the `GL_TIME_ELAPSED` query binding. When
 `glBeginQueryIndexed` is executed, the query object's time counter is reset to 0. When
 `glEndQueryIndexed` is executed, the elapsed server time that has passed since the call to
 `glBeginQueryIndexed` is written into the query object's time counter. This value can be queried by
-calling glGetQueryObject with `pname` `GL_QUERY_RESULT`. When `target` is `GL_TIME_ELAPSED`
-, `index` must be zero.
+calling glGetQueryObject with `pname` `GL_QUERY_RESULT`. When `target` is `GL_TIME_ELAPSED`,
+`index` must be zero.
 
 Querying the `GL_QUERY_RESULT` implicitly flushes the GL pipeline until the rendering delimited
 by the query object has completed and the result is available. `GL_QUERY_RESULT_AVAILABLE` can be
@@ -28115,8 +28115,8 @@ timer query object previously bound to the `GL_TIME_ELAPSED` query binding. When
 `glBeginQueryIndexed` is executed, the query object's time counter is reset to 0. When
 `glEndQueryIndexed` is executed, the elapsed server time that has passed since the call to
 `glBeginQueryIndexed` is written into the query object's time counter. This value can be queried by
-calling glGetQueryObject with `pname` `GL_QUERY_RESULT`. When `target` is `GL_TIME_ELAPSED`
-, `index` must be zero.
+calling glGetQueryObject with `pname` `GL_QUERY_RESULT`. When `target` is `GL_TIME_ELAPSED`,
+`index` must be zero.
 
 Querying the `GL_QUERY_RESULT` implicitly flushes the GL pipeline until the rendering delimited
 by the query object has completed and the result is available. `GL_QUERY_RESULT_AVAILABLE` can be
@@ -29096,8 +29096,8 @@ either the entire array, or only a single layer of the array to the image unit. 
 However, if `layered` is `GL_FALSE` then `layer` specifies the layer of the array to attach to
 the image unit.
 
-`access` specifies the access types to be performed by shaders and may be set to `GL_READ_ONLY`
-, `GL_WRITE_ONLY`, or `GL_READ_WRITE` to indicate read-only, write-only or read-write access,
+`access` specifies the access types to be performed by shaders and may be set to `GL_READ_ONLY`,
+`GL_WRITE_ONLY`, or `GL_READ_WRITE` to indicate read-only, write-only or read-write access,
 respectively. Violation of the access type specified in `access` (for example, if a shader writes
 to an image bound with `access` set to `GL_READ_ONLY` ) will lead to undefined results, possibly
 including program termination.
@@ -32177,8 +32177,8 @@ GLenum glCheckFramebufferStatus(GLenum target)
 Check the completeness status of a framebuffer
 ---
 ### Parameters
-`target` Specify the target to which the framebuffer is bound for `glCheckFramebufferStatus`
-, and the target against which framebuffer completeness of `framebuffer` is checked for
+`target` Specify the target to which the framebuffer is bound for `glCheckFramebufferStatus`,
+and the target against which framebuffer completeness of `framebuffer` is checked for
 `glCheckNamedFramebufferStatus`.
 
 `framebuffer` Specifies the name of the framebuffer object for `glCheckNamedFramebufferStatus`
@@ -32358,8 +32358,8 @@ GLenum glCheckNamedFramebufferStatus(GLuint framebuffer, GLenum target)
 Check the completeness status of a framebuffer
 ---
 ### Parameters
-`target` Specify the target to which the framebuffer is bound for `glCheckFramebufferStatus`
-, and the target against which framebuffer completeness of `framebuffer` is checked for
+`target` Specify the target to which the framebuffer is bound for `glCheckFramebufferStatus`,
+and the target against which framebuffer completeness of `framebuffer` is checked for
 `glCheckNamedFramebufferStatus`.
 
 `framebuffer` Specifies the name of the framebuffer object for `glCheckNamedFramebufferStatus`
@@ -33228,8 +33228,8 @@ Test whether a capability is enabled
 ---
 ### Description
 `glIsEnabled` returns `GL_TRUE` if `cap` is an enabled capability and returns `GL_FALSE`
-otherwise. Boolean states that are indexed may be tested with `glIsEnabledi`. For `glIsEnabledi`
-, `index` specifies the index of the capability to test. `index` must be between zero and the
+otherwise. Boolean states that are indexed may be tested with `glIsEnabledi`. For `glIsEnabledi`,
+`index` specifies the index of the capability to test. `index` must be between zero and the
 count of indexed capabilities for `cap`. Initially all capabilities except `GL_DITHER` are
 disabled; `GL_DITHER` is initially enabled.
 
@@ -33394,8 +33394,8 @@ Test whether a capability is enabled
 ---
 ### Description
 `glIsEnabled` returns `GL_TRUE` if `cap` is an enabled capability and returns `GL_FALSE`
-otherwise. Boolean states that are indexed may be tested with `glIsEnabledi`. For `glIsEnabledi`
-, `index` specifies the index of the capability to test. `index` must be between zero and the
+otherwise. Boolean states that are indexed may be tested with `glIsEnabledi`. For `glIsEnabledi`,
+`index` specifies the index of the capability to test. `index` must be between zero and the
 count of indexed capabilities for `cap`. Initially all capabilities except `GL_DITHER` are
 disabled; `GL_DITHER` is initially enabled.
 
@@ -34205,8 +34205,8 @@ void glClearBufferSubData(GLenum target, GLenum internalformat, GLintptr offset,
 Fill all or part of buffer object's data store with a fixed value
 ---
 ### Parameters
-`target` Specifies the target to which the buffer object is bound for `glClearBufferSubData`
-, which must be one of the buffer binding targets in the following table:
+`target` Specifies the target to which the buffer object is bound for `glClearBufferSubData`,
+which must be one of the buffer binding targets in the following table:
 
 `buffer` Specifies the name of the buffer object for `glClearNamedBufferSubData`.
 
@@ -34288,8 +34288,8 @@ void glClearNamedBufferSubData(GLuint buffer, GLenum internalformat, GLintptr of
 Fill all or part of buffer object's data store with a fixed value
 ---
 ### Parameters
-`target` Specifies the target to which the buffer object is bound for `glClearBufferSubData`
-, which must be one of the buffer binding targets in the following table:
+`target` Specifies the target to which the buffer object is bound for `glClearBufferSubData`,
+which must be one of the buffer binding targets in the following table:
 
 `buffer` Specifies the name of the buffer object for `glClearNamedBufferSubData`.
 
@@ -34714,8 +34714,8 @@ specify integer data.
 `GL_INVALID_OPERATION` is generated if the internal format is not integer and `format`
 specifies integer data.
 
-`GL_INVALID_OPERATION` error is generated if the `xoffset`, `yoffset`, `zoffset`, `width`
-, `height`, and `depth` parameters (or combinations thereof) specify a region that falls outside
+`GL_INVALID_OPERATION` error is generated if the `xoffset`, `yoffset`, `zoffset`, `width`,
+`height`, and `depth` parameters (or combinations thereof) specify a region that falls outside
 the defined texture image array (including border, if any).
 ---
 ### Associated Gets
@@ -35210,8 +35210,8 @@ glGetTexLevelParameter with arguments `GL_TEXTURE_INTERNAL_FORMAT` and
 `glCompressedTexSubImage1D` `glCompressedTextureSubImage1D`
 ---
 ### See Also
-glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D
-, glCompressedTexSubImage2D, glCompressedTexSubImage3D, glCopyTexImage1D,
+glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D,
+glCompressedTexSubImage2D, glCompressedTexSubImage3D, glCopyTexImage1D,
 glCopyTexImage2D, glCopyTexSubImage1D, glCopyTexSubImage2D, glCopyTexSubImage3D,
 glPixelStore, glTexImage2D, glTexImage3D, glTexSubImage1D, glTexSubImage2D,
 glTexSubImage3D, glTexParameter
@@ -35309,8 +35309,8 @@ glGetTexLevelParameter with arguments `GL_TEXTURE_INTERNAL_FORMAT` and
 `glCompressedTexSubImage1D` `glCompressedTextureSubImage1D`
 ---
 ### See Also
-glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D
-, glCompressedTexSubImage2D, glCompressedTexSubImage3D, glCopyTexImage1D,
+glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D,
+glCompressedTexSubImage2D, glCompressedTexSubImage3D, glCopyTexImage1D,
 glCopyTexImage2D, glCopyTexSubImage1D, glCopyTexSubImage2D, glCopyTexSubImage3D,
 glPixelStore, glTexImage2D, glTexImage3D, glTexSubImage1D, glTexSubImage2D,
 glTexSubImage3D, glTexParameter
@@ -35420,8 +35420,8 @@ glGetTexLevelParameter with arguments `GL_TEXTURE_INTERNAL_FORMAT` and
 `glCompressedTexSubImage2D` `glCompressedTextureSubImage2D`
 ---
 ### See Also
-glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D
-, glCompressedTexSubImage1D, glCompressedTexSubImage3D, glCopyTexImage1D,
+glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D,
+glCompressedTexSubImage1D, glCompressedTexSubImage3D, glCopyTexImage1D,
 glCopyTexImage2D, glCopyTexSubImage1D, glCopyTexSubImage2D, glCopyTexSubImage3D,
 glPixelStore, glTexImage2D, glTexImage3D, glTexSubImage1D, glTexSubImage2D,
 glTexSubImage3D, glTexParameter
@@ -35531,8 +35531,8 @@ glGetTexLevelParameter with arguments `GL_TEXTURE_INTERNAL_FORMAT` and
 `glCompressedTexSubImage2D` `glCompressedTextureSubImage2D`
 ---
 ### See Also
-glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D
-, glCompressedTexSubImage1D, glCompressedTexSubImage3D, glCopyTexImage1D,
+glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D,
+glCompressedTexSubImage1D, glCompressedTexSubImage3D, glCopyTexImage1D,
 glCopyTexImage2D, glCopyTexSubImage1D, glCopyTexSubImage2D, glCopyTexSubImage3D,
 glPixelStore, glTexImage2D, glTexImage3D, glTexSubImage1D, glTexSubImage2D,
 glTexSubImage3D, glTexParameter
@@ -35584,8 +35584,8 @@ Texturing allows elements of an image array to be read by shaders. `glCompressed
 and `glCompressedTextureSubImage3D` redefine a contiguous subregion of an existing
 three-dimensional texture image. The texels referenced by `data` replace the portion of the
 existing texture array with x indices `xoffset` and xoffset + width - 1, and the y indices
-`yoffset` and yoffset + height - 1, and the z indices `zoffset` and zoffset + depth - 1
-, inclusive. This region may not include any texels outside the range of the texture array as it was
+`yoffset` and yoffset + height - 1, and the z indices `zoffset` and zoffset + depth - 1,
+inclusive. This region may not include any texels outside the range of the texture array as it was
 originally specified. It is not an error to specify a subtexture with width of 0, but such a
 specification has no effect.
 
@@ -35639,8 +35639,8 @@ glGetTexLevelParameter with arguments `GL_TEXTURE_INTERNAL_FORMAT` and
 `glCompressedTexSubImage3D` `glCompressedTextureSubImage3D`
 ---
 ### See Also
-glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D
-, glCompressedTexSubImage1D, glCompressedTexSubImage2D, glCopyTexImage1D,
+glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D,
+glCompressedTexSubImage1D, glCompressedTexSubImage2D, glCopyTexImage1D,
 glCopyTexImage2D, glCopyTexSubImage1D, glCopyTexSubImage2D, glCopyTexSubImage3D,
 glPixelStore, glTexImage2D, glTexImage3D, glTexSubImage1D, glTexSubImage2D,
 glTexSubImage3D, glTexParameter
@@ -35692,8 +35692,8 @@ Texturing allows elements of an image array to be read by shaders. `glCompressed
 and `glCompressedTextureSubImage3D` redefine a contiguous subregion of an existing
 three-dimensional texture image. The texels referenced by `data` replace the portion of the
 existing texture array with x indices `xoffset` and xoffset + width - 1, and the y indices
-`yoffset` and yoffset + height - 1, and the z indices `zoffset` and zoffset + depth - 1
-, inclusive. This region may not include any texels outside the range of the texture array as it was
+`yoffset` and yoffset + height - 1, and the z indices `zoffset` and zoffset + depth - 1,
+inclusive. This region may not include any texels outside the range of the texture array as it was
 originally specified. It is not an error to specify a subtexture with width of 0, but such a
 specification has no effect.
 
@@ -35747,8 +35747,8 @@ glGetTexLevelParameter with arguments `GL_TEXTURE_INTERNAL_FORMAT` and
 `glCompressedTexSubImage3D` `glCompressedTextureSubImage3D`
 ---
 ### See Also
-glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D
-, glCompressedTexSubImage1D, glCompressedTexSubImage2D, glCopyTexImage1D,
+glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D,
+glCompressedTexSubImage1D, glCompressedTexSubImage2D, glCopyTexImage1D,
 glCopyTexImage2D, glCopyTexSubImage1D, glCopyTexSubImage2D, glCopyTexSubImage3D,
 glPixelStore, glTexImage2D, glTexImage3D, glTexSubImage1D, glTexSubImage2D,
 glTexSubImage3D, glTexParameter
@@ -36256,8 +36256,8 @@ the case for glTexSubImage1D ). For `glCopyTexSubImage1D`, the texture object th
 texture object should be used for the purpose of the call.
 
 The screen-aligned pixel row with left corner at ( `x`,\\ `y` ), and with length `width`
-replaces the portion of the texture array with x indices `xoffset` through xoffset + width - 1
-, inclusive. The destination in the texture array may not include any texels outside the texture
+replaces the portion of the texture array with x indices `xoffset` through xoffset + width - 1,
+inclusive. The destination in the texture array may not include any texels outside the texture
 array as it was originally specified.
 
 The pixels in the row are processed exactly as if glReadPixels had been called, but the process
@@ -36311,8 +36311,8 @@ the case for glTexSubImage1D ). For `glCopyTexSubImage1D`, the texture object th
 texture object should be used for the purpose of the call.
 
 The screen-aligned pixel row with left corner at ( `x`,\\ `y` ), and with length `width`
-replaces the portion of the texture array with x indices `xoffset` through xoffset + width - 1
-, inclusive. The destination in the texture array may not include any texels outside the texture
+replaces the portion of the texture array with x indices `xoffset` through xoffset + width - 1,
+inclusive. The destination in the texture array may not include any texels outside the texture
 array as it was originally specified.
 
 The pixels in the row are processed exactly as if glReadPixels had been called, but the process
@@ -36720,8 +36720,8 @@ glIsProgram
 `glCreateProgram`
 ---
 ### See Also
-glAttachShader, glBindAttribLocation, glCreateShader, glDeleteProgram, glDetachShader
-, glLinkProgram, glUniform, glUseProgram, glValidateProgram
+glAttachShader, glBindAttribLocation, glCreateShader, glDeleteProgram, glDetachShader,
+glLinkProgram, glUniform, glUseProgram, glValidateProgram
 ---
 ### Copyright
 Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This material may be
@@ -36748,8 +36748,8 @@ Create program pipeline objects
 `pipelines` Specifies an array in which names of the new program pipeline objects are stored.
 ---
 ### Description
-`glCreateProgramPipelines` returns `n` previously unused program pipeline names in `pipelines`
-, each representing a new program pipeline object initialized to the default state.
+`glCreateProgramPipelines` returns `n` previously unused program pipeline names in `pipelines`,
+each representing a new program pipeline object initialized to the default state.
 ---
 ### Errors
 `GL_INVALID_VALUE` is generated if `n` is negative.
@@ -36921,8 +36921,8 @@ processor in the evaluation stage. A shader of type `GL_GEOMETRY_SHADER` is a sh
 intended to run on the programmable geometry processor. A shader of type `GL_FRAGMENT_SHADER` is a
 shader that is intended to run on the programmable fragment processor.
 
-When created, a shader object's `GL_SHADER_TYPE` parameter is set to either `GL_COMPUTE_SHADER`
-, `GL_VERTEX_SHADER`, `GL_TESS_CONTROL_SHADER`, `GL_TESS_EVALUATION_SHADER`,
+When created, a shader object's `GL_SHADER_TYPE` parameter is set to either `GL_COMPUTE_SHADER`,
+`GL_VERTEX_SHADER`, `GL_TESS_CONTROL_SHADER`, `GL_TESS_EVALUATION_SHADER`,
 `GL_GEOMETRY_SHADER` or `GL_FRAGMENT_SHADER`, depending on the value of `shaderType`.
 ---
 ### Notes
@@ -37224,8 +37224,8 @@ length, const GLchar *message, const void *userParam); This function is defined 
 calling convention as the GL API functions. In most cases this is defined as APIENTRY, although it
 will vary depending on platform, language and compiler.
 
-Each time a debug message is generated the debug callback function will be invoked with `source`
-, `type`, `id`, and `severity` associated with the message, and `length` set to the length
+Each time a debug message is generated the debug callback function will be invoked with `source`,
+`type`, `id`, and `severity` associated with the message, and `length` set to the length
 of debug message whose character string is in the array pointed to by `message`. `userParam`
 will be set to the value passed in the `userParam` parameter to the most recent call to
 `glDebugMessageCallback`.
@@ -37278,8 +37278,8 @@ The parameters `source`, `type` and `severity` form a filter to select messages 
 of potential messages generated by the GL.
 
 `source` may be `GL_DEBUG_SOURCE_API`, `GL_DEBUG_SOURCE_WINDOW_SYSTEM_`,
-`GL_DEBUG_SOURCE_SHADER_COMPILER`, `GL_DEBUG_SOURCE_THIRD_PARTY`, `GL_DEBUG_SOURCE_APPLICATION`
-, `GL_DEBUG_SOURCE_OTHER` to select messages generated by usage of the GL API, the window system,
+`GL_DEBUG_SOURCE_SHADER_COMPILER`, `GL_DEBUG_SOURCE_THIRD_PARTY`, `GL_DEBUG_SOURCE_APPLICATION`,
+`GL_DEBUG_SOURCE_OTHER` to select messages generated by usage of the GL API, the window system,
 the shader compiler, third party tools or libraries, explicitly by the application or by some other
 source, respectively. It may also take the value `GL_DONT_CARE`. If `source` is not
 `GL_DONT_CARE` then only messages whose source matches `source` will be referenced.
@@ -49428,8 +49428,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -49467,8 +49467,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -49506,8 +49506,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -49545,8 +49545,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -49584,8 +49584,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -49623,8 +49623,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -49662,8 +49662,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -49701,8 +49701,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -49740,8 +49740,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -49779,8 +49779,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -50027,8 +50027,8 @@ Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
-Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`
-, `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
+Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
+`GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
 
 `texture` Specifies the texture object name for `glTextureParameter` functions.
@@ -50067,8 +50067,8 @@ Specify a two-dimensional texture image
 ### Parameters
 `target` Specifies the target texture. Must be `GL_TEXTURE_2D`, `GL_PROXY_TEXTURE_2D`,
 `GL_TEXTURE_1D_ARRAY`, `GL_PROXY_TEXTURE_1D_ARRAY`, `GL_TEXTURE_RECTANGLE`,
-`GL_PROXY_TEXTURE_RECTANGLE`, `GL_TEXTURE_CUBE_MAP_POSITIVE_X`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`
-, `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
+`GL_PROXY_TEXTURE_RECTANGLE`, `GL_TEXTURE_CUBE_MAP_POSITIVE_X`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`,
+`GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Z`, or
 `GL_PROXY_TEXTURE_CUBE_MAP`.
 
@@ -51162,8 +51162,8 @@ correspond to a single pixel.
 
 `type` Specifies the data type of the pixel data. Must be one of `GL_UNSIGNED_BYTE`,
 `GL_BYTE`, `GL_UNSIGNED_SHORT`, `GL_SHORT`, `GL_UNSIGNED_INT`, `GL_INT`, `GL_HALF_FLOAT`,
-`GL_FLOAT`, `GL_UNSIGNED_BYTE_3_3_2`, `GL_UNSIGNED_BYTE_2_3_3_REV`, `GL_UNSIGNED_SHORT_5_6_5`
-, `GL_UNSIGNED_SHORT_5_6_5_REV`, `GL_UNSIGNED_SHORT_4_4_4_4`, `GL_UNSIGNED_SHORT_4_4_4_4_REV`,
+`GL_FLOAT`, `GL_UNSIGNED_BYTE_3_3_2`, `GL_UNSIGNED_BYTE_2_3_3_REV`, `GL_UNSIGNED_SHORT_5_6_5`,
+`GL_UNSIGNED_SHORT_5_6_5_REV`, `GL_UNSIGNED_SHORT_4_4_4_4`, `GL_UNSIGNED_SHORT_4_4_4_4_REV`,
 `GL_UNSIGNED_SHORT_5_5_5_1`, `GL_UNSIGNED_SHORT_1_5_5_5_REV`, `GL_UNSIGNED_INT_8_8_8_8`,
 `GL_UNSIGNED_INT_8_8_8_8_REV`, `GL_UNSIGNED_INT_10_10_10_2`, `GL_UNSIGNED_INT_2_10_10_10_REV`,
 `GL_UNSIGNED_INT_24_8`, `GL_UNSIGNED_INT_10F_11F_11F_REV`, `GL_UNSIGNED_INT_5_9_9_9_REV`, or
@@ -51342,8 +51342,8 @@ Links a program object
 `GL_VERTEX_SHADER` are attached to `program`, they will be used to create an executable that will
 run on the programmable vertex processor. If any shader objects of type `GL_GEOMETRY_SHADER` are
 attached to `program`, they will be used to create an executable that will run on the programmable
-geometry processor. If any shader objects of type `GL_FRAGMENT_SHADER` are attached to `program`
-, they will be used to create an executable that will run on the programmable fragment processor.
+geometry processor. If any shader objects of type `GL_FRAGMENT_SHADER` are attached to `program`,
+they will be used to create an executable that will run on the programmable fragment processor.
 
 The status of the link operation will be stored as part of the program object's state. This value
 will be set to `GL_TRUE` if the program object was linked without errors and is ready for use, and
@@ -51544,8 +51544,8 @@ Specify a logical pixel operation for rendering
 ---
 ### Parameters
 `opcode` Specifies a symbolic constant that selects a logical operation. The following symbols
-are accepted: `GL_CLEAR`, `GL_SET`, `GL_COPY`, `GL_COPY_INVERTED`, `GL_NOOP`, `GL_INVERT`
-, `GL_AND`, `GL_NAND`, `GL_OR`, `GL_NOR`, `GL_XOR`, `GL_EQUIV`, `GL_AND_REVERSE`,
+are accepted: `GL_CLEAR`, `GL_SET`, `GL_COPY`, `GL_COPY_INVERTED`, `GL_NOOP`, `GL_INVERT`,
+`GL_AND`, `GL_NAND`, `GL_OR`, `GL_NOR`, `GL_XOR`, `GL_EQUIV`, `GL_AND_REVERSE`,
 `GL_AND_INVERTED`, `GL_OR_REVERSE`, and `GL_OR_INVERTED`. The initial value is `GL_COPY`.
 
 ---
@@ -51634,8 +51634,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -51889,8 +51889,8 @@ GlGetCompressedTexImage Return a compressed texture image
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glGetCompressedTexImage` and
-`glGetnCompressedTexImage` functions. `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`
-, `GL_TEXTURE_2D_ARRAY`, `GL_TEXTURE_3D`, `GL_TEXTURE_CUBE_MAP_ARRAY`,
+`glGetnCompressedTexImage` functions. `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`,
+`GL_TEXTURE_2D_ARRAY`, `GL_TEXTURE_3D`, `GL_TEXTURE_CUBE_MAP_ARRAY`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_X`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`, and `GL_TEXTURE_CUBE_MAP_NEGATIVE_Z`, `GL_TEXTURE_RECTANGLE`
@@ -51961,8 +51961,8 @@ glGet with argument `GL_PIXEL_PACK_BUFFER_BINDING`
 `glGetCompressedTexImage` `glGetCompressedTextureImage` `glGetnCompressedTexImage`
 ---
 ### See Also
-glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D
-, glCompressedTexSubImage1D, glCompressedTexSubImage2D, glCompressedTexSubImage3D,
+glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D,
+glCompressedTexSubImage1D, glCompressedTexSubImage2D, glCompressedTexSubImage3D,
 glReadPixels, glTexImage1D, glTexImage2D, glTexImage3D, glTexParameter,
 glTexSubImage1D, glTexSubImage2D, glTexSubImage3D
 ---
@@ -52126,8 +52126,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -52428,8 +52428,8 @@ GlGetCompressedTexImage Return a compressed texture image
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glGetCompressedTexImage` and
-`glGetnCompressedTexImage` functions. `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`
-, `GL_TEXTURE_2D_ARRAY`, `GL_TEXTURE_3D`, `GL_TEXTURE_CUBE_MAP_ARRAY`,
+`glGetnCompressedTexImage` functions. `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`,
+`GL_TEXTURE_2D_ARRAY`, `GL_TEXTURE_3D`, `GL_TEXTURE_CUBE_MAP_ARRAY`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_X`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`, and `GL_TEXTURE_CUBE_MAP_NEGATIVE_Z`, `GL_TEXTURE_RECTANGLE`
@@ -52500,8 +52500,8 @@ glGet with argument `GL_PIXEL_PACK_BUFFER_BINDING`
 `glGetCompressedTexImage` `glGetCompressedTextureImage` `glGetnCompressedTexImage`
 ---
 ### See Also
-glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D
-, glCompressedTexSubImage1D, glCompressedTexSubImage2D, glCompressedTexSubImage3D,
+glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D,
+glCompressedTexSubImage1D, glCompressedTexSubImage2D, glCompressedTexSubImage3D,
 glReadPixels, glTexImage1D, glTexImage2D, glTexImage3D, glTexParameter,
 glTexSubImage1D, glTexSubImage2D, glTexSubImage3D
 ---
@@ -52758,8 +52758,8 @@ combination of any of `GL_VERTEX_ATTRIB_ARRAY_BARRIER_BIT`, `GL_ELEMENT_ARRAY_BA
 `GL_TRANSFORM_FEEDBACK_BARRIER_BIT`, `GL_ATOMIC_COUNTER_BARRIER_BIT`, or
 `GL_SHADER_STORAGE_BARRIER_BIT`.
 
-For `glMemoryBarrier`, must be a bitwise combination of any of `GL_ATOMIC_COUNTER_BARRIER_BIT`
-, or `GL_FRAMEBUFFER_BARRIER_BIT`, `GL_SHADER_IMAGE_ACCESS_BARRIER_BIT`,
+For `glMemoryBarrier`, must be a bitwise combination of any of `GL_ATOMIC_COUNTER_BARRIER_BIT`,
+or `GL_FRAMEBUFFER_BARRIER_BIT`, `GL_SHADER_IMAGE_ACCESS_BARRIER_BIT`,
 `GL_SHADER_STORAGE_BARRIER_BIT`. `GL_TEXTURE_FETCH_BARRIER_BIT`, or `GL_UNIFORM_BARRIER_BIT`.
 
 If the special value `GL_ALL_BARRIER_BITS` is specified, all supported barriers for the
@@ -53036,8 +53036,8 @@ combination of any of `GL_VERTEX_ATTRIB_ARRAY_BARRIER_BIT`, `GL_ELEMENT_ARRAY_BA
 `GL_TRANSFORM_FEEDBACK_BARRIER_BIT`, `GL_ATOMIC_COUNTER_BARRIER_BIT`, or
 `GL_SHADER_STORAGE_BARRIER_BIT`.
 
-For `glMemoryBarrier`, must be a bitwise combination of any of `GL_ATOMIC_COUNTER_BARRIER_BIT`
-, or `GL_FRAMEBUFFER_BARRIER_BIT`, `GL_SHADER_IMAGE_ACCESS_BARRIER_BIT`,
+For `glMemoryBarrier`, must be a bitwise combination of any of `GL_ATOMIC_COUNTER_BARRIER_BIT`,
+or `GL_FRAMEBUFFER_BARRIER_BIT`, `GL_SHADER_IMAGE_ACCESS_BARRIER_BIT`,
 `GL_SHADER_STORAGE_BARRIER_BIT`. `GL_TEXTURE_FETCH_BARRIER_BIT`, or `GL_UNIFORM_BARRIER_BIT`.
 
 If the special value `GL_ALL_BARRIER_BITS` is specified, all supported barriers for the
@@ -53380,8 +53380,8 @@ Render multiple sets of primitives from array data
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY` and `GL_PATCHES` are accepted.
 
 `first` Points to an array of starting indices in the enabled arrays.
@@ -53511,8 +53511,8 @@ Render multiple sets of primitives from array data, taking parameters from memor
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY`, and `GL_PATCHES` are accepted.
 
 `indirect` Specifies the address of an array of structures containing the draw parameters.
@@ -53652,8 +53652,8 @@ queries will generate an error.
 If the value of `GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE` is not `GL_NONE`, these queries apply
 to all other framebuffer types:
 
-If `pname` is `GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE`, `GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE`
-, `GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE`, `GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE`,
+If `pname` is `GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE`, `GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE`,
+`GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE`, `GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE`,
 `GL_FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE` or `GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE`, then
 `params` will contain the number of bits in the corresponding red, green, blue, alpha, depth, or
 stencil component of the specified attachment. If the requested component is not present in the
@@ -53702,8 +53702,8 @@ texture is attached. Otherwise, `params` will contain `GL_FALSE`.
 
 If `pname` is `GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER` ; the value of
 `GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME` is the name of a three-dimensional, or a one- or
-two-dimensional array texture; and the value of `GL_FRAMEBUFFER_ATTACHMENT_LAYERED` is `GL_FALSE`
-, then `params` will contain the texture layer which contains the attached image. Otherwise
+two-dimensional array texture; and the value of `GL_FRAMEBUFFER_ATTACHMENT_LAYERED` is `GL_FALSE`,
+then `params` will contain the texture layer which contains the attached image. Otherwise
 `params` will contain zero.
 ---
 ### Notes
@@ -53761,8 +53761,8 @@ Render multiple sets of primitives by specifying indices of array data elements
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY` and `GL_PATCHES` are accepted.
 
 `count` Points to an array of the elements counts.
@@ -53873,8 +53873,8 @@ apply to each index
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY` and `GL_PATCHES` are accepted.
 
 `count` Points to an array of the elements counts.
@@ -53935,8 +53935,8 @@ Render primitives from array data
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY` and `GL_PATCHES` are accepted.
 
 `first` Specifies the starting index in the enabled arrays.
@@ -53998,8 +53998,8 @@ Render indexed primitives from array data, taking parameters from memory
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY`, and `GL_PATCHES` are accepted.
 
 `type` Specifies the type of data in the buffer bound to the `GL_ELEMENT_ARRAY_BUFFER`
@@ -54150,8 +54150,8 @@ Label a named object identified within a namespace
 ### Description
 `glObjectLabel` labels the object identified by `name` within the namespace given by
 `identifier`. `identifier` must be one of `GL_BUFFER`, `GL_SHADER`, `GL_PROGRAM`,
-`GL_VERTEX_ARRAY`, `GL_QUERY`, `GL_PROGRAM_PIPELINE`, `GL_TRANSFORM_FEEDBACK`, `GL_SAMPLER`
-, `GL_TEXTURE`, `GL_RENDERBUFFER`, `GL_FRAMEBUFFER`, to indicate the namespace containing the
+`GL_VERTEX_ARRAY`, `GL_QUERY`, `GL_PROGRAM_PIPELINE`, `GL_TRANSFORM_FEEDBACK`, `GL_SAMPLER`,
+`GL_TEXTURE`, `GL_RENDERBUFFER`, `GL_FRAMEBUFFER`, to indicate the namespace containing the
 names of buffers, shaders, programs, vertex array objects, query objects, program pipelines,
 transform feedback objects, samplers, textures, renderbuffers and frame buffers, respectively.
 
@@ -54355,8 +54355,8 @@ void glPatchParameteri(GLenum pname, GLint value)
 Specifies the parameters for patch primitives
 ---
 ### Parameters
-`pname` Specifies the name of the parameter to set. The symbolc constants `GL_PATCH_VERTICES`
-, `GL_PATCH_DEFAULT_OUTER_LEVEL`, and `GL_PATCH_DEFAULT_INNER_LEVEL` are accepted.
+`pname` Specifies the name of the parameter to set. The symbolc constants `GL_PATCH_VERTICES`,
+`GL_PATCH_DEFAULT_OUTER_LEVEL`, and `GL_PATCH_DEFAULT_INNER_LEVEL` are accepted.
 
 `value` Specifies the new value for the parameter given by `pname`.
 
@@ -54368,8 +54368,8 @@ Specifies the parameters for patch primitives
 `glPatchParameter` specifies the parameters that will be used for patch primitives. `pname`
 specifies the parameter to modify and must be either `GL_PATCH_VERTICES`,
 `GL_PATCH_DEFAULT_OUTER_LEVEL` or `GL_PATCH_DEFAULT_INNER_LEVEL`. For `glPatchParameteri`,
-`value` specifies the new value for the parameter specified by `pname`. For `glPatchParameterfv`
-, `values` specifies the address of an array containing the new values for the parameter specified
+`value` specifies the new value for the parameter specified by `pname`. For `glPatchParameterfv`,
+`values` specifies the address of an array containing the new values for the parameter specified
 by `pname`.
 
 When `pname` is `GL_PATCH_VERTICES`, `value` specifies the number of vertices that will be
@@ -54503,8 +54503,8 @@ void glPatchParameterfv(GLenum pname, const GLfloat *values)
 Specifies the parameters for patch primitives
 ---
 ### Parameters
-`pname` Specifies the name of the parameter to set. The symbolc constants `GL_PATCH_VERTICES`
-, `GL_PATCH_DEFAULT_OUTER_LEVEL`, and `GL_PATCH_DEFAULT_INNER_LEVEL` are accepted.
+`pname` Specifies the name of the parameter to set. The symbolc constants `GL_PATCH_VERTICES`,
+`GL_PATCH_DEFAULT_OUTER_LEVEL`, and `GL_PATCH_DEFAULT_INNER_LEVEL` are accepted.
 
 `value` Specifies the new value for the parameter given by `pname`.
 
@@ -54516,8 +54516,8 @@ Specifies the parameters for patch primitives
 `glPatchParameter` specifies the parameters that will be used for patch primitives. `pname`
 specifies the parameter to modify and must be either `GL_PATCH_VERTICES`,
 `GL_PATCH_DEFAULT_OUTER_LEVEL` or `GL_PATCH_DEFAULT_INNER_LEVEL`. For `glPatchParameteri`,
-`value` specifies the new value for the parameter specified by `pname`. For `glPatchParameterfv`
-, `values` specifies the address of an array containing the new values for the parameter specified
+`value` specifies the new value for the parameter specified by `pname`. For `glPatchParameterfv`,
+`values` specifies the address of an array containing the new values for the parameter specified
 by `pname`.
 
 When `pname` is `GL_PATCH_VERTICES`, `value` specifies the number of vertices that will be
@@ -54703,8 +54703,8 @@ Render primitives from array data
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY` and `GL_PATCHES` are accepted.
 
 `count` Specifies the number of elements to be rendered.
@@ -54796,8 +54796,8 @@ Render indexed primitives from array data, taking parameters from memory
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY`, and `GL_PATCHES` are accepted.
 
 `type` Specifies the type of data in the buffer bound to the `GL_ELEMENT_ARRAY_BUFFER`
@@ -54912,8 +54912,8 @@ GlGetCompressedTexImage Return a compressed texture image
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glGetCompressedTexImage` and
-`glGetnCompressedTexImage` functions. `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`
-, `GL_TEXTURE_2D_ARRAY`, `GL_TEXTURE_3D`, `GL_TEXTURE_CUBE_MAP_ARRAY`,
+`glGetnCompressedTexImage` functions. `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`,
+`GL_TEXTURE_2D_ARRAY`, `GL_TEXTURE_3D`, `GL_TEXTURE_CUBE_MAP_ARRAY`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_X`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_X`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`, `GL_TEXTURE_CUBE_MAP_NEGATIVE_Y`,
 `GL_TEXTURE_CUBE_MAP_POSITIVE_Z`, and `GL_TEXTURE_CUBE_MAP_NEGATIVE_Z`, `GL_TEXTURE_RECTANGLE`
@@ -54984,8 +54984,8 @@ glGet with argument `GL_PIXEL_PACK_BUFFER_BINDING`
 `glGetCompressedTexImage` `glGetCompressedTextureImage` `glGetnCompressedTexImage`
 ---
 ### See Also
-glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D
-, glCompressedTexSubImage1D, glCompressedTexSubImage2D, glCompressedTexSubImage3D,
+glActiveTexture, glCompressedTexImage1D, glCompressedTexImage2D, glCompressedTexImage3D,
+glCompressedTexSubImage1D, glCompressedTexSubImage2D, glCompressedTexSubImage3D,
 glReadPixels, glTexImage1D, glTexImage2D, glTexImage3D, glTexParameter,
 glTexSubImage1D, glTexSubImage2D, glTexSubImage3D
 ---
@@ -55705,8 +55705,8 @@ Select a polygon rasterization mode
 `face` Specifies the polygons that `mode` applies to. Must be `GL_FRONT_AND_BACK` for
 front- and back-facing polygons.
 
-`mode` Specifies how polygons will be rasterized. Accepted values are `GL_POINT`, `GL_LINE`
-, and `GL_FILL`. The initial value is `GL_FILL` for both front- and back-facing polygons.
+`mode` Specifies how polygons will be rasterized. Accepted values are `GL_POINT`, `GL_LINE`,
+and `GL_FILL`. The initial value is `GL_FILL` for both front- and back-facing polygons.
 
 ---
 ### Description
@@ -56468,8 +56468,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -56696,8 +56696,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -56904,8 +56904,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -57142,8 +57142,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -57285,8 +57285,8 @@ Draw multiple instances of a set of elements
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY` and `GL_PATCHES` are accepted.
 
 `count` Specifies the number of elements to be rendered.
@@ -57379,8 +57379,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -57612,8 +57612,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -57882,8 +57882,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -58138,8 +58138,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -58334,8 +58334,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -58477,8 +58477,8 @@ Render primitives from array data, taking parameters from memory
 ---
 ### Parameters
 `mode` Specifies what kind of primitives to render. Symbolic constants `GL_POINTS`,
-`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`
-, `GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
+`GL_LINE_STRIP`, `GL_LINE_LOOP`, `GL_LINES`, `GL_LINE_STRIP_ADJACENCY`, `GL_LINES_ADJACENCY`,
+`GL_TRIANGLE_STRIP`, `GL_TRIANGLE_FAN`, `GL_TRIANGLES`, `GL_TRIANGLE_STRIP_ADJACENCY`,
 `GL_TRIANGLES_ADJACENCY`, and `GL_PATCHES` are accepted.
 
 `indirect` Specifies the address of a structure containing the draw parameters.
@@ -58578,8 +58578,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -58810,8 +58810,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -59036,8 +59036,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -59276,8 +59276,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -59509,8 +59509,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -59678,8 +59678,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -59847,8 +59847,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -60016,8 +60016,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -60185,8 +60185,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -60410,8 +60410,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -60632,8 +60632,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -60869,8 +60869,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -61022,8 +61022,8 @@ correspond to a single pixel.
 
 `type` Specifies the data type of the pixel data. Must be one of `GL_UNSIGNED_BYTE`,
 `GL_BYTE`, `GL_UNSIGNED_SHORT`, `GL_SHORT`, `GL_UNSIGNED_INT`, `GL_INT`, `GL_HALF_FLOAT`,
-`GL_FLOAT`, `GL_UNSIGNED_BYTE_3_3_2`, `GL_UNSIGNED_BYTE_2_3_3_REV`, `GL_UNSIGNED_SHORT_5_6_5`
-, `GL_UNSIGNED_SHORT_5_6_5_REV`, `GL_UNSIGNED_SHORT_4_4_4_4`, `GL_UNSIGNED_SHORT_4_4_4_4_REV`,
+`GL_FLOAT`, `GL_UNSIGNED_BYTE_3_3_2`, `GL_UNSIGNED_BYTE_2_3_3_REV`, `GL_UNSIGNED_SHORT_5_6_5`,
+`GL_UNSIGNED_SHORT_5_6_5_REV`, `GL_UNSIGNED_SHORT_4_4_4_4`, `GL_UNSIGNED_SHORT_4_4_4_4_REV`,
 `GL_UNSIGNED_SHORT_5_5_5_1`, `GL_UNSIGNED_SHORT_1_5_5_5_REV`, `GL_UNSIGNED_INT_8_8_8_8`,
 `GL_UNSIGNED_INT_8_8_8_8_REV`, `GL_UNSIGNED_INT_10_10_10_2`, `GL_UNSIGNED_INT_2_10_10_10_REV`,
 `GL_UNSIGNED_INT_24_8`, `GL_UNSIGNED_INT_10F_11F_11F_REV`, `GL_UNSIGNED_INT_5_9_9_9_REV`, or
@@ -61076,8 +61076,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -61316,8 +61316,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -61565,8 +61565,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -61772,8 +61772,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -61987,8 +61987,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -62184,8 +62184,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -62381,8 +62381,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -62578,8 +62578,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -62728,8 +62728,8 @@ scissor box, in that order.
 ### Description
 `glScissorArrayv` defines rectangles, called scissor boxes, in window coordinates for each
 viewport. `first` specifies the index of the first scissor box to modify and `count` specifies
-the number of scissor boxes to modify. `first` must be less than the value of `GL_MAX_VIEWPORTS`
-, and `first` + `count` must be less than or equal to the value of `GL_MAX_VIEWPORTS`. `v`
+the number of scissor boxes to modify. `first` must be less than the value of `GL_MAX_VIEWPORTS`,
+and `first` + `count` must be less than or equal to the value of `GL_MAX_VIEWPORTS`. `v`
 specifies the address of an array containing integers specifying the lower left corner of the
 scissor boxes, and the width and height of the scissor boxes, in that order.
 
@@ -62811,8 +62811,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -63044,8 +63044,8 @@ specified by `program`.
 The commands `glProgramUniform{1|2|3|4}{f|i|ui}` are used to change the value of the uniform
 variable specified by `location` using the values passed as arguments. The number specified in the
 command should match the number of components in the data type of the specified uniform variable
-(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2
-, etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
+(e.g., `1` for float, int, unsigned int, bool ; `2` for vec2, ivec2, uvec2, bvec2,
+etc.). The suffix `f` indicates that floating-point values are being passed; the suffix `i`
 indicates that integer values are being passed; the suffix `ui` indicates that unsigned integer
 values are being passed, and this type should also match the data type of the specified uniform
 variable. The `i` variants of this function should be used to provide values for uniform variables
@@ -63623,8 +63623,8 @@ glGet with argument `GL_STENCIL_WRITEMASK`, `GL_STENCIL_BACK_WRITEMASK`, or
 `glStencilMask`
 ---
 ### See Also
-glColorMask, glDepthMask, glStencilFunc, glStencilFuncSeparate, glStencilMaskSeparate
-, glStencilOp, glStencilOpSeparate
+glColorMask, glDepthMask, glStencilFunc, glStencilFuncSeparate, glStencilMaskSeparate,
+glStencilOp, glStencilOpSeparate
 ---
 ### Copyright
 Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. This document
@@ -65337,8 +65337,8 @@ above.
 `glGetNamedRenderbufferParameteriv` `glGetRenderbufferParameteriv`
 ---
 ### See Also
-glGenRenderbuffers, glFramebufferRenderbuffer, glBindRenderbuffer, glRenderbufferStorage
-, glRenderbufferStorageMultisample
+glGenRenderbuffers, glFramebufferRenderbuffer, glBindRenderbuffer, glRenderbufferStorage,
+glRenderbufferStorageMultisample
 ---
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -65577,8 +65577,8 @@ above.
 `glGetNamedRenderbufferParameteriv` `glGetRenderbufferParameteriv`
 ---
 ### See Also
-glGenRenderbuffers, glFramebufferRenderbuffer, glBindRenderbuffer, glRenderbufferStorage
-, glRenderbufferStorageMultisample
+glGenRenderbuffers, glFramebufferRenderbuffer, glBindRenderbuffer, glRenderbufferStorage,
+glRenderbufferStorageMultisample
 ---
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
