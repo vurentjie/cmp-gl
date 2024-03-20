@@ -190,8 +190,7 @@ Alpha blend equation is `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBT
 
 
 `GL_BLEND_SRC_ALPHA` `data` returns one value, the symbolic constant identifying the alpha
-source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate
-.
+source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate.
 
 
 `GL_BLEND_SRC_RGB` `data` returns one value, the symbolic constant identifying the RGB source
@@ -360,8 +359,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 
 
 `GL_FRAGMENT_SHADER_DERIVATIVE_HINT` `data` returns one value, a symbolic constant indicating
-the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`
-. See glHint.
+the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`. See glHint.
 
 
 `GL_IMPLEMENTATION_COLOR_READ_FORMAT` `data` returns a single GLenum value indicating the
@@ -657,8 +655,7 @@ counters available to vertex shaders.
 
 
 `GL_MAX_VERTEX_ATTRIBS` `data` returns one value, the maximum number of 4-component generic
-vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib
-.
+vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib.
 
 
 `GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS` `data` returns one value, the maximum number of active
@@ -703,8 +700,7 @@ supported by the current context.
 
 
 `GL_NUM_COMPRESSED_TEXTURE_FORMATS` `data` returns a single integer value indicating the
-number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D
-.
+number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D.
 
 
 `GL_NUM_EXTENSIONS` `data` returns one value, the number of extensions supported by the GL
@@ -1052,8 +1048,7 @@ bound to the target `GL_TEXTURE_CUBE_MAP`. The initial value is 0. See glBindTex
 
 
 `GL_TEXTURE_BINDING_RECTANGLE` `data` returns a single value, the name of the texture
-currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture
-.
+currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture.
 
 
 `GL_TEXTURE_COMPRESSION_HINT` `data` returns a single value indicating the mode of the texture
@@ -1086,8 +1081,7 @@ glBindBufferRange.
 
 `GL_TRANSFORM_FEEDBACK_BUFFER_SIZE` When used with indexed variants of `glGet` (such as
 `glGetInteger64i_v` ), `data` returns a single value, the size of the binding range for each
-transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange
-.
+transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange.
 
 
 `GL_UNIFORM_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
@@ -1487,8 +1481,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -1570,12 +1563,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -1985,8 +1976,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -2068,12 +2058,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -3630,8 +3618,7 @@ If an error is generated, no change is made to the contents of `params`.
 `GL_INVALID_OPERATION` is generated if `pname` is not `GL_CURRENT_VERTEX_ATTRIB` and there is
 no currently bound vertex array object.
 
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `pname` is not an accepted value.
 
@@ -3765,8 +3752,7 @@ If an error is generated, no change is made to the contents of `params`.
 `GL_INVALID_OPERATION` is generated if `pname` is not `GL_CURRENT_VERTEX_ATTRIB` and there is
 no currently bound vertex array object.
 
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `pname` is not an accepted value.
 
@@ -4994,8 +4980,7 @@ glGet with arguments `GL_MAX_VERTEX_ATTRIB_BINDINGS`, `GL_VERTEX_BINDING_DIVISOR
 `glVertexArrayAttribBinding` `glVertexAttribBinding`
 ---
 ### See Also
-glBindVertexBuffer, glVertexAttribFormat, glVertexBindingDivisor, glVertexAttribPointer
-.
+glBindVertexBuffer, glVertexAttribFormat, glVertexBindingDivisor, glVertexAttribPointer.
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -5202,8 +5187,7 @@ returned in `shaders` is specified by `maxCount`.
 If the number of names actually returned is not required (for instance, if it has just been
 obtained by calling glGetProgram ), a value of `NULL` may be passed for count. If no shader
 objects are attached to `program`, a value of 0 will be returned in `count`. The actual number
-of attached shaders can be obtained by calling glGetProgram with the value `GL_ATTACHED_SHADERS`
-.
+of attached shaders can be obtained by calling glGetProgram with the value `GL_ATTACHED_SHADERS`.
 ---
 ### Errors
 `GL_INVALID_VALUE` is generated if `program` is not a value generated by OpenGL.
@@ -5259,8 +5243,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -5342,12 +5325,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -5494,8 +5475,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -5577,12 +5557,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -5660,8 +5638,7 @@ as an indexed target.
 Each `target` represents an indexed array of buffer binding points, as well as a single general
 binding point that can be used by other buffer manipulation functions such as glBindBuffer or
 glMapBuffer. In addition to binding a range of `buffer` to the indexed buffer binding target,
-`glBindBufferRange` also binds the range to the generic buffer binding point specified by `target`
-.
+`glBindBufferRange` also binds the range to the generic buffer binding point specified by `target`.
 
 `offset` specifies the offset in basic machine units into the buffer object `buffer` and
 `size` specifies the amount of data that can be read from the buffer object while used as an
@@ -6119,8 +6096,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -6202,12 +6178,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -6542,8 +6516,7 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`
-. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage3D or another call to `glTexStorage3D` ) will
@@ -7143,8 +7116,7 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`
-. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage2D or another call to `glTexStorage2D` ) will
@@ -7351,8 +7323,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -7434,12 +7405,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -8816,8 +8785,7 @@ log for `pipeline`.
 
 ---
 ### Description
-`glGetProgramPipelineInfoLog` retrieves the info log for the program pipeline object `pipeline`
-. The info log, including its null terminator, is written into the array of characters whose address
+`glGetProgramPipelineInfoLog` retrieves the info log for the program pipeline object `pipeline`. The info log, including its null terminator, is written into the array of characters whose address
 is given by `infoLog`. The maximum number of characters that may be written into `infoLog` is
 given by `bufSize`, and the actual number of characters written into `infoLog` is returned in
 the integer whose address is given by `length`. If `length` is `NULL`, no length is returned.
@@ -8877,8 +8845,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -8960,12 +8927,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -9443,8 +9408,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -9526,12 +9490,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -9924,8 +9886,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -10007,12 +9968,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -10368,8 +10327,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -10451,12 +10409,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -10797,8 +10753,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -10880,12 +10835,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -14938,8 +14891,7 @@ Alpha blend equation is `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBT
 
 
 `GL_BLEND_SRC_ALPHA` `data` returns one value, the symbolic constant identifying the alpha
-source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate
-.
+source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate.
 
 
 `GL_BLEND_SRC_RGB` `data` returns one value, the symbolic constant identifying the RGB source
@@ -15108,8 +15060,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 
 
 `GL_FRAGMENT_SHADER_DERIVATIVE_HINT` `data` returns one value, a symbolic constant indicating
-the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`
-. See glHint.
+the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`. See glHint.
 
 
 `GL_IMPLEMENTATION_COLOR_READ_FORMAT` `data` returns a single GLenum value indicating the
@@ -15405,8 +15356,7 @@ counters available to vertex shaders.
 
 
 `GL_MAX_VERTEX_ATTRIBS` `data` returns one value, the maximum number of 4-component generic
-vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib
-.
+vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib.
 
 
 `GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS` `data` returns one value, the maximum number of active
@@ -15451,8 +15401,7 @@ supported by the current context.
 
 
 `GL_NUM_COMPRESSED_TEXTURE_FORMATS` `data` returns a single integer value indicating the
-number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D
-.
+number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D.
 
 
 `GL_NUM_EXTENSIONS` `data` returns one value, the number of extensions supported by the GL
@@ -15800,8 +15749,7 @@ bound to the target `GL_TEXTURE_CUBE_MAP`. The initial value is 0. See glBindTex
 
 
 `GL_TEXTURE_BINDING_RECTANGLE` `data` returns a single value, the name of the texture
-currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture
-.
+currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture.
 
 
 `GL_TEXTURE_COMPRESSION_HINT` `data` returns a single value indicating the mode of the texture
@@ -15834,8 +15782,7 @@ glBindBufferRange.
 
 `GL_TRANSFORM_FEEDBACK_BUFFER_SIZE` When used with indexed variants of `glGet` (such as
 `glGetInteger64i_v` ), `data` returns a single value, the size of the binding range for each
-transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange
-.
+transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange.
 
 
 `GL_UNIFORM_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
@@ -16062,8 +16009,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -16145,12 +16091,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -16653,8 +16597,7 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`
-. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage3D or another call to `glTexStorage3D` ) will
@@ -17108,8 +17051,7 @@ returned, measured in bytes.
 ### Description
 `glGetBufferSubData` and `glGetNamedBufferSubData` return some or all of the data contents of
 the data store of the specified buffer object. Data starting at byte offset `offset` and extending
-for `size` bytes is copied from the buffer object's data store to the memory pointed to by `data`
-. An error is thrown if the buffer object is currently mapped, or if `offset` and `size`
+for `size` bytes is copied from the buffer object's data store to the memory pointed to by `data`. An error is thrown if the buffer object is currently mapped, or if `offset` and `size`
 together define a range beyond the bounds of the buffer object's data store.
 ---
 ### Notes
@@ -17278,8 +17220,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -17361,12 +17302,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -17555,8 +17494,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -17638,12 +17576,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -17715,8 +17651,7 @@ returned, measured in bytes.
 ### Description
 `glGetBufferSubData` and `glGetNamedBufferSubData` return some or all of the data contents of
 the data store of the specified buffer object. Data starting at byte offset `offset` and extending
-for `size` bytes is copied from the buffer object's data store to the memory pointed to by `data`
-. An error is thrown if the buffer object is currently mapped, or if `offset` and `size`
+for `size` bytes is copied from the buffer object's data store to the memory pointed to by `data`. An error is thrown if the buffer object is currently mapped, or if `offset` and `size`
 together define a range beyond the bounds of the buffer object's data store.
 ---
 ### Notes
@@ -17787,8 +17722,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -17870,12 +17804,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -18002,8 +17934,7 @@ Alpha blend equation is `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBT
 
 
 `GL_BLEND_SRC_ALPHA` `data` returns one value, the symbolic constant identifying the alpha
-source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate
-.
+source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate.
 
 
 `GL_BLEND_SRC_RGB` `data` returns one value, the symbolic constant identifying the RGB source
@@ -18172,8 +18103,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 
 
 `GL_FRAGMENT_SHADER_DERIVATIVE_HINT` `data` returns one value, a symbolic constant indicating
-the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`
-. See glHint.
+the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`. See glHint.
 
 
 `GL_IMPLEMENTATION_COLOR_READ_FORMAT` `data` returns a single GLenum value indicating the
@@ -18469,8 +18399,7 @@ counters available to vertex shaders.
 
 
 `GL_MAX_VERTEX_ATTRIBS` `data` returns one value, the maximum number of 4-component generic
-vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib
-.
+vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib.
 
 
 `GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS` `data` returns one value, the maximum number of active
@@ -18515,8 +18444,7 @@ supported by the current context.
 
 
 `GL_NUM_COMPRESSED_TEXTURE_FORMATS` `data` returns a single integer value indicating the
-number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D
-.
+number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D.
 
 
 `GL_NUM_EXTENSIONS` `data` returns one value, the number of extensions supported by the GL
@@ -18864,8 +18792,7 @@ bound to the target `GL_TEXTURE_CUBE_MAP`. The initial value is 0. See glBindTex
 
 
 `GL_TEXTURE_BINDING_RECTANGLE` `data` returns a single value, the name of the texture
-currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture
-.
+currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture.
 
 
 `GL_TEXTURE_COMPRESSION_HINT` `data` returns a single value indicating the mode of the texture
@@ -18898,8 +18825,7 @@ glBindBufferRange.
 
 `GL_TRANSFORM_FEEDBACK_BUFFER_SIZE` When used with indexed variants of `glGet` (such as
 `glGetInteger64i_v` ), `data` returns a single value, the size of the binding range for each
-transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange
-.
+transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange.
 
 
 `GL_UNIFORM_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
@@ -19126,8 +19052,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -19209,12 +19134,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -19599,8 +19522,7 @@ Alpha blend equation is `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBT
 
 
 `GL_BLEND_SRC_ALPHA` `data` returns one value, the symbolic constant identifying the alpha
-source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate
-.
+source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate.
 
 
 `GL_BLEND_SRC_RGB` `data` returns one value, the symbolic constant identifying the RGB source
@@ -19769,8 +19691,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 
 
 `GL_FRAGMENT_SHADER_DERIVATIVE_HINT` `data` returns one value, a symbolic constant indicating
-the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`
-. See glHint.
+the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`. See glHint.
 
 
 `GL_IMPLEMENTATION_COLOR_READ_FORMAT` `data` returns a single GLenum value indicating the
@@ -20066,8 +19987,7 @@ counters available to vertex shaders.
 
 
 `GL_MAX_VERTEX_ATTRIBS` `data` returns one value, the maximum number of 4-component generic
-vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib
-.
+vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib.
 
 
 `GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS` `data` returns one value, the maximum number of active
@@ -20112,8 +20032,7 @@ supported by the current context.
 
 
 `GL_NUM_COMPRESSED_TEXTURE_FORMATS` `data` returns a single integer value indicating the
-number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D
-.
+number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D.
 
 
 `GL_NUM_EXTENSIONS` `data` returns one value, the number of extensions supported by the GL
@@ -20461,8 +20380,7 @@ bound to the target `GL_TEXTURE_CUBE_MAP`. The initial value is 0. See glBindTex
 
 
 `GL_TEXTURE_BINDING_RECTANGLE` `data` returns a single value, the name of the texture
-currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture
-.
+currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture.
 
 
 `GL_TEXTURE_COMPRESSION_HINT` `data` returns a single value indicating the mode of the texture
@@ -20495,8 +20413,7 @@ glBindBufferRange.
 
 `GL_TRANSFORM_FEEDBACK_BUFFER_SIZE` When used with indexed variants of `glGet` (such as
 `glGetInteger64i_v` ), `data` returns a single value, the size of the binding range for each
-transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange
-.
+transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange.
 
 
 `GL_UNIFORM_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
@@ -20836,8 +20753,7 @@ Alpha blend equation is `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBT
 
 
 `GL_BLEND_SRC_ALPHA` `data` returns one value, the symbolic constant identifying the alpha
-source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate
-.
+source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate.
 
 
 `GL_BLEND_SRC_RGB` `data` returns one value, the symbolic constant identifying the RGB source
@@ -21006,8 +20922,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 
 
 `GL_FRAGMENT_SHADER_DERIVATIVE_HINT` `data` returns one value, a symbolic constant indicating
-the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`
-. See glHint.
+the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`. See glHint.
 
 
 `GL_IMPLEMENTATION_COLOR_READ_FORMAT` `data` returns a single GLenum value indicating the
@@ -21303,8 +21218,7 @@ counters available to vertex shaders.
 
 
 `GL_MAX_VERTEX_ATTRIBS` `data` returns one value, the maximum number of 4-component generic
-vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib
-.
+vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib.
 
 
 `GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS` `data` returns one value, the maximum number of active
@@ -21349,8 +21263,7 @@ supported by the current context.
 
 
 `GL_NUM_COMPRESSED_TEXTURE_FORMATS` `data` returns a single integer value indicating the
-number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D
-.
+number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D.
 
 
 `GL_NUM_EXTENSIONS` `data` returns one value, the number of extensions supported by the GL
@@ -21698,8 +21611,7 @@ bound to the target `GL_TEXTURE_CUBE_MAP`. The initial value is 0. See glBindTex
 
 
 `GL_TEXTURE_BINDING_RECTANGLE` `data` returns a single value, the name of the texture
-currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture
-.
+currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture.
 
 
 `GL_TEXTURE_COMPRESSION_HINT` `data` returns a single value indicating the mode of the texture
@@ -21732,8 +21644,7 @@ glBindBufferRange.
 
 `GL_TRANSFORM_FEEDBACK_BUFFER_SIZE` When used with indexed variants of `glGet` (such as
 `glGetInteger64i_v` ), `data` returns a single value, the size of the binding range for each
-transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange
-.
+transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange.
 
 
 `GL_UNIFORM_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
@@ -22259,8 +22170,7 @@ Alpha blend equation is `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBT
 
 
 `GL_BLEND_SRC_ALPHA` `data` returns one value, the symbolic constant identifying the alpha
-source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate
-.
+source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate.
 
 
 `GL_BLEND_SRC_RGB` `data` returns one value, the symbolic constant identifying the RGB source
@@ -22429,8 +22339,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 
 
 `GL_FRAGMENT_SHADER_DERIVATIVE_HINT` `data` returns one value, a symbolic constant indicating
-the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`
-. See glHint.
+the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`. See glHint.
 
 
 `GL_IMPLEMENTATION_COLOR_READ_FORMAT` `data` returns a single GLenum value indicating the
@@ -22726,8 +22635,7 @@ counters available to vertex shaders.
 
 
 `GL_MAX_VERTEX_ATTRIBS` `data` returns one value, the maximum number of 4-component generic
-vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib
-.
+vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib.
 
 
 `GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS` `data` returns one value, the maximum number of active
@@ -22772,8 +22680,7 @@ supported by the current context.
 
 
 `GL_NUM_COMPRESSED_TEXTURE_FORMATS` `data` returns a single integer value indicating the
-number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D
-.
+number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D.
 
 
 `GL_NUM_EXTENSIONS` `data` returns one value, the number of extensions supported by the GL
@@ -23121,8 +23028,7 @@ bound to the target `GL_TEXTURE_CUBE_MAP`. The initial value is 0. See glBindTex
 
 
 `GL_TEXTURE_BINDING_RECTANGLE` `data` returns a single value, the name of the texture
-currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture
-.
+currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture.
 
 
 `GL_TEXTURE_COMPRESSION_HINT` `data` returns a single value indicating the mode of the texture
@@ -23155,8 +23061,7 @@ glBindBufferRange.
 
 `GL_TRANSFORM_FEEDBACK_BUFFER_SIZE` When used with indexed variants of `glGet` (such as
 `glGetInteger64i_v` ), `data` returns a single value, the size of the binding range for each
-transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange
-.
+transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange.
 
 
 `GL_UNIFORM_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
@@ -24816,8 +24721,7 @@ variable in `varyings` is greater than the constant
 `GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS` and the buffer mode is `GL_SEPARATE_ATTRIBS`.
 
 The total number of components to capture is greater than the constant
-`GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS` and the buffer mode is `GL_INTERLEAVED_ATTRIBS`
-.
+`GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS` and the buffer mode is `GL_INTERLEAVED_ATTRIBS`.
 
 
 ---
@@ -25235,8 +25139,7 @@ Alpha blend equation is `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBT
 
 
 `GL_BLEND_SRC_ALPHA` `data` returns one value, the symbolic constant identifying the alpha
-source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate
-.
+source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate.
 
 
 `GL_BLEND_SRC_RGB` `data` returns one value, the symbolic constant identifying the RGB source
@@ -25405,8 +25308,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 
 
 `GL_FRAGMENT_SHADER_DERIVATIVE_HINT` `data` returns one value, a symbolic constant indicating
-the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`
-. See glHint.
+the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`. See glHint.
 
 
 `GL_IMPLEMENTATION_COLOR_READ_FORMAT` `data` returns a single GLenum value indicating the
@@ -25702,8 +25604,7 @@ counters available to vertex shaders.
 
 
 `GL_MAX_VERTEX_ATTRIBS` `data` returns one value, the maximum number of 4-component generic
-vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib
-.
+vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib.
 
 
 `GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS` `data` returns one value, the maximum number of active
@@ -25748,8 +25649,7 @@ supported by the current context.
 
 
 `GL_NUM_COMPRESSED_TEXTURE_FORMATS` `data` returns a single integer value indicating the
-number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D
-.
+number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D.
 
 
 `GL_NUM_EXTENSIONS` `data` returns one value, the number of extensions supported by the GL
@@ -26097,8 +25997,7 @@ bound to the target `GL_TEXTURE_CUBE_MAP`. The initial value is 0. See glBindTex
 
 
 `GL_TEXTURE_BINDING_RECTANGLE` `data` returns a single value, the name of the texture
-currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture
-.
+currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture.
 
 
 `GL_TEXTURE_COMPRESSION_HINT` `data` returns a single value indicating the mode of the texture
@@ -26131,8 +26030,7 @@ glBindBufferRange.
 
 `GL_TRANSFORM_FEEDBACK_BUFFER_SIZE` When used with indexed variants of `glGet` (such as
 `glGetInteger64i_v` ), `data` returns a single value, the size of the binding range for each
-transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange
-.
+transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange.
 
 
 `GL_UNIFORM_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
@@ -26551,8 +26449,7 @@ Alpha blend equation is `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBT
 
 
 `GL_BLEND_SRC_ALPHA` `data` returns one value, the symbolic constant identifying the alpha
-source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate
-.
+source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate.
 
 
 `GL_BLEND_SRC_RGB` `data` returns one value, the symbolic constant identifying the RGB source
@@ -26721,8 +26618,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 
 
 `GL_FRAGMENT_SHADER_DERIVATIVE_HINT` `data` returns one value, a symbolic constant indicating
-the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`
-. See glHint.
+the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`. See glHint.
 
 
 `GL_IMPLEMENTATION_COLOR_READ_FORMAT` `data` returns a single GLenum value indicating the
@@ -27018,8 +26914,7 @@ counters available to vertex shaders.
 
 
 `GL_MAX_VERTEX_ATTRIBS` `data` returns one value, the maximum number of 4-component generic
-vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib
-.
+vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib.
 
 
 `GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS` `data` returns one value, the maximum number of active
@@ -27064,8 +26959,7 @@ supported by the current context.
 
 
 `GL_NUM_COMPRESSED_TEXTURE_FORMATS` `data` returns a single integer value indicating the
-number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D
-.
+number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D.
 
 
 `GL_NUM_EXTENSIONS` `data` returns one value, the number of extensions supported by the GL
@@ -27413,8 +27307,7 @@ bound to the target `GL_TEXTURE_CUBE_MAP`. The initial value is 0. See glBindTex
 
 
 `GL_TEXTURE_BINDING_RECTANGLE` `data` returns a single value, the name of the texture
-currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture
-.
+currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture.
 
 
 `GL_TEXTURE_COMPRESSION_HINT` `data` returns a single value indicating the mode of the texture
@@ -27447,8 +27340,7 @@ glBindBufferRange.
 
 `GL_TRANSFORM_FEEDBACK_BUFFER_SIZE` When used with indexed variants of `glGet` (such as
 `glGetInteger64i_v` ), `data` returns a single value, the size of the binding range for each
-transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange
-.
+transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange.
 
 
 `GL_UNIFORM_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
@@ -28172,8 +28064,7 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`
-. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -28918,8 +28809,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -29001,12 +28891,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -29316,7 +29204,6 @@ used and must be set to zero and the special value `GL_TIMEOUT_IGNORED`, respect
 and `timeout` are placeholders for anticipated future extensions of sync object capabilities. They
 must have these reserved values in order that existing code calling `glWaitSync` operate properly
 in the presence of such extensions.
-
 . `glWaitSync` will always wait no longer than an implementation-dependent timeout. The duration
 of this timeout in nanoseconds may be queried by calling glGet with the parameter
 `GL_MAX_SERVER_WAIT_TIMEOUT`. There is currently no way to determine whether `glWaitSync`
@@ -31738,8 +31625,7 @@ Alpha blend equation is `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBT
 
 
 `GL_BLEND_SRC_ALPHA` `data` returns one value, the symbolic constant identifying the alpha
-source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate
-.
+source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate.
 
 
 `GL_BLEND_SRC_RGB` `data` returns one value, the symbolic constant identifying the RGB source
@@ -31908,8 +31794,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 
 
 `GL_FRAGMENT_SHADER_DERIVATIVE_HINT` `data` returns one value, a symbolic constant indicating
-the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`
-. See glHint.
+the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`. See glHint.
 
 
 `GL_IMPLEMENTATION_COLOR_READ_FORMAT` `data` returns a single GLenum value indicating the
@@ -32205,8 +32090,7 @@ counters available to vertex shaders.
 
 
 `GL_MAX_VERTEX_ATTRIBS` `data` returns one value, the maximum number of 4-component generic
-vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib
-.
+vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib.
 
 
 `GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS` `data` returns one value, the maximum number of active
@@ -32251,8 +32135,7 @@ supported by the current context.
 
 
 `GL_NUM_COMPRESSED_TEXTURE_FORMATS` `data` returns a single integer value indicating the
-number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D
-.
+number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D.
 
 
 `GL_NUM_EXTENSIONS` `data` returns one value, the number of extensions supported by the GL
@@ -32600,8 +32483,7 @@ bound to the target `GL_TEXTURE_CUBE_MAP`. The initial value is 0. See glBindTex
 
 
 `GL_TEXTURE_BINDING_RECTANGLE` `data` returns a single value, the name of the texture
-currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture
-.
+currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture.
 
 
 `GL_TEXTURE_COMPRESSION_HINT` `data` returns a single value indicating the mode of the texture
@@ -32634,8 +32516,7 @@ glBindBufferRange.
 
 `GL_TRANSFORM_FEEDBACK_BUFFER_SIZE` When used with indexed variants of `glGet` (such as
 `glGetInteger64i_v` ), `data` returns a single value, the size of the binding range for each
-transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange
-.
+transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange.
 
 
 `GL_UNIFORM_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
@@ -33517,8 +33398,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -33600,12 +33480,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -34000,8 +33878,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -34083,12 +33960,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -34454,8 +34329,7 @@ following values:
 `GL_UNIFORM` The query is targeted at the set of active uniforms within `program`.
 
 
-`GL_UNIFORM_BLOCK` The query is targeted at the set of active uniform blocks within `program`
-.
+`GL_UNIFORM_BLOCK` The query is targeted at the set of active uniform blocks within `program`.
 
 
 `GL_PROGRAM_INPUT` The query is targeted at the set of active input variables used by the first
@@ -34561,8 +34435,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -34644,12 +34517,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -35063,8 +34934,7 @@ image is stored in a compressed internal format. The initiali value is `GL_FALSE
 
 
 `GL_TEXTURE_COMPRESSED_IMAGE_SIZE` `params` returns a single integer value, the number of
-unsigned bytes of the compressed texture image that would be returned from glGetCompressedTexImage
-.
+unsigned bytes of the compressed texture image that would be returned from glGetCompressedTexImage.
 
 
 `GL_TEXTURE_BUFFER_OFFSET` `params` returns a single integer value, the offset into the data
@@ -35263,8 +35133,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -35346,12 +35215,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -35730,8 +35597,7 @@ Deletes a program object
 ---
 ### Description
 `glDeleteProgram` frees the memory and invalidates the name associated with the program object
-specified by `program.` This command effectively undoes the effects of a call to glCreateProgram
-.
+specified by `program.` This command effectively undoes the effects of a call to glCreateProgram.
 
 If a program object is in use as part of current rendering state, it will be flagged for deletion,
 but it will not be deleted until it is no longer part of current state for any rendering context. If
@@ -35927,8 +35793,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -36010,12 +35875,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -36513,8 +36376,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -36596,12 +36458,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -37109,8 +36969,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -37192,12 +37051,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -37347,8 +37204,7 @@ If an error is generated, no change is made to the contents of `params`.
 `GL_INVALID_OPERATION` is generated if `pname` is not `GL_CURRENT_VERTEX_ATTRIB` and there is
 no currently bound vertex array object.
 
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `pname` is not an accepted value.
 
@@ -37880,8 +37736,7 @@ Specify whether data read via should be clamped
 `target` Target for color clamping. `target` must be `GL_CLAMP_READ_COLOR`.
 
 
-`clamp` Specifies whether to apply color clamping. `clamp` must be `GL_TRUE` or `GL_FALSE`
-.
+`clamp` Specifies whether to apply color clamping. `clamp` must be `GL_TRUE` or `GL_FALSE`.
 
 ---
 ### Description
@@ -38094,8 +37949,7 @@ interface within `program` which contains the resource and must be one of the fo
 `GL_UNIFORM` The query is targeted at the set of active uniforms within `program`.
 
 
-`GL_UNIFORM_BLOCK` The query is targeted at the set of active uniform blocks within `program`
-.
+`GL_UNIFORM_BLOCK` The query is targeted at the set of active uniform blocks within `program`.
 
 
 `GL_PROGRAM_INPUT` The query is targeted at the set of active input variables used by the first
@@ -39872,8 +39726,7 @@ glDrawRangeElements, glMultiDrawElements, or glMultiDrawArrays.
 `GL_INVALID_OPERATION` is generated by `glEnableVertexArrayAttrib` and
 `glDisableVertexArrayAttrib` if `vaobj` is not the name of an existing vertex array object.
 
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 ---
 ### Associated Gets
 glGet with argument `GL_MAX_VERTEX_ATTRIBS`
@@ -39989,8 +39842,7 @@ otherwise. It can be queried by calling glGetShader with arguments `shader` and
 
 Compilation of a shader can fail for a number of reasons as specified by the OpenGL Shading
 Language Specification. Whether or not the compilation was successful, information about the
-compilation can be obtained from the shader object's information log by calling glGetShaderInfoLog
-.
+compilation can be obtained from the shader object's information log by calling glGetShaderInfoLog.
 ---
 ### Errors
 `GL_INVALID_VALUE` is generated if `shader` is not a value generated by OpenGL.
@@ -40378,8 +40230,7 @@ glDrawRangeElements, glMultiDrawElements, or glMultiDrawArrays.
 `GL_INVALID_OPERATION` is generated by `glEnableVertexArrayAttrib` and
 `glDisableVertexArrayAttrib` if `vaobj` is not the name of an existing vertex array object.
 
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 ---
 ### Associated Gets
 glGet with argument `GL_MAX_VERTEX_ATTRIBS`
@@ -40751,8 +40602,7 @@ interface within `program` to query and must be one of the following values:
 `GL_UNIFORM` The query is targeted at the set of active uniforms within `program`.
 
 
-`GL_UNIFORM_BLOCK` The query is targeted at the set of active uniform blocks within `program`
-.
+`GL_UNIFORM_BLOCK` The query is targeted at the set of active uniform blocks within `program`.
 
 
 `GL_ATOMIC_COUNTER_BUFFER` The query is targeted at the set of active atomic counter buffer
@@ -41207,8 +41057,7 @@ glDrawRangeElements, glMultiDrawElements, or glMultiDrawArrays.
 `GL_INVALID_OPERATION` is generated by `glEnableVertexArrayAttrib` and
 `glDisableVertexArrayAttrib` if `vaobj` is not the name of an existing vertex array object.
 
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 ---
 ### Associated Gets
 glGet with argument `GL_MAX_VERTEX_ATTRIBS`
@@ -41688,8 +41537,7 @@ Set the active program object for a program pipeline object
 ---
 ### Parameters
 `pipeline` Specifies the program pipeline object to set the active program object for.
-`program` Specifies the program object to set as the active program pipeline object `pipeline`
-.
+`program` Specifies the program object to set as the active program pipeline object `pipeline`.
 
 ---
 ### Description
@@ -41850,8 +41698,7 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`
-. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage1D or another call to `glTexStorage1D` ) will
@@ -42109,8 +41956,7 @@ The `GL_QUERY_BUFFER` target is available only if the GL version is 4.4 or great
 `GL_INVALID_ENUM` is generated by `glFlushMappedBufferRange` if `target` is not one of the
 buffer binding targets listed above.
 
-`GL_INVALID_OPERATION` is generated by `glFlushMappedBufferRange` if zero is bound to `target`
-.
+`GL_INVALID_OPERATION` is generated by `glFlushMappedBufferRange` if zero is bound to `target`.
 
 `GL_INVALID_OPERATION` is generated by `glFlushMappedNamedBufferRange` if `buffer` is not the
 name of an existing buffer object.
@@ -42439,8 +42285,7 @@ The `GL_QUERY_BUFFER` target is available only if the GL version is 4.4 or great
 `GL_INVALID_ENUM` is generated by `glFlushMappedBufferRange` if `target` is not one of the
 buffer binding targets listed above.
 
-`GL_INVALID_OPERATION` is generated by `glFlushMappedBufferRange` if zero is bound to `target`
-.
+`GL_INVALID_OPERATION` is generated by `glFlushMappedBufferRange` if zero is bound to `target`.
 
 `GL_INVALID_OPERATION` is generated by `glFlushMappedNamedBufferRange` if `buffer` is not the
 name of an existing buffer object.
@@ -42511,8 +42356,7 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`
-. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage1D or another call to `glTexStorage1D` ) will
@@ -42701,12 +42545,10 @@ void glFramebufferParameteri(GLenum target, GLenum pname, GLint param)
 Set a named parameter of a framebuffer object
 ---
 ### Parameters
-`target` Specifies the target to which the framebuffer is bound for `glFramebufferParameteri`
-.
+`target` Specifies the target to which the framebuffer is bound for `glFramebufferParameteri`.
 
 
-`framebuffer` Specifies the name of the framebuffer object for `glNamedFramebufferParameteri`
-.
+`framebuffer` Specifies the name of the framebuffer object for `glNamedFramebufferParameteri`.
 
 
 `pname` Specifies the framebuffer parameter to be modified.
@@ -42729,15 +42571,13 @@ For `glNamedFramebufferParameteri`, `framebuffer` is the name of the framebuffer
 `GL_FRAMEBUFFER_DEFAULT_WIDTH` `param` specifies the assumed with for a framebuffer object
 with no attachments. If a framebuffer has attachments then the width of those attachments is used,
 otherwise the value of `GL_FRAMEBUFFER_DEFAULT_WIDTH` is used for the framebuffer. `param` must
-be greater than or equal to zero and less than or equal to the value of `GL_MAX_FRAMEBUFFER_WIDTH`
-.
+be greater than or equal to zero and less than or equal to the value of `GL_MAX_FRAMEBUFFER_WIDTH`.
 
 
 `GL_FRAMEBUFFER_DEFAULT_HEIGHT` `param` specifies the assumed height for a framebuffer object
 with no attachments. If a framebuffer has attachments then the height of those attachments is used,
 otherwise the value of `GL_FRAMEBUFFER_DEFAULT_HEIGHT` is used for the framebuffer. `param` must
-be greater than or equal to zero and less than or equal to the value of `GL_MAX_FRAMEBUFFER_HEIGHT`
-.
+be greater than or equal to zero and less than or equal to the value of `GL_MAX_FRAMEBUFFER_HEIGHT`.
 
 
 `GL_FRAMEBUFFER_DEFAULT_LAYERS` `param` specifies the assumed number of layers for a
@@ -43087,12 +42927,10 @@ void glNamedFramebufferParameteri(GLuint framebuffer, GLenum pname, GLint param)
 Set a named parameter of a framebuffer object
 ---
 ### Parameters
-`target` Specifies the target to which the framebuffer is bound for `glFramebufferParameteri`
-.
+`target` Specifies the target to which the framebuffer is bound for `glFramebufferParameteri`.
 
 
-`framebuffer` Specifies the name of the framebuffer object for `glNamedFramebufferParameteri`
-.
+`framebuffer` Specifies the name of the framebuffer object for `glNamedFramebufferParameteri`.
 
 
 `pname` Specifies the framebuffer parameter to be modified.
@@ -43115,15 +42953,13 @@ For `glNamedFramebufferParameteri`, `framebuffer` is the name of the framebuffer
 `GL_FRAMEBUFFER_DEFAULT_WIDTH` `param` specifies the assumed with for a framebuffer object
 with no attachments. If a framebuffer has attachments then the width of those attachments is used,
 otherwise the value of `GL_FRAMEBUFFER_DEFAULT_WIDTH` is used for the framebuffer. `param` must
-be greater than or equal to zero and less than or equal to the value of `GL_MAX_FRAMEBUFFER_WIDTH`
-.
+be greater than or equal to zero and less than or equal to the value of `GL_MAX_FRAMEBUFFER_WIDTH`.
 
 
 `GL_FRAMEBUFFER_DEFAULT_HEIGHT` `param` specifies the assumed height for a framebuffer object
 with no attachments. If a framebuffer has attachments then the height of those attachments is used,
 otherwise the value of `GL_FRAMEBUFFER_DEFAULT_HEIGHT` is used for the framebuffer. `param` must
-be greater than or equal to zero and less than or equal to the value of `GL_MAX_FRAMEBUFFER_HEIGHT`
-.
+be greater than or equal to zero and less than or equal to the value of `GL_MAX_FRAMEBUFFER_HEIGHT`.
 
 
 `GL_FRAMEBUFFER_DEFAULT_LAYERS` `param` specifies the assumed number of layers for a
@@ -43247,8 +43083,7 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`
-. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage2D or another call to `glTexStorage2D` ) will
@@ -44077,8 +43912,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -44160,12 +43994,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -44805,8 +44637,7 @@ image is stored in a compressed internal format. The initiali value is `GL_FALSE
 
 
 `GL_TEXTURE_COMPRESSED_IMAGE_SIZE` `params` returns a single integer value, the number of
-unsigned bytes of the compressed texture image that would be returned from glGetCompressedTexImage
-.
+unsigned bytes of the compressed texture image that would be returned from glGetCompressedTexImage.
 
 
 `GL_TEXTURE_BUFFER_OFFSET` `params` returns a single integer value, the offset into the data
@@ -44954,8 +44785,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -45037,12 +44867,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -45171,8 +44999,7 @@ void glNamedFramebufferDrawBuffers(GLuint framebuffer, GLsizei n, const GLenum *
 Specifies a list of color buffers to be drawn into
 ---
 ### Parameters
-`framebuffer` Specifies the name of the framebuffer object for `glNamedFramebufferDrawBuffers`
-.
+`framebuffer` Specifies the name of the framebuffer object for `glNamedFramebufferDrawBuffers`.
 
 
 `n` Specifies the number of buffers in `bufs`.
@@ -45292,8 +45119,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -45375,12 +45201,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -45655,8 +45479,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -45738,12 +45561,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -45887,8 +45708,7 @@ image is stored in a compressed internal format. The initiali value is `GL_FALSE
 
 
 `GL_TEXTURE_COMPRESSED_IMAGE_SIZE` `params` returns a single integer value, the number of
-unsigned bytes of the compressed texture image that would be returned from glGetCompressedTexImage
-.
+unsigned bytes of the compressed texture image that would be returned from glGetCompressedTexImage.
 
 
 `GL_TEXTURE_BUFFER_OFFSET` `params` returns a single integer value, the offset into the data
@@ -46020,8 +45840,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -46103,12 +45922,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -46244,8 +46061,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -46327,12 +46143,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -46532,8 +46346,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -46615,12 +46428,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -46821,8 +46632,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -46904,12 +46714,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -46986,8 +46794,7 @@ internal format or size of the image.
 `glTexImage3DMultisample` establishes the data storage, format, dimensions and number of samples
 of a multisample texture's image.
 
-`target` must be `GL_TEXTURE_2D_MULTISAMPLE_ARRAY` or `GL_PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY`
-. `width` and `height` are the dimensions in texels of the texture, and must be in the range zero
+`target` must be `GL_TEXTURE_2D_MULTISAMPLE_ARRAY` or `GL_PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY`. `width` and `height` are the dimensions in texels of the texture, and must be in the range zero
 to the value of `GL_MAX_TEXTURE_SIZE` minus one. `depth` is the number of array slices in the
 array texture's image. `samples` specifies the number of samples in the image and must be in the
 range zero to the value of `GL_MAX_SAMPLES` minus one.
@@ -47147,8 +46954,7 @@ If an error is generated, no change is made to the contents of `params`.
 `GL_INVALID_OPERATION` is generated if `pname` is not `GL_CURRENT_VERTEX_ATTRIB` and there is
 no currently bound vertex array object.
 
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `pname` is not an accepted value.
 
@@ -47246,8 +47052,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -47329,12 +47134,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -47773,8 +47576,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -47856,12 +47658,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -48185,8 +47985,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -48268,12 +48067,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -48709,8 +48506,7 @@ image is stored in a compressed internal format. The initiali value is `GL_FALSE
 
 
 `GL_TEXTURE_COMPRESSED_IMAGE_SIZE` `params` returns a single integer value, the number of
-unsigned bytes of the compressed texture image that would be returned from glGetCompressedTexImage
-.
+unsigned bytes of the compressed texture image that would be returned from glGetCompressedTexImage.
 
 
 `GL_TEXTURE_BUFFER_OFFSET` `params` returns a single integer value, the offset into the data
@@ -50279,8 +50075,7 @@ If an error is generated, no change is made to the contents of `params`.
 `GL_INVALID_OPERATION` is generated if `pname` is not `GL_CURRENT_VERTEX_ATTRIB` and there is
 no currently bound vertex array object.
 
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `pname` is not an accepted value.
 
@@ -50336,8 +50131,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -50419,12 +50213,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -51671,8 +51463,7 @@ Attach a buffer object's data store to a buffer texture object
 `texture` Specifies the texture object name for `glTextureBuffer`.
 
 
-`internalformat` Specifies the internal format of the data in the store belonging to `buffer`
-.
+`internalformat` Specifies the internal format of the data in the store belonging to `buffer`.
 
 
 `buffer` Specifies the name of the buffer object whose storage to attach to the active buffer
@@ -52023,8 +51814,7 @@ Attach a buffer object's data store to a buffer texture object
 `texture` Specifies the texture object name for `glTextureBuffer`.
 
 
-`internalformat` Specifies the internal format of the data in the store belonging to `buffer`
-.
+`internalformat` Specifies the internal format of the data in the store belonging to `buffer`.
 
 
 `buffer` Specifies the name of the buffer object whose storage to attach to the active buffer
@@ -52326,8 +52116,7 @@ glDrawRangeElements, glMultiDrawElements, or glMultiDrawArrays.
 `GL_INVALID_OPERATION` is generated by `glEnableVertexArrayAttrib` and
 `glDisableVertexArrayAttrib` if `vaobj` is not the name of an existing vertex array object.
 
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 ---
 ### Associated Gets
 glGet with argument `GL_MAX_VERTEX_ATTRIBS`
@@ -52577,8 +52366,7 @@ Must be `GL_TEXTURE_BUFFER`.
 `texture` Specifies the texture object name for `glTextureBufferRange`.
 
 
-`internalformat` Specifies the internal format of the data in the store belonging to `buffer`
-.
+`internalformat` Specifies the internal format of the data in the store belonging to `buffer`.
 
 
 `buffer` Specifies the name of the buffer object whose storage to attach to the active buffer
@@ -52615,8 +52403,7 @@ fetch are undefined if the specified texel coordinate is negative, or greater th
 clamped number of texels in the texel array.
 ---
 ### Errors
-`GL_INVALID_ENUM` is generated by `glTexBufferRange` if `target` is not `GL_TEXTURE_BUFFER`
-.
+`GL_INVALID_ENUM` is generated by `glTexBufferRange` if `target` is not `GL_TEXTURE_BUFFER`.
 
 `GL_INVALID_OPERATION` is generated by `glTextureBufferRange` if `texture` is not the name of
 an existing texture object.
@@ -52639,8 +52426,7 @@ zero, or if `offset` + `size` is greater than the value of `GL_BUFFER_SIZE` for 
 ### Associated Gets
 glGet with argument `GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT`
 
-glGetTexLevelParameter with arguments `GL_TEXTURE_BUFFER_OFFSET` or `GL_TEXTURE_BUFFER_SIZE`
-.
+glGetTexLevelParameter with arguments `GL_TEXTURE_BUFFER_OFFSET` or `GL_TEXTURE_BUFFER_SIZE`.
 ---
 ### Version Support
 `glTexBufferRange` `glTextureBufferRange`
@@ -53056,8 +52842,7 @@ called.
 higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_VALUE` is generated if `size` is not 1, 2, 3, 4 or (for `glVertexAttribPointer` ),
 `GL_BGRA`.
@@ -53136,8 +52921,7 @@ Must be `GL_TEXTURE_BUFFER`.
 `texture` Specifies the texture object name for `glTextureBufferRange`.
 
 
-`internalformat` Specifies the internal format of the data in the store belonging to `buffer`
-.
+`internalformat` Specifies the internal format of the data in the store belonging to `buffer`.
 
 
 `buffer` Specifies the name of the buffer object whose storage to attach to the active buffer
@@ -53174,8 +52958,7 @@ fetch are undefined if the specified texel coordinate is negative, or greater th
 clamped number of texels in the texel array.
 ---
 ### Errors
-`GL_INVALID_ENUM` is generated by `glTexBufferRange` if `target` is not `GL_TEXTURE_BUFFER`
-.
+`GL_INVALID_ENUM` is generated by `glTexBufferRange` if `target` is not `GL_TEXTURE_BUFFER`.
 
 `GL_INVALID_OPERATION` is generated by `glTextureBufferRange` if `texture` is not the name of
 an existing texture object.
@@ -53198,8 +52981,7 @@ zero, or if `offset` + `size` is greater than the value of `GL_BUFFER_SIZE` for 
 ### Associated Gets
 glGet with argument `GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT`
 
-glGetTexLevelParameter with arguments `GL_TEXTURE_BUFFER_OFFSET` or `GL_TEXTURE_BUFFER_SIZE`
-.
+glGetTexLevelParameter with arguments `GL_TEXTURE_BUFFER_OFFSET` or `GL_TEXTURE_BUFFER_SIZE`.
 ---
 ### Version Support
 `glTexBufferRange` `glTextureBufferRange`
@@ -53304,8 +53086,7 @@ called.
 higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_VALUE` is generated if `size` is not 1, 2, 3, 4 or (for `glVertexAttribPointer` ),
 `GL_BGRA`.
@@ -53453,8 +53234,7 @@ called.
 higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_VALUE` is generated if `size` is not 1, 2, 3, 4 or (for `glVertexAttribPointer` ),
 `GL_BGRA`.
@@ -53544,8 +53324,7 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`
-. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -53712,8 +53491,7 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`
-. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -53842,8 +53620,7 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`
-. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -53972,8 +53749,7 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`
-. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -54102,8 +53878,7 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`
-. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -54251,8 +54026,7 @@ glGet with arguments `GL_MAX_VERTEX_ATTRIB_BINDINGS`, `GL_VERTEX_BINDING_DIVISOR
 `glVertexArrayAttribBinding` `glVertexAttribBinding`
 ---
 ### See Also
-glBindVertexBuffer, glVertexAttribFormat, glVertexBindingDivisor, glVertexAttribPointer
-.
+glBindVertexBuffer, glVertexAttribFormat, glVertexBindingDivisor, glVertexAttribPointer.
 ---
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
@@ -54290,8 +54064,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -54373,12 +54146,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -54450,8 +54221,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -54533,12 +54303,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -54610,8 +54378,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -54693,12 +54460,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -54770,8 +54535,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -54853,12 +54617,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -54930,8 +54692,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -55013,12 +54774,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -55090,8 +54849,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -55173,12 +54931,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -55250,8 +55006,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -55333,12 +55088,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -55410,8 +55163,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -55493,12 +55245,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -55570,8 +55320,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -55653,12 +55402,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -55730,8 +55477,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -55813,12 +55559,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -55890,8 +55634,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -55973,12 +55716,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -56050,8 +55791,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -56133,12 +55873,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -56210,8 +55948,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -56293,12 +56030,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -56370,8 +56105,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -56453,12 +56187,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -56530,8 +56262,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -56613,12 +56344,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -56690,8 +56419,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -56773,12 +56501,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -56850,8 +56576,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -56933,12 +56658,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -57010,8 +56733,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -57093,12 +56815,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -57261,8 +56981,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -57344,12 +57063,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -57468,8 +57185,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -57551,12 +57267,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -57628,8 +57342,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -57711,12 +57424,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -57955,8 +57666,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -58038,12 +57748,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -58286,8 +57994,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -58369,12 +58076,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -58492,8 +58197,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -58575,12 +58279,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -58652,8 +58354,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -58735,12 +58436,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -58812,8 +58511,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -58895,12 +58593,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -59114,8 +58810,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -59197,12 +58892,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -59445,8 +59138,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -59528,12 +59220,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -59663,8 +59353,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -59746,12 +59435,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -59922,8 +59609,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -60005,12 +59691,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -60082,8 +59766,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -60165,12 +59848,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -60242,8 +59923,7 @@ floating point data.
 
 `normalized` For the packed commands, if `GL_TRUE`, then the values are to be converted to
 floating point values by normalizing. Otherwise, they are converted directly to floating-point
-values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`
-.
+values. If `type` indicates a floating-pont format, then `normalized` value must be `GL_FALSE`.
 
 
 `value` For the packed commands, specifies the new packed value to be used for the specified
@@ -60325,12 +60005,10 @@ attributes. `glVertexAttribL` versions are available only if the GL version is 4
 version is 4.4 or higher.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribP*` is used with a `type` other than
-`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`
-.
+`GL_INT_2_10_10_10_REV`, `GL_UNSIGNED_INT_2_10_10_10_REV`, or `GL_UNSIGNED_INT_10F_11F_11F_REV`.
 
 `GL_INVALID_ENUM` is generated if `glVertexAttribL` is used with a `type` other than
 `GL_DOUBLE`.
@@ -60911,8 +60589,7 @@ Bind stages of a program object to a program pipeline
 
 
 `stages` Specifies a set of program stages to bind to the program pipeline object.
-`program` Specifies the program object containing the shader executables to use in `pipeline`
-.
+`program` Specifies the program object containing the shader executables to use in `pipeline`.
 
 ---
 ### Description
@@ -61993,8 +61670,7 @@ Alpha blend equation is `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBT
 
 
 `GL_BLEND_SRC_ALPHA` `data` returns one value, the symbolic constant identifying the alpha
-source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate
-.
+source blend function. The initial value is `GL_ONE`. See glBlendFunc and glBlendFuncSeparate.
 
 
 `GL_BLEND_SRC_RGB` `data` returns one value, the symbolic constant identifying the RGB source
@@ -62163,8 +61839,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 
 
 `GL_FRAGMENT_SHADER_DERIVATIVE_HINT` `data` returns one value, a symbolic constant indicating
-the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`
-. See glHint.
+the mode of the derivative accuracy hint for fragment shaders. The initial value is `GL_DONT_CARE`. See glHint.
 
 
 `GL_IMPLEMENTATION_COLOR_READ_FORMAT` `data` returns a single GLenum value indicating the
@@ -62460,8 +62135,7 @@ counters available to vertex shaders.
 
 
 `GL_MAX_VERTEX_ATTRIBS` `data` returns one value, the maximum number of 4-component generic
-vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib
-.
+vertex attributes accessible to a vertex shader. The value must be at least 16. See glVertexAttrib.
 
 
 `GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS` `data` returns one value, the maximum number of active
@@ -62506,8 +62180,7 @@ supported by the current context.
 
 
 `GL_NUM_COMPRESSED_TEXTURE_FORMATS` `data` returns a single integer value indicating the
-number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D
-.
+number of available compressed texture formats. The minimum value is 4. See glCompressedTexImage2D.
 
 
 `GL_NUM_EXTENSIONS` `data` returns one value, the number of extensions supported by the GL
@@ -62855,8 +62528,7 @@ bound to the target `GL_TEXTURE_CUBE_MAP`. The initial value is 0. See glBindTex
 
 
 `GL_TEXTURE_BINDING_RECTANGLE` `data` returns a single value, the name of the texture
-currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture
-.
+currently bound to the target `GL_TEXTURE_RECTANGLE`. The initial value is 0. See glBindTexture.
 
 
 `GL_TEXTURE_COMPRESSION_HINT` `data` returns a single value indicating the mode of the texture
@@ -62889,8 +62561,7 @@ glBindBufferRange.
 
 `GL_TRANSFORM_FEEDBACK_BUFFER_SIZE` When used with indexed variants of `glGet` (such as
 `glGetInteger64i_v` ), `data` returns a single value, the size of the binding range for each
-transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange
-.
+transform feedback attribute stream. The initial value is 0 for all streams. See glBindBufferRange.
 
 
 `GL_UNIFORM_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
@@ -63691,8 +63362,7 @@ qualifier. In this case, the location of the attribute specified in the shader's
 precedence and may be queried by calling glGetAttribLocation.
 ---
 ### Errors
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_OPERATION` is generated if `name` starts with the reserved prefix \"gl_\".
 
@@ -63807,8 +63477,7 @@ void glDrawBuffers(GLsizei n, const GLenum *bufs)
 Specifies a list of color buffers to be drawn into
 ---
 ### Parameters
-`framebuffer` Specifies the name of the framebuffer object for `glNamedFramebufferDrawBuffers`
-.
+`framebuffer` Specifies the name of the framebuffer object for `glNamedFramebufferDrawBuffers`.
 
 
 `n` Specifies the number of buffers in `bufs`.
@@ -64832,7 +64501,6 @@ object is placed in `values`. The only condition supported is `GL_SYNC_GPU_COMMA
 If `pname` is `GL_SYNC_FLAGS`, a single value representing the flags with which the sync
 object was created is placed in `values`. No flags are currently supported `flags` is expected
 to be used in future extensions to the sync objects.
-
 .
 
 If an error occurs, nothing will be written to `values` or `length`.
@@ -66466,8 +66134,7 @@ If an error is generated, no change is made to the contents of `params`.
 `GL_INVALID_OPERATION` is generated if `pname` is not `GL_CURRENT_VERTEX_ATTRIB` and there is
 no currently bound vertex array object.
 
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `pname` is not an accepted value.
 
@@ -66531,8 +66198,7 @@ each pointer is 0.
 ### Errors
 `GL_INVALID_OPERATION` is generated if no vertex array object is currently bound.
 
-`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`
-.
+`GL_INVALID_VALUE` is generated if `index` is greater than or equal to `GL_MAX_VERTEX_ATTRIBS`.
 
 `GL_INVALID_ENUM` is generated if `pname` is not an accepted value.
 ---
@@ -68358,8 +68024,7 @@ backed by a buffer object, -1 is written to `params`, regardless of the variable
 
 For the property `GL_IS_ROW_MAJOR`, a single integer identifying whether an active variable is a
 row-major matrix is written to `params`. For active variables backed by a buffer object, declared
-as a single matrix or array of matrices, and stored in row-major order, one is written to `params`
-. For all other active variables, zero is written to `params`.
+as a single matrix or array of matrices, and stored in row-major order, one is written to `params`. For all other active variables, zero is written to `params`.
 
 For the property `GL_ATOMIC_COUNTER_BUFFER_INDEX`, a single integer identifying the index of the
 active atomic counter buffer containing an active variable is written to `params`. If the variable
@@ -69236,8 +68901,7 @@ when incrementing the maximum representable unsigned value.
 maximum representable unsigned value when decrementing a stencil buffer value of zero.
 `GL_INVERT` Bitwise inverts the current stencil buffer value.
 Stencil buffer values are treated as unsigned integers. When incremented and decremented, values
-are clamped to 0 and 2 n - 1, where n is the value returned by querying `GL_STENCIL_BITS`
-.
+are clamped to 0 and 2 n - 1, where n is the value returned by querying `GL_STENCIL_BITS`.
 
 The other two arguments to `glStencilOp` specify stencil buffer actions that depend on whether
 subsequent depth buffer tests succeed ( `dppass` ) or fail ( `dpfail` ) (see glDepthFunc ). The
@@ -69344,8 +69008,7 @@ when incrementing the maximum representable unsigned value.
 maximum representable unsigned value when decrementing a stencil buffer value of zero.
 `GL_INVERT` Bitwise inverts the current stencil buffer value.
 Stencil buffer values are treated as unsigned integers. When incremented and decremented, values
-are clamped to 0 and 2 n - 1, where n is the value returned by querying `GL_STENCIL_BITS`
-.
+are clamped to 0 and 2 n - 1, where n is the value returned by querying `GL_STENCIL_BITS`.
 
 The other two arguments to `glStencilOpSeparate` specify stencil buffer actions that depend on
 whether subsequent depth buffer tests succeed ( `dppass` ) or fail ( `dpfail` ) (see glDepthFunc
@@ -70209,8 +69872,7 @@ link could have failed because the number of active uniforms exceeded the limit.
 
 `glGetUniformBlockIndex` returns the uniform block index for the uniform block named
 `uniformBlockName` of `program`. If `uniformBlockName` does not identify an active uniform
-block of `program`, `glGetUniformBlockIndex` returns the special identifier, `GL_INVALID_INDEX`
-. Indices of the active uniform blocks of a program are assigned in consecutive order, beginning
+block of `program`, `glGetUniformBlockIndex` returns the special identifier, `GL_INVALID_INDEX`. Indices of the active uniform blocks of a program are assigned in consecutive order, beginning
 with zero.
 ---
 ### Errors
@@ -70270,8 +69932,7 @@ passed to glTransformFeedbackVaryings, and an `index` of the value of
 `GL_TRANSFORM_FEEDBACK_VARYINGS` minus one selects the last such variable.
 
 The name of the selected varying is returned as a null-terminated string in `name`. The actual
-number of characters written into `name`, excluding the null terminator, is returned in `length`
-. If `length` is NULL, no length is returned. The maximum number of characters that may be written
+number of characters written into `name`, excluding the null terminator, is returned in `length`. If `length` is NULL, no length is returned. The maximum number of characters that may be written
 into `name`, including the null terminator, is specified by `bufSize`.
 
 The length of the longest varying name in program is given by
@@ -70279,8 +69940,7 @@ The length of the longest varying name in program is given by
 
 For the selected varying variable, its type is returned into `type`. The size of the varying is
 returned into `size`. The value in `size` is in units of the type returned in `type`. The type
-returned can be any of the scalar, vector, or matrix attribute types returned by glGetActiveAttrib
-. If an error occurred, the return parameters `length`, `size`, `type` and `name` will be
+returned can be any of the scalar, vector, or matrix attribute types returned by glGetActiveAttrib. If an error occurred, the return parameters `length`, `size`, `type` and `name` will be
 unmodified. This command will return as much information about the varying variables as possible. If
 no information is available, `length` will be set to zero and `name` will be an empty string.
 This situation could arise if `glGetTransformFeedbackVarying` is called after a failed link.
@@ -71270,8 +70930,7 @@ Query information about an active uniform block
 `params` Specifies the address of a variable to receive the result of the query.
 ---
 ### Description
-`glGetActiveUniformBlockiv` retrieves information about an active uniform block within `program`
-.
+`glGetActiveUniformBlockiv` retrieves information about an active uniform block within `program`.
 
 `program` must be the name of a program object for which the command glLinkProgram must have
 been called in the past, although it is not required that glLinkProgram must have succeeded. The
