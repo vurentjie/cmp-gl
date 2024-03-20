@@ -8,7 +8,6 @@ return function()
         value = [[
 ```c
 void glUniform3iv(GLint location, GLsizei count, const GLint *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -79,6 +78,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -173,7 +173,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetShaderPrecisionFormat(GLenum shaderType, GLenum precisionType, GLint *range, GLint *precision)
-
 ```
 Retrieve the range and precision for numeric formats supported by the shader compiler
 ---
@@ -214,6 +213,7 @@ eps, then the integer addressed by `precision` will contain floor(-log2(eps)).
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -227,7 +227,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform4iv(GLint location, GLsizei count, const GLint *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -298,6 +297,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -392,7 +392,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetShaderSource(GLuint shader, GLsizei bufSize, GLsizei *length, GLchar *source)
-
 ```
 Returns the source code string from a shader object
 ---
@@ -451,7 +450,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform1uiv(GLint location, GLsizei count, const GLuint *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -522,6 +520,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -616,7 +615,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 const GLubyte *glGetString(GLenum name)
-
 ```
 Return a string describing the current GL connection
 ---
@@ -654,6 +652,7 @@ major_number.minor_number major_number.minor_number.release_number
 
 Vendor-specific information may follow the version number. Its format depends on the
 implementation, but a space always separates the version number and the vendor-specific information.
+
 All strings are null-terminated.
 ---
 ### Notes
@@ -689,7 +688,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glUniform2uiv(GLint location, GLsizei count, const GLuint *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -760,6 +758,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -854,7 +853,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 const GLubyte *glGetStringi(GLenum name, GLuint index)
-
 ```
 Return a string describing the current GL connection
 ---
@@ -892,6 +890,7 @@ major_number.minor_number major_number.minor_number.release_number
 
 Vendor-specific information may follow the version number. Its format depends on the
 implementation, but a space always separates the version number and the vendor-specific information.
+
 All strings are null-terminated.
 ---
 ### Notes
@@ -927,7 +926,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glUniform3uiv(GLint location, GLsizei count, const GLuint *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -998,6 +996,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -1092,7 +1091,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 GLuint glGetSubroutineIndex(GLuint program, GLenum shadertype, const GLchar *name)
-
 ```
 Retrieve the index of a subroutine uniform of a given shader stage within a program
 ---
@@ -1113,6 +1111,7 @@ null-terminated name of the subroutine uniform whose name to query.
 If `name` is not the name of a subroutine uniform in the shader stage, `GL_INVALID_INDEX` is
 returned, but no error is generated. If `name` is the name of a subroutine uniform in the shader
 stage, a value between zero and the value of `GL_ACTIVE_SUBROUTINES` minus one will be returned.
+
 Subroutine indices are assigned using consecutive integers in the range from zero to the value of
 `GL_ACTIVE_SUBROUTINES` minus one for the shader stage.
 ---
@@ -1130,6 +1129,7 @@ glGetProgram, glGetActiveSubroutineUniform, glGetActiveSubroutineUniformName
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -1143,7 +1143,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform4uiv(GLint location, GLsizei count, const GLuint *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -1214,6 +1213,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -1308,7 +1308,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 GLint glGetSubroutineUniformLocation(GLuint program, GLenum shadertype, const GLchar *name)
-
 ```
 Retrieve the location of a subroutine uniform of a given shader stage within a program
 ---
@@ -1328,6 +1327,7 @@ identical to glGetUniformLocation.
 If `name` is not the name of a subroutine uniform in the shader stage, -1 is returned, but no
 error is generated. If `name` is the name of a subroutine uniform in the shader stage, a value
 between zero and the value of `GL_ACTIVE_SUBROUTINE_LOCATIONS` minus one will be returned.
+
 Subroutine locations are assigned using consecutive integers in the range from zero to the value of
 `GL_ACTIVE_SUBROUTINE_LOCATIONS` minus one for the shader stage. For active subroutine uniforms
 declared as arrays, the declared array elements are assigned consecutive locations.
@@ -1347,6 +1347,7 @@ glGetUniformLocation
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -1360,7 +1361,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniformMatrix2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -1431,6 +1431,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -1525,7 +1526,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetSynciv(GLsync sync, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values)
-
 ```
 Query the properties of a sync object
 ---
@@ -1579,6 +1579,7 @@ glFenceSync, glWaitSync, glClientWaitSync
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -1592,7 +1593,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniformMatrix3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -1663,6 +1663,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -1757,7 +1758,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetTexImage(GLenum target, GLint level, GLenum format, GLenum type, void * pixels)
-
 ```
 GlGetTexImage Return a texture image
 ---
@@ -1824,6 +1824,7 @@ set to the width of the texture image and height set to 1 for 1D images, or to t
 texture image for 2D images.
 
 If the selected texture image does not contain four components, the following mappings are applied.
+
 Single-component textures are treated as RGBA buffers with red set to the single-component value,
 green set to 0, blue set to 0, and alpha set to 1. Two-component textures are treated as RGBA
 buffers with red set to the value of component zero, alpha set to the value of component one, and
@@ -1860,12 +1861,12 @@ If an error is generated, no change is made to the contents of `pixels`.
         value = [[
 ```c
 void glTextureParameterIuiv(GLuint texture, GLenum pname, const GLuint *params)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -1899,7 +1900,6 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glGetnTexImage(GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels)
-
 ```
 GlGetTexImage Return a texture image
 ---
@@ -1966,6 +1966,7 @@ set to the width of the texture image and height set to 1 for 1D images, or to t
 texture image for 2D images.
 
 If the selected texture image does not contain four components, the following mappings are applied.
+
 Single-component textures are treated as RGBA buffers with red set to the single-component value,
 green set to 0, blue set to 0, and alpha set to 1. Two-component textures are treated as RGBA
 buffers with red set to the value of component zero, alpha set to the value of component one, and
@@ -2002,12 +2003,12 @@ If an error is generated, no change is made to the contents of `pixels`.
         value = [[
 ```c
 void glTexStorage1D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width)
-
 ```
 Simultaneously specify storage for all levels of a one-dimensional texture
 ---
 ### Parameters
 `target` Specifies the target to which the texture object is bound for `glTexStorage1D`.
+
 Must be one of `GL_TEXTURE_1D` or `GL_PROXY_TEXTURE_1D`.
 
 `texture` Specifies the texture object name for `glTextureStorage1D`. The effective target of
@@ -2060,7 +2061,6 @@ the dimensions or format of the object.
         value = [[
 ```c
 void glGetTextureImage(GLuint texture, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels)
-
 ```
 GlGetTexImage Return a texture image
 ---
@@ -2127,6 +2127,7 @@ set to the width of the texture image and height set to 1 for 1D images, or to t
 texture image for 2D images.
 
 If the selected texture image does not contain four components, the following mappings are applied.
+
 Single-component textures are treated as RGBA buffers with red set to the single-component value,
 green set to 0, blue set to 0, and alpha set to 1. Two-component textures are treated as RGBA
 buffers with red set to the value of component zero, alpha set to the value of component one, and
@@ -2163,12 +2164,12 @@ If an error is generated, no change is made to the contents of `pixels`.
         value = [[
 ```c
 void glTextureStorage1D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width)
-
 ```
 Simultaneously specify storage for all levels of a one-dimensional texture
 ---
 ### Parameters
 `target` Specifies the target to which the texture object is bound for `glTexStorage1D`.
+
 Must be one of `GL_TEXTURE_1D` or `GL_PROXY_TEXTURE_1D`.
 
 `texture` Specifies the texture object name for `glTextureStorage1D`. The effective target of
@@ -2221,7 +2222,6 @@ the dimensions or format of the object.
         value = [[
 ```c
 void glGetTexLevelParameterfv(GLenum target, GLint level, GLenum pname, GLfloat * params)
-
 ```
 Return texture parameter values for a specific level of detail
 ---
@@ -2363,12 +2363,12 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTexStorage2D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height)
-
 ```
 Simultaneously specify storage for all levels of a two-dimensional or one-dimensional array texture
 ---
 ### Parameters
 `target` Specifies the target to which the texture object is bound for `glTexStorage2D`.
+
 Must be one of `GL_TEXTURE_2D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_RECTANGLE`,
 `GL_TEXTURE_CUBE_MAP`, `GL_PROXY_TEXTURE_2D`, `GL_PROXY_TEXTURE_1D_ARRAY`,
 `GL_PROXY_TEXTURE_RECTANGLE`, or `GL_PROXY_TEXTURE_CUBE_MAP`.
@@ -2435,7 +2435,6 @@ the dimensions or format of the object.
         value = [[
 ```c
 void glGetTexLevelParameteriv(GLenum target, GLint level, GLenum pname, GLint * params)
-
 ```
 Return texture parameter values for a specific level of detail
 ---
@@ -2577,12 +2576,12 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTextureStorage2D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height)
-
 ```
 Simultaneously specify storage for all levels of a two-dimensional or one-dimensional array texture
 ---
 ### Parameters
 `target` Specifies the target to which the texture object is bound for `glTexStorage2D`.
+
 Must be one of `GL_TEXTURE_2D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_RECTANGLE`,
 `GL_TEXTURE_CUBE_MAP`, `GL_PROXY_TEXTURE_2D`, `GL_PROXY_TEXTURE_1D_ARRAY`,
 `GL_PROXY_TEXTURE_RECTANGLE`, or `GL_PROXY_TEXTURE_CUBE_MAP`.
@@ -2649,7 +2648,6 @@ the dimensions or format of the object.
         value = [[
 ```c
 void glGetTextureLevelParameterfv(GLuint texture, GLint level, GLenum pname, GLfloat *params)
-
 ```
 Return texture parameter values for a specific level of detail
 ---
@@ -2791,7 +2789,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTexStorage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)
-
 ```
 Specify storage for a two-dimensional multisample texture
 ---
@@ -2861,6 +2858,7 @@ glTexImage2D, glTexImage2DMultisample, glTexStorage1D, glTexStorage3D.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -2874,7 +2872,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetTextureLevelParameteriv(GLuint texture, GLint level, GLenum pname, GLint *params)
-
 ```
 Return texture parameter values for a specific level of detail
 ---
@@ -3016,7 +3013,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTextureStorage2DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)
-
 ```
 Specify storage for a two-dimensional multisample texture
 ---
@@ -3086,6 +3082,7 @@ glTexImage2D, glTexImage2DMultisample, glTexStorage1D, glTexStorage3D.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -3099,7 +3096,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetTexParameterfv(GLenum target, GLenum pname, GLfloat * params)
-
 ```
 Return texture parameter values
 ---
@@ -3180,6 +3176,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glTexParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -3195,6 +3192,7 @@ view. See glTextureView.
 to its parent. See glTextureView.
 
 `GL_TEXTURE_VIEW_NUM_LAYERS` Returns a single-valued number of layers in a texture array view.
+
 See glTextureView.
 
 `GL_TEXTURE_IMMUTABLE_LEVELS` Returns a single-valued number of immutable texture levels in a
@@ -3262,13 +3260,13 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTexStorage3D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth)
-
 ```
 Simultaneously specify storage for all levels of a three-dimensional, two-dimensional array or
 cube-map array texture
 ---
 ### Parameters
 `target` Specifies the target to which the texture object is bound for `glTexStorage3D`.
+
 Must be one of `GL_TEXTURE_3D`, `GL_TEXTURE_2D_ARRAY`, `GL_TEXTURE_CUBE_MAP_ARRAY`,
 `GL_PROXY_TEXTURE_3D`, `GL_PROXY_TEXTURE_2D_ARRAY` or `GL_PROXY_TEXTURE_CUBE_MAP_ARRAY`.
 
@@ -3332,7 +3330,6 @@ the dimensions or format of the object.
         value = [[
 ```c
 void glGetTexParameteriv(GLenum target, GLenum pname, GLint * params)
-
 ```
 Return texture parameter values
 ---
@@ -3413,6 +3410,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glTexParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -3428,6 +3426,7 @@ view. See glTextureView.
 to its parent. See glTextureView.
 
 `GL_TEXTURE_VIEW_NUM_LAYERS` Returns a single-valued number of layers in a texture array view.
+
 See glTextureView.
 
 `GL_TEXTURE_IMMUTABLE_LEVELS` Returns a single-valued number of immutable texture levels in a
@@ -3495,13 +3494,13 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTextureStorage3D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth)
-
 ```
 Simultaneously specify storage for all levels of a three-dimensional, two-dimensional array or
 cube-map array texture
 ---
 ### Parameters
 `target` Specifies the target to which the texture object is bound for `glTexStorage3D`.
+
 Must be one of `GL_TEXTURE_3D`, `GL_TEXTURE_2D_ARRAY`, `GL_TEXTURE_CUBE_MAP_ARRAY`,
 `GL_PROXY_TEXTURE_3D`, `GL_PROXY_TEXTURE_2D_ARRAY` or `GL_PROXY_TEXTURE_CUBE_MAP_ARRAY`.
 
@@ -3565,7 +3564,6 @@ the dimensions or format of the object.
         value = [[
 ```c
 void glGetTexParameterIiv(GLenum target, GLenum pname, GLint * params)
-
 ```
 Return texture parameter values
 ---
@@ -3646,6 +3644,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glTexParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -3661,6 +3660,7 @@ view. See glTextureView.
 to its parent. See glTextureView.
 
 `GL_TEXTURE_VIEW_NUM_LAYERS` Returns a single-valued number of layers in a texture array view.
+
 See glTextureView.
 
 `GL_TEXTURE_IMMUTABLE_LEVELS` Returns a single-valued number of immutable texture levels in a
@@ -3728,7 +3728,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTexStorage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations)
-
 ```
 Specify storage for a two-dimensional multisample array texture
 ---
@@ -3808,6 +3807,7 @@ glTexStorage3D.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -3821,7 +3821,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetTexParameterIuiv(GLenum target, GLenum pname, GLuint * params)
-
 ```
 Return texture parameter values
 ---
@@ -3902,6 +3901,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glTexParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -3917,6 +3917,7 @@ view. See glTextureView.
 to its parent. See glTextureView.
 
 `GL_TEXTURE_VIEW_NUM_LAYERS` Returns a single-valued number of layers in a texture array view.
+
 See glTextureView.
 
 `GL_TEXTURE_IMMUTABLE_LEVELS` Returns a single-valued number of immutable texture levels in a
@@ -3984,7 +3985,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTextureStorage3DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations)
-
 ```
 Specify storage for a two-dimensional multisample array texture
 ---
@@ -4064,6 +4064,7 @@ glTexStorage3D.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -4077,7 +4078,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetTextureParameterfv(GLuint texture, GLenum pname, GLfloat *params)
-
 ```
 Return texture parameter values
 ---
@@ -4158,6 +4158,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glTexParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -4173,6 +4174,7 @@ view. See glTextureView.
 to its parent. See glTextureView.
 
 `GL_TEXTURE_VIEW_NUM_LAYERS` Returns a single-valued number of layers in a texture array view.
+
 See glTextureView.
 
 `GL_TEXTURE_IMMUTABLE_LEVELS` Returns a single-valued number of immutable texture levels in a
@@ -4240,7 +4242,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void * pixels)
-
 ```
 Specify a one-dimensional texture subimage
 ---
@@ -4371,7 +4372,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetTextureParameteriv(GLuint texture, GLenum pname, GLint *params)
-
 ```
 Return texture parameter values
 ---
@@ -4452,6 +4452,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glTexParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -4467,6 +4468,7 @@ view. See glTextureView.
 to its parent. See glTextureView.
 
 `GL_TEXTURE_VIEW_NUM_LAYERS` Returns a single-valued number of layers in a texture array view.
+
 See glTextureView.
 
 `GL_TEXTURE_IMMUTABLE_LEVELS` Returns a single-valued number of immutable texture levels in a
@@ -4534,7 +4536,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void *pixels)
-
 ```
 Specify a one-dimensional texture subimage
 ---
@@ -4665,7 +4666,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetTextureParameterIiv(GLuint texture, GLenum pname, GLint *params)
-
 ```
 Return texture parameter values
 ---
@@ -4746,6 +4746,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glTexParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -4761,6 +4762,7 @@ view. See glTextureView.
 to its parent. See glTextureView.
 
 `GL_TEXTURE_VIEW_NUM_LAYERS` Returns a single-valued number of layers in a texture array view.
+
 See glTextureView.
 
 `GL_TEXTURE_IMMUTABLE_LEVELS` Returns a single-valued number of immutable texture levels in a
@@ -4828,7 +4830,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void * pixels)
-
 ```
 Specify a two-dimensional texture subimage
 ---
@@ -4905,6 +4906,7 @@ the returned value of `GL_MAX_TEXTURE_SIZE`.
 `GL_INVALID_VALUE` is generated if xoffset < - b, xoffset + width > w - b,
 yoffset < - b, or yoffset + height > h - b, where w is the `GL_TEXTURE_WIDTH`, h
 is the `GL_TEXTURE_HEIGHT`, and b is the border width of the texture image being modified.
+
 Note that w and h include twice the border width.
 
 `GL_INVALID_VALUE` is generated if `width` or `height` is less than 0.
@@ -4964,7 +4966,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetTextureParameterIuiv(GLuint texture, GLenum pname, GLuint *params)
-
 ```
 Return texture parameter values
 ---
@@ -5045,6 +5046,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glTexParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -5060,6 +5062,7 @@ view. See glTextureView.
 to its parent. See glTextureView.
 
 `GL_TEXTURE_VIEW_NUM_LAYERS` Returns a single-valued number of layers in a texture array view.
+
 See glTextureView.
 
 `GL_TEXTURE_IMMUTABLE_LEVELS` Returns a single-valued number of immutable texture levels in a
@@ -5127,7 +5130,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *pixels)
-
 ```
 Specify a two-dimensional texture subimage
 ---
@@ -5204,6 +5206,7 @@ the returned value of `GL_MAX_TEXTURE_SIZE`.
 `GL_INVALID_VALUE` is generated if xoffset < - b, xoffset + width > w - b,
 yoffset < - b, or yoffset + height > h - b, where w is the `GL_TEXTURE_WIDTH`, h
 is the `GL_TEXTURE_HEIGHT`, and b is the border width of the texture image being modified.
+
 Note that w and h include twice the border width.
 
 `GL_INVALID_VALUE` is generated if `width` or `height` is less than 0.
@@ -5263,7 +5266,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, GLsizei bufSize, void *pixels)
-
 ```
 Retrieve a sub-region of a texture image from a texture object
 ---
@@ -5370,6 +5372,7 @@ glTexImage3D, glTexSubImage1D, glTexSubImage2D, glTexSubImage3D
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -5383,7 +5386,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * pixels)
-
 ```
 Specify a three-dimensional texture subimage
 ---
@@ -5520,7 +5522,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetTransformFeedbackiv(GLuint xfb, GLenum pname, GLint *param)
-
 ```
 Query the state of a transform feedback object.
 ---
@@ -5602,6 +5603,7 @@ glBindTransformFeedback
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -5615,7 +5617,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels)
-
 ```
 Specify a three-dimensional texture subimage
 ---
@@ -5752,7 +5753,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetTransformFeedbacki_v(GLuint xfb, GLenum pname, GLuint index, GLint *param)
-
 ```
 Query the state of a transform feedback object.
 ---
@@ -5834,6 +5834,7 @@ glBindTransformFeedback
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -5847,7 +5848,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTextureBarrier(void)
-
 ```
 Controls the ordering of reads and writes to rendered fragments across drawing commands
 ---
@@ -5874,6 +5874,7 @@ glMemoryBarrier
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -5887,7 +5888,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetTransformFeedbacki64_v(GLuint xfb, GLenum pname, GLuint index, GLint64 *param)
-
 ```
 Query the state of a transform feedback object.
 ---
@@ -5969,6 +5969,7 @@ glBindTransformFeedback
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -5982,7 +5983,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTextureView(GLuint texture, GLenum target, GLuint origtexture, GLenum internalformat, GLuint minlevel, GLuint numlevels, GLuint minlayer, GLuint numlayers)
-
 ```
 Initialize a texture as a data alias of another texture's data store
 ---
@@ -6107,6 +6107,7 @@ glTexStorage1D, glTexStorage2D, glTexStorage3D, glGetTexParameter.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -6120,7 +6121,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetTransformFeedbackVarying(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, char *name)
-
 ```
 Retrieve information about varying variables selected for transform feedback
 ---
@@ -6157,6 +6157,7 @@ returned into `size`. The value in `size` is in units of the type returned in `t
 returned can be any of the scalar, vector, or matrix attribute types returned by glGetActiveAttrib. If an error occurred, the return parameters `length`, `size`, `type` and `name` will be
 unmodified. This command will return as much information about the varying variables as possible. If
 no information is available, `length` will be set to zero and `name` will be an empty string.
+
 This situation could arise if `glGetTransformFeedbackVarying` is called after a failed link.
 ---
 ### Errors
@@ -6180,6 +6181,7 @@ glGetProgram
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -6193,7 +6195,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTransformFeedbackBufferBase(GLuint xfb, GLuint index, GLuint buffer)
-
 ```
 Bind a buffer object to a transform feedback buffer object
 ---
@@ -6230,6 +6231,7 @@ glBindBufferRange, glBindBufferBase, glTransformFeedbackBufferRange.
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -6243,7 +6245,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetUniformfv(GLuint program, GLint location, GLfloat *params)
-
 ```
 GlGetUniform Returns the value of a uniform variable
 ---
@@ -6261,6 +6262,7 @@ returned. If the uniform variable is defined in the shader as a boolean, int, or
 value will be returned. If it is defined as a vec2, ivec2, or bvec2, two values will be returned. If
 it is defined as a vec3, ivec3, or bvec3, three values will be returned, and so on. To query values
 stored in uniform variables declared as arrays, call `glGetUniform` for each element of the array.
+
 To query values stored in uniform variables declared as structures, call `glGetUniform` for each
 field in the structure. The values for uniform variables declared as a matrix will be returned in
 column major order.
@@ -6325,7 +6327,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTransformFeedbackBufferRange(GLuint xfb, GLuint index, GLuint buffer, GLintptr offset, GLsizei size)
-
 ```
 Bind a range within a buffer object to a transform feedback buffer object
 ---
@@ -6374,6 +6375,7 @@ glBindBufferRange, glBindBufferBase, glTransformFeedbackBufferBase.
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -6387,7 +6389,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetUniformiv(GLuint program, GLint location, GLint *params)
-
 ```
 GlGetUniform Returns the value of a uniform variable
 ---
@@ -6405,6 +6406,7 @@ returned. If the uniform variable is defined in the shader as a boolean, int, or
 value will be returned. If it is defined as a vec2, ivec2, or bvec2, two values will be returned. If
 it is defined as a vec3, ivec3, or bvec3, three values will be returned, and so on. To query values
 stored in uniform variables declared as arrays, call `glGetUniform` for each element of the array.
+
 To query values stored in uniform variables declared as structures, call `glGetUniform` for each
 field in the structure. The values for uniform variables declared as a matrix will be returned in
 column major order.
@@ -6469,7 +6471,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTransformFeedbackVaryings(GLuint program, GLsizei count, const char **varyings, GLenum bufferMode)
-
 ```
 Specify values to record in transform feedback buffers
 ---
@@ -6487,6 +6488,7 @@ is active. `bufferMode` must be `GL_INTERLEAVED_ATTRIBS` or `GL_SEPARATE_ATTRIBS
 The names of the vertex or geometry shader outputs to be recorded in transform feedback mode are
 specified using `glTransformFeedbackVaryings`. When a geometry shader is active, transform
 feedback records the values of selected geometry shader output variables from the emitted vertices.
+
 Otherwise, the values of the selected vertex shader outputs are recorded.
 
 The state set by `glTranformFeedbackVaryings` is stored and takes effect next time
@@ -6545,6 +6547,7 @@ glBeginTransformFeedback, `glEndTransformFeedback`, glGetTransformFeedbackVaryin
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -6558,7 +6561,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetUniformuiv(GLuint program, GLint location, GLuint *params)
-
 ```
 GlGetUniform Returns the value of a uniform variable
 ---
@@ -6576,6 +6578,7 @@ returned. If the uniform variable is defined in the shader as a boolean, int, or
 value will be returned. If it is defined as a vec2, ivec2, or bvec2, two values will be returned. If
 it is defined as a vec3, ivec3, or bvec3, three values will be returned, and so on. To query values
 stored in uniform variables declared as arrays, call `glGetUniform` for each element of the array.
+
 To query values stored in uniform variables declared as structures, call `glGetUniform` for each
 field in the structure. The values for uniform variables declared as a matrix will be returned in
 column major order.
@@ -6640,7 +6643,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform1f(GLint location, GLfloat v0)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -6711,6 +6713,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -6805,7 +6808,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetUniformdv(GLuint program, GLint location, GLdouble *params)
-
 ```
 GlGetUniform Returns the value of a uniform variable
 ---
@@ -6823,6 +6825,7 @@ returned. If the uniform variable is defined in the shader as a boolean, int, or
 value will be returned. If it is defined as a vec2, ivec2, or bvec2, two values will be returned. If
 it is defined as a vec3, ivec3, or bvec3, three values will be returned, and so on. To query values
 stored in uniform variables declared as arrays, call `glGetUniform` for each element of the array.
+
 To query values stored in uniform variables declared as structures, call `glGetUniform` for each
 field in the structure. The values for uniform variables declared as a matrix will be returned in
 column major order.
@@ -6887,7 +6890,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform2f(GLint location, GLfloat v0, GLfloat v1)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -6958,6 +6960,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -7052,7 +7055,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetnUniformfv(GLuint program, GLint location, GLsizei bufSize, GLfloat *params)
-
 ```
 GlGetUniform Returns the value of a uniform variable
 ---
@@ -7070,6 +7072,7 @@ returned. If the uniform variable is defined in the shader as a boolean, int, or
 value will be returned. If it is defined as a vec2, ivec2, or bvec2, two values will be returned. If
 it is defined as a vec3, ivec3, or bvec3, three values will be returned, and so on. To query values
 stored in uniform variables declared as arrays, call `glGetUniform` for each element of the array.
+
 To query values stored in uniform variables declared as structures, call `glGetUniform` for each
 field in the structure. The values for uniform variables declared as a matrix will be returned in
 column major order.
@@ -7134,7 +7137,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform3f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -7205,6 +7207,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -7299,7 +7302,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetnUniformiv(GLuint program, GLint location, GLsizei bufSize, GLint *params)
-
 ```
 GlGetUniform Returns the value of a uniform variable
 ---
@@ -7317,6 +7319,7 @@ returned. If the uniform variable is defined in the shader as a boolean, int, or
 value will be returned. If it is defined as a vec2, ivec2, or bvec2, two values will be returned. If
 it is defined as a vec3, ivec3, or bvec3, three values will be returned, and so on. To query values
 stored in uniform variables declared as arrays, call `glGetUniform` for each element of the array.
+
 To query values stored in uniform variables declared as structures, call `glGetUniform` for each
 field in the structure. The values for uniform variables declared as a matrix will be returned in
 column major order.
@@ -7381,7 +7384,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform4f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -7452,6 +7454,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -7546,7 +7549,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetVertexAttribdv(GLuint index, GLenum pname, GLdouble *params)
-
 ```
 GlGetVertexAttrib Return a generic vertex attribute parameter
 ---
@@ -7667,7 +7669,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform1i(GLint location, GLint v0)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -7738,6 +7739,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -7832,7 +7834,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform2i(GLint location, GLint v0, GLint v1)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -7903,6 +7904,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -7997,7 +7999,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform3i(GLint location, GLint v0, GLint v1, GLint v2)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -8068,6 +8069,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -8162,7 +8164,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform4i(GLint location, GLint v0, GLint v1, GLint v2, GLint v3)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -8233,6 +8234,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -8327,7 +8329,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform1ui(GLint location, GLuint v0)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -8398,6 +8399,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -8492,7 +8494,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glFramebufferParameteri(GLenum target, GLenum pname, GLint param)
-
 ```
 Set a named parameter of a framebuffer object
 ---
@@ -8582,6 +8583,7 @@ glGenFramebuffers, glGetFramebufferParameter
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -8595,7 +8597,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glNamedFramebufferParameteri(GLuint framebuffer, GLenum pname, GLint param)
-
 ```
 Set a named parameter of a framebuffer object
 ---
@@ -8685,6 +8686,7 @@ glGenFramebuffers, glGetFramebufferParameter
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -8698,7 +8700,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glFramebufferRenderbuffer(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer)
-
 ```
 Attach a renderbuffer as a logical buffer of a framebuffer object
 ---
@@ -8779,6 +8780,7 @@ glGenFramebuffers, glBindFramebuffer, glGenRenderbuffers, glFramebufferTexture,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -8792,7 +8794,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glNamedFramebufferRenderbuffer(GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer)
-
 ```
 Attach a renderbuffer as a logical buffer of a framebuffer object
 ---
@@ -8873,6 +8874,7 @@ glGenFramebuffers, glBindFramebuffer, glGenRenderbuffers, glFramebufferTexture,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -8886,7 +8888,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glFramebufferTexture(GLenum target, GLenum attachment, GLuint texture, GLint level)
-
 ```
 Attach a level of a texture object as a logical buffer of a framebuffer object
 ---
@@ -9006,6 +9007,7 @@ glGenFramebuffers, glBindFramebuffer, glGenRenderbuffers, glFramebufferTexture,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -9019,7 +9021,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glFramebufferTexture1D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level)
-
 ```
 Attach a level of a texture object as a logical buffer of a framebuffer object
 ---
@@ -9139,6 +9140,7 @@ glGenFramebuffers, glBindFramebuffer, glGenRenderbuffers, glFramebufferTexture,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -9152,7 +9154,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glFramebufferTexture2D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level)
-
 ```
 Attach a level of a texture object as a logical buffer of a framebuffer object
 ---
@@ -9272,6 +9273,7 @@ glGenFramebuffers, glBindFramebuffer, glGenRenderbuffers, glFramebufferTexture,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -9285,7 +9287,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetFramebufferParameteriv(GLenum target, GLenum pname, GLint *params)
-
 ```
 Query a named parameter of a framebuffer object
 ---
@@ -9310,6 +9311,7 @@ must be one of `GL_DRAW_FRAMEBUFFER`, `GL_READ_FRAMEBUFFER` or `GL_FRAMEBUFFER`.
 if bound to `target`.
 
 For `glGetNamedFramebufferParameteriv`, `framebuffer` is the name of the framebuffer object.
+
 If `framebuffer` is zero, the default draw framebuffer is queried.
 
 Upon successful return, `param` will contain the value of the framebuffer parameter specified by
@@ -9386,6 +9388,7 @@ glFramebufferParameteri, glGetFramebufferAttachmentParameter
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -9399,7 +9402,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glFramebufferTexture3D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint layer)
-
 ```
 Attach a level of a texture object as a logical buffer of a framebuffer object
 ---
@@ -9519,6 +9521,7 @@ glGenFramebuffers, glBindFramebuffer, glGenRenderbuffers, glFramebufferTexture,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -9532,7 +9535,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetNamedFramebufferParameteriv(GLuint framebuffer, GLenum pname, GLint *param)
-
 ```
 Query a named parameter of a framebuffer object
 ---
@@ -9557,6 +9559,7 @@ must be one of `GL_DRAW_FRAMEBUFFER`, `GL_READ_FRAMEBUFFER` or `GL_FRAMEBUFFER`.
 if bound to `target`.
 
 For `glGetNamedFramebufferParameteriv`, `framebuffer` is the name of the framebuffer object.
+
 If `framebuffer` is zero, the default draw framebuffer is queried.
 
 Upon successful return, `param` will contain the value of the framebuffer parameter specified by
@@ -9633,6 +9636,7 @@ glFramebufferParameteri, glGetFramebufferAttachmentParameter
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -9646,7 +9650,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glNamedFramebufferTexture(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level)
-
 ```
 Attach a level of a texture object as a logical buffer of a framebuffer object
 ---
@@ -9766,6 +9769,7 @@ glGenFramebuffers, glBindFramebuffer, glGenRenderbuffers, glFramebufferTexture,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -9779,7 +9783,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLenum glGetGraphicsResetStatus(void)
-
 ```
 Check if the rendering context has not been lost due to software or hardware issues
 ---
@@ -9795,6 +9798,7 @@ current GL context.
 `GL_INNOCENT_CONTEXT_RESET` Indicates a reset has been detected that is not attributable to the
 current GL context.
 `GL_UNKNOWN_CONTEXT_RESET` Indicates a detected graphics reset whose cause is unknown.
+
 If a reset status other than `GL_NO_ERROR` is returned and subsequent calls return
 `GL_NO_ERROR`, the context reset was encountered and completed. If a reset status is repeatedly
 returned, the context may be in the process of resetting.
@@ -9823,6 +9827,7 @@ re-create the context.
 
 Any commands which might cause a polling application to block indefinitely will generate a
 `GL_CONTEXT_LOST` error, but will also return a value indicating completion to the application.
+
 Such commands include: `glGetSynciv` with pname `GL_SYNC_STATUS` ignores the other parameters
 and returns `GL_SIGNALED` in `values`.
 
@@ -9840,6 +9845,7 @@ glGetError `glGetIntegerv`, `glGetQueryObjectuiv` `glGetSynciv`
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -9853,7 +9859,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glFramebufferTextureLayer(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer)
-
 ```
 Attach a single layer of a texture object as a logical buffer of a framebuffer object
 ---
@@ -9936,6 +9941,7 @@ glGenFramebuffers, glBindFramebuffer, glGenRenderbuffers, glFramebufferTexture,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -9949,7 +9955,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetInternalformativ(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint *params)
-
 ```
 Retrieve information about implementation-dependent support for internal formats
 ---
@@ -10237,6 +10242,7 @@ glGet
 ### Copyright
 Copyright 2011-2018 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -10250,7 +10256,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glNamedFramebufferTextureLayer(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLint layer)
-
 ```
 Attach a single layer of a texture object as a logical buffer of a framebuffer object
 ---
@@ -10333,6 +10338,7 @@ glGenFramebuffers, glBindFramebuffer, glGenRenderbuffers, glFramebufferTexture,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -10346,7 +10352,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetInternalformati64v(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint64 *params)
-
 ```
 Retrieve information about implementation-dependent support for internal formats
 ---
@@ -10634,6 +10639,7 @@ glGet
 ### Copyright
 Copyright 2011-2018 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -10647,7 +10653,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glFrontFace(GLenum mode)
-
 ```
 Define front- and back-facing polygons
 ---
@@ -10658,6 +10663,7 @@ accepted. The initial value is `GL_CCW`.
 ---
 ### Description
 In a scene composed entirely of opaque closed surfaces, back-facing polygons are never visible.
+
 Eliminating these invisible polygons has the obvious benefit of speeding up the rendering of the
 image. To enable and disable elimination of back-facing polygons, call glEnable and `glDisable`
 with argument `GL_CULL_FACE`.
@@ -10700,7 +10706,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetMultisamplefv(GLenum pname, GLuint index, GLfloat *val)
-
 ```
 Retrieve the location of a sample
 ---
@@ -10736,6 +10741,7 @@ glGenFramebuffers, glBindFramebuffer
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -10749,7 +10755,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGenBuffers(GLsizei n, GLuint * buffers)
-
 ```
 Generate buffer object names
 ---
@@ -10796,7 +10801,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetObjectLabel(GLenum identifier, GLuint name, GLsizei bufSize, GLsizei * length, char * label)
-
 ```
 Retrieve the label of a named object identified within a namespace
 ---
@@ -10845,6 +10849,7 @@ glPushDebugGroup, glPopDebugGroup, glObjectLabel, glGetObjectPtrLabel.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -10858,7 +10863,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGenFramebuffers(GLsizei n, GLuint *ids)
-
 ```
 Generate framebuffer object names
 ---
@@ -10889,6 +10893,7 @@ glBindFramebuffer, glDeleteFramebuffers
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -10902,7 +10907,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetObjectPtrLabel(void * ptr, GLsizei bufSize, GLsizei * length, char * label)
-
 ```
 Retrieve the label of a sync object identified by a pointer
 ---
@@ -10944,6 +10948,7 @@ glPushDebugGroup, glPopDebugGroup, glObjectLabel, glGetObjectLabel.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -10957,7 +10962,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGenProgramPipelines(GLsizei n, GLuint *pipelines)
-
 ```
 Reserve program pipeline object names
 ---
@@ -10985,6 +10989,7 @@ glUseProgram
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -10998,7 +11003,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetPointerv(GLenum pname, void ** params)
-
 ```
 Return the address of the specified pointer
 ---
@@ -11023,7 +11027,9 @@ with the `userParam` argument of glDebugMessageCallback.
 ---
 ### Notes
 `glGetPointerv` is available in the OpenGL core profile only if the GL version is 4.3 or later.
+
 It is available in the compatibility profile for all GL versions, and accepts additional queries.
+
 However, these reference pages document only the core profile.
 ---
 ### Errors
@@ -11038,6 +11044,7 @@ glDebugMessageCallback
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -11051,7 +11058,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGenQueries(GLsizei n, GLuint * ids)
-
 ```
 Generate query object names
 ---
@@ -11098,7 +11104,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetProgramiv(GLuint program, GLenum pname, GLint *params)
-
 ```
 Returns a parameter from a program object
 ---
@@ -11240,7 +11245,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGenRenderbuffers(GLsizei n, GLuint *renderbuffers)
-
 ```
 Generate renderbuffer object names
 ---
@@ -11271,6 +11275,7 @@ glFramebufferRenderbuffer, glDeleteRenderbuffers
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -11284,7 +11289,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetProgramBinary(GLuint program, GLsizei bufSize, GLsizei *length, GLenum *binaryFormat, void *binary)
-
 ```
 Return a binary representation of a program object's compiled and linked executable source
 ---
@@ -11333,6 +11337,7 @@ glGetProgram, glProgramBinary
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -11346,7 +11351,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGenSamplers(GLsizei n, GLuint *samplers)
-
 ```
 Generate sampler object names
 ---
@@ -11380,6 +11384,7 @@ glBindSampler, glIsSampler, glDeleteSamplers
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -11393,7 +11398,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetProgramInfoLog(GLuint program, GLsizei maxLength, GLsizei *length, GLchar *infoLog)
-
 ```
 Returns the information log for a program object
 ---
@@ -11421,12 +11425,14 @@ value `GL_INFO_LOG_LENGTH`.
 The information log for a program object is either an empty string, or a string containing
 information about the last link operation, or a string containing information about the last
 validation operation. It may contain diagnostic messages, warning messages, and other information.
+
 When a program object is created, its information log will be a string of length 0.
 ---
 ### Notes
 The information log for a program object is the OpenGL implementer's primary mechanism for
 conveying information about linking and validating. Therefore, the information log can be helpful to
 application developers during the development process, even when these operations are successful.
+
 Application developers should not expect different OpenGL implementations to produce identical
 information logs.
 ---
@@ -11464,7 +11470,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGenTextures(GLsizei n, GLuint * textures)
-
 ```
 Generate texture names
 ---
@@ -11512,7 +11517,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetProgramInterfaceiv(GLuint program, GLenum programInterface, GLenum pname, GLint * params)
-
 ```
 Query a property of an interface in a program
 ---
@@ -11628,6 +11632,7 @@ glPushDebugGroup, glPopDebugGroup, glObjectLabel, glGetObjectLabel.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -11641,7 +11646,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGenTransformFeedbacks(GLsizei n, GLuint *ids)
-
 ```
 Reserve transform feedback object names
 ---
@@ -11670,6 +11674,7 @@ glBeginTransformFeedback, glPauseTransformFeedback, glResumeTransformFeedback,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -11683,7 +11688,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetProgramPipelineiv(GLuint pipeline, GLenum pname, GLint *params)
-
 ```
 Retrieve properties of a program pipeline object
 ---
@@ -11736,6 +11740,7 @@ glGenProgramPipelines, glBindProgramPipeline, glDeleteProgramPipelines
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -11749,7 +11754,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGenVertexArrays(GLsizei n, GLuint *arrays)
-
 ```
 Generate vertex array object names
 ---
@@ -11780,6 +11784,7 @@ glBindVertexArray, glDeleteVertexArrays
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -11793,7 +11798,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetProgramPipelineInfoLog(GLuint pipeline, GLsizei bufSize, GLsizei *length, GLchar *infoLog)
-
 ```
 Retrieve the info log string from a program pipeline object
 ---
@@ -11837,6 +11841,7 @@ glGetProgramPipeline
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -11850,12 +11855,12 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGenerateMipmap(GLenum target)
-
 ```
 Generate mipmaps for a specified texture object
 ---
 ### Parameters
 `target` Specifies the target to which the texture object is bound for `glGenerateMipmap`.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_3D`, `GL_TEXTURE_1D_ARRAY`,
 `GL_TEXTURE_2D_ARRAY`, `GL_TEXTURE_CUBE_MAP`, or `GL_TEXTURE_CUBE_MAP_ARRAY`.
 
@@ -11871,6 +11876,7 @@ For cube map and cube map array textures, the texture object must be cube comple
 complete respectively. Mipmap generation replaces texel image levels $level_{base} + 1$ through
 $q$ with images derived from the $level_{base}$ image, regardless of their previous contents. All
 other mimap images, including the $level_{base}$ image, are left unchanged by this computation.
+
 The internal formats of the derived mipmap images all match those of the $level_{base}$ image. The
 contents of the derived images are computed by repeated, filtered reduction of the $level_{base}$
 image. For one- and two-dimensional array and cube map array textures, each layer is filtered
@@ -11899,6 +11905,7 @@ glTexImage2D, glBindTexture, glGenTextures
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -11912,7 +11919,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetProgramResourceiv(GLuint program, GLenum programInterface, GLuint index, GLsizei propCount, const GLenum * props, GLsizei bufSize, GLsizei * length, GLint * params)
-
 ```
 Retrieve values for multiple properties of a single active resource within a program object
 ---
@@ -12072,6 +12078,7 @@ written to `params`.
 For the property `GL_LOCATION`, a single integer identifying the assigned location for an active
 uniform, input, output, or subroutine uniform variable is written to `params`. For input, output,
 or uniform variables with locations specified by a layout qualifier, the specified location is used.
+
 For vertex shader input or fragment shader output variables without a layout qualifier, the location
 assigned when a program is linked is written to `params`. For all other input and output
 variables, the value -1 is written to `params`. For uniforms in uniform blocks, the value -1 is
@@ -12093,6 +12100,7 @@ written. For all other input and output variables, the value zero is written.
 
 For the property `GL_TRANSFORM_FEEDBACK_BUFFER_INDEX`, a single integer identifying the index of
 the active transform feedback buffer associated with an active variable is written to `params`.
+
 For variables corresponding to the special names "gl_NextBuffer", "gl_SkipComponents1",
 "gl_SkipComponents2", "gl_SkipComponents3", and "gl_SkipComponents4", -1 is written to
 `params`.
@@ -12122,6 +12130,7 @@ glGetProgramResourceLocationIndex.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -12135,12 +12144,12 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGenerateTextureMipmap(GLuint texture)
-
 ```
 Generate mipmaps for a specified texture object
 ---
 ### Parameters
 `target` Specifies the target to which the texture object is bound for `glGenerateMipmap`.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_2D`, `GL_TEXTURE_3D`, `GL_TEXTURE_1D_ARRAY`,
 `GL_TEXTURE_2D_ARRAY`, `GL_TEXTURE_CUBE_MAP`, or `GL_TEXTURE_CUBE_MAP_ARRAY`.
 
@@ -12156,6 +12165,7 @@ For cube map and cube map array textures, the texture object must be cube comple
 complete respectively. Mipmap generation replaces texel image levels $level_{base} + 1$ through
 $q$ with images derived from the $level_{base}$ image, regardless of their previous contents. All
 other mimap images, including the $level_{base}$ image, are left unchanged by this computation.
+
 The internal formats of the derived mipmap images all match those of the $level_{base}$ image. The
 contents of the derived images are computed by repeated, filtered reduction of the $level_{base}$
 image. For one- and two-dimensional array and cube map array textures, each layer is filtered
@@ -12184,6 +12194,7 @@ glTexImage2D, glBindTexture, glGenTextures
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -12197,7 +12208,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLuint glGetProgramResourceIndex(GLuint program, GLenum programInterface, const char * name)
-
 ```
 Query the index of a named resource within a program
 ---
@@ -12282,6 +12292,7 @@ glGetProgramResourceLocationIndex.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -12295,12 +12306,12 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetBooleanv(GLenum pname, GLboolean * data)
-
 ```
 Return the value or values of a selected parameter
 ---
 ### Parameters
 `pname` Specifies the parameter value to be returned for non-indexed versions of `glGet`.
+
 The symbolic constants in the list below are accepted.
 
 `target` Specifies the parameter value to be returned for indexed versions of `glGet`. The
@@ -12327,6 +12338,7 @@ values are converted to floating-point values.
 The following symbolic constants are accepted by `pname` :
 
 `GL_ACTIVE_TEXTURE` `data` returns a single value indicating the active multitexture unit.
+
 The initial value is `GL_TEXTURE0`. See glActiveTexture.
 
 `GL_ALIASED_LINE_WIDTH_RANGE` `data` returns a pair of values indicating the range of widths
@@ -12694,6 +12706,7 @@ level-of-detail bias. The value must be at least 2.0.
 `GL_MAX_TEXTURE_SIZE` `data` returns one value. The value gives a rough estimate of the
 largest texture that the GL can handle. The value must be at least 1024. Use a proxy texture target
 such as `GL_PROXY_TEXTURE_1D` or `GL_PROXY_TEXTURE_2D` to determine if a texture is too large.
+
 See glTexImage1D and glTexImage2D.
 
 `GL_MAX_UNIFORM_BUFFER_BINDINGS` `data` returns one value, the maximum number of uniform
@@ -12807,6 +12820,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 determining the point size. See glPointParameter.
 
 `GL_PRIMITIVE_RESTART_INDEX` `data` returns one value, the current primitive restart index.
+
 The initial value is 0. See glPrimitiveRestartIndex.
 
 `GL_PROGRAM_BINARY_FORMATS` `data` an array of `GL_NUM_PROGRAM_BINARY_FORMATS` values,
@@ -12831,6 +12845,7 @@ supported sizes for antialiased points. See glPointSize.
 
 `GL_POINT_SIZE_RANGE` `data` returns two values: the smallest and largest supported sizes for
 antialiased points. The smallest size must be at most 1, and the largest size must be at least 1.
+
 See glPointSize.
 
 `GL_POLYGON_OFFSET_FACTOR` `data` returns one value, the scaling factor used to determine the
@@ -12877,6 +12892,7 @@ the current sample coverage value. See glSampleCoverage.
 coverage value should be inverted. See glSampleCoverage.
 
 `GL_SAMPLE_MASK_VALUE` `params` returns one value indicating the current sample mask value.
+
 See glSampleMaski.
 
 `GL_SAMPLER_BINDING` `data` returns a single value, the name of the sampler object currently
@@ -12899,6 +12915,7 @@ shader compilations, and therefore the value of `GL_SHADER_COMPILER` will always
 `GL_SHADER_STORAGE_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
 `glGetIntegerv` ), `data` returns a single value, the name of the buffer object currently bound to
 the target `GL_SHADER_STORAGE_BUFFER`. If no buffer object is bound to this target, 0 is returned.
+
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns a
 single value, the name of the buffer object bound to the indexed shader storage buffer binding
 points. The initial value is 0 for all targets. See glBindBuffer, glBindBufferBase, and
@@ -13018,6 +13035,7 @@ glBindTexture.
 
 `GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY` `data` returns a single value, the name of the
 texture currently bound to the target `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`. The initial value is 0.
+
 See glBindTexture.
 
 `GL_TEXTURE_BINDING_3D` `data` returns a single value, the name of the texture currently bound
@@ -13087,6 +13105,7 @@ data from memory. The initial is 0. See glPixelStore.
 
 `GL_UNPACK_LSB_FIRST` `data` returns a single boolean value indicating whether single-bit
 pixels being read from memory are read first from the least significant bit of each unsigned byte.
+
 The initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_UNPACK_ROW_LENGTH` `data` returns one value, the row length used for reading pixel data
@@ -13107,6 +13126,7 @@ initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_VERTEX_ARRAY_BINDING` `data` returns a single value, the name of the vertex array object
 currently bound to the context. If no vertex array object is bound to the context, 0 is returned.
+
 The initial value is 0. See glBindVertexArray.
 
 `GL_VERTEX_BINDING_DIVISOR` Accepted by the indexed forms. `data` returns a single integer
@@ -13134,6 +13154,7 @@ number of vertex buffers that may be bound.
 `data` returns four values: the x and y window coordinates of the viewport, followed by its
 width and height. Initially the x and y window coordinates are both set to 0, and the width
 and height are set to the width and height of the window into which the GL will do its rendering.
+
 See glViewport.
 
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns four
@@ -13239,7 +13260,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 GLint glGetProgramResourceLocation(GLuint program, GLenum programInterface, const char * name)
-
 ```
 Query the location of a named resource within a program
 ---
@@ -13298,6 +13318,7 @@ glGetProgramResourceLocationIndex.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -13311,12 +13332,12 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetDoublev(GLenum pname, GLdouble * data)
-
 ```
 Return the value or values of a selected parameter
 ---
 ### Parameters
 `pname` Specifies the parameter value to be returned for non-indexed versions of `glGet`.
+
 The symbolic constants in the list below are accepted.
 
 `target` Specifies the parameter value to be returned for indexed versions of `glGet`. The
@@ -13343,6 +13364,7 @@ values are converted to floating-point values.
 The following symbolic constants are accepted by `pname` :
 
 `GL_ACTIVE_TEXTURE` `data` returns a single value indicating the active multitexture unit.
+
 The initial value is `GL_TEXTURE0`. See glActiveTexture.
 
 `GL_ALIASED_LINE_WIDTH_RANGE` `data` returns a pair of values indicating the range of widths
@@ -13710,6 +13732,7 @@ level-of-detail bias. The value must be at least 2.0.
 `GL_MAX_TEXTURE_SIZE` `data` returns one value. The value gives a rough estimate of the
 largest texture that the GL can handle. The value must be at least 1024. Use a proxy texture target
 such as `GL_PROXY_TEXTURE_1D` or `GL_PROXY_TEXTURE_2D` to determine if a texture is too large.
+
 See glTexImage1D and glTexImage2D.
 
 `GL_MAX_UNIFORM_BUFFER_BINDINGS` `data` returns one value, the maximum number of uniform
@@ -13823,6 +13846,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 determining the point size. See glPointParameter.
 
 `GL_PRIMITIVE_RESTART_INDEX` `data` returns one value, the current primitive restart index.
+
 The initial value is 0. See glPrimitiveRestartIndex.
 
 `GL_PROGRAM_BINARY_FORMATS` `data` an array of `GL_NUM_PROGRAM_BINARY_FORMATS` values,
@@ -13847,6 +13871,7 @@ supported sizes for antialiased points. See glPointSize.
 
 `GL_POINT_SIZE_RANGE` `data` returns two values: the smallest and largest supported sizes for
 antialiased points. The smallest size must be at most 1, and the largest size must be at least 1.
+
 See glPointSize.
 
 `GL_POLYGON_OFFSET_FACTOR` `data` returns one value, the scaling factor used to determine the
@@ -13893,6 +13918,7 @@ the current sample coverage value. See glSampleCoverage.
 coverage value should be inverted. See glSampleCoverage.
 
 `GL_SAMPLE_MASK_VALUE` `params` returns one value indicating the current sample mask value.
+
 See glSampleMaski.
 
 `GL_SAMPLER_BINDING` `data` returns a single value, the name of the sampler object currently
@@ -13915,6 +13941,7 @@ shader compilations, and therefore the value of `GL_SHADER_COMPILER` will always
 `GL_SHADER_STORAGE_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
 `glGetIntegerv` ), `data` returns a single value, the name of the buffer object currently bound to
 the target `GL_SHADER_STORAGE_BUFFER`. If no buffer object is bound to this target, 0 is returned.
+
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns a
 single value, the name of the buffer object bound to the indexed shader storage buffer binding
 points. The initial value is 0 for all targets. See glBindBuffer, glBindBufferBase, and
@@ -14034,6 +14061,7 @@ glBindTexture.
 
 `GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY` `data` returns a single value, the name of the
 texture currently bound to the target `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`. The initial value is 0.
+
 See glBindTexture.
 
 `GL_TEXTURE_BINDING_3D` `data` returns a single value, the name of the texture currently bound
@@ -14103,6 +14131,7 @@ data from memory. The initial is 0. See glPixelStore.
 
 `GL_UNPACK_LSB_FIRST` `data` returns a single boolean value indicating whether single-bit
 pixels being read from memory are read first from the least significant bit of each unsigned byte.
+
 The initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_UNPACK_ROW_LENGTH` `data` returns one value, the row length used for reading pixel data
@@ -14123,6 +14152,7 @@ initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_VERTEX_ARRAY_BINDING` `data` returns a single value, the name of the vertex array object
 currently bound to the context. If no vertex array object is bound to the context, 0 is returned.
+
 The initial value is 0. See glBindVertexArray.
 
 `GL_VERTEX_BINDING_DIVISOR` Accepted by the indexed forms. `data` returns a single integer
@@ -14150,6 +14180,7 @@ number of vertex buffers that may be bound.
 `data` returns four values: the x and y window coordinates of the viewport, followed by its
 width and height. Initially the x and y window coordinates are both set to 0, and the width
 and height are set to the width and height of the window into which the GL will do its rendering.
+
 See glViewport.
 
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns four
@@ -14255,7 +14286,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 GLint glGetProgramResourceLocationIndex(GLuint program, GLenum programInterface, const char * name)
-
 ```
 Query the fragment color index of a named variable within a program
 ---
@@ -14311,6 +14341,7 @@ glGetProgramResourceLocationIndex.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -14324,12 +14355,12 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetFloatv(GLenum pname, GLfloat * data)
-
 ```
 Return the value or values of a selected parameter
 ---
 ### Parameters
 `pname` Specifies the parameter value to be returned for non-indexed versions of `glGet`.
+
 The symbolic constants in the list below are accepted.
 
 `target` Specifies the parameter value to be returned for indexed versions of `glGet`. The
@@ -14356,6 +14387,7 @@ values are converted to floating-point values.
 The following symbolic constants are accepted by `pname` :
 
 `GL_ACTIVE_TEXTURE` `data` returns a single value indicating the active multitexture unit.
+
 The initial value is `GL_TEXTURE0`. See glActiveTexture.
 
 `GL_ALIASED_LINE_WIDTH_RANGE` `data` returns a pair of values indicating the range of widths
@@ -14723,6 +14755,7 @@ level-of-detail bias. The value must be at least 2.0.
 `GL_MAX_TEXTURE_SIZE` `data` returns one value. The value gives a rough estimate of the
 largest texture that the GL can handle. The value must be at least 1024. Use a proxy texture target
 such as `GL_PROXY_TEXTURE_1D` or `GL_PROXY_TEXTURE_2D` to determine if a texture is too large.
+
 See glTexImage1D and glTexImage2D.
 
 `GL_MAX_UNIFORM_BUFFER_BINDINGS` `data` returns one value, the maximum number of uniform
@@ -14836,6 +14869,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 determining the point size. See glPointParameter.
 
 `GL_PRIMITIVE_RESTART_INDEX` `data` returns one value, the current primitive restart index.
+
 The initial value is 0. See glPrimitiveRestartIndex.
 
 `GL_PROGRAM_BINARY_FORMATS` `data` an array of `GL_NUM_PROGRAM_BINARY_FORMATS` values,
@@ -14860,6 +14894,7 @@ supported sizes for antialiased points. See glPointSize.
 
 `GL_POINT_SIZE_RANGE` `data` returns two values: the smallest and largest supported sizes for
 antialiased points. The smallest size must be at most 1, and the largest size must be at least 1.
+
 See glPointSize.
 
 `GL_POLYGON_OFFSET_FACTOR` `data` returns one value, the scaling factor used to determine the
@@ -14906,6 +14941,7 @@ the current sample coverage value. See glSampleCoverage.
 coverage value should be inverted. See glSampleCoverage.
 
 `GL_SAMPLE_MASK_VALUE` `params` returns one value indicating the current sample mask value.
+
 See glSampleMaski.
 
 `GL_SAMPLER_BINDING` `data` returns a single value, the name of the sampler object currently
@@ -14928,6 +14964,7 @@ shader compilations, and therefore the value of `GL_SHADER_COMPILER` will always
 `GL_SHADER_STORAGE_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
 `glGetIntegerv` ), `data` returns a single value, the name of the buffer object currently bound to
 the target `GL_SHADER_STORAGE_BUFFER`. If no buffer object is bound to this target, 0 is returned.
+
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns a
 single value, the name of the buffer object bound to the indexed shader storage buffer binding
 points. The initial value is 0 for all targets. See glBindBuffer, glBindBufferBase, and
@@ -15047,6 +15084,7 @@ glBindTexture.
 
 `GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY` `data` returns a single value, the name of the
 texture currently bound to the target `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`. The initial value is 0.
+
 See glBindTexture.
 
 `GL_TEXTURE_BINDING_3D` `data` returns a single value, the name of the texture currently bound
@@ -15116,6 +15154,7 @@ data from memory. The initial is 0. See glPixelStore.
 
 `GL_UNPACK_LSB_FIRST` `data` returns a single boolean value indicating whether single-bit
 pixels being read from memory are read first from the least significant bit of each unsigned byte.
+
 The initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_UNPACK_ROW_LENGTH` `data` returns one value, the row length used for reading pixel data
@@ -15136,6 +15175,7 @@ initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_VERTEX_ARRAY_BINDING` `data` returns a single value, the name of the vertex array object
 currently bound to the context. If no vertex array object is bound to the context, 0 is returned.
+
 The initial value is 0. See glBindVertexArray.
 
 `GL_VERTEX_BINDING_DIVISOR` Accepted by the indexed forms. `data` returns a single integer
@@ -15163,6 +15203,7 @@ number of vertex buffers that may be bound.
 `data` returns four values: the x and y window coordinates of the viewport, followed by its
 width and height. Initially the x and y window coordinates are both set to 0, and the width
 and height are set to the width and height of the window into which the GL will do its rendering.
+
 See glViewport.
 
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns four
@@ -15268,7 +15309,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetProgramResourceName(GLuint program, GLenum programInterface, GLuint index, GLsizei bufSize, GLsizei * length, char * name)
-
 ```
 Query the name of an indexed resource within a program
 ---
@@ -15358,6 +15398,7 @@ glGetProgramResourceLocationIndex.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -15371,12 +15412,12 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetIntegerv(GLenum pname, GLint * data)
-
 ```
 Return the value or values of a selected parameter
 ---
 ### Parameters
 `pname` Specifies the parameter value to be returned for non-indexed versions of `glGet`.
+
 The symbolic constants in the list below are accepted.
 
 `target` Specifies the parameter value to be returned for indexed versions of `glGet`. The
@@ -15403,6 +15444,7 @@ values are converted to floating-point values.
 The following symbolic constants are accepted by `pname` :
 
 `GL_ACTIVE_TEXTURE` `data` returns a single value indicating the active multitexture unit.
+
 The initial value is `GL_TEXTURE0`. See glActiveTexture.
 
 `GL_ALIASED_LINE_WIDTH_RANGE` `data` returns a pair of values indicating the range of widths
@@ -15770,6 +15812,7 @@ level-of-detail bias. The value must be at least 2.0.
 `GL_MAX_TEXTURE_SIZE` `data` returns one value. The value gives a rough estimate of the
 largest texture that the GL can handle. The value must be at least 1024. Use a proxy texture target
 such as `GL_PROXY_TEXTURE_1D` or `GL_PROXY_TEXTURE_2D` to determine if a texture is too large.
+
 See glTexImage1D and glTexImage2D.
 
 `GL_MAX_UNIFORM_BUFFER_BINDINGS` `data` returns one value, the maximum number of uniform
@@ -15883,6 +15926,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 determining the point size. See glPointParameter.
 
 `GL_PRIMITIVE_RESTART_INDEX` `data` returns one value, the current primitive restart index.
+
 The initial value is 0. See glPrimitiveRestartIndex.
 
 `GL_PROGRAM_BINARY_FORMATS` `data` an array of `GL_NUM_PROGRAM_BINARY_FORMATS` values,
@@ -15907,6 +15951,7 @@ supported sizes for antialiased points. See glPointSize.
 
 `GL_POINT_SIZE_RANGE` `data` returns two values: the smallest and largest supported sizes for
 antialiased points. The smallest size must be at most 1, and the largest size must be at least 1.
+
 See glPointSize.
 
 `GL_POLYGON_OFFSET_FACTOR` `data` returns one value, the scaling factor used to determine the
@@ -15953,6 +15998,7 @@ the current sample coverage value. See glSampleCoverage.
 coverage value should be inverted. See glSampleCoverage.
 
 `GL_SAMPLE_MASK_VALUE` `params` returns one value indicating the current sample mask value.
+
 See glSampleMaski.
 
 `GL_SAMPLER_BINDING` `data` returns a single value, the name of the sampler object currently
@@ -15975,6 +16021,7 @@ shader compilations, and therefore the value of `GL_SHADER_COMPILER` will always
 `GL_SHADER_STORAGE_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
 `glGetIntegerv` ), `data` returns a single value, the name of the buffer object currently bound to
 the target `GL_SHADER_STORAGE_BUFFER`. If no buffer object is bound to this target, 0 is returned.
+
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns a
 single value, the name of the buffer object bound to the indexed shader storage buffer binding
 points. The initial value is 0 for all targets. See glBindBuffer, glBindBufferBase, and
@@ -16094,6 +16141,7 @@ glBindTexture.
 
 `GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY` `data` returns a single value, the name of the
 texture currently bound to the target `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`. The initial value is 0.
+
 See glBindTexture.
 
 `GL_TEXTURE_BINDING_3D` `data` returns a single value, the name of the texture currently bound
@@ -16163,6 +16211,7 @@ data from memory. The initial is 0. See glPixelStore.
 
 `GL_UNPACK_LSB_FIRST` `data` returns a single boolean value indicating whether single-bit
 pixels being read from memory are read first from the least significant bit of each unsigned byte.
+
 The initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_UNPACK_ROW_LENGTH` `data` returns one value, the row length used for reading pixel data
@@ -16183,6 +16232,7 @@ initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_VERTEX_ARRAY_BINDING` `data` returns a single value, the name of the vertex array object
 currently bound to the context. If no vertex array object is bound to the context, 0 is returned.
+
 The initial value is 0. See glBindVertexArray.
 
 `GL_VERTEX_BINDING_DIVISOR` Accepted by the indexed forms. `data` returns a single integer
@@ -16210,6 +16260,7 @@ number of vertex buffers that may be bound.
 `data` returns four values: the x and y window coordinates of the viewport, followed by its
 width and height. Initially the x and y window coordinates are both set to 0, and the width
 and height are set to the width and height of the window into which the GL will do its rendering.
+
 See glViewport.
 
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns four
@@ -16315,7 +16366,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetProgramStageiv(GLuint program, GLenum shadertype, GLenum pname, GLint *values)
-
 ```
 Retrieve properties of a program object corresponding to a specified shader stage
 ---
@@ -16373,6 +16423,7 @@ glGetProgram
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -16386,12 +16437,12 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetInteger64v(GLenum pname, GLint64 * data)
-
 ```
 Return the value or values of a selected parameter
 ---
 ### Parameters
 `pname` Specifies the parameter value to be returned for non-indexed versions of `glGet`.
+
 The symbolic constants in the list below are accepted.
 
 `target` Specifies the parameter value to be returned for indexed versions of `glGet`. The
@@ -16418,6 +16469,7 @@ values are converted to floating-point values.
 The following symbolic constants are accepted by `pname` :
 
 `GL_ACTIVE_TEXTURE` `data` returns a single value indicating the active multitexture unit.
+
 The initial value is `GL_TEXTURE0`. See glActiveTexture.
 
 `GL_ALIASED_LINE_WIDTH_RANGE` `data` returns a pair of values indicating the range of widths
@@ -16785,6 +16837,7 @@ level-of-detail bias. The value must be at least 2.0.
 `GL_MAX_TEXTURE_SIZE` `data` returns one value. The value gives a rough estimate of the
 largest texture that the GL can handle. The value must be at least 1024. Use a proxy texture target
 such as `GL_PROXY_TEXTURE_1D` or `GL_PROXY_TEXTURE_2D` to determine if a texture is too large.
+
 See glTexImage1D and glTexImage2D.
 
 `GL_MAX_UNIFORM_BUFFER_BINDINGS` `data` returns one value, the maximum number of uniform
@@ -16898,6 +16951,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 determining the point size. See glPointParameter.
 
 `GL_PRIMITIVE_RESTART_INDEX` `data` returns one value, the current primitive restart index.
+
 The initial value is 0. See glPrimitiveRestartIndex.
 
 `GL_PROGRAM_BINARY_FORMATS` `data` an array of `GL_NUM_PROGRAM_BINARY_FORMATS` values,
@@ -16922,6 +16976,7 @@ supported sizes for antialiased points. See glPointSize.
 
 `GL_POINT_SIZE_RANGE` `data` returns two values: the smallest and largest supported sizes for
 antialiased points. The smallest size must be at most 1, and the largest size must be at least 1.
+
 See glPointSize.
 
 `GL_POLYGON_OFFSET_FACTOR` `data` returns one value, the scaling factor used to determine the
@@ -16968,6 +17023,7 @@ the current sample coverage value. See glSampleCoverage.
 coverage value should be inverted. See glSampleCoverage.
 
 `GL_SAMPLE_MASK_VALUE` `params` returns one value indicating the current sample mask value.
+
 See glSampleMaski.
 
 `GL_SAMPLER_BINDING` `data` returns a single value, the name of the sampler object currently
@@ -16990,6 +17046,7 @@ shader compilations, and therefore the value of `GL_SHADER_COMPILER` will always
 `GL_SHADER_STORAGE_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
 `glGetIntegerv` ), `data` returns a single value, the name of the buffer object currently bound to
 the target `GL_SHADER_STORAGE_BUFFER`. If no buffer object is bound to this target, 0 is returned.
+
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns a
 single value, the name of the buffer object bound to the indexed shader storage buffer binding
 points. The initial value is 0 for all targets. See glBindBuffer, glBindBufferBase, and
@@ -17109,6 +17166,7 @@ glBindTexture.
 
 `GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY` `data` returns a single value, the name of the
 texture currently bound to the target `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`. The initial value is 0.
+
 See glBindTexture.
 
 `GL_TEXTURE_BINDING_3D` `data` returns a single value, the name of the texture currently bound
@@ -17178,6 +17236,7 @@ data from memory. The initial is 0. See glPixelStore.
 
 `GL_UNPACK_LSB_FIRST` `data` returns a single boolean value indicating whether single-bit
 pixels being read from memory are read first from the least significant bit of each unsigned byte.
+
 The initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_UNPACK_ROW_LENGTH` `data` returns one value, the row length used for reading pixel data
@@ -17198,6 +17257,7 @@ initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_VERTEX_ARRAY_BINDING` `data` returns a single value, the name of the vertex array object
 currently bound to the context. If no vertex array object is bound to the context, 0 is returned.
+
 The initial value is 0. See glBindVertexArray.
 
 `GL_VERTEX_BINDING_DIVISOR` Accepted by the indexed forms. `data` returns a single integer
@@ -17225,6 +17285,7 @@ number of vertex buffers that may be bound.
 `data` returns four values: the x and y window coordinates of the viewport, followed by its
 width and height. Initially the x and y window coordinates are both set to 0, and the width
 and height are set to the width and height of the window into which the GL will do its rendering.
+
 See glViewport.
 
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns four
@@ -17330,7 +17391,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetQueryIndexediv(GLenum target, GLuint index, GLenum pname, GLint * params)
-
 ```
 Return parameters of an indexed query object target
 ---
@@ -17380,6 +17440,7 @@ glGetQueryObject, glIsQuery
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -17393,12 +17454,12 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetBooleani_v(GLenum target, GLuint index, GLboolean * data)
-
 ```
 Return the value or values of a selected parameter
 ---
 ### Parameters
 `pname` Specifies the parameter value to be returned for non-indexed versions of `glGet`.
+
 The symbolic constants in the list below are accepted.
 
 `target` Specifies the parameter value to be returned for indexed versions of `glGet`. The
@@ -17425,6 +17486,7 @@ values are converted to floating-point values.
 The following symbolic constants are accepted by `pname` :
 
 `GL_ACTIVE_TEXTURE` `data` returns a single value indicating the active multitexture unit.
+
 The initial value is `GL_TEXTURE0`. See glActiveTexture.
 
 `GL_ALIASED_LINE_WIDTH_RANGE` `data` returns a pair of values indicating the range of widths
@@ -17792,6 +17854,7 @@ level-of-detail bias. The value must be at least 2.0.
 `GL_MAX_TEXTURE_SIZE` `data` returns one value. The value gives a rough estimate of the
 largest texture that the GL can handle. The value must be at least 1024. Use a proxy texture target
 such as `GL_PROXY_TEXTURE_1D` or `GL_PROXY_TEXTURE_2D` to determine if a texture is too large.
+
 See glTexImage1D and glTexImage2D.
 
 `GL_MAX_UNIFORM_BUFFER_BINDINGS` `data` returns one value, the maximum number of uniform
@@ -17905,6 +17968,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 determining the point size. See glPointParameter.
 
 `GL_PRIMITIVE_RESTART_INDEX` `data` returns one value, the current primitive restart index.
+
 The initial value is 0. See glPrimitiveRestartIndex.
 
 `GL_PROGRAM_BINARY_FORMATS` `data` an array of `GL_NUM_PROGRAM_BINARY_FORMATS` values,
@@ -17929,6 +17993,7 @@ supported sizes for antialiased points. See glPointSize.
 
 `GL_POINT_SIZE_RANGE` `data` returns two values: the smallest and largest supported sizes for
 antialiased points. The smallest size must be at most 1, and the largest size must be at least 1.
+
 See glPointSize.
 
 `GL_POLYGON_OFFSET_FACTOR` `data` returns one value, the scaling factor used to determine the
@@ -17975,6 +18040,7 @@ the current sample coverage value. See glSampleCoverage.
 coverage value should be inverted. See glSampleCoverage.
 
 `GL_SAMPLE_MASK_VALUE` `params` returns one value indicating the current sample mask value.
+
 See glSampleMaski.
 
 `GL_SAMPLER_BINDING` `data` returns a single value, the name of the sampler object currently
@@ -17997,6 +18063,7 @@ shader compilations, and therefore the value of `GL_SHADER_COMPILER` will always
 `GL_SHADER_STORAGE_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
 `glGetIntegerv` ), `data` returns a single value, the name of the buffer object currently bound to
 the target `GL_SHADER_STORAGE_BUFFER`. If no buffer object is bound to this target, 0 is returned.
+
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns a
 single value, the name of the buffer object bound to the indexed shader storage buffer binding
 points. The initial value is 0 for all targets. See glBindBuffer, glBindBufferBase, and
@@ -18116,6 +18183,7 @@ glBindTexture.
 
 `GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY` `data` returns a single value, the name of the
 texture currently bound to the target `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`. The initial value is 0.
+
 See glBindTexture.
 
 `GL_TEXTURE_BINDING_3D` `data` returns a single value, the name of the texture currently bound
@@ -18185,6 +18253,7 @@ data from memory. The initial is 0. See glPixelStore.
 
 `GL_UNPACK_LSB_FIRST` `data` returns a single boolean value indicating whether single-bit
 pixels being read from memory are read first from the least significant bit of each unsigned byte.
+
 The initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_UNPACK_ROW_LENGTH` `data` returns one value, the row length used for reading pixel data
@@ -18205,6 +18274,7 @@ initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_VERTEX_ARRAY_BINDING` `data` returns a single value, the name of the vertex array object
 currently bound to the context. If no vertex array object is bound to the context, 0 is returned.
+
 The initial value is 0. See glBindVertexArray.
 
 `GL_VERTEX_BINDING_DIVISOR` Accepted by the indexed forms. `data` returns a single integer
@@ -18232,6 +18302,7 @@ number of vertex buffers that may be bound.
 `data` returns four values: the x and y window coordinates of the viewport, followed by its
 width and height. Initially the x and y window coordinates are both set to 0, and the width
 and height are set to the width and height of the window into which the GL will do its rendering.
+
 See glViewport.
 
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns four
@@ -18337,7 +18408,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetQueryObjectiv(GLuint id, GLenum pname, GLint * params)
-
 ```
 Return parameters of a query object
 ---
@@ -18443,12 +18513,12 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetIntegeri_v(GLenum target, GLuint index, GLint * data)
-
 ```
 Return the value or values of a selected parameter
 ---
 ### Parameters
 `pname` Specifies the parameter value to be returned for non-indexed versions of `glGet`.
+
 The symbolic constants in the list below are accepted.
 
 `target` Specifies the parameter value to be returned for indexed versions of `glGet`. The
@@ -18475,6 +18545,7 @@ values are converted to floating-point values.
 The following symbolic constants are accepted by `pname` :
 
 `GL_ACTIVE_TEXTURE` `data` returns a single value indicating the active multitexture unit.
+
 The initial value is `GL_TEXTURE0`. See glActiveTexture.
 
 `GL_ALIASED_LINE_WIDTH_RANGE` `data` returns a pair of values indicating the range of widths
@@ -18842,6 +18913,7 @@ level-of-detail bias. The value must be at least 2.0.
 `GL_MAX_TEXTURE_SIZE` `data` returns one value. The value gives a rough estimate of the
 largest texture that the GL can handle. The value must be at least 1024. Use a proxy texture target
 such as `GL_PROXY_TEXTURE_1D` or `GL_PROXY_TEXTURE_2D` to determine if a texture is too large.
+
 See glTexImage1D and glTexImage2D.
 
 `GL_MAX_UNIFORM_BUFFER_BINDINGS` `data` returns one value, the maximum number of uniform
@@ -18955,6 +19027,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 determining the point size. See glPointParameter.
 
 `GL_PRIMITIVE_RESTART_INDEX` `data` returns one value, the current primitive restart index.
+
 The initial value is 0. See glPrimitiveRestartIndex.
 
 `GL_PROGRAM_BINARY_FORMATS` `data` an array of `GL_NUM_PROGRAM_BINARY_FORMATS` values,
@@ -18979,6 +19052,7 @@ supported sizes for antialiased points. See glPointSize.
 
 `GL_POINT_SIZE_RANGE` `data` returns two values: the smallest and largest supported sizes for
 antialiased points. The smallest size must be at most 1, and the largest size must be at least 1.
+
 See glPointSize.
 
 `GL_POLYGON_OFFSET_FACTOR` `data` returns one value, the scaling factor used to determine the
@@ -19025,6 +19099,7 @@ the current sample coverage value. See glSampleCoverage.
 coverage value should be inverted. See glSampleCoverage.
 
 `GL_SAMPLE_MASK_VALUE` `params` returns one value indicating the current sample mask value.
+
 See glSampleMaski.
 
 `GL_SAMPLER_BINDING` `data` returns a single value, the name of the sampler object currently
@@ -19047,6 +19122,7 @@ shader compilations, and therefore the value of `GL_SHADER_COMPILER` will always
 `GL_SHADER_STORAGE_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
 `glGetIntegerv` ), `data` returns a single value, the name of the buffer object currently bound to
 the target `GL_SHADER_STORAGE_BUFFER`. If no buffer object is bound to this target, 0 is returned.
+
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns a
 single value, the name of the buffer object bound to the indexed shader storage buffer binding
 points. The initial value is 0 for all targets. See glBindBuffer, glBindBufferBase, and
@@ -19166,6 +19242,7 @@ glBindTexture.
 
 `GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY` `data` returns a single value, the name of the
 texture currently bound to the target `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`. The initial value is 0.
+
 See glBindTexture.
 
 `GL_TEXTURE_BINDING_3D` `data` returns a single value, the name of the texture currently bound
@@ -19235,6 +19312,7 @@ data from memory. The initial is 0. See glPixelStore.
 
 `GL_UNPACK_LSB_FIRST` `data` returns a single boolean value indicating whether single-bit
 pixels being read from memory are read first from the least significant bit of each unsigned byte.
+
 The initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_UNPACK_ROW_LENGTH` `data` returns one value, the row length used for reading pixel data
@@ -19255,6 +19333,7 @@ initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_VERTEX_ARRAY_BINDING` `data` returns a single value, the name of the vertex array object
 currently bound to the context. If no vertex array object is bound to the context, 0 is returned.
+
 The initial value is 0. See glBindVertexArray.
 
 `GL_VERTEX_BINDING_DIVISOR` Accepted by the indexed forms. `data` returns a single integer
@@ -19282,6 +19361,7 @@ number of vertex buffers that may be bound.
 `data` returns four values: the x and y window coordinates of the viewport, followed by its
 width and height. Initially the x and y window coordinates are both set to 0, and the width
 and height are set to the width and height of the window into which the GL will do its rendering.
+
 See glViewport.
 
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns four
@@ -19387,12 +19467,12 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetFloati_v(GLenum target, GLuint index, GLfloat * data)
-
 ```
 Return the value or values of a selected parameter
 ---
 ### Parameters
 `pname` Specifies the parameter value to be returned for non-indexed versions of `glGet`.
+
 The symbolic constants in the list below are accepted.
 
 `target` Specifies the parameter value to be returned for indexed versions of `glGet`. The
@@ -19419,6 +19499,7 @@ values are converted to floating-point values.
 The following symbolic constants are accepted by `pname` :
 
 `GL_ACTIVE_TEXTURE` `data` returns a single value indicating the active multitexture unit.
+
 The initial value is `GL_TEXTURE0`. See glActiveTexture.
 
 `GL_ALIASED_LINE_WIDTH_RANGE` `data` returns a pair of values indicating the range of widths
@@ -19786,6 +19867,7 @@ level-of-detail bias. The value must be at least 2.0.
 `GL_MAX_TEXTURE_SIZE` `data` returns one value. The value gives a rough estimate of the
 largest texture that the GL can handle. The value must be at least 1024. Use a proxy texture target
 such as `GL_PROXY_TEXTURE_1D` or `GL_PROXY_TEXTURE_2D` to determine if a texture is too large.
+
 See glTexImage1D and glTexImage2D.
 
 `GL_MAX_UNIFORM_BUFFER_BINDINGS` `data` returns one value, the maximum number of uniform
@@ -19899,6 +19981,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 determining the point size. See glPointParameter.
 
 `GL_PRIMITIVE_RESTART_INDEX` `data` returns one value, the current primitive restart index.
+
 The initial value is 0. See glPrimitiveRestartIndex.
 
 `GL_PROGRAM_BINARY_FORMATS` `data` an array of `GL_NUM_PROGRAM_BINARY_FORMATS` values,
@@ -19923,6 +20006,7 @@ supported sizes for antialiased points. See glPointSize.
 
 `GL_POINT_SIZE_RANGE` `data` returns two values: the smallest and largest supported sizes for
 antialiased points. The smallest size must be at most 1, and the largest size must be at least 1.
+
 See glPointSize.
 
 `GL_POLYGON_OFFSET_FACTOR` `data` returns one value, the scaling factor used to determine the
@@ -19969,6 +20053,7 @@ the current sample coverage value. See glSampleCoverage.
 coverage value should be inverted. See glSampleCoverage.
 
 `GL_SAMPLE_MASK_VALUE` `params` returns one value indicating the current sample mask value.
+
 See glSampleMaski.
 
 `GL_SAMPLER_BINDING` `data` returns a single value, the name of the sampler object currently
@@ -19991,6 +20076,7 @@ shader compilations, and therefore the value of `GL_SHADER_COMPILER` will always
 `GL_SHADER_STORAGE_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
 `glGetIntegerv` ), `data` returns a single value, the name of the buffer object currently bound to
 the target `GL_SHADER_STORAGE_BUFFER`. If no buffer object is bound to this target, 0 is returned.
+
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns a
 single value, the name of the buffer object bound to the indexed shader storage buffer binding
 points. The initial value is 0 for all targets. See glBindBuffer, glBindBufferBase, and
@@ -20110,6 +20196,7 @@ glBindTexture.
 
 `GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY` `data` returns a single value, the name of the
 texture currently bound to the target `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`. The initial value is 0.
+
 See glBindTexture.
 
 `GL_TEXTURE_BINDING_3D` `data` returns a single value, the name of the texture currently bound
@@ -20179,6 +20266,7 @@ data from memory. The initial is 0. See glPixelStore.
 
 `GL_UNPACK_LSB_FIRST` `data` returns a single boolean value indicating whether single-bit
 pixels being read from memory are read first from the least significant bit of each unsigned byte.
+
 The initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_UNPACK_ROW_LENGTH` `data` returns one value, the row length used for reading pixel data
@@ -20199,6 +20287,7 @@ initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_VERTEX_ARRAY_BINDING` `data` returns a single value, the name of the vertex array object
 currently bound to the context. If no vertex array object is bound to the context, 0 is returned.
+
 The initial value is 0. See glBindVertexArray.
 
 `GL_VERTEX_BINDING_DIVISOR` Accepted by the indexed forms. `data` returns a single integer
@@ -20226,6 +20315,7 @@ number of vertex buffers that may be bound.
 `data` returns four values: the x and y window coordinates of the viewport, followed by its
 width and height. Initially the x and y window coordinates are both set to 0, and the width
 and height are set to the width and height of the window into which the GL will do its rendering.
+
 See glViewport.
 
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns four
@@ -20331,12 +20421,12 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetDoublei_v(GLenum target, GLuint index, GLdouble * data)
-
 ```
 Return the value or values of a selected parameter
 ---
 ### Parameters
 `pname` Specifies the parameter value to be returned for non-indexed versions of `glGet`.
+
 The symbolic constants in the list below are accepted.
 
 `target` Specifies the parameter value to be returned for indexed versions of `glGet`. The
@@ -20363,6 +20453,7 @@ values are converted to floating-point values.
 The following symbolic constants are accepted by `pname` :
 
 `GL_ACTIVE_TEXTURE` `data` returns a single value indicating the active multitexture unit.
+
 The initial value is `GL_TEXTURE0`. See glActiveTexture.
 
 `GL_ALIASED_LINE_WIDTH_RANGE` `data` returns a pair of values indicating the range of widths
@@ -20730,6 +20821,7 @@ level-of-detail bias. The value must be at least 2.0.
 `GL_MAX_TEXTURE_SIZE` `data` returns one value. The value gives a rough estimate of the
 largest texture that the GL can handle. The value must be at least 1024. Use a proxy texture target
 such as `GL_PROXY_TEXTURE_1D` or `GL_PROXY_TEXTURE_2D` to determine if a texture is too large.
+
 See glTexImage1D and glTexImage2D.
 
 `GL_MAX_UNIFORM_BUFFER_BINDINGS` `data` returns one value, the maximum number of uniform
@@ -20843,6 +20935,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 determining the point size. See glPointParameter.
 
 `GL_PRIMITIVE_RESTART_INDEX` `data` returns one value, the current primitive restart index.
+
 The initial value is 0. See glPrimitiveRestartIndex.
 
 `GL_PROGRAM_BINARY_FORMATS` `data` an array of `GL_NUM_PROGRAM_BINARY_FORMATS` values,
@@ -20867,6 +20960,7 @@ supported sizes for antialiased points. See glPointSize.
 
 `GL_POINT_SIZE_RANGE` `data` returns two values: the smallest and largest supported sizes for
 antialiased points. The smallest size must be at most 1, and the largest size must be at least 1.
+
 See glPointSize.
 
 `GL_POLYGON_OFFSET_FACTOR` `data` returns one value, the scaling factor used to determine the
@@ -20913,6 +21007,7 @@ the current sample coverage value. See glSampleCoverage.
 coverage value should be inverted. See glSampleCoverage.
 
 `GL_SAMPLE_MASK_VALUE` `params` returns one value indicating the current sample mask value.
+
 See glSampleMaski.
 
 `GL_SAMPLER_BINDING` `data` returns a single value, the name of the sampler object currently
@@ -20935,6 +21030,7 @@ shader compilations, and therefore the value of `GL_SHADER_COMPILER` will always
 `GL_SHADER_STORAGE_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
 `glGetIntegerv` ), `data` returns a single value, the name of the buffer object currently bound to
 the target `GL_SHADER_STORAGE_BUFFER`. If no buffer object is bound to this target, 0 is returned.
+
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns a
 single value, the name of the buffer object bound to the indexed shader storage buffer binding
 points. The initial value is 0 for all targets. See glBindBuffer, glBindBufferBase, and
@@ -21054,6 +21150,7 @@ glBindTexture.
 
 `GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY` `data` returns a single value, the name of the
 texture currently bound to the target `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`. The initial value is 0.
+
 See glBindTexture.
 
 `GL_TEXTURE_BINDING_3D` `data` returns a single value, the name of the texture currently bound
@@ -21123,6 +21220,7 @@ data from memory. The initial is 0. See glPixelStore.
 
 `GL_UNPACK_LSB_FIRST` `data` returns a single boolean value indicating whether single-bit
 pixels being read from memory are read first from the least significant bit of each unsigned byte.
+
 The initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_UNPACK_ROW_LENGTH` `data` returns one value, the row length used for reading pixel data
@@ -21143,6 +21241,7 @@ initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_VERTEX_ARRAY_BINDING` `data` returns a single value, the name of the vertex array object
 currently bound to the context. If no vertex array object is bound to the context, 0 is returned.
+
 The initial value is 0. See glBindVertexArray.
 
 `GL_VERTEX_BINDING_DIVISOR` Accepted by the indexed forms. `data` returns a single integer
@@ -21170,6 +21269,7 @@ number of vertex buffers that may be bound.
 `data` returns four values: the x and y window coordinates of the viewport, followed by its
 width and height. Initially the x and y window coordinates are both set to 0, and the width
 and height are set to the width and height of the window into which the GL will do its rendering.
+
 See glViewport.
 
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns four
@@ -21275,12 +21375,12 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetInteger64i_v(GLenum target, GLuint index, GLint64 * data)
-
 ```
 Return the value or values of a selected parameter
 ---
 ### Parameters
 `pname` Specifies the parameter value to be returned for non-indexed versions of `glGet`.
+
 The symbolic constants in the list below are accepted.
 
 `target` Specifies the parameter value to be returned for indexed versions of `glGet`. The
@@ -21307,6 +21407,7 @@ values are converted to floating-point values.
 The following symbolic constants are accepted by `pname` :
 
 `GL_ACTIVE_TEXTURE` `data` returns a single value indicating the active multitexture unit.
+
 The initial value is `GL_TEXTURE0`. See glActiveTexture.
 
 `GL_ALIASED_LINE_WIDTH_RANGE` `data` returns a pair of values indicating the range of widths
@@ -21674,6 +21775,7 @@ level-of-detail bias. The value must be at least 2.0.
 `GL_MAX_TEXTURE_SIZE` `data` returns one value. The value gives a rough estimate of the
 largest texture that the GL can handle. The value must be at least 1024. Use a proxy texture target
 such as `GL_PROXY_TEXTURE_1D` or `GL_PROXY_TEXTURE_2D` to determine if a texture is too large.
+
 See glTexImage1D and glTexImage2D.
 
 `GL_MAX_UNIFORM_BUFFER_BINDINGS` `data` returns one value, the maximum number of uniform
@@ -21787,6 +21889,7 @@ target, 0 is returned. The initial value is 0. See glBindBuffer.
 determining the point size. See glPointParameter.
 
 `GL_PRIMITIVE_RESTART_INDEX` `data` returns one value, the current primitive restart index.
+
 The initial value is 0. See glPrimitiveRestartIndex.
 
 `GL_PROGRAM_BINARY_FORMATS` `data` an array of `GL_NUM_PROGRAM_BINARY_FORMATS` values,
@@ -21811,6 +21914,7 @@ supported sizes for antialiased points. See glPointSize.
 
 `GL_POINT_SIZE_RANGE` `data` returns two values: the smallest and largest supported sizes for
 antialiased points. The smallest size must be at most 1, and the largest size must be at least 1.
+
 See glPointSize.
 
 `GL_POLYGON_OFFSET_FACTOR` `data` returns one value, the scaling factor used to determine the
@@ -21857,6 +21961,7 @@ the current sample coverage value. See glSampleCoverage.
 coverage value should be inverted. See glSampleCoverage.
 
 `GL_SAMPLE_MASK_VALUE` `params` returns one value indicating the current sample mask value.
+
 See glSampleMaski.
 
 `GL_SAMPLER_BINDING` `data` returns a single value, the name of the sampler object currently
@@ -21879,6 +21984,7 @@ shader compilations, and therefore the value of `GL_SHADER_COMPILER` will always
 `GL_SHADER_STORAGE_BUFFER_BINDING` When used with non-indexed variants of `glGet` (such as
 `glGetIntegerv` ), `data` returns a single value, the name of the buffer object currently bound to
 the target `GL_SHADER_STORAGE_BUFFER`. If no buffer object is bound to this target, 0 is returned.
+
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns a
 single value, the name of the buffer object bound to the indexed shader storage buffer binding
 points. The initial value is 0 for all targets. See glBindBuffer, glBindBufferBase, and
@@ -21998,6 +22104,7 @@ glBindTexture.
 
 `GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY` `data` returns a single value, the name of the
 texture currently bound to the target `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`. The initial value is 0.
+
 See glBindTexture.
 
 `GL_TEXTURE_BINDING_3D` `data` returns a single value, the name of the texture currently bound
@@ -22067,6 +22174,7 @@ data from memory. The initial is 0. See glPixelStore.
 
 `GL_UNPACK_LSB_FIRST` `data` returns a single boolean value indicating whether single-bit
 pixels being read from memory are read first from the least significant bit of each unsigned byte.
+
 The initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_UNPACK_ROW_LENGTH` `data` returns one value, the row length used for reading pixel data
@@ -22087,6 +22195,7 @@ initial value is `GL_FALSE`. See glPixelStore.
 
 `GL_VERTEX_ARRAY_BINDING` `data` returns a single value, the name of the vertex array object
 currently bound to the context. If no vertex array object is bound to the context, 0 is returned.
+
 The initial value is 0. See glBindVertexArray.
 
 `GL_VERTEX_BINDING_DIVISOR` Accepted by the indexed forms. `data` returns a single integer
@@ -22114,6 +22223,7 @@ number of vertex buffers that may be bound.
 `data` returns four values: the x and y window coordinates of the viewport, followed by its
 width and height. Initially the x and y window coordinates are both set to 0, and the width
 and height are set to the width and height of the window into which the GL will do its rendering.
+
 See glViewport.
 
 When used with indexed variants of `glGet` (such as `glGetIntegeri_v` ), `data` returns four
@@ -22219,7 +22329,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetActiveAtomicCounterBufferiv(GLuint program, GLuint bufferIndex, GLenum pname, GLint *params)
-
 ```
 Retrieve information about the set of active atomic counter buffers for a program
 ---
@@ -22294,6 +22403,7 @@ glGetUniformLocation
 ### Copyright
 Copyright 2011-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -22307,7 +22417,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetActiveAttrib(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name)
-
 ```
 Returns information about an active attribute variable for the specified program object
 ---
@@ -22410,7 +22519,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetActiveSubroutineName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize, GLsizei *length, GLchar *name)
-
 ```
 Query the name of an active shader subroutine
 ---
@@ -22454,6 +22562,7 @@ glGetSubroutineIndex, glGetActiveSubroutineUniform, glGetProgramStage
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -22467,7 +22576,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetActiveSubroutineUniformiv(GLuint program, GLenum shadertype, GLuint index, GLenum pname, GLint *values)
-
 ```
 Query a property of an active shader subroutine uniform
 ---
@@ -22525,6 +22633,7 @@ glGetSubroutineIndex, glGetActiveSubroutineUniformName, glGetProgramStage
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -22538,7 +22647,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetActiveSubroutineUniformName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize, GLsizei *length, GLchar *name)
-
 ```
 Query the name of an active shader subroutine uniform
 ---
@@ -22590,6 +22698,7 @@ glGetSubroutineIndex, glGetActiveSubroutineUniform, glGetProgramStage
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -22603,7 +22712,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetActiveUniform(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name)
-
 ```
 Returns information about an active uniform variable for the specified program object
 ---
@@ -22628,6 +22736,7 @@ active uniform variable. Permissible values for `index` range from zero to the n
 uniform variables minus one.
 
 Shaders may use either built-in uniform variables, user-defined uniform variables, or both.
+
 Built-in uniform variables have a prefix of \"gl_\" and reference existing OpenGL state or values
 derived from such state (e.g., `gl_DepthRangeParameters`, see the OpenGL Shading Language
 specification for a complete list.) User-defined uniform variables have arbitrary names and obtain
@@ -22781,7 +22890,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetActiveUniformBlockiv(GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint *params)
-
 ```
 Query information about an active uniform block
 ---
@@ -22807,6 +22915,7 @@ an error occurs, nothing will be written to `params`.
 
 If `pname` is `GL_UNIFORM_BLOCK_BINDING`, then the index of the uniform buffer binding point
 last selected by the uniform block specified by `uniformBlockIndex` for `program` is returned.
+
 If no uniform block has been previously specified, zero is returned.
 
 If `pname` is `GL_UNIFORM_BLOCK_DATA_SIZE`, then the implementation-dependent minimum total
@@ -22862,6 +22971,7 @@ glGetActiveUniformBlockName, glGetUniformBlockIndex, glLinkProgram
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -22875,7 +22985,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetActiveUniformBlockName(GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformBlockName)
-
 ```
 Retrieve the name of an active uniform block
 ---
@@ -22932,6 +23041,7 @@ glGetActiveUniformBlock, glGetUniformBlockIndex
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -22945,7 +23055,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetActiveUniformName(GLuint program, GLuint uniformIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformName)
-
 ```
 Query the name of an active uniform
 ---
@@ -23002,6 +23111,7 @@ glGetActiveUniform, glGetUniformIndices, glGetProgram, glLinkProgram
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -23015,7 +23125,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetActiveUniformsiv(GLuint program, GLsizei uniformCount, const GLuint *uniformIndices, GLenum pname, GLint *params)
-
 ```
 Returns information about several active uniform variables for the specified program object
 ---
@@ -23159,6 +23268,7 @@ glUseProgram
 ### Copyright
 Copyright 2011-2014 Khronos Group This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -23172,7 +23282,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei *count, GLuint *shaders)
-
 ```
 Returns the handles of the shader objects attached to a program object
 ---
@@ -23229,7 +23338,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 GLint glGetAttribLocation(GLuint program, const GLchar *name)
-
 ```
 Returns the location of an attribute variable
 ---
@@ -23289,7 +23397,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetBufferParameteriv(GLenum target, GLenum value, GLint * data)
-
 ```
 GlGetBufferParameter Return parameters of a buffer object
 ---
@@ -23393,7 +23500,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetBufferParameteri64v(GLenum target, GLenum value, GLint64 * data)
-
 ```
 GlGetBufferParameter Return parameters of a buffer object
 ---
@@ -23497,7 +23603,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetNamedBufferParameteriv(GLuint buffer, GLenum pname, GLint *params)
-
 ```
 GlGetBufferParameter Return parameters of a buffer object
 ---
@@ -23601,7 +23706,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetNamedBufferParameteri64v(GLuint buffer, GLenum pname, GLint64 *params)
-
 ```
 GlGetBufferParameter Return parameters of a buffer object
 ---
@@ -23705,7 +23809,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetBufferPointerv(GLenum target, GLenum pname, void ** params)
-
 ```
 Return the pointer to a mapped buffer object's data store
 ---
@@ -23770,7 +23873,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetNamedBufferPointerv(GLuint buffer, GLenum pname, void **params)
-
 ```
 Return the pointer to a mapped buffer object's data store
 ---
@@ -23835,7 +23937,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, void * data)
-
 ```
 Returns a subset of a buffer object's data store
 ---
@@ -23904,7 +24005,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawElementsInstancedBaseInstance(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLuint baseinstance)
-
 ```
 Draw multiple instances of a set of elements with offset applied to instanced attributes
 ---
@@ -23934,7 +24034,6 @@ rendered.
         value = [[
 ```c
 void glDrawElementsInstancedBaseVertex(GLenum mode, GLsizei count, GLenum type, void *indices, GLsizei instancecount, GLint basevertex)
-
 ```
 Render multiple instances of a set of primitives from array data with a per-element offset
 ---
@@ -23986,6 +24085,7 @@ glDrawElementsInstanced, glDrawElementsInstancedBaseVertex
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -23999,7 +24099,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawElementsInstancedBaseVertexBaseInstance(GLenum mode, GLsizei count, GLenum type, void *indices, GLsizei instancecount, GLint basevertex, GLuint baseinstance)
-
 ```
 Render multiple instances of a set of primitives from array data with a per-element offset
 ---
@@ -24032,7 +24131,6 @@ chosing elements from the enabled vertex arrays.
         value = [[
 ```c
 void glDrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void * indices)
-
 ```
 Render primitives from array data
 ---
@@ -24062,6 +24160,7 @@ by calling glGet with argument `GL_MAX_ELEMENTS_VERTICES` and `GL_MAX_ELEMENTS_I
 end - start + 1 is greater than the value of `GL_MAX_ELEMENTS_VERTICES`, or if `count` is
 greater than the value of `GL_MAX_ELEMENTS_INDICES`, then the call may operate at reduced
 performance. There is no requirement that all vertices in the range start end be referenced.
+
 However, the implementation may partially process unused vertices, reducing performance from what
 could be achieved with an optimal index set.
 
@@ -24120,7 +24219,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glDrawRangeElementsBaseVertex(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, void *indices, GLint basevertex)
-
 ```
 Render primitives from array data with a per-element offset
 ---
@@ -24177,6 +24275,7 @@ glDrawElementsInstancedBaseVertex
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -24190,7 +24289,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawTransformFeedback(GLenum mode, GLuint id)
-
 ```
 Render primitives using a count derived from a transform feedback object
 ---
@@ -24237,6 +24335,7 @@ glDrawTransformFeedbackStream
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -24250,7 +24349,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawTransformFeedbackInstanced(GLenum mode, GLuint id, GLsizei instancecount)
-
 ```
 Render multiple instances of primitives using a count derived from a transform feedback object
 ---
@@ -24306,6 +24404,7 @@ glDrawTransformFeedback, glDrawTransformFeedbackStreamInstanced.
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -24319,7 +24418,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawTransformFeedbackStream(GLenum mode, GLuint id, GLuint stream)
-
 ```
 Render primitives using a count derived from a specifed stream of a transform feedback object
 ---
@@ -24375,6 +24473,7 @@ glDrawTransformFeedback
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -24388,7 +24487,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawTransformFeedbackStreamInstanced(GLenum mode, GLuint id, GLuint stream, GLsizei instancecount)
-
 ```
 Render multiple instances of primitives using a count derived from a specifed stream of a transform
 feedback object
@@ -24447,6 +24545,7 @@ glDrawTransformFeedback, glDrawTransformFeedbackStream.
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -24460,7 +24559,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glEnable(GLenum cap)
-
 ```
 Enable or disable server-side GL capabilities
 ---
@@ -24480,7 +24578,6 @@ only).
         value = [[
 ```c
 void glGetNamedFramebufferAttachmentParameteriv(GLuint framebuffer, GLenum attachment, GLenum pname, GLint *params)
-
 ```
 Retrieve information about attachments of a framebuffer object
 ---
@@ -24578,6 +24675,7 @@ mipmap level of the texture object which contains the attached image.
 If `pname` is `GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE` and the value of
 `GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME` is the name of a cube map texture object, then `params`
 will contain the cube map face of the cubemap texture object which contains the attached image.
+
 Otherwise `params` will contain zero.
 
 If `pname` is `GL_FRAMEBUFFER_ATTACHMENT_LAYERED`, then `params` will contain `GL_TRUE`
@@ -24626,6 +24724,7 @@ glGenFramebuffers, glBindFramebuffer glGetFramebufferParameter
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -24639,7 +24738,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glEnablei(GLenum cap, GLuint index)
-
 ```
 Enable or disable server-side GL capabilities
 ---
@@ -24659,7 +24757,6 @@ only).
         value = [[
 ```c
 void glDisablei(GLenum cap, GLuint index)
-
 ```
 Enable or disable server-side GL capabilities
 ---
@@ -24679,7 +24776,6 @@ only).
         value = [[
 ```c
 void glEnableVertexAttribArray(GLuint index)
-
 ```
 GlEnableVertexAttribArray Enable or disable a generic vertex attribute array
 ---
@@ -24745,7 +24841,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDisableVertexAttribArray(GLuint index)
-
 ```
 GlEnableVertexAttribArray Enable or disable a generic vertex attribute array
 ---
@@ -24811,7 +24906,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glEnableVertexArrayAttrib(GLuint vaobj, GLuint index)
-
 ```
 GlEnableVertexAttribArray Enable or disable a generic vertex attribute array
 ---
@@ -24877,7 +24971,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDisableVertexArrayAttrib(GLuint vaobj, GLuint index)
-
 ```
 GlEnableVertexAttribArray Enable or disable a generic vertex attribute array
 ---
@@ -24943,7 +25036,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 GLsync glFenceSync(GLenum condition, GLbitfield flags)
-
 ```
 Create a new sync object and insert it into the GL command stream
 ---
@@ -24952,6 +25044,7 @@ Create a new sync object and insert it into the GL command stream
 signaled. `condition` must be `GL_SYNC_GPU_COMMANDS_COMPLETE`.
 
 `flags` Specifies a bitwise combination of flags controlling the behavior of the sync object.
+
 No flags are presently defined for this operation and `flags` must be zero. `flags` is a
 placeholder for anticipated future extensions of fence sync object capabilities.
 
@@ -24994,6 +25087,7 @@ glDeleteSync, glGetSync, glWaitSync, glClientWaitSync
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -25007,12 +25101,12 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glFinish(void)
-
 ```
 Block until all GL execution is complete
 ---
 ### Description
 `glFinish` does not return until the effects of all previously called GL commands are complete.
+
 Such effects include all changes to GL state, all changes to connection state, and all changes to
 the frame buffer contents.
 ---
@@ -25041,7 +25135,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glFlush(void)
-
 ```
 Force execution of GL commands in finite time
 ---
@@ -25049,6 +25142,7 @@ Force execution of GL commands in finite time
 Different GL implementations buffer commands in several different locations, including network
 buffers and the graphics accelerator itself. `glFlush` empties all of these buffers, causing all
 issued commands to be executed as quickly as they are accepted by the actual rendering engine.
+
 Though this execution may not be completed in any particular time period, it does complete in finite
 time.
 
@@ -25083,7 +25177,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glFlushMappedBufferRange(GLenum target, GLintptr offset, GLsizeiptr length)
-
 ```
 Indicate modifications to a range of a mapped buffer
 ---
@@ -25103,6 +25196,7 @@ buffer object. The buffer object must previously have been mapped with the
 `GL_MAP_FLUSH_EXPLICIT_BIT` flag.
 
 `offset` and `length` indicate the modified subrange of the mapping, in basic machine units.
+
 The specified subrange to flush is relative to the start of the currently mapped range of the
 buffer. These commands may be called multiple times to indicate distinct subranges of the mapping
 which require flushing.
@@ -25142,6 +25236,7 @@ glMapBufferRange, glMapBuffer, glUnmapBuffer
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -25155,7 +25250,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glFlushMappedNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length)
-
 ```
 Indicate modifications to a range of a mapped buffer
 ---
@@ -25175,6 +25269,7 @@ buffer object. The buffer object must previously have been mapped with the
 `GL_MAP_FLUSH_EXPLICIT_BIT` flag.
 
 `offset` and `length` indicate the modified subrange of the mapping, in basic machine units.
+
 The specified subrange to flush is relative to the start of the currently mapped range of the
 buffer. These commands may be called multiple times to indicate distinct subranges of the mapping
 which require flushing.
@@ -25214,6 +25309,7 @@ glMapBufferRange, glMapBuffer, glUnmapBuffer
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -25227,7 +25323,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribP1ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -25291,6 +25386,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -25381,7 +25477,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribP2ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -25445,6 +25540,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -25535,7 +25631,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribP3ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -25599,6 +25694,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -25689,7 +25785,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribP4ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -25753,6 +25848,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -25843,7 +25939,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribBinding(GLuint attribindex, GLuint bindingindex)
-
 ```
 Associate a vertex attribute and a vertex buffer binding for a vertex array object
 ---
@@ -25889,6 +25984,7 @@ glBindVertexBuffer, glVertexAttribFormat, glVertexBindingDivisor, glVertexAttrib
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -25902,7 +25998,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexArrayAttribBinding(GLuint vaobj, GLuint attribindex, GLuint bindingindex)
-
 ```
 Associate a vertex attribute and a vertex buffer binding for a vertex array object
 ---
@@ -25948,6 +26043,7 @@ glBindVertexBuffer, glVertexAttribFormat, glVertexBindingDivisor, glVertexAttrib
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -25961,7 +26057,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribDivisor(GLuint index, GLuint divisor)
-
 ```
 Modify the rate at which generic vertex attributes advance during instanced rendering
 ---
@@ -25996,6 +26091,7 @@ glVertexAttribPointer, glEnableVertexAttribArray, `glDisableVertexAttribArray`
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -26009,7 +26105,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribFormat(GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset)
-
 ```
 Specify the organization of vertex arrays
 ---
@@ -26122,6 +26217,7 @@ glVertexAttribPointer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -26135,7 +26231,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribIFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)
-
 ```
 Specify the organization of vertex arrays
 ---
@@ -26248,6 +26343,7 @@ glVertexAttribPointer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -26261,7 +26357,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribLFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)
-
 ```
 Specify the organization of vertex arrays
 ---
@@ -26374,6 +26469,7 @@ glVertexAttribPointer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -26387,7 +26483,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexArrayAttribFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset)
-
 ```
 Specify the organization of vertex arrays
 ---
@@ -26500,6 +26595,7 @@ glVertexAttribPointer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -26513,7 +26609,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexArrayAttribIFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)
-
 ```
 Specify the organization of vertex arrays
 ---
@@ -26626,6 +26721,7 @@ glVertexAttribPointer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -26639,7 +26735,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexArrayAttribLFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)
-
 ```
 Specify the organization of vertex arrays
 ---
@@ -26752,6 +26847,7 @@ glVertexAttribPointer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -26765,13 +26861,13 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void * pointer)
-
 ```
 Define an array of generic vertex attribute data
 ---
 ### Parameters
 `index` Specifies the index of the generic vertex attribute to be modified.
 `size` Specifies the number of components per generic vertex attribute. Must be 1, 2, 3, 4.
+
 Additionally, the symbolic constant `GL_BGRA` is accepted by `glVertexAttribPointer`. The
 initial value is 4.
 
@@ -26909,13 +27005,13 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribIPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer)
-
 ```
 Define an array of generic vertex attribute data
 ---
 ### Parameters
 `index` Specifies the index of the generic vertex attribute to be modified.
 `size` Specifies the number of components per generic vertex attribute. Must be 1, 2, 3, 4.
+
 Additionally, the symbolic constant `GL_BGRA` is accepted by `glVertexAttribPointer`. The
 initial value is 4.
 
@@ -27053,13 +27149,13 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribLPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer)
-
 ```
 Define an array of generic vertex attribute data
 ---
 ### Parameters
 `index` Specifies the index of the generic vertex attribute to be modified.
 `size` Specifies the number of components per generic vertex attribute. Must be 1, 2, 3, 4.
+
 Additionally, the symbolic constant `GL_BGRA` is accepted by `glVertexAttribPointer`. The
 initial value is 4.
 
@@ -27197,7 +27293,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexBindingDivisor(GLuint bindingindex, GLuint divisor)
-
 ```
 Modify the rate at which generic vertex attributes advance
 ---
@@ -27211,6 +27306,7 @@ function.
 ### Description
 `glVertexBindingDivisor` and `glVertexArrayBindingDivisor` modify the rate at which generic
 vertex attributes advance when rendering multiple instances of primitives in a single draw command.
+
 If `divisor` is zero, the attributes using the buffer bound to `bindingindex` advance once per
 vertex. If `divisor` is non-zero, the attributes advance once per `divisor` instances of the
 set(s) of vertices being rendered. An attribute is referred to as instanced if the corresponding
@@ -27242,6 +27338,7 @@ glVertexAttribPointer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -27255,7 +27352,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexArrayBindingDivisor(GLuint vaobj, GLuint bindingindex, GLuint divisor)
-
 ```
 Modify the rate at which generic vertex attributes advance
 ---
@@ -27269,6 +27365,7 @@ function.
 ### Description
 `glVertexBindingDivisor` and `glVertexArrayBindingDivisor` modify the rate at which generic
 vertex attributes advance when rendering multiple instances of primitives in a single draw command.
+
 If `divisor` is zero, the attributes using the buffer bound to `bindingindex` advance once per
 vertex. If `divisor` is non-zero, the attributes advance once per `divisor` instances of the
 set(s) of vertices being rendered. An attribute is referred to as instanced if the corresponding
@@ -27300,6 +27397,7 @@ glVertexAttribPointer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -27313,7 +27411,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glViewport(GLint x, GLint y, GLsizei width, GLsizei height)
-
 ```
 Set the viewport
 ---
@@ -27334,7 +27431,6 @@ attached to a window, `width` and `height` are set to the dimensions of that win
         value = [[
 ```c
 void glViewportArrayv(GLuint first, GLsizei count, const GLfloat *v)
-
 ```
 Set multiple viewports
 ---
@@ -27354,7 +27450,6 @@ Set multiple viewports
         value = [[
 ```c
 void glViewportIndexedf(GLuint index, GLfloat x, GLfloat y, GLfloat w, GLfloat h)
-
 ```
 Set a specified viewport
 ---
@@ -27380,7 +27475,6 @@ parameters.
         value = [[
 ```c
 void glViewportIndexedfv(GLuint index, const GLfloat *v)
-
 ```
 Set a specified viewport
 ---
@@ -27406,7 +27500,6 @@ parameters.
         value = [[
 ```c
 void glWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout)
-
 ```
 Instruct the GL server to block until the specified sync object becomes signaled
 ---
@@ -27450,6 +27543,7 @@ glFenceSync, glClientWaitSync
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -27463,7 +27557,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBeginConditionalRender(GLuint id, GLenum mode)
-
 ```
 Start conditional rendering
 ---
@@ -27529,6 +27622,7 @@ glGenQueries, glDeleteQueries, glBeginQuery
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -27542,7 +27636,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glEndConditionalRender(void)
-
 ```
 Start conditional rendering
 ---
@@ -27608,6 +27701,7 @@ glGenQueries, glDeleteQueries, glBeginQuery
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -27621,7 +27715,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBeginQuery(GLenum target, GLuint id)
-
 ```
 Delimit the boundaries of a query object
 ---
@@ -27672,7 +27765,9 @@ glGetQueryObject with `pname` `GL_QUERY_RESULT`.
 
 If `target` is `GL_PRIMITIVES_GENERATED`, `id` must be an unused name, or the name of an
 existing primitive query object previously bound to the `GL_PRIMITIVES_GENERATED` query binding.
+
 When `glBeginQuery` is executed, the query object's primitives-generated counter is reset to 0.
+
 Subsequent rendering will increment the counter once for every vertex that is emitted from the
 geometry shader, or from the vertex shader if no geometry shader is present. When `glEndQuery` is
 executed, the primitives-generated counter is assigned to the query object's result value. This
@@ -27757,7 +27852,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glEndQuery(GLenum target)
-
 ```
 Delimit the boundaries of a query object
 ---
@@ -27808,7 +27902,9 @@ glGetQueryObject with `pname` `GL_QUERY_RESULT`.
 
 If `target` is `GL_PRIMITIVES_GENERATED`, `id` must be an unused name, or the name of an
 existing primitive query object previously bound to the `GL_PRIMITIVES_GENERATED` query binding.
+
 When `glBeginQuery` is executed, the query object's primitives-generated counter is reset to 0.
+
 Subsequent rendering will increment the counter once for every vertex that is emitted from the
 geometry shader, or from the vertex shader if no geometry shader is present. When `glEndQuery` is
 executed, the primitives-generated counter is assigned to the query object's result value. This
@@ -27893,7 +27989,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBeginQueryIndexed(GLenum target, GLuint index, GLuint id)
-
 ```
 Delimit the boundaries of a query object on an indexed target
 ---
@@ -27946,6 +28041,7 @@ calling glGetQueryObject with `pname` `GL_QUERY_RESULT`. When `target` is
 
 If `target` is `GL_PRIMITIVES_GENERATED`, `id` must be an unused name, or the name of an
 existing primitive query object previously bound to the `GL_PRIMITIVES_GENERATED` query binding.
+
 When `glBeginQueryIndexed` is executed, the query object's primitives-generated counter is reset
 to 0. Subsequent rendering will increment the counter once for every vertex that is emitted from the
 geometry shader to the stream given by `index`, or from the vertex shader if `index` is zero and
@@ -27958,6 +28054,7 @@ If `target` is `GL_TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN`, `id` must be an unuse
 the name of an existing primitive query object previously bound to the
 `GL_TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN` query binding. When `glBeginQueryIndexed` is executed,
 the query object's primitives-written counter for the stream specified by `index` is reset to 0.
+
 Subsequent rendering will increment the counter once for every vertex that is written into the bound
 transform feedback buffer(s) for stream `index`. If transform feedback mode is not activated
 between the call to `glBeginQueryIndexed` and `glEndQueryIndexed`, the counter will not be
@@ -28023,6 +28120,7 @@ glGetQueryiv, glIsQuery
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -28036,7 +28134,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glEndQueryIndexed(GLenum target, GLuint index)
-
 ```
 Delimit the boundaries of a query object on an indexed target
 ---
@@ -28089,6 +28186,7 @@ calling glGetQueryObject with `pname` `GL_QUERY_RESULT`. When `target` is
 
 If `target` is `GL_PRIMITIVES_GENERATED`, `id` must be an unused name, or the name of an
 existing primitive query object previously bound to the `GL_PRIMITIVES_GENERATED` query binding.
+
 When `glBeginQueryIndexed` is executed, the query object's primitives-generated counter is reset
 to 0. Subsequent rendering will increment the counter once for every vertex that is emitted from the
 geometry shader to the stream given by `index`, or from the vertex shader if `index` is zero and
@@ -28101,6 +28199,7 @@ If `target` is `GL_TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN`, `id` must be an unuse
 the name of an existing primitive query object previously bound to the
 `GL_TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN` query binding. When `glBeginQueryIndexed` is executed,
 the query object's primitives-written counter for the stream specified by `index` is reset to 0.
+
 Subsequent rendering will increment the counter once for every vertex that is written into the bound
 transform feedback buffer(s) for stream `index`. If transform feedback mode is not activated
 between the call to `glBeginQueryIndexed` and `glEndQueryIndexed`, the counter will not be
@@ -28166,6 +28265,7 @@ glGetQueryiv, glIsQuery
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -28179,7 +28279,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBeginTransformFeedback(GLenum primitiveMode)
-
 ```
 Start transform feedback operation
 ---
@@ -28239,6 +28338,7 @@ no varying variables to record.
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -28252,7 +28352,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glEndTransformFeedback(void)
-
 ```
 Start transform feedback operation
 ---
@@ -28312,6 +28411,7 @@ no varying variables to record.
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -28325,7 +28425,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindAttribLocation(GLuint program, GLuint index, const GLchar *name)
-
 ```
 Associates a generic vertex attribute index with a named attribute variable
 ---
@@ -28433,7 +28532,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindBuffer(GLenum target, GLuint buffer)
-
 ```
 Bind a named buffer object
 ---
@@ -28588,7 +28686,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindBufferBase(GLenum target, GLuint index, GLuint buffer)
-
 ```
 Bind a buffer object to an indexed buffer target
 ---
@@ -28637,6 +28734,7 @@ glUnmapBuffer,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -28650,7 +28748,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindBufferRange(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size)
-
 ```
 Bind a range within a buffer object to an indexed buffer target
 ---
@@ -28670,6 +28767,7 @@ as an indexed target.
 ### Description
 `glBindBufferRange` binds a range the buffer object `buffer` represented by `offset` and
 `size` to the binding point at index `index` of the array of targets specified by `target`.
+
 Each `target` represents an indexed array of buffer binding points, as well as a single general
 binding point that can be used by other buffer manipulation functions such as glBindBuffer or
 glMapBuffer. In addition to binding a range of `buffer` to the indexed buffer binding target,
@@ -28707,6 +28805,7 @@ glUnmapBuffer,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -28720,7 +28819,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindBuffersBase(GLenum target, GLuint first, GLsizei count, const GLuint *buffers)
-
 ```
 Bind one or more buffer objects to a sequence of indexed buffer targets
 ---
@@ -28774,6 +28872,7 @@ glBindBuffersRange, glMapBuffer, glUnmapBuffer
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -28787,7 +28886,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindBuffersRange(GLenum target, GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLintptr *sizes)
-
 ```
 Bind ranges of one or more buffer objects to a sequence of indexed buffer targets
 ---
@@ -28856,6 +28954,7 @@ glBindBuffersRange, glMapBuffer, glUnmapBuffer
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -28869,7 +28968,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindFragDataLocation(GLuint program, GLuint colorNumber, const char * name)
-
 ```
 Bind a user-defined varying out variable to a fragment shader color number
 ---
@@ -28922,6 +29020,7 @@ glCreateProgram, glGetFragDataLocation
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -28935,7 +29034,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindFragDataLocationIndexed(GLuint program, GLuint colorNumber, GLuint index, const char *name)
-
 ```
 Bind a user-defined varying out variable to a fragment shader color number and index
 ---
@@ -29003,6 +29101,7 @@ glBindFragDataLocation
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29016,7 +29115,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindFramebuffer(GLenum target, GLuint framebuffer)
-
 ```
 Bind a framebuffer to a framebuffer target
 ---
@@ -29053,6 +29151,7 @@ glFramebufferTextureLayer, glDeleteFramebuffers, glIsFramebuffer
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29066,7 +29165,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindImageTexture(GLuint unit, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLenum format)
-
 ```
 Bind a level of a texture to an image unit
 ---
@@ -29093,6 +29191,7 @@ If `texture` is the name of a one-, two-, or three-dimensional array texture, a 
 map array texture, or a two-dimensional multisample array texture, then it is possible to bind
 either the entire array, or only a single layer of the array to the image unit. In such cases, if
 `layered` is `GL_TRUE`, the entire array is attached to the image unit and `layer` is ignored.
+
 However, if `layered` is `GL_FALSE` then `layer` specifies the layer of the array to attach to
 the image unit.
 
@@ -29162,6 +29261,7 @@ glTexStorage2D, glTexStorage3D, glBindTexture
 ### Copyright
 Copyright 2011-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29175,7 +29275,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindImageTextures(GLuint first, GLsizei count, const GLuint *textures)
-
 ```
 Bind one or more named texture images to a sequence of consecutive image units
 ---
@@ -29245,6 +29344,7 @@ glTexParameter
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29258,7 +29358,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindProgramPipeline(GLuint pipeline)
-
 ```
 Bind a program pipeline to the current context
 ---
@@ -29295,6 +29394,7 @@ glGenProgramPipelines, glDeleteProgramPipelines, glIsProgramPipeline
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29308,7 +29408,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindRenderbuffer(GLenum target, GLuint renderbuffer)
-
 ```
 Bind a renderbuffer to a renderbuffer target
 ---
@@ -29340,6 +29439,7 @@ glRenderbufferStorageMultisample
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29353,7 +29453,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindSampler(GLuint unit, GLuint sampler)
-
 ```
 Bind a named sampler to a texturing target
 ---
@@ -29394,6 +29493,7 @@ glGenTextures, glBindTexture, glDeleteTextures
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29407,7 +29507,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindSamplers(GLuint first, GLsizei count, const GLuint *samplers)
-
 ```
 Bind one or more named sampler objects to a sequence of consecutive sampler units
 ---
@@ -29459,6 +29558,7 @@ glGetSamplerParameter, glGenTextures, glBindTexture, glDeleteTextures
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29472,7 +29572,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindTexture(GLenum target, GLuint texture)
-
 ```
 Bind a named texture to a texturing target
 ---
@@ -29569,7 +29668,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glBindTextureUnit(GLuint unit, GLuint texture)
-
 ```
 Bind an existing texture object to the specified texture unit
 ---
@@ -29608,6 +29706,7 @@ glTexImage3DMultisample, glTexBuffer, glTexParameter
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29621,7 +29720,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindTextures(GLuint first, GLsizei count, const GLuint *textures)
-
 ```
 Bind one or more named textures to a sequence of consecutive texture units
 ---
@@ -29684,6 +29782,7 @@ glTexImage3DMultisample, glTexBuffer, glTexParameter
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29697,7 +29796,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindTransformFeedback(GLenum target, GLuint id)
-
 ```
 Bind a transform feedback object
 ---
@@ -29747,6 +29845,7 @@ glBeginTransformFeedback, glPauseTransformFeedback, glResumeTransformFeedback,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29760,7 +29859,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindVertexArray(GLuint array)
-
 ```
 Bind a vertex array object
 ---
@@ -29790,6 +29888,7 @@ glVertexAttribPointer
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29803,7 +29902,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindVertexBuffer(GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride)
-
 ```
 Bind a buffer to a vertex buffer bind point
 ---
@@ -29861,6 +29959,7 @@ glVertexBindingDivisor.
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29874,7 +29973,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexArrayVertexBuffer(GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride)
-
 ```
 Bind a buffer to a vertex buffer bind point
 ---
@@ -29932,6 +30030,7 @@ glVertexBindingDivisor.
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -29945,7 +30044,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBindVertexBuffers(GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizei *strides)
-
 ```
 Attach multiple buffer objects to a vertex array object
 ---
@@ -30013,6 +30111,7 @@ glGenBuffers, glBindBuffer, glDeleteBuffers glDeleteTextures
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -30026,7 +30125,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexArrayVertexBuffers(GLuint vaobj, GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizei *strides)
-
 ```
 Attach multiple buffer objects to a vertex array object
 ---
@@ -30094,6 +30192,7 @@ glGenBuffers, glBindBuffer, glDeleteBuffers glDeleteTextures
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -30107,7 +30206,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBlendColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)
-
 ```
 Set the blend color
 ---
@@ -30151,7 +30249,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glBlendEquation(GLenum mode)
-
 ```
 Specify the equation used for both the RGB blend equation and the Alpha blend equation
 ---
@@ -30173,7 +30270,6 @@ blend equation.
         value = [[
 ```c
 void glBlendEquationi(GLuint buf, GLenum mode)
-
 ```
 Specify the equation used for both the RGB blend equation and the Alpha blend equation
 ---
@@ -30195,7 +30291,6 @@ blend equation.
         value = [[
 ```c
 void glBlendEquationSeparate(GLenum modeRGB, GLenum modeAlpha)
-
 ```
 Set the RGB blend equation and the alpha blend equation separately
 ---
@@ -30222,7 +30317,6 @@ destination colors are combined. It must be `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`,
         value = [[
 ```c
 void glBlendEquationSeparatei(GLuint buf, GLenum modeRGB, GLenum modeAlpha)
-
 ```
 Set the RGB blend equation and the alpha blend equation separately
 ---
@@ -30249,7 +30343,6 @@ destination colors are combined. It must be `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`,
         value = [[
 ```c
 void glBlendFunc(GLenum sfactor, GLenum dfactor)
-
 ```
 Specify pixel arithmetic
 ---
@@ -30258,6 +30351,7 @@ Specify pixel arithmetic
 function.
 
 `sfactor` Specifies how the red, green, blue, and alpha source blending factors are computed.
+
 The initial value is `GL_ONE`.
 
 `dfactor` Specifies how the red, green, blue, and alpha destination blending factors are
@@ -30278,7 +30372,6 @@ initial value is `GL_ZERO`.
         value = [[
 ```c
 void glBlendFunci(GLuint buf, GLenum sfactor, GLenum dfactor)
-
 ```
 Specify pixel arithmetic
 ---
@@ -30287,6 +30380,7 @@ Specify pixel arithmetic
 function.
 
 `sfactor` Specifies how the red, green, blue, and alpha source blending factors are computed.
+
 The initial value is `GL_ONE`.
 
 `dfactor` Specifies how the red, green, blue, and alpha destination blending factors are
@@ -30307,7 +30401,6 @@ initial value is `GL_ZERO`.
         value = [[
 ```c
 void glBlendFuncSeparate(GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha)
-
 ```
 Specify pixel arithmetic for RGB and alpha components separately
 ---
@@ -30338,7 +30431,6 @@ is `GL_ZERO`.
         value = [[
 ```c
 void glGetVertexAttribfv(GLuint index, GLenum pname, GLfloat *params)
-
 ```
 GlGetVertexAttrib Return a generic vertex attribute parameter
 ---
@@ -30459,7 +30551,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBlendFuncSeparatei(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha)
-
 ```
 Specify pixel arithmetic for RGB and alpha components separately
 ---
@@ -30490,7 +30581,6 @@ is `GL_ZERO`.
         value = [[
 ```c
 void glGetVertexAttribiv(GLuint index, GLenum pname, GLint *params)
-
 ```
 GlGetVertexAttrib Return a generic vertex attribute parameter
 ---
@@ -30611,7 +30701,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBlitFramebuffer(GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter)
-
 ```
 Copy a block of pixels from one framebuffer object to another
 ---
@@ -30656,6 +30745,7 @@ buffers being transferred, which may include the color buffer selected by the re
 buffer, and/or the stencil buffer depending on mask. The actual region written to the draw
 framebuffer is limited to the intersection of the destination buffers being written, which may
 include multiple draw buffers, the depth buffer, and/or the stencil buffer depending on mask.
+
 Whether or not the source or destination regions are altered due to these limits, the scaling and
 offset applied to pixels being transferred is performed as though no such limits were present. If
 the sizes of the source and destination rectangles are not equal, `filter` specifies the
@@ -30712,6 +30802,7 @@ glDeleteFramebuffers
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -30725,7 +30816,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetVertexAttribIiv(GLuint index, GLenum pname, GLint *params)
-
 ```
 GlGetVertexAttrib Return a generic vertex attribute parameter
 ---
@@ -30846,7 +30936,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBlitNamedFramebuffer(GLuint readFramebuffer, GLuint drawFramebuffer, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter)
-
 ```
 Copy a block of pixels from one framebuffer object to another
 ---
@@ -30891,6 +30980,7 @@ buffers being transferred, which may include the color buffer selected by the re
 buffer, and/or the stencil buffer depending on mask. The actual region written to the draw
 framebuffer is limited to the intersection of the destination buffers being written, which may
 include multiple draw buffers, the depth buffer, and/or the stencil buffer depending on mask.
+
 Whether or not the source or destination regions are altered due to these limits, the scaling and
 offset applied to pixels being transferred is performed as though no such limits were present. If
 the sizes of the source and destination rectangles are not equal, `filter` specifies the
@@ -30947,6 +31037,7 @@ glDeleteFramebuffers
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -30960,7 +31051,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetVertexAttribIuiv(GLuint index, GLenum pname, GLuint *params)
-
 ```
 GlGetVertexAttrib Return a generic vertex attribute parameter
 ---
@@ -31081,7 +31171,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBufferData(GLenum target, GLsizeiptr size, const void * data, GLenum usage)
-
 ```
 Creates and initializes a buffer object's data store
 ---
@@ -31118,12 +31207,17 @@ the data store. `usage` can be broken down into two parts: first, the frequency 
 of these:
 
 STREAM The data store contents will be modified once and used at most a few times.
+
 STATIC The data store contents will be modified once and used many times.
+
 DYNAMIC The data store contents will be modified repeatedly and used many times.
+
 The nature of access may be one of these: DRAW The data store contents are modified by the
 application, and used as the source for GL drawing and image specification commands.
+
 READ The data store contents are modified by reading data from the GL, and used to return that
 data when queried by the application.
+
 COPY The data store contents are modified by reading data from the GL, and used as the source for
 GL drawing and image specification commands.
 ---
@@ -31191,7 +31285,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetVertexAttribLdv(GLuint index, GLenum pname, GLdouble *params)
-
 ```
 GlGetVertexAttrib Return a generic vertex attribute parameter
 ---
@@ -31312,7 +31405,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glNamedBufferData(GLuint buffer, GLsizeiptr size, const void *data, GLenum usage)
-
 ```
 Creates and initializes a buffer object's data store
 ---
@@ -31349,12 +31441,17 @@ the data store. `usage` can be broken down into two parts: first, the frequency 
 of these:
 
 STREAM The data store contents will be modified once and used at most a few times.
+
 STATIC The data store contents will be modified once and used many times.
+
 DYNAMIC The data store contents will be modified repeatedly and used many times.
+
 The nature of access may be one of these: DRAW The data store contents are modified by the
 application, and used as the source for GL drawing and image specification commands.
+
 READ The data store contents are modified by reading data from the GL, and used to return that
 data when queried by the application.
+
 COPY The data store contents are modified by reading data from the GL, and used as the source for
 GL drawing and image specification commands.
 ---
@@ -31422,13 +31519,13 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetVertexAttribPointerv(GLuint index, GLenum pname, void **pointer)
-
 ```
 Return the address of the specified generic vertex attribute pointer
 ---
 ### Parameters
 `index` Specifies the generic vertex attribute parameter to be returned.
 `pname` Specifies the symbolic name of the generic vertex attribute parameter to be returned.
+
 Must be `GL_VERTEX_ATTRIB_ARRAY_POINTER`.
 
 `pointer` Returns the pointer value.
@@ -31478,7 +31575,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBufferStorage(GLenum target, GLsizeiptr size, const void * data, GLbitfield flags)
-
 ```
 Creates and initializes a buffer object's immutable data store
 ---
@@ -31599,6 +31695,7 @@ glBindBuffer, glBufferSubData, glMapBuffer, glUnmapBuffer
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -31612,7 +31709,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glHint(GLenum target, GLenum mode)
-
 ```
 Specify implementation-specific hints
 ---
@@ -31635,6 +31731,7 @@ following:
 `GL_FASTEST` The most efficient option should be chosen.
 `GL_NICEST` The most correct, or highest quality, option should be chosen.
 `GL_DONT_CARE` No preference.
+
 Though the implementation aspects that can be hinted are well defined, the interpretation of the
 hints depends on the implementation. The hint aspects that can be specified with `target`, along
 with suggested semantics, are as follows:
@@ -31686,7 +31783,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glNamedBufferStorage(GLuint buffer, GLsizeiptr size, const void *data, GLbitfield flags)
-
 ```
 Creates and initializes a buffer object's immutable data store
 ---
@@ -31807,6 +31903,7 @@ glBindBuffer, glBufferSubData, glMapBuffer, glUnmapBuffer
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -31820,7 +31917,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glInvalidateBufferData(GLuint buffer)
-
 ```
 Invalidate the content of a buffer object's data store
 ---
@@ -31829,6 +31925,7 @@ Invalidate the content of a buffer object's data store
 ---
 ### Description
 `glInvalidateBufferData` invalidates all of the content of the data store of a buffer object.
+
 After invalidation, the content of the buffer's data store becomes undefined.
 ---
 ### Errors
@@ -31849,6 +31946,7 @@ glInvalidateFramebuffer, glInvalidateSubFramebuffer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -31862,7 +31960,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, const void * data)
-
 ```
 Updates a subset of a buffer object's data store
 ---
@@ -31948,7 +32045,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glInvalidateBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr length)
-
 ```
 Invalidate a region of a buffer object's data store
 ---
@@ -31985,6 +32081,7 @@ glInvalidateFramebuffer, glInvalidateSubFramebuffer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -31998,7 +32095,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, const void *data)
-
 ```
 Updates a subset of a buffer object's data store
 ---
@@ -32084,7 +32180,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glInvalidateFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments)
-
 ```
 Invalidate the content of some or all of a framebuffer's attachments
 ---
@@ -32109,6 +32204,7 @@ is equivalent to `GL_DRAW_FRAMEBUFFER`. Default framebuffers may also be invalid
 `target`.
 
 For `glInvalidateNamedFramebufferData`, `framebuffer` is the name of the framebuffer object.
+
 If `framebuffer` is zero, the default draw framebuffer is affected.
 
 The set of attachments whose contents are to be invalidated are specified in the `attachments`
@@ -32123,6 +32219,7 @@ If the specified framebuffer is a default framebuffer, each element of `attachme
 of `GL_FRONT_LEFT`, `GL_FRONT_RIGHT`, `GL_BACK_LEFT`, `GL_BACK_RIGHT`, `GL_AUX` i,
 `GL_ACCUM`, `GL_COLOR`, `GL_DEPTH`, or `GL_STENCIL`. `GL_COLOR`, is treated as
 `GL_BACK_LEFT` for a double-buffered context and `GL_FRONT_LEFT` for a single-buffered context.
+
 The other attachments identify the corresponding specific buffer.
 
 The entire contents of each specified attachment become undefined after execution of
@@ -32159,6 +32256,7 @@ glInvalidateBufferData, glInvalidateSubFramebuffer.
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -32172,7 +32270,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLenum glCheckFramebufferStatus(GLenum target)
-
 ```
 Check the completeness status of a framebuffer
 ---
@@ -32198,6 +32295,7 @@ object to check. If `framebuffer` is zero, then the status of the default read o
 framebuffer, as determined by `target`, is returned.
 
 The return value is `GL_FRAMEBUFFER_COMPLETE` if the specified framebuffer is complete.
+
 Otherwise, the return value is determined as follows: `GL_FRAMEBUFFER_UNDEFINED` is returned if
 the specified framebuffer is the default read or draw framebuffer, but the default framebuffer does
 not exist.
@@ -32252,6 +32350,7 @@ glGenFramebuffers, glDeleteFramebuffers glBindFramebuffer
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -32265,7 +32364,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glInvalidateNamedFramebufferData(GLuint framebuffer, GLsizei numAttachments, const GLenum *attachments)
-
 ```
 Invalidate the content of some or all of a framebuffer's attachments
 ---
@@ -32290,6 +32388,7 @@ is equivalent to `GL_DRAW_FRAMEBUFFER`. Default framebuffers may also be invalid
 `target`.
 
 For `glInvalidateNamedFramebufferData`, `framebuffer` is the name of the framebuffer object.
+
 If `framebuffer` is zero, the default draw framebuffer is affected.
 
 The set of attachments whose contents are to be invalidated are specified in the `attachments`
@@ -32304,6 +32403,7 @@ If the specified framebuffer is a default framebuffer, each element of `attachme
 of `GL_FRONT_LEFT`, `GL_FRONT_RIGHT`, `GL_BACK_LEFT`, `GL_BACK_RIGHT`, `GL_AUX` i,
 `GL_ACCUM`, `GL_COLOR`, `GL_DEPTH`, or `GL_STENCIL`. `GL_COLOR`, is treated as
 `GL_BACK_LEFT` for a double-buffered context and `GL_FRONT_LEFT` for a single-buffered context.
+
 The other attachments identify the corresponding specific buffer.
 
 The entire contents of each specified attachment become undefined after execution of
@@ -32340,6 +32440,7 @@ glInvalidateBufferData, glInvalidateSubFramebuffer.
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -32353,7 +32454,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLenum glCheckNamedFramebufferStatus(GLuint framebuffer, GLenum target)
-
 ```
 Check the completeness status of a framebuffer
 ---
@@ -32379,6 +32479,7 @@ object to check. If `framebuffer` is zero, then the status of the default read o
 framebuffer, as determined by `target`, is returned.
 
 The return value is `GL_FRAMEBUFFER_COMPLETE` if the specified framebuffer is complete.
+
 Otherwise, the return value is determined as follows: `GL_FRAMEBUFFER_UNDEFINED` is returned if
 the specified framebuffer is the default read or draw framebuffer, but the default framebuffer does
 not exist.
@@ -32433,6 +32534,7 @@ glGenFramebuffers, glDeleteFramebuffers glBindFramebuffer
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -32446,7 +32548,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glInvalidateSubFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments, GLint x, GLint y, GLint width, GLint height)
-
 ```
 Invalidate the content of a region of some or all of a framebuffer's attachments
 ---
@@ -32489,6 +32590,7 @@ If the specified framebuffer is a default framebuffer, each element of `attachme
 of `GL_FRONT_LEFT`, `GL_FRONT_RIGHT`, `GL_BACK_LEFT`, `GL_BACK_RIGHT`, `GL_AUX` i,
 `GL_ACCUM`, `GL_COLOR`, `GL_DEPTH`, or `GL_STENCIL`. `GL_COLOR`, is treated as
 `GL_BACK_LEFT` for a double-buffered context and `GL_FRONT_LEFT` for a single-buffered context.
+
 The other attachments identify the corresponding specific buffer.
 
 The contents of the specified region of each specified attachment become undefined after execution
@@ -32531,6 +32633,7 @@ glInvalidateBufferData, glInvalidateFramebuffer.
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -32544,7 +32647,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClampColor(GLenum target, GLenum clamp)
-
 ```
 Specify whether data read via GlReadPixels should be clamped
 ---
@@ -32577,6 +32679,7 @@ glGet with argument `GL_CLAMP_READ_COLOR`.
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -32590,7 +32693,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glInvalidateNamedFramebufferSubData(GLuint framebuffer, GLsizei numAttachments, const GLenum *attachments, GLint x, GLint y, GLsizei width, GLsizei height)
-
 ```
 Invalidate the content of a region of some or all of a framebuffer's attachments
 ---
@@ -32633,6 +32735,7 @@ If the specified framebuffer is a default framebuffer, each element of `attachme
 of `GL_FRONT_LEFT`, `GL_FRONT_RIGHT`, `GL_BACK_LEFT`, `GL_BACK_RIGHT`, `GL_AUX` i,
 `GL_ACCUM`, `GL_COLOR`, `GL_DEPTH`, or `GL_STENCIL`. `GL_COLOR`, is treated as
 `GL_BACK_LEFT` for a double-buffered context and `GL_FRONT_LEFT` for a single-buffered context.
+
 The other attachments identify the corresponding specific buffer.
 
 The contents of the specified region of each specified attachment become undefined after execution
@@ -32675,6 +32778,7 @@ glInvalidateBufferData, glInvalidateFramebuffer.
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -32688,7 +32792,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClear(GLbitfield mask)
-
 ```
 Clear buffers to preset values
 ---
@@ -32713,6 +32816,7 @@ The values are as follows: `GL_COLOR_BUFFER_BIT` Indicates the buffers currently
 color writing.
 `GL_DEPTH_BUFFER_BIT` Indicates the depth buffer.
 `GL_STENCIL_BUFFER_BIT` Indicates the stencil buffer.
+
 The value to which each buffer is cleared depends on the setting of the clear value for that
 buffer.
 ---
@@ -32753,7 +32857,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glInvalidateTexImage(GLuint texture, GLint level)
-
 ```
 Invalidate the entirety a texture image
 ---
@@ -32795,6 +32898,7 @@ glInvalidateFramebuffer, glInvalidateSubFramebuffer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -32808,7 +32912,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearBufferiv(GLenum buffer, GLint drawbuffer, const GLint * value)
-
 ```
 Clear individual buffers of a framebuffer
 ---
@@ -32851,6 +32954,7 @@ be used to clear stencil buffers; other forms do not accept a `buffer` of `GL_ST
 `glClearBufferfi` and `glClearNamedFramebufferfi` are used to clear the depth and stencil
 buffers simultaneously. `buffer` must be `GL_DEPTH_STENCIL` and `drawbuffer` must be zero.
 `depth` and `stencil` are the values to clear the depth and stencil buffers to, respectively.
+
 Clamping and type conversion of `depth` for fixed-point depth buffers are performed in the same
 fashion as for glClearDepth. Masking of `stencil` for stencil buffers is performed in the same
 fashion as for glClearStencil. These commands are equivalent to clearing the depth and stencil
@@ -32895,6 +32999,7 @@ glClearColor, glClearDepth, glClearStencil, glClear
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -32908,7 +33013,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glInvalidateTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth)
-
 ```
 Invalidate a region of a texture image
 ---
@@ -32936,6 +33040,7 @@ where a value of `zoffset` is interpreted as specifying face `GL_TEXTURE_CUBE_MA
 `level` must be greater than or equal to zero and be less than the base 2 logarithm of the
 maximum texture width, height, or depth. `xoffset`, `yoffset` and `zoffset` must be greater
 than or equal to zero and be less than the width, height or depth of the image, respectively.
+
 Furthermore, `xoffset` + `width`, `yoffset` + `height`, and `zoffset` + `depth` must be
 less than or equal to the width, height or depth of the image, respectively.
 
@@ -32968,6 +33073,7 @@ glInvalidateFramebuffer, glInvalidateSubFramebuffer.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -32981,7 +33087,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearBufferuiv(GLenum buffer, GLint drawbuffer, const GLuint * value)
-
 ```
 Clear individual buffers of a framebuffer
 ---
@@ -33024,6 +33129,7 @@ be used to clear stencil buffers; other forms do not accept a `buffer` of `GL_ST
 `glClearBufferfi` and `glClearNamedFramebufferfi` are used to clear the depth and stencil
 buffers simultaneously. `buffer` must be `GL_DEPTH_STENCIL` and `drawbuffer` must be zero.
 `depth` and `stencil` are the values to clear the depth and stencil buffers to, respectively.
+
 Clamping and type conversion of `depth` for fixed-point depth buffers are performed in the same
 fashion as for glClearDepth. Masking of `stencil` for stencil buffers is performed in the same
 fashion as for glClearStencil. These commands are equivalent to clearing the depth and stencil
@@ -33068,6 +33174,7 @@ glClearColor, glClearDepth, glClearStencil, glClear
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -33081,7 +33188,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsBuffer(GLuint buffer)
-
 ```
 Determine if a name corresponds to a buffer object
 ---
@@ -33118,7 +33224,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearBufferfv(GLenum buffer, GLint drawbuffer, const GLfloat * value)
-
 ```
 Clear individual buffers of a framebuffer
 ---
@@ -33161,6 +33266,7 @@ be used to clear stencil buffers; other forms do not accept a `buffer` of `GL_ST
 `glClearBufferfi` and `glClearNamedFramebufferfi` are used to clear the depth and stencil
 buffers simultaneously. `buffer` must be `GL_DEPTH_STENCIL` and `drawbuffer` must be zero.
 `depth` and `stencil` are the values to clear the depth and stencil buffers to, respectively.
+
 Clamping and type conversion of `depth` for fixed-point depth buffers are performed in the same
 fashion as for glClearDepth. Masking of `stencil` for stencil buffers is performed in the same
 fashion as for glClearStencil. These commands are equivalent to clearing the depth and stencil
@@ -33205,6 +33311,7 @@ glClearColor, glClearDepth, glClearStencil, glClear
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -33218,7 +33325,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsEnabled(GLenum cap)
-
 ```
 Test whether a capability is enabled
 ---
@@ -33284,7 +33390,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glClearBufferfi(GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil)
-
 ```
 Clear individual buffers of a framebuffer
 ---
@@ -33327,6 +33432,7 @@ be used to clear stencil buffers; other forms do not accept a `buffer` of `GL_ST
 `glClearBufferfi` and `glClearNamedFramebufferfi` are used to clear the depth and stencil
 buffers simultaneously. `buffer` must be `GL_DEPTH_STENCIL` and `drawbuffer` must be zero.
 `depth` and `stencil` are the values to clear the depth and stencil buffers to, respectively.
+
 Clamping and type conversion of `depth` for fixed-point depth buffers are performed in the same
 fashion as for glClearDepth. Masking of `stencil` for stencil buffers is performed in the same
 fashion as for glClearStencil. These commands are equivalent to clearing the depth and stencil
@@ -33371,6 +33477,7 @@ glClearColor, glClearDepth, glClearStencil, glClear
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -33384,7 +33491,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsEnabledi(GLenum cap, GLuint index)
-
 ```
 Test whether a capability is enabled
 ---
@@ -33450,7 +33556,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glClearNamedFramebufferiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLint *value)
-
 ```
 Clear individual buffers of a framebuffer
 ---
@@ -33493,6 +33598,7 @@ be used to clear stencil buffers; other forms do not accept a `buffer` of `GL_ST
 `glClearBufferfi` and `glClearNamedFramebufferfi` are used to clear the depth and stencil
 buffers simultaneously. `buffer` must be `GL_DEPTH_STENCIL` and `drawbuffer` must be zero.
 `depth` and `stencil` are the values to clear the depth and stencil buffers to, respectively.
+
 Clamping and type conversion of `depth` for fixed-point depth buffers are performed in the same
 fashion as for glClearDepth. Masking of `stencil` for stencil buffers is performed in the same
 fashion as for glClearStencil. These commands are equivalent to clearing the depth and stencil
@@ -33537,6 +33643,7 @@ glClearColor, glClearDepth, glClearStencil, glClear
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -33550,7 +33657,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsFramebuffer(GLuint framebuffer)
-
 ```
 Determine if a name corresponds to a framebuffer object
 ---
@@ -33574,6 +33680,7 @@ glGenFramebuffers, glBindFramebuffer, glDeleteFramebuffers
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -33587,7 +33694,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearNamedFramebufferuiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLuint *value)
-
 ```
 Clear individual buffers of a framebuffer
 ---
@@ -33630,6 +33736,7 @@ be used to clear stencil buffers; other forms do not accept a `buffer` of `GL_ST
 `glClearBufferfi` and `glClearNamedFramebufferfi` are used to clear the depth and stencil
 buffers simultaneously. `buffer` must be `GL_DEPTH_STENCIL` and `drawbuffer` must be zero.
 `depth` and `stencil` are the values to clear the depth and stencil buffers to, respectively.
+
 Clamping and type conversion of `depth` for fixed-point depth buffers are performed in the same
 fashion as for glClearDepth. Masking of `stencil` for stencil buffers is performed in the same
 fashion as for glClearStencil. These commands are equivalent to clearing the depth and stencil
@@ -33674,6 +33781,7 @@ glClearColor, glClearDepth, glClearStencil, glClear
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -33687,7 +33795,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsProgram(GLuint program)
-
 ```
 Determines if a name corresponds to a program object
 ---
@@ -33748,7 +33855,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearNamedFramebufferfv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLfloat *value)
-
 ```
 Clear individual buffers of a framebuffer
 ---
@@ -33791,6 +33897,7 @@ be used to clear stencil buffers; other forms do not accept a `buffer` of `GL_ST
 `glClearBufferfi` and `glClearNamedFramebufferfi` are used to clear the depth and stencil
 buffers simultaneously. `buffer` must be `GL_DEPTH_STENCIL` and `drawbuffer` must be zero.
 `depth` and `stencil` are the values to clear the depth and stencil buffers to, respectively.
+
 Clamping and type conversion of `depth` for fixed-point depth buffers are performed in the same
 fashion as for glClearDepth. Masking of `stencil` for stencil buffers is performed in the same
 fashion as for glClearStencil. These commands are equivalent to clearing the depth and stencil
@@ -33835,6 +33942,7 @@ glClearColor, glClearDepth, glClearStencil, glClear
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -33848,7 +33956,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsProgramPipeline(GLuint pipeline)
-
 ```
 Determine if a name corresponds to a program pipeline object
 ---
@@ -33872,6 +33979,7 @@ glGenProgramPipelines, glBindProgramPipeline, glDeleteProgramPipelines
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -33885,7 +33993,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearNamedFramebufferfi(GLuint framebuffer, GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil)
-
 ```
 Clear individual buffers of a framebuffer
 ---
@@ -33928,6 +34035,7 @@ be used to clear stencil buffers; other forms do not accept a `buffer` of `GL_ST
 `glClearBufferfi` and `glClearNamedFramebufferfi` are used to clear the depth and stencil
 buffers simultaneously. `buffer` must be `GL_DEPTH_STENCIL` and `drawbuffer` must be zero.
 `depth` and `stencil` are the values to clear the depth and stencil buffers to, respectively.
+
 Clamping and type conversion of `depth` for fixed-point depth buffers are performed in the same
 fashion as for glClearDepth. Masking of `stencil` for stencil buffers is performed in the same
 fashion as for glClearStencil. These commands are equivalent to clearing the depth and stencil
@@ -33972,6 +34080,7 @@ glClearColor, glClearDepth, glClearStencil, glClear
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -33985,7 +34094,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsQuery(GLuint id)
-
 ```
 Determine if a name corresponds to a query object
 ---
@@ -34022,7 +34130,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearBufferData(GLenum target, GLenum internalformat, GLenum format, GLenum type, const void * data)
-
 ```
 Fill a buffer object's data store with a fixed value
 ---
@@ -34079,6 +34186,7 @@ glClearBufferSubData.
 ### Copyright
 Copyright 2011-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -34092,7 +34200,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsRenderbuffer(GLuint renderbuffer)
-
 ```
 Determine if a name corresponds to a renderbuffer object
 ---
@@ -34117,6 +34224,7 @@ glGenRenderbuffers, glBindRenderbuffer, glFramebufferRenderbuffer, glDeleteRende
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -34130,7 +34238,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearNamedBufferData(GLuint buffer, GLenum internalformat, GLenum format, GLenum type, const void *data)
-
 ```
 Fill a buffer object's data store with a fixed value
 ---
@@ -34187,6 +34294,7 @@ glClearBufferSubData.
 ### Copyright
 Copyright 2011-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -34200,7 +34308,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearBufferSubData(GLenum target, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void * data)
-
 ```
 Fill all or part of buffer object's data store with a fixed value
 ---
@@ -34270,6 +34377,7 @@ glClearBufferData.
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -34283,7 +34391,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearNamedBufferSubData(GLuint buffer, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void *data)
-
 ```
 Fill all or part of buffer object's data store with a fixed value
 ---
@@ -34353,6 +34460,7 @@ glClearBufferData.
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -34366,7 +34474,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)
-
 ```
 Specify clear values for the color buffers
 ---
@@ -34408,7 +34515,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glClearDepth(GLdouble depth)
-
 ```
 Specify the clear value for the depth buffer
 ---
@@ -34450,7 +34556,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glClearDepthf(GLfloat depth)
-
 ```
 Specify the clear value for the depth buffer
 ---
@@ -34492,7 +34597,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glClearStencil(GLint s)
-
 ```
 Specify the clear value for the stencil buffer
 ---
@@ -34531,7 +34635,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glClearTexImage(GLuint texture, GLint level, GLenum format, GLenum type, const void * data)
-
 ```
 Fills all a texture image with a constant value
 ---
@@ -34554,6 +34657,7 @@ buffer texture, nor may its internal format be compressed.
 are for glTexImage3D. Textures with a base internal format of `GL_DEPTH_COMPONENT`,
 `GL_STENCIL_INDEX`, or `GL_DEPTH_STENCIL` require depth component, stencil, or depth-stencil
 component data respectively. Textures with other base internal formats require RGBA formats.
+
 Textures with integer internal formats require integer data.
 
 `data` is a pointer to an array of between one and four components of texel data that will be
@@ -34609,6 +34713,7 @@ glTexImage2D, glTexImage3D
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -34622,7 +34727,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClearTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * data)
-
 ```
 Fills all or part of a texture image with a constant value
 ---
@@ -34675,6 +34779,7 @@ equal to zero and `depth` equal to one.
 are for glTexImage3D. Textures with a base internal format of `GL_DEPTH_COMPONENT`,
 `GL_STENCIL_INDEX`, or `GL_DEPTH_STENCIL` require depth component, stencil, or depth-stencil
 component data respectively. Textures with other base internal formats require RGBA formats.
+
 Textures with integer internal formats require integer data.
 
 `data` is a pointer to an array of between one and four components of texel data that will be
@@ -34731,6 +34836,7 @@ glTexImage2D, glTexImage3D
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -34744,7 +34850,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLenum glClientWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout)
-
 ```
 Block and wait for a sync object to become signaled
 ---
@@ -34792,6 +34897,7 @@ glFenceSync, glIsSync glWaitSync
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -34805,7 +34911,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glClipControl(GLenum origin, GLenum depth)
-
 ```
 Control clip coordinate to window coordinate behavior
 ---
@@ -34865,6 +34970,7 @@ gl_ClipDistance, gl_CullDistance, gl_FrontFacing, glDepthRange.
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -34878,7 +34984,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glColorMask(GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha)
-
 ```
 Enable and disable writing of frame buffer color components
 ---
@@ -34925,7 +35030,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glColorMaski(GLuint buf, GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha)
-
 ```
 Enable and disable writing of frame buffer color components
 ---
@@ -34972,7 +35076,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glCompileShader(GLuint shader)
-
 ```
 Compiles a shader object
 ---
@@ -35026,7 +35129,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCompressedTexImage1D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void * data)
-
 ```
 Specify a one-dimensional texture image in a compressed format
 ---
@@ -35058,7 +35160,6 @@ specified by `data`.
         value = [[
 ```c
 void glCompressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void * data)
-
 ```
 Specify a two-dimensional texture image in a compressed format
 ---
@@ -35096,7 +35197,6 @@ specified by `data`.
         value = [[
 ```c
 void glCompressedTexImage3D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void * data)
-
 ```
 Specify a three-dimensional texture image in a compressed format
 ---
@@ -35133,7 +35233,6 @@ specified by `data`.
         value = [[
 ```c
 void glCompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void * data)
-
 ```
 Specify a one-dimensional texture subimage in a compressed format
 ---
@@ -35232,7 +35331,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glCompressedTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data)
-
 ```
 Specify a one-dimensional texture subimage in a compressed format
 ---
@@ -35331,7 +35429,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glCompressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void * data)
-
 ```
 Specify a two-dimensional texture subimage in a compressed format
 ---
@@ -35442,7 +35539,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glCompressedTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *data)
-
 ```
 Specify a two-dimensional texture subimage in a compressed format
 ---
@@ -35553,7 +35649,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glCompressedTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void * data)
-
 ```
 Specify a three-dimensional texture subimage in a compressed format
 ---
@@ -35661,7 +35756,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glCompressedTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *data)
-
 ```
 Specify a three-dimensional texture subimage in a compressed format
 ---
@@ -35769,7 +35863,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glCopyBufferSubData(GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size)
-
 ```
 Copy all or part of the data store of a buffer object to the data store of another buffer object
 ---
@@ -35808,6 +35901,7 @@ Any of these targets may be used, but the targets `GL_COPY_READ_BUFFER` and
 other GL state.
 
 `readOffset`, `writeOffset` and `size` must all be greater than or equal to zero.
+
 Furthermore, $readOffset+size$ must not exceeed the size of the source buffer object, and
 $writeOffset+size$ must not exceeed the size of the buffer bound to `writeTarget`. If the source
 and destination are the same buffer object, then the source and destination ranges must not overlap.
@@ -35851,6 +35945,7 @@ glMapBuffer, glMapBufferRange
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -35864,7 +35959,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCopyNamedBufferSubData(GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size)
-
 ```
 Copy all or part of the data store of a buffer object to the data store of another buffer object
 ---
@@ -35903,6 +35997,7 @@ Any of these targets may be used, but the targets `GL_COPY_READ_BUFFER` and
 other GL state.
 
 `readOffset`, `writeOffset` and `size` must all be greater than or equal to zero.
+
 Furthermore, $readOffset+size$ must not exceeed the size of the source buffer object, and
 $writeOffset+size$ must not exceeed the size of the buffer bound to `writeTarget`. If the source
 and destination are the same buffer object, then the source and destination ranges must not overlap.
@@ -35946,6 +36041,7 @@ glMapBuffer, glMapBufferRange
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -35959,7 +36055,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCopyImageSubData(GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei srcWidth, GLsizei srcHeight, GLsizei srcDepth)
-
 ```
 Perform a raw data copy between two images
 ---
@@ -36083,6 +36178,7 @@ glDispatchComputeIndirect.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -36096,7 +36192,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCopyTexImage1D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border)
-
 ```
 Copy pixels into a 1D texture image
 ---
@@ -36162,7 +36257,6 @@ An image with 0 width indicates a NULL texture. `GL_STENCIL_INDEX8` is accepted 
         value = [[
 ```c
 void glCopyTexImage2D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border)
-
 ```
 Copy pixels into a 2D texture image
 ---
@@ -36231,7 +36325,6 @@ for `internalformat` only if the GL version is 4.4 or higher.
         value = [[
 ```c
 void glCopyTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width)
-
 ```
 Copy a one-dimensional texture subimage
 ---
@@ -36265,6 +36358,7 @@ stops just before final conversion. At this point, all pixel component values ar
 range 0 1 and then converted to the texture's internal format for storage in the texel array.
 
 It is not an error to specify a subtexture with zero width, but such a specification has no effect.
+
 If any of the pixels within the specified row of the current `GL_READ_BUFFER` are outside the read
 window associated with the current rendering context, then the values obtained for those pixels are
 undefined.
@@ -36286,7 +36380,6 @@ The glPixelStore mode affects texture images.
         value = [[
 ```c
 void glCopyTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width)
-
 ```
 Copy a one-dimensional texture subimage
 ---
@@ -36320,6 +36413,7 @@ stops just before final conversion. At this point, all pixel component values ar
 range 0 1 and then converted to the texture's internal format for storage in the texel array.
 
 It is not an error to specify a subtexture with zero width, but such a specification has no effect.
+
 If any of the pixels within the specified row of the current `GL_READ_BUFFER` are outside the read
 window associated with the current rendering context, then the values obtained for those pixels are
 undefined.
@@ -36341,7 +36435,6 @@ The glPixelStore mode affects texture images.
         value = [[
 ```c
 void glCopyTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height)
-
 ```
 Copy a two-dimensional texture subimage
 ---
@@ -36406,7 +36499,6 @@ glPixelStore modes affect texture images.
         value = [[
 ```c
 void glCopyTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height)
-
 ```
 Copy a two-dimensional texture subimage
 ---
@@ -36471,7 +36563,6 @@ glPixelStore modes affect texture images.
         value = [[
 ```c
 void glCopyTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height)
-
 ```
 Copy a three-dimensional texture subimage
 ---
@@ -36530,7 +36621,6 @@ glPixelStore modes affect texture images.
         value = [[
 ```c
 void glCopyTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height)
-
 ```
 Copy a three-dimensional texture subimage
 ---
@@ -36589,7 +36679,6 @@ glPixelStore modes affect texture images.
         value = [[
 ```c
 void glCreateBuffers(GLsizei n, GLuint *buffers)
-
 ```
 Create buffer objects
 ---
@@ -36614,6 +36703,7 @@ glDeleteBuffers, glGet, glIsBuffer
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -36627,7 +36717,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCreateFramebuffers(GLsizei n, GLuint *framebuffers)
-
 ```
 Create framebuffer objects
 ---
@@ -36653,6 +36742,7 @@ glFramebufferTextureLayer, glDeleteFramebuffers, glIsFramebuffer
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -36666,7 +36756,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLuint glCreateProgram(void)
-
 ```
 Creates a program object
 ---
@@ -36739,7 +36828,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCreateProgramPipelines(GLsizei n, GLuint *pipelines)
-
 ```
 Create program pipeline objects
 ---
@@ -36764,6 +36852,7 @@ glLinkProgram, glGenProgramPipelines, glDeleteProgramPipelines, glIsProgramPipel
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -36777,7 +36866,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCreateQueries(GLenum target, GLsizei n, GLuint *ids)
-
 ```
 Create query objects
 ---
@@ -36809,6 +36897,7 @@ glGetQueryObject, glGetQueryiv, glIsQuery
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -36822,7 +36911,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCreateRenderbuffers(GLsizei n, GLuint *renderbuffers)
-
 ```
 Create renderbuffer objects
 ---
@@ -36847,6 +36935,7 @@ glRenderbufferStorage, glRenderbufferStorageMultisample
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -36860,7 +36949,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCreateSamplers(GLsizei n, GLuint *samplers)
-
 ```
 Create sampler objects
 ---
@@ -36885,6 +36973,7 @@ glGenTextures, glGet, glGetSamplerParameter, glSamplerParameter
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -36898,7 +36987,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLuint glCreateShader(GLenum shaderType)
-
 ```
 Creates a shader object
 ---
@@ -36968,7 +37056,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 GLuint glCreateShaderProgramv(GLenum type, GLsizei count, const char **strings)
-
 ```
 Create a stand-alone program from an array of null-terminated source code strings
 ---
@@ -37013,6 +37100,7 @@ glCreateShader, glCreateProgram, glCompileShader, glLinkProgram
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -37026,7 +37114,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCreateTextures(GLenum target, GLsizei n, GLuint *textures)
-
 ```
 Create texture objects
 ---
@@ -37061,6 +37148,7 @@ glTexImage3D, glTexImage3DMultisample, glTexParameter
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -37074,7 +37162,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCreateTransformFeedbacks(GLsizei n, GLuint *ids)
-
 ```
 Create transform feedback objects
 ---
@@ -37100,6 +37187,7 @@ glPauseTransformFeedback, glResumeTransformFeedback
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -37113,7 +37201,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCreateVertexArrays(GLsizei n, GLuint *arrays)
-
 ```
 Create vertex array objects
 ---
@@ -37138,6 +37225,7 @@ glIsVertexArray, glVertexAttribPointer
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -37151,7 +37239,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glCullFace(GLenum mode)
-
 ```
 Specify whether front- or back-facing facets can be culled
 ---
@@ -37204,7 +37291,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glDebugMessageCallback(DEBUGPROC callback, const void * userParam)
-
 ```
 Specify a callback to receive debugging messages from the GL
 ---
@@ -37244,6 +37330,7 @@ glDebugMessageControl, glDebugMessageInsert, glGetDebugMessageLog.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -37257,7 +37344,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDebugMessageControl(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled)
-
 ```
 Control the reporting of debug messages in a debug context
 ---
@@ -37274,6 +37360,7 @@ disabled.
 ---
 ### Description
 `glDebugMessageControl` controls the reporting of debug messages generated by a debug context.
+
 The parameters `source`, `type` and `severity` form a filter to select messages from the pool
 of potential messages generated by the GL.
 
@@ -37332,6 +37419,7 @@ glDebugMessageInsert, glDebugMessageCallback, glGetDebugMessageLog.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -37345,7 +37433,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDebugMessageInsert(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const char *message)
-
 ```
 Inject an application-supplied message into the debug message queue
 ---
@@ -37397,6 +37484,7 @@ glDebugMessageControl, glDebugMessageCallback, glGetDebugMessageLog.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -37410,7 +37498,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDeleteBuffers(GLsizei n, const GLuint * buffers)
-
 ```
 Delete named buffer objects
 ---
@@ -37420,6 +37507,7 @@ Delete named buffer objects
 ---
 ### Description
 `glDeleteBuffers` deletes `n` buffer objects named by the elements of the array `buffers`.
+
 After a buffer object is deleted, it has no contents, and its name is free for reuse (for example by
 glGenBuffers ). If a buffer object that is currently bound is deleted, the binding reverts to 0
 (the absence of any buffer object).
@@ -37455,7 +37543,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDeleteFramebuffers(GLsizei n, GLuint *framebuffers)
-
 ```
 Delete framebuffer objects
 ---
@@ -37484,6 +37571,7 @@ glGenFramebuffers, glBindFramebuffer, glCheckFramebufferStatus
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -37497,7 +37585,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDeleteProgram(GLuint program)
-
 ```
 Deletes a program object
 ---
@@ -37549,7 +37636,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDeleteProgramPipelines(GLsizei n, const GLuint *pipelines)
-
 ```
 Delete program pipeline objects
 ---
@@ -37577,6 +37663,7 @@ glUseProgram
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -37590,7 +37677,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDeleteQueries(GLsizei n, const GLuint * ids)
-
 ```
 Delete named query objects
 ---
@@ -37634,7 +37720,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib3fv(GLuint index, const GLfloat *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -37698,6 +37783,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -37788,7 +37874,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib3sv(GLuint index, const GLshort *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -37852,6 +37937,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -37942,7 +38028,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib3dv(GLuint index, const GLdouble *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -38006,6 +38091,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -38096,7 +38182,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI3iv(GLuint index, const GLint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -38160,6 +38245,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -38250,7 +38336,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI3uiv(GLuint index, const GLuint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -38314,6 +38399,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -38404,7 +38490,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4fv(GLuint index, const GLfloat *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -38468,6 +38553,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -38558,7 +38644,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4sv(GLuint index, const GLshort *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -38622,6 +38707,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -38712,7 +38798,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4dv(GLuint index, const GLdouble *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -38776,6 +38861,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -38866,7 +38952,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4iv(GLuint index, const GLint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -38930,6 +39015,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -39020,7 +39106,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4bv(GLuint index, const GLbyte *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -39084,6 +39169,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -39174,7 +39260,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4ubv(GLuint index, const GLubyte *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -39238,6 +39323,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -39328,7 +39414,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4usv(GLuint index, const GLushort *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -39392,6 +39477,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -39482,7 +39568,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4uiv(GLuint index, const GLuint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -39546,6 +39631,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -39636,7 +39722,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4Nbv(GLuint index, const GLbyte *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -39700,6 +39785,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -39790,7 +39876,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4Nsv(GLuint index, const GLshort *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -39854,6 +39939,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -39944,7 +40030,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4Niv(GLuint index, const GLint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -40008,6 +40093,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -40098,7 +40184,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4Nubv(GLuint index, const GLubyte *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -40162,6 +40247,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -40252,7 +40338,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4Nusv(GLuint index, const GLushort *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -40316,6 +40401,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -40406,7 +40492,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4Nuiv(GLuint index, const GLuint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -40470,6 +40555,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -40560,7 +40646,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI4bv(GLuint index, const GLbyte *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -40624,6 +40709,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -40714,7 +40800,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI4ubv(GLuint index, const GLubyte *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -40778,6 +40863,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -40868,7 +40954,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI4sv(GLuint index, const GLshort *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -40932,6 +41017,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -41022,7 +41108,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI4usv(GLuint index, const GLushort *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -41086,6 +41171,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -41176,7 +41262,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI4iv(GLuint index, const GLint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -41240,6 +41325,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -41330,7 +41416,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI4uiv(GLuint index, const GLuint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -41394,6 +41479,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -41484,7 +41570,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribL1dv(GLuint index, const GLdouble *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -41548,6 +41633,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -41638,7 +41724,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribL2dv(GLuint index, const GLdouble *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -41702,6 +41787,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -41792,7 +41878,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribL3dv(GLuint index, const GLdouble *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -41856,6 +41941,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -41946,7 +42032,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribL4dv(GLuint index, const GLdouble *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -42010,6 +42095,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -42100,7 +42186,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI2uiv(GLuint index, const GLuint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -42164,6 +42249,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -42254,7 +42340,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI2iv(GLuint index, const GLint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -42318,6 +42403,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -42408,7 +42494,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib2dv(GLuint index, const GLdouble *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -42472,6 +42557,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -42562,7 +42648,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib2sv(GLuint index, const GLshort *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -42626,6 +42711,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -42716,7 +42802,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib2fv(GLuint index, const GLfloat *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -42780,6 +42865,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -42870,7 +42956,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI1uiv(GLuint index, const GLuint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -42934,6 +43019,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -43024,7 +43110,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI1iv(GLuint index, const GLint *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -43088,6 +43173,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -43178,7 +43264,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib1dv(GLuint index, const GLdouble *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -43242,6 +43327,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -43332,7 +43418,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib1sv(GLuint index, const GLshort *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -43396,6 +43481,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -43486,7 +43572,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib1fv(GLuint index, const GLfloat *v)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -43550,6 +43635,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -43640,7 +43726,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribL4d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -43704,6 +43789,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -43794,7 +43880,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribL3d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -43858,6 +43943,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -43948,7 +44034,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribL2d(GLuint index, GLdouble v0, GLdouble v1)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -44012,6 +44097,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -44102,7 +44188,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribL1d(GLuint index, GLdouble v0)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -44166,6 +44251,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -44256,7 +44342,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI4ui(GLuint index, GLuint v0, GLuint v1, GLuint v2, GLuint v3)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -44320,6 +44405,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -44410,7 +44496,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI4i(GLuint index, GLint v0, GLint v1, GLint v2, GLint v3)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -44474,6 +44559,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -44564,7 +44650,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4Nub(GLuint index, GLubyte v0, GLubyte v1, GLubyte v2, GLubyte v3)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -44628,6 +44713,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -44718,7 +44804,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -44782,6 +44867,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -44872,7 +44958,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glActiveShaderProgram(GLuint pipeline, GLuint program)
-
 ```
 Set the active program object for a program pipeline object
 ---
@@ -44905,6 +44990,7 @@ glUniform
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -44918,7 +45004,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib4s(GLuint index, GLshort v0, GLshort v1, GLshort v2, GLshort v3)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -44982,6 +45067,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -45072,7 +45158,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glActiveTexture(GLenum texture)
-
 ```
 Select active texture unit
 ---
@@ -45122,7 +45207,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glVertexAttrib4f(GLuint index, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -45186,6 +45270,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -45276,7 +45361,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glAttachShader(GLuint program, GLuint shader)
-
 ```
 Attaches a shader object to a program object
 ---
@@ -45289,6 +45373,7 @@ In order to create a complete shader program, there must be a way to specify the
 that will be linked together. Program objects provide this mechanism. Shaders that are to be linked
 together in a program object must first be attached to that program object. `glAttachShader`
 attaches the shader object specified by `shader` to the program object specified by `program`.
+
 This indicates that `shader` will be included in link operations that will be performed on
 `program`.
 
@@ -45345,7 +45430,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI3ui(GLuint index, GLuint v0, GLuint v1, GLuint v2)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -45409,6 +45493,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -45499,7 +45584,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI3i(GLuint index, GLint v0, GLint v1, GLint v2)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -45563,6 +45647,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -45653,7 +45738,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib3d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -45717,6 +45801,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -45807,7 +45892,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib3s(GLuint index, GLshort v0, GLshort v1, GLshort v2)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -45871,6 +45955,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -45961,7 +46046,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib3f(GLuint index, GLfloat v0, GLfloat v1, GLfloat v2)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -46025,6 +46109,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -46115,7 +46200,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI2ui(GLuint index, GLuint v0, GLuint v1)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -46179,6 +46263,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -46269,7 +46354,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI2i(GLuint index, GLint v0, GLint v1)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -46333,6 +46417,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -46423,7 +46508,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib2d(GLuint index, GLdouble v0, GLdouble v1)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -46487,6 +46571,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -46577,7 +46662,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib2s(GLuint index, GLshort v0, GLshort v1)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -46641,6 +46725,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -46731,7 +46816,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib2f(GLuint index, GLfloat v0, GLfloat v1)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -46795,6 +46879,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -46885,7 +46970,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI1ui(GLuint index, GLuint v0)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -46949,6 +47033,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -47039,7 +47124,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttribI1i(GLuint index, GLint v0)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -47103,6 +47187,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -47193,7 +47278,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib1d(GLuint index, GLdouble v0)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -47257,6 +47341,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -47347,7 +47432,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib1s(GLuint index, GLshort v0)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -47411,6 +47495,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -47501,7 +47586,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexAttrib1f(GLuint index, GLfloat v0)
-
 ```
 Specifies the value of a generic vertex attribute
 ---
@@ -47565,6 +47649,7 @@ The commands containing `L` indicate that the arguments are full 64-bit quantiti
 passed directly to shader inputs declared as 64-bit double precision types.
 
 OpenGL Shading Language attribute variables are allowed to be of type mat2, mat3, or mat4.
+
 Attributes of these types may be loaded using the `glVertexAttrib` entry points. Matrices must be
 loaded into successive generic attribute slots in column major order, with one column of the matrix
 in each generic attribute slot.
@@ -47655,7 +47740,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glVertexArrayElementBuffer(GLuint vaobj, GLuint buffer)
-
 ```
 Configures element array buffer binding of a vertex array object
 ---
@@ -47689,6 +47773,7 @@ glGet, glGetVertexArrayiv
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -47702,7 +47787,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glValidateProgramPipeline(GLuint pipeline)
-
 ```
 Validate a program pipeline object against current GL state
 ---
@@ -47740,6 +47824,7 @@ glGenProgramPipelines, glBindProgramPipeline, glDeleteProgramPipelines
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -47753,7 +47838,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glValidateProgram(GLuint program)
-
 ```
 Validates a program object
 ---
@@ -47823,7 +47907,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUseProgramStages(GLuint pipeline, GLbitfield stages, GLuint program)
-
 ```
 Bind stages of a program object to a program pipeline
 ---
@@ -47878,6 +47961,7 @@ glGenProgramPipelines, glDeleteProgramPipelines, glIsProgramPipeline
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -47891,7 +47975,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUseProgram(GLuint program)
-
 ```
 Installs a program object as part of current rendering state
 ---
@@ -47991,7 +48074,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glUnmapNamedBuffer(GLuint buffer)
-
 ```
 Release the mapping of a buffer object's data store into the client's address space
 ---
@@ -48066,7 +48148,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glUnmapBuffer(GLenum target)
-
 ```
 Release the mapping of a buffer object's data store into the client's address space
 ---
@@ -48141,7 +48222,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniformSubroutinesuiv(GLenum shadertype, GLsizei count, const GLuint *indices)
-
 ```
 Load active subroutine uniforms
 ---
@@ -48190,6 +48270,7 @@ glGetProgramStage
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -48203,7 +48284,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniformBlockBinding(GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding)
-
 ```
 Assign a binding point to an active uniform block
 ---
@@ -48254,6 +48334,7 @@ glLinkProgram, glBindBufferBase, glBindBufferRange, glGetActiveUniformBlock
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -48267,7 +48348,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniformMatrix4x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -48338,6 +48418,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -48432,7 +48513,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniformMatrix3x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -48503,6 +48583,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -48597,7 +48678,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniformMatrix4x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -48668,6 +48748,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -48762,7 +48843,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -48833,6 +48913,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -48927,7 +49008,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniformMatrix3x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -48998,6 +49078,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -49092,7 +49173,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniformMatrix2x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -49163,6 +49243,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -49257,7 +49338,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniformMatrix4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -49328,6 +49408,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -49422,12 +49503,12 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTextureParameterIiv(GLuint texture, GLenum pname, const GLint *params)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -49461,12 +49542,12 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glTextureParameteriv(GLuint texture, GLenum pname, const GLint *params)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -49500,12 +49581,12 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glTextureParameterfv(GLuint texture, GLenum pname, const GLfloat *params)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -49539,12 +49620,12 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glTexParameterIuiv(GLenum target, GLenum pname, const GLuint * params)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -49578,12 +49659,12 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glTexParameterIiv(GLenum target, GLenum pname, const GLint * params)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -49617,12 +49698,12 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glTexParameteriv(GLenum target, GLenum pname, const GLint * params)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -49656,12 +49737,12 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glTexParameterfv(GLenum target, GLenum pname, const GLfloat * params)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -49695,12 +49776,12 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glTextureParameteri(GLuint texture, GLenum pname, GLint param)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -49734,12 +49815,12 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glTextureParameterf(GLuint texture, GLenum pname, GLfloat param)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -49773,12 +49854,12 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glTexParameteri(GLenum target, GLenum pname, GLint param)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -49812,7 +49893,6 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glTexImage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations)
-
 ```
 Establish the data storage, format, dimensions, and number of samples of a multisample texture's
 image
@@ -49884,6 +49964,7 @@ glTexImage3D, glTexImage2DMultisample
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -49897,7 +49978,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTexImage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)
-
 ```
 Establish the data storage, format, dimensions, and number of samples of a multisample texture's
 image
@@ -49966,6 +50046,7 @@ glTexImage3D, glTexImage2DMultisample
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -49979,7 +50060,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTexImage1D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const void * data)
-
 ```
 Specify a one-dimensional texture image
 ---
@@ -50021,12 +50101,12 @@ that are at least 1024 texels wide. The height of the 1D texture image is 1.
         value = [[
 ```c
 void glTexParameterf(GLenum target, GLenum pname, GLfloat param)
-
 ```
 Set texture parameters
 ---
 ### Parameters
 `target` Specifies the target to which the texture is bound for `glTexParameter` functions.
+
 Must be one of `GL_TEXTURE_1D`, `GL_TEXTURE_1D_ARRAY`, `GL_TEXTURE_2D`, `GL_TEXTURE_2D_ARRAY`,
 `GL_TEXTURE_2D_MULTISAMPLE`, `GL_TEXTURE_2D_MULTISAMPLE_ARRAY`, `GL_TEXTURE_3D`,
 `GL_TEXTURE_CUBE_MAP`, `GL_TEXTURE_CUBE_MAP_ARRAY`, or `GL_TEXTURE_RECTANGLE`.
@@ -50060,7 +50140,6 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
         value = [[
 ```c
 void glTexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const void * data)
-
 ```
 Specify a two-dimensional texture image
 ---
@@ -50113,7 +50192,6 @@ that are at least 256 layers deep.
         value = [[
 ```c
 void glTexImage3D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void * data)
-
 ```
 Specify a three-dimensional texture image
 ---
@@ -50132,6 +50210,7 @@ that are at least 16 texels wide.
 `height` Specifies the height of the texture image. All implementations support 3D texture
 images that are at least 256 texels high.
 `depth` Specifies the depth of the texture image, or the number of layers in a texture array.
+
 All implementations support 3D texture images that are at least 256 texels deep, and texture arrays
 that are at least 256 layers deep.
 `border` This value must be 0.
@@ -50161,7 +50240,6 @@ that are at least 256 layers deep.
         value = [[
 ```c
 void glDisable(GLenum cap)
-
 ```
 Enable or disable server-side GL capabilities
 ---
@@ -50181,7 +50259,6 @@ only).
         value = [[
 ```c
 void glDepthFunc(GLenum func)
-
 ```
 Specify the value used for depth buffer comparisons
 ---
@@ -50209,6 +50286,7 @@ as follows:
 `GL_GEQUAL` Passes if the incoming depth value is greater than or equal to the stored depth
 value.
 `GL_ALWAYS` Always passes.
+
 The initial value of `func` is `GL_LESS`. Initially, depth testing is disabled. If depth
 testing is disabled or if no depth buffer exists, it is as if the depth test always passes.
 ---
@@ -50247,7 +50325,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glDepthRange(GLdouble nearVal, GLdouble farVal)
-
 ```
 Specify mapping of depth values from normalized device coordinates to window coordinates
 ---
@@ -50301,7 +50378,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glDepthMask(GLboolean flag)
-
 ```
 Enable or disable writing into the depth buffer
 ---
@@ -50346,7 +50422,6 @@ details, see https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-Fr
         value = [[
 ```c
 void glDepthRangef(GLfloat nearVal, GLfloat farVal)
-
 ```
 Specify mapping of depth values from normalized device coordinates to window coordinates
 ---
@@ -50400,7 +50475,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glDeleteVertexArrays(GLsizei n, const GLuint *arrays)
-
 ```
 Delete vertex array objects
 ---
@@ -50429,6 +50503,7 @@ glGenVertexArrays, glIsVertexArray, glBindVertexArray
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -50442,7 +50517,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glSamplerParameterIiv(GLuint sampler, GLenum pname, const GLint *params)
-
 ```
 Set sampler parameters
 ---
@@ -50470,7 +50544,6 @@ where the value or values of `pname` are stored.
         value = [[
 ```c
 void glDeleteTransformFeedbacks(GLsizei n, const GLuint *ids)
-
 ```
 Delete transform feedback objects
 ---
@@ -50499,6 +50572,7 @@ glBeginTransformFeedback, glPauseTransformFeedback, glResumeTransformFeedback,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -50512,7 +50586,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glSamplerParameterfv(GLuint sampler, GLenum pname, const GLfloat * params)
-
 ```
 Set sampler parameters
 ---
@@ -50540,7 +50613,6 @@ where the value or values of `pname` are stored.
         value = [[
 ```c
 void glDeleteSync(GLsync sync)
-
 ```
 Delete a sync object
 ---
@@ -50573,6 +50645,7 @@ glFenceSync, glWaitSync, glClientWaitSync
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -50586,7 +50659,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glSamplerParameterf(GLuint sampler, GLenum pname, GLfloat param)
-
 ```
 Set sampler parameters
 ---
@@ -50614,7 +50686,6 @@ where the value or values of `pname` are stored.
         value = [[
 ```c
 GLboolean glIsSampler(GLuint id)
-
 ```
 Determine if a name corresponds to a sampler object
 ---
@@ -50640,6 +50711,7 @@ glGenSamplers, glBindSampler, glDeleteSamplers
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -50653,7 +50725,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDeleteSamplers(GLsizei n, const GLuint * samplers)
-
 ```
 Delete named sampler objects
 ---
@@ -50663,6 +50734,7 @@ Delete named sampler objects
 ---
 ### Description
 `glDeleteSamplers` deletes `n` sampler objects named by the elements of the array `samplers`.
+
 After a sampler object is deleted, its name is again unused. If a sampler object that is currently
 bound to a sampler unit is deleted, it is as though glBindSampler is called with unit set to the
 unit the sampler is bound to and sampler zero. Unused names in samplers are silently ignored, as is
@@ -50686,6 +50758,7 @@ glGenSamplers, glBindSampler, glDeleteSamplers, glIsSampler
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -50699,7 +50772,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsShader(GLuint shader)
-
 ```
 Determines if a name corresponds to a shader object
 ---
@@ -50750,7 +50822,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glSampleCoverage(GLfloat value, GLboolean invert)
-
 ```
 Specify multisample coverage parameters
 ---
@@ -50772,6 +50843,7 @@ flag is set, the temporary mask is inverted (all bits flipped) and then the bitw
 
 If an implementation does not have any multisample buffers available, or multisampling is
 disabled, rasterization occurs with only a single sample computing a pixel's final RGB color.
+
 Provided an implementation supports multisample buffers, and multisampling is enabled, then a
 pixel's final color is generated by combining several samples per pixel. Each sample contains color,
 depth, and stencil information, allowing those operations to be performed on each sample.
@@ -50815,7 +50887,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 GLboolean glIsSync(GLsync sync)
-
 ```
 Determine if a name corresponds to a sync object
 ---
@@ -50839,6 +50910,7 @@ glFenceSync, glWaitSync, glClientWaitSync, glDeleteSync
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -50852,7 +50924,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glNamedRenderbufferStorageMultisample(GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height)
-
 ```
 Establish data storage, format, dimensions and sample count of a renderbuffer object's image
 ---
@@ -50919,6 +50990,7 @@ glRenderbufferStorage, glFramebufferRenderbuffer, glDeleteRenderbuffers
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -50932,7 +51004,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsTexture(GLuint texture)
-
 ```
 Determine if a name corresponds to a texture
 ---
@@ -50970,12 +51041,12 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glNamedRenderbufferStorage(GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height)
-
 ```
 Establish data storage, format and dimensions of a renderbuffer object's image
 ---
 ### Parameters
 `target` Specifies a binding target of the allocation for `glRenderbufferStorage` function.
+
 Must be `GL_RENDERBUFFER`.
 
 `renderbuffer` Specifies the name of the renderbuffer object for `glNamedRenderbufferStorage`
@@ -51028,6 +51099,7 @@ glRenderbufferStorageMultisample, glFramebufferRenderbuffer, glDeleteRenderbuffe
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -51041,7 +51113,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsTransformFeedback(GLuint id)
-
 ```
 Determine if a name corresponds to a transform feedback object
 ---
@@ -51065,6 +51136,7 @@ glGenTransformFeedbacks, glBindTransformFeedback, glDeleteTransformFeedbacks
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -51078,7 +51150,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glReleaseShaderCompiler()
-
 ```
 Release resources consumed by the implementation's shader compiler
 ---
@@ -51097,6 +51168,7 @@ glCompileShader, glLinkProgram
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -51110,7 +51182,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLboolean glIsVertexArray(GLuint array)
-
 ```
 Determine if a name corresponds to a vertex array object
 ---
@@ -51133,6 +51204,7 @@ glGenVertexArrays, glBindVertexArray, glDeleteVertexArrays
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -51146,12 +51218,12 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, void * data)
-
 ```
 Read a block of pixels from the frame buffer
 ---
 ### Parameters
 `x` `y` Specify the window coordinates of the first pixel that is read from the frame buffer.
+
 This location is the lower left corner of a rectangular block of pixels.
 `width` `height` Specify the dimensions of the pixel rectangle. `width` and `height` of one
 correspond to a single pixel.
@@ -51184,7 +51256,6 @@ correspond to a single pixel.
         value = [[
 ```c
 void glLineWidth(GLfloat width)
-
 ```
 Specify the width of rasterized lines
 ---
@@ -51216,6 +51287,7 @@ widths within the range, call glGet with arguments `GL_ALIASED_LINE_WIDTH_RANGE`
 ---
 ### Notes
 The line width specified by `glLineWidth` is always returned when `GL_LINE_WIDTH` is queried.
+
 Clamping and rounding for aliased and antialiased lines have no effect on the specified value.
 
 Nonantialiased line width may be clamped to an implementation-dependent maximum. Call glGet
@@ -51262,7 +51334,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glReadBuffer(GLenum mode)
-
 ```
 Select a color buffer source for pixels
 ---
@@ -51286,6 +51357,7 @@ indicate the i th color attachment where i ranges from zero to the value of
 `GL_MAX_COLOR_ATTACHMENTS` minus one.
 
 Nonstereo double-buffered configurations have only a front left and a back left buffer.
+
 Single-buffered configurations have a front left and a front right buffer if stereo, and only a
 front left buffer if nonstereo. It is an error to specify a nonexistent buffer to `glReadBuffer`.
 
@@ -51330,7 +51402,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glLinkProgram(GLuint program)
-
 ```
 Links a program object
 ---
@@ -51368,6 +51439,7 @@ A varying variable actually used in the fragment shader is not declared in the s
 declared at all) in the vertex shader, or geometry shader if present. A reference to a function or
 variable name is unresolved. A shared global is declared with two different types or two different
 initial values. One or more of the attached shader objects has not been successfully compiled.
+
 Binding a generic attribute matrix caused some rows of the matrix to fall outside the allowed
 maximum of `GL_MAX_VERTEX_ATTRIBS`.
 
@@ -51484,7 +51556,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPushDebugGroup(GLenum source, GLuint id, GLsizei length, const char * message)
-
 ```
 Push a named debug group into the command stream
 ---
@@ -51525,6 +51596,7 @@ glPopDebugGroup, glObjectLabel, glObjectPtrLabel.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -51538,7 +51610,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glLogicOp(GLenum opcode)
-
 ```
 Specify a logical pixel operation for rendering
 ---
@@ -51602,7 +51673,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glProgramUniformMatrix4x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -51771,7 +51841,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void *glMapBuffer(GLenum target, GLenum access)
-
 ```
 Map all of a buffer object's data store into the client's address space
 ---
@@ -51817,9 +51886,11 @@ or write to a mapping made with `access` `GL_READ_ONLY` ), but the result is und
 errors (possibly including program termination) may occur.
 
 Mappings to the data stores of buffer objects may have nonstandard performance characteristics.
+
 For example, such mappings may be marked as uncacheable regions of memory, and in such cases reading
 from them may be very slow. To ensure optimal performance, the client should use the mapping in a
 fashion consistent with the values of `GL_BUFFER_USAGE` for the buffer object and of `access`.
+
 Using a mapping in a fashion inconsistent with these values is liable to be multiple orders of
 magnitude slower than using normal memory.
 ---
@@ -51883,7 +51954,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetCompressedTexImage(GLenum target, GLint level, void * pixels)
-
 ```
 GlGetCompressedTexImage Return a compressed texture image
 ---
@@ -51926,6 +51996,7 @@ of memory required to store the compressed texture by calling glGetTexLevelParam
 argument `GL_TEXTURE_COMPRESSED_IMAGE_SIZE`. Finally, retrieve the internal format of the texture
 by calling glGetTexLevelParameter with argument `GL_TEXTURE_INTERNAL_FORMAT`. To store the
 texture for later use, associate the internal format and size with the retrieved texture image.
+
 These data can be used by the respective texture or subtexture loading routine used for loading
 `target` textures.
 ---
@@ -51982,7 +52053,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void *glMapNamedBuffer(GLuint buffer, GLenum access)
-
 ```
 Map all of a buffer object's data store into the client's address space
 ---
@@ -52028,9 +52098,11 @@ or write to a mapping made with `access` `GL_READ_ONLY` ), but the result is und
 errors (possibly including program termination) may occur.
 
 Mappings to the data stores of buffer objects may have nonstandard performance characteristics.
+
 For example, such mappings may be marked as uncacheable regions of memory, and in such cases reading
 from them may be very slow. To ensure optimal performance, the client should use the mapping in a
 fashion consistent with the values of `GL_BUFFER_USAGE` for the buffer object and of `access`.
+
 Using a mapping in a fashion inconsistent with these values is liable to be multiple orders of
 magnitude slower than using normal memory.
 ---
@@ -52094,7 +52166,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniformMatrix4x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -52263,7 +52334,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void *glMapBufferRange(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access)
-
 ```
 Map all or part of a buffer object's data store into the client's address space
 ---
@@ -52292,6 +52362,7 @@ pointer is used to query a mapping which excludes this flag, but the result is u
 errors (possibly including program termination) may occur.
 
 `GL_MAP_WRITE_BIT` indicates that the returned pointer may be used to modify buffer object data.
+
 No GL error is generated if the pointer is used to modify a mapping which excludes this flag, but
 the result is undefined and system errors (possibly including program termination) may occur.
 
@@ -52333,6 +52404,7 @@ mapped range when called.
 
 `GL_MAP_UNSYNCHRONIZED_BIT` indicates that the GL should not attempt to synchronize pending
 operations on the buffer prior to returning from `glMapBufferRange` or `glMapNamedBufferRange`.
+
 No GL error is generated if pending operations which source or modify the buffer overlap the mapped
 region, but the result of such previous and any subsequent operations is undefined.
 
@@ -52409,6 +52481,7 @@ glMapBuffer, glUnmapBuffer, glFlushMappedBufferRange, glBindBuffer, glBufferStor
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -52422,7 +52495,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetCompressedTextureImage(GLuint texture, GLint level, GLsizei bufSize, void *pixels)
-
 ```
 GlGetCompressedTexImage Return a compressed texture image
 ---
@@ -52465,6 +52537,7 @@ of memory required to store the compressed texture by calling glGetTexLevelParam
 argument `GL_TEXTURE_COMPRESSED_IMAGE_SIZE`. Finally, retrieve the internal format of the texture
 by calling glGetTexLevelParameter with argument `GL_TEXTURE_INTERNAL_FORMAT`. To store the
 texture for later use, associate the internal format and size with the retrieved texture image.
+
 These data can be used by the respective texture or subtexture loading routine used for loading
 `target` textures.
 ---
@@ -52521,7 +52594,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void *glMapNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length, GLbitfield access)
-
 ```
 Map all or part of a buffer object's data store into the client's address space
 ---
@@ -52550,6 +52622,7 @@ pointer is used to query a mapping which excludes this flag, but the result is u
 errors (possibly including program termination) may occur.
 
 `GL_MAP_WRITE_BIT` indicates that the returned pointer may be used to modify buffer object data.
+
 No GL error is generated if the pointer is used to modify a mapping which excludes this flag, but
 the result is undefined and system errors (possibly including program termination) may occur.
 
@@ -52591,6 +52664,7 @@ mapped range when called.
 
 `GL_MAP_UNSYNCHRONIZED_BIT` indicates that the GL should not attempt to synchronize pending
 operations on the buffer prior to returning from `glMapBufferRange` or `glMapNamedBufferRange`.
+
 No GL error is generated if pending operations which source or modify the buffer overlap the mapped
 region, but the result of such previous and any subsequent operations is undefined.
 
@@ -52667,6 +52741,7 @@ glMapBuffer, glUnmapBuffer, glFlushMappedBufferRange, glBindBuffer, glBufferStor
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -52680,7 +52755,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glShaderBinary(GLsizei count, const GLuint *shaders, GLenum binaryFormat, const void *binary, GLsizei length)
-
 ```
 Load pre-compiled shader binaries
 ---
@@ -52732,6 +52806,7 @@ glGetProgram, glGetProgramBinary, glProgramBinary
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -52745,7 +52820,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glMemoryBarrier(GLbitfield barriers)
-
 ```
 Defines a barrier ordering memory transactions
 ---
@@ -52799,6 +52873,7 @@ affected by this bit are derived from the `GL_DRAW_INDIRECT_BUFFER` binding.
 `GL_PIXEL_BUFFER_BARRIER_BIT` Reads and writes of buffer objects via the
 `GL_PIXEL_PACK_BUFFER` and `GL_PIXEL_UNPACK_BUFFER` bindings (via glReadPixels,
 glTexSubImage1D, etc.) after the barrier will reflect data written by shaders prior to the barrier.
+
 Additionally, buffer object writes issued after the barrier will wait on the completion of all
 shader writes initiated prior to the barrier.
 
@@ -52876,6 +52951,7 @@ SHADER_IMAGE_ACCESS_BARRIER_BIT set in `barriers` between passes is necessary.
 
 Data written by the shader in one rendering pass and read by another mechanism (e.g., vertex or
 index buffer pulling) in a later pass need not use coherent variables or `memoryBarrier` ().
+
 Calling `glMemoryBarrier` with the appropriate bits set in `barriers` between passes is
 necessary.
 
@@ -52932,6 +53008,7 @@ glFlushMappedBufferRange, memoryBarrier
 ### Copyright
 Copyright 2011-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -52945,7 +53022,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLuint glGetDebugMessageLog(GLuint count, GLsizei bufSize, GLenum *sources, GLenum *types, GLuint *ids, GLenum *severities, GLsizei *lengths, GLchar *messageLog)
-
 ```
 Retrieve messages from the debug message log
 ---
@@ -52971,6 +53047,7 @@ written into up to `count` elements of the array. If `types` is not NULL then th
 message is written into up to `count` elements of the array. If `id` is not NULL then the
 identifier of each message is written into up to `count` elements of the array. If `severities`
 is not NULL then the severity of each message is written into up to `count` elements of the array.
+
 If `lengths` is not NULL then the length of each message is written into up to `count` elements
 of the array.
 
@@ -53010,6 +53087,7 @@ glDebugMessageInsert, glDebugMessageCallback, glDebugMessageControl.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -53023,7 +53101,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glMemoryBarrierByRegion(GLbitfield barriers)
-
 ```
 Defines a barrier ordering memory transactions
 ---
@@ -53077,6 +53154,7 @@ affected by this bit are derived from the `GL_DRAW_INDIRECT_BUFFER` binding.
 `GL_PIXEL_BUFFER_BARRIER_BIT` Reads and writes of buffer objects via the
 `GL_PIXEL_PACK_BUFFER` and `GL_PIXEL_UNPACK_BUFFER` bindings (via glReadPixels,
 glTexSubImage1D, etc.) after the barrier will reflect data written by shaders prior to the barrier.
+
 Additionally, buffer object writes issued after the barrier will wait on the completion of all
 shader writes initiated prior to the barrier.
 
@@ -53154,6 +53232,7 @@ SHADER_IMAGE_ACCESS_BARRIER_BIT set in `barriers` between passes is necessary.
 
 Data written by the shader in one rendering pass and read by another mechanism (e.g., vertex or
 index buffer pulling) in a later pass need not use coherent variables or `memoryBarrier` ().
+
 Calling `glMemoryBarrier` with the appropriate bits set in `barriers` between passes is
 necessary.
 
@@ -53210,6 +53289,7 @@ glFlushMappedBufferRange, memoryBarrier
 ### Copyright
 Copyright 2011-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -53223,7 +53303,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glScissor(GLint x, GLint y, GLsizei width, GLsizei height)
-
 ```
 Define the scissor box
 ---
@@ -53277,7 +53356,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glMinSampleShading(GLfloat value)
-
 ```
 Specifies minimum rate at which sample shading takes place
 ---
@@ -53286,6 +53364,7 @@ Specifies minimum rate at which sample shading takes place
 ---
 ### Description
 `glMinSampleShading` specifies the rate at which samples are shaded within a covered pixel.
+
 Sample-rate shading is enabled by calling glEnable with the parameter `GL_SAMPLE_SHADING`. If
 `GL_MULTISAMPLE` or `GL_SAMPLE_SHADING` is disabled, sample shading has no effect. Otherwise, an
 implementation must provide at least as many unique color values for each covered fragment as
@@ -53319,6 +53398,7 @@ removedTypes
 ### Copyright
 Copyright 2011-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -53332,7 +53412,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLint glGetFragDataIndex(GLuint program, const char * name)
-
 ```
 Query the bindings of color indices to user-defined varying out variables
 ---
@@ -53361,6 +53440,7 @@ glGetFragDataLocation
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -53374,7 +53454,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glMultiDrawArrays(GLenum mode, const GLint * first, const GLsizei * count, GLsizei drawcount)
-
 ```
 Render multiple sets of primitives from array data
 ---
@@ -53439,7 +53518,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glDepthRangeIndexed(GLuint index, GLdouble nearVal, GLdouble farVal)
-
 ```
 Specify mapping of depth values from normalized device coordinates to window coordinates for a
 specified viewport
@@ -53492,6 +53570,7 @@ glViewport, removedTypes
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -53505,7 +53584,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glMultiDrawArraysIndirect(GLenum mode, const void *indirect, GLsizei drawcount, GLsizei stride)
-
 ```
 Render multiple sets of primitives from array data, taking parameters from memory
 ---
@@ -53583,6 +53661,7 @@ glDrawArraysIndirect, glMultiDrawElementsIndirect
 ### Copyright
 Copyright 2012-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -53596,7 +53675,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetFramebufferAttachmentParameteriv(GLenum target, GLenum attachment, GLenum pname, GLint *params)
-
 ```
 Retrieve information about attachments of a framebuffer object
 ---
@@ -53694,6 +53772,7 @@ mipmap level of the texture object which contains the attached image.
 If `pname` is `GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE` and the value of
 `GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME` is the name of a cube map texture object, then `params`
 will contain the cube map face of the cubemap texture object which contains the attached image.
+
 Otherwise `params` will contain zero.
 
 If `pname` is `GL_FRAMEBUFFER_ATTACHMENT_LAYERED`, then `params` will contain `GL_TRUE`
@@ -53742,6 +53821,7 @@ glGenFramebuffers, glBindFramebuffer glGetFramebufferParameter
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -53755,7 +53835,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glMultiDrawElements(GLenum mode, const GLsizei * count, GLenum type, const void * const * indices, GLsizei drawcount)
-
 ```
 Render multiple sets of primitives by specifying indices of array data elements
 ---
@@ -53819,7 +53898,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glDispatchCompute(GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z)
-
 ```
 Launch one or more compute work groups
 ---
@@ -53853,6 +53931,7 @@ glDispatchComputeIndirect.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -53866,7 +53945,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glMultiDrawElementsBaseVertex(GLenum mode, const GLsizei *count, GLenum type, const void * const *indices, GLsizei drawcount, const GLint *basevertex)
-
 ```
 Render multiple sets of primitives by specifying indices of array data elements and an index to
 apply to each index
@@ -53916,6 +53994,7 @@ glMultiDrawElements, glDrawElementsBaseVertex, glDrawArrays, glVertexAttribPoint
 ### Copyright
 Copyright 2010 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -53929,7 +54008,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawArrays(GLenum mode, GLint first, GLsizei count)
-
 ```
 Render primitives from array data
 ---
@@ -53992,7 +54070,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glMultiDrawElementsIndirect(GLenum mode, GLenum type, const void *indirect, GLsizei drawcount, GLsizei stride)
-
 ```
 Render indexed primitives from array data, taking parameters from memory
 ---
@@ -54079,6 +54156,7 @@ glDrawRangeElements, glDrawElementsIndirect, glMultiDrawArraysIndirect
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -54092,7 +54170,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDeleteTextures(GLsizei n, const GLuint * textures)
-
 ```
 Delete named textures
 ---
@@ -54137,7 +54214,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glObjectLabel(GLenum identifier, GLuint name, GLsizei length, const char * label)
-
 ```
 Label a named object identified within a namespace
 ---
@@ -54181,6 +54257,7 @@ glPushDebugGroup, glPopDebugGroup, glObjectPtrLabel.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -54194,7 +54271,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawArraysInstanced(GLenum mode, GLint first, GLsizei count, GLsizei instancecount)
-
 ```
 Draw multiple instances of a range of elements
 ---
@@ -54239,6 +54315,7 @@ glDrawArrays, glDrawElementsInstanced
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -54252,7 +54329,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glObjectPtrLabel(void * ptr, GLsizei length, const char * label)
-
 ```
 Label a sync object identified by a pointer
 ---
@@ -54287,6 +54363,7 @@ glPushDebugGroup, glPopDebugGroup, glObjectLabel.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -54300,7 +54377,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDeleteRenderbuffers(GLsizei n, GLuint *renderbuffers)
-
 ```
 Delete renderbuffer objects
 ---
@@ -54320,6 +54396,7 @@ executed with a `target` of `GL_RENDERBUFFER` and a `name` of zero.
 If a renderbuffer object is attached to one or more attachment points in the currently bound
 framebuffer, then it as if glFramebufferRenderbuffer had been called, with a `renderbuffer` of
 zero for each attachment point to which this image was attached in the currently bound framebuffer.
+
 In other words, this renderbuffer object is first detached from all attachment ponits in the
 currently bound framebuffer. Note that the renderbuffer image is specifically not detached from
 any non-bound framebuffers.
@@ -54337,6 +54414,7 @@ glRenderbufferStorageMultisample
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -54350,7 +54428,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPatchParameteri(GLenum pname, GLint value)
-
 ```
 Specifies the parameters for patch primitives
 ---
@@ -54398,6 +54475,7 @@ glDrawArrays, glDrawArraysInstanced, glDrawElements, glDrawRangeElements,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -54411,7 +54489,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawBuffer(GLenum buf)
-
 ```
 Specify which color buffers are to be drawn into
 ---
@@ -54420,6 +54497,7 @@ Specify which color buffers are to be drawn into
 function. Must be zero or the name of a framebuffer object.
 
 `buf` For default framebuffer, the argument specifies up to four color buffers to be drawn into.
+
 Symbolic constants `GL_NONE`, `GL_FRONT_LEFT`, `GL_FRONT_RIGHT`, `GL_BACK_LEFT`,
 `GL_BACK_RIGHT`, `GL_FRONT`, `GL_BACK`, `GL_LEFT`, `GL_RIGHT`, and `GL_FRONT_AND_BACK`
 are accepted. The initial value is `GL_FRONT` for single-buffered contexts, and `GL_BACK` for
@@ -54449,6 +54527,7 @@ back right) are written. If there are no back color buffers, only the front left
 color buffers are written. If there are no right color buffers, only the front left and back left
 color buffers are written. If there are no right or back color buffers, only the front left color
 buffer is written.
+
 If more than one color buffer is selected for drawing, then blending or logical operations are
 computed and applied independently for each color buffer and can produce different results in each
 buffer. Monoscopic contexts include only left buffers, and stereoscopic contexts include both
@@ -54498,7 +54577,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glPatchParameterfv(GLenum pname, const GLfloat *values)
-
 ```
 Specifies the parameters for patch primitives
 ---
@@ -54546,6 +54624,7 @@ glDrawArrays, glDrawArraysInstanced, glDrawElements, glDrawRangeElements,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -54559,7 +54638,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawBuffers(GLsizei n, const GLenum *bufs)
-
 ```
 Specifies a list of color buffers to be drawn into
 ---
@@ -54595,6 +54673,7 @@ attachment of the current framebuffer. n may range from zero to the value of
 `GL_MAX_COLOR_ATTACHMENTS`.
 
 Except for `GL_NONE`, the preceding symbolic constants may not appear more than once in `bufs`.
+
 The maximum number of draw buffers supported is implementation dependent and can be queried by
 calling glGet with the argument `GL_MAX_DRAW_BUFFERS`.
 ---
@@ -54660,7 +54739,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPauseTransformFeedback()
-
 ```
 Pause transform feedback operations
 ---
@@ -54684,6 +54762,7 @@ glResumeTransformFeedback, `glEndTransformFeedback`, glDeleteTransformFeedbacks
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -54697,7 +54776,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawElements(GLenum mode, GLsizei count, GLenum type, const void * indices)
-
 ```
 Render primitives from array data
 ---
@@ -54764,7 +54842,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glPixelStoref(GLenum pname, GLfloat param)
-
 ```
 Set pixel storage modes
 ---
@@ -54790,7 +54867,6 @@ and `GL_PACK_ALIGNMENT`. Six more affect the unpacking of pixel data from memory
         value = [[
 ```c
 void glDrawElementsIndirect(GLenum mode, GLenum type, const void *indirect)
-
 ```
 Render indexed primitives from array data, taking parameters from memory
 ---
@@ -54867,6 +54943,7 @@ glDrawRangeElements,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -54880,7 +54957,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPixelStorei(GLenum pname, GLint param)
-
 ```
 Set pixel storage modes
 ---
@@ -54906,7 +54982,6 @@ and `GL_PACK_ALIGNMENT`. Six more affect the unpacking of pixel data from memory
         value = [[
 ```c
 void glGetnCompressedTexImage(GLenum target, GLint level, GLsizei bufSize, void *pixels)
-
 ```
 GlGetCompressedTexImage Return a compressed texture image
 ---
@@ -54949,6 +55024,7 @@ of memory required to store the compressed texture by calling glGetTexLevelParam
 argument `GL_TEXTURE_COMPRESSED_IMAGE_SIZE`. Finally, retrieve the internal format of the texture
 by calling glGetTexLevelParameter with argument `GL_TEXTURE_INTERNAL_FORMAT`. To store the
 texture for later use, associate the internal format and size with the retrieved texture image.
+
 These data can be used by the respective texture or subtexture loading routine used for loading
 `target` textures.
 ---
@@ -55005,7 +55081,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPointParameterf(GLenum pname, GLfloat param)
-
 ```
 Specify point parameters
 ---
@@ -55066,7 +55141,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glDeleteShader(GLuint shader)
-
 ```
 Deletes a shader object
 ---
@@ -55117,7 +55191,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPointParameteri(GLenum pname, GLint param)
-
 ```
 Specify point parameters
 ---
@@ -55178,7 +55251,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 GLenum glGetError(void)
-
 ```
 Return error information
 ---
@@ -55213,6 +55285,7 @@ is undefined, except for the state of the error flags, after this error is recor
 internal stack to underflow.
 `GL_STACK_OVERFLOW` An attempt has been made to perform an operation that would cause an
 internal stack to overflow.
+
 When an error flag is set, results of a GL operation are undefined only if `GL_OUT_OF_MEMORY`
 has occurred. In all other cases, the command generating the error is ignored and has no effect on
 the GL state or frame buffer contents. If the generating command returns a value, it returns 0. If
@@ -55239,7 +55312,6 @@ details, see https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-Fr
         value = [[
 ```c
 void glPointParameterfv(GLenum pname, const GLfloat * params)
-
 ```
 Specify point parameters
 ---
@@ -55300,7 +55372,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetCompressedTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei bufSize, void *pixels)
-
 ```
 Retrieve a sub-region of a compressed texture image from a compressed texture object
 ---
@@ -55406,6 +55477,7 @@ glGetCompressedTexImage, `glGetCompressedTextureImage`, glReadPixels
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -55419,7 +55491,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPointParameteriv(GLenum pname, const GLint * params)
-
 ```
 Specify point parameters
 ---
@@ -55480,7 +55551,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetnUniformdv(GLuint program, GLint location, GLsizei bufSize, GLdouble *params)
-
 ```
 GlGetUniform Returns the value of a uniform variable
 ---
@@ -55498,6 +55568,7 @@ returned. If the uniform variable is defined in the shader as a boolean, int, or
 value will be returned. If it is defined as a vec2, ivec2, or bvec2, two values will be returned. If
 it is defined as a vec3, ivec3, or bvec3, three values will be returned, and so on. To query values
 stored in uniform variables declared as arrays, call `glGetUniform` for each element of the array.
+
 To query values stored in uniform variables declared as structures, call `glGetUniform` for each
 field in the structure. The values for uniform variables declared as a matrix will be returned in
 column major order.
@@ -55562,7 +55633,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPointSize(GLfloat size)
-
 ```
 Specify the diameter of rasterized points
 ---
@@ -55572,11 +55642,13 @@ Specify the diameter of rasterized points
 ### Description
 `glPointSize` specifies the rasterized diameter of points. If point size mode is disabled (see
 glEnable with parameter `GL_PROGRAM_POINT_SIZE` ), this value will be used to rasterize points.
+
 Otherwise, the value written to the shading language built-in variable gl_PointSize will be used.
 
 ---
 ### Notes
 The point size specified by `glPointSize` is always returned when `GL_POINT_SIZE` is queried.
+
 Clamping and rounding for points have no effect on the specified value.
 ---
 ### Errors
@@ -55615,7 +55687,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetnUniformuiv(GLuint program, GLint location, GLsizei bufSize, GLuint *params)
-
 ```
 GlGetUniform Returns the value of a uniform variable
 ---
@@ -55633,6 +55704,7 @@ returned. If the uniform variable is defined in the shader as a boolean, int, or
 value will be returned. If it is defined as a vec2, ivec2, or bvec2, two values will be returned. If
 it is defined as a vec3, ivec3, or bvec3, three values will be returned, and so on. To query values
 stored in uniform variables declared as arrays, call `glGetUniform` for each element of the array.
+
 To query values stored in uniform variables declared as structures, call `glGetUniform` for each
 field in the structure. The values for uniform variables declared as a matrix will be returned in
 column major order.
@@ -55697,7 +55769,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPolygonMode(GLenum face, GLenum mode)
-
 ```
 Select a polygon rasterization mode
 ---
@@ -55765,7 +55836,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetUniformSubroutineuiv(GLenum shadertype, GLint location, GLuint *values)
-
 ```
 Retrieve the value of a subroutine uniform of a given shader stage of the current program
 ---
@@ -55803,6 +55873,7 @@ glGetUniformLocation
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -55816,7 +55887,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPolygonOffset(GLfloat factor, GLfloat units)
-
 ```
 Set the scale and units used to calculate depth values
 ---
@@ -55824,6 +55894,7 @@ Set the scale and units used to calculate depth values
 `factor` Specifies a scale factor that is used to create a variable depth offset for each
 polygon. The initial value is 0.
 `units` Is multiplied by an implementation-specific value to create a constant depth offset.
+
 The initial value is 0.
 ]],
       },
@@ -55837,7 +55908,6 @@ The initial value is 0.
         value = [[
 ```c
 GLuint glGetUniformBlockIndex(GLuint program, const GLchar *uniformBlockName)
-
 ```
 Retrieve the index of a named uniform block
 ---
@@ -55876,6 +55946,7 @@ glGetActiveUniformBlockName, glGetActiveUniformBlock, glLinkProgram
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -55889,7 +55960,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPopDebugGroup()
-
 ```
 Pop the active debug group
 ---
@@ -55918,6 +55988,7 @@ glPushDebugGroup, glObjectLabel, glObjectPtrLabel.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -55931,7 +56002,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetVertexArrayiv(GLuint vaobj, GLenum pname, GLint *param)
-
 ```
 Retrieve parameters of a vertex array object
 ---
@@ -55964,6 +56034,7 @@ glBindBuffer, glBindVertexArray, glGet
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -55977,7 +56048,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glPrimitiveRestartIndex(GLuint index)
-
 ```
 Specify the primitive restart index
 ---
@@ -56012,6 +56082,7 @@ glDrawElementsInstancedBaseVertex
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -56025,7 +56096,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 GLint glGetUniformLocation(GLuint program, const GLchar *name)
-
 ```
 Returns the location of a uniform variable
 ---
@@ -56097,7 +56167,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramBinary(GLuint program, GLenum binaryFormat, const void *binary, GLsizei length)
-
 ```
 Load a program object with a program binary
 ---
@@ -56118,11 +56187,13 @@ are not met, loading the program binary will fail and `program` 's `GL_LINK_STAT
 to `GL_FALSE`.
 
 A program object's program binary is replaced by calls to glLinkProgram or `glProgramBinary`.
+
 When linking success or failure is concerned, `glProgramBinary` can be considered to perform an
 implicit linking operation. glLinkProgram and `glProgramBinary` both set the program object's
 `GL_LINK_STATUS` to `GL_TRUE` or `GL_FALSE`.
 
 A successful call to `glProgramBinary` will reset all uniform variables to their initial values.
+
 The initial value is either the value of the variable's initializer as specified in the original
 shader source, or zero if no initializer was present. Additionally, all vertex shader input and
 fragment shader output assignments that were in effect when the program was linked before saving are
@@ -56155,6 +56226,7 @@ glGetProgram, glGetProgramBinary
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -56168,7 +56240,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetVertexArrayIndexed64iv(GLuint vaobj, GLuint index, GLenum pname, GLint64 *param)
-
 ```
 Retrieve parameters of an attribute of a vertex array object
 ---
@@ -56259,6 +56330,7 @@ glGetVertexAttrib, glVertexAttribBinding, `glVertexAttribIPointer`,
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -56272,7 +56344,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramParameteri(GLuint program, GLenum pname, GLint value)
-
 ```
 Specify a parameter for a program object
 ---
@@ -56295,6 +56366,7 @@ calling glLinkProgram, and using the program at run-time if the binary is to be 
 
 If `pname` is `GL_PROGRAM_SEPARABLE`, `value` must be `GL_TRUE` or `GL_FALSE` and
 indicates whether `program` can be bound to individual pipeline stages via glUseProgramStages.
+
 A program's `GL_PROGRAM_SEPARABLE` parameter must be set to `GL_TRUE` before glLinkProgram is
 called in order for it to be usable with a program pipeline object. The initial state of
 `GL_PROGRAM_SEPARABLE` is `GL_FALSE`.
@@ -56319,6 +56391,7 @@ glGetProgram, glGetProgramBinary, glProgramBinary
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -56332,7 +56405,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetVertexArrayIndexediv(GLuint vaobj, GLuint index, GLenum pname, GLint *param)
-
 ```
 Retrieve parameters of an attribute of a vertex array object
 ---
@@ -56423,6 +56495,7 @@ glGetVertexAttrib, glVertexAttribBinding, `glVertexAttribIPointer`,
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -56436,7 +56509,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform1f(GLuint program, GLint location, GLfloat v0)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -56605,7 +56677,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetUniformIndices(GLuint program, GLsizei uniformCount, const GLchar **uniformNames, GLuint *uniformIndices)
-
 ```
 Retrieve the index of a named uniform block
 ---
@@ -56651,6 +56722,7 @@ glGetActiveUniform, glGetActiveUniformName, glLinkProgram
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -56664,7 +56736,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform2f(GLuint program, GLint location, GLfloat v0, GLfloat v1)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -56833,7 +56904,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 GLint glGetFragDataLocation(GLuint program, const char * name)
-
 ```
 Query the bindings of color numbers to user-defined varying out variables
 ---
@@ -56859,6 +56929,7 @@ glCreateProgram, glBindFragDataLocation
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -56872,7 +56943,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform3f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -57041,7 +57111,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, void *data)
-
 ```
 Returns a subset of a buffer object's data store
 ---
@@ -57110,7 +57179,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform4f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -57279,7 +57347,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawElementsInstanced(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount)
-
 ```
 Draw multiple instances of a set of elements
 ---
@@ -57334,6 +57401,7 @@ glDrawElements, glDrawArraysInstanced
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -57347,7 +57415,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform1i(GLuint program, GLint location, GLint v0)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -57516,7 +57583,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawElementsBaseVertex(GLenum mode, GLsizei count, GLenum type, void *indices, GLint basevertex)
-
 ```
 Render primitives from array data with a per-element offset
 ---
@@ -57567,6 +57633,7 @@ glDrawElementsInstanced, glDrawElementsInstancedBaseVertex
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -57580,7 +57647,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform2i(GLuint program, GLint location, GLint v0, GLint v1)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -57749,7 +57815,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glNamedFramebufferDrawBuffers(GLuint framebuffer, GLsizei n, const GLenum *bufs)
-
 ```
 Specifies a list of color buffers to be drawn into
 ---
@@ -57785,6 +57850,7 @@ attachment of the current framebuffer. n may range from zero to the value of
 `GL_MAX_COLOR_ATTACHMENTS`.
 
 Except for `GL_NONE`, the preceding symbolic constants may not appear more than once in `bufs`.
+
 The maximum number of draw buffers supported is implementation dependent and can be queried by
 calling glGet with the argument `GL_MAX_DRAW_BUFFERS`.
 ---
@@ -57850,7 +57916,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform3i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -58019,7 +58084,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glNamedFramebufferDrawBuffer(GLuint framebuffer, GLenum buf)
-
 ```
 Specify which color buffers are to be drawn into
 ---
@@ -58028,6 +58092,7 @@ Specify which color buffers are to be drawn into
 function. Must be zero or the name of a framebuffer object.
 
 `buf` For default framebuffer, the argument specifies up to four color buffers to be drawn into.
+
 Symbolic constants `GL_NONE`, `GL_FRONT_LEFT`, `GL_FRONT_RIGHT`, `GL_BACK_LEFT`,
 `GL_BACK_RIGHT`, `GL_FRONT`, `GL_BACK`, `GL_LEFT`, `GL_RIGHT`, and `GL_FRONT_AND_BACK`
 are accepted. The initial value is `GL_FRONT` for single-buffered contexts, and `GL_BACK` for
@@ -58057,6 +58122,7 @@ back right) are written. If there are no back color buffers, only the front left
 color buffers are written. If there are no right color buffers, only the front left and back left
 color buffers are written. If there are no right or back color buffers, only the front left color
 buffer is written.
+
 If more than one color buffer is selected for drawing, then blending or logical operations are
 computed and applied independently for each color buffer and can produce different results in each
 buffer. Monoscopic contexts include only left buffers, and stereoscopic contexts include both
@@ -58106,7 +58172,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glProgramUniform4i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -58275,7 +58340,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawArraysInstancedBaseInstance(GLenum mode, GLint first, GLsizei count, GLsizei instancecount, GLuint baseinstance)
-
 ```
 Draw multiple instances of a range of elements with offset applied to instanced attributes
 ---
@@ -58302,7 +58366,6 @@ rendered.
         value = [[
 ```c
 void glProgramUniform1ui(GLuint program, GLint location, GLuint v0)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -58471,7 +58534,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDrawArraysIndirect(GLenum mode, const void *indirect)
-
 ```
 Render primitives from array data, taking parameters from memory
 ---
@@ -58533,6 +58595,7 @@ glDrawArrays, glDrawArraysInstanced, glDrawElements, glDrawRangeElements,
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -58546,7 +58609,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform2ui(GLuint program, GLint location, GLuint v0, GLuint v1)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -58715,7 +58777,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDispatchComputeIndirect(GLintptr indirect)
-
 ```
 Launch one or more compute work groups using parameters stored in a buffer
 ---
@@ -58765,6 +58826,7 @@ glDispatchCompute.
 ### Copyright
 Copyright 2013-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -58778,7 +58840,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform3ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -58947,7 +59008,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDetachShader(GLuint program, GLuint shader)
-
 ```
 Detaches a shader object from a program object to which it is attached
 ---
@@ -59004,7 +59064,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform4ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -59173,7 +59232,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glDepthRangeArrayv(GLuint first, GLsizei count, const GLdouble *v)
-
 ```
 Specify mapping of depth values from normalized device coordinates to window coordinates for a
 specified set of viewports
@@ -59231,6 +59289,7 @@ glViewport, removedTypes
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -59244,7 +59303,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform1fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -59413,7 +59471,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glScissorIndexed(GLuint index, GLint left, GLint bottom, GLsizei width, GLsizei height)
-
 ```
 Define the scissor box for a specific viewport
 ---
@@ -59464,6 +59521,7 @@ glEnable, glScissor, glScissorArray
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -59477,7 +59535,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform2fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -59646,7 +59703,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniformMatrix2x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -59815,7 +59871,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform3fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -59984,7 +60039,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniformMatrix3x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -60153,7 +60207,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform4fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -60322,7 +60375,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProvokingVertex(GLenum provokeMode)
-
 ```
 Specifiy the vertex to be used as the source of data for flat shaded varyings
 ---
@@ -60365,6 +60417,7 @@ the flat qualifier when declaring the output.
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -60378,7 +60431,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform1iv(GLuint program, GLint location, GLsizei count, const GLint *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -60547,7 +60599,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glQueryCounter(GLuint id, GLenum target)
-
 ```
 Record the GL time into a query object after all previous commands have reached the GL server but
 have not yet necessarily executed.
@@ -60587,6 +60638,7 @@ glGetQueryiv, glGet
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -60600,7 +60652,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform2iv(GLuint program, GLint location, GLsizei count, const GLint *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -60769,7 +60820,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glNamedFramebufferReadBuffer(GLuint framebuffer, GLenum mode)
-
 ```
 Select a color buffer source for pixels
 ---
@@ -60793,6 +60843,7 @@ indicate the i th color attachment where i ranges from zero to the value of
 `GL_MAX_COLOR_ATTACHMENTS` minus one.
 
 Nonstereo double-buffered configurations have only a front left and a back left buffer.
+
 Single-buffered configurations have a front left and a front right buffer if stereo, and only a
 front left buffer if nonstereo. It is an error to specify a nonexistent buffer to `glReadBuffer`.
 
@@ -60837,7 +60888,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glProgramUniform3iv(GLuint program, GLint location, GLsizei count, const GLint *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -61006,12 +61056,12 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glReadnPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLsizei bufSize, void *data)
-
 ```
 Read a block of pixels from the frame buffer
 ---
 ### Parameters
 `x` `y` Specify the window coordinates of the first pixel that is read from the frame buffer.
+
 This location is the lower left corner of a rectangular block of pixels.
 `width` `height` Specify the dimensions of the pixel rectangle. `width` and `height` of one
 correspond to a single pixel.
@@ -61044,7 +61094,6 @@ correspond to a single pixel.
         value = [[
 ```c
 void glProgramUniform4iv(GLuint program, GLint location, GLsizei count, const GLint *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -61213,12 +61262,12 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glRenderbufferStorage(GLenum target, GLenum internalformat, GLsizei width, GLsizei height)
-
 ```
 Establish data storage, format and dimensions of a renderbuffer object's image
 ---
 ### Parameters
 `target` Specifies a binding target of the allocation for `glRenderbufferStorage` function.
+
 Must be `GL_RENDERBUFFER`.
 
 `renderbuffer` Specifies the name of the renderbuffer object for `glNamedRenderbufferStorage`
@@ -61271,6 +61320,7 @@ glRenderbufferStorageMultisample, glFramebufferRenderbuffer, glDeleteRenderbuffe
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -61284,7 +61334,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform1uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -61453,7 +61502,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glRenderbufferStorageMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height)
-
 ```
 Establish data storage, format, dimensions and sample count of a renderbuffer object's image
 ---
@@ -61520,6 +61568,7 @@ glRenderbufferStorage, glFramebufferRenderbuffer, glDeleteRenderbuffers
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -61533,7 +61582,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform2uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -61702,7 +61750,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glResumeTransformFeedback()
-
 ```
 Resume transform feedback operations
 ---
@@ -61727,6 +61774,7 @@ glPauseTransformFeedback, `glEndTransformFeedback`, glDeleteTransformFeedbacks
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -61740,7 +61788,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform3uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -61909,7 +61956,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glSampleMaski(GLuint maskNumber, GLbitfield mask)
-
 ```
 Set the value of a sub-word of the sample mask
 ---
@@ -61942,6 +61988,7 @@ glFramebufferRenderbuffer, glDeleteRenderbuffers
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -61955,7 +62002,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniform4uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -62124,7 +62170,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glSamplerParameteri(GLuint sampler, GLenum pname, GLint param)
-
 ```
 Set sampler parameters
 ---
@@ -62152,7 +62197,6 @@ where the value or values of `pname` are stored.
         value = [[
 ```c
 void glProgramUniformMatrix2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -62321,7 +62365,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glSamplerParameteriv(GLuint sampler, GLenum pname, const GLint * params)
-
 ```
 Set sampler parameters
 ---
@@ -62349,7 +62392,6 @@ where the value or values of `pname` are stored.
         value = [[
 ```c
 void glProgramUniformMatrix3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -62518,7 +62560,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glSamplerParameterIuiv(GLuint sampler, GLenum pname, const GLuint *params)
-
 ```
 Set sampler parameters
 ---
@@ -62546,7 +62587,6 @@ where the value or values of `pname` are stored.
         value = [[
 ```c
 void glProgramUniformMatrix4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -62715,7 +62755,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glScissorArrayv(GLuint first, GLsizei count, const GLint *v)
-
 ```
 Define the scissor box for multiple viewports
 ---
@@ -62766,6 +62805,7 @@ glEnable, glViewport, glViewportIndexed, glViewportArray
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -62779,7 +62819,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniformMatrix2x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -62948,7 +62987,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glScissorIndexedv(GLuint index, const GLint *v)
-
 ```
 Define the scissor box for a specific viewport
 ---
@@ -62999,6 +63037,7 @@ glEnable, glScissor, glScissorArray
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -63012,7 +63051,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glProgramUniformMatrix3x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
-
 ```
 GlProgramUniform Specify the value of a uniform variable for a specified program object
 ---
@@ -63181,7 +63219,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glShaderSource(GLuint shader, GLsizei count, const GLchar **string, const GLint *length)
-
 ```
 Replaces the source code in a shader object
 ---
@@ -63199,6 +63236,7 @@ specified by `string`. Any source code previously stored in the shader object is
 replaced. The number of strings in the array is specified by `count`. If `length` is `NULL`,
 each string is assumed to be null terminated. If `length` is a value other than `NULL`, it
 points to an array containing a string length for each of the corresponding elements of `string`.
+
 Each element in the `length` array may contain the length of the corresponding string (the null
 character is not counted as part of the string length) or a value less than 0 to indicate that the
 string is null terminated. The source code strings are not scanned or parsed at this time; they are
@@ -63244,7 +63282,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glStencilFunc(GLenum func, GLint ref, GLuint mask)
-
 ```
 Set front and back function and reference value for stencil testing
 ---
@@ -63341,7 +63378,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glShaderStorageBlockBinding(GLuint program, GLuint storageBlockIndex, GLuint storageBlockBinding)
-
 ```
 Change an active shader storage block binding
 ---
@@ -63386,6 +63422,7 @@ glGet with arguments `GL_SHADER_STORAGE_BUFFER_BINDING`,
 ### Copyright
 Copyright 2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -63399,7 +63436,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glStencilFuncSeparate(GLenum face, GLenum func, GLint ref, GLuint mask)
-
 ```
 Set front and/or back function and reference value for stencil testing
 ---
@@ -63485,6 +63521,7 @@ glStencilMaskSeparate, glStencilOp, glStencilOpSeparate
 ### Copyright
 Copyright 2006 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -63498,12 +63535,12 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTextureBufferRange(GLuint texture, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizei size)
-
 ```
 Attach a range of a buffer object's data store to a buffer texture object
 ---
 ### Parameters
 `target` Specifies the target to which the texture object is bound for `glTexBufferRange`.
+
 Must be `GL_TEXTURE_BUFFER`.
 
 `texture` Specifies the texture object name for `glTextureBufferRange`.
@@ -63578,6 +63615,7 @@ glTexBuffer.
 ### Copyright
 Copyright 2012-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -63591,7 +63629,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glStencilMask(GLuint mask)
-
 ```
 Control the front and back writing of individual bits in the stencil planes
 ---
@@ -63642,7 +63679,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetQueryObjectuiv(GLuint id, GLenum pname, GLuint * params)
-
 ```
 Return parameters of a query object
 ---
@@ -63748,7 +63784,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glStencilMaskSeparate(GLenum face, GLuint mask)
-
 ```
 Control the front and/or back writing of individual bits in the stencil planes
 ---
@@ -63788,6 +63823,7 @@ glStencilOp, glStencilOpSeparate
 ### Copyright
 Copyright 2006 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -63801,7 +63837,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetQueryObjecti64v(GLuint id, GLenum pname, GLint64 * params)
-
 ```
 Return parameters of a query object
 ---
@@ -63907,7 +63942,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glStencilOp(GLenum sfail, GLenum dpfail, GLenum dppass)
-
 ```
 Set front and back stencil test actions
 ---
@@ -63956,6 +63990,7 @@ when incrementing the maximum representable unsigned value.
 `GL_DECR_WRAP` Decrements the current stencil buffer value. Wraps stencil buffer value to the
 maximum representable unsigned value when decrementing a stencil buffer value of zero.
 `GL_INVERT` Bitwise inverts the current stencil buffer value.
+
 Stencil buffer values are treated as unsigned integers. When incremented and decremented, values
 are clamped to 0 and 2 n - 1, where n is the value returned by querying `GL_STENCIL_BITS`.
 
@@ -64007,7 +64042,6 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
         value = [[
 ```c
 void glGetQueryObjectui64v(GLuint id, GLenum pname, GLuint64 * params)
-
 ```
 Return parameters of a query object
 ---
@@ -64113,7 +64147,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glStencilOpSeparate(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass)
-
 ```
 Set front and/or back stencil test actions
 ---
@@ -64165,6 +64198,7 @@ when incrementing the maximum representable unsigned value.
 `GL_DECR_WRAP` Decrements the current stencil buffer value. Wraps stencil buffer value to the
 maximum representable unsigned value when decrementing a stencil buffer value of zero.
 `GL_INVERT` Bitwise inverts the current stencil buffer value.
+
 Stencil buffer values are treated as unsigned integers. When incremented and decremented, values
 are clamped to 0 and 2 n - 1, where n is the value returned by querying `GL_STENCIL_BITS`.
 
@@ -64203,6 +64237,7 @@ glStencilFuncSeparate, glStencilMask, glStencilMaskSeparate, glStencilOp
 ### Copyright
 Copyright 2006 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -64216,7 +64251,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetQueryBufferObjectiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)
-
 ```
 Return parameters of a query object
 ---
@@ -64322,7 +64356,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTexBuffer(GLenum target, GLenum internalformat, GLuint buffer)
-
 ```
 Attach a buffer object's data store to a buffer texture object
 ---
@@ -64391,6 +64424,7 @@ glBindTexture, glDeleteTextures
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -64404,7 +64438,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetQueryBufferObjectuiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)
-
 ```
 Return parameters of a query object
 ---
@@ -64510,7 +64543,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTextureBuffer(GLuint texture, GLenum internalformat, GLuint buffer)
-
 ```
 Attach a buffer object's data store to a buffer texture object
 ---
@@ -64579,6 +64611,7 @@ glBindTexture, glDeleteTextures
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -64592,7 +64625,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetQueryBufferObjecti64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)
-
 ```
 Return parameters of a query object
 ---
@@ -64698,12 +64730,12 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glTexBufferRange(GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size)
-
 ```
 Attach a range of a buffer object's data store to a buffer texture object
 ---
 ### Parameters
 `target` Specifies the target to which the texture object is bound for `glTexBufferRange`.
+
 Must be `GL_TEXTURE_BUFFER`.
 
 `texture` Specifies the texture object name for `glTextureBufferRange`.
@@ -64778,6 +64810,7 @@ glTexBuffer.
 ### Copyright
 Copyright 2012-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -64791,7 +64824,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetQueryBufferObjectui64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)
-
 ```
 Return parameters of a query object
 ---
@@ -64897,7 +64929,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform2ui(GLint location, GLuint v0, GLuint v1)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -64968,6 +64999,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -65062,7 +65094,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetQueryiv(GLenum target, GLenum pname, GLint * params)
-
 ```
 Return parameters of a query object target
 ---
@@ -65116,7 +65147,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform3ui(GLint location, GLuint v0, GLuint v1, GLuint v2)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -65187,6 +65217,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -65281,7 +65312,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetRenderbufferParameteriv(GLenum target, GLenum pname, GLint *params)
-
 ```
 Query a named parameter of a renderbuffer object
 ---
@@ -65343,6 +65373,7 @@ glRenderbufferStorageMultisample
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -65356,7 +65387,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform4ui(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -65427,6 +65457,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -65521,7 +65552,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetNamedRenderbufferParameteriv(GLuint renderbuffer, GLenum pname, GLint *params)
-
 ```
 Query a named parameter of a renderbuffer object
 ---
@@ -65583,6 +65613,7 @@ glRenderbufferStorageMultisample
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -65596,7 +65627,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform1fv(GLint location, GLsizei count, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -65667,6 +65697,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -65761,7 +65792,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat * params)
-
 ```
 Return sampler parameter values
 ---
@@ -65807,6 +65837,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glSamplerParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -65834,6 +65865,7 @@ glSamplerParameter, glGenSamplers, glDeleteSamplers, glSamplerParameter
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -65847,7 +65879,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform2fv(GLint location, GLsizei count, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -65918,6 +65949,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -66012,7 +66044,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetSamplerParameteriv(GLuint sampler, GLenum pname, GLint * params)
-
 ```
 Return sampler parameter values
 ---
@@ -66058,6 +66089,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glSamplerParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -66085,6 +66117,7 @@ glSamplerParameter, glGenSamplers, glDeleteSamplers, glSamplerParameter
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -66098,7 +66131,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform3fv(GLint location, GLsizei count, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -66169,6 +66201,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -66263,7 +66296,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetSamplerParameterIiv(GLuint sampler, GLenum pname, GLint * params)
-
 ```
 Return sampler parameter values
 ---
@@ -66309,6 +66341,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glSamplerParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -66336,6 +66369,7 @@ glSamplerParameter, glGenSamplers, glDeleteSamplers, glSamplerParameter
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -66349,7 +66383,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform4fv(GLint location, GLsizei count, const GLfloat *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -66420,6 +66453,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -66514,7 +66548,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetSamplerParameterIuiv(GLuint sampler, GLenum pname, GLuint * params)
-
 ```
 Return sampler parameter values
 ---
@@ -66560,6 +66593,7 @@ maps to the most positive representable integer and -1.0 maps to the most negati
 integer. The initial value is (0, 0, 0, 0).
 
 `GL_TEXTURE_COMPARE_MODE` Returns a single-valued texture comparison mode, a symbolic constant.
+
 The initial value is `GL_NONE`. See glSamplerParameter.
 
 `GL_TEXTURE_COMPARE_FUNC` Returns a single-valued texture comparison function, a symbolic
@@ -66587,6 +66621,7 @@ glSamplerParameter, glGenSamplers, glDeleteSamplers, glSamplerParameter
 ### Copyright
 Copyright 2010-2014 Khronos Group. This material may be distributed subject to the terms and
 conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
+
 https://opencontent.org/openpub/.
 ]],
       },
@@ -66600,7 +66635,6 @@ https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform1iv(GLint location, GLsizei count, const GLint *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -66671,6 +66705,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -66765,7 +66800,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetShaderiv(GLuint shader, GLenum pname, GLint *params)
-
 ```
 Returns a parameter from a shader object
 ---
@@ -66839,7 +66873,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glUniform2iv(GLint location, GLsizei count, const GLint *value)
-
 ```
 GlUniform Specify the value of a uniform variable for the current program object
 ---
@@ -66910,6 +66943,7 @@ The commands `glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv` are used to modi
 array of matrices. The numbers in the command name are interpreted as the dimensionality of the
 matrix. The number `2` indicates a 2 × 2 matrix (i.e., 4 values), the number `3` indicates a 3
 × 3 matrix (i.e., 9 values), and the number `4` indicates a 4 × 4 matrix (i.e., 16 values).
+
 Non-square matrix dimensionality is explicit, with the first number representing the number of
 columns and the second number representing the number of rows. For example, `2x4` indicates a 2 ×
 4 matrix with 2 columns and 4 rows (i.e., 8 values). If `transpose` is `GL_FALSE`, each matrix
@@ -67004,7 +67038,6 @@ June 1999. https://opencontent.org/openpub/.
         value = [[
 ```c
 void glGetShaderInfoLog(GLuint shader, GLsizei maxLength, GLsizei *length, GLchar *infoLog)
-
 ```
 Returns the information log for a shader object
 ---
@@ -67037,6 +67070,7 @@ its information log will be a string of length 0.
 The information log for a shader object is the OpenGL implementer's primary mechanism for conveying
 information about the compilation process. Therefore, the information log can be helpful to
 application developers during the development process, even when compilation is successful.
+
 Application developers should not expect different OpenGL implementations to produce identical
 information logs.
 ---
