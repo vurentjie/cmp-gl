@@ -1,11 +1,10 @@
-return function()
-  local kinds = require('cmp').lsp.CompletionItemKind
+local kinds = require('cmp').lsp.CompletionItemKind
 
-  return {
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+return {
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform3iv(GLint location, GLsizei count, const GLint *value)
 ```
@@ -162,15 +161,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform3iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform3iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetShaderPrecisionFormat(GLenum shaderType, GLenum precisionType, GLint *range, GLint *precision)
 ```
@@ -216,15 +215,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetShaderPrecisionFormat',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetShaderPrecisionFormat',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform4iv(GLint location, GLsizei count, const GLint *value)
 ```
@@ -381,15 +380,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform4iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform4iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetShaderSource(GLuint shader, GLsizei bufSize, GLsizei *length, GLchar *source)
 ```
@@ -439,15 +438,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetShaderSource',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetShaderSource',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform1uiv(GLint location, GLsizei count, const GLuint *value)
 ```
@@ -604,15 +603,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform1uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform1uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 const GLubyte *glGetString(GLenum name)
 ```
@@ -677,15 +676,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetString',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetString',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform2uiv(GLint location, GLsizei count, const GLuint *value)
 ```
@@ -842,15 +841,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform2uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform2uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 const GLubyte *glGetStringi(GLenum name, GLuint index)
 ```
@@ -915,15 +914,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetStringi',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetStringi',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform3uiv(GLint location, GLsizei count, const GLuint *value)
 ```
@@ -1080,15 +1079,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform3uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform3uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLuint glGetSubroutineIndex(GLuint program, GLenum shadertype, const GLchar *name)
 ```
@@ -1132,15 +1131,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetSubroutineIndex',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetSubroutineIndex',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform4uiv(GLint location, GLsizei count, const GLuint *value)
 ```
@@ -1297,15 +1296,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform4uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform4uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLint glGetSubroutineUniformLocation(GLuint program, GLenum shadertype, const GLchar *name)
 ```
@@ -1350,15 +1349,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetSubroutineUniformLocation',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetSubroutineUniformLocation',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniformMatrix2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -1515,15 +1514,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniformMatrix2fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniformMatrix2fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetSynciv(GLsync sync, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values)
 ```
@@ -1582,15 +1581,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetSynciv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetSynciv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniformMatrix3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -1747,15 +1746,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniformMatrix3fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniformMatrix3fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTexImage(GLenum target, GLint level, GLenum format, GLenum type, void * pixels)
 ```
@@ -1850,15 +1849,15 @@ If an error is generated, no change is made to the contents of `pixels`.
 
 `GL_STENCIL_INDEX` is accepted for `format` only if the GL version is 4.4 or greater.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTexImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTexImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureParameterIuiv(GLuint texture, GLenum pname, const GLuint *params)
 ```
@@ -1889,15 +1888,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureParameterIuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureParameterIuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetnTexImage(GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels)
 ```
@@ -1992,15 +1991,15 @@ If an error is generated, no change is made to the contents of `pixels`.
 
 `GL_STENCIL_INDEX` is accepted for `format` only if the GL version is 4.4 or greater.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetnTexImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetnTexImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexStorage1D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width)
 ```
@@ -2050,15 +2049,15 @@ the dimensions or format of the object.
 ### Notes
 `GL_STENCIL_INDEX8` is accepted for `internalformat` only if the GL version is 4.4 or higher.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexStorage1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexStorage1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTextureImage(GLuint texture, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels)
 ```
@@ -2153,15 +2152,15 @@ If an error is generated, no change is made to the contents of `pixels`.
 
 `GL_STENCIL_INDEX` is accepted for `format` only if the GL version is 4.4 or greater.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTextureImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTextureImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureStorage1D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width)
 ```
@@ -2211,15 +2210,15 @@ the dimensions or format of the object.
 ### Notes
 `GL_STENCIL_INDEX8` is accepted for `internalformat` only if the GL version is 4.4 or higher.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureStorage1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureStorage1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTexLevelParameterfv(GLenum target, GLint level, GLenum pname, GLfloat * params)
 ```
@@ -2352,15 +2351,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTexLevelParameterfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTexLevelParameterfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexStorage2D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height)
 ```
@@ -2424,15 +2423,15 @@ the dimensions or format of the object.
 ### Notes
 `GL_STENCIL_INDEX8` is accepted for `internalformat` only if the GL version is 4.4 or higher.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexStorage2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexStorage2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTexLevelParameteriv(GLenum target, GLint level, GLenum pname, GLint * params)
 ```
@@ -2565,15 +2564,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTexLevelParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTexLevelParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureStorage2D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height)
 ```
@@ -2637,15 +2636,15 @@ the dimensions or format of the object.
 ### Notes
 `GL_STENCIL_INDEX8` is accepted for `internalformat` only if the GL version is 4.4 or higher.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureStorage2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureStorage2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTextureLevelParameterfv(GLuint texture, GLint level, GLenum pname, GLfloat *params)
 ```
@@ -2778,15 +2777,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTextureLevelParameterfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTextureLevelParameterfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexStorage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)
 ```
@@ -2861,15 +2860,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexStorage2DMultisample',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexStorage2DMultisample',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTextureLevelParameteriv(GLuint texture, GLint level, GLenum pname, GLint *params)
 ```
@@ -3002,15 +3001,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTextureLevelParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTextureLevelParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureStorage2DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)
 ```
@@ -3085,15 +3084,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureStorage2DMultisample',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureStorage2DMultisample',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTexParameterfv(GLenum target, GLenum pname, GLfloat * params)
 ```
@@ -3249,15 +3248,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTexParameterfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTexParameterfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexStorage3D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth)
 ```
@@ -3319,15 +3318,15 @@ the dimensions or format of the object.
 ### Notes
 `GL_STENCIL_INDEX8` is accepted for `internalformat` only if the GL version is 4.4 or higher.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexStorage3D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexStorage3D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTexParameteriv(GLenum target, GLenum pname, GLint * params)
 ```
@@ -3483,15 +3482,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTexParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTexParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureStorage3D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth)
 ```
@@ -3553,15 +3552,15 @@ the dimensions or format of the object.
 ### Notes
 `GL_STENCIL_INDEX8` is accepted for `internalformat` only if the GL version is 4.4 or higher.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureStorage3D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureStorage3D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTexParameterIiv(GLenum target, GLenum pname, GLint * params)
 ```
@@ -3717,15 +3716,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTexParameterIiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTexParameterIiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexStorage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations)
 ```
@@ -3810,15 +3809,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexStorage3DMultisample',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexStorage3DMultisample',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTexParameterIuiv(GLenum target, GLenum pname, GLuint * params)
 ```
@@ -3974,15 +3973,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTexParameterIuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTexParameterIuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureStorage3DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations)
 ```
@@ -4067,15 +4066,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureStorage3DMultisample',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureStorage3DMultisample',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTextureParameterfv(GLuint texture, GLenum pname, GLfloat *params)
 ```
@@ -4231,15 +4230,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTextureParameterfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTextureParameterfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void * pixels)
 ```
@@ -4361,15 +4360,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexSubImage1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexSubImage1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTextureParameteriv(GLuint texture, GLenum pname, GLint *params)
 ```
@@ -4525,15 +4524,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTextureParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTextureParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void *pixels)
 ```
@@ -4655,15 +4654,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureSubImage1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureSubImage1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTextureParameterIiv(GLuint texture, GLenum pname, GLint *params)
 ```
@@ -4819,15 +4818,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTextureParameterIiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTextureParameterIiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void * pixels)
 ```
@@ -4955,15 +4954,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexSubImage2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexSubImage2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTextureParameterIuiv(GLuint texture, GLenum pname, GLuint *params)
 ```
@@ -5119,15 +5118,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTextureParameterIuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTextureParameterIuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *pixels)
 ```
@@ -5255,15 +5254,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureSubImage2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureSubImage2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, GLsizei bufSize, void *pixels)
 ```
@@ -5375,15 +5374,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTextureSubImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTextureSubImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * pixels)
 ```
@@ -5511,15 +5510,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexSubImage3D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexSubImage3D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTransformFeedbackiv(GLuint xfb, GLenum pname, GLint *param)
 ```
@@ -5606,15 +5605,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTransformFeedbackiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTransformFeedbackiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels)
 ```
@@ -5742,15 +5741,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureSubImage3D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureSubImage3D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTransformFeedbacki_v(GLuint xfb, GLenum pname, GLuint index, GLint *param)
 ```
@@ -5837,15 +5836,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTransformFeedbacki_v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTransformFeedbacki_v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureBarrier(void)
 ```
@@ -5877,15 +5876,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureBarrier',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureBarrier',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTransformFeedbacki64_v(GLuint xfb, GLenum pname, GLuint index, GLint64 *param)
 ```
@@ -5972,15 +5971,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTransformFeedbacki64_v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTransformFeedbacki64_v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureView(GLuint texture, GLenum target, GLuint origtexture, GLenum internalformat, GLuint minlevel, GLuint numlevels, GLuint minlayer, GLuint numlayers)
 ```
@@ -6110,15 +6109,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureView',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureView',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetTransformFeedbackVarying(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, char *name)
 ```
@@ -6184,15 +6183,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetTransformFeedbackVarying',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetTransformFeedbackVarying',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTransformFeedbackBufferBase(GLuint xfb, GLuint index, GLuint buffer)
 ```
@@ -6234,15 +6233,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTransformFeedbackBufferBase',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTransformFeedbackBufferBase',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetUniformfv(GLuint program, GLint location, GLfloat *params)
 ```
@@ -6316,15 +6315,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetUniformfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetUniformfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTransformFeedbackBufferRange(GLuint xfb, GLuint index, GLuint buffer, GLintptr offset, GLsizei size)
 ```
@@ -6378,15 +6377,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTransformFeedbackBufferRange',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTransformFeedbackBufferRange',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetUniformiv(GLuint program, GLint location, GLint *params)
 ```
@@ -6460,15 +6459,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetUniformiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetUniformiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTransformFeedbackVaryings(GLuint program, GLsizei count, const char **varyings, GLenum bufferMode)
 ```
@@ -6550,15 +6549,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTransformFeedbackVaryings',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTransformFeedbackVaryings',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetUniformuiv(GLuint program, GLint location, GLuint *params)
 ```
@@ -6632,15 +6631,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetUniformuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetUniformuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform1f(GLint location, GLfloat v0)
 ```
@@ -6797,15 +6796,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform1f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform1f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetUniformdv(GLuint program, GLint location, GLdouble *params)
 ```
@@ -6879,15 +6878,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetUniformdv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetUniformdv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform2f(GLint location, GLfloat v0, GLfloat v1)
 ```
@@ -7044,15 +7043,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform2f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform2f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetnUniformfv(GLuint program, GLint location, GLsizei bufSize, GLfloat *params)
 ```
@@ -7126,15 +7125,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetnUniformfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetnUniformfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform3f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2)
 ```
@@ -7291,15 +7290,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform3f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform3f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetnUniformiv(GLuint program, GLint location, GLsizei bufSize, GLint *params)
 ```
@@ -7373,15 +7372,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetnUniformiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetnUniformiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform4f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)
 ```
@@ -7538,15 +7537,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform4f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform4f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetVertexAttribdv(GLuint index, GLenum pname, GLdouble *params)
 ```
@@ -7658,15 +7657,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetVertexAttribdv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetVertexAttribdv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform1i(GLint location, GLint v0)
 ```
@@ -7823,15 +7822,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform1i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform1i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform2i(GLint location, GLint v0, GLint v1)
 ```
@@ -7988,15 +7987,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform2i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform2i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform3i(GLint location, GLint v0, GLint v1, GLint v2)
 ```
@@ -8153,15 +8152,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform3i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform3i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform4i(GLint location, GLint v0, GLint v1, GLint v2, GLint v3)
 ```
@@ -8318,15 +8317,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform4i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform4i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform1ui(GLint location, GLuint v0)
 ```
@@ -8483,15 +8482,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform1ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform1ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFramebufferParameteri(GLenum target, GLenum pname, GLint param)
 ```
@@ -8586,15 +8585,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFramebufferParameteri',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFramebufferParameteri',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedFramebufferParameteri(GLuint framebuffer, GLenum pname, GLint param)
 ```
@@ -8689,15 +8688,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedFramebufferParameteri',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedFramebufferParameteri',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFramebufferRenderbuffer(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer)
 ```
@@ -8783,15 +8782,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFramebufferRenderbuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFramebufferRenderbuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedFramebufferRenderbuffer(GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer)
 ```
@@ -8877,15 +8876,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedFramebufferRenderbuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedFramebufferRenderbuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFramebufferTexture(GLenum target, GLenum attachment, GLuint texture, GLint level)
 ```
@@ -9010,15 +9009,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFramebufferTexture',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFramebufferTexture',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFramebufferTexture1D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level)
 ```
@@ -9143,15 +9142,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFramebufferTexture1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFramebufferTexture1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFramebufferTexture2D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level)
 ```
@@ -9276,15 +9275,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFramebufferTexture2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFramebufferTexture2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetFramebufferParameteriv(GLenum target, GLenum pname, GLint *params)
 ```
@@ -9391,15 +9390,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetFramebufferParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetFramebufferParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFramebufferTexture3D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint layer)
 ```
@@ -9524,15 +9523,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFramebufferTexture3D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFramebufferTexture3D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetNamedFramebufferParameteriv(GLuint framebuffer, GLenum pname, GLint *param)
 ```
@@ -9639,15 +9638,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetNamedFramebufferParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetNamedFramebufferParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedFramebufferTexture(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level)
 ```
@@ -9772,15 +9771,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedFramebufferTexture',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedFramebufferTexture',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLenum glGetGraphicsResetStatus(void)
 ```
@@ -9848,15 +9847,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetGraphicsResetStatus',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetGraphicsResetStatus',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFramebufferTextureLayer(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer)
 ```
@@ -9944,15 +9943,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFramebufferTextureLayer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFramebufferTextureLayer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetInternalformativ(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint *params)
 ```
@@ -10245,15 +10244,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetInternalformativ',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetInternalformativ',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedFramebufferTextureLayer(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLint layer)
 ```
@@ -10341,15 +10340,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedFramebufferTextureLayer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedFramebufferTextureLayer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetInternalformati64v(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint64 *params)
 ```
@@ -10642,15 +10641,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetInternalformati64v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetInternalformati64v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFrontFace(GLenum mode)
 ```
@@ -10695,15 +10694,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFrontFace',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFrontFace',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetMultisamplefv(GLenum pname, GLuint index, GLfloat *val)
 ```
@@ -10744,15 +10743,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetMultisamplefv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetMultisamplefv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGenBuffers(GLsizei n, GLuint * buffers)
 ```
@@ -10790,15 +10789,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGenBuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGenBuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetObjectLabel(GLenum identifier, GLuint name, GLsizei bufSize, GLsizei * length, char * label)
 ```
@@ -10852,15 +10851,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetObjectLabel',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetObjectLabel',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGenFramebuffers(GLsizei n, GLuint *ids)
 ```
@@ -10896,15 +10895,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGenFramebuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGenFramebuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetObjectPtrLabel(void * ptr, GLsizei bufSize, GLsizei * length, char * label)
 ```
@@ -10951,15 +10950,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetObjectPtrLabel',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetObjectPtrLabel',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGenProgramPipelines(GLsizei n, GLuint *pipelines)
 ```
@@ -10992,15 +10991,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGenProgramPipelines',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGenProgramPipelines',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetPointerv(GLenum pname, void ** params)
 ```
@@ -11047,15 +11046,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetPointerv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetPointerv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGenQueries(GLsizei n, GLuint * ids)
 ```
@@ -11093,15 +11092,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGenQueries',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGenQueries',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetProgramiv(GLuint program, GLenum pname, GLint *params)
 ```
@@ -11234,15 +11233,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGenRenderbuffers(GLsizei n, GLuint *renderbuffers)
 ```
@@ -11278,15 +11277,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGenRenderbuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGenRenderbuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetProgramBinary(GLuint program, GLsizei bufSize, GLsizei *length, GLenum *binaryFormat, void *binary)
 ```
@@ -11340,15 +11339,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramBinary',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramBinary',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGenSamplers(GLsizei n, GLuint *samplers)
 ```
@@ -11387,15 +11386,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGenSamplers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGenSamplers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetProgramInfoLog(GLuint program, GLsizei maxLength, GLsizei *length, GLchar *infoLog)
 ```
@@ -11459,15 +11458,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramInfoLog',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramInfoLog',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGenTextures(GLsizei n, GLuint * textures)
 ```
@@ -11506,15 +11505,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGenTextures',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGenTextures',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetProgramInterfaceiv(GLuint program, GLenum programInterface, GLenum pname, GLint * params)
 ```
@@ -11635,15 +11634,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramInterfaceiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramInterfaceiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGenTransformFeedbacks(GLsizei n, GLuint *ids)
 ```
@@ -11677,15 +11676,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGenTransformFeedbacks',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGenTransformFeedbacks',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetProgramPipelineiv(GLuint pipeline, GLenum pname, GLint *params)
 ```
@@ -11743,15 +11742,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramPipelineiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramPipelineiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGenVertexArrays(GLsizei n, GLuint *arrays)
 ```
@@ -11787,15 +11786,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGenVertexArrays',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGenVertexArrays',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetProgramPipelineInfoLog(GLuint pipeline, GLsizei bufSize, GLsizei *length, GLchar *infoLog)
 ```
@@ -11844,15 +11843,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramPipelineInfoLog',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramPipelineInfoLog',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGenerateMipmap(GLenum target)
 ```
@@ -11908,15 +11907,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGenerateMipmap',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGenerateMipmap',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetProgramResourceiv(GLuint program, GLenum programInterface, GLuint index, GLsizei propCount, const GLenum * props, GLsizei bufSize, GLsizei * length, GLint * params)
 ```
@@ -12133,15 +12132,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramResourceiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramResourceiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGenerateTextureMipmap(GLuint texture)
 ```
@@ -12197,15 +12196,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGenerateTextureMipmap',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGenerateTextureMipmap',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLuint glGetProgramResourceIndex(GLuint program, GLenum programInterface, const char * name)
 ```
@@ -12295,15 +12294,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramResourceIndex',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramResourceIndex',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetBooleanv(GLenum pname, GLboolean * data)
 ```
@@ -13249,15 +13248,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetBooleanv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetBooleanv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLint glGetProgramResourceLocation(GLuint program, GLenum programInterface, const char * name)
 ```
@@ -13321,15 +13320,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramResourceLocation',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramResourceLocation',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetDoublev(GLenum pname, GLdouble * data)
 ```
@@ -14275,15 +14274,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetDoublev',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetDoublev',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLint glGetProgramResourceLocationIndex(GLuint program, GLenum programInterface, const char * name)
 ```
@@ -14344,15 +14343,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramResourceLocationIndex',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramResourceLocationIndex',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetFloatv(GLenum pname, GLfloat * data)
 ```
@@ -15298,15 +15297,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetFloatv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetFloatv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetProgramResourceName(GLuint program, GLenum programInterface, GLuint index, GLsizei bufSize, GLsizei * length, char * name)
 ```
@@ -15401,15 +15400,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramResourceName',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramResourceName',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetIntegerv(GLenum pname, GLint * data)
 ```
@@ -16355,15 +16354,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetIntegerv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetIntegerv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetProgramStageiv(GLuint program, GLenum shadertype, GLenum pname, GLint *values)
 ```
@@ -16426,15 +16425,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetProgramStageiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetProgramStageiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetInteger64v(GLenum pname, GLint64 * data)
 ```
@@ -17380,15 +17379,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetInteger64v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetInteger64v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetQueryIndexediv(GLenum target, GLuint index, GLenum pname, GLint * params)
 ```
@@ -17443,15 +17442,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetQueryIndexediv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetQueryIndexediv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetBooleani_v(GLenum target, GLuint index, GLboolean * data)
 ```
@@ -18397,15 +18396,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetBooleani_v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetBooleani_v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetQueryObjectiv(GLuint id, GLenum pname, GLint * params)
 ```
@@ -18502,15 +18501,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetQueryObjectiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetQueryObjectiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetIntegeri_v(GLenum target, GLuint index, GLint * data)
 ```
@@ -19456,15 +19455,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetIntegeri_v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetIntegeri_v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetFloati_v(GLenum target, GLuint index, GLfloat * data)
 ```
@@ -20410,15 +20409,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetFloati_v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetFloati_v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetDoublei_v(GLenum target, GLuint index, GLdouble * data)
 ```
@@ -21364,15 +21363,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetDoublei_v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetDoublei_v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetInteger64i_v(GLenum target, GLuint index, GLint64 * data)
 ```
@@ -22318,15 +22317,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetInteger64i_v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetInteger64i_v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetActiveAtomicCounterBufferiv(GLuint program, GLuint bufferIndex, GLenum pname, GLint *params)
 ```
@@ -22406,15 +22405,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetActiveAtomicCounterBufferiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetActiveAtomicCounterBufferiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetActiveAttrib(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name)
 ```
@@ -22508,15 +22507,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetActiveAttrib',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetActiveAttrib',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetActiveSubroutineName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize, GLsizei *length, GLchar *name)
 ```
@@ -22565,15 +22564,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetActiveSubroutineName',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetActiveSubroutineName',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetActiveSubroutineUniformiv(GLuint program, GLenum shadertype, GLuint index, GLenum pname, GLint *values)
 ```
@@ -22636,15 +22635,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetActiveSubroutineUniformiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetActiveSubroutineUniformiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetActiveSubroutineUniformName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize, GLsizei *length, GLchar *name)
 ```
@@ -22701,15 +22700,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetActiveSubroutineUniformName',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetActiveSubroutineUniformName',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetActiveUniform(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name)
 ```
@@ -22879,15 +22878,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group This mate
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetActiveUniform',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetActiveUniform',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetActiveUniformBlockiv(GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint *params)
 ```
@@ -22974,15 +22973,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetActiveUniformBlockiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetActiveUniformBlockiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetActiveUniformBlockName(GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformBlockName)
 ```
@@ -23044,15 +23043,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetActiveUniformBlockName',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetActiveUniformBlockName',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetActiveUniformName(GLuint program, GLuint uniformIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformName)
 ```
@@ -23114,15 +23113,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetActiveUniformName',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetActiveUniformName',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetActiveUniformsiv(GLuint program, GLsizei uniformCount, const GLuint *uniformIndices, GLenum pname, GLint *params)
 ```
@@ -23271,15 +23270,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetActiveUniformsiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetActiveUniformsiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei *count, GLuint *shaders)
 ```
@@ -23327,15 +23326,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetAttachedShaders',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetAttachedShaders',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLint glGetAttribLocation(GLuint program, const GLchar *name)
 ```
@@ -23386,15 +23385,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetAttribLocation',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetAttribLocation',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetBufferParameteriv(GLenum target, GLenum value, GLint * data)
 ```
@@ -23489,15 +23488,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetBufferParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetBufferParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetBufferParameteri64v(GLenum target, GLenum value, GLint64 * data)
 ```
@@ -23592,15 +23591,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetBufferParameteri64v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetBufferParameteri64v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetNamedBufferParameteriv(GLuint buffer, GLenum pname, GLint *params)
 ```
@@ -23695,15 +23694,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetNamedBufferParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetNamedBufferParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetNamedBufferParameteri64v(GLuint buffer, GLenum pname, GLint64 *params)
 ```
@@ -23798,15 +23797,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetNamedBufferParameteri64v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetNamedBufferParameteri64v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetBufferPointerv(GLenum target, GLenum pname, void ** params)
 ```
@@ -23862,15 +23861,15 @@ Copyright 2005 Addison-Wesley. Copyright 2011-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetBufferPointerv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetBufferPointerv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetNamedBufferPointerv(GLuint buffer, GLenum pname, void **params)
 ```
@@ -23926,15 +23925,15 @@ Copyright 2005 Addison-Wesley. Copyright 2011-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetNamedBufferPointerv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetNamedBufferPointerv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, void * data)
 ```
@@ -23994,15 +23993,15 @@ Copyright 2005 Addison-Wesley. Copyright 2011-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetBufferSubData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetBufferSubData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawElementsInstancedBaseInstance(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLuint baseinstance)
 ```
@@ -24023,15 +24022,15 @@ Draw multiple instances of a set of elements with offset applied to instanced at
 rendered.
 `baseinstance` Specifies the base instance for use in fetching instanced vertex attributes.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawElementsInstancedBaseInstance',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawElementsInstancedBaseInstance',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawElementsInstancedBaseVertex(GLenum mode, GLsizei count, GLenum type, void *indices, GLsizei instancecount, GLint basevertex)
 ```
@@ -24088,15 +24087,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawElementsInstancedBaseVertex',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawElementsInstancedBaseVertex',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawElementsInstancedBaseVertexBaseInstance(GLenum mode, GLsizei count, GLenum type, void *indices, GLsizei instancecount, GLint basevertex, GLuint baseinstance)
 ```
@@ -24120,15 +24119,15 @@ chosing elements from the enabled vertex arrays.
 
 `baseinstance` Specifies the base instance for use in fetching instanced vertex attributes.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawElementsInstancedBaseVertexBaseInstance',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawElementsInstancedBaseVertexBaseInstance',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void * indices)
 ```
@@ -24208,15 +24207,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawRangeElements',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawRangeElements',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawRangeElementsBaseVertex(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, void *indices, GLint basevertex)
 ```
@@ -24278,15 +24277,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawRangeElementsBaseVertex',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawRangeElementsBaseVertex',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawTransformFeedback(GLenum mode, GLuint id)
 ```
@@ -24338,15 +24337,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawTransformFeedback',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawTransformFeedback',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawTransformFeedbackInstanced(GLenum mode, GLuint id, GLsizei instancecount)
 ```
@@ -24407,15 +24406,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawTransformFeedbackInstanced',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawTransformFeedbackInstanced',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawTransformFeedbackStream(GLenum mode, GLuint id, GLuint stream)
 ```
@@ -24476,15 +24475,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawTransformFeedbackStream',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawTransformFeedbackStream',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawTransformFeedbackStreamInstanced(GLenum mode, GLuint id, GLuint stream, GLsizei instancecount)
 ```
@@ -24548,15 +24547,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawTransformFeedbackStreamInstanced',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawTransformFeedbackStreamInstanced',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glEnable(GLenum cap)
 ```
@@ -24567,15 +24566,15 @@ Enable or disable server-side GL capabilities
 `index` Specifies the index of the switch to disable (for `glEnablei` and `glDisablei`
 only).
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glEnable',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glEnable',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetNamedFramebufferAttachmentParameteriv(GLuint framebuffer, GLenum attachment, GLenum pname, GLint *params)
 ```
@@ -24727,15 +24726,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetNamedFramebufferAttachmentParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetNamedFramebufferAttachmentParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glEnablei(GLenum cap, GLuint index)
 ```
@@ -24746,15 +24745,15 @@ Enable or disable server-side GL capabilities
 `index` Specifies the index of the switch to disable (for `glEnablei` and `glDisablei`
 only).
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glEnablei',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glEnablei',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDisablei(GLenum cap, GLuint index)
 ```
@@ -24765,15 +24764,15 @@ Enable or disable server-side GL capabilities
 `index` Specifies the index of the switch to disable (for `glEnablei` and `glDisablei`
 only).
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDisablei',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDisablei',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glEnableVertexAttribArray(GLuint index)
 ```
@@ -24830,15 +24829,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glEnableVertexAttribArray',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glEnableVertexAttribArray',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDisableVertexAttribArray(GLuint index)
 ```
@@ -24895,15 +24894,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDisableVertexAttribArray',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDisableVertexAttribArray',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glEnableVertexArrayAttrib(GLuint vaobj, GLuint index)
 ```
@@ -24960,15 +24959,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glEnableVertexArrayAttrib',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glEnableVertexArrayAttrib',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDisableVertexArrayAttrib(GLuint vaobj, GLuint index)
 ```
@@ -25025,15 +25024,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDisableVertexArrayAttrib',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDisableVertexArrayAttrib',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLsync glFenceSync(GLenum condition, GLbitfield flags)
 ```
@@ -25090,15 +25089,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFenceSync',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFenceSync',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFinish(void)
 ```
@@ -25124,15 +25123,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFinish',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFinish',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFlush(void)
 ```
@@ -25166,15 +25165,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFlush',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFlush',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFlushMappedBufferRange(GLenum target, GLintptr offset, GLsizeiptr length)
 ```
@@ -25239,15 +25238,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFlushMappedBufferRange',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFlushMappedBufferRange',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glFlushMappedNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length)
 ```
@@ -25312,15 +25311,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glFlushMappedNamedBufferRange',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glFlushMappedNamedBufferRange',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribP1ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)
 ```
@@ -25466,15 +25465,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribP1ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribP1ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribP2ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)
 ```
@@ -25620,15 +25619,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribP2ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribP2ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribP3ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)
 ```
@@ -25774,15 +25773,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribP3ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribP3ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribP4ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)
 ```
@@ -25928,15 +25927,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribP4ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribP4ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribBinding(GLuint attribindex, GLuint bindingindex)
 ```
@@ -25987,15 +25986,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribBinding',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribBinding',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexArrayAttribBinding(GLuint vaobj, GLuint attribindex, GLuint bindingindex)
 ```
@@ -26046,15 +26045,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexArrayAttribBinding',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexArrayAttribBinding',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribDivisor(GLuint index, GLuint divisor)
 ```
@@ -26094,15 +26093,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribDivisor',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribDivisor',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribFormat(GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset)
 ```
@@ -26220,15 +26219,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribFormat',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribFormat',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribIFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)
 ```
@@ -26346,15 +26345,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribIFormat',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribIFormat',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribLFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)
 ```
@@ -26472,15 +26471,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribLFormat',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribLFormat',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexArrayAttribFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset)
 ```
@@ -26598,15 +26597,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexArrayAttribFormat',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexArrayAttribFormat',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexArrayAttribIFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)
 ```
@@ -26724,15 +26723,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexArrayAttribIFormat',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexArrayAttribIFormat',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexArrayAttribLFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)
 ```
@@ -26850,15 +26849,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexArrayAttribLFormat',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexArrayAttribLFormat',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void * pointer)
 ```
@@ -26994,15 +26993,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribPointer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribPointer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribIPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer)
 ```
@@ -27138,15 +27137,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribIPointer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribIPointer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribLPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer)
 ```
@@ -27282,15 +27281,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribLPointer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribLPointer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexBindingDivisor(GLuint bindingindex, GLuint divisor)
 ```
@@ -27341,15 +27340,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexBindingDivisor',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexBindingDivisor',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexArrayBindingDivisor(GLuint vaobj, GLuint bindingindex, GLuint divisor)
 ```
@@ -27400,15 +27399,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexArrayBindingDivisor',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexArrayBindingDivisor',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glViewport(GLint x, GLint y, GLsizei width, GLsizei height)
 ```
@@ -27420,15 +27419,15 @@ is (0,0).
 `width` `height` Specify the width and height of the viewport. When a GL context is first
 attached to a window, `width` and `height` are set to the dimensions of that window.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glViewport',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glViewport',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glViewportArrayv(GLuint first, GLsizei count, const GLfloat *v)
 ```
@@ -27439,15 +27438,15 @@ Set multiple viewports
 `count` Specify the number of viewports to set.
 `v` Specify the address of an array containing the viewport parameters.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glViewportArrayv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glViewportArrayv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glViewportIndexedf(GLuint index, GLfloat x, GLfloat y, GLfloat w, GLfloat h)
 ```
@@ -27464,15 +27463,15 @@ context is first attached to a window, `w` and `h` are set to the dimensions of 
 `v` For `glViewportIndexedfv`, specifies the address of an array containing the viewport
 parameters.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glViewportIndexedf',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glViewportIndexedf',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glViewportIndexedfv(GLuint index, const GLfloat *v)
 ```
@@ -27489,15 +27488,15 @@ context is first attached to a window, `w` and `h` are set to the dimensions of 
 `v` For `glViewportIndexedfv`, specifies the address of an array containing the viewport
 parameters.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glViewportIndexedfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glViewportIndexedfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout)
 ```
@@ -27546,15 +27545,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glWaitSync',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glWaitSync',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBeginConditionalRender(GLuint id, GLenum mode)
 ```
@@ -27625,15 +27624,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBeginConditionalRender',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBeginConditionalRender',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glEndConditionalRender(void)
 ```
@@ -27704,15 +27703,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glEndConditionalRender',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glEndConditionalRender',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBeginQuery(GLenum target, GLuint id)
 ```
@@ -27841,15 +27840,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBeginQuery',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBeginQuery',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glEndQuery(GLenum target)
 ```
@@ -27978,15 +27977,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glEndQuery',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glEndQuery',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBeginQueryIndexed(GLenum target, GLuint index, GLuint id)
 ```
@@ -28123,15 +28122,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBeginQueryIndexed',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBeginQueryIndexed',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glEndQueryIndexed(GLenum target, GLuint index)
 ```
@@ -28268,15 +28267,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glEndQueryIndexed',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glEndQueryIndexed',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBeginTransformFeedback(GLenum primitiveMode)
 ```
@@ -28341,15 +28340,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBeginTransformFeedback',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBeginTransformFeedback',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glEndTransformFeedback(void)
 ```
@@ -28414,15 +28413,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glEndTransformFeedback',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glEndTransformFeedback',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindAttribLocation(GLuint program, GLuint index, const GLchar *name)
 ```
@@ -28521,15 +28520,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindAttribLocation',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindAttribLocation',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindBuffer(GLenum target, GLuint buffer)
 ```
@@ -28675,15 +28674,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindBufferBase(GLenum target, GLuint index, GLuint buffer)
 ```
@@ -28737,15 +28736,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindBufferBase',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindBufferBase',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindBufferRange(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size)
 ```
@@ -28808,15 +28807,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindBufferRange',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindBufferRange',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindBuffersBase(GLenum target, GLuint first, GLsizei count, const GLuint *buffers)
 ```
@@ -28875,15 +28874,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindBuffersBase',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindBuffersBase',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindBuffersRange(GLenum target, GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLintptr *sizes)
 ```
@@ -28957,15 +28956,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindBuffersRange',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindBuffersRange',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindFragDataLocation(GLuint program, GLuint colorNumber, const char * name)
 ```
@@ -29023,15 +29022,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindFragDataLocation',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindFragDataLocation',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindFragDataLocationIndexed(GLuint program, GLuint colorNumber, GLuint index, const char *name)
 ```
@@ -29104,15 +29103,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindFragDataLocationIndexed',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindFragDataLocationIndexed',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindFramebuffer(GLenum target, GLuint framebuffer)
 ```
@@ -29154,15 +29153,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindFramebuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindFramebuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindImageTexture(GLuint unit, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLenum format)
 ```
@@ -29264,15 +29263,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindImageTexture',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindImageTexture',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindImageTextures(GLuint first, GLsizei count, const GLuint *textures)
 ```
@@ -29347,15 +29346,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindImageTextures',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindImageTextures',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindProgramPipeline(GLuint pipeline)
 ```
@@ -29397,15 +29396,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindProgramPipeline',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindProgramPipeline',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindRenderbuffer(GLenum target, GLuint renderbuffer)
 ```
@@ -29442,15 +29441,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindRenderbuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindRenderbuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindSampler(GLuint unit, GLuint sampler)
 ```
@@ -29496,15 +29495,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindSampler',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindSampler',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindSamplers(GLuint first, GLsizei count, const GLuint *samplers)
 ```
@@ -29561,15 +29560,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindSamplers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindSamplers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindTexture(GLenum target, GLuint texture)
 ```
@@ -29657,15 +29656,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindTexture',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindTexture',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindTextureUnit(GLuint unit, GLuint texture)
 ```
@@ -29709,15 +29708,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindTextureUnit',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindTextureUnit',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindTextures(GLuint first, GLsizei count, const GLuint *textures)
 ```
@@ -29785,15 +29784,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindTextures',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindTextures',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindTransformFeedback(GLenum target, GLuint id)
 ```
@@ -29848,15 +29847,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindTransformFeedback',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindTransformFeedback',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindVertexArray(GLuint array)
 ```
@@ -29891,15 +29890,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindVertexArray',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindVertexArray',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindVertexBuffer(GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride)
 ```
@@ -29962,15 +29961,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindVertexBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindVertexBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexArrayVertexBuffer(GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride)
 ```
@@ -30033,15 +30032,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexArrayVertexBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexArrayVertexBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBindVertexBuffers(GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizei *strides)
 ```
@@ -30114,15 +30113,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBindVertexBuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBindVertexBuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexArrayVertexBuffers(GLuint vaobj, GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizei *strides)
 ```
@@ -30195,15 +30194,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexArrayVertexBuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexArrayVertexBuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBlendColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)
 ```
@@ -30238,15 +30237,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBlendColor',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBlendColor',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBlendEquation(GLenum mode)
 ```
@@ -30259,15 +30258,15 @@ blend equation.
 `mode` specifies how source and destination colors are combined. It must be `GL_FUNC_ADD`,
 `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBTRACT`, `GL_MIN`, `GL_MAX`.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBlendEquation',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBlendEquation',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBlendEquationi(GLuint buf, GLenum mode)
 ```
@@ -30280,15 +30279,15 @@ blend equation.
 `mode` specifies how source and destination colors are combined. It must be `GL_FUNC_ADD`,
 `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBTRACT`, `GL_MIN`, `GL_MAX`.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBlendEquationi',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBlendEquationi',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBlendEquationSeparate(GLenum modeRGB, GLenum modeAlpha)
 ```
@@ -30306,15 +30305,15 @@ source and destination colors are combined. It must be `GL_FUNC_ADD`, `GL_FUNC_S
 destination colors are combined. It must be `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`,
 `GL_FUNC_REVERSE_SUBTRACT`, `GL_MIN`, `GL_MAX`.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBlendEquationSeparate',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBlendEquationSeparate',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBlendEquationSeparatei(GLuint buf, GLenum modeRGB, GLenum modeAlpha)
 ```
@@ -30332,15 +30331,15 @@ source and destination colors are combined. It must be `GL_FUNC_ADD`, `GL_FUNC_S
 destination colors are combined. It must be `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`,
 `GL_FUNC_REVERSE_SUBTRACT`, `GL_MIN`, `GL_MAX`.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBlendEquationSeparatei',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBlendEquationSeparatei',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBlendFunc(GLenum sfactor, GLenum dfactor)
 ```
@@ -30361,15 +30360,15 @@ computed. The following symbolic constants are accepted: `GL_ZERO`, `GL_ONE`, `G
 `GL_ONE_MINUS_CONSTANT_COLOR`, `GL_CONSTANT_ALPHA`, and `GL_ONE_MINUS_CONSTANT_ALPHA`. The
 initial value is `GL_ZERO`.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBlendFunc',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBlendFunc',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBlendFunci(GLuint buf, GLenum sfactor, GLenum dfactor)
 ```
@@ -30390,15 +30389,15 @@ computed. The following symbolic constants are accepted: `GL_ZERO`, `GL_ONE`, `G
 `GL_ONE_MINUS_CONSTANT_COLOR`, `GL_CONSTANT_ALPHA`, and `GL_ONE_MINUS_CONSTANT_ALPHA`. The
 initial value is `GL_ZERO`.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBlendFunci',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBlendFunci',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBlendFuncSeparate(GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha)
 ```
@@ -30420,15 +30419,15 @@ initial value is `GL_ZERO`.
 `dstAlpha` Specified how the alpha destination blending factor is computed. The initial value
 is `GL_ZERO`.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBlendFuncSeparate',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBlendFuncSeparate',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetVertexAttribfv(GLuint index, GLenum pname, GLfloat *params)
 ```
@@ -30540,15 +30539,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetVertexAttribfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetVertexAttribfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBlendFuncSeparatei(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha)
 ```
@@ -30570,15 +30569,15 @@ initial value is `GL_ZERO`.
 `dstAlpha` Specified how the alpha destination blending factor is computed. The initial value
 is `GL_ZERO`.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBlendFuncSeparatei',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBlendFuncSeparatei',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetVertexAttribiv(GLuint index, GLenum pname, GLint *params)
 ```
@@ -30690,15 +30689,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetVertexAttribiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetVertexAttribiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBlitFramebuffer(GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter)
 ```
@@ -30805,15 +30804,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBlitFramebuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBlitFramebuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetVertexAttribIiv(GLuint index, GLenum pname, GLint *params)
 ```
@@ -30925,15 +30924,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetVertexAttribIiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetVertexAttribIiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBlitNamedFramebuffer(GLuint readFramebuffer, GLuint drawFramebuffer, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter)
 ```
@@ -31040,15 +31039,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBlitNamedFramebuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBlitNamedFramebuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetVertexAttribIuiv(GLuint index, GLenum pname, GLuint *params)
 ```
@@ -31160,15 +31159,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetVertexAttribIuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetVertexAttribIuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBufferData(GLenum target, GLsizeiptr size, const void * data, GLenum usage)
 ```
@@ -31274,15 +31273,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBufferData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBufferData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetVertexAttribLdv(GLuint index, GLenum pname, GLdouble *params)
 ```
@@ -31394,15 +31393,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetVertexAttribLdv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetVertexAttribLdv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedBufferData(GLuint buffer, GLsizeiptr size, const void *data, GLenum usage)
 ```
@@ -31508,15 +31507,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedBufferData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedBufferData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetVertexAttribPointerv(GLuint index, GLenum pname, void **pointer)
 ```
@@ -31564,15 +31563,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetVertexAttribPointerv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetVertexAttribPointerv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBufferStorage(GLenum target, GLsizeiptr size, const void * data, GLbitfield flags)
 ```
@@ -31698,15 +31697,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBufferStorage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBufferStorage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glHint(GLenum target, GLenum mode)
 ```
@@ -31772,15 +31771,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glHint',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glHint',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedBufferStorage(GLuint buffer, GLsizeiptr size, const void *data, GLbitfield flags)
 ```
@@ -31906,15 +31905,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedBufferStorage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedBufferStorage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glInvalidateBufferData(GLuint buffer)
 ```
@@ -31949,15 +31948,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glInvalidateBufferData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glInvalidateBufferData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, const void * data)
 ```
@@ -32034,15 +32033,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glBufferSubData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glBufferSubData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glInvalidateBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr length)
 ```
@@ -32084,15 +32083,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glInvalidateBufferSubData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glInvalidateBufferSubData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, const void *data)
 ```
@@ -32169,15 +32168,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedBufferSubData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedBufferSubData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glInvalidateFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments)
 ```
@@ -32259,15 +32258,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glInvalidateFramebuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glInvalidateFramebuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLenum glCheckFramebufferStatus(GLenum target)
 ```
@@ -32353,15 +32352,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCheckFramebufferStatus',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCheckFramebufferStatus',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glInvalidateNamedFramebufferData(GLuint framebuffer, GLsizei numAttachments, const GLenum *attachments)
 ```
@@ -32443,15 +32442,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glInvalidateNamedFramebufferData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glInvalidateNamedFramebufferData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLenum glCheckNamedFramebufferStatus(GLuint framebuffer, GLenum target)
 ```
@@ -32537,15 +32536,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCheckNamedFramebufferStatus',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCheckNamedFramebufferStatus',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glInvalidateSubFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments, GLint x, GLint y, GLint width, GLint height)
 ```
@@ -32636,15 +32635,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glInvalidateSubFramebuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glInvalidateSubFramebuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClampColor(GLenum target, GLenum clamp)
 ```
@@ -32682,15 +32681,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClampColor',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClampColor',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glInvalidateNamedFramebufferSubData(GLuint framebuffer, GLsizei numAttachments, const GLenum *attachments, GLint x, GLint y, GLsizei width, GLsizei height)
 ```
@@ -32781,15 +32780,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glInvalidateNamedFramebufferSubData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glInvalidateNamedFramebufferSubData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClear(GLbitfield mask)
 ```
@@ -32846,15 +32845,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClear',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClear',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glInvalidateTexImage(GLuint texture, GLint level)
 ```
@@ -32901,15 +32900,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glInvalidateTexImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glInvalidateTexImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearBufferiv(GLenum buffer, GLint drawbuffer, const GLint * value)
 ```
@@ -33002,15 +33001,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearBufferiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearBufferiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glInvalidateTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth)
 ```
@@ -33076,15 +33075,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glInvalidateTexSubImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glInvalidateTexSubImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearBufferuiv(GLenum buffer, GLint drawbuffer, const GLuint * value)
 ```
@@ -33177,15 +33176,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearBufferuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearBufferuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsBuffer(GLuint buffer)
 ```
@@ -33213,15 +33212,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearBufferfv(GLenum buffer, GLint drawbuffer, const GLfloat * value)
 ```
@@ -33314,15 +33313,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearBufferfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearBufferfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsEnabled(GLenum cap)
 ```
@@ -33379,15 +33378,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsEnabled',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsEnabled',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearBufferfi(GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil)
 ```
@@ -33480,15 +33479,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearBufferfi',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearBufferfi',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsEnabledi(GLenum cap, GLuint index)
 ```
@@ -33545,15 +33544,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsEnabledi',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsEnabledi',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearNamedFramebufferiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLint *value)
 ```
@@ -33646,15 +33645,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearNamedFramebufferiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearNamedFramebufferiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsFramebuffer(GLuint framebuffer)
 ```
@@ -33683,15 +33682,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsFramebuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsFramebuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearNamedFramebufferuiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLuint *value)
 ```
@@ -33784,15 +33783,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearNamedFramebufferuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearNamedFramebufferuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsProgram(GLuint program)
 ```
@@ -33844,15 +33843,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsProgram',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsProgram',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearNamedFramebufferfv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLfloat *value)
 ```
@@ -33945,15 +33944,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearNamedFramebufferfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearNamedFramebufferfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsProgramPipeline(GLuint pipeline)
 ```
@@ -33982,15 +33981,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsProgramPipeline',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsProgramPipeline',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearNamedFramebufferfi(GLuint framebuffer, GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil)
 ```
@@ -34083,15 +34082,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearNamedFramebufferfi',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearNamedFramebufferfi',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsQuery(GLuint id)
 ```
@@ -34119,15 +34118,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsQuery',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsQuery',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearBufferData(GLenum target, GLenum internalformat, GLenum format, GLenum type, const void * data)
 ```
@@ -34189,15 +34188,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearBufferData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearBufferData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsRenderbuffer(GLuint renderbuffer)
 ```
@@ -34227,15 +34226,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsRenderbuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsRenderbuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearNamedBufferData(GLuint buffer, GLenum internalformat, GLenum format, GLenum type, const void *data)
 ```
@@ -34297,15 +34296,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearNamedBufferData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearNamedBufferData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearBufferSubData(GLenum target, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void * data)
 ```
@@ -34380,15 +34379,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearBufferSubData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearBufferSubData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearNamedBufferSubData(GLuint buffer, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void *data)
 ```
@@ -34463,15 +34462,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearNamedBufferSubData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearNamedBufferSubData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)
 ```
@@ -34504,15 +34503,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearColor',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearColor',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearDepth(GLdouble depth)
 ```
@@ -34545,15 +34544,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearDepth',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearDepth',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearDepthf(GLfloat depth)
 ```
@@ -34586,15 +34585,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearDepthf',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearDepthf',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearStencil(GLint s)
 ```
@@ -34624,15 +34623,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearStencil',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearStencil',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearTexImage(GLuint texture, GLint level, GLenum format, GLenum type, const void * data)
 ```
@@ -34716,15 +34715,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearTexImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearTexImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClearTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * data)
 ```
@@ -34839,15 +34838,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClearTexSubImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClearTexSubImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLenum glClientWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout)
 ```
@@ -34900,15 +34899,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClientWaitSync',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClientWaitSync',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glClipControl(GLenum origin, GLenum depth)
 ```
@@ -34973,15 +34972,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glClipControl',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glClipControl',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glColorMask(GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha)
 ```
@@ -35019,15 +35018,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glColorMask',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glColorMask',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glColorMaski(GLuint buf, GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha)
 ```
@@ -35065,15 +35064,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glColorMaski',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glColorMaski',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCompileShader(GLuint shader)
 ```
@@ -35118,15 +35117,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCompileShader',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCompileShader',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCompressedTexImage1D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void * data)
 ```
@@ -35149,15 +35148,15 @@ specified by `data`.
 
 `data` Specifies a pointer to the compressed image data in memory.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCompressedTexImage1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCompressedTexImage1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCompressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void * data)
 ```
@@ -35186,15 +35185,15 @@ specified by `data`.
 
 `data` Specifies a pointer to the compressed image data in memory.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCompressedTexImage2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCompressedTexImage2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCompressedTexImage3D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void * data)
 ```
@@ -35222,15 +35221,15 @@ specified by `data`.
 
 `data` Specifies a pointer to the compressed image data in memory.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCompressedTexImage3D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCompressedTexImage3D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void * data)
 ```
@@ -35320,15 +35319,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCompressedTexSubImage1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCompressedTexSubImage1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCompressedTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data)
 ```
@@ -35418,15 +35417,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCompressedTextureSubImage1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCompressedTextureSubImage1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCompressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void * data)
 ```
@@ -35528,15 +35527,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCompressedTexSubImage2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCompressedTexSubImage2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCompressedTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *data)
 ```
@@ -35638,15 +35637,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCompressedTextureSubImage2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCompressedTextureSubImage2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCompressedTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void * data)
 ```
@@ -35745,15 +35744,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCompressedTexSubImage3D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCompressedTexSubImage3D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCompressedTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *data)
 ```
@@ -35852,15 +35851,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCompressedTextureSubImage3D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCompressedTextureSubImage3D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCopyBufferSubData(GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size)
 ```
@@ -35948,15 +35947,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCopyBufferSubData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCopyBufferSubData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCopyNamedBufferSubData(GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size)
 ```
@@ -36044,15 +36043,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCopyNamedBufferSubData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCopyNamedBufferSubData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCopyImageSubData(GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei srcWidth, GLsizei srcHeight, GLsizei srcDepth)
 ```
@@ -36181,15 +36180,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCopyImageSubData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCopyImageSubData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCopyTexImage1D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border)
 ```
@@ -36246,15 +36245,15 @@ the conversion.
 An image with 0 width indicates a NULL texture. `GL_STENCIL_INDEX8` is accepted for
 `internalformat` only if the GL version is 4.4 or higher.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCopyTexImage1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCopyTexImage1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCopyTexImage2D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border)
 ```
@@ -36314,15 +36313,15 @@ the conversion.
 An image with height or width of 0 indicates a NULL texture. `GL_STENCIL_INDEX8` is accepted
 for `internalformat` only if the GL version is 4.4 or higher.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCopyTexImage2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCopyTexImage2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCopyTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width)
 ```
@@ -36369,15 +36368,15 @@ to texel values outside the specified subregion.
 ### Notes
 The glPixelStore mode affects texture images.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCopyTexSubImage1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCopyTexSubImage1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCopyTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width)
 ```
@@ -36424,15 +36423,15 @@ to texel values outside the specified subregion.
 ### Notes
 The glPixelStore mode affects texture images.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCopyTextureSubImage1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCopyTextureSubImage1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCopyTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height)
 ```
@@ -36488,15 +36487,15 @@ array, or to texel values outside the specified subregion.
 ### Notes
 glPixelStore modes affect texture images.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCopyTexSubImage2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCopyTexSubImage2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCopyTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height)
 ```
@@ -36552,15 +36551,15 @@ array, or to texel values outside the specified subregion.
 ### Notes
 glPixelStore modes affect texture images.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCopyTextureSubImage2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCopyTextureSubImage2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCopyTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height)
 ```
@@ -36610,15 +36609,15 @@ the specified texture array or to texel values outside the specified subregion.
 ### Notes
 glPixelStore modes affect texture images.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCopyTexSubImage3D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCopyTexSubImage3D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCopyTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height)
 ```
@@ -36668,15 +36667,15 @@ the specified texture array or to texel values outside the specified subregion.
 ### Notes
 glPixelStore modes affect texture images.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCopyTextureSubImage3D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCopyTextureSubImage3D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCreateBuffers(GLsizei n, GLuint *buffers)
 ```
@@ -36706,15 +36705,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateBuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateBuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCreateFramebuffers(GLsizei n, GLuint *framebuffers)
 ```
@@ -36745,15 +36744,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateFramebuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateFramebuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLuint glCreateProgram(void)
 ```
@@ -36817,15 +36816,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateProgram',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateProgram',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCreateProgramPipelines(GLsizei n, GLuint *pipelines)
 ```
@@ -36855,15 +36854,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateProgramPipelines',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateProgramPipelines',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCreateQueries(GLenum target, GLsizei n, GLuint *ids)
 ```
@@ -36900,15 +36899,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateQueries',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateQueries',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCreateRenderbuffers(GLsizei n, GLuint *renderbuffers)
 ```
@@ -36938,15 +36937,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateRenderbuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateRenderbuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCreateSamplers(GLsizei n, GLuint *samplers)
 ```
@@ -36976,15 +36975,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateSamplers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateSamplers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLuint glCreateShader(GLenum shaderType)
 ```
@@ -37045,15 +37044,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateShader',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateShader',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLuint glCreateShaderProgramv(GLenum type, GLsizei count, const char **strings)
 ```
@@ -37103,15 +37102,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateShaderProgramv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateShaderProgramv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCreateTextures(GLenum target, GLsizei n, GLuint *textures)
 ```
@@ -37151,15 +37150,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateTextures',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateTextures',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCreateTransformFeedbacks(GLsizei n, GLuint *ids)
 ```
@@ -37190,15 +37189,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateTransformFeedbacks',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateTransformFeedbacks',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCreateVertexArrays(GLsizei n, GLuint *arrays)
 ```
@@ -37228,15 +37227,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCreateVertexArrays',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCreateVertexArrays',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glCullFace(GLenum mode)
 ```
@@ -37280,15 +37279,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glCullFace',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glCullFace',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDebugMessageCallback(DEBUGPROC callback, const void * userParam)
 ```
@@ -37333,15 +37332,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDebugMessageCallback',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDebugMessageCallback',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDebugMessageControl(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled)
 ```
@@ -37422,15 +37421,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDebugMessageControl',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDebugMessageControl',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDebugMessageInsert(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const char *message)
 ```
@@ -37487,15 +37486,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDebugMessageInsert',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDebugMessageInsert',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteBuffers(GLsizei n, const GLuint * buffers)
 ```
@@ -37532,15 +37531,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteBuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteBuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteFramebuffers(GLsizei n, GLuint *framebuffers)
 ```
@@ -37574,15 +37573,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteFramebuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteFramebuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteProgram(GLuint program)
 ```
@@ -37625,15 +37624,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteProgram',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteProgram',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteProgramPipelines(GLsizei n, const GLuint *pipelines)
 ```
@@ -37666,15 +37665,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteProgramPipelines',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteProgramPipelines',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteQueries(GLsizei n, const GLuint * ids)
 ```
@@ -37709,15 +37708,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteQueries',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteQueries',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib3fv(GLuint index, const GLfloat *v)
 ```
@@ -37863,15 +37862,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib3fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib3fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib3sv(GLuint index, const GLshort *v)
 ```
@@ -38017,15 +38016,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib3sv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib3sv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib3dv(GLuint index, const GLdouble *v)
 ```
@@ -38171,15 +38170,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib3dv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib3dv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI3iv(GLuint index, const GLint *v)
 ```
@@ -38325,15 +38324,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI3iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI3iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI3uiv(GLuint index, const GLuint *v)
 ```
@@ -38479,15 +38478,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI3uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI3uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4fv(GLuint index, const GLfloat *v)
 ```
@@ -38633,15 +38632,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4sv(GLuint index, const GLshort *v)
 ```
@@ -38787,15 +38786,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4sv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4sv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4dv(GLuint index, const GLdouble *v)
 ```
@@ -38941,15 +38940,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4dv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4dv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4iv(GLuint index, const GLint *v)
 ```
@@ -39095,15 +39094,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4bv(GLuint index, const GLbyte *v)
 ```
@@ -39249,15 +39248,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4bv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4bv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4ubv(GLuint index, const GLubyte *v)
 ```
@@ -39403,15 +39402,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4ubv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4ubv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4usv(GLuint index, const GLushort *v)
 ```
@@ -39557,15 +39556,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4usv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4usv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4uiv(GLuint index, const GLuint *v)
 ```
@@ -39711,15 +39710,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4Nbv(GLuint index, const GLbyte *v)
 ```
@@ -39865,15 +39864,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4Nbv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4Nbv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4Nsv(GLuint index, const GLshort *v)
 ```
@@ -40019,15 +40018,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4Nsv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4Nsv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4Niv(GLuint index, const GLint *v)
 ```
@@ -40173,15 +40172,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4Niv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4Niv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4Nubv(GLuint index, const GLubyte *v)
 ```
@@ -40327,15 +40326,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4Nubv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4Nubv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4Nusv(GLuint index, const GLushort *v)
 ```
@@ -40481,15 +40480,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4Nusv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4Nusv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4Nuiv(GLuint index, const GLuint *v)
 ```
@@ -40635,15 +40634,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4Nuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4Nuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI4bv(GLuint index, const GLbyte *v)
 ```
@@ -40789,15 +40788,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI4bv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI4bv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI4ubv(GLuint index, const GLubyte *v)
 ```
@@ -40943,15 +40942,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI4ubv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI4ubv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI4sv(GLuint index, const GLshort *v)
 ```
@@ -41097,15 +41096,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI4sv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI4sv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI4usv(GLuint index, const GLushort *v)
 ```
@@ -41251,15 +41250,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI4usv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI4usv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI4iv(GLuint index, const GLint *v)
 ```
@@ -41405,15 +41404,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI4iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI4iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI4uiv(GLuint index, const GLuint *v)
 ```
@@ -41559,15 +41558,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI4uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI4uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribL1dv(GLuint index, const GLdouble *v)
 ```
@@ -41713,15 +41712,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribL1dv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribL1dv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribL2dv(GLuint index, const GLdouble *v)
 ```
@@ -41867,15 +41866,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribL2dv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribL2dv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribL3dv(GLuint index, const GLdouble *v)
 ```
@@ -42021,15 +42020,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribL3dv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribL3dv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribL4dv(GLuint index, const GLdouble *v)
 ```
@@ -42175,15 +42174,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribL4dv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribL4dv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI2uiv(GLuint index, const GLuint *v)
 ```
@@ -42329,15 +42328,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI2uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI2uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI2iv(GLuint index, const GLint *v)
 ```
@@ -42483,15 +42482,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI2iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI2iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib2dv(GLuint index, const GLdouble *v)
 ```
@@ -42637,15 +42636,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib2dv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib2dv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib2sv(GLuint index, const GLshort *v)
 ```
@@ -42791,15 +42790,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib2sv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib2sv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib2fv(GLuint index, const GLfloat *v)
 ```
@@ -42945,15 +42944,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib2fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib2fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI1uiv(GLuint index, const GLuint *v)
 ```
@@ -43099,15 +43098,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI1uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI1uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI1iv(GLuint index, const GLint *v)
 ```
@@ -43253,15 +43252,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI1iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI1iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib1dv(GLuint index, const GLdouble *v)
 ```
@@ -43407,15 +43406,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib1dv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib1dv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib1sv(GLuint index, const GLshort *v)
 ```
@@ -43561,15 +43560,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib1sv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib1sv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib1fv(GLuint index, const GLfloat *v)
 ```
@@ -43715,15 +43714,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib1fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib1fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribL4d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3)
 ```
@@ -43869,15 +43868,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribL4d',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribL4d',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribL3d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2)
 ```
@@ -44023,15 +44022,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribL3d',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribL3d',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribL2d(GLuint index, GLdouble v0, GLdouble v1)
 ```
@@ -44177,15 +44176,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribL2d',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribL2d',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribL1d(GLuint index, GLdouble v0)
 ```
@@ -44331,15 +44330,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribL1d',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribL1d',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI4ui(GLuint index, GLuint v0, GLuint v1, GLuint v2, GLuint v3)
 ```
@@ -44485,15 +44484,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI4ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI4ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI4i(GLuint index, GLint v0, GLint v1, GLint v2, GLint v3)
 ```
@@ -44639,15 +44638,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI4i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI4i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4Nub(GLuint index, GLubyte v0, GLubyte v1, GLubyte v2, GLubyte v3)
 ```
@@ -44793,15 +44792,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4Nub',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4Nub',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3)
 ```
@@ -44947,15 +44946,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4d',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4d',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glActiveShaderProgram(GLuint pipeline, GLuint program)
 ```
@@ -44993,15 +44992,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glActiveShaderProgram',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glActiveShaderProgram',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4s(GLuint index, GLshort v0, GLshort v1, GLshort v2, GLshort v3)
 ```
@@ -45147,15 +45146,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4s',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4s',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glActiveTexture(GLenum texture)
 ```
@@ -45196,15 +45195,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glActiveTexture',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glActiveTexture',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib4f(GLuint index, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)
 ```
@@ -45350,15 +45349,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib4f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib4f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glAttachShader(GLuint program, GLuint shader)
 ```
@@ -45419,15 +45418,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glAttachShader',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glAttachShader',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI3ui(GLuint index, GLuint v0, GLuint v1, GLuint v2)
 ```
@@ -45573,15 +45572,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI3ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI3ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI3i(GLuint index, GLint v0, GLint v1, GLint v2)
 ```
@@ -45727,15 +45726,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI3i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI3i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib3d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2)
 ```
@@ -45881,15 +45880,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib3d',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib3d',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib3s(GLuint index, GLshort v0, GLshort v1, GLshort v2)
 ```
@@ -46035,15 +46034,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib3s',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib3s',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib3f(GLuint index, GLfloat v0, GLfloat v1, GLfloat v2)
 ```
@@ -46189,15 +46188,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib3f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib3f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI2ui(GLuint index, GLuint v0, GLuint v1)
 ```
@@ -46343,15 +46342,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI2ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI2ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI2i(GLuint index, GLint v0, GLint v1)
 ```
@@ -46497,15 +46496,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI2i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI2i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib2d(GLuint index, GLdouble v0, GLdouble v1)
 ```
@@ -46651,15 +46650,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib2d',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib2d',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib2s(GLuint index, GLshort v0, GLshort v1)
 ```
@@ -46805,15 +46804,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib2s',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib2s',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib2f(GLuint index, GLfloat v0, GLfloat v1)
 ```
@@ -46959,15 +46958,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib2f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib2f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI1ui(GLuint index, GLuint v0)
 ```
@@ -47113,15 +47112,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI1ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI1ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttribI1i(GLuint index, GLint v0)
 ```
@@ -47267,15 +47266,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttribI1i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttribI1i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib1d(GLuint index, GLdouble v0)
 ```
@@ -47421,15 +47420,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib1d',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib1d',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib1s(GLuint index, GLshort v0)
 ```
@@ -47575,15 +47574,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib1s',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib1s',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexAttrib1f(GLuint index, GLfloat v0)
 ```
@@ -47729,15 +47728,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexAttrib1f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexAttrib1f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glVertexArrayElementBuffer(GLuint vaobj, GLuint buffer)
 ```
@@ -47776,15 +47775,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glVertexArrayElementBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glVertexArrayElementBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glValidateProgramPipeline(GLuint pipeline)
 ```
@@ -47827,15 +47826,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glValidateProgramPipeline',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glValidateProgramPipeline',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glValidateProgram(GLuint program)
 ```
@@ -47896,15 +47895,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glValidateProgram',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glValidateProgram',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUseProgramStages(GLuint pipeline, GLbitfield stages, GLuint program)
 ```
@@ -47964,15 +47963,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUseProgramStages',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUseProgramStages',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUseProgram(GLuint program)
 ```
@@ -48063,15 +48062,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUseProgram',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUseProgram',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glUnmapNamedBuffer(GLuint buffer)
 ```
@@ -48137,15 +48136,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUnmapNamedBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUnmapNamedBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glUnmapBuffer(GLenum target)
 ```
@@ -48211,15 +48210,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUnmapBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUnmapBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniformSubroutinesuiv(GLenum shadertype, GLsizei count, const GLuint *indices)
 ```
@@ -48273,15 +48272,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniformSubroutinesuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniformSubroutinesuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniformBlockBinding(GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding)
 ```
@@ -48337,15 +48336,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniformBlockBinding',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniformBlockBinding',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniformMatrix4x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -48502,15 +48501,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniformMatrix4x3fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniformMatrix4x3fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniformMatrix3x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -48667,15 +48666,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniformMatrix3x4fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniformMatrix3x4fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniformMatrix4x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -48832,15 +48831,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniformMatrix4x2fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniformMatrix4x2fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -48997,15 +48996,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniformMatrix2x4fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniformMatrix2x4fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniformMatrix3x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -49162,15 +49161,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniformMatrix3x2fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniformMatrix3x2fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniformMatrix2x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -49327,15 +49326,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniformMatrix2x3fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniformMatrix2x3fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniformMatrix4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -49492,15 +49491,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniformMatrix4fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniformMatrix4fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureParameterIiv(GLuint texture, GLenum pname, const GLint *params)
 ```
@@ -49531,15 +49530,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureParameterIiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureParameterIiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureParameteriv(GLuint texture, GLenum pname, const GLint *params)
 ```
@@ -49570,15 +49569,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureParameterfv(GLuint texture, GLenum pname, const GLfloat *params)
 ```
@@ -49609,15 +49608,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureParameterfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureParameterfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexParameterIuiv(GLenum target, GLenum pname, const GLuint * params)
 ```
@@ -49648,15 +49647,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexParameterIuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexParameterIuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexParameterIiv(GLenum target, GLenum pname, const GLint * params)
 ```
@@ -49687,15 +49686,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexParameterIiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexParameterIiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexParameteriv(GLenum target, GLenum pname, const GLint * params)
 ```
@@ -49726,15 +49725,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexParameterfv(GLenum target, GLenum pname, const GLfloat * params)
 ```
@@ -49765,15 +49764,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexParameterfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexParameterfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureParameteri(GLuint texture, GLenum pname, GLint param)
 ```
@@ -49804,15 +49803,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureParameteri',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureParameteri',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureParameterf(GLuint texture, GLenum pname, GLfloat param)
 ```
@@ -49843,15 +49842,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureParameterf',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureParameterf',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexParameteri(GLenum target, GLenum pname, GLint param)
 ```
@@ -49882,15 +49881,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexParameteri',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexParameteri',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexImage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations)
 ```
@@ -49967,15 +49966,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexImage3DMultisample',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexImage3DMultisample',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexImage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)
 ```
@@ -50049,15 +50048,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexImage2DMultisample',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexImage2DMultisample',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexImage1D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const void * data)
 ```
@@ -50090,15 +50089,15 @@ that are at least 1024 texels wide. The height of the 1D texture image is 1.
 
 `data` Specifies a pointer to the image data in memory.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexImage1D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexImage1D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexParameterf(GLenum target, GLenum pname, GLfloat param)
 ```
@@ -50129,15 +50128,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
 `params` For the vector commands, specifies a pointer to an array where the value or values of
 `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexParameterf',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexParameterf',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const void * data)
 ```
@@ -50181,15 +50180,15 @@ that are at least 256 layers deep.
 
 `data` Specifies a pointer to the image data in memory.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexImage2D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexImage2D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexImage3D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void * data)
 ```
@@ -50229,15 +50228,15 @@ that are at least 256 layers deep.
 
 `data` Specifies a pointer to the image data in memory.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexImage3D',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexImage3D',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDisable(GLenum cap)
 ```
@@ -50248,15 +50247,15 @@ Enable or disable server-side GL capabilities
 `index` Specifies the index of the switch to disable (for `glEnablei` and `glDisablei`
 only).
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDisable',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDisable',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDepthFunc(GLenum func)
 ```
@@ -50314,15 +50313,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDepthFunc',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDepthFunc',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDepthRange(GLdouble nearVal, GLdouble farVal)
 ```
@@ -50367,15 +50366,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDepthRange',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDepthRange',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDepthMask(GLboolean flag)
 ```
@@ -50411,15 +50410,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI This document is licensed under the SGI Free Software B License. For
 details, see https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDepthMask',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDepthMask',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDepthRangef(GLfloat nearVal, GLfloat farVal)
 ```
@@ -50464,15 +50463,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDepthRangef',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDepthRangef',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteVertexArrays(GLsizei n, const GLuint *arrays)
 ```
@@ -50506,15 +50505,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteVertexArrays',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteVertexArrays',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glSamplerParameterIiv(GLuint sampler, GLenum pname, const GLint *params)
 ```
@@ -50533,15 +50532,15 @@ following: `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, `GL_TEXTURE_WRAP_R`,
 `params` For the vector commands ( `glSamplerParameter*v` ), specifies a pointer to an array
 where the value or values of `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glSamplerParameterIiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glSamplerParameterIiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteTransformFeedbacks(GLsizei n, const GLuint *ids)
 ```
@@ -50575,15 +50574,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteTransformFeedbacks',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteTransformFeedbacks',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glSamplerParameterfv(GLuint sampler, GLenum pname, const GLfloat * params)
 ```
@@ -50602,15 +50601,15 @@ following: `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, `GL_TEXTURE_WRAP_R`,
 `params` For the vector commands ( `glSamplerParameter*v` ), specifies a pointer to an array
 where the value or values of `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glSamplerParameterfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glSamplerParameterfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteSync(GLsync sync)
 ```
@@ -50648,15 +50647,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteSync',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteSync',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glSamplerParameterf(GLuint sampler, GLenum pname, GLfloat param)
 ```
@@ -50675,15 +50674,15 @@ following: `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, `GL_TEXTURE_WRAP_R`,
 `params` For the vector commands ( `glSamplerParameter*v` ), specifies a pointer to an array
 where the value or values of `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glSamplerParameterf',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glSamplerParameterf',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsSampler(GLuint id)
 ```
@@ -50714,15 +50713,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsSampler',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsSampler',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteSamplers(GLsizei n, const GLuint * samplers)
 ```
@@ -50761,15 +50760,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteSamplers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteSamplers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsShader(GLuint shader)
 ```
@@ -50811,15 +50810,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsShader',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsShader',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glSampleCoverage(GLfloat value, GLboolean invert)
 ```
@@ -50876,15 +50875,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glSampleCoverage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glSampleCoverage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsSync(GLsync sync)
 ```
@@ -50913,15 +50912,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsSync',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsSync',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedRenderbufferStorageMultisample(GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height)
 ```
@@ -50993,15 +50992,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedRenderbufferStorageMultisample',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedRenderbufferStorageMultisample',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsTexture(GLuint texture)
 ```
@@ -51030,15 +51029,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsTexture',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsTexture',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedRenderbufferStorage(GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height)
 ```
@@ -51102,15 +51101,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedRenderbufferStorage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedRenderbufferStorage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsTransformFeedback(GLuint id)
 ```
@@ -51139,15 +51138,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsTransformFeedback',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsTransformFeedback',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glReleaseShaderCompiler()
 ```
@@ -51171,15 +51170,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glReleaseShaderCompiler',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glReleaseShaderCompiler',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLboolean glIsVertexArray(GLuint array)
 ```
@@ -51207,15 +51206,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glIsVertexArray',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glIsVertexArray',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, void * data)
 ```
@@ -51245,15 +51244,15 @@ correspond to a single pixel.
 
 `data` Returns the pixel data.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glReadPixels',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glReadPixels',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glLineWidth(GLfloat width)
 ```
@@ -51323,15 +51322,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glLineWidth',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glLineWidth',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glReadBuffer(GLenum mode)
 ```
@@ -51391,15 +51390,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2011-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glReadBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glReadBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glLinkProgram(GLuint program)
 ```
@@ -51545,15 +51544,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glLinkProgram',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glLinkProgram',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPushDebugGroup(GLenum source, GLuint id, GLsizei length, const char * message)
 ```
@@ -51599,15 +51598,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPushDebugGroup',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPushDebugGroup',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glLogicOp(GLenum opcode)
 ```
@@ -51662,15 +51661,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glLogicOp',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glLogicOp',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniformMatrix4x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -51830,15 +51829,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniformMatrix4x3fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniformMatrix4x3fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void *glMapBuffer(GLenum target, GLenum access)
 ```
@@ -51943,15 +51942,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMapBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMapBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetCompressedTexImage(GLenum target, GLint level, void * pixels)
 ```
@@ -52042,15 +52041,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetCompressedTexImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetCompressedTexImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void *glMapNamedBuffer(GLuint buffer, GLenum access)
 ```
@@ -52155,15 +52154,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMapNamedBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMapNamedBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniformMatrix4x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -52323,15 +52322,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniformMatrix4x2fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniformMatrix4x2fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void *glMapBufferRange(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access)
 ```
@@ -52484,15 +52483,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMapBufferRange',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMapBufferRange',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetCompressedTextureImage(GLuint texture, GLint level, GLsizei bufSize, void *pixels)
 ```
@@ -52583,15 +52582,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetCompressedTextureImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetCompressedTextureImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void *glMapNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length, GLbitfield access)
 ```
@@ -52744,15 +52743,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMapNamedBufferRange',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMapNamedBufferRange',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glShaderBinary(GLsizei count, const GLuint *shaders, GLenum binaryFormat, const void *binary, GLsizei length)
 ```
@@ -52809,15 +52808,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glShaderBinary',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glShaderBinary',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glMemoryBarrier(GLbitfield barriers)
 ```
@@ -53011,15 +53010,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMemoryBarrier',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMemoryBarrier',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLuint glGetDebugMessageLog(GLuint count, GLsizei bufSize, GLenum *sources, GLenum *types, GLuint *ids, GLenum *severities, GLsizei *lengths, GLchar *messageLog)
 ```
@@ -53090,15 +53089,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetDebugMessageLog',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetDebugMessageLog',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glMemoryBarrierByRegion(GLbitfield barriers)
 ```
@@ -53292,15 +53291,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMemoryBarrierByRegion',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMemoryBarrierByRegion',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glScissor(GLint x, GLint y, GLsizei width, GLsizei height)
 ```
@@ -53345,15 +53344,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glScissor',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glScissor',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glMinSampleShading(GLfloat value)
 ```
@@ -53401,15 +53400,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMinSampleShading',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMinSampleShading',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLint glGetFragDataIndex(GLuint program, const char * name)
 ```
@@ -53443,15 +53442,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetFragDataIndex',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetFragDataIndex',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glMultiDrawArrays(GLenum mode, const GLint * first, const GLsizei * count, GLsizei drawcount)
 ```
@@ -53507,15 +53506,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMultiDrawArrays',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMultiDrawArrays',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDepthRangeIndexed(GLuint index, GLdouble nearVal, GLdouble farVal)
 ```
@@ -53573,15 +53572,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDepthRangeIndexed',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDepthRangeIndexed',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glMultiDrawArraysIndirect(GLenum mode, const void *indirect, GLsizei drawcount, GLsizei stride)
 ```
@@ -53664,15 +53663,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMultiDrawArraysIndirect',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMultiDrawArraysIndirect',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetFramebufferAttachmentParameteriv(GLenum target, GLenum attachment, GLenum pname, GLint *params)
 ```
@@ -53824,15 +53823,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetFramebufferAttachmentParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetFramebufferAttachmentParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glMultiDrawElements(GLenum mode, const GLsizei * count, GLenum type, const void * const * indices, GLsizei drawcount)
 ```
@@ -53887,15 +53886,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMultiDrawElements',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMultiDrawElements',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDispatchCompute(GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z)
 ```
@@ -53934,15 +53933,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDispatchCompute',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDispatchCompute',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glMultiDrawElementsBaseVertex(GLenum mode, const GLsizei *count, GLenum type, const void * const *indices, GLsizei drawcount, const GLint *basevertex)
 ```
@@ -53997,15 +53996,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMultiDrawElementsBaseVertex',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMultiDrawElementsBaseVertex',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawArrays(GLenum mode, GLint first, GLsizei count)
 ```
@@ -54059,15 +54058,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawArrays',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawArrays',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glMultiDrawElementsIndirect(GLenum mode, GLenum type, const void *indirect, GLsizei drawcount, GLsizei stride)
 ```
@@ -54159,15 +54158,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glMultiDrawElementsIndirect',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glMultiDrawElementsIndirect',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteTextures(GLsizei n, const GLuint * textures)
 ```
@@ -54203,15 +54202,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteTextures',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteTextures',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glObjectLabel(GLenum identifier, GLuint name, GLsizei length, const char * label)
 ```
@@ -54260,15 +54259,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glObjectLabel',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glObjectLabel',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawArraysInstanced(GLenum mode, GLint first, GLsizei count, GLsizei instancecount)
 ```
@@ -54318,15 +54317,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawArraysInstanced',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawArraysInstanced',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glObjectPtrLabel(void * ptr, GLsizei length, const char * label)
 ```
@@ -54366,15 +54365,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glObjectPtrLabel',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glObjectPtrLabel',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteRenderbuffers(GLsizei n, GLuint *renderbuffers)
 ```
@@ -54417,15 +54416,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteRenderbuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteRenderbuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPatchParameteri(GLenum pname, GLint value)
 ```
@@ -54478,15 +54477,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPatchParameteri',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPatchParameteri',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawBuffer(GLenum buf)
 ```
@@ -54566,15 +54565,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPatchParameterfv(GLenum pname, const GLfloat *values)
 ```
@@ -54627,15 +54626,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPatchParameterfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPatchParameterfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawBuffers(GLsizei n, const GLenum *bufs)
 ```
@@ -54728,15 +54727,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawBuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawBuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPauseTransformFeedback()
 ```
@@ -54765,15 +54764,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPauseTransformFeedback',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPauseTransformFeedback',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawElements(GLenum mode, GLsizei count, GLenum type, const void * indices)
 ```
@@ -54831,15 +54830,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawElements',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawElements',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPixelStoref(GLenum pname, GLfloat param)
 ```
@@ -54856,15 +54855,15 @@ and `GL_PACK_ALIGNMENT`. Six more affect the unpacking of pixel data from memory
 
 `param` Specifies the value that `pname` is set to.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPixelStoref',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPixelStoref',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawElementsIndirect(GLenum mode, GLenum type, const void *indirect)
 ```
@@ -54946,15 +54945,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawElementsIndirect',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawElementsIndirect',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPixelStorei(GLenum pname, GLint param)
 ```
@@ -54971,15 +54970,15 @@ and `GL_PACK_ALIGNMENT`. Six more affect the unpacking of pixel data from memory
 
 `param` Specifies the value that `pname` is set to.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPixelStorei',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPixelStorei',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetnCompressedTexImage(GLenum target, GLint level, GLsizei bufSize, void *pixels)
 ```
@@ -55070,15 +55069,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetnCompressedTexImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetnCompressedTexImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPointParameterf(GLenum pname, GLfloat param)
 ```
@@ -55130,15 +55129,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPointParameterf',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPointParameterf',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDeleteShader(GLuint shader)
 ```
@@ -55180,15 +55179,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDeleteShader',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDeleteShader',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPointParameteri(GLenum pname, GLint param)
 ```
@@ -55240,15 +55239,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPointParameteri',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPointParameteri',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLenum glGetError(void)
 ```
@@ -55301,15 +55300,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI This document is licensed under the SGI Free Software B License. For
 details, see https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetError',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetError',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPointParameterfv(GLenum pname, const GLfloat * params)
 ```
@@ -55361,15 +55360,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPointParameterfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPointParameterfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetCompressedTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei bufSize, void *pixels)
 ```
@@ -55480,15 +55479,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetCompressedTextureSubImage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetCompressedTextureSubImage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPointParameteriv(GLenum pname, const GLint * params)
 ```
@@ -55540,15 +55539,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPointParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPointParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetnUniformdv(GLuint program, GLint location, GLsizei bufSize, GLdouble *params)
 ```
@@ -55622,15 +55621,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetnUniformdv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetnUniformdv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPointSize(GLfloat size)
 ```
@@ -55676,15 +55675,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPointSize',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPointSize',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetnUniformuiv(GLuint program, GLint location, GLsizei bufSize, GLuint *params)
 ```
@@ -55758,15 +55757,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetnUniformuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetnUniformuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPolygonMode(GLenum face, GLenum mode)
 ```
@@ -55825,15 +55824,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPolygonMode',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPolygonMode',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetUniformSubroutineuiv(GLenum shadertype, GLint location, GLuint *values)
 ```
@@ -55876,15 +55875,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetUniformSubroutineuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetUniformSubroutineuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPolygonOffset(GLfloat factor, GLfloat units)
 ```
@@ -55897,15 +55896,15 @@ polygon. The initial value is 0.
 
 The initial value is 0.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPolygonOffset',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPolygonOffset',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLuint glGetUniformBlockIndex(GLuint program, const GLchar *uniformBlockName)
 ```
@@ -55949,15 +55948,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetUniformBlockIndex',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetUniformBlockIndex',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPopDebugGroup()
 ```
@@ -55991,15 +55990,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPopDebugGroup',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPopDebugGroup',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetVertexArrayiv(GLuint vaobj, GLenum pname, GLint *param)
 ```
@@ -56037,15 +56036,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetVertexArrayiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetVertexArrayiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glPrimitiveRestartIndex(GLuint index)
 ```
@@ -56085,15 +56084,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glPrimitiveRestartIndex',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glPrimitiveRestartIndex',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLint glGetUniformLocation(GLuint program, const GLchar *name)
 ```
@@ -56156,15 +56155,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetUniformLocation',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetUniformLocation',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramBinary(GLuint program, GLenum binaryFormat, const void *binary, GLsizei length)
 ```
@@ -56229,15 +56228,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramBinary',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramBinary',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetVertexArrayIndexed64iv(GLuint vaobj, GLuint index, GLenum pname, GLint64 *param)
 ```
@@ -56333,15 +56332,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetVertexArrayIndexed64iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetVertexArrayIndexed64iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramParameteri(GLuint program, GLenum pname, GLint value)
 ```
@@ -56394,15 +56393,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramParameteri',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramParameteri',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetVertexArrayIndexediv(GLuint vaobj, GLuint index, GLenum pname, GLint *param)
 ```
@@ -56498,15 +56497,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetVertexArrayIndexediv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetVertexArrayIndexediv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform1f(GLuint program, GLint location, GLfloat v0)
 ```
@@ -56666,15 +56665,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform1f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform1f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetUniformIndices(GLuint program, GLsizei uniformCount, const GLchar **uniformNames, GLuint *uniformIndices)
 ```
@@ -56725,15 +56724,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetUniformIndices',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetUniformIndices',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform2f(GLuint program, GLint location, GLfloat v0, GLfloat v1)
 ```
@@ -56893,15 +56892,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform2f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform2f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 GLint glGetFragDataLocation(GLuint program, const char * name)
 ```
@@ -56932,15 +56931,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetFragDataLocation',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetFragDataLocation',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform3f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2)
 ```
@@ -57100,15 +57099,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform3f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform3f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, void *data)
 ```
@@ -57168,15 +57167,15 @@ Copyright 2005 Addison-Wesley. Copyright 2011-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetNamedBufferSubData',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetNamedBufferSubData',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform4f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)
 ```
@@ -57336,15 +57335,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform4f',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform4f',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawElementsInstanced(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount)
 ```
@@ -57404,15 +57403,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawElementsInstanced',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawElementsInstanced',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform1i(GLuint program, GLint location, GLint v0)
 ```
@@ -57572,15 +57571,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform1i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform1i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawElementsBaseVertex(GLenum mode, GLsizei count, GLenum type, void *indices, GLint basevertex)
 ```
@@ -57636,15 +57635,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawElementsBaseVertex',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawElementsBaseVertex',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform2i(GLuint program, GLint location, GLint v0, GLint v1)
 ```
@@ -57804,15 +57803,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform2i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform2i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedFramebufferDrawBuffers(GLuint framebuffer, GLsizei n, const GLenum *bufs)
 ```
@@ -57905,15 +57904,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedFramebufferDrawBuffers',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedFramebufferDrawBuffers',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform3i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2)
 ```
@@ -58073,15 +58072,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform3i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform3i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedFramebufferDrawBuffer(GLuint framebuffer, GLenum buf)
 ```
@@ -58161,15 +58160,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedFramebufferDrawBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedFramebufferDrawBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform4i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3)
 ```
@@ -58329,15 +58328,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform4i',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform4i',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawArraysInstancedBaseInstance(GLenum mode, GLint first, GLsizei count, GLsizei instancecount, GLuint baseinstance)
 ```
@@ -58355,15 +58354,15 @@ Draw multiple instances of a range of elements with offset applied to instanced 
 rendered.
 `baseinstance` Specifies the base instance for use in fetching instanced vertex attributes.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawArraysInstancedBaseInstance',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawArraysInstancedBaseInstance',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform1ui(GLuint program, GLint location, GLuint v0)
 ```
@@ -58523,15 +58522,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform1ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform1ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDrawArraysIndirect(GLenum mode, const void *indirect)
 ```
@@ -58598,15 +58597,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDrawArraysIndirect',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDrawArraysIndirect',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform2ui(GLuint program, GLint location, GLuint v0, GLuint v1)
 ```
@@ -58766,15 +58765,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform2ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform2ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDispatchComputeIndirect(GLintptr indirect)
 ```
@@ -58829,15 +58828,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDispatchComputeIndirect',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDispatchComputeIndirect',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform3ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2)
 ```
@@ -58997,15 +58996,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform3ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform3ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDetachShader(GLuint program, GLuint shader)
 ```
@@ -59053,15 +59052,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDetachShader',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDetachShader',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform4ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3)
 ```
@@ -59221,15 +59220,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform4ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform4ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glDepthRangeArrayv(GLuint first, GLsizei count, const GLdouble *v)
 ```
@@ -59292,15 +59291,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glDepthRangeArrayv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glDepthRangeArrayv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform1fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)
 ```
@@ -59460,15 +59459,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform1fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform1fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glScissorIndexed(GLuint index, GLint left, GLint bottom, GLsizei width, GLsizei height)
 ```
@@ -59524,15 +59523,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glScissorIndexed',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glScissorIndexed',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform2fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)
 ```
@@ -59692,15 +59691,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform2fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform2fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniformMatrix2x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -59860,15 +59859,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniformMatrix2x4fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniformMatrix2x4fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform3fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)
 ```
@@ -60028,15 +60027,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform3fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform3fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniformMatrix3x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -60196,15 +60195,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniformMatrix3x4fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniformMatrix3x4fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform4fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)
 ```
@@ -60364,15 +60363,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform4fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform4fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProvokingVertex(GLenum provokeMode)
 ```
@@ -60420,15 +60419,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProvokingVertex',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProvokingVertex',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform1iv(GLuint program, GLint location, GLsizei count, const GLint *value)
 ```
@@ -60588,15 +60587,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform1iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform1iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glQueryCounter(GLuint id, GLenum target)
 ```
@@ -60641,15 +60640,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glQueryCounter',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glQueryCounter',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform2iv(GLuint program, GLint location, GLsizei count, const GLint *value)
 ```
@@ -60809,15 +60808,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform2iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform2iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glNamedFramebufferReadBuffer(GLuint framebuffer, GLenum mode)
 ```
@@ -60877,15 +60876,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2011-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glNamedFramebufferReadBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glNamedFramebufferReadBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform3iv(GLuint program, GLint location, GLsizei count, const GLint *value)
 ```
@@ -61045,15 +61044,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform3iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform3iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glReadnPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLsizei bufSize, void *data)
 ```
@@ -61083,15 +61082,15 @@ correspond to a single pixel.
 
 `data` Returns the pixel data.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glReadnPixels',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glReadnPixels',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform4iv(GLuint program, GLint location, GLsizei count, const GLint *value)
 ```
@@ -61251,15 +61250,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform4iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform4iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glRenderbufferStorage(GLenum target, GLenum internalformat, GLsizei width, GLsizei height)
 ```
@@ -61323,15 +61322,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glRenderbufferStorage',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glRenderbufferStorage',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform1uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)
 ```
@@ -61491,15 +61490,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform1uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform1uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glRenderbufferStorageMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height)
 ```
@@ -61571,15 +61570,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glRenderbufferStorageMultisample',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glRenderbufferStorageMultisample',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform2uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)
 ```
@@ -61739,15 +61738,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform2uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform2uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glResumeTransformFeedback()
 ```
@@ -61777,15 +61776,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glResumeTransformFeedback',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glResumeTransformFeedback',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform3uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)
 ```
@@ -61945,15 +61944,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform3uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform3uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glSampleMaski(GLuint maskNumber, GLbitfield mask)
 ```
@@ -61991,15 +61990,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glSampleMaski',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glSampleMaski',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniform4uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)
 ```
@@ -62159,15 +62158,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniform4uiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniform4uiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glSamplerParameteri(GLuint sampler, GLenum pname, GLint param)
 ```
@@ -62186,15 +62185,15 @@ following: `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, `GL_TEXTURE_WRAP_R`,
 `params` For the vector commands ( `glSamplerParameter*v` ), specifies a pointer to an array
 where the value or values of `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glSamplerParameteri',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glSamplerParameteri',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniformMatrix2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -62354,15 +62353,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniformMatrix2fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniformMatrix2fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glSamplerParameteriv(GLuint sampler, GLenum pname, const GLint * params)
 ```
@@ -62381,15 +62380,15 @@ following: `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, `GL_TEXTURE_WRAP_R`,
 `params` For the vector commands ( `glSamplerParameter*v` ), specifies a pointer to an array
 where the value or values of `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glSamplerParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glSamplerParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniformMatrix3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -62549,15 +62548,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniformMatrix3fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniformMatrix3fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glSamplerParameterIuiv(GLuint sampler, GLenum pname, const GLuint *params)
 ```
@@ -62576,15 +62575,15 @@ following: `GL_TEXTURE_WRAP_S`, `GL_TEXTURE_WRAP_T`, `GL_TEXTURE_WRAP_R`,
 `params` For the vector commands ( `glSamplerParameter*v` ), specifies a pointer to an array
 where the value or values of `pname` are stored.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glSamplerParameterIuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glSamplerParameterIuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniformMatrix4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -62744,15 +62743,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniformMatrix4fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniformMatrix4fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glScissorArrayv(GLuint first, GLsizei count, const GLint *v)
 ```
@@ -62808,15 +62807,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glScissorArrayv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glScissorArrayv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniformMatrix2x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -62976,15 +62975,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniformMatrix2x3fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniformMatrix2x3fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glScissorIndexedv(GLuint index, const GLint *v)
 ```
@@ -63040,15 +63039,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glScissorIndexedv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glScissorIndexedv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glProgramUniformMatrix3x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
 ```
@@ -63208,15 +63207,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glProgramUniformMatrix3x2fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glProgramUniformMatrix3x2fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glShaderSource(GLuint shader, GLsizei count, const GLchar **string, const GLint *length)
 ```
@@ -63271,15 +63270,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glShaderSource',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glShaderSource',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glStencilFunc(GLenum func, GLint ref, GLuint mask)
 ```
@@ -63367,15 +63366,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glStencilFunc',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glStencilFunc',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glShaderStorageBlockBinding(GLuint program, GLuint storageBlockIndex, GLuint storageBlockBinding)
 ```
@@ -63425,15 +63424,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glShaderStorageBlockBinding',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glShaderStorageBlockBinding',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glStencilFuncSeparate(GLenum face, GLenum func, GLint ref, GLuint mask)
 ```
@@ -63524,15 +63523,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glStencilFuncSeparate',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glStencilFuncSeparate',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureBufferRange(GLuint texture, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizei size)
 ```
@@ -63618,15 +63617,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureBufferRange',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureBufferRange',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glStencilMask(GLuint mask)
 ```
@@ -63668,15 +63667,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glStencilMask',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glStencilMask',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetQueryObjectuiv(GLuint id, GLenum pname, GLuint * params)
 ```
@@ -63773,15 +63772,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetQueryObjectuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetQueryObjectuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glStencilMaskSeparate(GLenum face, GLuint mask)
 ```
@@ -63826,15 +63825,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glStencilMaskSeparate',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glStencilMaskSeparate',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetQueryObjecti64v(GLuint id, GLenum pname, GLint64 * params)
 ```
@@ -63931,15 +63930,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetQueryObjecti64v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetQueryObjecti64v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glStencilOp(GLenum sfail, GLenum dpfail, GLenum dppass)
 ```
@@ -64031,15 +64030,15 @@ Copyright 1991-2006 Silicon Graphics, Inc. Copyright 2010-2014 Khronos Group. Th
 is licensed under the SGI Free Software B License. For details, see
 https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glStencilOp',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glStencilOp',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetQueryObjectui64v(GLuint id, GLenum pname, GLuint64 * params)
 ```
@@ -64136,15 +64135,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetQueryObjectui64v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetQueryObjectui64v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glStencilOpSeparate(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass)
 ```
@@ -64240,15 +64239,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glStencilOpSeparate',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glStencilOpSeparate',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetQueryBufferObjectiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)
 ```
@@ -64345,15 +64344,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetQueryBufferObjectiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetQueryBufferObjectiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexBuffer(GLenum target, GLenum internalformat, GLuint buffer)
 ```
@@ -64427,15 +64426,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetQueryBufferObjectuiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)
 ```
@@ -64532,15 +64531,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetQueryBufferObjectuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetQueryBufferObjectuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTextureBuffer(GLuint texture, GLenum internalformat, GLuint buffer)
 ```
@@ -64614,15 +64613,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTextureBuffer',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTextureBuffer',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetQueryBufferObjecti64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)
 ```
@@ -64719,15 +64718,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetQueryBufferObjecti64v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetQueryBufferObjecti64v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glTexBufferRange(GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size)
 ```
@@ -64813,15 +64812,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glTexBufferRange',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glTexBufferRange',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetQueryBufferObjectui64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)
 ```
@@ -64918,15 +64917,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetQueryBufferObjectui64v',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetQueryBufferObjectui64v',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform2ui(GLint location, GLuint v0, GLuint v1)
 ```
@@ -65083,15 +65082,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform2ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform2ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetQueryiv(GLenum target, GLenum pname, GLint * params)
 ```
@@ -65136,15 +65135,15 @@ Copyright 2005 Addison-Wesley. Copyright 2010-2014 Khronos Group. This material 
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetQueryiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetQueryiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform3ui(GLint location, GLuint v0, GLuint v1, GLuint v2)
 ```
@@ -65301,15 +65300,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform3ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform3ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetRenderbufferParameteriv(GLenum target, GLenum pname, GLint *params)
 ```
@@ -65376,15 +65375,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetRenderbufferParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetRenderbufferParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform4ui(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3)
 ```
@@ -65541,15 +65540,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform4ui',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform4ui',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetNamedRenderbufferParameteriv(GLuint renderbuffer, GLenum pname, GLint *params)
 ```
@@ -65616,15 +65615,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetNamedRenderbufferParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetNamedRenderbufferParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform1fv(GLint location, GLsizei count, const GLfloat *value)
 ```
@@ -65781,15 +65780,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform1fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform1fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat * params)
 ```
@@ -65868,15 +65867,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetSamplerParameterfv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetSamplerParameterfv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform2fv(GLint location, GLsizei count, const GLfloat *value)
 ```
@@ -66033,15 +66032,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform2fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform2fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetSamplerParameteriv(GLuint sampler, GLenum pname, GLint * params)
 ```
@@ -66120,15 +66119,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetSamplerParameteriv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetSamplerParameteriv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform3fv(GLint location, GLsizei count, const GLfloat *value)
 ```
@@ -66285,15 +66284,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform3fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform3fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetSamplerParameterIiv(GLuint sampler, GLenum pname, GLint * params)
 ```
@@ -66372,15 +66371,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetSamplerParameterIiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetSamplerParameterIiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform4fv(GLint location, GLsizei count, const GLfloat *value)
 ```
@@ -66537,15 +66536,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform4fv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform4fv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetSamplerParameterIuiv(GLuint sampler, GLenum pname, GLuint * params)
 ```
@@ -66624,15 +66623,15 @@ conditions set forth in the Open Publication License, v 1.0, 8 June 1999.
 
 https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetSamplerParameterIuiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetSamplerParameterIuiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform1iv(GLint location, GLsizei count, const GLint *value)
 ```
@@ -66789,15 +66788,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform1iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform1iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetShaderiv(GLuint shader, GLenum pname, GLint *params)
 ```
@@ -66862,15 +66861,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetShaderiv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetShaderiv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glUniform2iv(GLint location, GLsizei count, const GLint *value)
 ```
@@ -67027,15 +67026,15 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glUniform2iv',
     },
-    {
-      documentation = {
-        kind = 'markdown',
-        value = [[
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glUniform2iv',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[
 ```c
 void glGetShaderInfoLog(GLuint shader, GLsizei maxLength, GLsizei *length, GLchar *infoLog)
 ```
@@ -67097,10 +67096,9 @@ Copyright 2003-2005 3Dlabs Inc. Ltd. Copyright 2010-2014 Khronos Group. This mat
 distributed subject to the terms and conditions set forth in the Open Publication License, v 1.0, 8
 June 1999. https://opencontent.org/openpub/.
 ]],
-      },
-      dup = 0,
-      kind = kinds.Function,
-      label = 'glGetShaderInfoLog',
     },
-  }
-end
+    dup = 0,
+    kind = kinds.Function,
+    label = 'glGetShaderInfoLog',
+  },
+}
