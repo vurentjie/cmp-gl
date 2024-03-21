@@ -2791,7 +2791,14 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glTexStorage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)
+void glTexStorage2DMultisample(
+  GLenum target,
+  GLsizei samples,
+  GLenum internalformat,
+  GLsizei width,
+  GLsizei height,
+  GLboolean fixedsamplelocations
+)
 ```
 Specify storage for a two-dimensional multisample texture
 ---
