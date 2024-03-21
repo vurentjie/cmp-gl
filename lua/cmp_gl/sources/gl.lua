@@ -2038,7 +2038,8 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`.
+The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage1D or another call to `glTexStorage1D` ) will
@@ -2199,7 +2200,8 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`.
+The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage1D or another call to `glTexStorage1D` ) will
@@ -2412,7 +2414,8 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`.
+The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage2D or another call to `glTexStorage2D` ) will
@@ -2625,7 +2628,8 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`.
+The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage2D or another call to `glTexStorage2D` ) will
@@ -3011,7 +3015,14 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glTextureStorage2DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)
+void glTextureStorage2DMultisample(
+  GLuint texture,
+  GLsizei samples,
+  GLenum internalformat,
+  GLsizei width,
+  GLsizei height,
+  GLboolean fixedsamplelocations
+)
 ```
 Specify storage for a two-dimensional multisample texture
 ---
@@ -3307,7 +3318,8 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`.
+The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage3D or another call to `glTexStorage3D` ) will
@@ -3541,7 +3553,8 @@ Since no texture data is actually provided, the values used in the pseudo-code f
 Table 1 below, one of the sized depth-component formats `GL_DEPTH_COMPONENT32F`,
 `GL_DEPTH_COMPONENT24`, or `GL_DEPTH_COMPONENT16`, one of the combined depth-stencil formats,
 `GL_DEPTH32F_STENCIL8`, or `GL_DEPTH24_STENCIL8`, or the stencil-only format,
-`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`. The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
+`GL_STENCIL_INDEX8`. Upon success, the value of `GL_TEXTURE_IMMUTABLE_FORMAT` becomes `GL_TRUE`.
+The value of `GL_TEXTURE_IMMUTABLE_FORMAT` may be discovered by calling glGetTexParameter
 with `pname` set to `GL_TEXTURE_IMMUTABLE_FORMAT`. No further changes to the dimensions or
 format of the texture object may be made. Using any command that might alter the dimensions or
 format of the texture object (such as glTexImage3D or another call to `glTexStorage3D` ) will
@@ -3726,7 +3739,15 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glTexStorage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations)
+void glTexStorage3DMultisample(
+  GLenum target,
+  GLsizei samples,
+  GLenum internalformat,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLboolean fixedsamplelocations
+)
 ```
 Specify storage for a two-dimensional multisample array texture
 ---
@@ -3983,7 +4004,15 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glTextureStorage3DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations)
+void glTextureStorage3DMultisample(
+  GLuint texture,
+  GLsizei samples,
+  GLenum internalformat,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLboolean fixedsamplelocations
+)
 ```
 Specify storage for a two-dimensional multisample array texture
 ---
@@ -4828,7 +4857,17 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void * pixels)
+void glTexSubImage2D(
+  GLenum target,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLsizei width,
+  GLsizei height,
+  GLenum format,
+  GLenum type,
+  const void * pixels
+)
 ```
 Specify a two-dimensional texture subimage
 ---
@@ -5128,7 +5167,17 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *pixels)
+void glTextureSubImage2D(
+  GLuint texture,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLsizei width,
+  GLsizei height,
+  GLenum format,
+  GLenum type,
+  const void *pixels
+)
 ```
 Specify a two-dimensional texture subimage
 ---
@@ -5264,7 +5313,20 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glGetTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, GLsizei bufSize, void *pixels)
+void glGetTextureSubImage(
+  GLuint texture,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLint zoffset,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLenum format,
+  GLenum type,
+  GLsizei bufSize,
+  void *pixels
+)
 ```
 Retrieve a sub-region of a texture image from a texture object
 ---
@@ -5384,7 +5446,19 @@ https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-void glTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * pixels)
+void glTexSubImage3D(
+  GLenum target,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLint zoffset,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLenum format,
+  GLenum type,
+  const void * pixels
+)
 ```
 Specify a three-dimensional texture subimage
 ---
@@ -5615,7 +5689,19 @@ https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-void glTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels)
+void glTextureSubImage3D(
+  GLuint texture,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLint zoffset,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLenum format,
+  GLenum type,
+  const void *pixels
+)
 ```
 Specify a three-dimensional texture subimage
 ---
@@ -5981,7 +6067,16 @@ https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-void glTextureView(GLuint texture, GLenum target, GLuint origtexture, GLenum internalformat, GLuint minlevel, GLuint numlevels, GLuint minlayer, GLuint numlayers)
+void glTextureView(
+  GLuint texture,
+  GLenum target,
+  GLuint origtexture,
+  GLenum internalformat,
+  GLuint minlevel,
+  GLuint numlevels,
+  GLuint minlayer,
+  GLuint numlayers
+)
 ```
 Initialize a texture as a data alias of another texture's data store
 ---
@@ -6145,7 +6240,8 @@ passed to glTransformFeedbackVaryings, and an `index` of the value of
 `GL_TRANSFORM_FEEDBACK_VARYINGS` minus one selects the last such variable.
 
 The name of the selected varying is returned as a null-terminated string in `name`. The actual
-number of characters written into `name`, excluding the null terminator, is returned in `length`. If `length` is NULL, no length is returned. The maximum number of characters that may be written
+number of characters written into `name`, excluding the null terminator, is returned in `length`.
+If `length` is NULL, no length is returned. The maximum number of characters that may be written
 into `name`, including the null terminator, is specified by `bufSize`.
 
 The length of the longest varying name in program is given by
@@ -6153,7 +6249,8 @@ The length of the longest varying name in program is given by
 
 For the selected varying variable, its type is returned into `type`. The size of the varying is
 returned into `size`. The value in `size` is in units of the type returned in `type`. The type
-returned can be any of the scalar, vector, or matrix attribute types returned by glGetActiveAttrib. If an error occurred, the return parameters `length`, `size`, `type` and `name` will be
+returned can be any of the scalar, vector, or matrix attribute types returned by glGetActiveAttrib.
+If an error occurred, the return parameters `length`, `size`, `type` and `name` will be
 unmodified. This command will return as much information about the varying variables as possible. If
 no information is available, `length` will be set to zero and `name` will be an empty string.
 
@@ -11814,7 +11911,8 @@ log for `pipeline`.
 
 ---
 ### Description
-`glGetProgramPipelineInfoLog` retrieves the info log for the program pipeline object `pipeline`. The info log, including its null terminator, is written into the array of characters whose address
+`glGetProgramPipelineInfoLog` retrieves the info log for the program pipeline object `pipeline`.
+The info log, including its null terminator, is written into the array of characters whose address
 is given by `infoLog`. The maximum number of characters that may be written into `infoLog` is
 given by `bufSize`, and the actual number of characters written into `infoLog` is returned in
 the integer whose address is given by `length`. If `length` is `NULL`, no length is returned.
@@ -11917,7 +12015,16 @@ https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-void glGetProgramResourceiv(GLuint program, GLenum programInterface, GLuint index, GLsizei propCount, const GLenum * props, GLsizei bufSize, GLsizei * length, GLint * params)
+void glGetProgramResourceiv(
+  GLuint program,
+  GLenum programInterface,
+  GLuint index,
+  GLsizei propCount,
+  const GLenum * props,
+  GLsizei bufSize,
+  GLsizei * length,
+  GLint * params
+)
 ```
 Retrieve values for multiple properties of a single active resource within a program object
 ---
@@ -12026,7 +12133,8 @@ backed by a buffer object, -1 is written to `params`, regardless of the variable
 
 For the property `GL_IS_ROW_MAJOR`, a single integer identifying whether an active variable is a
 row-major matrix is written to `params`. For active variables backed by a buffer object, declared
-as a single matrix or array of matrices, and stored in row-major order, one is written to `params`. For all other active variables, zero is written to `params`.
+as a single matrix or array of matrices, and stored in row-major order, one is written to `params`.
+For all other active variables, zero is written to `params`.
 
 For the property `GL_ATOMIC_COUNTER_BUFFER_INDEX`, a single integer identifying the index of the
 active atomic counter buffer containing an active variable is written to `params`. If the variable
@@ -23953,7 +24061,8 @@ returned, measured in bytes.
 ### Description
 `glGetBufferSubData` and `glGetNamedBufferSubData` return some or all of the data contents of
 the data store of the specified buffer object. Data starting at byte offset `offset` and extending
-for `size` bytes is copied from the buffer object's data store to the memory pointed to by `data`. An error is thrown if the buffer object is currently mapped, or if `offset` and `size`
+for `size` bytes is copied from the buffer object's data store to the memory pointed to by `data`.
+  An error is thrown if the buffer object is currently mapped, or if `offset` and `size`
 together define a range beyond the bounds of the buffer object's data store.
 ---
 ### Notes
@@ -24097,7 +24206,15 @@ https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-void glDrawElementsInstancedBaseVertexBaseInstance(GLenum mode, GLsizei count, GLenum type, void *indices, GLsizei instancecount, GLint basevertex, GLuint baseinstance)
+void glDrawElementsInstancedBaseVertexBaseInstance(
+  GLenum mode,
+  GLsizei count,
+  GLenum type,
+  void *indices,
+  GLsizei instancecount,
+  GLint basevertex,
+  GLuint baseinstance
+ )
 ```
 Render multiple instances of a set of primitives from array data with a per-element offset
 ---
@@ -26124,7 +26241,8 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`.
+`attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -26250,7 +26368,8 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`.
+`attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -26376,7 +26495,8 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`.
+`attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -26502,7 +26622,8 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`.
+`attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -26628,7 +26749,8 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`.
+`attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -26754,7 +26876,8 @@ ignored if `type` is `GL_FIXED`.
 `glVertexAttribFormat`, `glVertexAttribIFormat` and `glVertexAttribLFormat`, as well as
 `glVertexArrayAttribFormat`, `glVertexArrayAttribIFormat` and `glVertexArrayAttribLFormat`
 specify the organization of data in vertex arrays. The first three calls operate on the bound vertex
-array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`. `attribindex` specifies the index of the generic vertex attribute array whose data layout is
+array object, whereas the last three ones modify the state of a vertex array object with ID `vaobj`.
+`attribindex` specifies the index of the generic vertex attribute array whose data layout is
 being described, and must be less than the value of `GL_MAX_VERTEX_ATTRIBS`.
 
 `size` determines the number of components per vertex are allocated to the specified attribute
@@ -30699,7 +30822,18 @@ June 1999. https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-void glBlitFramebuffer(GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter)
+void glBlitFramebuffer(
+  GLint srcX0,
+  GLint srcY0,
+  GLint srcX1,
+  GLint srcY1,
+  GLint dstX0,
+  GLint dstY0,
+  GLint dstX1,
+  GLint dstY1,
+  GLbitfield mask,
+  GLenum filter
+)
 ```
 Copy a block of pixels from one framebuffer object to another
 ---
@@ -30934,7 +31068,20 @@ June 1999. https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-void glBlitNamedFramebuffer(GLuint readFramebuffer, GLuint drawFramebuffer, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter)
+void glBlitNamedFramebuffer(
+  GLuint readFramebuffer,
+  GLuint drawFramebuffer,
+  GLint srcX0,
+  GLint srcY0,
+  GLint srcX1,
+  GLint srcY1,
+  GLint dstX0,
+  GLint dstY0,
+  GLint dstX1,
+  GLint dstY1,
+  GLbitfield mask,
+  GLenum filter
+)
 ```
 Copy a block of pixels from one framebuffer object to another
 ---
@@ -32691,7 +32838,15 @@ https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-void glInvalidateNamedFramebufferSubData(GLuint framebuffer, GLsizei numAttachments, const GLenum *attachments, GLint x, GLint y, GLsizei width, GLsizei height)
+void glInvalidateNamedFramebufferSubData(
+  GLuint framebuffer,
+  GLsizei numAttachments,
+  const GLenum *attachments,
+  GLint x,
+  GLint y,
+  GLsizei width,
+  GLsizei height
+)
 ```
 Invalidate the content of a region of some or all of a framebuffer's attachments
 ---
@@ -34725,7 +34880,19 @@ https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-void glClearTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * data)
+void glClearTexSubImage(
+  GLuint texture,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLint zoffset,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLenum format,
+  GLenum type,
+  const void * data
+)
 ```
 Fills all or part of a texture image with a constant value
 ---
@@ -35158,7 +35325,16 @@ specified by `data`.
       kind = 'markdown',
       value = [[
 ```c
-void glCompressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void * data)
+void glCompressedTexImage2D(
+  GLenum target,
+  GLint level,
+  GLenum internalformat,
+  GLsizei width,
+  GLsizei height,
+  GLint border,
+  GLsizei imageSize,
+  const void * data
+)
 ```
 Specify a two-dimensional texture image in a compressed format
 ---
@@ -35195,7 +35371,17 @@ specified by `data`.
       kind = 'markdown',
       value = [[
 ```c
-void glCompressedTexImage3D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void * data)
+void glCompressedTexImage3D(
+  GLenum target,
+  GLint level,
+  GLenum internalformat,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLint border,
+  GLsizei imageSize,
+  const void * data
+)
 ```
 Specify a three-dimensional texture image in a compressed format
 ---
@@ -35427,7 +35613,17 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glCompressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void * data)
+void glCompressedTexSubImage2D(
+  GLenum target,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLsizei width,
+  GLsizei height,
+  GLenum format,
+  GLsizei imageSize,
+  const void * data
+)
 ```
 Specify a two-dimensional texture subimage in a compressed format
 ---
@@ -35537,7 +35733,17 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glCompressedTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *data)
+void glCompressedTextureSubImage2D(
+  GLuint texture,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLsizei width,
+  GLsizei height,
+  GLenum format,
+  GLsizei imageSize,
+  const void *data
+)
 ```
 Specify a two-dimensional texture subimage in a compressed format
 ---
@@ -35647,7 +35853,19 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glCompressedTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void * data)
+void glCompressedTexSubImage3D(
+  GLenum target,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLint zoffset,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLenum format,
+  GLsizei imageSize,
+  const void * data
+)
 ```
 Specify a three-dimensional texture subimage in a compressed format
 ---
@@ -35754,7 +35972,19 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glCompressedTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *data)
+void glCompressedTextureSubImage3D(
+  GLuint texture,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLint zoffset,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLenum format,
+  GLsizei imageSize,
+  const void *data
+)
 ```
 Specify a three-dimensional texture subimage in a compressed format
 ---
@@ -36053,7 +36283,23 @@ https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-void glCopyImageSubData(GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei srcWidth, GLsizei srcHeight, GLsizei srcDepth)
+void glCopyImageSubData(
+  GLuint srcName,
+  GLenum srcTarget,
+  GLint srcLevel,
+  GLint srcX,
+  GLint srcY,
+  GLint srcZ,
+  GLuint dstName,
+  GLenum dstTarget,
+  GLint dstLevel,
+  GLint dstX,
+  GLint dstY,
+  GLint dstZ,
+  GLsizei srcWidth,
+  GLsizei srcHeight,
+  GLsizei srcDepth
+)
 ```
 Perform a raw data copy between two images
 ---
@@ -36619,7 +36865,17 @@ glPixelStore modes affect texture images.
       kind = 'markdown',
       value = [[
 ```c
-void glCopyTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height)
+void glCopyTextureSubImage3D(
+  GLuint texture,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLint zoffset,
+  GLint x,
+  GLint y,
+  GLsizei width,
+  GLsizei height
+)
 ```
 Copy a three-dimensional texture subimage
 ---
@@ -49891,7 +50147,15 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
       kind = 'markdown',
       value = [[
 ```c
-void glTexImage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations)
+void glTexImage3DMultisample(
+  GLenum target,
+  GLsizei samples,
+  GLenum internalformat,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLboolean fixedsamplelocations
+)
 ```
 Establish the data storage, format, dimensions, and number of samples of a multisample texture's
 image
@@ -49914,7 +50178,8 @@ internal format or size of the image.
 `glTexImage3DMultisample` establishes the data storage, format, dimensions and number of samples
 of a multisample texture's image.
 
-`target` must be `GL_TEXTURE_2D_MULTISAMPLE_ARRAY` or `GL_PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY`. `width` and `height` are the dimensions in texels of the texture, and must be in the range zero
+`target` must be `GL_TEXTURE_2D_MULTISAMPLE_ARRAY` or `GL_PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY`.
+`width` and `height` are the dimensions in texels of the texture, and must be in the range zero
 to the value of `GL_MAX_TEXTURE_SIZE` minus one. `depth` is the number of array slices in the
 array texture's image. `samples` specifies the number of samples in the image and must be in the
 range zero to the value of `GL_MAX_SAMPLES` minus one.
@@ -50138,7 +50403,17 @@ For the vector commands ( `glTexParameter*v` ), `pname` can also be one of
       kind = 'markdown',
       value = [[
 ```c
-void glTexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const void * data)
+void glTexImage2D(
+  GLenum target,
+  GLint level,
+  GLint internalformat,
+  GLsizei width,
+  GLsizei height,
+  GLint border,
+  GLenum format,
+  GLenum type,
+  const void * data
+)
 ```
 Specify a two-dimensional texture image
 ---
@@ -50190,7 +50465,18 @@ that are at least 256 layers deep.
       kind = 'markdown',
       value = [[
 ```c
-void glTexImage3D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void * data)
+void glTexImage3D(
+  GLenum target,
+  GLint level,
+  GLint internalformat,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLint border,
+  GLenum format,
+  GLenum type,
+  const void * data
+)
 ```
 Specify a three-dimensional texture image
 ---
@@ -53020,7 +53306,16 @@ https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-GLuint glGetDebugMessageLog(GLuint count, GLsizei bufSize, GLenum *sources, GLenum *types, GLuint *ids, GLenum *severities, GLsizei *lengths, GLchar *messageLog)
+GLuint glGetDebugMessageLog(
+  GLuint count,
+  GLsizei bufSize,
+  GLenum *sources,
+  GLenum *types,
+  GLuint *ids,
+  GLenum *severities,
+  GLsizei *lengths,
+  GLchar *messageLog
+)
 ```
 Retrieve messages from the debug message log
 ---
@@ -53943,7 +54238,14 @@ https://opencontent.org/openpub/.
       kind = 'markdown',
       value = [[
 ```c
-void glMultiDrawElementsBaseVertex(GLenum mode, const GLsizei *count, GLenum type, const void * const *indices, GLsizei drawcount, const GLint *basevertex)
+void glMultiDrawElementsBaseVertex(
+  GLenum mode,
+  const GLsizei *count,
+  GLenum type,
+  const void * const *indices,
+  GLsizei drawcount,
+  const GLint *basevertex
+)
 ```
 Render multiple sets of primitives by specifying indices of array data elements and an index to
 apply to each index
@@ -55370,7 +55672,18 @@ https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
       kind = 'markdown',
       value = [[
 ```c
-void glGetCompressedTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei bufSize, void *pixels)
+void glGetCompressedTextureSubImage(
+  GLuint texture,
+  GLint level,
+  GLint xoffset,
+  GLint yoffset,
+  GLint zoffset,
+  GLsizei width,
+  GLsizei height,
+  GLsizei depth,
+  GLsizei bufSize,
+  void *pixels
+)
 ```
 Retrieve a sub-region of a compressed texture image from a compressed texture object
 ---
@@ -55926,7 +56239,8 @@ link could have failed because the number of active uniforms exceeded the limit.
 
 `glGetUniformBlockIndex` returns the uniform block index for the uniform block named
 `uniformBlockName` of `program`. If `uniformBlockName` does not identify an active uniform
-block of `program`, `glGetUniformBlockIndex` returns the special identifier, `GL_INVALID_INDEX`. Indices of the active uniform blocks of a program are assigned in consecutive order, beginning
+block of `program`, `glGetUniformBlockIndex` returns the special identifier, `GL_INVALID_INDEX`.
+Indices of the active uniform blocks of a program are assigned in consecutive order, beginning
 with zero.
 ---
 ### Errors
@@ -57127,7 +57441,8 @@ returned, measured in bytes.
 ### Description
 `glGetBufferSubData` and `glGetNamedBufferSubData` return some or all of the data contents of
 the data store of the specified buffer object. Data starting at byte offset `offset` and extending
-for `size` bytes is copied from the buffer object's data store to the memory pointed to by `data`. An error is thrown if the buffer object is currently mapped, or if `offset` and `size`
+for `size` bytes is copied from the buffer object's data store to the memory pointed to by `data`.
+An error is thrown if the buffer object is currently mapped, or if `offset` and `size`
 together define a range beyond the bounds of the buffer object's data store.
 ---
 ### Notes
