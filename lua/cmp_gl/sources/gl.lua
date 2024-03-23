@@ -30571,28 +30571,47 @@ where `kc=2mc−1` and `(mR,mG,mB,mA)` is the number of red, green, blue, and al
 Source and destination scale factors are referred to as `(sR,sG,sB,sA)` and `(dR,dG,dB,dA)`.
 All scale factors have range [0,1].
 
-|Parameter|RGB Factor|Alpha Factor|
-|-|-|-|
-|GL_ZERO|(0,0,0)|0|
-|GL_ONE|(1,1,1)|1|
-|GL_SRC_COLOR|(Rs0kR,Gs0kG,Bs0kB)|As0kA|
-|GL_ONE_MINUS_SRC_COLOR|(1,1,1)−(Rs0kR,Gs0kG,Bs0kB)|1−As0kA|
-|GL_DST_COLOR|(RdkR,GdkG,BdkB)|AdkA|
-|GL_ONE_MINUS_DST_COLOR|(1,1,1)−(RdkR,GdkG,BdkB)|1−AdkA|
-|GL_SRC_ALPHA|(As0kA,As0kA,As0kA)|As0kA|
-|GL_ONE_MINUS_SRC_ALPHA|(1,1,1)−(As0kA,As0kA,As0kA)|1−As0kA|
-|GL_DST_ALPHA|(AdkA,AdkA,AdkA)|AdkA|
-|GL_ONE_MINUS_DST_ALPHA|(1,1,1)−(AdkA,AdkA,AdkA)|1−AdkA|
-|GL_CONSTANT_COLOR|(Rc,Gc,Bc)|Ac|
-|GL_ONE_MINUS_CONSTANT_COLOR|(1,1,1)−(Rc,Gc,Bc)|1−Ac|
-|GL_CONSTANT_ALPHA|(Ac,Ac,Ac)|Ac|
-|GL_ONE_MINUS_CONSTANT_ALPHA|(1,1,1)−(Ac,Ac,Ac)|1−Ac|
-|GL_SRC_ALPHA_SATURATE|(i,i,i)|1|
-|GL_SRC1_COLOR|(Rs1kR,Gs1kG,Bs1kB)|As1kA|
-|GL_ONE_MINUS_SRC1_COLOR|(1,1,1,1)−(Rs1kR,Gs1kG,Bs1kB)|1−As1kA|
-|GL_SRC1_ALPHA|(As1kA,As1kA,As1kA)|As1kA|
-|GL_ONE_MINUS_SRC1_ALPHA|(1,1,1)−(As1kA,As1kA,As1kA)|1−As1kA|
-
+┌───────────────────────────┬────────────────────────────────┬────────────┐
+│Parameter                  │RGB Factor                      │Alpha Factor│
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_ZERO                    │(0,0,0)                         │0           │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_ONE                     │(1,1,1)                         │1           │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_SRC_COLOR               │(Rs⁰/kᴿ,Gs⁰/kᴳ,Bs⁰/kᴮ)          │As⁰/kᴬ      │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_ONE_MINUS_SRC_COLOR     │(1,1,1)−(Rs⁰/kᴿ,Gs⁰/kᴳ,Bs⁰/kᴮ)  │1−(As⁰/kᴬ)  │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_DST_COLOR               │(Rᵈ/kᴿ,Gᵈ/kᴳ,Bᵈ/kᴮ)             │Aᵈ/kᴬ       │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_ONE_MINUS_DST_COLOR     │(1,1,1)−(Rᵈ/kᴿ,Gᵈ/kᴳ,Bᵈ/kᴮ)     │1−(Aᵈ/kᴬ)   │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_SRC_ALPHA               │(As⁰/kᴬ,As⁰/kᴬ,As⁰/kᴬ)          │As⁰/kᴬ      │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_ONE_MINUS_SRC_ALPHA     │(1,1,1)−(As⁰/kᴬ,As⁰/kᴬ,As⁰/kᴬ)  │1−(As⁰/kᴬ)  │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_DST_ALPHA               │(Aᵈ/kᴬ,Aᵈ/kᴬ,Aᵈ/kᴬ)             │Aᵈ/kᴬ       │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_ONE_MINUS_DST_ALPHA     │(1,1,1)−(Aᵈ/kᴬ,Aᵈ/kᴬ,Aᵈ/kᴬ)     │1−(Aᵈ/kᴬ)   │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_CONSTANT_COLOR          │(Rᶜ,Gᶜ,Bᶜ)                      │Aᶜ          │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_ONE_MINUS_CONSTANT_COLOR│(1,1,1)−(Rᶜ,Gᶜ,Bᶜ)              │1−Aᶜ        │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_CONSTANT_ALPHA          │(Aᶜ,Aᶜ,Aᶜ)                      │Aᶜ          │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_ONE_MINUS_CONSTANT_ALPHA│(1,1,1)−(Aᶜ,Aᶜ,Aᶜ)              │1−Aᶜ        │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_SRC_ALPHA_SATURATE      │(i,i,i)                         │1           │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_SRC1_COLOR              │(Rs¹/kᴿ,Gs¹/kᴳ,Bs¹/kᴮ)          │As¹/kᴬ      │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_ONE_MINUS_SRC1_COLOR    │(1,1,1,1)−(Rs¹/kᴿ,Gs¹/kᴳ,Bs¹/kᴮ)│1−(As¹/kᴬ)  │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_SRC1_ALPHA              │(As¹/kᴬ,As¹/kᴬ,As¹/kᴬ)          │As¹/kᴬ      │
+├───────────────────────────┼────────────────────────────────┼────────────┤
+│GL_ONE_MINUS_SRC1_ALPHA    │(1,1,1)−(As¹/kᴬ,As¹/kᴬ,As¹/kᴬ)  │1−(As¹/kᴬ)  │
+└───────────────────────────┴────────────────────────────────┴────────────┘
 In the table, `i=min(As,1−Ad)`.
 
 To determine the blended RGBA values of a pixel, the system uses the following equations:
@@ -30611,6 +30630,36 @@ and `As` is equal to `kA`, the equations reduce to simple replacement:
 `Gd=Gs`
 `Bd=Bs`
 `Ad=As`
+---
+### Notes
+
+Incoming (source) alpha is correctly thought of as a material opacity, ranging from 1.0 (KA),
+representing complete opacity, to 0.0 (0), representing complete transparency.
+
+When more than one color buffer is enabled for drawing, the GL performs blending separately for
+each enabled buffer, using the contents of that buffer for destination color. (See glDrawBuffer.)
+
+When dual source blending is enabled (i.e., one of the blend factors requiring the second color
+input is used), the maximum number of enabled draw buffers is given by `GL_MAX_DUAL_SOURCE_DRAW_BUFFERS`,
+which may be lower than GL_MAX_DRAW_BUFFERS.
+---
+### Errors
+
+`GL_INVALID_ENUM` is generated if either srcRGB or dstRGB is not an accepted value.
+
+`GL_INVALID_VALUE` is generated by glBlendFuncSeparatei if buf is greater than or equal to the value of GL_MAX_DRAW_BUFFERS.
+---
+### Associated Gets
+
+glGet with argument `GL_BLEND_SRC_RGB`
+
+glGet with argument `GL_BLEND_SRC_ALPHA`
+
+glGet with argument `GL_BLEND_DST_RGB`
+
+glGet with argument `GL_BLEND_DST_ALPHA`
+
+glIsEnabled with argument `GL_BLEND`
 
 ]],
     },
