@@ -30624,7 +30624,7 @@ Despite the apparent precision of the above equations, blending arithmetic is no
 specified, because blending operates with imprecise integer color values. However, a blend factor
 that should be equal to `1` is guaranteed not to modify its multiplicand, and a blend factor equal
 to 0 reduces its multiplicand to 0. For example, when srcRGB is `GL_SRC_ALPHA`, dstRGB is `GL_ONE_MINUS_SRC_ALPHA`,
-and `As` is equal to `kA`, the equations reduce to simple replacement:
+and `Aˢ` is equal to `kᴬ`, the equations reduce to simple replacement:
 
 `Rᵈ=Rˢ`
 `Gᵈ=Gˢ`
