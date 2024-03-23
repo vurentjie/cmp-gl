@@ -30548,6 +30548,70 @@ initial value is `GL_ZERO`.
 
 `dstAlpha` Specified how the alpha destination blending factor is computed. The initial value
 is `GL_ZERO`.
+
+Pixels can be drawn using a function that blends the incoming (source) RGBA values with the
+RGBA values that are already in the frame buffer (the destination values). Blending is initially
+disabled. Use `glEnable` and `glDisable` with argument `GL_BLEND` to enable and disable blending.
+
+`glBlendFuncSeparate` defines the operation of blending for all draw buffers when it is enabled.
+`glBlendFuncSeparatei` defines the operation of blending for a single draw buffer specified by buf
+when enabled for that draw buffer. srcRGB specifies which method is used to scale the source
+RGB-color components. dstRGB specifies which method is used to scale the destination RGB-color
+components. Likewise, srcAlpha specifies which method is used to scale the source alpha color
+component, and dstAlpha specifies which method is used to scale the destination alpha component.
+The possible methods are described in the following table. Each method defines four scale factors,
+one each for red, green, blue, and alpha.
+
+In the table and in subsequent equations, first source, second source and destination color
+components are referred to as `(Rs0,Gs0,Bs0,As0)`, `(Rs1,Gs1,Bs1,As1)`, and `(Rd,Gd,Bd,Ad)`, respectively.
+The color specified by glBlendColor is referred to as `(Rc,Gc,Bc,Ac)`.
+They are understood to have integer values between 0 and `(kR,kG,kB,kA)`,
+where `kc=2mc−1` and `(mR,mG,mB,mA)` is the number of red, green, blue, and alpha bitplanes.
+
+Source and destination scale factors are referred to as `(sR,sG,sB,sA)` and `(dR,dG,dB,dA)`.
+All scale factors have range [0,1].
+
+|Parameter|RGB Factor|Alpha Factor|
+|-|-|-|
+|GL_ZERO|(0,0,0)|0|
+|GL_ONE|(1,1,1)|1|
+|GL_SRC_COLOR|(Rs0kR,Gs0kG,Bs0kB)|As0kA|
+|GL_ONE_MINUS_SRC_COLOR|(1,1,1)−(Rs0kR,Gs0kG,Bs0kB)|1−As0kA|
+|GL_DST_COLOR|(RdkR,GdkG,BdkB)|AdkA|
+|GL_ONE_MINUS_DST_COLOR|(1,1,1)−(RdkR,GdkG,BdkB)|1−AdkA|
+|GL_SRC_ALPHA|(As0kA,As0kA,As0kA)|As0kA|
+|GL_ONE_MINUS_SRC_ALPHA|(1,1,1)−(As0kA,As0kA,As0kA)|1−As0kA|
+|GL_DST_ALPHA|(AdkA,AdkA,AdkA)|AdkA|
+|GL_ONE_MINUS_DST_ALPHA|(1,1,1)−(AdkA,AdkA,AdkA)|1−AdkA|
+|GL_CONSTANT_COLOR|(Rc,Gc,Bc)|Ac|
+|GL_ONE_MINUS_CONSTANT_COLOR|(1,1,1)−(Rc,Gc,Bc)|1−Ac|
+|GL_CONSTANT_ALPHA|(Ac,Ac,Ac)|Ac|
+|GL_ONE_MINUS_CONSTANT_ALPHA|(1,1,1)−(Ac,Ac,Ac)|1−Ac|
+|GL_SRC_ALPHA_SATURATE|(i,i,i)|1|
+|GL_SRC1_COLOR|(Rs1kR,Gs1kG,Bs1kB)|As1kA|
+|GL_ONE_MINUS_SRC1_COLOR|(1,1,1,1)−(Rs1kR,Gs1kG,Bs1kB)|1−As1kA|
+|GL_SRC1_ALPHA|(As1kA,As1kA,As1kA)|As1kA|
+|GL_ONE_MINUS_SRC1_ALPHA|(1,1,1)−(As1kA,As1kA,As1kA)|1−As1kA|
+
+In the table, `i=min(As,1−Ad)`.
+
+To determine the blended RGBA values of a pixel, the system uses the following equations:
+`Rd=min(kR,RssR+RddR)`
+`Gd=min(kG,GssG+GddG)`
+`Bd=min(kB,BssB+BddB)`
+`Ad=min(kA,AssA+AddA)`
+
+Despite the apparent precision of the above equations, blending arithmetic is not exactly
+specified, because blending operates with imprecise integer color values. However, a blend factor
+that should be equal to `1` is guaranteed not to modify its multiplicand, and a blend factor equal
+to 0 reduces its multiplicand to 0. For example, when srcRGB is `GL_SRC_ALPHA`, dstRGB is `GL_ONE_MINUS_SRC_ALPHA`,
+and `As` is equal to `kA`, the equations reduce to simple replacement:
+
+`Rd=Rs`
+`Gd=Gs`
+`Bd=Bs`
+`Ad=As`
+
 ]],
     },
     dup = 0,
