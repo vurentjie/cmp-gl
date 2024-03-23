@@ -30563,12 +30563,12 @@ The possible methods are described in the following table. Each method defines f
 one each for red, green, blue, and alpha.
 
 In the table and in subsequent equations, first source, second source and destination color
-components are referred to as `(Rs0,Gs0,Bs0,As0)`, `(Rs1,Gs1,Bs1,As1)`, and `(Rd,Gd,Bd,Ad)`, respectively.
-The color specified by glBlendColor is referred to as `(Rc,Gc,Bc,Ac)`.
-They are understood to have integer values between 0 and `(kR,kG,kB,kA)`,
-where `kc=2mc−1` and `(mR,mG,mB,mA)` is the number of red, green, blue, and alpha bitplanes.
+components are referred to as `(Rs⁰,Gs⁰,Bs⁰,As⁰)`, `(Rs¹,Gs¹,Bs¹,As¹)`, and `(Rᵈ,Gᵈ,Bᵈ,Aᵈ)`, respectively.
+The color specified by glBlendColor is referred to as `(Rᶜ,Gᶜ,Bᶜ,Aᶜ)`.
+They are understood to have integer values between 0 and `(kᴿ,kᴳ,kᴮ,kᴬ)`,
+where `kᶜ=2ᵐᶜ−1` and `(mᴿ,mᴳ,mᴮ,mᴬ)` is the number of red, green, blue, and alpha bitplanes.
 
-Source and destination scale factors are referred to as `(sR,sG,sB,sA)` and `(dR,dG,dB,dA)`.
+Source and destination scale factors are referred to as `(sᴿ,sᴳ,sᴮ,sᴬ)` and `(dᴿ,dᴳ,dᴮ,dᴬ)`.
 All scale factors have range [0,1].
 
 ┌───────────────────────────┬────────────────────────────────┬────────────┐
@@ -30612,13 +30612,13 @@ All scale factors have range [0,1].
 ├───────────────────────────┼────────────────────────────────┼────────────┤
 │GL_ONE_MINUS_SRC1_ALPHA    │(1,1,1)−(As¹/kᴬ,As¹/kᴬ,As¹/kᴬ)  │1−(As¹/kᴬ)  │
 └───────────────────────────┴────────────────────────────────┴────────────┘
-In the table, `i=min(As,1−Ad)`.
+In the table, `i=min(Aˢ,1−Aᵈ)`.
 
 To determine the blended RGBA values of a pixel, the system uses the following equations:
-`Rd=min(kR,RssR+RddR)`
-`Gd=min(kG,GssG+GddG)`
-`Bd=min(kB,BssB+BddB)`
-`Ad=min(kA,AssA+AddA)`
+`Rᵈ=min(kᴿ,Rˢsᴿ+Rᵈdᴿ)`
+`Gᵈ=min(kᴳ,Gˢsᴳ+Gᵈdᴳ)`
+`Bᵈ=min(kᴮ,Bˢsᴮ+Bᵈdᴮ)`
+`Aᵈ=min(kᴬ,Aˢsᴬ+Aᵈdᴬ)`
 
 Despite the apparent precision of the above equations, blending arithmetic is not exactly
 specified, because blending operates with imprecise integer color values. However, a blend factor
@@ -30626,14 +30626,14 @@ that should be equal to `1` is guaranteed not to modify its multiplicand, and a 
 to 0 reduces its multiplicand to 0. For example, when srcRGB is `GL_SRC_ALPHA`, dstRGB is `GL_ONE_MINUS_SRC_ALPHA`,
 and `As` is equal to `kA`, the equations reduce to simple replacement:
 
-`Rd=Rs`
-`Gd=Gs`
-`Bd=Bs`
-`Ad=As`
+`Rᵈ=Rˢ`
+`Gᵈ=Gˢ`
+`Bᵈ=Bˢ`
+`Aᵈ=Aˢ`
 ---
 ### Notes
 
-Incoming (source) alpha is correctly thought of as a material opacity, ranging from 1.0 (KA),
+Incoming (source) alpha is correctly thought of as a material opacity, ranging from 1.0 (Kᴬ),
 representing complete opacity, to 0.0 (0), representing complete transparency.
 
 When more than one color buffer is enabled for drawing, the GL performs blending separately for
