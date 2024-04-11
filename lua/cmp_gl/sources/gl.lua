@@ -67546,7 +67546,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FALSE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67556,7 +67555,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TRUE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67566,7 +67564,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BYTE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67576,7 +67573,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_UNSIGNED_BYTE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67586,7 +67582,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SHORT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67596,7 +67591,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_UNSIGNED_SHORT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67606,7 +67600,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67616,7 +67609,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_UNSIGNED_INT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67626,7 +67618,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FLOAT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67636,7 +67627,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_2_BYTES',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67646,7 +67636,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_3_BYTES',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67656,7 +67645,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_4_BYTES',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67666,7 +67654,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DOUBLE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67676,7 +67663,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_POINTS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67686,7 +67672,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINES',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67696,7 +67681,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINE_LOOP',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67706,7 +67690,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINE_STRIP',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67716,7 +67699,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TRIANGLES',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67726,7 +67708,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TRIANGLE_STRIP',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67736,7 +67717,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TRIANGLE_FAN',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67746,7 +67726,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_QUADS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67756,7 +67735,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_QUAD_STRIP',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67766,8 +67744,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_POLYGON',
   },
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -67777,7 +67753,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_VERTEX_ARRAY_POINTER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67787,7 +67762,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NORMAL_ARRAY_POINTER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67797,7 +67771,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_ARRAY_POINTER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67807,7 +67780,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INDEX_ARRAY_POINTER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67817,7 +67789,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_COORD_ARRAY_POINTER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67827,7 +67798,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_EDGE_FLAG_ARRAY_POINTER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67837,7 +67807,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_V2F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67847,7 +67816,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_V3F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67857,7 +67825,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_C4UB_V2F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67867,7 +67834,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_C4UB_V3F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67877,7 +67843,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_C3F_V3F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67887,7 +67852,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_N3F_V3F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67897,7 +67861,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_C4F_N3F_V3F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67907,7 +67870,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_T2F_V3F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67917,7 +67879,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_T4F_V4F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67927,7 +67888,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_T2F_C4UB_V3F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67937,7 +67897,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_T2F_C3F_V3F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67947,7 +67906,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_T2F_N3F_V3F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67957,7 +67915,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_T2F_C4F_N3F_V3F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67967,7 +67924,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_T4F_C4F_N3F_V4F',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67977,7 +67933,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ARRAY_BUFFER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67987,7 +67942,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ELEMENT_ARRAY_BUFFER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -67997,7 +67951,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ARRAY_BUFFER_BINDING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68007,7 +67960,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ELEMENT_ARRAY_BUFFER_BINDING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68017,7 +67969,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_VERTEX_ARRAY_BUFFER_BINDING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68027,7 +67978,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NORMAL_ARRAY_BUFFER_BINDING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68037,7 +67987,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_ARRAY_BUFFER_BINDING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68047,7 +67996,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INDEX_ARRAY_BUFFER_BINDING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68057,7 +68005,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68067,7 +68014,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_EDGE_FLAG_ARRAY_BUFFER_BINDING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68077,7 +68023,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STATIC_DRAW',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68087,7 +68032,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DYNAMIC_DRAW',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68097,7 +68041,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STREAM_DRAW',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68107,7 +68050,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STREAM_READ',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68117,7 +68059,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STREAM_COPY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68127,7 +68068,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STATIC_READ',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68137,7 +68077,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STATIC_COPY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68147,7 +68086,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DYNAMIC_READ',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68157,7 +68095,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DYNAMIC_COPY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68167,7 +68104,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MATRIX_MODE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68177,7 +68113,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MODELVIEW',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68187,7 +68122,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PROJECTION',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68197,7 +68131,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68207,7 +68140,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_POINT_SMOOTH',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68217,7 +68149,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_POINT_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68227,7 +68158,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_POINT_SIZE_GRANULARITY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68237,7 +68167,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_POINT_SIZE_RANGE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68247,7 +68176,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINE_SMOOTH',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68257,7 +68185,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINE_STIPPLE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68267,7 +68194,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINE_STIPPLE_PATTERN',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68277,7 +68203,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINE_STIPPLE_REPEAT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68287,7 +68212,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINE_WIDTH',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68297,7 +68221,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINE_WIDTH_GRANULARITY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68307,7 +68230,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINE_WIDTH_RANGE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68317,7 +68239,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_POINT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68327,7 +68248,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68337,7 +68257,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FILL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68347,7 +68266,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PIXEL_MAP_I_TO_I',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68357,7 +68275,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PIXEL_MAP_S_TO_S',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68367,7 +68284,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PIXEL_MAP_I_TO_R',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68377,7 +68293,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PIXEL_MAP_I_TO_G',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68387,7 +68302,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PIXEL_MAP_I_TO_B',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68397,7 +68311,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PIXEL_MAP_I_TO_A',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68407,7 +68320,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PIXEL_MAP_R_TO_R',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68417,7 +68329,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PIXEL_MAP_G_TO_G',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68427,7 +68338,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PIXEL_MAP_B_TO_B',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68437,7 +68347,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PIXEL_MAP_A_TO_A',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68447,7 +68356,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHTING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68457,7 +68365,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHT0',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68467,7 +68374,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHT1',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68477,7 +68383,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHT2',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68487,7 +68392,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHT3',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68497,7 +68401,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHT4',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68507,7 +68410,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHT5',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68517,7 +68419,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHT6',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68527,7 +68428,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHT7',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68537,7 +68437,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SPOT_EXPONENT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68547,7 +68446,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SPOT_CUTOFF',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68557,7 +68455,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_CONSTANT_ATTENUATION',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68567,7 +68464,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINEAR_ATTENUATION',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68577,7 +68473,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_QUADRATIC_ATTENUATION',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68587,7 +68482,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_AMBIENT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68597,7 +68491,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DIFFUSE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68607,7 +68500,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SPECULAR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68617,7 +68509,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SHININESS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68627,7 +68518,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_EMISSION',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68637,7 +68527,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_POSITION',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68647,7 +68536,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SPOT_DIRECTION',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68657,7 +68545,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_AMBIENT_AND_DIFFUSE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68667,7 +68554,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_INDEXES',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68677,7 +68563,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHT_MODEL_TWO_SIDE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68687,7 +68572,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHT_MODEL_LOCAL_VIEWER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68697,7 +68581,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LIGHT_MODEL_AMBIENT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68707,7 +68590,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FRONT_AND_BACK',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68717,7 +68599,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SHADE_MODEL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68727,7 +68608,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FLAT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68737,7 +68617,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SMOOTH',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68747,7 +68626,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_MATERIAL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68757,7 +68635,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_MATERIAL_FACE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68767,7 +68644,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_MATERIAL_PARAMETER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68777,7 +68653,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NORMALIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68787,7 +68662,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DEPTH_BITS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68797,7 +68671,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DEPTH_TEST',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68807,7 +68680,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DEPTH_CLEAR_VALUE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68817,7 +68689,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DEPTH_FUNC',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68827,7 +68698,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DEPTH_RANGE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68837,7 +68707,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DEPTH_WRITEMASK',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68847,7 +68716,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DEPTH_COMPONENT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68857,7 +68725,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DEPTH_TEXTURE_MODE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68867,7 +68734,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LESS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68877,7 +68743,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_GREATER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68887,7 +68752,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_EQUAL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68897,7 +68761,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NOTEQUAL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68907,7 +68770,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_GEQUAL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68917,7 +68779,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ALWAYS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68927,7 +68788,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_BITS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68937,7 +68797,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_TEST',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68947,7 +68806,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_CLEAR_VALUE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68957,7 +68815,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_FUNC',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68967,7 +68824,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_VALUE_MASK',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68977,7 +68833,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_FAIL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68987,7 +68842,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_PASS_DEPTH_FAIL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -68997,7 +68851,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_PASS_DEPTH_PASS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69007,7 +68860,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_REF',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69017,7 +68869,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_WRITEMASK',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69027,7 +68878,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_INDEX',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69037,7 +68887,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_KEEP',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69047,7 +68896,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_REPLACE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69057,7 +68905,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INCR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69067,7 +68914,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DECR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69077,7 +68923,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INVERT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69087,7 +68932,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_WIDTH',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69097,7 +68941,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_HEIGHT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69107,8 +68950,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_INTERNAL_FORMAT',
   },
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -69118,7 +68959,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_RED_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69128,7 +68968,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_GREEN_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69138,7 +68977,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_BLUE_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69148,7 +68986,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_ALPHA_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69158,7 +68995,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_LUMINANCE_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69168,7 +69004,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_INTENSITY_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69178,7 +69013,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_PRIORITY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69188,7 +69022,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_RESIDENT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69198,7 +69031,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_BINDING_1D',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69208,7 +69040,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_BINDING_2D',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69218,7 +69049,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_BINDING_3D',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69228,7 +69058,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_VERTEX_ARRAY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69238,7 +69067,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NORMAL_ARRAY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69248,7 +69076,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_ARRAY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69258,7 +69085,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INDEX_ARRAY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69268,7 +69094,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_COORD_ARRAY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69278,7 +69103,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_EDGE_FLAG_ARRAY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69288,7 +69112,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_VERTEX_ARRAY_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69298,7 +69121,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_VERTEX_ARRAY_TYPE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69308,7 +69130,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_VERTEX_ARRAY_STRIDE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69318,7 +69139,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NORMAL_ARRAY_TYPE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69328,7 +69148,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NORMAL_ARRAY_STRIDE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69338,7 +69157,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_ARRAY_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69348,7 +69166,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_ARRAY_TYPE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69358,7 +69175,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_ARRAY_STRIDE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69368,7 +69184,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INDEX_ARRAY_TYPE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69378,7 +69193,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INDEX_ARRAY_STRIDE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69388,7 +69202,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_COORD_ARRAY_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69398,7 +69211,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_COORD_ARRAY_TYPE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69408,7 +69220,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_COORD_ARRAY_STRIDE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69418,7 +69229,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_EDGE_FLAG_ARRAY_STRIDE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69428,7 +69238,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_MIN_FILTER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69438,7 +69247,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_MAG_FILTER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69448,7 +69256,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_WRAP_S',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69458,7 +69265,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_WRAP_T',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69468,7 +69274,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_BORDER_COLOR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69478,7 +69283,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_MIN_LOD',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69488,7 +69292,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_MAX_LOD',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69498,7 +69301,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_BASE_LEVEL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69508,7 +69310,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_MAX_LEVEL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69518,7 +69319,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_COMPARE_MODE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69528,7 +69328,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_COMPARE_FUNC',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69538,7 +69337,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_WRAP_R',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69548,7 +69346,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_CLAMP_TO_BORDER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69558,7 +69355,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_CLAMP_TO_EDGE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69568,7 +69364,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_EXTENSIONS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69578,7 +69373,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NO_ERROR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69588,7 +69382,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INVALID_ENUM',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69598,7 +69391,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INVALID_VALUE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69608,7 +69400,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INVALID_OPERATION',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69618,7 +69409,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STACK_OVERFLOW',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69628,7 +69418,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STACK_UNDERFLOW',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69638,7 +69427,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_OUT_OF_MEMORY',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69648,7 +69436,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_VENDOR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69658,7 +69445,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_RENDERER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69668,7 +69454,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_VERSION',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69678,7 +69463,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DEPTH_BUFFER_BIT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69688,7 +69472,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_BUFFER_BIT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69698,7 +69481,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_BUFFER_BIT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69708,7 +69490,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ZERO',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69718,7 +69499,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ONE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69728,7 +69508,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SRC_COLOR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69738,7 +69517,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ONE_MINUS_SRC_COLOR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69748,7 +69526,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SRC_ALPHA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69758,7 +69535,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ONE_MINUS_SRC_ALPHA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69768,7 +69544,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DST_ALPHA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69778,7 +69553,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ONE_MINUS_DST_ALPHA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69788,7 +69562,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DST_COLOR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69798,7 +69571,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ONE_MINUS_DST_COLOR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69808,7 +69580,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SRC_ALPHA_SATURATE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69818,7 +69589,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FUNC_ADD',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69828,7 +69598,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BLEND_EQUATION',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69838,7 +69607,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BLEND_EQUATION_RGB',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69848,7 +69616,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BLEND_EQUATION_ALPHA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69858,7 +69625,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FUNC_SUBTRACT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69868,7 +69634,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FUNC_REVERSE_SUBTRACT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69878,7 +69643,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BLEND_DST_RGB',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69888,7 +69652,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BLEND_SRC_RGB',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69898,7 +69661,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BLEND_DST_ALPHA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69908,7 +69670,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BLEND_SRC_ALPHA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69918,7 +69679,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_CONSTANT_COLOR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69928,7 +69688,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ONE_MINUS_CONSTANT_COLOR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69938,7 +69697,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_CONSTANT_ALPHA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69948,7 +69706,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ONE_MINUS_CONSTANT_ALPHA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69958,8 +69715,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BLEND_COLOR',
   },
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -69969,7 +69724,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BUFFER_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69979,7 +69733,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BUFFER_USAGE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69989,7 +69742,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_CURRENT_VERTEX_ATTRIB',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -69999,7 +69751,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FRONT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70009,8 +69760,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BACK',
   },
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -70020,7 +69769,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_2D',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70030,7 +69778,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_CULL_FACE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70040,7 +69787,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BLEND',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70050,8 +69796,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DITHER',
   },
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -70061,7 +69805,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SCISSOR_TEST',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70071,7 +69814,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_POLYGON_OFFSET_FILL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70081,7 +69823,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SAMPLE_ALPHA_TO_COVERAGE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70091,8 +69832,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SAMPLE_COVERAGE',
   },
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -70102,7 +69841,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_CW',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70112,7 +69850,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_CCW',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70122,7 +69859,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ALIASED_POINT_SIZE_RANGE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70132,7 +69868,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ALIASED_LINE_WIDTH_RANGE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70142,7 +69877,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_CULL_FACE_MODE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70152,8 +69886,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FRONT_FACE',
   },
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -70163,7 +69895,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_BACK_FUNC',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70173,7 +69904,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_BACK_FAIL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70183,7 +69913,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_BACK_PASS_DEPTH_FAIL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70193,7 +69922,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_BACK_PASS_DEPTH_PASS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70203,7 +69931,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_BACK_REF',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70213,7 +69940,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_BACK_VALUE_MASK',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70223,7 +69949,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_STENCIL_BACK_WRITEMASK',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70233,7 +69958,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_VIEWPORT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70243,7 +69967,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SCISSOR_BOX',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70253,7 +69976,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_CLEAR_VALUE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70263,7 +69985,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COLOR_WRITEMASK',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70273,7 +69994,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_UNPACK_ALIGNMENT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70283,7 +70003,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_PACK_ALIGNMENT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70293,7 +70012,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MAX_TEXTURE_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70303,7 +70021,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MAX_VIEWPORT_DIMS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70313,7 +70030,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SUBPIXEL_BITS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70323,7 +70039,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_RED_BITS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70333,7 +70048,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_GREEN_BITS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70343,7 +70057,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_BLUE_BITS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70353,8 +70066,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ALPHA_BITS',
   },
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -70364,7 +70075,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_POLYGON_OFFSET_UNITS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70374,8 +70084,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_POLYGON_OFFSET_FACTOR',
   },
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -70385,7 +70093,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SAMPLE_BUFFERS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70395,7 +70102,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SAMPLES',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70405,7 +70111,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SAMPLE_COVERAGE_VALUE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70415,7 +70120,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SAMPLE_COVERAGE_INVERT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70425,7 +70129,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NUM_COMPRESSED_TEXTURE_FORMATS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70435,7 +70138,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_COMPRESSED_TEXTURE_FORMATS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70445,7 +70147,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DONT_CARE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70455,7 +70156,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FASTEST',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70465,7 +70165,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NICEST',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70475,9 +70174,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_GENERATE_MIPMAP_HINT',
   },
-
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -70487,8 +70183,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FIXED',
   },
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -70498,7 +70192,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ALPHA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70508,7 +70201,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_RGB',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70518,7 +70210,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_RGBA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70528,7 +70219,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LUMINANCE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70538,7 +70228,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LUMINANCE_ALPHA',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70548,7 +70237,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_UNSIGNED_SHORT_4_4_4_4',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70558,7 +70246,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_UNSIGNED_SHORT_5_5_5_1',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70568,7 +70255,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_UNSIGNED_SHORT_5_6_5',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70578,7 +70264,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_FRAGMENT_SHADER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70588,7 +70273,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_VERTEX_SHADER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70598,7 +70282,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MAX_VERTEX_ATTRIBS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70608,7 +70291,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MAX_VERTEX_UNIFORM_VECTORS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70618,7 +70300,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MAX_VARYING_VECTORS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70628,7 +70309,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70638,7 +70318,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70648,7 +70327,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MAX_TEXTURE_IMAGE_UNITS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70658,7 +70336,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MAX_FRAGMENT_UNIFORM_VECTORS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70668,7 +70345,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SHADER_TYPE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70678,7 +70354,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DELETE_STATUS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70688,7 +70363,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINK_STATUS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70698,7 +70372,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_VALIDATE_STATUS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70708,7 +70381,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ATTACHED_SHADERS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70718,7 +70390,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ACTIVE_UNIFORMS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70728,7 +70399,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ACTIVE_UNIFORM_MAX_LENGTH',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70738,7 +70408,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ACTIVE_ATTRIBUTES',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70748,7 +70417,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_ACTIVE_ATTRIBUTE_MAX_LENGTH',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70758,7 +70426,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_SHADING_LANGUAGE_VERSION',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70768,7 +70435,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_CURRENT_PROGRAM',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70778,8 +70444,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NEVER',
   },
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -70789,10 +70453,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LEQUAL',
   },
-
-
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -70802,7 +70462,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_INCR_WRAP',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70812,7 +70471,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_DECR_WRAP',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70822,7 +70480,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NEAREST',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70832,7 +70489,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINEAR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70842,7 +70498,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NEAREST_MIPMAP_NEAREST',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70852,7 +70507,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINEAR_MIPMAP_NEAREST',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70862,7 +70516,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_NEAREST_MIPMAP_LINEAR',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70872,9 +70525,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_LINEAR_MIPMAP_LINEAR',
   },
-
-
-
   {
     documentation = {
       kind = 'markdown',
@@ -70884,7 +70534,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_CUBE_MAP',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70894,7 +70543,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_BINDING_CUBE_MAP',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70904,7 +70552,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_CUBE_MAP_POSITIVE_X',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70914,7 +70561,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_CUBE_MAP_NEGATIVE_X',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70924,7 +70570,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_CUBE_MAP_POSITIVE_Y',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70934,7 +70579,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_CUBE_MAP_NEGATIVE_Y',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70944,7 +70588,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_CUBE_MAP_POSITIVE_Z',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70954,7 +70597,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE_CUBE_MAP_NEGATIVE_Z',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70964,7 +70606,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_MAX_CUBE_MAP_TEXTURE_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70974,7 +70615,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE0',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70984,7 +70624,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE1',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -70994,7 +70633,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE2',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71004,7 +70642,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE3',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71014,7 +70651,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE4',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71024,7 +70660,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE5',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71034,7 +70669,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE6',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71044,7 +70678,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE7',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71054,7 +70687,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE8',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71064,7 +70696,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE9',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71074,7 +70705,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE10',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71084,7 +70714,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE11',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71103,7 +70732,6 @@ June 1999. https://opencontent.org/openpub/.
     kind=kinds.Constant,
     label ='GL_TEXTURE13',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71113,7 +70741,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE14',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71123,7 +70750,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE15',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71133,7 +70759,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE16',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71143,7 +70768,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE17',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71153,7 +70777,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE18',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71163,7 +70786,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE19',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71173,7 +70795,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE20',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71183,7 +70804,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE21',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71193,7 +70813,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE22',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71203,7 +70822,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE23',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71213,7 +70831,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE24',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71223,7 +70840,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE25',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71233,7 +70849,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE26',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71243,7 +70858,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE27',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71253,7 +70867,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE28',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71263,7 +70876,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE29',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71273,7 +70885,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE30',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71283,7 +70894,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_TEXTURE31',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71293,7 +70903,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_ACTIVE_TEXTURE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71303,7 +70912,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_REPEAT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71313,7 +70921,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_MIRRORED_REPEAT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71323,7 +70930,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FLOAT_VEC2',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71333,7 +70939,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FLOAT_VEC3',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71343,7 +70948,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FLOAT_VEC4',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71353,7 +70957,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_INT_VEC2',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71363,7 +70966,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_INT_VEC3',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71373,7 +70975,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_INT_VEC4',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71383,7 +70984,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_BOOL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71393,7 +70993,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_BOOL_VEC2',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71403,7 +71002,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_BOOL_VEC3',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71413,7 +71011,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_BOOL_VEC4',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71423,7 +71020,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FLOAT_MAT2',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71433,7 +71029,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FLOAT_MAT3',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71443,7 +71038,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FLOAT_MAT4',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71453,7 +71047,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_SAMPLER_2D',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71463,7 +71056,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_SAMPLER_CUBE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71473,7 +71065,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_VERTEX_ATTRIB_ARRAY_ENABLED',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71483,7 +71074,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_VERTEX_ATTRIB_ARRAY_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71493,7 +71083,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_VERTEX_ATTRIB_ARRAY_STRIDE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71503,7 +71092,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_VERTEX_ATTRIB_ARRAY_TYPE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71513,7 +71101,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_VERTEX_ATTRIB_ARRAY_NORMALIZED',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71523,7 +71110,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_VERTEX_ATTRIB_ARRAY_POINTER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71533,7 +71119,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71543,7 +71128,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_IMPLEMENTATION_COLOR_READ_TYPE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71553,7 +71137,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_IMPLEMENTATION_COLOR_READ_FORMAT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71563,7 +71146,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_COMPILE_STATUS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71573,7 +71155,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_LOW_FLOAT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71583,7 +71164,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_MEDIUM_FLOAT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71593,7 +71173,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_HIGH_FLOAT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71603,7 +71182,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_LOW_INT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71613,7 +71191,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_MEDIUM_INT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71623,7 +71200,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_HIGH_INT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71633,7 +71209,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FRAMEBUFFER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71643,7 +71218,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RENDERBUFFER',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71653,7 +71227,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RGBA4',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71663,7 +71236,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RGB5_A1',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71673,7 +71245,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RGB565',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71683,7 +71254,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_DEPTH_COMPONENT16',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71693,7 +71263,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_STENCIL_INDEX8',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71703,7 +71272,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RENDERBUFFER_WIDTH',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71713,7 +71281,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RENDERBUFFER_HEIGHT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71723,7 +71290,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RENDERBUFFER_INTERNAL_FORMAT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71733,7 +71299,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RENDERBUFFER_RED_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71743,7 +71308,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RENDERBUFFER_GREEN_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71753,7 +71317,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RENDERBUFFER_BLUE_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71763,7 +71326,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RENDERBUFFER_ALPHA_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71773,7 +71335,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RENDERBUFFER_DEPTH_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71783,7 +71344,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RENDERBUFFER_STENCIL_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71793,7 +71353,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71803,7 +71362,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71813,7 +71371,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71823,7 +71380,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71833,7 +71389,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_COLOR_ATTACHMENT0',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71843,7 +71398,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_DEPTH_ATTACHMENT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71853,7 +71407,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_STENCIL_ATTACHMENT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71863,7 +71416,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FRAMEBUFFER_COMPLETE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71873,7 +71425,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71883,7 +71434,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71893,7 +71443,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71903,7 +71452,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FRAMEBUFFER_UNSUPPORTED',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71913,7 +71461,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_FRAMEBUFFER_BINDING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71923,7 +71470,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_RENDERBUFFER_BINDING',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71933,7 +71479,6 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_MAX_RENDERBUFFER_SIZE',
   },
-
   {
     documentation = {
       kind = 'markdown',
@@ -71943,13 +71488,2344 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Constant,
     label = 'GL_INVALID_FRAMEBUFFER_OPERATION',
   },
-
-
-
-
-
-
-
-
-
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8589 // Source 1 alpha. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SRC1_ALPHA',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8914 // Number of samples passed in the depth test. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SAMPLES_PASSED',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82E9 // Number of shading language versions supported. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NUM_SHADING_LANGUAGE_VERSIONS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x874E // Vertex attribute array long. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_ATTRIB_ARRAY_LONG',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9274 // Compressed RGB8 ETC2 texture format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPRESSED_RGB8_ETC2',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9275 // Compressed sRGB8 ETC2 texture format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPRESSED_SRGB8_ETC2',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9276 // Compressed RGB8 Punchthrough Alpha1 ETC2 texture format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9277 // Compressed sRGB8 Punchthrough Alpha1 ETC2 texture format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9278 // Compressed RGBA8 ETC2 EAC texture format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPRESSED_RGBA8_ETC2_EAC',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9279 // Compressed sRGB8 Alpha8 ETC2 EAC texture format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPRESSED_SRGB8_ALPHA8_ETC2_EAC',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9270 // Compressed R11 EAC texture format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPRESSED_R11_EAC',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9271 // Compressed Signed R11 EAC texture format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPRESSED_SIGNED_R11_EAC',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9272 // Compressed RG11 EAC texture format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPRESSED_RG11_EAC',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9273 // Compressed Signed RG11 EAC texture format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPRESSED_SIGNED_RG11_EAC',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8D69 // Fixed index primitive restart. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PRIMITIVE_RESTART_FIXED_INDEX',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8D6A // Any samples passed with conservative test. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ANY_SAMPLES_PASSED_CONSERVATIVE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8D6B // Maximum element index. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_ELEMENT_INDEX',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x91B9 // Compute shader. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPUTE_SHADER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x91BB // Maximum compute uniform blocks. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMPUTE_UNIFORM_BLOCKS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x91BC // Maximum compute texture image units. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMPUTE_TEXTURE_IMAGE_UNITS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x91BD // Maximum compute image uniforms. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMPUTE_IMAGE_UNIFORMS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8262 // Maximum compute shared memory size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMPUTE_SHARED_MEMORY_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8263 // Maximum compute uniform components. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMPUTE_UNIFORM_COMPONENTS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8264 // Maximum compute atomic counter buffers. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8265 // Maximum compute atomic counters. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMPUTE_ATOMIC_COUNTERS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8266 // Maximum combined compute uniform components. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90EB // Maximum compute work group invocations. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMPUTE_WORK_GROUP_INVOCATIONS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x91BE // Maximum compute work group count. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMPUTE_WORK_GROUP_COUNT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x91BF // Maximum compute work group size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMPUTE_WORK_GROUP_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8267 // Compute work group size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPUTE_WORK_GROUP_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90EC // Uniform block referenced by compute shader. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90ED // Atomic counter buffer referenced by compute shader. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90EE // Dispatch indirect buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DISPATCH_INDIRECT_BUFFER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90EF // Dispatch indirect buffer binding. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DISPATCH_INDIRECT_BUFFER_BINDING',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x00000020 // Compute shader bit. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPUTE_SHADER_BIT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8242 // Debug output synchronous. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_OUTPUT_SYNCHRONOUS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8243 // Debug next logged message length. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8244 // Debug callback function. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_CALLBACK_FUNCTION',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8245 // Debug callback user parameter. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_CALLBACK_USER_PARAM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8246 // Debug source API. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_SOURCE_API',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8247 // Debug source window system. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_SOURCE_WINDOW_SYSTEM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8248 // Debug source shader compiler. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_SOURCE_SHADER_COMPILER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8249 // Debug source third party. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_SOURCE_THIRD_PARTY',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x824A // Debug source application. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_SOURCE_APPLICATION',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x824B // Debug source other. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_SOURCE_OTHER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x824C // Debug type error. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_TYPE_ERROR',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x824D // Debug type deprecated behavior. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x824E // Debug type undefined behavior. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x824F // Debug type portability. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_TYPE_PORTABILITY',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8250 // Debug type performance. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_TYPE_PERFORMANCE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8251 // Debug type other. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_TYPE_OTHER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9143 // Maximum debug message length. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_DEBUG_MESSAGE_LENGTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9144 // Maximum debug logged messages. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_DEBUG_LOGGED_MESSAGES',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9145 // Debug logged messages. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_LOGGED_MESSAGES',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9146 // Debug severity high. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_SEVERITY_HIGH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9147 // Debug severity medium. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_SEVERITY_MEDIUM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9148 // Debug severity low. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_SEVERITY_LOW',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8268 // Debug type marker. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_TYPE_MARKER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8269 // Debug type push group. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_TYPE_PUSH_GROUP',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x826A // Debug type pop group. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_TYPE_POP_GROUP',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x826B // Debug severity notification. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_SEVERITY_NOTIFICATION',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x826C // Maximum debug group stack depth. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_DEBUG_GROUP_STACK_DEPTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x826D // Debug group stack depth. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_GROUP_STACK_DEPTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82E0 // Buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BUFFER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82E1 // Shader. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82E2 // Program. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PROGRAM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82E3 // Query. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_QUERY',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82E4 // Program pipeline. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PROGRAM_PIPELINE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82E6 // Sampler. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SAMPLER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82E8 // Maximum label length. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_LABEL_LENGTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92E0 // Debug output. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEBUG_OUTPUT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x00000002 // Context flag debug bit. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CONTEXT_FLAG_DEBUG_BIT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x826E // Maximum uniform locations. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_UNIFORM_LOCATIONS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9310 // Default framebuffer width. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAMEBUFFER_DEFAULT_WIDTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9311 // Default framebuffer height. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAMEBUFFER_DEFAULT_HEIGHT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9312 // Default framebuffer layers. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAMEBUFFER_DEFAULT_LAYERS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9313 // Default framebuffer samples. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAMEBUFFER_DEFAULT_SAMPLES',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9314 // Default framebuffer fixed sample locations. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9315 // Maximum framebuffer width. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_FRAMEBUFFER_WIDTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9316 // Maximum framebuffer height. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_FRAMEBUFFER_HEIGHT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9317 // Maximum framebuffer layers. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_FRAMEBUFFER_LAYERS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9318 // Maximum framebuffer samples. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_FRAMEBUFFER_SAMPLES',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x826F // Internal format supported. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_SUPPORTED',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8270 // Internal format preferred. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_PREFERRED',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8271 // Internal format red size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_RED_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8272 // Internal format green size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_GREEN_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8273 // Internal format blue size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_BLUE_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8274 // Internal format alpha size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_ALPHA_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8275 // Internal format depth size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_DEPTH_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8276 // Internal format stencil size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_STENCIL_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8277 // Internal format shared size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_SHARED_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8278 // Internal format red type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_RED_TYPE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8279 // Internal format green type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_GREEN_TYPE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x827A // Internal format blue type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_BLUE_TYPE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x827B // Internal format alpha type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_ALPHA_TYPE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x827C // Internal format depth type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_DEPTH_TYPE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x827D // Internal format stencil type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INTERNALFORMAT_STENCIL_TYPE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x827E // Maximum width. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_WIDTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x827F // Maximum height. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_HEIGHT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8280 // Maximum depth. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_DEPTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8281 // Maximum layers. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_LAYERS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8282 // Maximum combined dimensions. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMBINED_DIMENSIONS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8283 // Color components. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_COMPONENTS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8284 // Depth components. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_COMPONENTS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8285 // Stencil components. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_COMPONENTS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8286 // Color renderable. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_RENDERABLE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8287 // Depth renderable. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_RENDERABLE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8288 // Stencil renderable. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_RENDERABLE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8289 // Framebuffer renderable. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAMEBUFFER_RENDERABLE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x828A // Framebuffer renderable layered. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAMEBUFFER_RENDERABLE_LAYERED',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x828B // Framebuffer blend. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAMEBUFFER_BLEND',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x828C // Read pixels. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_READ_PIXELS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x828D // Read pixels format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_READ_PIXELS_FORMAT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x828E // Read pixels type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_READ_PIXELS_TYPE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x828F // Texture image format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_IMAGE_FORMAT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8290 // Texture image type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_IMAGE_TYPE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8291 // Get texture image format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_GET_TEXTURE_IMAGE_FORMAT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8292 // Get texture image type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_GET_TEXTURE_IMAGE_TYPE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8293 // Mipmap. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MIPMAP',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8294 // Manual generate mipmap. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MANUAL_GENERATE_MIPMAP',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8295 // Auto generate mipmap. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_AUTO_GENERATE_MIPMAP',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8296 // Color encoding. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_ENCODING',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8297 // sRGB read. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SRGB_READ',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8298 // sRGB write. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SRGB_WRITE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x829A // Filter. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FILTER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x829B // Vertex texture. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_TEXTURE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x829C // Tessellation control texture. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TESS_CONTROL_TEXTURE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x829D // Tessellation evaluation texture. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TESS_EVALUATION_TEXTURE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x829E // Geometry texture. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_GEOMETRY_TEXTURE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x829F // Fragment texture. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAGMENT_TEXTURE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82A0 // Compute texture. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPUTE_TEXTURE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82A1 // Texture shadow. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_SHADOW',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82A2 // Texture gather. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_GATHER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82A3 // Texture gather shadow. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_GATHER_SHADOW',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82A4 // Shader image load. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER_IMAGE_LOAD',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82A5 // Shader image store. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER_IMAGE_STORE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82A6 // Shader image atomic. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER_IMAGE_ATOMIC',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82A7 // Image texel size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_TEXEL_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82A8 // Image compatibility class. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_COMPATIBILITY_CLASS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82A9 // Image pixel format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_PIXEL_FORMAT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82AA // Image pixel type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_PIXEL_TYPE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82AC // Simultaneous texture and depth test. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82AD // Simultaneous texture and stencil test. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82AE // Simultaneous texture and depth write. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82AF // Simultaneous texture and stencil write. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82B1 // Texture compressed block width. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_COMPRESSED_BLOCK_WIDTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82B2 // Texture compressed block height. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_COMPRESSED_BLOCK_HEIGHT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82B3 // Texture compressed block size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_COMPRESSED_BLOCK_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82B4 // Clear buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CLEAR_BUFFER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82B5 // Texture view. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_VIEW',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82B6 // View compatibility class. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_COMPATIBILITY_CLASS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82B7 // Full support. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FULL_SUPPORT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82B8 // Caveat support. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CAVEAT_SUPPORT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82B9 // Image class 4x32. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_CLASS_4_X_32',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82BA // Image class 2x32. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_CLASS_2_X_32',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82BB // Image class 1x32. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_CLASS_1_X_32',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82BC // Image class 4x16. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_CLASS_4_X_16',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82BD // Image class 2x16. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_CLASS_2_X_16',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82BE // Image class 1x16. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_CLASS_1_X_16',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82BF // Image class 4x8. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_CLASS_4_X_8',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82C0 // Image class 2x8. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_CLASS_2_X_8',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82C1 // Image class 1x8. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_CLASS_1_X_8',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82C2 // Image class 11-11-10. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_CLASS_11_11_10',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82C3 // Image class 10-10-10-2. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IMAGE_CLASS_10_10_10_2',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82C4 // View class 128 bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_128_BITS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82C5 // View class 96 bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_96_BITS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82C6 // View class 64 bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_64_BITS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82C7 // View class 48 bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_48_BITS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82C8 // View class 32 bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_32_BITS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82C9 // View class 24 bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_24_BITS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82CA // View class 16 bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_16_BITS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82CB // View class 8 bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_8_BITS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82CC // View class S3TC DXT1 RGB. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_S3TC_DXT1_RGB',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82CD // View class S3TC DXT1 RGBA. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_S3TC_DXT1_RGBA',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82CE // View class S3TC DXT3 RGBA. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_S3TC_DXT3_RGBA',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82CF // View class S3TC DXT5 RGBA. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_S3TC_DXT5_RGBA',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82D0 // View class RGTC1 RED. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_RGTC1_RED',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82D1 // View class RGTC2 RG. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_RGTC2_RG',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82D2 // View class BPTC UNORM. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_BPTC_UNORM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82D3 // View class BPTC FLOAT. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEW_CLASS_BPTC_FLOAT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92E1 // Uniform. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_UNIFORM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92E2 // Uniform block. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_UNIFORM_BLOCK',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92E3 // Program input. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PROGRAM_INPUT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92E4 // Program output. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PROGRAM_OUTPUT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92E5 // Buffer variable. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BUFFER_VARIABLE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92E6 // Shader storage block. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER_STORAGE_BLOCK',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92E8 // Vertex subroutine. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_SUBROUTINE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92E9 // Tessellation control subroutine. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TESS_CONTROL_SUBROUTINE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92EA // Tessellation evaluation subroutine. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TESS_EVALUATION_SUBROUTINE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92EB // Geometry subroutine. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_GEOMETRY_SUBROUTINE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92EC // Fragment subroutine. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAGMENT_SUBROUTINE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92ED // Compute subroutine. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPUTE_SUBROUTINE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92EE // Vertex subroutine uniform. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_SUBROUTINE_UNIFORM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92EF // Tessellation control subroutine uniform. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TESS_CONTROL_SUBROUTINE_UNIFORM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92F0 // Tessellation evaluation subroutine uniform. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TESS_EVALUATION_SUBROUTINE_UNIFORM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92F1 // Geometry subroutine uniform. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_GEOMETRY_SUBROUTINE_UNIFORM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92F2 // Fragment subroutine uniform. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAGMENT_SUBROUTINE_UNIFORM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92F3 // Compute subroutine uniform. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPUTE_SUBROUTINE_UNIFORM',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92F4 // Transform feedback varying. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TRANSFORM_FEEDBACK_VARYING',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92F5 // Active resources. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ACTIVE_RESOURCES',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92F6 // Maximum name length. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_NAME_LENGTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92F7 // Maximum number of active variables. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_NUM_ACTIVE_VARIABLES',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92F8 // Maximum number of compatible subroutines. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_NUM_COMPATIBLE_SUBROUTINES',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92F9 // Name length. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NAME_LENGTH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92FA // Type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TYPE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92FB // Array size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ARRAY_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92FC // Offset. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_OFFSET',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92FD // Block index. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BLOCK_INDEX',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92FE // Array stride. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ARRAY_STRIDE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92FF // Matrix stride. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MATRIX_STRIDE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9300 // Is row major. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IS_ROW_MAJOR',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9301 // Atomic counter buffer index. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ATOMIC_COUNTER_BUFFER_INDEX',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9302 // Buffer binding. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BUFFER_BINDING',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9303 // Buffer data size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BUFFER_DATA_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9304 // Number of active variables. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NUM_ACTIVE_VARIABLES',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9305 // Active variables. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ACTIVE_VARIABLES',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9306 // Referenced by vertex shader. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_REFERENCED_BY_VERTEX_SHADER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9307 // Referenced by tessellation control shader. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_REFERENCED_BY_TESS_CONTROL_SHADER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9308 // Referenced by tessellation evaluation shader. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_REFERENCED_BY_TESS_EVALUATION_SHADER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x9309 // Referenced by geometry shader. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_REFERENCED_BY_GEOMETRY_SHADER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x930A // Referenced by fragment shader. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_REFERENCED_BY_FRAGMENT_SHADER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x930B // Referenced by compute shader. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_REFERENCED_BY_COMPUTE_SHADER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x930C // Top level array size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TOP_LEVEL_ARRAY_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x930D // Top level array stride. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TOP_LEVEL_ARRAY_STRIDE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x930E // Location. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LOCATION',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x930F // Location index. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LOCATION_INDEX',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x92E7 // Is per patch. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_IS_PER_PATCH',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90D2 // Shader storage buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER_STORAGE_BUFFER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90D3 // Shader storage buffer binding. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER_STORAGE_BUFFER_BINDING',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90D4 // Shader storage buffer start. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER_STORAGE_BUFFER_START',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90D5 // Shader storage buffer size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER_STORAGE_BUFFER_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90D6 // Maximum vertex shader storage blocks. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90D7 // Maximum geometry shader storage blocks. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90D8 // Maximum tessellation control shader storage blocks. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90D9 // Maximum tessellation evaluation shader storage blocks. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90DA // Maximum fragment shader storage blocks. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_FRAGMENT_SHADER_STORAGE_BLOCKS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90DB // Maximum compute shader storage blocks. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMPUTE_SHADER_STORAGE_BLOCKS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90DC // Maximum combined shader storage blocks. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMBINED_SHADER_STORAGE_BLOCKS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90DD // Maximum shader storage buffer bindings. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90DE // Maximum shader storage block size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_SHADER_STORAGE_BLOCK_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90DF // Shader storage buffer offset alignment. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x00002000 // Shader storage barrier bit. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER_STORAGE_BARRIER_BIT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8F39 // Maximum combined shader output resources. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMBINED_SHADER_OUTPUT_RESOURCES',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x90EA // Depth stencil texture mode. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_STENCIL_TEXTURE_MODE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x919D // Texture buffer offset. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_BUFFER_OFFSET',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x919E // Texture buffer size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_BUFFER_SIZE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x919F // Texture buffer offset alignment. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82DB // Texture view minimum level. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_VIEW_MIN_LEVEL',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82DC // Texture view number of levels. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_VIEW_NUM_LEVELS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82DD // Texture view minimum layer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_VIEW_MIN_LAYER',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82DE // Texture view number of layers. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_VIEW_NUM_LAYERS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82DF // Texture immutable levels. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_IMMUTABLE_LEVELS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82D4 // Vertex attribute binding. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_ATTRIB_BINDING',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82D5 // Vertex attribute relative offset. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_ATTRIB_RELATIVE_OFFSET',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82D6 // Vertex binding divisor. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_BINDING_DIVISOR',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82D7 // Vertex binding offset. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_BINDING_OFFSET',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82D8 // Vertex binding stride. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_BINDING_STRIDE',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82D9 // Maximum vertex attribute relative offset. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_VERTEX_ATTRIB_RELATIVE_OFFSET',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x82DA // Maximum vertex attribute bindings. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_VERTEX_ATTRIB_BINDINGS',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 0x8F4F // Vertex binding buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_BINDING_BUFFER',
+  },
 }
