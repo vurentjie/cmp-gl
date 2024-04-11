@@ -71491,7 +71491,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8589 // Source 1 alpha. ]],
+      value = [[Source 1 alpha. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71500,7 +71500,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8914 // Number of samples passed in the depth test. ]],
+      value = [[Number of samples passed in the depth test. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71509,7 +71509,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82E9 // Number of shading language versions supported. ]],
+      value = [[Number of shading language versions supported. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71518,7 +71518,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x874E // Vertex attribute array long. ]],
+      value = [[Vertex attribute array long. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71527,7 +71527,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9274 // Compressed RGB8 ETC2 texture format. ]],
+      value = [[Compressed RGB8 ETC2 texture format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71536,7 +71536,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9275 // Compressed sRGB8 ETC2 texture format. ]],
+      value = [[Compressed sRGB8 ETC2 texture format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71545,7 +71545,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9276 // Compressed RGB8 Punchthrough Alpha1 ETC2 texture format. ]],
+      value = [[Compressed RGB8 Punchthrough Alpha1 ETC2 texture format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71554,7 +71554,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9277 // Compressed sRGB8 Punchthrough Alpha1 ETC2 texture format. ]],
+      value = [[Compressed sRGB8 Punchthrough Alpha1 ETC2 texture format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71563,7 +71563,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9278 // Compressed RGBA8 ETC2 EAC texture format. ]],
+      value = [[Compressed RGBA8 ETC2 EAC texture format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71572,7 +71572,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9279 // Compressed sRGB8 Alpha8 ETC2 EAC texture format. ]],
+      value = [[Compressed sRGB8 Alpha8 ETC2 EAC texture format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71581,7 +71581,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9270 // Compressed R11 EAC texture format. ]],
+      value = [[Compressed R11 EAC texture format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71590,7 +71590,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9271 // Compressed Signed R11 EAC texture format. ]],
+      value = [[Compressed Signed R11 EAC texture format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71599,7 +71599,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9272 // Compressed RG11 EAC texture format. ]],
+      value = [[Compressed RG11 EAC texture format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71608,7 +71608,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9273 // Compressed Signed RG11 EAC texture format. ]],
+      value = [[Compressed Signed RG11 EAC texture format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71617,7 +71617,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8D69 // Fixed index primitive restart. ]],
+      value = [[Fixed index primitive restart. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71626,7 +71626,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8D6A // Any samples passed with conservative test. ]],
+      value = [[Any samples passed with conservative test. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71635,7 +71635,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8D6B // Maximum element index. ]],
+      value = [[Maximum element index. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71644,7 +71644,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x91B9 // Compute shader. ]],
+      value = [[Compute shader. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71653,7 +71653,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x91BB // Maximum compute uniform blocks. ]],
+      value = [[Maximum compute uniform blocks. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71662,7 +71662,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x91BC // Maximum compute texture image units. ]],
+      value = [[Maximum compute texture image units. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71671,7 +71671,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x91BD // Maximum compute image uniforms. ]],
+      value = [[Maximum compute image uniforms. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71680,7 +71680,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8262 // Maximum compute shared memory size. ]],
+      value = [[Maximum compute shared memory size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71689,7 +71689,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8263 // Maximum compute uniform components. ]],
+      value = [[Maximum compute uniform components. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71698,7 +71698,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8264 // Maximum compute atomic counter buffers. ]],
+      value = [[Maximum compute atomic counter buffers. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71707,7 +71707,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8265 // Maximum compute atomic counters. ]],
+      value = [[Maximum compute atomic counters. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71716,7 +71716,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8266 // Maximum combined compute uniform components. ]],
+      value = [[Maximum combined compute uniform components. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71725,7 +71725,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90EB // Maximum compute work group invocations. ]],
+      value = [[Maximum compute work group invocations. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71734,7 +71734,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x91BE // Maximum compute work group count. ]],
+      value = [[Maximum compute work group count. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71743,7 +71743,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x91BF // Maximum compute work group size. ]],
+      value = [[Maximum compute work group size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71752,7 +71752,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8267 // Compute work group size. ]],
+      value = [[Compute work group size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71761,7 +71761,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90EC // Uniform block referenced by compute shader. ]],
+      value = [[Uniform block referenced by compute shader. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71770,7 +71770,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90ED // Atomic counter buffer referenced by compute shader. ]],
+      value = [[Atomic counter buffer referenced by compute shader. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71779,7 +71779,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90EE // Dispatch indirect buffer. ]],
+      value = [[Dispatch indirect buffer. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71788,7 +71788,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90EF // Dispatch indirect buffer binding. ]],
+      value = [[Dispatch indirect buffer binding. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71797,7 +71797,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x00000020 // Compute shader bit. ]],
+      value = [[Compute shader bit. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71806,7 +71806,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8242 // Debug output synchronous. ]],
+      value = [[Debug output synchronous. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71815,7 +71815,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8243 // Debug next logged message length. ]],
+      value = [[Debug next logged message length. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71824,7 +71824,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8244 // Debug callback function. ]],
+      value = [[Debug callback function. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71833,7 +71833,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8245 // Debug callback user parameter. ]],
+      value = [[Debug callback user parameter. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71842,7 +71842,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8246 // Debug source API. ]],
+      value = [[Debug source API. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71851,7 +71851,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8247 // Debug source window system. ]],
+      value = [[Debug source window system. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71860,7 +71860,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8248 // Debug source shader compiler. ]],
+      value = [[Debug source shader compiler. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71869,7 +71869,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8249 // Debug source third party. ]],
+      value = [[Debug source third party. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71878,7 +71878,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x824A // Debug source application. ]],
+      value = [[Debug source application. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71887,7 +71887,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x824B // Debug source other. ]],
+      value = [[Debug source other. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71896,7 +71896,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x824C // Debug type error. ]],
+      value = [[Debug type error. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71905,7 +71905,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x824D // Debug type deprecated behavior. ]],
+      value = [[Debug type deprecated behavior. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71914,7 +71914,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x824E // Debug type undefined behavior. ]],
+      value = [[Debug type undefined behavior. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71923,7 +71923,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x824F // Debug type portability. ]],
+      value = [[Debug type portability. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71932,7 +71932,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8250 // Debug type performance. ]],
+      value = [[Debug type performance. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71941,7 +71941,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8251 // Debug type other. ]],
+      value = [[Debug type other. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71950,7 +71950,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9143 // Maximum debug message length. ]],
+      value = [[Maximum debug message length. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71959,7 +71959,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9144 // Maximum debug logged messages. ]],
+      value = [[Maximum debug logged messages. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71968,7 +71968,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9145 // Debug logged messages. ]],
+      value = [[Debug logged messages. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71977,7 +71977,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9146 // Debug severity high. ]],
+      value = [[Debug severity high. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71986,7 +71986,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9147 // Debug severity medium. ]],
+      value = [[Debug severity medium. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -71995,7 +71995,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9148 // Debug severity low. ]],
+      value = [[Debug severity low. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72004,7 +72004,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8268 // Debug type marker. ]],
+      value = [[Debug type marker. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72013,7 +72013,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8269 // Debug type push group. ]],
+      value = [[Debug type push group. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72022,7 +72022,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x826A // Debug type pop group. ]],
+      value = [[Debug type pop group. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72031,7 +72031,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x826B // Debug severity notification. ]],
+      value = [[Debug severity notification. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72040,7 +72040,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x826C // Maximum debug group stack depth. ]],
+      value = [[Maximum debug group stack depth. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72049,7 +72049,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x826D // Debug group stack depth. ]],
+      value = [[Debug group stack depth. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72058,7 +72058,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82E0 // Buffer. ]],
+      value = [[Buffer. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72067,7 +72067,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82E1 // Shader. ]],
+      value = [[Shader. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72076,7 +72076,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82E2 // Program. ]],
+      value = [[Program. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72085,7 +72085,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82E3 // Query. ]],
+      value = [[Query. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72094,7 +72094,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82E4 // Program pipeline. ]],
+      value = [[Program pipeline. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72103,7 +72103,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82E6 // Sampler. ]],
+      value = [[Sampler. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72112,7 +72112,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82E8 // Maximum label length. ]],
+      value = [[Maximum label length. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72121,7 +72121,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92E0 // Debug output. ]],
+      value = [[Debug output. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72130,7 +72130,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x00000002 // Context flag debug bit. ]],
+      value = [[Context flag debug bit. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72139,7 +72139,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x826E // Maximum uniform locations. ]],
+      value = [[Maximum uniform locations. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72148,7 +72148,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9310 // Default framebuffer width. ]],
+      value = [[Default framebuffer width. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72157,7 +72157,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9311 // Default framebuffer height. ]],
+      value = [[Default framebuffer height. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72166,7 +72166,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9312 // Default framebuffer layers. ]],
+      value = [[Default framebuffer layers. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72175,7 +72175,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9313 // Default framebuffer samples. ]],
+      value = [[Default framebuffer samples. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72184,7 +72184,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9314 // Default framebuffer fixed sample locations. ]],
+      value = [[Default framebuffer fixed sample locations. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72193,7 +72193,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9315 // Maximum framebuffer width. ]],
+      value = [[Maximum framebuffer width. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72202,7 +72202,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9316 // Maximum framebuffer height. ]],
+      value = [[Maximum framebuffer height. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72211,7 +72211,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9317 // Maximum framebuffer layers. ]],
+      value = [[Maximum framebuffer layers. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72220,7 +72220,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9318 // Maximum framebuffer samples. ]],
+      value = [[Maximum framebuffer samples. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72229,7 +72229,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x826F // Internal format supported. ]],
+      value = [[Internal format supported. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72238,7 +72238,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8270 // Internal format preferred. ]],
+      value = [[Internal format preferred. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72247,7 +72247,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8271 // Internal format red size. ]],
+      value = [[Internal format red size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72256,7 +72256,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8272 // Internal format green size. ]],
+      value = [[Internal format green size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72265,7 +72265,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8273 // Internal format blue size. ]],
+      value = [[Internal format blue size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72274,7 +72274,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8274 // Internal format alpha size. ]],
+      value = [[Internal format alpha size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72283,7 +72283,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8275 // Internal format depth size. ]],
+      value = [[Internal format depth size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72292,7 +72292,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8276 // Internal format stencil size. ]],
+      value = [[Internal format stencil size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72301,7 +72301,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8277 // Internal format shared size. ]],
+      value = [[Internal format shared size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72310,7 +72310,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8278 // Internal format red type. ]],
+      value = [[Internal format red type. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72319,7 +72319,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8279 // Internal format green type. ]],
+      value = [[Internal format green type. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72328,7 +72328,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x827A // Internal format blue type. ]],
+      value = [[Internal format blue type. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72337,7 +72337,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x827B // Internal format alpha type. ]],
+      value = [[Internal format alpha type. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72346,7 +72346,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x827C // Internal format depth type. ]],
+      value = [[Internal format depth type. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72355,7 +72355,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x827D // Internal format stencil type. ]],
+      value = [[Internal format stencil type. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72364,7 +72364,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x827E // Maximum width. ]],
+      value = [[Maximum width. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72373,7 +72373,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x827F // Maximum height. ]],
+      value = [[Maximum height. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72382,7 +72382,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8280 // Maximum depth. ]],
+      value = [[Maximum depth. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72391,7 +72391,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8281 // Maximum layers. ]],
+      value = [[Maximum layers. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72400,7 +72400,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8282 // Maximum combined dimensions. ]],
+      value = [[Maximum combined dimensions. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72409,7 +72409,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8283 // Color components. ]],
+      value = [[Color components. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72418,7 +72418,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8284 // Depth components. ]],
+      value = [[Depth components. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72427,7 +72427,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8285 // Stencil components. ]],
+      value = [[Stencil components. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72436,7 +72436,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8286 // Color renderable. ]],
+      value = [[Color renderable. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72445,7 +72445,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8287 // Depth renderable. ]],
+      value = [[Depth renderable. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72454,7 +72454,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8288 // Stencil renderable. ]],
+      value = [[Stencil renderable. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72463,7 +72463,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8289 // Framebuffer renderable. ]],
+      value = [[Framebuffer renderable. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72472,7 +72472,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x828A // Framebuffer renderable layered. ]],
+      value = [[Framebuffer renderable layered. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72481,7 +72481,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x828B // Framebuffer blend. ]],
+      value = [[Framebuffer blend. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72490,7 +72490,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x828C // Read pixels. ]],
+      value = [[Read pixels. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72499,7 +72499,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x828D // Read pixels format. ]],
+      value = [[Read pixels format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72508,7 +72508,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x828E // Read pixels type. ]],
+      value = [[Read pixels type. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72517,7 +72517,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x828F // Texture image format. ]],
+      value = [[Texture image format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72526,7 +72526,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8290 // Texture image type. ]],
+      value = [[Texture image type. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72535,7 +72535,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8291 // Get texture image format. ]],
+      value = [[Get texture image format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72544,7 +72544,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8292 // Get texture image type. ]],
+      value = [[Get texture image type. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72553,7 +72553,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8293 // Mipmap. ]],
+      value = [[Mipmap. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72562,7 +72562,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8294 // Manual generate mipmap. ]],
+      value = [[Manual generate mipmap. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72571,7 +72571,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8295 // Auto generate mipmap. ]],
+      value = [[Auto generate mipmap. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72580,7 +72580,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8296 // Color encoding. ]],
+      value = [[Color encoding. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72589,7 +72589,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8297 // sRGB read. ]],
+      value = [[sRGB read. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72598,7 +72598,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8298 // sRGB write. ]],
+      value = [[sRGB write. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72607,7 +72607,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x829A // Filter. ]],
+      value = [[Filter. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72616,7 +72616,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x829B // Vertex texture. ]],
+      value = [[Vertex texture. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72625,7 +72625,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x829C // Tessellation control texture. ]],
+      value = [[Tessellation control texture. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72634,7 +72634,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x829D // Tessellation evaluation texture. ]],
+      value = [[Tessellation evaluation texture. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72643,7 +72643,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x829E // Geometry texture. ]],
+      value = [[Geometry texture. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72652,7 +72652,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x829F // Fragment texture. ]],
+      value = [[Fragment texture. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72661,7 +72661,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82A0 // Compute texture. ]],
+      value = [[Compute texture. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72670,7 +72670,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82A1 // Texture shadow. ]],
+      value = [[Texture shadow. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72679,7 +72679,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82A2 // Texture gather. ]],
+      value = [[Texture gather. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72688,7 +72688,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82A3 // Texture gather shadow. ]],
+      value = [[Texture gather shadow. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72697,7 +72697,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82A4 // Shader image load. ]],
+      value = [[Shader image load. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72706,7 +72706,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82A5 // Shader image store. ]],
+      value = [[Shader image store. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72715,7 +72715,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82A6 // Shader image atomic. ]],
+      value = [[Shader image atomic. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72724,7 +72724,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82A7 // Image texel size. ]],
+      value = [[Image texel size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72733,7 +72733,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82A8 // Image compatibility class. ]],
+      value = [[Image compatibility class. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72742,7 +72742,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82A9 // Image pixel format. ]],
+      value = [[Image pixel format. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72751,7 +72751,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82AA // Image pixel type. ]],
+      value = [[Image pixel type. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72760,7 +72760,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82AC // Simultaneous texture and depth test. ]],
+      value = [[Simultaneous texture and depth test. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72769,7 +72769,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82AD // Simultaneous texture and stencil test. ]],
+      value = [[Simultaneous texture and stencil test. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72778,7 +72778,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82AE // Simultaneous texture and depth write. ]],
+      value = [[Simultaneous texture and depth write. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72787,7 +72787,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82AF // Simultaneous texture and stencil write. ]],
+      value = [[Simultaneous texture and stencil write. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72796,7 +72796,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82B1 // Texture compressed block width. ]],
+      value = [[Texture compressed block width. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72805,7 +72805,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82B2 // Texture compressed block height. ]],
+      value = [[Texture compressed block height. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72814,7 +72814,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82B3 // Texture compressed block size. ]],
+      value = [[Texture compressed block size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72823,7 +72823,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82B4 // Clear buffer. ]],
+      value = [[Clear buffer. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72832,7 +72832,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82B5 // Texture view. ]],
+      value = [[Texture view. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72841,7 +72841,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82B6 // View compatibility class. ]],
+      value = [[View compatibility class. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72850,7 +72850,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82B7 // Full support. ]],
+      value = [[Full support. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72859,7 +72859,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82B8 // Caveat support. ]],
+      value = [[Caveat support. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72868,7 +72868,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82B9 // Image class 4x32. ]],
+      value = [[Image class 4x32. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72877,7 +72877,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82BA // Image class 2x32. ]],
+      value = [[Image class 2x32. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72886,7 +72886,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82BB // Image class 1x32. ]],
+      value = [[Image class 1x32. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72895,7 +72895,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82BC // Image class 4x16. ]],
+      value = [[Image class 4x16. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72904,7 +72904,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82BD // Image class 2x16. ]],
+      value = [[Image class 2x16. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72913,7 +72913,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82BE // Image class 1x16. ]],
+      value = [[Image class 1x16. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72922,7 +72922,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82BF // Image class 4x8. ]],
+      value = [[Image class 4x8. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72931,7 +72931,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82C0 // Image class 2x8. ]],
+      value = [[Image class 2x8. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72940,7 +72940,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82C1 // Image class 1x8. ]],
+      value = [[Image class 1x8. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72949,7 +72949,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82C2 // Image class 11-11-10. ]],
+      value = [[Image class 11-11-10. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72958,7 +72958,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82C3 // Image class 10-10-10-2. ]],
+      value = [[Image class 10-10-10-2. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72967,7 +72967,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82C4 // View class 128 bits. ]],
+      value = [[View class 128 bits. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72976,7 +72976,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82C5 // View class 96 bits. ]],
+      value = [[View class 96 bits. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72985,7 +72985,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82C6 // View class 64 bits. ]],
+      value = [[View class 64 bits. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -72994,7 +72994,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82C7 // View class 48 bits. ]],
+      value = [[View class 48 bits. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73003,7 +73003,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82C8 // View class 32 bits. ]],
+      value = [[View class 32 bits. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73012,7 +73012,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82C9 // View class 24 bits. ]],
+      value = [[View class 24 bits. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73021,7 +73021,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82CA // View class 16 bits. ]],
+      value = [[View class 16 bits. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73030,7 +73030,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82CB // View class 8 bits. ]],
+      value = [[View class 8 bits. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73039,7 +73039,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82CC // View class S3TC DXT1 RGB. ]],
+      value = [[View class S3TC DXT1 RGB. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73048,7 +73048,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82CD // View class S3TC DXT1 RGBA. ]],
+      value = [[View class S3TC DXT1 RGBA. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73057,7 +73057,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82CE // View class S3TC DXT3 RGBA. ]],
+      value = [[View class S3TC DXT3 RGBA. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73066,7 +73066,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82CF // View class S3TC DXT5 RGBA. ]],
+      value = [[View class S3TC DXT5 RGBA. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73075,7 +73075,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82D0 // View class RGTC1 RED. ]],
+      value = [[View class RGTC1 RED. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73084,7 +73084,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82D1 // View class RGTC2 RG. ]],
+      value = [[View class RGTC2 RG. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73093,7 +73093,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82D2 // View class BPTC UNORM. ]],
+      value = [[View class BPTC UNORM. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73102,7 +73102,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82D3 // View class BPTC FLOAT. ]],
+      value = [[View class BPTC FLOAT. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73111,7 +73111,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92E1 // Uniform. ]],
+      value = [[Uniform. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73120,7 +73120,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92E2 // Uniform block. ]],
+      value = [[Uniform block. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73129,7 +73129,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92E3 // Program input. ]],
+      value = [[Program input. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73138,7 +73138,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92E4 // Program output. ]],
+      value = [[Program output. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73147,7 +73147,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92E5 // Buffer variable. ]],
+      value = [[Buffer variable. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73156,7 +73156,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92E6 // Shader storage block. ]],
+      value = [[Shader storage block. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73165,7 +73165,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92E8 // Vertex subroutine. ]],
+      value = [[Vertex subroutine. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73174,7 +73174,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92E9 // Tessellation control subroutine. ]],
+      value = [[Tessellation control subroutine. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73183,7 +73183,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92EA // Tessellation evaluation subroutine. ]],
+      value = [[Tessellation evaluation subroutine. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73192,7 +73192,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92EB // Geometry subroutine. ]],
+      value = [[Geometry subroutine. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73201,7 +73201,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92EC // Fragment subroutine. ]],
+      value = [[Fragment subroutine. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73210,7 +73210,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92ED // Compute subroutine. ]],
+      value = [[Compute subroutine. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73219,7 +73219,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92EE // Vertex subroutine uniform. ]],
+      value = [[Vertex subroutine uniform. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73228,7 +73228,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92EF // Tessellation control subroutine uniform. ]],
+      value = [[Tessellation control subroutine uniform. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73237,7 +73237,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92F0 // Tessellation evaluation subroutine uniform. ]],
+      value = [[Tessellation evaluation subroutine uniform. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73246,7 +73246,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92F1 // Geometry subroutine uniform. ]],
+      value = [[Geometry subroutine uniform. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73255,7 +73255,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92F2 // Fragment subroutine uniform. ]],
+      value = [[Fragment subroutine uniform. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73264,7 +73264,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92F3 // Compute subroutine uniform. ]],
+      value = [[Compute subroutine uniform. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73273,7 +73273,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92F4 // Transform feedback varying. ]],
+      value = [[Transform feedback varying. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73282,7 +73282,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92F5 // Active resources. ]],
+      value = [[Active resources. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73291,7 +73291,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92F6 // Maximum name length. ]],
+      value = [[Maximum name length. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73300,7 +73300,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92F7 // Maximum number of active variables. ]],
+      value = [[Maximum number of active variables. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73309,7 +73309,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92F8 // Maximum number of compatible subroutines. ]],
+      value = [[Maximum number of compatible subroutines. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73318,7 +73318,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92F9 // Name length. ]],
+      value = [[Name length. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73327,7 +73327,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92FA // Type. ]],
+      value = [[Type. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73336,7 +73336,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92FB // Array size. ]],
+      value = [[Array size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73345,7 +73345,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92FC // Offset. ]],
+      value = [[Offset. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73354,7 +73354,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92FD // Block index. ]],
+      value = [[Block index. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73363,7 +73363,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92FE // Array stride. ]],
+      value = [[Array stride. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73372,7 +73372,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92FF // Matrix stride. ]],
+      value = [[Matrix stride. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73381,7 +73381,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9300 // Is row major. ]],
+      value = [[Is row major. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73390,7 +73390,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9301 // Atomic counter buffer index. ]],
+      value = [[Atomic counter buffer index. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73399,7 +73399,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9302 // Buffer binding. ]],
+      value = [[Buffer binding. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73408,7 +73408,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9303 // Buffer data size. ]],
+      value = [[Buffer data size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73417,7 +73417,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9304 // Number of active variables. ]],
+      value = [[Number of active variables. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73426,7 +73426,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9305 // Active variables. ]],
+      value = [[Active variables. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73435,7 +73435,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9306 // Referenced by vertex shader. ]],
+      value = [[Referenced by vertex shader. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73444,7 +73444,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9307 // Referenced by tessellation control shader. ]],
+      value = [[Referenced by tessellation control shader. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73453,7 +73453,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9308 // Referenced by tessellation evaluation shader. ]],
+      value = [[Referenced by tessellation evaluation shader. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73462,7 +73462,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x9309 // Referenced by geometry shader. ]],
+      value = [[Referenced by geometry shader. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73471,7 +73471,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x930A // Referenced by fragment shader. ]],
+      value = [[Referenced by fragment shader. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73480,7 +73480,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x930B // Referenced by compute shader. ]],
+      value = [[Referenced by compute shader. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73489,7 +73489,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x930C // Top level array size. ]],
+      value = [[Top level array size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73498,7 +73498,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x930D // Top level array stride. ]],
+      value = [[Top level array stride. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73507,7 +73507,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x930E // Location. ]],
+      value = [[Location. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73516,7 +73516,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x930F // Location index. ]],
+      value = [[Location index. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73525,7 +73525,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x92E7 // Is per patch. ]],
+      value = [[Is per patch. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73534,7 +73534,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90D2 // Shader storage buffer. ]],
+      value = [[Shader storage buffer. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73543,7 +73543,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90D3 // Shader storage buffer binding. ]],
+      value = [[Shader storage buffer binding. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73552,7 +73552,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90D4 // Shader storage buffer start. ]],
+      value = [[Shader storage buffer start. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73561,7 +73561,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90D5 // Shader storage buffer size. ]],
+      value = [[Shader storage buffer size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73570,7 +73570,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90D6 // Maximum vertex shader storage blocks. ]],
+      value = [[Maximum vertex shader storage blocks. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73579,7 +73579,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90D7 // Maximum geometry shader storage blocks. ]],
+      value = [[Maximum geometry shader storage blocks. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73588,7 +73588,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90D8 // Maximum tessellation control shader storage blocks. ]],
+      value = [[Maximum tessellation control shader storage blocks. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73597,7 +73597,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90D9 // Maximum tessellation evaluation shader storage blocks. ]],
+      value = [[Maximum tessellation evaluation shader storage blocks. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73606,7 +73606,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90DA // Maximum fragment shader storage blocks. ]],
+      value = [[Maximum fragment shader storage blocks. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73615,7 +73615,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90DB // Maximum compute shader storage blocks. ]],
+      value = [[Maximum compute shader storage blocks. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73624,7 +73624,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90DC // Maximum combined shader storage blocks. ]],
+      value = [[Maximum combined shader storage blocks. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73633,7 +73633,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90DD // Maximum shader storage buffer bindings. ]],
+      value = [[Maximum shader storage buffer bindings. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73642,7 +73642,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90DE // Maximum shader storage block size. ]],
+      value = [[Maximum shader storage block size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73651,7 +73651,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90DF // Shader storage buffer offset alignment. ]],
+      value = [[Shader storage buffer offset alignment. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73660,7 +73660,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x00002000 // Shader storage barrier bit. ]],
+      value = [[Shader storage barrier bit. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73669,7 +73669,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8F39 // Maximum combined shader output resources. ]],
+      value = [[Maximum combined shader output resources. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73678,7 +73678,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x90EA // Depth stencil texture mode. ]],
+      value = [[Depth stencil texture mode. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73687,7 +73687,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x919D // Texture buffer offset. ]],
+      value = [[Texture buffer offset. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73696,7 +73696,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x919E // Texture buffer size. ]],
+      value = [[Texture buffer size. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73705,7 +73705,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x919F // Texture buffer offset alignment. ]],
+      value = [[Texture buffer offset alignment. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73714,7 +73714,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82DB // Texture view minimum level. ]],
+      value = [[Texture view minimum level. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73723,7 +73723,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82DC // Texture view number of levels. ]],
+      value = [[Texture view number of levels. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73732,7 +73732,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82DD // Texture view minimum layer. ]],
+      value = [[Texture view minimum layer. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73741,7 +73741,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82DE // Texture view number of layers. ]],
+      value = [[Texture view number of layers. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73750,7 +73750,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82DF // Texture immutable levels. ]],
+      value = [[Texture immutable levels. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73759,7 +73759,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82D4 // Vertex attribute binding. ]],
+      value = [[Vertex attribute binding. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73768,7 +73768,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82D5 // Vertex attribute relative offset. ]],
+      value = [[Vertex attribute relative offset. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73777,7 +73777,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82D6 // Vertex binding divisor. ]],
+      value = [[Vertex binding divisor. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73786,7 +73786,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82D7 // Vertex binding offset. ]],
+      value = [[Vertex binding offset. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73795,7 +73795,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82D8 // Vertex binding stride. ]],
+      value = [[Vertex binding stride. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73804,7 +73804,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82D9 // Maximum vertex attribute relative offset. ]],
+      value = [[Maximum vertex attribute relative offset. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73813,7 +73813,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x82DA // Maximum vertex attribute bindings. ]],
+      value = [[Maximum vertex attribute bindings. ]],
     },
     dup=0,
     kind=kinds.Constant,
@@ -73822,7 +73822,7 @@ June 1999. https://opencontent.org/openpub/.
   {
     documentation = {
       kind = 'markdown',
-      value = [[ 0x8F4F // Vertex binding buffer. ]],
+      value = [[Vertex binding buffer. ]],
     },
     dup=0,
     kind=kinds.Constant,
