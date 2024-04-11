@@ -67536,4 +67536,4420 @@ June 1999. https://opencontent.org/openpub/.
     kind = kinds.Function,
     label = 'glGetShaderInfoLog',
   },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Indicates a boolean value that is false. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FALSE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Indicates a boolean value that is true. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TRUE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 8-bit two's complement signed integer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BYTE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 8-bit unsigned integer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_UNSIGNED_BYTE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 16-bit two's complement signed integer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHORT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 16-bit unsigned integer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_UNSIGNED_SHORT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 32-bit two's complement signed integer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 32-bit unsigned integer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_UNSIGNED_INT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 32-bit IEEE floating point. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FLOAT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two bytes. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_2_BYTES',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Three bytes. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_3_BYTES',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Four bytes. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_4_BYTES',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 64-bit IEEE floating point. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DOUBLE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Treats each vertex as a single point. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_POINTS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Treats each pair of vertices as an independent line segment. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINES',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Draws a connected group of line segments from the first vertex to the last, then back to the first. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINE_LOOP',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Draws a connected group of line segments from the first vertex to the last. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINE_STRIP',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Treats each triplet of vertices as an independent triangle. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TRIANGLES',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Draws a connected group of triangles. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TRIANGLE_STRIP',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Draws a connected group of triangles sharing a common vertex. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TRIANGLE_FAN',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Treats each group of four vertices as an independent quadrilateral. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_QUADS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Draws a connected group of quadrilaterals. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_QUAD_STRIP',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Treats each group of three or more vertices as an independent polygon. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_POLYGON',
+  },
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Pointer to vertex array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_ARRAY_POINTER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Pointer to normal array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NORMAL_ARRAY_POINTER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Pointer to color array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_ARRAY_POINTER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Pointer to index array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INDEX_ARRAY_POINTER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Pointer to texture coordinate array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_COORD_ARRAY_POINTER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Pointer to edge flag array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_EDGE_FLAG_ARRAY_POINTER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_V2F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Three-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_V3F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Four-byte color and two-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_C4UB_V2F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Four-byte color and three-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_C4UB_V3F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Three-byte color and three-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_C3F_V3F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Three-dimensional normal and three-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_N3F_V3F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Four-byte color, three-dimensional normal, and three-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_C4F_N3F_V3F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-dimensional texture coordinate and three-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_T2F_V3F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Four-dimensional texture coordinate and four-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_T4F_V4F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-dimensional texture coordinate, four-byte color, and three-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_T2F_C4UB_V3F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-dimensional texture coordinate, three-byte color, and three-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_T2F_C3F_V3F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-dimensional texture coordinate, three-dimensional normal, and three-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_T2F_N3F_V3F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-dimensional texture coordinate, four-byte color, three-dimensional normal, and three-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_T2F_C4F_N3F_V3F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Four-dimensional texture coordinate, four-byte color, three-dimensional normal, and four-dimensional vertex coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_T4F_C4F_N3F_V4F',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Buffer object for vertex data. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ARRAY_BUFFER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Buffer object for index data. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ELEMENT_ARRAY_BUFFER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ARRAY_BUFFER_BINDING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound index buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ELEMENT_ARRAY_BUFFER_BINDING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound vertex buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_ARRAY_BUFFER_BINDING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound normal buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NORMAL_ARRAY_BUFFER_BINDING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound color buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_ARRAY_BUFFER_BINDING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound index buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INDEX_ARRAY_BUFFER_BINDING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound texture coordinate buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound edge flag buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_EDGE_FLAG_ARRAY_BUFFER_BINDING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Data store contents are modified once and used many times. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STATIC_DRAW',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Data store contents are repeatedly modified and used many times. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DYNAMIC_DRAW',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Data store contents are modified once and used at most a few times. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STREAM_DRAW',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Data store contents are modified once and used a few times. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STREAM_READ',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Data store contents are modified once and used a few times. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STREAM_COPY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Data store contents are modified once and used a few times. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STATIC_READ',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Data store contents are modified once and used a few times. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STATIC_COPY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Data store contents are modified repeatedly and used a few times. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DYNAMIC_READ',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Data store contents are modified repeatedly and used a few times. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DYNAMIC_COPY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Current matrix mode. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MATRIX_MODE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Modelview matrix. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MODELVIEW',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Projection matrix. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PROJECTION',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture matrix. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Smooth points. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_POINT_SMOOTH',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Point size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_POINT_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Point size granularity. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_POINT_SIZE_GRANULARITY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Range of supported point sizes. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_POINT_SIZE_RANGE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Smooth lines. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINE_SMOOTH',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Line stipple pattern. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINE_STIPPLE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Line stipple pattern. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINE_STIPPLE_PATTERN',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Line stipple repeat factor. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINE_STIPPLE_REPEAT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Line width. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINE_WIDTH',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Line width granularity. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINE_WIDTH_GRANULARITY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Range of supported line widths. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINE_WIDTH_RANGE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Points. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_POINT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Lines. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Filled polygons. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FILL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Map signed integer color values to signed integer color values. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PIXEL_MAP_I_TO_I',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Map signed integer color values to signed integer color values. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PIXEL_MAP_S_TO_S',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Map signed integer color values to red color values. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PIXEL_MAP_I_TO_R',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Map signed integer color values to green color values. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PIXEL_MAP_I_TO_G',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Map signed integer color values to blue color values. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PIXEL_MAP_I_TO_B',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Map signed integer color values to alpha color values. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PIXEL_MAP_I_TO_A',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Map red color values to red color values. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PIXEL_MAP_R_TO_R',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Map green color values to green color values. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PIXEL_MAP_G_TO_G',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Map blue color values to blue color values. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PIXEL_MAP_B_TO_B',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Map alpha color values to alpha color values. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PIXEL_MAP_A_TO_A',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Lighting. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHTING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Light 0. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHT0',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Light 1. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHT1',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Light 2. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHT2',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Light 3. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHT3',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Light 4. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHT4',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Light 5. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHT5',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Light 6. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHT6',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Light 7. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHT7',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Spot exponent. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SPOT_EXPONENT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Spot cutoff angle. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SPOT_CUTOFF',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Constant attenuation factor. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CONSTANT_ATTENUATION',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Linear attenuation factor. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINEAR_ATTENUATION',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Quadratic attenuation factor. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_QUADRATIC_ATTENUATION',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Ambient color. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_AMBIENT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Diffuse color. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DIFFUSE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Specular color. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SPECULAR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Shininess. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHININESS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Emission color. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_EMISSION',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Light position. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_POSITION',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Spot direction. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SPOT_DIRECTION',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Ambient and diffuse color. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_AMBIENT_AND_DIFFUSE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Color indexes. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_INDEXES',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-sided lighting. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHT_MODEL_TWO_SIDE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Local viewpoint. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHT_MODEL_LOCAL_VIEWER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Ambient color. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LIGHT_MODEL_AMBIENT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Front and back. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRONT_AND_BACK',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Shade model. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADE_MODEL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Flat shading. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FLAT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Smooth shading. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SMOOTH',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Color material mode. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_MATERIAL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Which faces are affected by color material mode. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_MATERIAL_FACE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Which aspects of the material change. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_MATERIAL_PARAMETER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Normal normalization. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NORMALIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Depth buffer precision. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_BITS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Depth testing. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_TEST',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Depth value used when the depth buffer is cleared. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_CLEAR_VALUE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Depth comparison function. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_FUNC',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Depth value range. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_RANGE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Write enable for depth buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_WRITEMASK',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Depth component. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_COMPONENT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Depth texture mode. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_TEXTURE_MODE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Accept fragment if it is closer to the camera than the former one. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LESS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Accept fragment if it is farther from the camera than the former one. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_GREATER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Accept fragment if depth value is equal to the value in the depth buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_EQUAL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Accept fragment if depth value is not equal to the value in the depth buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NOTEQUAL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Accept fragment if it is closer to the camera than the former one. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_GEQUAL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Accept fragment in any case. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ALWAYS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil buffer precision. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_BITS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil testing. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_TEST',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil value used when the stencil buffer is cleared. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_CLEAR_VALUE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil comparison function. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_FUNC',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil bits used for writing. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_VALUE_MASK',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil test action when the stencil test fails. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_FAIL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil test action when the stencil test passes and the depth test fails. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_PASS_DEPTH_FAIL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil test action when both the stencil and depth test pass. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_PASS_DEPTH_PASS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Reference value for stencil test. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_REF',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Write enable mask for stencil buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_WRITEMASK',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_INDEX',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Keep the current value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_KEEP',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Replace the current value with the reference value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_REPLACE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Increment the current value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INCR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Decrement the current value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DECR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Invert the current value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INVERT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture width. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_WIDTH',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture height. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_HEIGHT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture internal format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_INTERNAL_FORMAT',
+  },
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Red component texture size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_RED_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Green component texture size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_GREEN_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Blue component texture size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_BLUE_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Alpha component texture size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_ALPHA_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Luminance component texture size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_LUMINANCE_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Intensity component texture size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_INTENSITY_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture priority. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_PRIORITY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture resident. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_RESIDENT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound texture. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_BINDING_1D',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound texture. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_BINDING_2D',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound texture. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_BINDING_3D',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Vertex array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_ARRAY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Normal array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NORMAL_ARRAY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Color array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_ARRAY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Index array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INDEX_ARRAY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture coordinate array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_COORD_ARRAY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Edge flag array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_EDGE_FLAG_ARRAY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of elements in the vertex array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_ARRAY_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Type of elements in the vertex array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_ARRAY_TYPE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Byte offset between consecutive vertices. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_ARRAY_STRIDE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Type of elements in the normal array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NORMAL_ARRAY_TYPE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Byte offset between consecutive normals. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NORMAL_ARRAY_STRIDE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of elements in the color array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_ARRAY_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Type of elements in the color array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_ARRAY_TYPE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Byte offset between consecutive colors. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_ARRAY_STRIDE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Type of elements in the index array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INDEX_ARRAY_TYPE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Byte offset between consecutive indices. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INDEX_ARRAY_STRIDE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of elements in the texture coordinate array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_COORD_ARRAY_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Type of elements in the texture coordinate array. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_COORD_ARRAY_TYPE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Byte offset between consecutive texture coordinates. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_COORD_ARRAY_STRIDE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Byte offset between consecutive edge flags. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_EDGE_FLAG_ARRAY_STRIDE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture minifying function. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_MIN_FILTER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture magnification function. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_MAG_FILTER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ S texture coordinate wrap mode. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_WRAP_S',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ T texture coordinate wrap mode. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_WRAP_T',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture border color. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_BORDER_COLOR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture min level-of-detail value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_MIN_LOD',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture max level-of-detail value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_MAX_LOD',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture base level. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_BASE_LEVEL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture max level. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_MAX_LEVEL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture comparison mode. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_COMPARE_MODE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture comparison function. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_COMPARE_FUNC',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ R texture coordinate wrap mode. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_WRAP_R',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Clamp texture coordinates outside the range to the border color. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CLAMP_TO_BORDER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Clamp texture coordinates outside the range to the edge values. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CLAMP_TO_EDGE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Supported OpenGL extensions. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_EXTENSIONS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ No error has been recorded. The value of this symbolic constant is guaranteed to be 0. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NO_ERROR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ An unacceptable value is specified for an enumerated argument. The offending command is ignored and has no other side effect than to set the error flag. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INVALID_ENUM',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ A numeric argument is out of range. The offending command is ignored and has no other side effect than to set the error flag. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INVALID_VALUE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ The specified operation is not allowed in the current state. The offending command is ignored and has no other side effect than to set the error flag. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INVALID_OPERATION',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ This command would cause a stack overflow. The offending command is ignored and has no other side effect than to set the error flag. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STACK_OVERFLOW',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ This command would cause a stack underflow. The offending command is ignored and has no other side effect than to set the error flag. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STACK_UNDERFLOW',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ There is not enough memory left to execute the command. The state of the GL is undefined, except for the state of the error flags, after this error is recorded. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_OUT_OF_MEMORY',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Returns the company responsible for this GL implementation. This name does not change from release to release. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VENDOR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Returns the name of the renderer. This name is typically specific to a particular configuration of a hardware platform. It does not change from release to release. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_RENDERER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Returns a version or release number. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERSION',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Bitwise mask for the depth buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DEPTH_BUFFER_BIT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Bitwise mask for the stencil buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_BUFFER_BIT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Bitwise mask for the color buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_BUFFER_BIT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Constant zero. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ZERO',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Constant one. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ONE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Source color value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SRC_COLOR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ One minus source color value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ONE_MINUS_SRC_COLOR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Source alpha value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SRC_ALPHA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ One minus source alpha value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ONE_MINUS_SRC_ALPHA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Destination alpha value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DST_ALPHA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ One minus destination alpha value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ONE_MINUS_DST_ALPHA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Destination color value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DST_COLOR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ One minus destination color value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ONE_MINUS_DST_COLOR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Source alpha saturated value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SRC_ALPHA_SATURATE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Add source and destination. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FUNC_ADD',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Equation for blending RGB. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BLEND_EQUATION',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Equation for blending RGB. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BLEND_EQUATION_RGB',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Equation for blending alpha. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BLEND_EQUATION_ALPHA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Subtract destination from source. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FUNC_SUBTRACT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Reverse subtract source from destination. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FUNC_REVERSE_SUBTRACT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Destination RGB factor for blending. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BLEND_DST_RGB',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Source RGB factor for blending. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BLEND_SRC_RGB',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Destination alpha factor for blending. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BLEND_DST_ALPHA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Source alpha factor for blending. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BLEND_SRC_ALPHA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Constant color for blending. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CONSTANT_COLOR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ One minus constant color for blending. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ONE_MINUS_CONSTANT_COLOR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Constant alpha for blending. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CONSTANT_ALPHA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ One minus constant alpha for blending. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ONE_MINUS_CONSTANT_ALPHA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Blending color. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BLEND_COLOR',
+  },
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Size of buffer. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BUFFER_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Usage pattern of buffer data. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BUFFER_USAGE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Current vertex attribute index. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CURRENT_VERTEX_ATTRIB',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Front-facing polygons. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRONT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Back-facing polygons. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BACK',
+  },
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-dimensional texture target. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_2D',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Enable face culling. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CULL_FACE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Enable blending. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BLEND',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Enable dithering. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DITHER',
+  },
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Enable scissor testing. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SCISSOR_TEST',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Enable polygon offset for filled polygons. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_POLYGON_OFFSET_FILL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Enable alpha to coverage. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SAMPLE_ALPHA_TO_COVERAGE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Enable multisample coverage. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SAMPLE_COVERAGE',
+  },
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Clockwise winding order. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CW',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Counter-clockwise winding order. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CCW',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Aliased point size range. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ALIASED_POINT_SIZE_RANGE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Aliased line width range. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ALIASED_LINE_WIDTH_RANGE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Face culling mode. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CULL_FACE_MODE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Front face orientation. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRONT_FACE',
+  },
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Back-face stencil function. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_BACK_FUNC',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil operation to perform on back-face stencil test failure. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_BACK_FAIL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil operation to perform on back-face depth test failure. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_BACK_PASS_DEPTH_FAIL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil operation to perform on back-face depth test pass. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_BACK_PASS_DEPTH_PASS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Reference value for back-face stencil testing. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_BACK_REF',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil value mask for back-face. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_BACK_VALUE_MASK',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil buffer write mask for back-face. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_STENCIL_BACK_WRITEMASK',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Viewport rectangle. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VIEWPORT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Scissor box rectangle. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SCISSOR_BOX',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Color buffer clear value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_CLEAR_VALUE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Color buffer write mask. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COLOR_WRITEMASK',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Pixel storage unpack alignment. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_UNPACK_ALIGNMENT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Pixel storage pack alignment. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_PACK_ALIGNMENT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum supported texture size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_TEXTURE_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum viewport dimensions. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_VIEWPORT_DIMS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of subpixel bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SUBPIXEL_BITS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of red component bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_RED_BITS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of green component bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_GREEN_BITS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of blue component bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_BLUE_BITS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of alpha component bits. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ALPHA_BITS',
+  },
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Polygon offset factor. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_POLYGON_OFFSET_UNITS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Polygon offset units. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_POLYGON_OFFSET_FACTOR',
+  },
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of multisample buffers. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SAMPLE_BUFFERS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of samples per pixel. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SAMPLES',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Sample coverage value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SAMPLE_COVERAGE_VALUE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Invert coverage value. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SAMPLE_COVERAGE_INVERT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of supported compressed texture formats. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NUM_COMPRESSED_TEXTURE_FORMATS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Compressed texture formats. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_COMPRESSED_TEXTURE_FORMATS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ No preference or care. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DONT_CARE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Optimize for speed. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FASTEST',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Optimize for quality. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NICEST',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Mipmap generation hint. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_GENERATE_MIPMAP_HINT',
+  },
+
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 32-bit fixed-point data type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FIXED',
+  },
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Alpha component data format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ALPHA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ RGB color component data format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_RGB',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ RGBA color component data format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_RGBA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Luminance data format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LUMINANCE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Luminance-alpha data format. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LUMINANCE_ALPHA',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 4-bit unsigned short data type with 4-bit components. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_UNSIGNED_SHORT_4_4_4_4',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 5-bit unsigned short data type with 5-bit components and 1-bit alpha. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_UNSIGNED_SHORT_5_5_5_1',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 5-bit unsigned short data type with 6-bit green and 5-bit red and blue. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_UNSIGNED_SHORT_5_6_5',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Fragment shader type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_FRAGMENT_SHADER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Vertex shader type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VERTEX_SHADER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum number of vertex attributes. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_VERTEX_ATTRIBS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum number of vertex uniform vectors. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_VERTEX_UNIFORM_VECTORS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum number of varying vectors. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_VARYING_VECTORS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum number of combined texture image units. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum number of vertex texture image units. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum number of texture image units. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_TEXTURE_IMAGE_UNITS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum number of fragment uniform vectors. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_FRAGMENT_UNIFORM_VECTORS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Shader type. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADER_TYPE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Deletion status. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DELETE_STATUS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Linking status. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINK_STATUS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Validation status. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_VALIDATE_STATUS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of attached shaders. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ATTACHED_SHADERS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of active uniforms. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ACTIVE_UNIFORMS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum length of active uniform names. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ACTIVE_UNIFORM_MAX_LENGTH',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Number of active attributes. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ACTIVE_ATTRIBUTES',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum length of active attribute names. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_ACTIVE_ATTRIBUTE_MAX_LENGTH',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Shading language version. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_SHADING_LANGUAGE_VERSION',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently active program. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_CURRENT_PROGRAM',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Never pass. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NEVER',
+  },
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Pass if less than or equal. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LEQUAL',
+  },
+
+
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Increment with wrap-around. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_INCR_WRAP',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Decrement with wrap-around. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_DECR_WRAP',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Nearest neighbor filtering. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NEAREST',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Linear filtering. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINEAR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Nearest neighbor mipmap filtering. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NEAREST_MIPMAP_NEAREST',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Linear mipmap filtering with nearest neighbor interpolation. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINEAR_MIPMAP_NEAREST',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Nearest neighbor mipmap filtering with linear interpolation. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_NEAREST_MIPMAP_LINEAR',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Linear mipmap filtering with linear interpolation. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_LINEAR_MIPMAP_LINEAR',
+  },
+
+
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture target for cube maps. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_CUBE_MAP',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound cube map texture. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_BINDING_CUBE_MAP',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Cube map positive X face. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_CUBE_MAP_POSITIVE_X',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Cube map negative X face. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_CUBE_MAP_NEGATIVE_X',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Cube map positive Y face. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_CUBE_MAP_POSITIVE_Y',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Cube map negative Y face. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_CUBE_MAP_NEGATIVE_Y',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Cube map positive Z face. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_CUBE_MAP_POSITIVE_Z',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Cube map negative Z face. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE_CUBE_MAP_NEGATIVE_Z',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum cube map texture size. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_MAX_CUBE_MAP_TEXTURE_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 0. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE0',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 1. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE1',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 2. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE2',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 3. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE3',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 4. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE4',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 5. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE5',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 6. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE6',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 7. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE7',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 8. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE8',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 9. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE9',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 10. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE10',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 11. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE11',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 12. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE12',
+  },
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 13. ]],
+    },
+    dup=0,
+    kind=kinds.Constant,
+    label ='GL_TEXTURE13',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 14. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE14',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 15. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE15',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 16. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE16',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 17. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE17',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 18. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE18',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 19. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE19',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 20. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE20',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 21. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE21',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 22. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE22',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 23. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE23',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 24. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE24',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 25. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE25',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 26. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE26',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 27. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE27',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 28. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE28',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 29. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE29',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 30. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE30',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Texture unit 31. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_TEXTURE31',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently active texture unit. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_ACTIVE_TEXTURE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Repeat texture wrapping mode. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_REPEAT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Mirrored repeat texture wrapping mode. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_MIRRORED_REPEAT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-component floating-point vector. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FLOAT_VEC2',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Three-component floating-point vector. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FLOAT_VEC3',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Four-component floating-point vector. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FLOAT_VEC4',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-component signed integer vector. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_INT_VEC2',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Three-component signed integer vector. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_INT_VEC3',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Four-component signed integer vector. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_INT_VEC4',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Boolean data type. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_BOOL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-component boolean vector. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_BOOL_VEC2',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Three-component boolean vector. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_BOOL_VEC3',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Four-component boolean vector. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_BOOL_VEC4',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Two-by-two floating-point matrix. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FLOAT_MAT2',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Three-by-three floating-point matrix. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FLOAT_MAT3',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Four-by-four floating-point matrix. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FLOAT_MAT4',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ 2D texture sampler. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_SAMPLER_2D',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Cube map texture sampler. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_SAMPLER_CUBE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Vertex attribute array enabled flag. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_VERTEX_ATTRIB_ARRAY_ENABLED',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Vertex attribute array size. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_VERTEX_ATTRIB_ARRAY_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Vertex attribute array stride. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_VERTEX_ATTRIB_ARRAY_STRIDE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Vertex attribute array data type. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_VERTEX_ATTRIB_ARRAY_TYPE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Vertex attribute array normalized flag. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_VERTEX_ATTRIB_ARRAY_NORMALIZED',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Vertex attribute array pointer. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_VERTEX_ATTRIB_ARRAY_POINTER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound vertex attribute array buffer. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Implementation-dependent color read format. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_IMPLEMENTATION_COLOR_READ_TYPE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Implementation-dependent color read type. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_IMPLEMENTATION_COLOR_READ_FORMAT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Compilation status. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_COMPILE_STATUS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Low precision floating-point type. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_LOW_FLOAT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Medium precision floating-point type. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_MEDIUM_FLOAT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ High precision floating-point type. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_HIGH_FLOAT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Low precision signed integer type. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_LOW_INT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Medium precision signed integer type. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_MEDIUM_INT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ High precision signed integer type. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_HIGH_INT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Framebuffer binding target. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FRAMEBUFFER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Renderbuffer binding target. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RENDERBUFFER',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ RGBA format with 4 bits per channel. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RGBA4',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ RGBA format with 5 bits for RGB and 1 bit for alpha. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RGB5_A1',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ RGB format with 5 bits for red and green and 6 bits for blue. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RGB565',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Depth component with 16 bits per channel. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_DEPTH_COMPONENT16',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil index with 8 bits per channel. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_STENCIL_INDEX8',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Renderbuffer width. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RENDERBUFFER_WIDTH',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Renderbuffer height. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RENDERBUFFER_HEIGHT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Renderbuffer internal format. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RENDERBUFFER_INTERNAL_FORMAT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Renderbuffer red component size. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RENDERBUFFER_RED_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Renderbuffer green component size. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RENDERBUFFER_GREEN_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Renderbuffer blue component size. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RENDERBUFFER_BLUE_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Renderbuffer alpha component size. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RENDERBUFFER_ALPHA_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Renderbuffer depth component size. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RENDERBUFFER_DEPTH_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Renderbuffer stencil component size. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RENDERBUFFER_STENCIL_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Framebuffer attachment object type. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Framebuffer attachment object name. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Framebuffer attachment texture level. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Framebuffer attachment texture cube map face. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Color attachment 0. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_COLOR_ATTACHMENT0',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Depth attachment. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_DEPTH_ATTACHMENT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Stencil attachment. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_STENCIL_ATTACHMENT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Framebuffer complete status. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FRAMEBUFFER_COMPLETE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Framebuffer incomplete attachment status. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Framebuffer incomplete missing attachment status. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Framebuffer incomplete dimensions status. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Framebuffer unsupported status. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FRAMEBUFFER_UNSUPPORTED',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound framebuffer. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_FRAMEBUFFER_BINDING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Currently bound renderbuffer. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_RENDERBUFFER_BINDING',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Maximum renderbuffer size. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_MAX_RENDERBUFFER_SIZE',
+  },
+
+  {
+    documentation = {
+      kind = 'markdown',
+      value = [[ Invalid framebuffer operation error. ]],
+    },
+    dup = 0,
+    kind = kinds.Constant,
+    label = 'GL_INVALID_FRAMEBUFFER_OPERATION',
+  },
+
+
+
+
+
+
+
+
+
 }
