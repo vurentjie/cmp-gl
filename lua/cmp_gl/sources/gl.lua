@@ -30387,7 +30387,7 @@ blend equation.
 
 `mode` specifies how source and destination colors are combined. It must be `GL_FUNC_ADD`,
 `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBTRACT`, `GL_MIN`, `GL_MAX`.
-
+---
 ### Description
 The blend equations determine how a new pixel (the "source" color) is combined with a pixel already in the framebuffer (the "destination" color). This function sets both the RGB blend equation and the alpha blend equation to a single equation. glBlendEquationi specifies the blend equation for a single draw buffer whereas glBlendEquation sets the blend equation for all draw buffers.
 
@@ -30418,10 +30418,10 @@ The results of these equations are clamped to the range [0,1].
 The `GL_MIN` and `GL_MAX` equations are useful for applications that analyze image data (image thresholding against a constant color, for example). The GL_FUNC_ADD equation is useful for antialiasing and transparency, among other things.
 
 Initially, both the RGB blend equation and the alpha blend equation are set to GL_FUNC_ADD.
-
+---
 ### Notes
 The `GL_MIN`, and `GL_MAX` equations do not use the source or destination factors, only the source and destination colors.
-
+---
 ### Errors
 `GL_INVALID_ENUM` is generated if mode is not one of `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBTRACT`, `GL_MAX`, or `GL_MIN`.
 
@@ -30447,7 +30447,7 @@ blend equation.
 
 `mode` specifies how source and destination colors are combined. It must be `GL_FUNC_ADD`,
 `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBTRACT`, `GL_MIN`, `GL_MAX`.
-
+---
 ### Description
 The blend equations determine how a new pixel (the "source" color) is combined with a pixel already in the framebuffer (the "destination" color). This function sets both the RGB blend equation and the alpha blend equation to a single equation. glBlendEquationi specifies the blend equation for a single draw buffer whereas glBlendEquation sets the blend equation for all draw buffers.
 
@@ -30478,10 +30478,10 @@ The results of these equations are clamped to the range [0,1].
 The `GL_MIN` and `GL_MAX` equations are useful for applications that analyze image data (image thresholding against a constant color, for example). The GL_FUNC_ADD equation is useful for antialiasing and transparency, among other things.
 
 Initially, both the RGB blend equation and the alpha blend equation are set to GL_FUNC_ADD.
-
+---
 ### Notes
 The `GL_MIN`, and `GL_MAX` equations do not use the source or destination factors, only the source and destination colors.
-
+---
 ### Errors
 `GL_INVALID_ENUM` is generated if mode is not one of `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBTRACT`, `GL_MAX`, or `GL_MIN`.
 
@@ -30512,7 +30512,7 @@ source and destination colors are combined. It must be `GL_FUNC_ADD`, `GL_FUNC_S
 `modeAlpha` specifies the alpha blend equation, how the alpha component of the source and
 destination colors are combined. It must be `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`,
 `GL_FUNC_REVERSE_SUBTRACT`, `GL_MIN`, `GL_MAX`.
-
+---
 ### Description
 The blend equations determine how a new pixel (the "source" color) is combined with a pixel already in the framebuffer (the "destination" color). This function sets both the RGB blend equation and the alpha blend equation to a single equation. glBlendEquationi specifies the blend equation for a single draw buffer whereas glBlendEquation sets the blend equation for all draw buffers.
 
@@ -30543,10 +30543,10 @@ The results of these equations are clamped to the range [0,1].
 The `GL_MIN` and `GL_MAX` equations are useful for applications that analyze image data (image thresholding against a constant color, for example). The GL_FUNC_ADD equation is useful for antialiasing and transparency, among other things.
 
 Initially, both the RGB blend equation and the alpha blend equation are set to GL_FUNC_ADD.
-
+---
 ### Notes
 The `GL_MIN`, and `GL_MAX` equations do not use the source or destination factors, only the source and destination colors.
-
+---
 ### Errors
 `GL_INVALID_ENUM` is generated if mode is not one of `GL_FUNC_ADD`, `GL_FUNC_SUBTRACT`, `GL_FUNC_REVERSE_SUBTRACT`, `GL_MAX`, or `GL_MIN`.
 
