@@ -5,7 +5,7 @@ function source.new()
 end
 
 function source:get_keyword_pattern()
-    return '\\<gl\\|\\<GL_*'
+    return '\\<\\(gl\\|GL_\\?\\).*'
 end
 
 function source:complete(_, callback)
