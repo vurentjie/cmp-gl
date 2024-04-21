@@ -1,7 +1,7 @@
 ---@diagnostic disable
 local lsp_kind = require('cmp').lsp.CompletionItemKind.Function
 
-local vals =  {
+return {
   {
     documentation = {
       kind = 'markdown',

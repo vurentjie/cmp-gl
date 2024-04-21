@@ -5,8 +5,6 @@ function source.new()
 end
 
 function source:complete(_, callback)
-  local items = {}
-  local filetype = vim.bo.filetype;
   local ok, fn = pcall(require, string.format('cmp_gl.filetypes.%s', vim.bo.filetype))
   if ok then
     return callback({
