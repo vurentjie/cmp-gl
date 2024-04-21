@@ -6,9 +6,11 @@ This is helpful when using libraries like glad that obfuscate the underlying api
 
 The completion documentation for function calls is parsed from the gl4 xml files found at [KhronosGroup/OpenGL-Refpages](https://github.com/KhronosGroup/OpenGL-Refpages/tree/main/gl4).
 
-The completion for OpenGL constants (e.g GL_TRIANGLES, GL_VERTEX_ARRAY_SIZE, etc) is also added.
+The completion for OpenGL constants (e.g GL_TRIANGLES, GL_VERTEX_ARRAY_SIZE, etc) is also added but the documentation is omitted.
 
-Currently the completions will display for c/cpp filetypes.
+Currently the completions will display for c/cpp filetypes. And are triggered when typing:
+- `gl` for function calls, e.g glEnable
+- `GL_` for prefixed constants
 
 ---
 
