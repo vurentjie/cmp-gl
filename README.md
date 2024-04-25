@@ -27,9 +27,9 @@ require('cmp').setup({
   },
 })
 
--- You may need to fix clangd indentation issue with `--header-insertion-decorators=false`
 -- https://github.com/hrsh7th/nvim-cmp/issues/999
--- Example:
+-- You may need to fix clangd indentation issue
+-- with `--header-insertion-decorators=false`
 
 vim.lsp.start({
   name = 'clangd',
