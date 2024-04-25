@@ -17,10 +17,24 @@ Currently the completions will display for c/cpp filetypes. And are triggered wh
 Setup
 
 ```lua
+
+-- Place cmp_gl above nvim_lsp
+
 require('cmp').setup({
   sources = {
     { name = 'cmp_gl' },
+    { name = 'nvim_lsp' },
   },
+})
+
+-- You may need to fix clangd indentation issue with `--header-insertion-decorators=false`
+-- https://github.com/hrsh7th/nvim-cmp/issues/999
+-- Example:
+
+vim.lsp.start({
+  name = 'clangd',
+  cmd = { 'clangd', '--malloc-trim', '-j=2', '--header-insertion-decorators=false' },
+  ...
 })
 ```
 
