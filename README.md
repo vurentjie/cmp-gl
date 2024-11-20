@@ -1,6 +1,6 @@
 # cmp-gl
 ---
-nvim-cmp source for OpenGL api functions.
+nvim-cmp source completions and snippets for OpenGL api functions.
 
 This is helpful when using libraries like glad that obfuscate the underlying api with macros.
 
@@ -10,11 +10,11 @@ The completion for OpenGL constants (e.g GL_TRIANGLES, GL_VERTEX_ARRAY_SIZE, etc
 
 By default the completions will display for c/cpp filetypes and insert c/cpp compatible code.
 
-There are two ways to enable completions:
+There are two steps to enable completions:
 
 ---
 
-### Option 1: nvim-cmp source setup:
+### Step 1: nvim-cmp source setup:
 
 ```lua
 
@@ -39,28 +39,28 @@ vim.lsp.start({
 
 ```
 
----
-
  ![](demo.png)
 
 ---
 
-### Option 2: luasnip setup:
+### Step 2: luasnip setup:
 
-If *luasnip* is setup and snippets should be preferred as they allow jumping to
-each function parameter.
+This is optional.
 
-When snippets are enabled, then some source completions are disabled to avoid duplication.
+If *luasnip* is setup then snippets might be preferred as they allow jumping to
+each function parameter. You can turn this on by adding the following:
 
 ```lua
 require('cmp_gl').setup_snippets()
 ```
 
+https://github.com/user-attachments/assets/def55543-9599-4c7e-b4e8-f44de6452958
+
 ---
 
 ### Enabling/disabling filetypes:
 
-Note that this will insert c-style code.
+If you want to see completions in other filetypes you can do that but note that this will still insert c-style code. 
 
 ```lua
 require('cmp_gl').enable_filetype('<filetype>')
