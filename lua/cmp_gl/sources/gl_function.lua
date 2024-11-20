@@ -20499,6 +20499,624 @@ local signatures = {
   { "void glGetShaderInfoLog(GLuint shader, GLsizei maxLength, GLsizei *length, GLchar *infoLog)" },
 }
 
+local insert = {
+  glMapBuffer = "glMapBuffer(target, access)",
+  glMapBufferRange = "glMapBufferRange(target, offset, length, access)",
+  glMapNamedBuffer = "glMapNamedBuffer(buffer, access)",
+  glMapNamedBufferRange = "glMapNamedBufferRange(buffer, offset, length, access)",
+  glGetString = "glGetString(name)",
+  glGetStringi = "glGetStringi(name, index)",
+  glActiveShaderProgram = "glActiveShaderProgram(pipeline, program)",
+  glActiveTexture = "glActiveTexture(texture)",
+  glAttachShader = "glAttachShader(program, shader)",
+  glBeginConditionalRender = "glBeginConditionalRender(id, mode)",
+  glBeginQuery = "glBeginQuery(target, id)",
+  glBeginQueryIndexed = "glBeginQueryIndexed(target, index, id)",
+  glBeginTransformFeedback = "glBeginTransformFeedback(primitiveMode)",
+  glBindAttribLocation = "glBindAttribLocation(program, index, name)",
+  glBindBuffer = "glBindBuffer(target, buffer)",
+  glBindBufferBase = "glBindBufferBase(target, index, buffer)",
+  glBindBufferRange = "glBindBufferRange(target, index, buffer, offset, size)",
+  glBindBuffersBase = "glBindBuffersBase(target, first, count, buffers)",
+  glBindBuffersRange = "glBindBuffersRange(target, first, count, buffers, offsets, sizes)",
+  glBindFragDataLocation = "glBindFragDataLocation(program, colorNumber, name)",
+  glBindFragDataLocationIndexed = "glBindFragDataLocationIndexed(program, colorNumber, index, name)",
+  glBindFramebuffer = "glBindFramebuffer(target, framebuffer)",
+  glBindImageTexture = "glBindImageTexture(unit, texture, level, layered, layer, access, format)",
+  glBindImageTextures = "glBindImageTextures(first, count, textures)",
+  glBindProgramPipeline = "glBindProgramPipeline(pipeline)",
+  glBindRenderbuffer = "glBindRenderbuffer(target, renderbuffer)",
+  glBindSampler = "glBindSampler(unit, sampler)",
+  glBindSamplers = "glBindSamplers(first, count, samplers)",
+  glBindTexture = "glBindTexture(target, texture)",
+  glBindTextureUnit = "glBindTextureUnit(unit, texture)",
+  glBindTextures = "glBindTextures(first, count, textures)",
+  glBindTransformFeedback = "glBindTransformFeedback(target, id)",
+  glBindVertexArray = "glBindVertexArray(arr)",
+  glBindVertexBuffer = "glBindVertexBuffer(bindingindex, buffer, offset, stride)",
+  glBindVertexBuffers = "glBindVertexBuffers(first, count, buffers, offsets, strides)",
+  glBlendColor = "glBlendColor(red, green, blue, alpha)",
+  glBlendEquation = "glBlendEquation(mode)",
+  glBlendEquationSeparate = "glBlendEquationSeparate(modeRGB, modeAlpha)",
+  glBlendEquationSeparatei = "glBlendEquationSeparatei(buf, modeRGB, modeAlpha)",
+  glBlendEquationi = "glBlendEquationi(buf, mode)",
+  glBlendFunc = "glBlendFunc(sfactor, dfactor)",
+  glBlendFuncSeparate = "glBlendFuncSeparate(srcRGB, dstRGB, srcAlpha, dstAlpha)",
+  glBlendFuncSeparatei = "glBlendFuncSeparatei(buf, srcRGB, dstRGB, srcAlpha, dstAlpha)",
+  glBlendFunci = "glBlendFunci(buf, sfactor, dfactor)",
+  glBlitFramebuffer = "glBlitFramebuffer(srcX0, srcY0, srcX1, srcY1, dstX0, dstY0, dstX1, dstY1, mask, filter)",
+  glBlitNamedFramebuffer = "glBlitNamedFramebuffer(readFramebuffer, drawFramebuffer, srcX0, srcY0, srcX1, srcY1, dstX0, dstY0, dstX1, dstY1, mask, filter)",
+  glBufferData = "glBufferData(target, size, data, usage)",
+  glBufferStorage = "glBufferStorage(target, size, data, flags)",
+  glBufferSubData = "glBufferSubData(target, offset, size, data)",
+  glCheckFramebufferStatus = "glCheckFramebufferStatus(target)",
+  glCheckNamedFramebufferStatus = "glCheckNamedFramebufferStatus(framebuffer, target)",
+  glClampColor = "glClampColor(target, clamp)",
+  glClear = "glClear(mask)",
+  glClearBufferData = "glClearBufferData(target, internalformat, format, type, data)",
+  glClearBufferSubData = "glClearBufferSubData(target, internalformat, offset, size, format, type, data)",
+  glClearBufferfi = "glClearBufferfi(buffer, drawbuffer, depth, stencil)",
+  glClearBufferfv = "glClearBufferfv(buffer, drawbuffer, value)",
+  glClearBufferiv = "glClearBufferiv(buffer, drawbuffer, value)",
+  glClearBufferuiv = "glClearBufferuiv(buffer, drawbuffer, value)",
+  glClearColor = "glClearColor(red, green, blue, alpha)",
+  glClearDepth = "glClearDepth(depth)",
+  glClearDepthf = "glClearDepthf(depth)",
+  glClearNamedBufferData = "glClearNamedBufferData(buffer, internalformat, format, type, data)",
+  glClearNamedBufferSubData = "glClearNamedBufferSubData(buffer, internalformat, offset, size, format, type, data)",
+  glClearNamedFramebufferfi = "glClearNamedFramebufferfi(framebuffer, buffer, drawbuffer, depth, stencil)",
+  glClearNamedFramebufferfv = "glClearNamedFramebufferfv(framebuffer, buffer, drawbuffer, value)",
+  glClearNamedFramebufferiv = "glClearNamedFramebufferiv(framebuffer, buffer, drawbuffer, value)",
+  glClearNamedFramebufferuiv = "glClearNamedFramebufferuiv(framebuffer, buffer, drawbuffer, value)",
+  glClearStencil = "glClearStencil(s)",
+  glClearTexImage = "glClearTexImage(texture, level, format, type, data)",
+  glClearTexSubImage = "glClearTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, data)",
+  glClientWaitSync = "glClientWaitSync(sync, flags, timeout)",
+  glClipControl = "glClipControl(origin, depth)",
+  glColorMask = "glColorMask(red, green, blue, alpha)",
+  glColorMaski = "glColorMaski(buf, red, green, blue, alpha)",
+  glCompileShader = "glCompileShader(shader)",
+  glCompressedTexImage1D = "glCompressedTexImage1D(target, level, internalformat, width, border, imageSize, data)",
+  glCompressedTexImage2D = "glCompressedTexImage2D(target, level, internalformat, width, height, border, imageSize, data)",
+  glCompressedTexImage3D = "glCompressedTexImage3D(target, level, internalformat, width, height, depth, border, imageSize, data)",
+  glCompressedTexSubImage1D = "glCompressedTexSubImage1D(target, level, xoffset, width, format, imageSize, data)",
+  glCompressedTexSubImage2D = "glCompressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, imageSize, data)",
+  glCompressedTexSubImage3D = "glCompressedTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize, data)",
+  glCompressedTextureSubImage1D = "glCompressedTextureSubImage1D(texture, level, xoffset, width, format, imageSize, data)",
+  glCompressedTextureSubImage2D = "glCompressedTextureSubImage2D(texture, level, xoffset, yoffset, width, height, format, imageSize, data)",
+  glCompressedTextureSubImage3D = "glCompressedTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize, data)",
+  glCopyBufferSubData = "glCopyBufferSubData(readTarget, writeTarget, readOffset, writeOffset, size)",
+  glCopyImageSubData = "glCopyImageSubData(srcName, srcTarget, srcLevel, srcX, srcY, srcZ, dstName, dstTarget, dstLevel, dstX, dstY, dstZ, srcWidth, srcHeight, srcDepth)",
+  glCopyNamedBufferSubData = "glCopyNamedBufferSubData(readBuffer, writeBuffer, readOffset, writeOffset, size)",
+  glCopyTexImage1D = "glCopyTexImage1D(target, level, internalformat, x, y, width, border)",
+  glCopyTexImage2D = "glCopyTexImage2D(target, level, internalformat, x, y, width, height, border)",
+  glCopyTexSubImage1D = "glCopyTexSubImage1D(target, level, xoffset, x, y, width)",
+  glCopyTexSubImage2D = "glCopyTexSubImage2D(target, level, xoffset, yoffset, x, y, width, height)",
+  glCopyTexSubImage3D = "glCopyTexSubImage3D(target, level, xoffset, yoffset, zoffset, x, y, width, height)",
+  glCopyTextureSubImage1D = "glCopyTextureSubImage1D(texture, level, xoffset, x, y, width)",
+  glCopyTextureSubImage2D = "glCopyTextureSubImage2D(texture, level, xoffset, yoffset, x, y, width, height)",
+  glCopyTextureSubImage3D = "glCopyTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, x, y, width, height)",
+  glCreateBuffers = "glCreateBuffers(n, buffers)",
+  glCreateFramebuffers = "glCreateFramebuffers(n, framebuffers)",
+  glCreateProgram = "glCreateProgram()",
+  glCreateProgramPipelines = "glCreateProgramPipelines(n, pipelines)",
+  glCreateQueries = "glCreateQueries(target, n, ids)",
+  glCreateRenderbuffers = "glCreateRenderbuffers(n, renderbuffers)",
+  glCreateSamplers = "glCreateSamplers(n, samplers)",
+  glCreateShader = "glCreateShader(shaderType)",
+  glCreateShaderProgramv = "glCreateShaderProgramv(type, count, strings)",
+  glCreateTextures = "glCreateTextures(target, n, textures)",
+  glCreateTransformFeedbacks = "glCreateTransformFeedbacks(n, ids)",
+  glCreateVertexArrays = "glCreateVertexArrays(n, arrs)",
+  glCullFace = "glCullFace(mode)",
+  glDebugMessageCallback = "glDebugMessageCallback(callback, userParam)",
+  glDebugMessageControl = "glDebugMessageControl(source, type, severity, count, ids, enabled)",
+  glDebugMessageInsert = "glDebugMessageInsert(source, type, id, severity, length, message)",
+  glDeleteBuffers = "glDeleteBuffers(n, buffers)",
+  glDeleteFramebuffers = "glDeleteFramebuffers(n, framebuffers)",
+  glDeleteProgram = "glDeleteProgram(program)",
+  glDeleteProgramPipelines = "glDeleteProgramPipelines(n, pipelines)",
+  glDeleteQueries = "glDeleteQueries(n, ids)",
+  glDeleteRenderbuffers = "glDeleteRenderbuffers(n, renderbuffers)",
+  glDeleteSamplers = "glDeleteSamplers(n, samplers)",
+  glDeleteShader = "glDeleteShader(shader)",
+  glDeleteSync = "glDeleteSync(sync)",
+  glDeleteTextures = "glDeleteTextures(n, textures)",
+  glDeleteTransformFeedbacks = "glDeleteTransformFeedbacks(n, ids)",
+  glDeleteVertexArrays = "glDeleteVertexArrays(n, arrs)",
+  glDepthFunc = "glDepthFunc(func)",
+  glDepthMask = "glDepthMask(flag)",
+  glDepthRange = "glDepthRange(nearVal, farVal)",
+  glDepthRangeArrayv = "glDepthRangeArrayv(first, count, v)",
+  glDepthRangeIndexed = "glDepthRangeIndexed(index, nearVal, farVal)",
+  glDepthRangef = "glDepthRangef(nearVal, farVal)",
+  glDetachShader = "glDetachShader(program, shader)",
+  glDisable = "glDisable(cap)",
+  glDisableVertexArrayAttrib = "glDisableVertexArrayAttrib(vaobj, index)",
+  glDisableVertexAttribArray = "glDisableVertexAttribArray(index)",
+  glDisablei = "glDisablei(cap, index)",
+  glDispatchCompute = "glDispatchCompute(num_groups_x, num_groups_y, num_groups_z)",
+  glDispatchComputeIndirect = "glDispatchComputeIndirect(indirect)",
+  glDrawArrays = "glDrawArrays(mode, first, count)",
+  glDrawArraysIndirect = "glDrawArraysIndirect(mode, indirect)",
+  glDrawArraysInstanced = "glDrawArraysInstanced(mode, first, count, instancecount)",
+  glDrawArraysInstancedBaseInstance = "glDrawArraysInstancedBaseInstance(mode, first, count, instancecount, baseinstance)",
+  glDrawBuffer = "glDrawBuffer(buf)",
+  glDrawBuffers = "glDrawBuffers(n, bufs)",
+  glDrawElements = "glDrawElements(mode, count, type, indices)",
+  glDrawElementsBaseVertex = "glDrawElementsBaseVertex(mode, count, type, indices, basevertex)",
+  glDrawElementsIndirect = "glDrawElementsIndirect(mode, type, indirect)",
+  glDrawElementsInstanced = "glDrawElementsInstanced(mode, count, type, indices, instancecount)",
+  glDrawElementsInstancedBaseInstance = "glDrawElementsInstancedBaseInstance(mode, count, type, indices, instancecount, baseinstance)",
+  glDrawElementsInstancedBaseVertex = "glDrawElementsInstancedBaseVertex(mode, count, type, indices, instancecount, basevertex)",
+  glDrawElementsInstancedBaseVertexBaseInstance = "glDrawElementsInstancedBaseVertexBaseInstance(mode, count, type, indices, instancecount, basevertex, baseinstance )",
+  glDrawRangeElements = "glDrawRangeElements(mode, start, end, count, type, indices)",
+  glDrawRangeElementsBaseVertex = "glDrawRangeElementsBaseVertex(mode, start, end, count, type, indices, basevertex)",
+  glDrawTransformFeedback = "glDrawTransformFeedback(mode, id)",
+  glDrawTransformFeedbackInstanced = "glDrawTransformFeedbackInstanced(mode, id, instancecount)",
+  glDrawTransformFeedbackStream = "glDrawTransformFeedbackStream(mode, id, stream)",
+  glDrawTransformFeedbackStreamInstanced = "glDrawTransformFeedbackStreamInstanced(mode, id, stream, instancecount)",
+  glEnable = "glEnable(cap)",
+  glEnableVertexArrayAttrib = "glEnableVertexArrayAttrib(vaobj, index)",
+  glEnableVertexAttribArray = "glEnableVertexAttribArray(index)",
+  glEnablei = "glEnablei(cap, index)",
+  glEndConditionalRender = "glEndConditionalRender()",
+  glEndQuery = "glEndQuery(target)",
+  glEndQueryIndexed = "glEndQueryIndexed(target, index)",
+  glEndTransformFeedback = "glEndTransformFeedback()",
+  glFenceSync = "glFenceSync(condition, flags)",
+  glFinish = "glFinish()",
+  glFlush = "glFlush()",
+  glFlushMappedBufferRange = "glFlushMappedBufferRange(target, offset, length)",
+  glFlushMappedNamedBufferRange = "glFlushMappedNamedBufferRange(buffer, offset, length)",
+  glFramebufferParameteri = "glFramebufferParameteri(target, pname, param)",
+  glFramebufferRenderbuffer = "glFramebufferRenderbuffer(target, attachment, renderbuffertarget, renderbuffer)",
+  glFramebufferTexture = "glFramebufferTexture(target, attachment, texture, level)",
+  glFramebufferTexture1D = "glFramebufferTexture1D(target, attachment, textarget, texture, level)",
+  glFramebufferTexture2D = "glFramebufferTexture2D(target, attachment, textarget, texture, level)",
+  glFramebufferTexture3D = "glFramebufferTexture3D(target, attachment, textarget, texture, level, layer)",
+  glFramebufferTextureLayer = "glFramebufferTextureLayer(target, attachment, texture, level, layer)",
+  glFrontFace = "glFrontFace(mode)",
+  glGenBuffers = "glGenBuffers(n, buffers)",
+  glGenFramebuffers = "glGenFramebuffers(n, ids)",
+  glGenProgramPipelines = "glGenProgramPipelines(n, pipelines)",
+  glGenQueries = "glGenQueries(n, ids)",
+  glGenRenderbuffers = "glGenRenderbuffers(n, renderbuffers)",
+  glGenSamplers = "glGenSamplers(n, samplers)",
+  glGenTextures = "glGenTextures(n, textures)",
+  glGenTransformFeedbacks = "glGenTransformFeedbacks(n, ids)",
+  glGenVertexArrays = "glGenVertexArrays(n, arrs)",
+  glGenerateMipmap = "glGenerateMipmap(target)",
+  glGenerateTextureMipmap = "glGenerateTextureMipmap(texture)",
+  glGetActiveAtomicCounterBufferiv = "glGetActiveAtomicCounterBufferiv(program, bufferIndex, pname, params)",
+  glGetActiveAttrib = "glGetActiveAttrib(program, index, bufSize, length, size, type, name)",
+  glGetActiveSubroutineName = "glGetActiveSubroutineName(program, shadertype, index, bufSize, length, name)",
+  glGetActiveSubroutineUniformName = "glGetActiveSubroutineUniformName(program, shadertype, index, bufSize, length, name)",
+  glGetActiveSubroutineUniformiv = "glGetActiveSubroutineUniformiv(program, shadertype, index, pname, values)",
+  glGetActiveUniform = "glGetActiveUniform(program, index, bufSize, length, size, type, name)",
+  glGetActiveUniformBlockName = "glGetActiveUniformBlockName(program, uniformBlockIndex, bufSize, length, uniformBlockName)",
+  glGetActiveUniformBlockiv = "glGetActiveUniformBlockiv(program, uniformBlockIndex, pname, params)",
+  glGetActiveUniformName = "glGetActiveUniformName(program, uniformIndex, bufSize, length, uniformName)",
+  glGetActiveUniformsiv = "glGetActiveUniformsiv(program, uniformCount, uniformIndices, pname, params)",
+  glGetAttachedShaders = "glGetAttachedShaders(program, maxCount, count, shaders)",
+  glGetAttribLocation = "glGetAttribLocation(program, name)",
+  glGetBooleani_v = "glGetBooleani_v(target, index, data)",
+  glGetBooleanv = "glGetBooleanv(pname, data)",
+  glGetBufferParameteri64v = "glGetBufferParameteri64v(target, value, data)",
+  glGetBufferParameteriv = "glGetBufferParameteriv(target, value, data)",
+  glGetBufferPointerv = "glGetBufferPointerv(target, pname, params)",
+  glGetBufferSubData = "glGetBufferSubData(target, offset, size, data)",
+  glGetCompressedTexImage = "glGetCompressedTexImage(target, level, pixels)",
+  glGetCompressedTextureImage = "glGetCompressedTextureImage(texture, level, bufSize, pixels)",
+  glGetCompressedTextureSubImage = "glGetCompressedTextureSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, bufSize, pixels)",
+  glGetDebugMessageLog = "glGetDebugMessageLog(count, bufSize, sources, types, ids, severities, lengths, messageLog)",
+  glGetDoublei_v = "glGetDoublei_v(target, index, data)",
+  glGetDoublev = "glGetDoublev(pname, data)",
+  glGetError = "glGetError()",
+  glGetFloati_v = "glGetFloati_v(target, index, data)",
+  glGetFloatv = "glGetFloatv(pname, data)",
+  glGetFragDataIndex = "glGetFragDataIndex(program, name)",
+  glGetFragDataLocation = "glGetFragDataLocation(program, name)",
+  glGetFramebufferAttachmentParameteriv = "glGetFramebufferAttachmentParameteriv(target, attachment, pname, params)",
+  glGetFramebufferParameteriv = "glGetFramebufferParameteriv(target, pname, params)",
+  glGetGraphicsResetStatus = "glGetGraphicsResetStatus()",
+  glGetInteger64i_v = "glGetInteger64i_v(target, index, data)",
+  glGetInteger64v = "glGetInteger64v(pname, data)",
+  glGetIntegeri_v = "glGetIntegeri_v(target, index, data)",
+  glGetIntegerv = "glGetIntegerv(pname, data)",
+  glGetInternalformati64v = "glGetInternalformati64v(target, internalformat, pname, bufSize, params)",
+  glGetInternalformativ = "glGetInternalformativ(target, internalformat, pname, bufSize, params)",
+  glGetMultisamplefv = "glGetMultisamplefv(pname, index, val)",
+  glGetNamedBufferParameteri64v = "glGetNamedBufferParameteri64v(buffer, pname, params)",
+  glGetNamedBufferParameteriv = "glGetNamedBufferParameteriv(buffer, pname, params)",
+  glGetNamedBufferPointerv = "glGetNamedBufferPointerv(buffer, pname, params)",
+  glGetNamedBufferSubData = "glGetNamedBufferSubData(buffer, offset, size, data)",
+  glGetNamedFramebufferAttachmentParameteriv = "glGetNamedFramebufferAttachmentParameteriv(framebuffer, attachment, pname, params)",
+  glGetNamedFramebufferParameteriv = "glGetNamedFramebufferParameteriv(framebuffer, pname, param)",
+  glGetNamedRenderbufferParameteriv = "glGetNamedRenderbufferParameteriv(renderbuffer, pname, params)",
+  glGetObjectLabel = "glGetObjectLabel(identifier, name, bufSize, length, label)",
+  glGetObjectPtrLabel = "glGetObjectPtrLabel(ptr, bufSize, length, label)",
+  glGetPointerv = "glGetPointerv(pname, params)",
+  glGetProgramBinary = "glGetProgramBinary(program, bufSize, length, binaryFormat, binary)",
+  glGetProgramInfoLog = "glGetProgramInfoLog(program, maxLength, length, infoLog)",
+  glGetProgramInterfaceiv = "glGetProgramInterfaceiv(program, programInterface, pname, params)",
+  glGetProgramPipelineInfoLog = "glGetProgramPipelineInfoLog(pipeline, bufSize, length, infoLog)",
+  glGetProgramPipelineiv = "glGetProgramPipelineiv(pipeline, pname, params)",
+  glGetProgramResourceIndex = "glGetProgramResourceIndex(program, programInterface, name)",
+  glGetProgramResourceLocation = "glGetProgramResourceLocation(program, programInterface, name)",
+  glGetProgramResourceLocationIndex = "glGetProgramResourceLocationIndex(program, programInterface, name)",
+  glGetProgramResourceName = "glGetProgramResourceName(program, programInterface, index, bufSize, length, name)",
+  glGetProgramResourceiv = "glGetProgramResourceiv(program, programInterface, index, propCount, props, bufSize, length, params)",
+  glGetProgramStageiv = "glGetProgramStageiv(program, shadertype, pname, values)",
+  glGetProgramiv = "glGetProgramiv(program, pname, params)",
+  glGetQueryBufferObjecti64v = "glGetQueryBufferObjecti64v(id, buffer, pname, offset)",
+  glGetQueryBufferObjectiv = "glGetQueryBufferObjectiv(id, buffer, pname, offset)",
+  glGetQueryBufferObjectui64v = "glGetQueryBufferObjectui64v(id, buffer, pname, offset)",
+  glGetQueryBufferObjectuiv = "glGetQueryBufferObjectuiv(id, buffer, pname, offset)",
+  glGetQueryIndexediv = "glGetQueryIndexediv(target, index, pname, params)",
+  glGetQueryObjecti64v = "glGetQueryObjecti64v(id, pname, params)",
+  glGetQueryObjectiv = "glGetQueryObjectiv(id, pname, params)",
+  glGetQueryObjectui64v = "glGetQueryObjectui64v(id, pname, params)",
+  glGetQueryObjectuiv = "glGetQueryObjectuiv(id, pname, params)",
+  glGetQueryiv = "glGetQueryiv(target, pname, params)",
+  glGetRenderbufferParameteriv = "glGetRenderbufferParameteriv(target, pname, params)",
+  glGetSamplerParameterIiv = "glGetSamplerParameterIiv(sampler, pname, params)",
+  glGetSamplerParameterIuiv = "glGetSamplerParameterIuiv(sampler, pname, params)",
+  glGetSamplerParameterfv = "glGetSamplerParameterfv(sampler, pname, params)",
+  glGetSamplerParameteriv = "glGetSamplerParameteriv(sampler, pname, params)",
+  glGetShaderInfoLog = "glGetShaderInfoLog(shader, maxLength, length, infoLog)",
+  glGetShaderPrecisionFormat = "glGetShaderPrecisionFormat(shaderType, precisionType, range, precision)",
+  glGetShaderSource = "glGetShaderSource(shader, bufSize, length, source)",
+  glGetShaderiv = "glGetShaderiv(shader, pname, params)",
+  glGetSubroutineIndex = "glGetSubroutineIndex(program, shadertype, name)",
+  glGetSubroutineUniformLocation = "glGetSubroutineUniformLocation(program, shadertype, name)",
+  glGetSynciv = "glGetSynciv(sync, pname, bufSize, length, values)",
+  glGetTexImage = "glGetTexImage(target, level, format, type, pixels)",
+  glGetTexLevelParameterfv = "glGetTexLevelParameterfv(target, level, pname, params)",
+  glGetTexLevelParameteriv = "glGetTexLevelParameteriv(target, level, pname, params)",
+  glGetTexParameterIiv = "glGetTexParameterIiv(target, pname, params)",
+  glGetTexParameterIuiv = "glGetTexParameterIuiv(target, pname, params)",
+  glGetTexParameterfv = "glGetTexParameterfv(target, pname, params)",
+  glGetTexParameteriv = "glGetTexParameteriv(target, pname, params)",
+  glGetTextureImage = "glGetTextureImage(texture, level, format, type, bufSize, pixels)",
+  glGetTextureLevelParameterfv = "glGetTextureLevelParameterfv(texture, level, pname, params)",
+  glGetTextureLevelParameteriv = "glGetTextureLevelParameteriv(texture, level, pname, params)",
+  glGetTextureParameterIiv = "glGetTextureParameterIiv(texture, pname, params)",
+  glGetTextureParameterIuiv = "glGetTextureParameterIuiv(texture, pname, params)",
+  glGetTextureParameterfv = "glGetTextureParameterfv(texture, pname, params)",
+  glGetTextureParameteriv = "glGetTextureParameteriv(texture, pname, params)",
+  glGetTextureSubImage = "glGetTextureSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, bufSize, pixels)",
+  glGetTransformFeedbackVarying = "glGetTransformFeedbackVarying(program, index, bufSize, length, size, type, name)",
+  glGetTransformFeedbacki64_v = "glGetTransformFeedbacki64_v(xfb, pname, index, param)",
+  glGetTransformFeedbacki_v = "glGetTransformFeedbacki_v(xfb, pname, index, param)",
+  glGetTransformFeedbackiv = "glGetTransformFeedbackiv(xfb, pname, param)",
+  glGetUniformBlockIndex = "glGetUniformBlockIndex(program, uniformBlockName)",
+  glGetUniformIndices = "glGetUniformIndices(program, uniformCount, uniformNames, uniformIndices)",
+  glGetUniformLocation = "glGetUniformLocation(program, name)",
+  glGetUniformSubroutineuiv = "glGetUniformSubroutineuiv(shadertype, location, values)",
+  glGetUniformdv = "glGetUniformdv(program, location, params)",
+  glGetUniformfv = "glGetUniformfv(program, location, params)",
+  glGetUniformiv = "glGetUniformiv(program, location, params)",
+  glGetUniformuiv = "glGetUniformuiv(program, location, params)",
+  glGetVertexArrayIndexed64iv = "glGetVertexArrayIndexed64iv(vaobj, index, pname, param)",
+  glGetVertexArrayIndexediv = "glGetVertexArrayIndexediv(vaobj, index, pname, param)",
+  glGetVertexArrayiv = "glGetVertexArrayiv(vaobj, pname, param)",
+  glGetVertexAttribIiv = "glGetVertexAttribIiv(index, pname, params)",
+  glGetVertexAttribIuiv = "glGetVertexAttribIuiv(index, pname, params)",
+  glGetVertexAttribLdv = "glGetVertexAttribLdv(index, pname, params)",
+  glGetVertexAttribPointerv = "glGetVertexAttribPointerv(index, pname, pointer)",
+  glGetVertexAttribdv = "glGetVertexAttribdv(index, pname, params)",
+  glGetVertexAttribfv = "glGetVertexAttribfv(index, pname, params)",
+  glGetVertexAttribiv = "glGetVertexAttribiv(index, pname, params)",
+  glGetnCompressedTexImage = "glGetnCompressedTexImage(target, level, bufSize, pixels)",
+  glGetnTexImage = "glGetnTexImage(target, level, format, type, bufSize, pixels)",
+  glGetnUniformdv = "glGetnUniformdv(program, location, bufSize, params)",
+  glGetnUniformfv = "glGetnUniformfv(program, location, bufSize, params)",
+  glGetnUniformiv = "glGetnUniformiv(program, location, bufSize, params)",
+  glGetnUniformuiv = "glGetnUniformuiv(program, location, bufSize, params)",
+  glHint = "glHint(target, mode)",
+  glInvalidateBufferData = "glInvalidateBufferData(buffer)",
+  glInvalidateBufferSubData = "glInvalidateBufferSubData(buffer, offset, length)",
+  glInvalidateFramebuffer = "glInvalidateFramebuffer(target, numAttachments, attachments)",
+  glInvalidateNamedFramebufferData = "glInvalidateNamedFramebufferData(framebuffer, numAttachments, attachments)",
+  glInvalidateNamedFramebufferSubData = "glInvalidateNamedFramebufferSubData(framebuffer, numAttachments, attachments, x, y, width, height)",
+  glInvalidateSubFramebuffer = "glInvalidateSubFramebuffer(target, numAttachments, attachments, x, y, width, height)",
+  glInvalidateTexImage = "glInvalidateTexImage(texture, level)",
+  glInvalidateTexSubImage = "glInvalidateTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth)",
+  glIsBuffer = "glIsBuffer(buffer)",
+  glIsEnabled = "glIsEnabled(cap)",
+  glIsEnabledi = "glIsEnabledi(cap, index)",
+  glIsFramebuffer = "glIsFramebuffer(framebuffer)",
+  glIsProgram = "glIsProgram(program)",
+  glIsProgramPipeline = "glIsProgramPipeline(pipeline)",
+  glIsQuery = "glIsQuery(id)",
+  glIsRenderbuffer = "glIsRenderbuffer(renderbuffer)",
+  glIsSampler = "glIsSampler(id)",
+  glIsShader = "glIsShader(shader)",
+  glIsSync = "glIsSync(sync)",
+  glIsTexture = "glIsTexture(texture)",
+  glIsTransformFeedback = "glIsTransformFeedback(id)",
+  glIsVertexArray = "glIsVertexArray(arr)",
+  glLineWidth = "glLineWidth(width)",
+  glLinkProgram = "glLinkProgram(program)",
+  glLogicOp = "glLogicOp(opcode)",
+  glMemoryBarrier = "glMemoryBarrier(barriers)",
+  glMemoryBarrierByRegion = "glMemoryBarrierByRegion(barriers)",
+  glMinSampleShading = "glMinSampleShading(value)",
+  glMultiDrawArrays = "glMultiDrawArrays(mode, first, count, drawcount)",
+  glMultiDrawArraysIndirect = "glMultiDrawArraysIndirect(mode, indirect, drawcount, stride)",
+  glMultiDrawElements = "glMultiDrawElements(mode, count, type, indices, drawcount)",
+  glMultiDrawElementsBaseVertex = "glMultiDrawElementsBaseVertex(mode, count, type, indices, drawcount, basevertex)",
+  glMultiDrawElementsIndirect = "glMultiDrawElementsIndirect(mode, type, indirect, drawcount, stride)",
+  glNamedBufferData = "glNamedBufferData(buffer, size, data, usage)",
+  glNamedBufferStorage = "glNamedBufferStorage(buffer, size, data, flags)",
+  glNamedBufferSubData = "glNamedBufferSubData(buffer, offset, size, data)",
+  glNamedFramebufferDrawBuffer = "glNamedFramebufferDrawBuffer(framebuffer, buf)",
+  glNamedFramebufferDrawBuffers = "glNamedFramebufferDrawBuffers(framebuffer, n, bufs)",
+  glNamedFramebufferParameteri = "glNamedFramebufferParameteri(framebuffer, pname, param)",
+  glNamedFramebufferReadBuffer = "glNamedFramebufferReadBuffer(framebuffer, mode)",
+  glNamedFramebufferRenderbuffer = "glNamedFramebufferRenderbuffer(framebuffer, attachment, renderbuffertarget, renderbuffer)",
+  glNamedFramebufferTexture = "glNamedFramebufferTexture(framebuffer, attachment, texture, level)",
+  glNamedFramebufferTextureLayer = "glNamedFramebufferTextureLayer(framebuffer, attachment, texture, level, layer)",
+  glNamedRenderbufferStorage = "glNamedRenderbufferStorage(renderbuffer, internalformat, width, height)",
+  glNamedRenderbufferStorageMultisample = "glNamedRenderbufferStorageMultisample(renderbuffer, samples, internalformat, width, height)",
+  glObjectLabel = "glObjectLabel(identifier, name, length, label)",
+  glObjectPtrLabel = "glObjectPtrLabel(ptr, length, label)",
+  glPatchParameterfv = "glPatchParameterfv(pname, values)",
+  glPatchParameteri = "glPatchParameteri(pname, value)",
+  glPauseTransformFeedback = "glPauseTransformFeedback()",
+  glPixelStoref = "glPixelStoref(pname, param)",
+  glPixelStorei = "glPixelStorei(pname, param)",
+  glPointParameterf = "glPointParameterf(pname, param)",
+  glPointParameterfv = "glPointParameterfv(pname, params)",
+  glPointParameteri = "glPointParameteri(pname, param)",
+  glPointParameteriv = "glPointParameteriv(pname, params)",
+  glPointSize = "glPointSize(size)",
+  glPolygonMode = "glPolygonMode(face, mode)",
+  glPolygonOffset = "glPolygonOffset(factor, units)",
+  glPopDebugGroup = "glPopDebugGroup()",
+  glPrimitiveRestartIndex = "glPrimitiveRestartIndex(index)",
+  glProgramBinary = "glProgramBinary(program, binaryFormat, binary, length)",
+  glProgramParameteri = "glProgramParameteri(program, pname, value)",
+  glProgramUniform1f = "glProgramUniform1f(program, location, v0)",
+  glProgramUniform1fv = "glProgramUniform1fv(program, location, count, value)",
+  glProgramUniform1i = "glProgramUniform1i(program, location, v0)",
+  glProgramUniform1iv = "glProgramUniform1iv(program, location, count, value)",
+  glProgramUniform1ui = "glProgramUniform1ui(program, location, v0)",
+  glProgramUniform1uiv = "glProgramUniform1uiv(program, location, count, value)",
+  glProgramUniform2f = "glProgramUniform2f(program, location, v0, v1)",
+  glProgramUniform2fv = "glProgramUniform2fv(program, location, count, value)",
+  glProgramUniform2i = "glProgramUniform2i(program, location, v0, v1)",
+  glProgramUniform2iv = "glProgramUniform2iv(program, location, count, value)",
+  glProgramUniform2ui = "glProgramUniform2ui(program, location, v0, v1)",
+  glProgramUniform2uiv = "glProgramUniform2uiv(program, location, count, value)",
+  glProgramUniform3f = "glProgramUniform3f(program, location, v0, v1, v2)",
+  glProgramUniform3fv = "glProgramUniform3fv(program, location, count, value)",
+  glProgramUniform3i = "glProgramUniform3i(program, location, v0, v1, v2)",
+  glProgramUniform3iv = "glProgramUniform3iv(program, location, count, value)",
+  glProgramUniform3ui = "glProgramUniform3ui(program, location, v0, v1, v2)",
+  glProgramUniform3uiv = "glProgramUniform3uiv(program, location, count, value)",
+  glProgramUniform4f = "glProgramUniform4f(program, location, v0, v1, v2, v3)",
+  glProgramUniform4fv = "glProgramUniform4fv(program, location, count, value)",
+  glProgramUniform4i = "glProgramUniform4i(program, location, v0, v1, v2, v3)",
+  glProgramUniform4iv = "glProgramUniform4iv(program, location, count, value)",
+  glProgramUniform4ui = "glProgramUniform4ui(program, location, v0, v1, v2, v3)",
+  glProgramUniform4uiv = "glProgramUniform4uiv(program, location, count, value)",
+  glProgramUniformMatrix2fv = "glProgramUniformMatrix2fv(program, location, count, transpose, value)",
+  glProgramUniformMatrix2x3fv = "glProgramUniformMatrix2x3fv(program, location, count, transpose, value)",
+  glProgramUniformMatrix2x4fv = "glProgramUniformMatrix2x4fv(program, location, count, transpose, value)",
+  glProgramUniformMatrix3fv = "glProgramUniformMatrix3fv(program, location, count, transpose, value)",
+  glProgramUniformMatrix3x2fv = "glProgramUniformMatrix3x2fv(program, location, count, transpose, value)",
+  glProgramUniformMatrix3x4fv = "glProgramUniformMatrix3x4fv(program, location, count, transpose, value)",
+  glProgramUniformMatrix4fv = "glProgramUniformMatrix4fv(program, location, count, transpose, value)",
+  glProgramUniformMatrix4x2fv = "glProgramUniformMatrix4x2fv(program, location, count, transpose, value)",
+  glProgramUniformMatrix4x3fv = "glProgramUniformMatrix4x3fv(program, location, count, transpose, value)",
+  glProvokingVertex = "glProvokingVertex(provokeMode)",
+  glPushDebugGroup = "glPushDebugGroup(source, id, length, message)",
+  glQueryCounter = "glQueryCounter(id, target)",
+  glReadBuffer = "glReadBuffer(mode)",
+  glReadPixels = "glReadPixels(x, y, width, height, format, type, data)",
+  glReadnPixels = "glReadnPixels(x, y, width, height, format, type, bufSize, data)",
+  glReleaseShaderCompiler = "glReleaseShaderCompiler()",
+  glRenderbufferStorage = "glRenderbufferStorage(target, internalformat, width, height)",
+  glRenderbufferStorageMultisample = "glRenderbufferStorageMultisample(target, samples, internalformat, width, height)",
+  glResumeTransformFeedback = "glResumeTransformFeedback()",
+  glSampleCoverage = "glSampleCoverage(value, invert)",
+  glSampleMaski = "glSampleMaski(maskNumber, mask)",
+  glSamplerParameterIiv = "glSamplerParameterIiv(sampler, pname, params)",
+  glSamplerParameterIuiv = "glSamplerParameterIuiv(sampler, pname, params)",
+  glSamplerParameterf = "glSamplerParameterf(sampler, pname, param)",
+  glSamplerParameterfv = "glSamplerParameterfv(sampler, pname, params)",
+  glSamplerParameteri = "glSamplerParameteri(sampler, pname, param)",
+  glSamplerParameteriv = "glSamplerParameteriv(sampler, pname, params)",
+  glScissor = "glScissor(x, y, width, height)",
+  glScissorArrayv = "glScissorArrayv(first, count, v)",
+  glScissorIndexed = "glScissorIndexed(index, left, bottom, width, height)",
+  glScissorIndexedv = "glScissorIndexedv(index, v)",
+  glShaderBinary = "glShaderBinary(count, shaders, binaryFormat, binary, length)",
+  glShaderSource = "glShaderSource(shader, count, string, length)",
+  glShaderStorageBlockBinding = "glShaderStorageBlockBinding(program, storageBlockIndex, storageBlockBinding)",
+  glStencilFunc = "glStencilFunc(func, ref, mask)",
+  glStencilFuncSeparate = "glStencilFuncSeparate(face, func, ref, mask)",
+  glStencilMask = "glStencilMask(mask)",
+  glStencilMaskSeparate = "glStencilMaskSeparate(face, mask)",
+  glStencilOp = "glStencilOp(sfail, dpfail, dppass)",
+  glStencilOpSeparate = "glStencilOpSeparate(face, sfail, dpfail, dppass)",
+  glTexBuffer = "glTexBuffer(target, internalformat, buffer)",
+  glTexBufferRange = "glTexBufferRange(target, internalformat, buffer, offset, size)",
+  glTexImage1D = "glTexImage1D(target, level, internalformat, width, border, format, type, data)",
+  glTexImage2D = "glTexImage2D(target, level, internalformat, width, height, border, format, type, data)",
+  glTexImage2DMultisample = "glTexImage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations)",
+  glTexImage3D = "glTexImage3D(target, level, internalformat, width, height, depth, border, format, type, data)",
+  glTexImage3DMultisample = "glTexImage3DMultisample(target, samples, internalformat, width, height, depth, fixedsamplelocations)",
+  glTexParameterIiv = "glTexParameterIiv(target, pname, params)",
+  glTexParameterIuiv = "glTexParameterIuiv(target, pname, params)",
+  glTexParameterf = "glTexParameterf(target, pname, param)",
+  glTexParameterfv = "glTexParameterfv(target, pname, params)",
+  glTexParameteri = "glTexParameteri(target, pname, param)",
+  glTexParameteriv = "glTexParameteriv(target, pname, params)",
+  glTexStorage1D = "glTexStorage1D(target, levels, internalformat, width)",
+  glTexStorage2D = "glTexStorage2D(target, levels, internalformat, width, height)",
+  glTexStorage2DMultisample = "glTexStorage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations)",
+  glTexStorage3D = "glTexStorage3D(target, levels, internalformat, width, height, depth)",
+  glTexStorage3DMultisample = "glTexStorage3DMultisample(target, samples, internalformat, width, height, depth, fixedsamplelocations)",
+  glTexSubImage1D = "glTexSubImage1D(target, level, xoffset, width, format, type, pixels)",
+  glTexSubImage2D = "glTexSubImage2D(target, level, xoffset, yoffset, width, height, format, type, pixels)",
+  glTexSubImage3D = "glTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, type, pixels)",
+  glTextureBarrier = "glTextureBarrier()",
+  glTextureBuffer = "glTextureBuffer(texture, internalformat, buffer)",
+  glTextureBufferRange = "glTextureBufferRange(texture, internalformat, buffer, offset, size)",
+  glTextureParameterIiv = "glTextureParameterIiv(texture, pname, params)",
+  glTextureParameterIuiv = "glTextureParameterIuiv(texture, pname, params)",
+  glTextureParameterf = "glTextureParameterf(texture, pname, param)",
+  glTextureParameterfv = "glTextureParameterfv(texture, pname, params)",
+  glTextureParameteri = "glTextureParameteri(texture, pname, param)",
+  glTextureParameteriv = "glTextureParameteriv(texture, pname, params)",
+  glTextureStorage1D = "glTextureStorage1D(texture, levels, internalformat, width)",
+  glTextureStorage2D = "glTextureStorage2D(texture, levels, internalformat, width, height)",
+  glTextureStorage2DMultisample = "glTextureStorage2DMultisample(texture, samples, internalformat, width, height, fixedsamplelocations)",
+  glTextureStorage3D = "glTextureStorage3D(texture, levels, internalformat, width, height, depth)",
+  glTextureStorage3DMultisample = "glTextureStorage3DMultisample(texture, samples, internalformat, width, height, depth, fixedsamplelocations)",
+  glTextureSubImage1D = "glTextureSubImage1D(texture, level, xoffset, width, format, type, pixels)",
+  glTextureSubImage2D = "glTextureSubImage2D(texture, level, xoffset, yoffset, width, height, format, type, pixels)",
+  glTextureSubImage3D = "glTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, pixels)",
+  glTextureView = "glTextureView(texture, target, origtexture, internalformat, minlevel, numlevels, minlayer, numlayers)",
+  glTransformFeedbackBufferBase = "glTransformFeedbackBufferBase(xfb, index, buffer)",
+  glTransformFeedbackBufferRange = "glTransformFeedbackBufferRange(xfb, index, buffer, offset, size)",
+  glTransformFeedbackVaryings = "glTransformFeedbackVaryings(program, count, varyings, bufferMode)",
+  glUniform1f = "glUniform1f(location, v0)",
+  glUniform1fv = "glUniform1fv(location, count, value)",
+  glUniform1i = "glUniform1i(location, v0)",
+  glUniform1iv = "glUniform1iv(location, count, value)",
+  glUniform1ui = "glUniform1ui(location, v0)",
+  glUniform1uiv = "glUniform1uiv(location, count, value)",
+  glUniform2f = "glUniform2f(location, v0, v1)",
+  glUniform2fv = "glUniform2fv(location, count, value)",
+  glUniform2i = "glUniform2i(location, v0, v1)",
+  glUniform2iv = "glUniform2iv(location, count, value)",
+  glUniform2ui = "glUniform2ui(location, v0, v1)",
+  glUniform2uiv = "glUniform2uiv(location, count, value)",
+  glUniform3f = "glUniform3f(location, v0, v1, v2)",
+  glUniform3fv = "glUniform3fv(location, count, value)",
+  glUniform3i = "glUniform3i(location, v0, v1, v2)",
+  glUniform3iv = "glUniform3iv(location, count, value)",
+  glUniform3ui = "glUniform3ui(location, v0, v1, v2)",
+  glUniform3uiv = "glUniform3uiv(location, count, value)",
+  glUniform4f = "glUniform4f(location, v0, v1, v2, v3)",
+  glUniform4fv = "glUniform4fv(location, count, value)",
+  glUniform4i = "glUniform4i(location, v0, v1, v2, v3)",
+  glUniform4iv = "glUniform4iv(location, count, value)",
+  glUniform4ui = "glUniform4ui(location, v0, v1, v2, v3)",
+  glUniform4uiv = "glUniform4uiv(location, count, value)",
+  glUniformBlockBinding = "glUniformBlockBinding(program, uniformBlockIndex, uniformBlockBinding)",
+  glUniformMatrix2fv = "glUniformMatrix2fv(location, count, transpose, value)",
+  glUniformMatrix2x3fv = "glUniformMatrix2x3fv(location, count, transpose, value)",
+  glUniformMatrix2x4fv = "glUniformMatrix2x4fv(location, count, transpose, value)",
+  glUniformMatrix3fv = "glUniformMatrix3fv(location, count, transpose, value)",
+  glUniformMatrix3x2fv = "glUniformMatrix3x2fv(location, count, transpose, value)",
+  glUniformMatrix3x4fv = "glUniformMatrix3x4fv(location, count, transpose, value)",
+  glUniformMatrix4fv = "glUniformMatrix4fv(location, count, transpose, value)",
+  glUniformMatrix4x2fv = "glUniformMatrix4x2fv(location, count, transpose, value)",
+  glUniformMatrix4x3fv = "glUniformMatrix4x3fv(location, count, transpose, value)",
+  glUniformSubroutinesuiv = "glUniformSubroutinesuiv(shadertype, count, indices)",
+  glUnmapBuffer = "glUnmapBuffer(target)",
+  glUnmapNamedBuffer = "glUnmapNamedBuffer(buffer)",
+  glUseProgram = "glUseProgram(program)",
+  glUseProgramStages = "glUseProgramStages(pipeline, stages, program)",
+  glValidateProgram = "glValidateProgram(program)",
+  glValidateProgramPipeline = "glValidateProgramPipeline(pipeline)",
+  glVertexArrayAttribBinding = "glVertexArrayAttribBinding(vaobj, attribindex, bindingindex)",
+  glVertexArrayAttribFormat = "glVertexArrayAttribFormat(vaobj, attribindex, size, type, normalized, relativeoffset)",
+  glVertexArrayAttribIFormat = "glVertexArrayAttribIFormat(vaobj, attribindex, size, type, relativeoffset)",
+  glVertexArrayAttribLFormat = "glVertexArrayAttribLFormat(vaobj, attribindex, size, type, relativeoffset)",
+  glVertexArrayBindingDivisor = "glVertexArrayBindingDivisor(vaobj, bindingindex, divisor)",
+  glVertexArrayElementBuffer = "glVertexArrayElementBuffer(vaobj, buffer)",
+  glVertexArrayVertexBuffer = "glVertexArrayVertexBuffer(vaobj, bindingindex, buffer, offset, stride)",
+  glVertexArrayVertexBuffers = "glVertexArrayVertexBuffers(vaobj, first, count, buffers, offsets, strides)",
+  glVertexAttrib1d = "glVertexAttrib1d(index, v0)",
+  glVertexAttrib1dv = "glVertexAttrib1dv(index, v)",
+  glVertexAttrib1f = "glVertexAttrib1f(index, v0)",
+  glVertexAttrib1fv = "glVertexAttrib1fv(index, v)",
+  glVertexAttrib1s = "glVertexAttrib1s(index, v0)",
+  glVertexAttrib1sv = "glVertexAttrib1sv(index, v)",
+  glVertexAttrib2d = "glVertexAttrib2d(index, v0, v1)",
+  glVertexAttrib2dv = "glVertexAttrib2dv(index, v)",
+  glVertexAttrib2f = "glVertexAttrib2f(index, v0, v1)",
+  glVertexAttrib2fv = "glVertexAttrib2fv(index, v)",
+  glVertexAttrib2s = "glVertexAttrib2s(index, v0, v1)",
+  glVertexAttrib2sv = "glVertexAttrib2sv(index, v)",
+  glVertexAttrib3d = "glVertexAttrib3d(index, v0, v1, v2)",
+  glVertexAttrib3dv = "glVertexAttrib3dv(index, v)",
+  glVertexAttrib3f = "glVertexAttrib3f(index, v0, v1, v2)",
+  glVertexAttrib3fv = "glVertexAttrib3fv(index, v)",
+  glVertexAttrib3s = "glVertexAttrib3s(index, v0, v1, v2)",
+  glVertexAttrib3sv = "glVertexAttrib3sv(index, v)",
+  glVertexAttrib4Nbv = "glVertexAttrib4Nbv(index, v)",
+  glVertexAttrib4Niv = "glVertexAttrib4Niv(index, v)",
+  glVertexAttrib4Nsv = "glVertexAttrib4Nsv(index, v)",
+  glVertexAttrib4Nub = "glVertexAttrib4Nub(index, v0, v1, v2, v3)",
+  glVertexAttrib4Nubv = "glVertexAttrib4Nubv(index, v)",
+  glVertexAttrib4Nuiv = "glVertexAttrib4Nuiv(index, v)",
+  glVertexAttrib4Nusv = "glVertexAttrib4Nusv(index, v)",
+  glVertexAttrib4bv = "glVertexAttrib4bv(index, v)",
+  glVertexAttrib4d = "glVertexAttrib4d(index, v0, v1, v2, v3)",
+  glVertexAttrib4dv = "glVertexAttrib4dv(index, v)",
+  glVertexAttrib4f = "glVertexAttrib4f(index, v0, v1, v2, v3)",
+  glVertexAttrib4fv = "glVertexAttrib4fv(index, v)",
+  glVertexAttrib4iv = "glVertexAttrib4iv(index, v)",
+  glVertexAttrib4s = "glVertexAttrib4s(index, v0, v1, v2, v3)",
+  glVertexAttrib4sv = "glVertexAttrib4sv(index, v)",
+  glVertexAttrib4ubv = "glVertexAttrib4ubv(index, v)",
+  glVertexAttrib4uiv = "glVertexAttrib4uiv(index, v)",
+  glVertexAttrib4usv = "glVertexAttrib4usv(index, v)",
+  glVertexAttribBinding = "glVertexAttribBinding(attribindex, bindingindex)",
+  glVertexAttribDivisor = "glVertexAttribDivisor(index, divisor)",
+  glVertexAttribFormat = "glVertexAttribFormat(attribindex, size, type, normalized, relativeoffset)",
+  glVertexAttribI1i = "glVertexAttribI1i(index, v0)",
+  glVertexAttribI1iv = "glVertexAttribI1iv(index, v)",
+  glVertexAttribI1ui = "glVertexAttribI1ui(index, v0)",
+  glVertexAttribI1uiv = "glVertexAttribI1uiv(index, v)",
+  glVertexAttribI2i = "glVertexAttribI2i(index, v0, v1)",
+  glVertexAttribI2iv = "glVertexAttribI2iv(index, v)",
+  glVertexAttribI2ui = "glVertexAttribI2ui(index, v0, v1)",
+  glVertexAttribI2uiv = "glVertexAttribI2uiv(index, v)",
+  glVertexAttribI3i = "glVertexAttribI3i(index, v0, v1, v2)",
+  glVertexAttribI3iv = "glVertexAttribI3iv(index, v)",
+  glVertexAttribI3ui = "glVertexAttribI3ui(index, v0, v1, v2)",
+  glVertexAttribI3uiv = "glVertexAttribI3uiv(index, v)",
+  glVertexAttribI4bv = "glVertexAttribI4bv(index, v)",
+  glVertexAttribI4i = "glVertexAttribI4i(index, v0, v1, v2, v3)",
+  glVertexAttribI4iv = "glVertexAttribI4iv(index, v)",
+  glVertexAttribI4sv = "glVertexAttribI4sv(index, v)",
+  glVertexAttribI4ubv = "glVertexAttribI4ubv(index, v)",
+  glVertexAttribI4ui = "glVertexAttribI4ui(index, v0, v1, v2, v3)",
+  glVertexAttribI4uiv = "glVertexAttribI4uiv(index, v)",
+  glVertexAttribI4usv = "glVertexAttribI4usv(index, v)",
+  glVertexAttribIFormat = "glVertexAttribIFormat(attribindex, size, type, relativeoffset)",
+  glVertexAttribIPointer = "glVertexAttribIPointer(index, size, type, stride, pointer)",
+  glVertexAttribL1d = "glVertexAttribL1d(index, v0)",
+  glVertexAttribL1dv = "glVertexAttribL1dv(index, v)",
+  glVertexAttribL2d = "glVertexAttribL2d(index, v0, v1)",
+  glVertexAttribL2dv = "glVertexAttribL2dv(index, v)",
+  glVertexAttribL3d = "glVertexAttribL3d(index, v0, v1, v2)",
+  glVertexAttribL3dv = "glVertexAttribL3dv(index, v)",
+  glVertexAttribL4d = "glVertexAttribL4d(index, v0, v1, v2, v3)",
+  glVertexAttribL4dv = "glVertexAttribL4dv(index, v)",
+  glVertexAttribLFormat = "glVertexAttribLFormat(attribindex, size, type, relativeoffset)",
+  glVertexAttribLPointer = "glVertexAttribLPointer(index, size, type, stride, pointer)",
+  glVertexAttribP1ui = "glVertexAttribP1ui(index, type, normalized, value)",
+  glVertexAttribP2ui = "glVertexAttribP2ui(index, type, normalized, value)",
+  glVertexAttribP3ui = "glVertexAttribP3ui(index, type, normalized, value)",
+  glVertexAttribP4ui = "glVertexAttribP4ui(index, type, normalized, value)",
+  glVertexAttribPointer = "glVertexAttribPointer(index, size, type, normalized, stride, pointer)",
+  glVertexBindingDivisor = "glVertexBindingDivisor(bindingindex, divisor)",
+  glViewport = "glViewport(x, y, width, height)",
+  glViewportArrayv = "glViewportArrayv(first, count, v)",
+  glViewportIndexedf = "glViewportIndexedf(index, x, y, w, h)",
+  glViewportIndexedfv = "glViewportIndexedfv(index, v)",
+  glWaitSync = "glWaitSync(sync, flags, timeout)"
+}
+
 local docs = {}
 for i = 1,#signatures do
   docs[i] = "```c\n" .. table.concat(signatures[i], "\n") .. "\n```\n" .. descriptions[i]
@@ -20513,6 +21131,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform3iv',
+    insertText = insert.glUniform3iv,
   },
   {
     documentation = {
@@ -20522,6 +21141,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetShaderPrecisionFormat',
+    insertText = insert.glGetShaderPrecisionFormat,
   },
   {
     documentation = {
@@ -20531,6 +21151,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform4iv',
+    insertText = insert.glUniform4iv,
   },
   {
     documentation = {
@@ -20540,6 +21161,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetShaderSource',
+    insertText = insert.glGetShaderSource,
   },
   {
     documentation = {
@@ -20549,6 +21171,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform1uiv',
+    insertText = insert.glUniform1uiv,
   },
   {
     documentation = {
@@ -20558,6 +21181,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetString',
+    insertText = insert.glGetString,
   },
   {
     documentation = {
@@ -20567,6 +21191,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform2uiv',
+    insertText = insert.glUniform2uiv,
   },
   {
     documentation = {
@@ -20576,6 +21201,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetStringi',
+    insertText = insert.glGetStringi,
   },
   {
     documentation = {
@@ -20585,6 +21211,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform3uiv',
+    insertText = insert.glUniform3uiv,
   },
   {
     documentation = {
@@ -20594,6 +21221,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetSubroutineIndex',
+    insertText = insert.glGetSubroutineIndex,
   },
   {
     documentation = {
@@ -20603,6 +21231,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform4uiv',
+    insertText = insert.glUniform4uiv,
   },
   {
     documentation = {
@@ -20612,6 +21241,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetSubroutineUniformLocation',
+    insertText = insert.glGetSubroutineUniformLocation,
   },
   {
     documentation = {
@@ -20621,6 +21251,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniformMatrix2fv',
+    insertText = insert.glUniformMatrix2fv,
   },
   {
     documentation = {
@@ -20630,6 +21261,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetSynciv',
+    insertText = insert.glGetSynciv,
   },
   {
     documentation = {
@@ -20639,6 +21271,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniformMatrix3fv',
+    insertText = insert.glUniformMatrix3fv,
   },
   {
     documentation = {
@@ -20648,6 +21281,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTexImage',
+    insertText = insert.glGetTexImage,
   },
   {
     documentation = {
@@ -20657,6 +21291,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureParameterIuiv',
+    insertText = insert.glTextureParameterIuiv,
   },
   {
     documentation = {
@@ -20666,6 +21301,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetnTexImage',
+    insertText = insert.glGetnTexImage,
   },
   {
     documentation = {
@@ -20675,6 +21311,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexStorage1D',
+    insertText = insert.glTexStorage1D,
   },
   {
     documentation = {
@@ -20684,6 +21321,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTextureImage',
+    insertText = insert.glGetTextureImage,
   },
   {
     documentation = {
@@ -20693,6 +21331,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureStorage1D',
+    insertText = insert.glTextureStorage1D,
   },
   {
     documentation = {
@@ -20702,6 +21341,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTexLevelParameterfv',
+    insertText = insert.glGetTexLevelParameterfv,
   },
   {
     documentation = {
@@ -20711,6 +21351,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexStorage2D',
+    insertText = insert.glTexStorage2D,
   },
   {
     documentation = {
@@ -20720,6 +21361,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTexLevelParameteriv',
+    insertText = insert.glGetTexLevelParameteriv,
   },
   {
     documentation = {
@@ -20729,6 +21371,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureStorage2D',
+    insertText = insert.glTextureStorage2D,
   },
   {
     documentation = {
@@ -20738,6 +21381,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTextureLevelParameterfv',
+    insertText = insert.glGetTextureLevelParameterfv,
   },
   {
     documentation = {
@@ -20747,6 +21391,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexStorage2DMultisample',
+    insertText = insert.glTexStorage2DMultisample,
   },
   {
     documentation = {
@@ -20756,6 +21401,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTextureLevelParameteriv',
+    insertText = insert.glGetTextureLevelParameteriv,
   },
   {
     documentation = {
@@ -20765,6 +21411,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureStorage2DMultisample',
+    insertText = insert.glTextureStorage2DMultisample,
   },
   {
     documentation = {
@@ -20774,6 +21421,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTexParameterfv',
+    insertText = insert.glGetTexParameterfv,
   },
   {
     documentation = {
@@ -20783,6 +21431,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexStorage3D',
+    insertText = insert.glTexStorage3D,
   },
   {
     documentation = {
@@ -20792,6 +21441,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTexParameteriv',
+    insertText = insert.glGetTexParameteriv,
   },
   {
     documentation = {
@@ -20801,6 +21451,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureStorage3D',
+    insertText = insert.glTextureStorage3D,
   },
   {
     documentation = {
@@ -20810,6 +21461,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTexParameterIiv',
+    insertText = insert.glGetTexParameterIiv,
   },
   {
     documentation = {
@@ -20819,6 +21471,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexStorage3DMultisample',
+    insertText = insert.glTexStorage3DMultisample,
   },
   {
     documentation = {
@@ -20828,6 +21481,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTexParameterIuiv',
+    insertText = insert.glGetTexParameterIuiv,
   },
   {
     documentation = {
@@ -20837,6 +21491,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureStorage3DMultisample',
+    insertText = insert.glTextureStorage3DMultisample,
   },
   {
     documentation = {
@@ -20846,6 +21501,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTextureParameterfv',
+    insertText = insert.glGetTextureParameterfv,
   },
   {
     documentation = {
@@ -20855,6 +21511,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexSubImage1D',
+    insertText = insert.glTexSubImage1D,
   },
   {
     documentation = {
@@ -20864,6 +21521,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTextureParameteriv',
+    insertText = insert.glGetTextureParameteriv,
   },
   {
     documentation = {
@@ -20873,6 +21531,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureSubImage1D',
+    insertText = insert.glTextureSubImage1D,
   },
   {
     documentation = {
@@ -20882,6 +21541,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTextureParameterIiv',
+    insertText = insert.glGetTextureParameterIiv,
   },
   {
     documentation = {
@@ -20891,6 +21551,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexSubImage2D',
+    insertText = insert.glTexSubImage2D,
   },
   {
     documentation = {
@@ -20900,6 +21561,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTextureParameterIuiv',
+    insertText = insert.glGetTextureParameterIuiv,
   },
   {
     documentation = {
@@ -20909,6 +21571,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureSubImage2D',
+    insertText = insert.glTextureSubImage2D,
   },
   {
     documentation = {
@@ -20918,6 +21581,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTextureSubImage',
+    insertText = insert.glGetTextureSubImage,
   },
   {
     documentation = {
@@ -20927,6 +21591,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexSubImage3D',
+    insertText = insert.glTexSubImage3D,
   },
   {
     documentation = {
@@ -20936,6 +21601,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTransformFeedbackiv',
+    insertText = insert.glGetTransformFeedbackiv,
   },
   {
     documentation = {
@@ -20945,6 +21611,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureSubImage3D',
+    insertText = insert.glTextureSubImage3D,
   },
   {
     documentation = {
@@ -20954,6 +21621,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTransformFeedbacki_v',
+    insertText = insert.glGetTransformFeedbacki_v,
   },
   {
     documentation = {
@@ -20963,6 +21631,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureBarrier',
+    insertText = insert.glTextureBarrier,
   },
   {
     documentation = {
@@ -20972,6 +21641,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTransformFeedbacki64_v',
+    insertText = insert.glGetTransformFeedbacki64_v,
   },
   {
     documentation = {
@@ -20981,6 +21651,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureView',
+    insertText = insert.glTextureView,
   },
   {
     documentation = {
@@ -20990,6 +21661,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetTransformFeedbackVarying',
+    insertText = insert.glGetTransformFeedbackVarying,
   },
   {
     documentation = {
@@ -20999,6 +21671,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTransformFeedbackBufferBase',
+    insertText = insert.glTransformFeedbackBufferBase,
   },
   {
     documentation = {
@@ -21008,6 +21681,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetUniformfv',
+    insertText = insert.glGetUniformfv,
   },
   {
     documentation = {
@@ -21017,6 +21691,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTransformFeedbackBufferRange',
+    insertText = insert.glTransformFeedbackBufferRange,
   },
   {
     documentation = {
@@ -21026,6 +21701,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetUniformiv',
+    insertText = insert.glGetUniformiv,
   },
   {
     documentation = {
@@ -21035,6 +21711,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTransformFeedbackVaryings',
+    insertText = insert.glTransformFeedbackVaryings,
   },
   {
     documentation = {
@@ -21044,6 +21721,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetUniformuiv',
+    insertText = insert.glGetUniformuiv,
   },
   {
     documentation = {
@@ -21053,6 +21731,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform1f',
+    insertText = insert.glUniform1f,
   },
   {
     documentation = {
@@ -21062,6 +21741,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetUniformdv',
+    insertText = insert.glGetUniformdv,
   },
   {
     documentation = {
@@ -21071,6 +21751,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform2f',
+    insertText = insert.glUniform2f,
   },
   {
     documentation = {
@@ -21080,6 +21761,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetnUniformfv',
+    insertText = insert.glGetnUniformfv,
   },
   {
     documentation = {
@@ -21089,6 +21771,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform3f',
+    insertText = insert.glUniform3f,
   },
   {
     documentation = {
@@ -21098,6 +21781,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetnUniformiv',
+    insertText = insert.glGetnUniformiv,
   },
   {
     documentation = {
@@ -21107,6 +21791,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform4f',
+    insertText = insert.glUniform4f,
   },
   {
     documentation = {
@@ -21116,6 +21801,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetVertexAttribdv',
+    insertText = insert.glGetVertexAttribdv,
   },
   {
     documentation = {
@@ -21125,6 +21811,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform1i',
+    insertText = insert.glUniform1i,
   },
   {
     documentation = {
@@ -21134,6 +21821,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform2i',
+    insertText = insert.glUniform2i,
   },
   {
     documentation = {
@@ -21143,6 +21831,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform3i',
+    insertText = insert.glUniform3i,
   },
   {
     documentation = {
@@ -21152,6 +21841,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform4i',
+    insertText = insert.glUniform4i,
   },
   {
     documentation = {
@@ -21161,6 +21851,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform1ui',
+    insertText = insert.glUniform1ui,
   },
   {
     documentation = {
@@ -21170,6 +21861,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFramebufferParameteri',
+    insertText = insert.glFramebufferParameteri,
   },
   {
     documentation = {
@@ -21179,6 +21871,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedFramebufferParameteri',
+    insertText = insert.glNamedFramebufferParameteri,
   },
   {
     documentation = {
@@ -21188,6 +21881,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFramebufferRenderbuffer',
+    insertText = insert.glFramebufferRenderbuffer,
   },
   {
     documentation = {
@@ -21197,6 +21891,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedFramebufferRenderbuffer',
+    insertText = insert.glNamedFramebufferRenderbuffer,
   },
   {
     documentation = {
@@ -21206,6 +21901,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFramebufferTexture',
+    insertText = insert.glFramebufferTexture,
   },
   {
     documentation = {
@@ -21215,6 +21911,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFramebufferTexture1D',
+    insertText = insert.glFramebufferTexture1D,
   },
   {
     documentation = {
@@ -21224,6 +21921,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFramebufferTexture2D',
+    insertText = insert.glFramebufferTexture2D,
   },
   {
     documentation = {
@@ -21233,6 +21931,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetFramebufferParameteriv',
+    insertText = insert.glGetFramebufferParameteriv,
   },
   {
     documentation = {
@@ -21242,6 +21941,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFramebufferTexture3D',
+    insertText = insert.glFramebufferTexture3D,
   },
   {
     documentation = {
@@ -21251,6 +21951,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetNamedFramebufferParameteriv',
+    insertText = insert.glGetNamedFramebufferParameteriv,
   },
   {
     documentation = {
@@ -21260,6 +21961,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedFramebufferTexture',
+    insertText = insert.glNamedFramebufferTexture,
   },
   {
     documentation = {
@@ -21269,6 +21971,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetGraphicsResetStatus',
+    insertText = insert.glGetGraphicsResetStatus,
   },
   {
     documentation = {
@@ -21278,6 +21981,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFramebufferTextureLayer',
+    insertText = insert.glFramebufferTextureLayer,
   },
   {
     documentation = {
@@ -21287,6 +21991,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetInternalformativ',
+    insertText = insert.glGetInternalformativ,
   },
   {
     documentation = {
@@ -21296,6 +22001,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedFramebufferTextureLayer',
+    insertText = insert.glNamedFramebufferTextureLayer,
   },
   {
     documentation = {
@@ -21305,6 +22011,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetInternalformati64v',
+    insertText = insert.glGetInternalformati64v,
   },
   {
     documentation = {
@@ -21314,6 +22021,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFrontFace',
+    insertText = insert.glFrontFace,
   },
   {
     documentation = {
@@ -21323,6 +22031,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetMultisamplefv',
+    insertText = insert.glGetMultisamplefv,
   },
   {
     documentation = {
@@ -21332,6 +22041,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGenBuffers',
+    insertText = insert.glGenBuffers,
   },
   {
     documentation = {
@@ -21341,6 +22051,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetObjectLabel',
+    insertText = insert.glGetObjectLabel,
   },
   {
     documentation = {
@@ -21350,6 +22061,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGenFramebuffers',
+    insertText = insert.glGenFramebuffers,
   },
   {
     documentation = {
@@ -21359,6 +22071,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetObjectPtrLabel',
+    insertText = insert.glGetObjectPtrLabel,
   },
   {
     documentation = {
@@ -21368,6 +22081,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGenProgramPipelines',
+    insertText = insert.glGenProgramPipelines,
   },
   {
     documentation = {
@@ -21377,6 +22091,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetPointerv',
+    insertText = insert.glGetPointerv,
   },
   {
     documentation = {
@@ -21386,6 +22101,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGenQueries',
+    insertText = insert.glGenQueries,
   },
   {
     documentation = {
@@ -21395,6 +22111,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramiv',
+    insertText = insert.glGetProgramiv,
   },
   {
     documentation = {
@@ -21404,6 +22121,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGenRenderbuffers',
+    insertText = insert.glGenRenderbuffers,
   },
   {
     documentation = {
@@ -21413,6 +22131,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramBinary',
+    insertText = insert.glGetProgramBinary,
   },
   {
     documentation = {
@@ -21422,6 +22141,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGenSamplers',
+    insertText = insert.glGenSamplers,
   },
   {
     documentation = {
@@ -21431,6 +22151,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramInfoLog',
+    insertText = insert.glGetProgramInfoLog,
   },
   {
     documentation = {
@@ -21440,6 +22161,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGenTextures',
+    insertText = insert.glGenTextures,
   },
   {
     documentation = {
@@ -21449,6 +22171,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramInterfaceiv',
+    insertText = insert.glGetProgramInterfaceiv,
   },
   {
     documentation = {
@@ -21458,6 +22181,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGenTransformFeedbacks',
+    insertText = insert.glGenTransformFeedbacks,
   },
   {
     documentation = {
@@ -21467,6 +22191,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramPipelineiv',
+    insertText = insert.glGetProgramPipelineiv,
   },
   {
     documentation = {
@@ -21476,6 +22201,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGenVertexArrays',
+    insertText = insert.glGenVertexArrays,
   },
   {
     documentation = {
@@ -21485,6 +22211,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramPipelineInfoLog',
+    insertText = insert.glGetProgramPipelineInfoLog,
   },
   {
     documentation = {
@@ -21494,6 +22221,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGenerateMipmap',
+    insertText = insert.glGenerateMipmap,
   },
   {
     documentation = {
@@ -21503,6 +22231,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramResourceiv',
+    insertText = insert.glGetProgramResourceiv,
   },
   {
     documentation = {
@@ -21512,6 +22241,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGenerateTextureMipmap',
+    insertText = insert.glGenerateTextureMipmap,
   },
   {
     documentation = {
@@ -21521,6 +22251,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramResourceIndex',
+    insertText = insert.glGetProgramResourceIndex,
   },
   {
     documentation = {
@@ -21530,6 +22261,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetBooleanv',
+    insertText = insert.glGetBooleanv,
   },
   {
     documentation = {
@@ -21539,6 +22271,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramResourceLocation',
+    insertText = insert.glGetProgramResourceLocation,
   },
   {
     documentation = {
@@ -21548,6 +22281,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetDoublev',
+    insertText = insert.glGetDoublev,
   },
   {
     documentation = {
@@ -21557,6 +22291,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramResourceLocationIndex',
+    insertText = insert.glGetProgramResourceLocationIndex,
   },
   {
     documentation = {
@@ -21566,6 +22301,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetFloatv',
+    insertText = insert.glGetFloatv,
   },
   {
     documentation = {
@@ -21575,6 +22311,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramResourceName',
+    insertText = insert.glGetProgramResourceName,
   },
   {
     documentation = {
@@ -21584,6 +22321,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetIntegerv',
+    insertText = insert.glGetIntegerv,
   },
   {
     documentation = {
@@ -21593,6 +22331,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetProgramStageiv',
+    insertText = insert.glGetProgramStageiv,
   },
   {
     documentation = {
@@ -21602,6 +22341,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetInteger64v',
+    insertText = insert.glGetInteger64v,
   },
   {
     documentation = {
@@ -21611,6 +22351,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetQueryIndexediv',
+    insertText = insert.glGetQueryIndexediv,
   },
   {
     documentation = {
@@ -21620,6 +22361,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetBooleani_v',
+    insertText = insert.glGetBooleani_v,
   },
   {
     documentation = {
@@ -21629,6 +22371,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetQueryObjectiv',
+    insertText = insert.glGetQueryObjectiv,
   },
   {
     documentation = {
@@ -21638,6 +22381,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetIntegeri_v',
+    insertText = insert.glGetIntegeri_v,
   },
   {
     documentation = {
@@ -21647,6 +22391,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetFloati_v',
+    insertText = insert.glGetFloati_v,
   },
   {
     documentation = {
@@ -21656,6 +22401,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetDoublei_v',
+    insertText = insert.glGetDoublei_v,
   },
   {
     documentation = {
@@ -21665,6 +22411,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetInteger64i_v',
+    insertText = insert.glGetInteger64i_v,
   },
   {
     documentation = {
@@ -21674,6 +22421,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetActiveAtomicCounterBufferiv',
+    insertText = insert.glGetActiveAtomicCounterBufferiv,
   },
   {
     documentation = {
@@ -21683,6 +22431,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetActiveAttrib',
+    insertText = insert.glGetActiveAttrib,
   },
   {
     documentation = {
@@ -21692,6 +22441,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetActiveSubroutineName',
+    insertText = insert.glGetActiveSubroutineName,
   },
   {
     documentation = {
@@ -21701,6 +22451,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetActiveSubroutineUniformiv',
+    insertText = insert.glGetActiveSubroutineUniformiv,
   },
   {
     documentation = {
@@ -21710,6 +22461,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetActiveSubroutineUniformName',
+    insertText = insert.glGetActiveSubroutineUniformName,
   },
   {
     documentation = {
@@ -21719,6 +22471,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetActiveUniform',
+    insertText = insert.glGetActiveUniform,
   },
   {
     documentation = {
@@ -21728,6 +22481,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetActiveUniformBlockiv',
+    insertText = insert.glGetActiveUniformBlockiv,
   },
   {
     documentation = {
@@ -21737,6 +22491,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetActiveUniformBlockName',
+    insertText = insert.glGetActiveUniformBlockName,
   },
   {
     documentation = {
@@ -21746,6 +22501,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetActiveUniformName',
+    insertText = insert.glGetActiveUniformName,
   },
   {
     documentation = {
@@ -21755,6 +22511,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetActiveUniformsiv',
+    insertText = insert.glGetActiveUniformsiv,
   },
   {
     documentation = {
@@ -21764,6 +22521,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetAttachedShaders',
+    insertText = insert.glGetAttachedShaders,
   },
   {
     documentation = {
@@ -21773,6 +22531,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetAttribLocation',
+    insertText = insert.glGetAttribLocation,
   },
   {
     documentation = {
@@ -21782,6 +22541,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetBufferParameteriv',
+    insertText = insert.glGetBufferParameteriv,
   },
   {
     documentation = {
@@ -21791,6 +22551,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetBufferParameteri64v',
+    insertText = insert.glGetBufferParameteri64v,
   },
   {
     documentation = {
@@ -21800,6 +22561,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetNamedBufferParameteriv',
+    insertText = insert.glGetNamedBufferParameteriv,
   },
   {
     documentation = {
@@ -21809,6 +22571,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetNamedBufferParameteri64v',
+    insertText = insert.glGetNamedBufferParameteri64v,
   },
   {
     documentation = {
@@ -21818,6 +22581,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetBufferPointerv',
+    insertText = insert.glGetBufferPointerv,
   },
   {
     documentation = {
@@ -21827,6 +22591,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetNamedBufferPointerv',
+    insertText = insert.glGetNamedBufferPointerv,
   },
   {
     documentation = {
@@ -21836,6 +22601,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetBufferSubData',
+    insertText = insert.glGetBufferSubData,
   },
   {
     documentation = {
@@ -21845,6 +22611,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawElementsInstancedBaseInstance',
+    insertText = insert.glDrawElementsInstancedBaseInstance,
   },
   {
     documentation = {
@@ -21854,6 +22621,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawElementsInstancedBaseVertex',
+    insertText = insert.glDrawElementsInstancedBaseVertex,
   },
   {
     documentation = {
@@ -21863,6 +22631,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawElementsInstancedBaseVertexBaseInstance',
+    insertText = insert.glDrawElementsInstancedBaseVertexBaseInstance,
   },
   {
     documentation = {
@@ -21872,6 +22641,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawRangeElements',
+    insertText = insert.glDrawRangeElements,
   },
   {
     documentation = {
@@ -21881,6 +22651,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawRangeElementsBaseVertex',
+    insertText = insert.glDrawRangeElementsBaseVertex,
   },
   {
     documentation = {
@@ -21890,6 +22661,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawTransformFeedback',
+    insertText = insert.glDrawTransformFeedback,
   },
   {
     documentation = {
@@ -21899,6 +22671,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawTransformFeedbackInstanced',
+    insertText = insert.glDrawTransformFeedbackInstanced,
   },
   {
     documentation = {
@@ -21908,6 +22681,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawTransformFeedbackStream',
+    insertText = insert.glDrawTransformFeedbackStream,
   },
   {
     documentation = {
@@ -21917,6 +22691,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawTransformFeedbackStreamInstanced',
+    insertText = insert.glDrawTransformFeedbackStreamInstanced,
   },
   {
     documentation = {
@@ -21926,6 +22701,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glEnable',
+    insertText = insert.glEnable,
   },
   {
     documentation = {
@@ -21935,6 +22711,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetNamedFramebufferAttachmentParameteriv',
+    insertText = insert.glGetNamedFramebufferAttachmentParameteriv,
   },
   {
     documentation = {
@@ -21944,6 +22721,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glEnablei',
+    insertText = insert.glEnablei,
   },
   {
     documentation = {
@@ -21953,6 +22731,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDisablei',
+    insertText = insert.glDisablei,
   },
   {
     documentation = {
@@ -21962,6 +22741,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glEnableVertexAttribArray',
+    insertText = insert.glEnableVertexAttribArray,
   },
   {
     documentation = {
@@ -21971,6 +22751,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDisableVertexAttribArray',
+    insertText = insert.glDisableVertexAttribArray,
   },
   {
     documentation = {
@@ -21980,6 +22761,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glEnableVertexArrayAttrib',
+    insertText = insert.glEnableVertexArrayAttrib,
   },
   {
     documentation = {
@@ -21989,6 +22771,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDisableVertexArrayAttrib',
+    insertText = insert.glDisableVertexArrayAttrib,
   },
   {
     documentation = {
@@ -21998,6 +22781,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFenceSync',
+    insertText = insert.glFenceSync,
   },
   {
     documentation = {
@@ -22007,6 +22791,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFinish',
+    insertText = insert.glFinish,
   },
   {
     documentation = {
@@ -22016,6 +22801,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFlush',
+    insertText = insert.glFlush,
   },
   {
     documentation = {
@@ -22025,6 +22811,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFlushMappedBufferRange',
+    insertText = insert.glFlushMappedBufferRange,
   },
   {
     documentation = {
@@ -22034,6 +22821,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glFlushMappedNamedBufferRange',
+    insertText = insert.glFlushMappedNamedBufferRange,
   },
   {
     documentation = {
@@ -22043,6 +22831,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribP1ui',
+    insertText = insert.glVertexAttribP1ui,
   },
   {
     documentation = {
@@ -22052,6 +22841,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribP2ui',
+    insertText = insert.glVertexAttribP2ui,
   },
   {
     documentation = {
@@ -22061,6 +22851,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribP3ui',
+    insertText = insert.glVertexAttribP3ui,
   },
   {
     documentation = {
@@ -22070,6 +22861,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribP4ui',
+    insertText = insert.glVertexAttribP4ui,
   },
   {
     documentation = {
@@ -22079,6 +22871,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribBinding',
+    insertText = insert.glVertexAttribBinding,
   },
   {
     documentation = {
@@ -22088,6 +22881,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexArrayAttribBinding',
+    insertText = insert.glVertexArrayAttribBinding,
   },
   {
     documentation = {
@@ -22097,6 +22891,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribDivisor',
+    insertText = insert.glVertexAttribDivisor,
   },
   {
     documentation = {
@@ -22106,6 +22901,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribFormat',
+    insertText = insert.glVertexAttribFormat,
   },
   {
     documentation = {
@@ -22115,6 +22911,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribIFormat',
+    insertText = insert.glVertexAttribIFormat,
   },
   {
     documentation = {
@@ -22124,6 +22921,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribLFormat',
+    insertText = insert.glVertexAttribLFormat,
   },
   {
     documentation = {
@@ -22133,6 +22931,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexArrayAttribFormat',
+    insertText = insert.glVertexArrayAttribFormat,
   },
   {
     documentation = {
@@ -22142,6 +22941,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexArrayAttribIFormat',
+    insertText = insert.glVertexArrayAttribIFormat,
   },
   {
     documentation = {
@@ -22151,6 +22951,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexArrayAttribLFormat',
+    insertText = insert.glVertexArrayAttribLFormat,
   },
   {
     documentation = {
@@ -22160,6 +22961,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribPointer',
+    insertText = insert.glVertexAttribPointer,
   },
   {
     documentation = {
@@ -22169,6 +22971,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribIPointer',
+    insertText = insert.glVertexAttribIPointer,
   },
   {
     documentation = {
@@ -22178,6 +22981,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribLPointer',
+    insertText = insert.glVertexAttribLPointer,
   },
   {
     documentation = {
@@ -22187,6 +22991,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexBindingDivisor',
+    insertText = insert.glVertexBindingDivisor,
   },
   {
     documentation = {
@@ -22196,6 +23001,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexArrayBindingDivisor',
+    insertText = insert.glVertexArrayBindingDivisor,
   },
   {
     documentation = {
@@ -22205,6 +23011,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glViewport',
+    insertText = insert.glViewport,
   },
   {
     documentation = {
@@ -22214,6 +23021,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glViewportArrayv',
+    insertText = insert.glViewportArrayv,
   },
   {
     documentation = {
@@ -22223,6 +23031,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glViewportIndexedf',
+    insertText = insert.glViewportIndexedf,
   },
   {
     documentation = {
@@ -22232,6 +23041,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glViewportIndexedfv',
+    insertText = insert.glViewportIndexedfv,
   },
   {
     documentation = {
@@ -22241,6 +23051,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glWaitSync',
+    insertText = insert.glWaitSync,
   },
   {
     documentation = {
@@ -22250,6 +23061,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBeginConditionalRender',
+    insertText = insert.glBeginConditionalRender,
   },
   {
     documentation = {
@@ -22259,6 +23071,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glEndConditionalRender',
+    insertText = insert.glEndConditionalRender,
   },
   {
     documentation = {
@@ -22268,6 +23081,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBeginQuery',
+    insertText = insert.glBeginQuery,
   },
   {
     documentation = {
@@ -22277,6 +23091,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glEndQuery',
+    insertText = insert.glEndQuery,
   },
   {
     documentation = {
@@ -22286,6 +23101,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBeginQueryIndexed',
+    insertText = insert.glBeginQueryIndexed,
   },
   {
     documentation = {
@@ -22295,6 +23111,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glEndQueryIndexed',
+    insertText = insert.glEndQueryIndexed,
   },
   {
     documentation = {
@@ -22304,6 +23121,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBeginTransformFeedback',
+    insertText = insert.glBeginTransformFeedback,
   },
   {
     documentation = {
@@ -22313,6 +23131,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glEndTransformFeedback',
+    insertText = insert.glEndTransformFeedback,
   },
   {
     documentation = {
@@ -22322,6 +23141,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindAttribLocation',
+    insertText = insert.glBindAttribLocation,
   },
   {
     documentation = {
@@ -22331,6 +23151,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindBuffer',
+    insertText = insert.glBindBuffer,
   },
   {
     documentation = {
@@ -22340,6 +23161,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindBufferBase',
+    insertText = insert.glBindBufferBase,
   },
   {
     documentation = {
@@ -22349,6 +23171,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindBufferRange',
+    insertText = insert.glBindBufferRange,
   },
   {
     documentation = {
@@ -22358,6 +23181,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindBuffersBase',
+    insertText = insert.glBindBuffersBase,
   },
   {
     documentation = {
@@ -22367,6 +23191,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindBuffersRange',
+    insertText = insert.glBindBuffersRange,
   },
   {
     documentation = {
@@ -22376,6 +23201,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindFragDataLocation',
+    insertText = insert.glBindFragDataLocation,
   },
   {
     documentation = {
@@ -22385,6 +23211,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindFragDataLocationIndexed',
+    insertText = insert.glBindFragDataLocationIndexed,
   },
   {
     documentation = {
@@ -22394,6 +23221,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindFramebuffer',
+    insertText = insert.glBindFramebuffer,
   },
   {
     documentation = {
@@ -22403,6 +23231,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindImageTexture',
+    insertText = insert.glBindImageTexture,
   },
   {
     documentation = {
@@ -22412,6 +23241,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindImageTextures',
+    insertText = insert.glBindImageTextures,
   },
   {
     documentation = {
@@ -22421,6 +23251,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindProgramPipeline',
+    insertText = insert.glBindProgramPipeline,
   },
   {
     documentation = {
@@ -22430,6 +23261,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindRenderbuffer',
+    insertText = insert.glBindRenderbuffer,
   },
   {
     documentation = {
@@ -22439,6 +23271,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindSampler',
+    insertText = insert.glBindSampler,
   },
   {
     documentation = {
@@ -22448,6 +23281,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindSamplers',
+    insertText = insert.glBindSamplers,
   },
   {
     documentation = {
@@ -22457,6 +23291,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindTexture',
+    insertText = insert.glBindTexture,
   },
   {
     documentation = {
@@ -22466,6 +23301,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindTextureUnit',
+    insertText = insert.glBindTextureUnit,
   },
   {
     documentation = {
@@ -22475,6 +23311,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindTextures',
+    insertText = insert.glBindTextures,
   },
   {
     documentation = {
@@ -22484,6 +23321,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindTransformFeedback',
+    insertText = insert.glBindTransformFeedback,
   },
   {
     documentation = {
@@ -22493,6 +23331,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindVertexArray',
+    insertText = insert.glBindVertexArray,
   },
   {
     documentation = {
@@ -22502,6 +23341,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindVertexBuffer',
+    insertText = insert.glBindVertexBuffer,
   },
   {
     documentation = {
@@ -22511,6 +23351,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexArrayVertexBuffer',
+    insertText = insert.glVertexArrayVertexBuffer,
   },
   {
     documentation = {
@@ -22520,6 +23361,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBindVertexBuffers',
+    insertText = insert.glBindVertexBuffers,
   },
   {
     documentation = {
@@ -22529,6 +23371,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexArrayVertexBuffers',
+    insertText = insert.glVertexArrayVertexBuffers,
   },
   {
     documentation = {
@@ -22538,6 +23381,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBlendColor',
+    insertText = insert.glBlendColor,
   },
   {
     documentation = {
@@ -22547,6 +23391,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBlendEquation',
+    insertText = insert.glBlendEquation,
   },
   {
     documentation = {
@@ -22556,6 +23401,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBlendEquationi',
+    insertText = insert.glBlendEquationi,
   },
   {
     documentation = {
@@ -22565,6 +23411,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBlendEquationSeparate',
+    insertText = insert.glBlendEquationSeparate,
   },
   {
     documentation = {
@@ -22574,6 +23421,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBlendEquationSeparatei',
+    insertText = insert.glBlendEquationSeparatei,
   },
   {
     documentation = {
@@ -22583,6 +23431,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBlendFunc',
+    insertText = insert.glBlendFunc,
   },
   {
     documentation = {
@@ -22592,6 +23441,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBlendFunci',
+    insertText = insert.glBlendFunci,
   },
   {
     documentation = {
@@ -22601,6 +23451,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBlendFuncSeparate',
+    insertText = insert.glBlendFuncSeparate,
   },
   {
     documentation = {
@@ -22610,6 +23461,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetVertexAttribfv',
+    insertText = insert.glGetVertexAttribfv,
   },
   {
     documentation = {
@@ -22619,6 +23471,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBlendFuncSeparatei',
+    insertText = insert.glBlendFuncSeparatei,
   },
   {
     documentation = {
@@ -22628,6 +23481,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetVertexAttribiv',
+    insertText = insert.glGetVertexAttribiv,
   },
   {
     documentation = {
@@ -22637,6 +23491,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBlitFramebuffer',
+    insertText = insert.glBlitFramebuffer,
   },
   {
     documentation = {
@@ -22646,6 +23501,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetVertexAttribIiv',
+    insertText = insert.glGetVertexAttribIiv,
   },
   {
     documentation = {
@@ -22655,6 +23511,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBlitNamedFramebuffer',
+    insertText = insert.glBlitNamedFramebuffer,
   },
   {
     documentation = {
@@ -22664,6 +23521,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetVertexAttribIuiv',
+    insertText = insert.glGetVertexAttribIuiv,
   },
   {
     documentation = {
@@ -22673,6 +23531,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBufferData',
+    insertText = insert.glBufferData,
   },
   {
     documentation = {
@@ -22682,6 +23541,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetVertexAttribLdv',
+    insertText = insert.glGetVertexAttribLdv,
   },
   {
     documentation = {
@@ -22691,6 +23551,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedBufferData',
+    insertText = insert.glNamedBufferData,
   },
   {
     documentation = {
@@ -22700,6 +23561,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetVertexAttribPointerv',
+    insertText = insert.glGetVertexAttribPointerv,
   },
   {
     documentation = {
@@ -22709,6 +23571,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBufferStorage',
+    insertText = insert.glBufferStorage,
   },
   {
     documentation = {
@@ -22718,6 +23581,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glHint',
+    insertText = insert.glHint,
   },
   {
     documentation = {
@@ -22727,6 +23591,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedBufferStorage',
+    insertText = insert.glNamedBufferStorage,
   },
   {
     documentation = {
@@ -22736,6 +23601,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glInvalidateBufferData',
+    insertText = insert.glInvalidateBufferData,
   },
   {
     documentation = {
@@ -22745,6 +23611,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glBufferSubData',
+    insertText = insert.glBufferSubData,
   },
   {
     documentation = {
@@ -22754,6 +23621,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glInvalidateBufferSubData',
+    insertText = insert.glInvalidateBufferSubData,
   },
   {
     documentation = {
@@ -22763,6 +23631,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedBufferSubData',
+    insertText = insert.glNamedBufferSubData,
   },
   {
     documentation = {
@@ -22772,6 +23641,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glInvalidateFramebuffer',
+    insertText = insert.glInvalidateFramebuffer,
   },
   {
     documentation = {
@@ -22781,6 +23651,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCheckFramebufferStatus',
+    insertText = insert.glCheckFramebufferStatus,
   },
   {
     documentation = {
@@ -22790,6 +23661,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glInvalidateNamedFramebufferData',
+    insertText = insert.glInvalidateNamedFramebufferData,
   },
   {
     documentation = {
@@ -22799,6 +23671,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCheckNamedFramebufferStatus',
+    insertText = insert.glCheckNamedFramebufferStatus,
   },
   {
     documentation = {
@@ -22808,6 +23681,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glInvalidateSubFramebuffer',
+    insertText = insert.glInvalidateSubFramebuffer,
   },
   {
     documentation = {
@@ -22817,6 +23691,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClampColor',
+    insertText = insert.glClampColor,
   },
   {
     documentation = {
@@ -22826,6 +23701,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glInvalidateNamedFramebufferSubData',
+    insertText = insert.glInvalidateNamedFramebufferSubData,
   },
   {
     documentation = {
@@ -22835,6 +23711,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClear',
+    insertText = insert.glClear,
   },
   {
     documentation = {
@@ -22844,6 +23721,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glInvalidateTexImage',
+    insertText = insert.glInvalidateTexImage,
   },
   {
     documentation = {
@@ -22853,6 +23731,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearBufferiv',
+    insertText = insert.glClearBufferiv,
   },
   {
     documentation = {
@@ -22862,6 +23741,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glInvalidateTexSubImage',
+    insertText = insert.glInvalidateTexSubImage,
   },
   {
     documentation = {
@@ -22871,6 +23751,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearBufferuiv',
+    insertText = insert.glClearBufferuiv,
   },
   {
     documentation = {
@@ -22880,6 +23761,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsBuffer',
+    insertText = insert.glIsBuffer,
   },
   {
     documentation = {
@@ -22889,6 +23771,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearBufferfv',
+    insertText = insert.glClearBufferfv,
   },
   {
     documentation = {
@@ -22898,6 +23781,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsEnabled',
+    insertText = insert.glIsEnabled,
   },
   {
     documentation = {
@@ -22907,6 +23791,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearBufferfi',
+    insertText = insert.glClearBufferfi,
   },
   {
     documentation = {
@@ -22916,6 +23801,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsEnabledi',
+    insertText = insert.glIsEnabledi,
   },
   {
     documentation = {
@@ -22925,6 +23811,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearNamedFramebufferiv',
+    insertText = insert.glClearNamedFramebufferiv,
   },
   {
     documentation = {
@@ -22934,6 +23821,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsFramebuffer',
+    insertText = insert.glIsFramebuffer,
   },
   {
     documentation = {
@@ -22943,6 +23831,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearNamedFramebufferuiv',
+    insertText = insert.glClearNamedFramebufferuiv,
   },
   {
     documentation = {
@@ -22952,6 +23841,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsProgram',
+    insertText = insert.glIsProgram,
   },
   {
     documentation = {
@@ -22961,6 +23851,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearNamedFramebufferfv',
+    insertText = insert.glClearNamedFramebufferfv,
   },
   {
     documentation = {
@@ -22970,6 +23861,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsProgramPipeline',
+    insertText = insert.glIsProgramPipeline,
   },
   {
     documentation = {
@@ -22979,6 +23871,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearNamedFramebufferfi',
+    insertText = insert.glClearNamedFramebufferfi,
   },
   {
     documentation = {
@@ -22988,6 +23881,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsQuery',
+    insertText = insert.glIsQuery,
   },
   {
     documentation = {
@@ -22997,6 +23891,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearBufferData',
+    insertText = insert.glClearBufferData,
   },
   {
     documentation = {
@@ -23006,6 +23901,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsRenderbuffer',
+    insertText = insert.glIsRenderbuffer,
   },
   {
     documentation = {
@@ -23015,6 +23911,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearNamedBufferData',
+    insertText = insert.glClearNamedBufferData,
   },
   {
     documentation = {
@@ -23024,6 +23921,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearBufferSubData',
+    insertText = insert.glClearBufferSubData,
   },
   {
     documentation = {
@@ -23033,6 +23931,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearNamedBufferSubData',
+    insertText = insert.glClearNamedBufferSubData,
   },
   {
     documentation = {
@@ -23042,6 +23941,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearColor',
+    insertText = insert.glClearColor,
   },
   {
     documentation = {
@@ -23051,6 +23951,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearDepth',
+    insertText = insert.glClearDepth,
   },
   {
     documentation = {
@@ -23060,6 +23961,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearDepthf',
+    insertText = insert.glClearDepthf,
   },
   {
     documentation = {
@@ -23069,6 +23971,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearStencil',
+    insertText = insert.glClearStencil,
   },
   {
     documentation = {
@@ -23078,6 +23981,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearTexImage',
+    insertText = insert.glClearTexImage,
   },
   {
     documentation = {
@@ -23087,6 +23991,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClearTexSubImage',
+    insertText = insert.glClearTexSubImage,
   },
   {
     documentation = {
@@ -23096,6 +24001,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClientWaitSync',
+    insertText = insert.glClientWaitSync,
   },
   {
     documentation = {
@@ -23105,6 +24011,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glClipControl',
+    insertText = insert.glClipControl,
   },
   {
     documentation = {
@@ -23114,6 +24021,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glColorMask',
+    insertText = insert.glColorMask,
   },
   {
     documentation = {
@@ -23123,6 +24031,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glColorMaski',
+    insertText = insert.glColorMaski,
   },
   {
     documentation = {
@@ -23132,6 +24041,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCompileShader',
+    insertText = insert.glCompileShader,
   },
   {
     documentation = {
@@ -23141,6 +24051,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCompressedTexImage1D',
+    insertText = insert.glCompressedTexImage1D,
   },
   {
     documentation = {
@@ -23150,6 +24061,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCompressedTexImage2D',
+    insertText = insert.glCompressedTexImage2D,
   },
   {
     documentation = {
@@ -23159,6 +24071,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCompressedTexImage3D',
+    insertText = insert.glCompressedTexImage3D,
   },
   {
     documentation = {
@@ -23168,6 +24081,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCompressedTexSubImage1D',
+    insertText = insert.glCompressedTexSubImage1D,
   },
   {
     documentation = {
@@ -23177,6 +24091,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCompressedTextureSubImage1D',
+    insertText = insert.glCompressedTextureSubImage1D,
   },
   {
     documentation = {
@@ -23186,6 +24101,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCompressedTexSubImage2D',
+    insertText = insert.glCompressedTexSubImage2D,
   },
   {
     documentation = {
@@ -23195,6 +24111,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCompressedTextureSubImage2D',
+    insertText = insert.glCompressedTextureSubImage2D,
   },
   {
     documentation = {
@@ -23204,6 +24121,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCompressedTexSubImage3D',
+    insertText = insert.glCompressedTexSubImage3D,
   },
   {
     documentation = {
@@ -23213,6 +24131,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCompressedTextureSubImage3D',
+    insertText = insert.glCompressedTextureSubImage3D,
   },
   {
     documentation = {
@@ -23222,6 +24141,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCopyBufferSubData',
+    insertText = insert.glCopyBufferSubData,
   },
   {
     documentation = {
@@ -23231,6 +24151,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCopyNamedBufferSubData',
+    insertText = insert.glCopyNamedBufferSubData,
   },
   {
     documentation = {
@@ -23240,6 +24161,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCopyImageSubData',
+    insertText = insert.glCopyImageSubData,
   },
   {
     documentation = {
@@ -23249,6 +24171,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCopyTexImage1D',
+    insertText = insert.glCopyTexImage1D,
   },
   {
     documentation = {
@@ -23258,6 +24181,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCopyTexImage2D',
+    insertText = insert.glCopyTexImage2D,
   },
   {
     documentation = {
@@ -23267,6 +24191,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCopyTexSubImage1D',
+    insertText = insert.glCopyTexSubImage1D,
   },
   {
     documentation = {
@@ -23276,6 +24201,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCopyTextureSubImage1D',
+    insertText = insert.glCopyTextureSubImage1D,
   },
   {
     documentation = {
@@ -23285,6 +24211,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCopyTexSubImage2D',
+    insertText = insert.glCopyTexSubImage2D,
   },
   {
     documentation = {
@@ -23294,6 +24221,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCopyTextureSubImage2D',
+    insertText = insert.glCopyTextureSubImage2D,
   },
   {
     documentation = {
@@ -23303,6 +24231,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCopyTexSubImage3D',
+    insertText = insert.glCopyTexSubImage3D,
   },
   {
     documentation = {
@@ -23312,6 +24241,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCopyTextureSubImage3D',
+    insertText = insert.glCopyTextureSubImage3D,
   },
   {
     documentation = {
@@ -23321,6 +24251,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateBuffers',
+    insertText = insert.glCreateBuffers,
   },
   {
     documentation = {
@@ -23330,6 +24261,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateFramebuffers',
+    insertText = insert.glCreateFramebuffers,
   },
   {
     documentation = {
@@ -23339,6 +24271,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateProgram',
+    insertText = insert.glCreateProgram,
   },
   {
     documentation = {
@@ -23348,6 +24281,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateProgramPipelines',
+    insertText = insert.glCreateProgramPipelines,
   },
   {
     documentation = {
@@ -23357,6 +24291,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateQueries',
+    insertText = insert.glCreateQueries,
   },
   {
     documentation = {
@@ -23366,6 +24301,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateRenderbuffers',
+    insertText = insert.glCreateRenderbuffers,
   },
   {
     documentation = {
@@ -23375,6 +24311,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateSamplers',
+    insertText = insert.glCreateSamplers,
   },
   {
     documentation = {
@@ -23384,6 +24321,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateShader',
+    insertText = insert.glCreateShader,
   },
   {
     documentation = {
@@ -23393,6 +24331,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateShaderProgramv',
+    insertText = insert.glCreateShaderProgramv,
   },
   {
     documentation = {
@@ -23402,6 +24341,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateTextures',
+    insertText = insert.glCreateTextures,
   },
   {
     documentation = {
@@ -23411,6 +24351,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateTransformFeedbacks',
+    insertText = insert.glCreateTransformFeedbacks,
   },
   {
     documentation = {
@@ -23420,6 +24361,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCreateVertexArrays',
+    insertText = insert.glCreateVertexArrays,
   },
   {
     documentation = {
@@ -23429,6 +24371,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glCullFace',
+    insertText = insert.glCullFace,
   },
   {
     documentation = {
@@ -23438,6 +24381,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDebugMessageCallback',
+    insertText = insert.glDebugMessageCallback,
   },
   {
     documentation = {
@@ -23447,6 +24391,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDebugMessageControl',
+    insertText = insert.glDebugMessageControl,
   },
   {
     documentation = {
@@ -23456,6 +24401,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDebugMessageInsert',
+    insertText = insert.glDebugMessageInsert,
   },
   {
     documentation = {
@@ -23465,6 +24411,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteBuffers',
+    insertText = insert.glDeleteBuffers,
   },
   {
     documentation = {
@@ -23474,6 +24421,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteFramebuffers',
+    insertText = insert.glDeleteFramebuffers,
   },
   {
     documentation = {
@@ -23483,6 +24431,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteProgram',
+    insertText = insert.glDeleteProgram,
   },
   {
     documentation = {
@@ -23492,6 +24441,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteProgramPipelines',
+    insertText = insert.glDeleteProgramPipelines,
   },
   {
     documentation = {
@@ -23501,6 +24451,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteQueries',
+    insertText = insert.glDeleteQueries,
   },
   {
     documentation = {
@@ -23510,6 +24461,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib3fv',
+    insertText = insert.glVertexAttrib3fv,
   },
   {
     documentation = {
@@ -23519,6 +24471,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib3sv',
+    insertText = insert.glVertexAttrib3sv,
   },
   {
     documentation = {
@@ -23528,6 +24481,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib3dv',
+    insertText = insert.glVertexAttrib3dv,
   },
   {
     documentation = {
@@ -23537,6 +24491,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI3iv',
+    insertText = insert.glVertexAttribI3iv,
   },
   {
     documentation = {
@@ -23546,6 +24501,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI3uiv',
+    insertText = insert.glVertexAttribI3uiv,
   },
   {
     documentation = {
@@ -23555,6 +24511,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4fv',
+    insertText = insert.glVertexAttrib4fv,
   },
   {
     documentation = {
@@ -23564,6 +24521,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4sv',
+    insertText = insert.glVertexAttrib4sv,
   },
   {
     documentation = {
@@ -23573,6 +24531,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4dv',
+    insertText = insert.glVertexAttrib4dv,
   },
   {
     documentation = {
@@ -23582,6 +24541,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4iv',
+    insertText = insert.glVertexAttrib4iv,
   },
   {
     documentation = {
@@ -23591,6 +24551,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4bv',
+    insertText = insert.glVertexAttrib4bv,
   },
   {
     documentation = {
@@ -23600,6 +24561,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4ubv',
+    insertText = insert.glVertexAttrib4ubv,
   },
   {
     documentation = {
@@ -23609,6 +24571,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4usv',
+    insertText = insert.glVertexAttrib4usv,
   },
   {
     documentation = {
@@ -23618,6 +24581,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4uiv',
+    insertText = insert.glVertexAttrib4uiv,
   },
   {
     documentation = {
@@ -23627,6 +24591,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4Nbv',
+    insertText = insert.glVertexAttrib4Nbv,
   },
   {
     documentation = {
@@ -23636,6 +24601,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4Nsv',
+    insertText = insert.glVertexAttrib4Nsv,
   },
   {
     documentation = {
@@ -23645,6 +24611,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4Niv',
+    insertText = insert.glVertexAttrib4Niv,
   },
   {
     documentation = {
@@ -23654,6 +24621,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4Nubv',
+    insertText = insert.glVertexAttrib4Nubv,
   },
   {
     documentation = {
@@ -23663,6 +24631,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4Nusv',
+    insertText = insert.glVertexAttrib4Nusv,
   },
   {
     documentation = {
@@ -23672,6 +24641,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4Nuiv',
+    insertText = insert.glVertexAttrib4Nuiv,
   },
   {
     documentation = {
@@ -23681,6 +24651,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI4bv',
+    insertText = insert.glVertexAttribI4bv,
   },
   {
     documentation = {
@@ -23690,6 +24661,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI4ubv',
+    insertText = insert.glVertexAttribI4ubv,
   },
   {
     documentation = {
@@ -23699,6 +24671,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI4sv',
+    insertText = insert.glVertexAttribI4sv,
   },
   {
     documentation = {
@@ -23708,6 +24681,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI4usv',
+    insertText = insert.glVertexAttribI4usv,
   },
   {
     documentation = {
@@ -23717,6 +24691,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI4iv',
+    insertText = insert.glVertexAttribI4iv,
   },
   {
     documentation = {
@@ -23726,6 +24701,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI4uiv',
+    insertText = insert.glVertexAttribI4uiv,
   },
   {
     documentation = {
@@ -23735,6 +24711,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribL1dv',
+    insertText = insert.glVertexAttribL1dv,
   },
   {
     documentation = {
@@ -23744,6 +24721,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribL2dv',
+    insertText = insert.glVertexAttribL2dv,
   },
   {
     documentation = {
@@ -23753,6 +24731,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribL3dv',
+    insertText = insert.glVertexAttribL3dv,
   },
   {
     documentation = {
@@ -23762,6 +24741,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribL4dv',
+    insertText = insert.glVertexAttribL4dv,
   },
   {
     documentation = {
@@ -23771,6 +24751,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI2uiv',
+    insertText = insert.glVertexAttribI2uiv,
   },
   {
     documentation = {
@@ -23780,6 +24761,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI2iv',
+    insertText = insert.glVertexAttribI2iv,
   },
   {
     documentation = {
@@ -23789,6 +24771,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib2dv',
+    insertText = insert.glVertexAttrib2dv,
   },
   {
     documentation = {
@@ -23798,6 +24781,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib2sv',
+    insertText = insert.glVertexAttrib2sv,
   },
   {
     documentation = {
@@ -23807,6 +24791,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib2fv',
+    insertText = insert.glVertexAttrib2fv,
   },
   {
     documentation = {
@@ -23816,6 +24801,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI1uiv',
+    insertText = insert.glVertexAttribI1uiv,
   },
   {
     documentation = {
@@ -23825,6 +24811,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI1iv',
+    insertText = insert.glVertexAttribI1iv,
   },
   {
     documentation = {
@@ -23834,6 +24821,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib1dv',
+    insertText = insert.glVertexAttrib1dv,
   },
   {
     documentation = {
@@ -23843,6 +24831,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib1sv',
+    insertText = insert.glVertexAttrib1sv,
   },
   {
     documentation = {
@@ -23852,6 +24841,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib1fv',
+    insertText = insert.glVertexAttrib1fv,
   },
   {
     documentation = {
@@ -23861,6 +24851,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribL4d',
+    insertText = insert.glVertexAttribL4d,
   },
   {
     documentation = {
@@ -23870,6 +24861,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribL3d',
+    insertText = insert.glVertexAttribL3d,
   },
   {
     documentation = {
@@ -23879,6 +24871,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribL2d',
+    insertText = insert.glVertexAttribL2d,
   },
   {
     documentation = {
@@ -23888,6 +24881,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribL1d',
+    insertText = insert.glVertexAttribL1d,
   },
   {
     documentation = {
@@ -23897,6 +24891,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI4ui',
+    insertText = insert.glVertexAttribI4ui,
   },
   {
     documentation = {
@@ -23906,6 +24901,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI4i',
+    insertText = insert.glVertexAttribI4i,
   },
   {
     documentation = {
@@ -23915,6 +24911,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4Nub',
+    insertText = insert.glVertexAttrib4Nub,
   },
   {
     documentation = {
@@ -23924,6 +24921,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4d',
+    insertText = insert.glVertexAttrib4d,
   },
   {
     documentation = {
@@ -23933,6 +24931,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glActiveShaderProgram',
+    insertText = insert.glActiveShaderProgram,
   },
   {
     documentation = {
@@ -23942,6 +24941,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4s',
+    insertText = insert.glVertexAttrib4s,
   },
   {
     documentation = {
@@ -23951,6 +24951,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glActiveTexture',
+    insertText = insert.glActiveTexture,
   },
   {
     documentation = {
@@ -23960,6 +24961,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib4f',
+    insertText = insert.glVertexAttrib4f,
   },
   {
     documentation = {
@@ -23969,6 +24971,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glAttachShader',
+    insertText = insert.glAttachShader,
   },
   {
     documentation = {
@@ -23978,6 +24981,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI3ui',
+    insertText = insert.glVertexAttribI3ui,
   },
   {
     documentation = {
@@ -23987,6 +24991,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI3i',
+    insertText = insert.glVertexAttribI3i,
   },
   {
     documentation = {
@@ -23996,6 +25001,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib3d',
+    insertText = insert.glVertexAttrib3d,
   },
   {
     documentation = {
@@ -24005,6 +25011,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib3s',
+    insertText = insert.glVertexAttrib3s,
   },
   {
     documentation = {
@@ -24014,6 +25021,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib3f',
+    insertText = insert.glVertexAttrib3f,
   },
   {
     documentation = {
@@ -24023,6 +25031,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI2ui',
+    insertText = insert.glVertexAttribI2ui,
   },
   {
     documentation = {
@@ -24032,6 +25041,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI2i',
+    insertText = insert.glVertexAttribI2i,
   },
   {
     documentation = {
@@ -24041,6 +25051,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib2d',
+    insertText = insert.glVertexAttrib2d,
   },
   {
     documentation = {
@@ -24050,6 +25061,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib2s',
+    insertText = insert.glVertexAttrib2s,
   },
   {
     documentation = {
@@ -24059,6 +25071,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib2f',
+    insertText = insert.glVertexAttrib2f,
   },
   {
     documentation = {
@@ -24068,6 +25081,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI1ui',
+    insertText = insert.glVertexAttribI1ui,
   },
   {
     documentation = {
@@ -24077,6 +25091,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttribI1i',
+    insertText = insert.glVertexAttribI1i,
   },
   {
     documentation = {
@@ -24086,6 +25101,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib1d',
+    insertText = insert.glVertexAttrib1d,
   },
   {
     documentation = {
@@ -24095,6 +25111,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib1s',
+    insertText = insert.glVertexAttrib1s,
   },
   {
     documentation = {
@@ -24104,6 +25121,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexAttrib1f',
+    insertText = insert.glVertexAttrib1f,
   },
   {
     documentation = {
@@ -24113,6 +25131,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glVertexArrayElementBuffer',
+    insertText = insert.glVertexArrayElementBuffer,
   },
   {
     documentation = {
@@ -24122,6 +25141,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glValidateProgramPipeline',
+    insertText = insert.glValidateProgramPipeline,
   },
   {
     documentation = {
@@ -24131,6 +25151,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glValidateProgram',
+    insertText = insert.glValidateProgram,
   },
   {
     documentation = {
@@ -24140,6 +25161,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUseProgramStages',
+    insertText = insert.glUseProgramStages,
   },
   {
     documentation = {
@@ -24149,6 +25171,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUseProgram',
+    insertText = insert.glUseProgram,
   },
   {
     documentation = {
@@ -24158,6 +25181,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUnmapNamedBuffer',
+    insertText = insert.glUnmapNamedBuffer,
   },
   {
     documentation = {
@@ -24167,6 +25191,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUnmapBuffer',
+    insertText = insert.glUnmapBuffer,
   },
   {
     documentation = {
@@ -24176,6 +25201,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniformSubroutinesuiv',
+    insertText = insert.glUniformSubroutinesuiv,
   },
   {
     documentation = {
@@ -24185,6 +25211,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniformBlockBinding',
+    insertText = insert.glUniformBlockBinding,
   },
   {
     documentation = {
@@ -24194,6 +25221,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniformMatrix4x3fv',
+    insertText = insert.glUniformMatrix4x3fv,
   },
   {
     documentation = {
@@ -24203,6 +25231,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniformMatrix3x4fv',
+    insertText = insert.glUniformMatrix3x4fv,
   },
   {
     documentation = {
@@ -24212,6 +25241,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniformMatrix4x2fv',
+    insertText = insert.glUniformMatrix4x2fv,
   },
   {
     documentation = {
@@ -24221,6 +25251,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniformMatrix2x4fv',
+    insertText = insert.glUniformMatrix2x4fv,
   },
   {
     documentation = {
@@ -24230,6 +25261,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniformMatrix3x2fv',
+    insertText = insert.glUniformMatrix3x2fv,
   },
   {
     documentation = {
@@ -24239,6 +25271,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniformMatrix2x3fv',
+    insertText = insert.glUniformMatrix2x3fv,
   },
   {
     documentation = {
@@ -24248,6 +25281,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniformMatrix4fv',
+    insertText = insert.glUniformMatrix4fv,
   },
   {
     documentation = {
@@ -24257,6 +25291,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureParameterIiv',
+    insertText = insert.glTextureParameterIiv,
   },
   {
     documentation = {
@@ -24266,6 +25301,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureParameteriv',
+    insertText = insert.glTextureParameteriv,
   },
   {
     documentation = {
@@ -24275,6 +25311,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureParameterfv',
+    insertText = insert.glTextureParameterfv,
   },
   {
     documentation = {
@@ -24284,6 +25321,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexParameterIuiv',
+    insertText = insert.glTexParameterIuiv,
   },
   {
     documentation = {
@@ -24293,6 +25331,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexParameterIiv',
+    insertText = insert.glTexParameterIiv,
   },
   {
     documentation = {
@@ -24302,6 +25341,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexParameteriv',
+    insertText = insert.glTexParameteriv,
   },
   {
     documentation = {
@@ -24311,6 +25351,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexParameterfv',
+    insertText = insert.glTexParameterfv,
   },
   {
     documentation = {
@@ -24320,6 +25361,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureParameteri',
+    insertText = insert.glTextureParameteri,
   },
   {
     documentation = {
@@ -24329,6 +25371,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureParameterf',
+    insertText = insert.glTextureParameterf,
   },
   {
     documentation = {
@@ -24338,6 +25381,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexParameteri',
+    insertText = insert.glTexParameteri,
   },
   {
     documentation = {
@@ -24347,6 +25391,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexImage3DMultisample',
+    insertText = insert.glTexImage3DMultisample,
   },
   {
     documentation = {
@@ -24356,6 +25401,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexImage2DMultisample',
+    insertText = insert.glTexImage2DMultisample,
   },
   {
     documentation = {
@@ -24365,6 +25411,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexImage1D',
+    insertText = insert.glTexImage1D,
   },
   {
     documentation = {
@@ -24374,6 +25421,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexParameterf',
+    insertText = insert.glTexParameterf,
   },
   {
     documentation = {
@@ -24383,6 +25431,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexImage2D',
+    insertText = insert.glTexImage2D,
   },
   {
     documentation = {
@@ -24392,6 +25441,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexImage3D',
+    insertText = insert.glTexImage3D,
   },
   {
     documentation = {
@@ -24401,6 +25451,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDisable',
+    insertText = insert.glDisable,
   },
   {
     documentation = {
@@ -24410,6 +25461,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDepthFunc',
+    insertText = insert.glDepthFunc,
   },
   {
     documentation = {
@@ -24419,6 +25471,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDepthRange',
+    insertText = insert.glDepthRange,
   },
   {
     documentation = {
@@ -24428,6 +25481,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDepthMask',
+    insertText = insert.glDepthMask,
   },
   {
     documentation = {
@@ -24437,6 +25491,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDepthRangef',
+    insertText = insert.glDepthRangef,
   },
   {
     documentation = {
@@ -24446,6 +25501,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteVertexArrays',
+    insertText = insert.glDeleteVertexArrays,
   },
   {
     documentation = {
@@ -24455,6 +25511,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glSamplerParameterIiv',
+    insertText = insert.glSamplerParameterIiv,
   },
   {
     documentation = {
@@ -24464,6 +25521,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteTransformFeedbacks',
+    insertText = insert.glDeleteTransformFeedbacks,
   },
   {
     documentation = {
@@ -24473,6 +25531,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glSamplerParameterfv',
+    insertText = insert.glSamplerParameterfv,
   },
   {
     documentation = {
@@ -24482,6 +25541,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteSync',
+    insertText = insert.glDeleteSync,
   },
   {
     documentation = {
@@ -24491,6 +25551,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glSamplerParameterf',
+    insertText = insert.glSamplerParameterf,
   },
   {
     documentation = {
@@ -24500,6 +25561,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsSampler',
+    insertText = insert.glIsSampler,
   },
   {
     documentation = {
@@ -24509,6 +25571,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteSamplers',
+    insertText = insert.glDeleteSamplers,
   },
   {
     documentation = {
@@ -24518,6 +25581,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsShader',
+    insertText = insert.glIsShader,
   },
   {
     documentation = {
@@ -24527,6 +25591,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glSampleCoverage',
+    insertText = insert.glSampleCoverage,
   },
   {
     documentation = {
@@ -24536,6 +25601,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsSync',
+    insertText = insert.glIsSync,
   },
   {
     documentation = {
@@ -24545,6 +25611,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedRenderbufferStorageMultisample',
+    insertText = insert.glNamedRenderbufferStorageMultisample,
   },
   {
     documentation = {
@@ -24554,6 +25621,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsTexture',
+    insertText = insert.glIsTexture,
   },
   {
     documentation = {
@@ -24563,6 +25631,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedRenderbufferStorage',
+    insertText = insert.glNamedRenderbufferStorage,
   },
   {
     documentation = {
@@ -24572,6 +25641,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsTransformFeedback',
+    insertText = insert.glIsTransformFeedback,
   },
   {
     documentation = {
@@ -24581,6 +25651,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glReleaseShaderCompiler',
+    insertText = insert.glReleaseShaderCompiler,
   },
   {
     documentation = {
@@ -24590,6 +25661,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glIsVertexArray',
+    insertText = insert.glIsVertexArray,
   },
   {
     documentation = {
@@ -24599,6 +25671,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glReadPixels',
+    insertText = insert.glReadPixels,
   },
   {
     documentation = {
@@ -24608,6 +25681,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glLineWidth',
+    insertText = insert.glLineWidth,
   },
   {
     documentation = {
@@ -24617,6 +25691,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glReadBuffer',
+    insertText = insert.glReadBuffer,
   },
   {
     documentation = {
@@ -24626,6 +25701,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glLinkProgram',
+    insertText = insert.glLinkProgram,
   },
   {
     documentation = {
@@ -24635,6 +25711,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPushDebugGroup',
+    insertText = insert.glPushDebugGroup,
   },
   {
     documentation = {
@@ -24644,6 +25721,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glLogicOp',
+    insertText = insert.glLogicOp,
   },
   {
     documentation = {
@@ -24653,6 +25731,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniformMatrix4x3fv',
+    insertText = insert.glProgramUniformMatrix4x3fv,
   },
   {
     documentation = {
@@ -24662,6 +25741,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMapBuffer',
+    insertText = insert.glMapBuffer,
   },
   {
     documentation = {
@@ -24671,6 +25751,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetCompressedTexImage',
+    insertText = insert.glGetCompressedTexImage,
   },
   {
     documentation = {
@@ -24680,6 +25761,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMapNamedBuffer',
+    insertText = insert.glMapNamedBuffer,
   },
   {
     documentation = {
@@ -24689,6 +25771,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniformMatrix4x2fv',
+    insertText = insert.glProgramUniformMatrix4x2fv,
   },
   {
     documentation = {
@@ -24698,6 +25781,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMapBufferRange',
+    insertText = insert.glMapBufferRange,
   },
   {
     documentation = {
@@ -24707,6 +25791,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetCompressedTextureImage',
+    insertText = insert.glGetCompressedTextureImage,
   },
   {
     documentation = {
@@ -24716,6 +25801,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMapNamedBufferRange',
+    insertText = insert.glMapNamedBufferRange,
   },
   {
     documentation = {
@@ -24725,6 +25811,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glShaderBinary',
+    insertText = insert.glShaderBinary,
   },
   {
     documentation = {
@@ -24734,6 +25821,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMemoryBarrier',
+    insertText = insert.glMemoryBarrier,
   },
   {
     documentation = {
@@ -24743,6 +25831,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetDebugMessageLog',
+    insertText = insert.glGetDebugMessageLog,
   },
   {
     documentation = {
@@ -24752,6 +25841,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMemoryBarrierByRegion',
+    insertText = insert.glMemoryBarrierByRegion,
   },
   {
     documentation = {
@@ -24761,6 +25851,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glScissor',
+    insertText = insert.glScissor,
   },
   {
     documentation = {
@@ -24770,6 +25861,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMinSampleShading',
+    insertText = insert.glMinSampleShading,
   },
   {
     documentation = {
@@ -24779,6 +25871,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetFragDataIndex',
+    insertText = insert.glGetFragDataIndex,
   },
   {
     documentation = {
@@ -24788,6 +25881,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMultiDrawArrays',
+    insertText = insert.glMultiDrawArrays,
   },
   {
     documentation = {
@@ -24797,6 +25891,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDepthRangeIndexed',
+    insertText = insert.glDepthRangeIndexed,
   },
   {
     documentation = {
@@ -24806,6 +25901,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMultiDrawArraysIndirect',
+    insertText = insert.glMultiDrawArraysIndirect,
   },
   {
     documentation = {
@@ -24815,6 +25911,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetFramebufferAttachmentParameteriv',
+    insertText = insert.glGetFramebufferAttachmentParameteriv,
   },
   {
     documentation = {
@@ -24824,6 +25921,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMultiDrawElements',
+    insertText = insert.glMultiDrawElements,
   },
   {
     documentation = {
@@ -24833,6 +25931,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDispatchCompute',
+    insertText = insert.glDispatchCompute,
   },
   {
     documentation = {
@@ -24842,6 +25941,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMultiDrawElementsBaseVertex',
+    insertText = insert.glMultiDrawElementsBaseVertex,
   },
   {
     documentation = {
@@ -24851,6 +25951,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawArrays',
+    insertText = insert.glDrawArrays,
   },
   {
     documentation = {
@@ -24860,6 +25961,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glMultiDrawElementsIndirect',
+    insertText = insert.glMultiDrawElementsIndirect,
   },
   {
     documentation = {
@@ -24869,6 +25971,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteTextures',
+    insertText = insert.glDeleteTextures,
   },
   {
     documentation = {
@@ -24878,6 +25981,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glObjectLabel',
+    insertText = insert.glObjectLabel,
   },
   {
     documentation = {
@@ -24887,6 +25991,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawArraysInstanced',
+    insertText = insert.glDrawArraysInstanced,
   },
   {
     documentation = {
@@ -24896,6 +26001,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glObjectPtrLabel',
+    insertText = insert.glObjectPtrLabel,
   },
   {
     documentation = {
@@ -24905,6 +26011,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteRenderbuffers',
+    insertText = insert.glDeleteRenderbuffers,
   },
   {
     documentation = {
@@ -24914,6 +26021,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPatchParameteri',
+    insertText = insert.glPatchParameteri,
   },
   {
     documentation = {
@@ -24923,6 +26031,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawBuffer',
+    insertText = insert.glDrawBuffer,
   },
   {
     documentation = {
@@ -24932,6 +26041,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPatchParameterfv',
+    insertText = insert.glPatchParameterfv,
   },
   {
     documentation = {
@@ -24941,6 +26051,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawBuffers',
+    insertText = insert.glDrawBuffers,
   },
   {
     documentation = {
@@ -24950,6 +26061,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPauseTransformFeedback',
+    insertText = insert.glPauseTransformFeedback,
   },
   {
     documentation = {
@@ -24959,6 +26071,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawElements',
+    insertText = insert.glDrawElements,
   },
   {
     documentation = {
@@ -24968,6 +26081,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPixelStoref',
+    insertText = insert.glPixelStoref,
   },
   {
     documentation = {
@@ -24977,6 +26091,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawElementsIndirect',
+    insertText = insert.glDrawElementsIndirect,
   },
   {
     documentation = {
@@ -24986,6 +26101,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPixelStorei',
+    insertText = insert.glPixelStorei,
   },
   {
     documentation = {
@@ -24995,6 +26111,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetnCompressedTexImage',
+    insertText = insert.glGetnCompressedTexImage,
   },
   {
     documentation = {
@@ -25004,6 +26121,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPointParameterf',
+    insertText = insert.glPointParameterf,
   },
   {
     documentation = {
@@ -25013,6 +26131,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDeleteShader',
+    insertText = insert.glDeleteShader,
   },
   {
     documentation = {
@@ -25022,6 +26141,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPointParameteri',
+    insertText = insert.glPointParameteri,
   },
   {
     documentation = {
@@ -25031,6 +26151,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetError',
+    insertText = insert.glGetError,
   },
   {
     documentation = {
@@ -25040,6 +26161,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPointParameterfv',
+    insertText = insert.glPointParameterfv,
   },
   {
     documentation = {
@@ -25049,6 +26171,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetCompressedTextureSubImage',
+    insertText = insert.glGetCompressedTextureSubImage,
   },
   {
     documentation = {
@@ -25058,6 +26181,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPointParameteriv',
+    insertText = insert.glPointParameteriv,
   },
   {
     documentation = {
@@ -25067,6 +26191,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetnUniformdv',
+    insertText = insert.glGetnUniformdv,
   },
   {
     documentation = {
@@ -25076,6 +26201,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPointSize',
+    insertText = insert.glPointSize,
   },
   {
     documentation = {
@@ -25085,6 +26211,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetnUniformuiv',
+    insertText = insert.glGetnUniformuiv,
   },
   {
     documentation = {
@@ -25094,6 +26221,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPolygonMode',
+    insertText = insert.glPolygonMode,
   },
   {
     documentation = {
@@ -25103,6 +26231,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetUniformSubroutineuiv',
+    insertText = insert.glGetUniformSubroutineuiv,
   },
   {
     documentation = {
@@ -25112,6 +26241,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPolygonOffset',
+    insertText = insert.glPolygonOffset,
   },
   {
     documentation = {
@@ -25121,6 +26251,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetUniformBlockIndex',
+    insertText = insert.glGetUniformBlockIndex,
   },
   {
     documentation = {
@@ -25130,6 +26261,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPopDebugGroup',
+    insertText = insert.glPopDebugGroup,
   },
   {
     documentation = {
@@ -25139,6 +26271,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetVertexArrayiv',
+    insertText = insert.glGetVertexArrayiv,
   },
   {
     documentation = {
@@ -25148,6 +26281,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glPrimitiveRestartIndex',
+    insertText = insert.glPrimitiveRestartIndex,
   },
   {
     documentation = {
@@ -25157,6 +26291,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetUniformLocation',
+    insertText = insert.glGetUniformLocation,
   },
   {
     documentation = {
@@ -25166,6 +26301,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramBinary',
+    insertText = insert.glProgramBinary,
   },
   {
     documentation = {
@@ -25175,6 +26311,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetVertexArrayIndexed64iv',
+    insertText = insert.glGetVertexArrayIndexed64iv,
   },
   {
     documentation = {
@@ -25184,6 +26321,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramParameteri',
+    insertText = insert.glProgramParameteri,
   },
   {
     documentation = {
@@ -25193,6 +26331,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetVertexArrayIndexediv',
+    insertText = insert.glGetVertexArrayIndexediv,
   },
   {
     documentation = {
@@ -25202,6 +26341,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform1f',
+    insertText = insert.glProgramUniform1f,
   },
   {
     documentation = {
@@ -25211,6 +26351,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetUniformIndices',
+    insertText = insert.glGetUniformIndices,
   },
   {
     documentation = {
@@ -25220,6 +26361,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform2f',
+    insertText = insert.glProgramUniform2f,
   },
   {
     documentation = {
@@ -25229,6 +26371,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetFragDataLocation',
+    insertText = insert.glGetFragDataLocation,
   },
   {
     documentation = {
@@ -25238,6 +26381,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform3f',
+    insertText = insert.glProgramUniform3f,
   },
   {
     documentation = {
@@ -25247,6 +26391,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetNamedBufferSubData',
+    insertText = insert.glGetNamedBufferSubData,
   },
   {
     documentation = {
@@ -25256,6 +26401,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform4f',
+    insertText = insert.glProgramUniform4f,
   },
   {
     documentation = {
@@ -25265,6 +26411,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawElementsInstanced',
+    insertText = insert.glDrawElementsInstanced,
   },
   {
     documentation = {
@@ -25274,6 +26421,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform1i',
+    insertText = insert.glProgramUniform1i,
   },
   {
     documentation = {
@@ -25283,6 +26431,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawElementsBaseVertex',
+    insertText = insert.glDrawElementsBaseVertex,
   },
   {
     documentation = {
@@ -25292,6 +26441,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform2i',
+    insertText = insert.glProgramUniform2i,
   },
   {
     documentation = {
@@ -25301,6 +26451,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedFramebufferDrawBuffers',
+    insertText = insert.glNamedFramebufferDrawBuffers,
   },
   {
     documentation = {
@@ -25310,6 +26461,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform3i',
+    insertText = insert.glProgramUniform3i,
   },
   {
     documentation = {
@@ -25319,6 +26471,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedFramebufferDrawBuffer',
+    insertText = insert.glNamedFramebufferDrawBuffer,
   },
   {
     documentation = {
@@ -25328,6 +26481,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform4i',
+    insertText = insert.glProgramUniform4i,
   },
   {
     documentation = {
@@ -25337,6 +26491,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawArraysInstancedBaseInstance',
+    insertText = insert.glDrawArraysInstancedBaseInstance,
   },
   {
     documentation = {
@@ -25346,6 +26501,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform1ui',
+    insertText = insert.glProgramUniform1ui,
   },
   {
     documentation = {
@@ -25355,6 +26511,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDrawArraysIndirect',
+    insertText = insert.glDrawArraysIndirect,
   },
   {
     documentation = {
@@ -25364,6 +26521,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform2ui',
+    insertText = insert.glProgramUniform2ui,
   },
   {
     documentation = {
@@ -25373,6 +26531,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDispatchComputeIndirect',
+    insertText = insert.glDispatchComputeIndirect,
   },
   {
     documentation = {
@@ -25382,6 +26541,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform3ui',
+    insertText = insert.glProgramUniform3ui,
   },
   {
     documentation = {
@@ -25391,6 +26551,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDetachShader',
+    insertText = insert.glDetachShader,
   },
   {
     documentation = {
@@ -25400,6 +26561,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform4ui',
+    insertText = insert.glProgramUniform4ui,
   },
   {
     documentation = {
@@ -25409,6 +26571,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glDepthRangeArrayv',
+    insertText = insert.glDepthRangeArrayv,
   },
   {
     documentation = {
@@ -25418,6 +26581,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform1fv',
+    insertText = insert.glProgramUniform1fv,
   },
   {
     documentation = {
@@ -25427,6 +26591,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glScissorIndexed',
+    insertText = insert.glScissorIndexed,
   },
   {
     documentation = {
@@ -25436,6 +26601,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform2fv',
+    insertText = insert.glProgramUniform2fv,
   },
   {
     documentation = {
@@ -25445,6 +26611,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniformMatrix2x4fv',
+    insertText = insert.glProgramUniformMatrix2x4fv,
   },
   {
     documentation = {
@@ -25454,6 +26621,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform3fv',
+    insertText = insert.glProgramUniform3fv,
   },
   {
     documentation = {
@@ -25463,6 +26631,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniformMatrix3x4fv',
+    insertText = insert.glProgramUniformMatrix3x4fv,
   },
   {
     documentation = {
@@ -25472,6 +26641,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform4fv',
+    insertText = insert.glProgramUniform4fv,
   },
   {
     documentation = {
@@ -25481,6 +26651,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProvokingVertex',
+    insertText = insert.glProvokingVertex,
   },
   {
     documentation = {
@@ -25490,6 +26661,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform1iv',
+    insertText = insert.glProgramUniform1iv,
   },
   {
     documentation = {
@@ -25499,6 +26671,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glQueryCounter',
+    insertText = insert.glQueryCounter,
   },
   {
     documentation = {
@@ -25508,6 +26681,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform2iv',
+    insertText = insert.glProgramUniform2iv,
   },
   {
     documentation = {
@@ -25517,6 +26691,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glNamedFramebufferReadBuffer',
+    insertText = insert.glNamedFramebufferReadBuffer,
   },
   {
     documentation = {
@@ -25526,6 +26701,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform3iv',
+    insertText = insert.glProgramUniform3iv,
   },
   {
     documentation = {
@@ -25535,6 +26711,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glReadnPixels',
+    insertText = insert.glReadnPixels,
   },
   {
     documentation = {
@@ -25544,6 +26721,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform4iv',
+    insertText = insert.glProgramUniform4iv,
   },
   {
     documentation = {
@@ -25553,6 +26731,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glRenderbufferStorage',
+    insertText = insert.glRenderbufferStorage,
   },
   {
     documentation = {
@@ -25562,6 +26741,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform1uiv',
+    insertText = insert.glProgramUniform1uiv,
   },
   {
     documentation = {
@@ -25571,6 +26751,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glRenderbufferStorageMultisample',
+    insertText = insert.glRenderbufferStorageMultisample,
   },
   {
     documentation = {
@@ -25580,6 +26761,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform2uiv',
+    insertText = insert.glProgramUniform2uiv,
   },
   {
     documentation = {
@@ -25589,6 +26771,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glResumeTransformFeedback',
+    insertText = insert.glResumeTransformFeedback,
   },
   {
     documentation = {
@@ -25598,6 +26781,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform3uiv',
+    insertText = insert.glProgramUniform3uiv,
   },
   {
     documentation = {
@@ -25607,6 +26791,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glSampleMaski',
+    insertText = insert.glSampleMaski,
   },
   {
     documentation = {
@@ -25616,6 +26801,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniform4uiv',
+    insertText = insert.glProgramUniform4uiv,
   },
   {
     documentation = {
@@ -25625,6 +26811,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glSamplerParameteri',
+    insertText = insert.glSamplerParameteri,
   },
   {
     documentation = {
@@ -25634,6 +26821,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniformMatrix2fv',
+    insertText = insert.glProgramUniformMatrix2fv,
   },
   {
     documentation = {
@@ -25643,6 +26831,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glSamplerParameteriv',
+    insertText = insert.glSamplerParameteriv,
   },
   {
     documentation = {
@@ -25652,6 +26841,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniformMatrix3fv',
+    insertText = insert.glProgramUniformMatrix3fv,
   },
   {
     documentation = {
@@ -25661,6 +26851,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glSamplerParameterIuiv',
+    insertText = insert.glSamplerParameterIuiv,
   },
   {
     documentation = {
@@ -25670,6 +26861,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniformMatrix4fv',
+    insertText = insert.glProgramUniformMatrix4fv,
   },
   {
     documentation = {
@@ -25679,6 +26871,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glScissorArrayv',
+    insertText = insert.glScissorArrayv,
   },
   {
     documentation = {
@@ -25688,6 +26881,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniformMatrix2x3fv',
+    insertText = insert.glProgramUniformMatrix2x3fv,
   },
   {
     documentation = {
@@ -25697,6 +26891,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glScissorIndexedv',
+    insertText = insert.glScissorIndexedv,
   },
   {
     documentation = {
@@ -25706,6 +26901,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glProgramUniformMatrix3x2fv',
+    insertText = insert.glProgramUniformMatrix3x2fv,
   },
   {
     documentation = {
@@ -25715,6 +26911,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glShaderSource',
+    insertText = insert.glShaderSource,
   },
   {
     documentation = {
@@ -25724,6 +26921,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glStencilFunc',
+    insertText = insert.glStencilFunc,
   },
   {
     documentation = {
@@ -25733,6 +26931,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glShaderStorageBlockBinding',
+    insertText = insert.glShaderStorageBlockBinding,
   },
   {
     documentation = {
@@ -25742,6 +26941,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glStencilFuncSeparate',
+    insertText = insert.glStencilFuncSeparate,
   },
   {
     documentation = {
@@ -25751,6 +26951,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureBufferRange',
+    insertText = insert.glTextureBufferRange,
   },
   {
     documentation = {
@@ -25760,6 +26961,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glStencilMask',
+    insertText = insert.glStencilMask,
   },
   {
     documentation = {
@@ -25769,6 +26971,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetQueryObjectuiv',
+    insertText = insert.glGetQueryObjectuiv,
   },
   {
     documentation = {
@@ -25778,6 +26981,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glStencilMaskSeparate',
+    insertText = insert.glStencilMaskSeparate,
   },
   {
     documentation = {
@@ -25787,6 +26991,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetQueryObjecti64v',
+    insertText = insert.glGetQueryObjecti64v,
   },
   {
     documentation = {
@@ -25796,6 +27001,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glStencilOp',
+    insertText = insert.glStencilOp,
   },
   {
     documentation = {
@@ -25805,6 +27011,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetQueryObjectui64v',
+    insertText = insert.glGetQueryObjectui64v,
   },
   {
     documentation = {
@@ -25814,6 +27021,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glStencilOpSeparate',
+    insertText = insert.glStencilOpSeparate,
   },
   {
     documentation = {
@@ -25823,6 +27031,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetQueryBufferObjectiv',
+    insertText = insert.glGetQueryBufferObjectiv,
   },
   {
     documentation = {
@@ -25832,6 +27041,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexBuffer',
+    insertText = insert.glTexBuffer,
   },
   {
     documentation = {
@@ -25841,6 +27051,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetQueryBufferObjectuiv',
+    insertText = insert.glGetQueryBufferObjectuiv,
   },
   {
     documentation = {
@@ -25850,6 +27061,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTextureBuffer',
+    insertText = insert.glTextureBuffer,
   },
   {
     documentation = {
@@ -25859,6 +27071,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetQueryBufferObjecti64v',
+    insertText = insert.glGetQueryBufferObjecti64v,
   },
   {
     documentation = {
@@ -25868,6 +27081,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glTexBufferRange',
+    insertText = insert.glTexBufferRange,
   },
   {
     documentation = {
@@ -25877,6 +27091,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetQueryBufferObjectui64v',
+    insertText = insert.glGetQueryBufferObjectui64v,
   },
   {
     documentation = {
@@ -25886,6 +27101,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform2ui',
+    insertText = insert.glUniform2ui,
   },
   {
     documentation = {
@@ -25895,6 +27111,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetQueryiv',
+    insertText = insert.glGetQueryiv,
   },
   {
     documentation = {
@@ -25904,6 +27121,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform3ui',
+    insertText = insert.glUniform3ui,
   },
   {
     documentation = {
@@ -25913,6 +27131,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetRenderbufferParameteriv',
+    insertText = insert.glGetRenderbufferParameteriv,
   },
   {
     documentation = {
@@ -25922,6 +27141,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform4ui',
+    insertText = insert.glUniform4ui,
   },
   {
     documentation = {
@@ -25931,6 +27151,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetNamedRenderbufferParameteriv',
+    insertText = insert.glGetNamedRenderbufferParameteriv,
   },
   {
     documentation = {
@@ -25940,6 +27161,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform1fv',
+    insertText = insert.glUniform1fv,
   },
   {
     documentation = {
@@ -25949,6 +27171,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetSamplerParameterfv',
+    insertText = insert.glGetSamplerParameterfv,
   },
   {
     documentation = {
@@ -25958,6 +27181,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform2fv',
+    insertText = insert.glUniform2fv,
   },
   {
     documentation = {
@@ -25967,6 +27191,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetSamplerParameteriv',
+    insertText = insert.glGetSamplerParameteriv,
   },
   {
     documentation = {
@@ -25976,6 +27201,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform3fv',
+    insertText = insert.glUniform3fv,
   },
   {
     documentation = {
@@ -25985,6 +27211,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetSamplerParameterIiv',
+    insertText = insert.glGetSamplerParameterIiv,
   },
   {
     documentation = {
@@ -25994,6 +27221,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform4fv',
+    insertText = insert.glUniform4fv,
   },
   {
     documentation = {
@@ -26003,6 +27231,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetSamplerParameterIuiv',
+    insertText = insert.glGetSamplerParameterIuiv,
   },
   {
     documentation = {
@@ -26012,6 +27241,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform1iv',
+    insertText = insert.glUniform1iv,
   },
   {
     documentation = {
@@ -26021,6 +27251,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetShaderiv',
+    insertText = insert.glGetShaderiv,
   },
   {
     documentation = {
@@ -26030,6 +27261,7 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glUniform2iv',
+    insertText = insert.glUniform2iv,
   },
   {
     documentation = {
@@ -26039,5 +27271,6 @@ return {
     dup = 0,
     kind = lsp_kind,
     label = 'glGetShaderInfoLog',
+    insertText = insert.glGetShaderInfoLog,
   },
 }
