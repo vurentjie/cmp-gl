@@ -10,9 +10,11 @@ The completion for OpenGL constants (e.g GL_TRIANGLES, GL_VERTEX_ARRAY_SIZE, etc
 
 By default the completions will display for c/cpp filetypes and insert c/cpp compatible code.
 
+There are two ways to enable completions:
+
 ---
 
-Setup
+### Option 1: nvim-cmp source setup:
 
 ```lua
 
@@ -35,15 +37,35 @@ vim.lsp.start({
   ...
 })
 
-
--- To enable the completions in other file types (note: will insert c-style code):
-require('cmp_gl').enable_filetype('<filetype>')
-
 ```
 
 ---
 
  ![](demo.png)
+
+---
+
+### Option 2: luasnip setup:
+
+If *luasnip* is setup and snippets should be preferred as they allow jumping to
+each function parameter.
+
+When snippets are enabled, then some source completions are disabled to avoid duplication.
+
+```lua
+require('cmp_gl').setup_snippets()
+```
+
+---
+
+### Enabling/disabling filetypes:
+
+Note that this will insert c-style code.
+
+```lua
+require('cmp_gl').enable_filetype('<filetype>')
+require('cmp_gl').disable_filetype('<filetype>')
+```
 
 ---
 
