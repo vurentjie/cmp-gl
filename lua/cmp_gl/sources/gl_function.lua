@@ -20171,12 +20171,339 @@ June 1999. https://opencontent.org/openpub/.
 ]],
 }
 
+local signatures = {
+  { "void glUniform1f(GLint location, GLfloat v0)", "void glUniform1fv(GLint location, GLsizei count, const GLfloat *value)", "void glUniform1i(GLint location, GLint v0)", "void glUniform1iv(GLint location, GLsizei count, const GLint *value)", "void glUniform1ui(GLint location, GLuint v0)", "void glUniform1uiv(GLint location, GLsizei count, const GLuint *value)", "void glUniform2f(GLint location, GLfloat v0, GLfloat v1)", "void glUniform2fv(GLint location, GLsizei count, const GLfloat *value)", "void glUniform2i(GLint location, GLint v0, GLint v1)", "void glUniform2iv(GLint location, GLsizei count, const GLint *value)", "void glUniform2ui(GLint location, GLuint v0, GLuint v1)", "void glUniform2uiv(GLint location, GLsizei count, const GLuint *value)", "void glUniform3f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2)", "void glUniform3fv(GLint location, GLsizei count, const GLfloat *value)", "void glUniform3i(GLint location, GLint v0, GLint v1, GLint v2)", "void glUniform3iv(GLint location, GLsizei count, const GLint *value)", "void glUniform3ui(GLint location, GLuint v0, GLuint v1, GLuint v2)", "void glUniform3uiv(GLint location, GLsizei count, const GLuint *value)", "void glUniform4f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)", "void glUniform4fv(GLint location, GLsizei count, const GLfloat *value)", "void glUniform4i(GLint location, GLint v0, GLint v1, GLint v2, GLint v3)", "void glUniform4iv(GLint location, GLsizei count, const GLint *value)", "void glUniform4ui(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3)", "void glUniform4uiv(GLint location, GLsizei count, const GLuint *value)", "void glUniformMatrix2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glUniformMatrix2x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glUniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glUniformMatrix3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glUniformMatrix3x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glUniformMatrix3x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glUniformMatrix4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glUniformMatrix4x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glUniformMatrix4x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)" },
+  { "void glGetShaderPrecisionFormat(GLenum shaderType, GLenum precisionType, GLint *range, GLint *precision)" },
+  { "void glGetShaderSource(GLuint shader, GLsizei bufSize, GLsizei *length, GLchar *source)" },
+  { "const GLubyte *glGetString(GLenum name)", "const GLubyte *glGetStringi(GLenum name, GLuint index)" },
+  { "GLuint glGetSubroutineIndex(GLuint program, GLenum shadertype, const GLchar *name)" },
+  { "GLint glGetSubroutineUniformLocation(GLuint program, GLenum shadertype, const GLchar *name)" },
+  { "void glGetSynciv(GLsync sync, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values)" },
+  { "void glGetnTexImage(GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels)", "void glGetTexImage(GLenum target, GLint level, GLenum format, GLenum type, void * pixels)", "void glGetTextureImage(GLuint texture, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels)" },
+  { "void glTexParameterf(GLenum target, GLenum pname, GLfloat param)", "void glTexParameterfv(GLenum target, GLenum pname, const GLfloat * params)", "void glTexParameteri(GLenum target, GLenum pname, GLint param)", "void glTexParameterIiv(GLenum target, GLenum pname, const GLint * params)", "void glTexParameterIuiv(GLenum target, GLenum pname, const GLuint * params)", "void glTexParameteriv(GLenum target, GLenum pname, const GLint * params)", "void glTextureParameterf(GLuint texture, GLenum pname, GLfloat param)", "void glTextureParameterfv(GLuint texture, GLenum pname, const GLfloat *params)", "void glTextureParameteri(GLuint texture, GLenum pname, GLint param)", "void glTextureParameterIiv(GLuint texture, GLenum pname, const GLint *params)", "void glTextureParameterIuiv(GLuint texture, GLenum pname, const GLuint *params)", "void glTextureParameteriv(GLuint texture, GLenum pname, const GLint *params)" },
+  { "void glTexStorage1D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width)", "void glTextureStorage1D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width)" },
+  { "void glGetTexLevelParameterfv(GLenum target, GLint level, GLenum pname, GLfloat * params)", "void glGetTexLevelParameteriv(GLenum target, GLint level, GLenum pname, GLint * params)", "void glGetTextureLevelParameterfv(GLuint texture, GLint level, GLenum pname, GLfloat *params)", "void glGetTextureLevelParameteriv(GLuint texture, GLint level, GLenum pname, GLint *params)" },
+  { "void glTexStorage2D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height)", "void glTextureStorage2D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height)" },
+  { "void glTexStorage2DMultisample(\\n  GLenum target,\\n  GLsizei samples,\\n  GLenum internalformat,\\n  GLsizei width,\\n  GLsizei height,\\n  GLboolean fixedsamplelocations\\n)", "void glTextureStorage2DMultisample(\\n  GLuint texture,\\n  GLsizei samples,\\n  GLenum internalformat,\\n  GLsizei width,\\n  GLsizei height,\\n  GLboolean fixedsamplelocations\\n)" },
+  { "void glGetTexParameterfv(GLenum target, GLenum pname, GLfloat * params)", "void glGetTexParameterIiv(GLenum target, GLenum pname, GLint * params)", "void glGetTexParameterIuiv(GLenum target, GLenum pname, GLuint * params)", "void glGetTexParameteriv(GLenum target, GLenum pname, GLint * params)", "void glGetTextureParameterfv(GLuint texture, GLenum pname, GLfloat *params)", "void glGetTextureParameterIiv(GLuint texture, GLenum pname, GLint *params)", "void glGetTextureParameterIuiv(GLuint texture, GLenum pname, GLuint *params)", "void glGetTextureParameteriv(GLuint texture, GLenum pname, GLint *params)" },
+  { "void glTexStorage3D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth)", "void glTextureStorage3D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth)" },
+  { "void glTexStorage3DMultisample(\\n  GLenum target,\\n  GLsizei samples,\\n  GLenum internalformat,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLboolean fixedsamplelocations\\n)", "void glTextureStorage3DMultisample(\\n  GLuint texture,\\n  GLsizei samples,\\n  GLenum internalformat,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLboolean fixedsamplelocations\\n)" },
+  { "void glTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void * pixels)", "void glTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void *pixels)" },
+  { "void glTexSubImage2D(\\n  GLenum target,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLsizei width,\\n  GLsizei height,\\n  GLenum format,\\n  GLenum type,\\n  const void * pixels\\n)", "void glTextureSubImage2D(\\n  GLuint texture,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLsizei width,\\n  GLsizei height,\\n  GLenum format,\\n  GLenum type,\\n  const void *pixels\\n)" },
+  { "void glGetTextureSubImage(\\n  GLuint texture,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLint zoffset,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLenum format,\\n  GLenum type,\\n  GLsizei bufSize,\\n  void *pixels\\n)" },
+  { "void glTexSubImage3D(\\n  GLenum target,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLint zoffset,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLenum format,\\n  GLenum type,\\n  const void * pixels\\n)", "void glTextureSubImage3D(\\n  GLuint texture,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLint zoffset,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLenum format,\\n  GLenum type,\\n  const void *pixels\\n)" },
+  { "void glGetTransformFeedbacki64_v(GLuint xfb, GLenum pname, GLuint index, GLint64 *param)", "void glGetTransformFeedbackiv(GLuint xfb, GLenum pname, GLint *param)", "void glGetTransformFeedbacki_v(GLuint xfb, GLenum pname, GLuint index, GLint *param)" },
+  { "void glTextureBarrier(void)" },
+  { "void glTextureView(\\n  GLuint texture,\\n  GLenum target,\\n  GLuint origtexture,\\n  GLenum internalformat,\\n  GLuint minlevel,\\n  GLuint numlevels,\\n  GLuint minlayer,\\n  GLuint numlayers\\n)" },
+  { "void glGetTransformFeedbackVarying(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, char *name)" },
+  { "void glTransformFeedbackBufferBase(GLuint xfb, GLuint index, GLuint buffer)" },
+  { "void glGetnUniformdv(GLuint program, GLint location, GLsizei bufSize, GLdouble *params)", "void glGetnUniformfv(GLuint program, GLint location, GLsizei bufSize, GLfloat *params)", "void glGetnUniformiv(GLuint program, GLint location, GLsizei bufSize, GLint *params)", "void glGetnUniformuiv(GLuint program, GLint location, GLsizei bufSize, GLuint *params)", "void glGetUniformdv(GLuint program, GLint location, GLdouble *params)", "void glGetUniformfv(GLuint program, GLint location, GLfloat *params)", "void glGetUniformiv(GLuint program, GLint location, GLint *params)", "void glGetUniformuiv(GLuint program, GLint location, GLuint *params)" },
+  { "void glTransformFeedbackBufferRange(GLuint xfb, GLuint index, GLuint buffer, GLintptr offset, GLsizei size)" },
+  { "void glTransformFeedbackVaryings(GLuint program, GLsizei count, const char **varyings, GLenum bufferMode)" },
+  { "void glGetVertexAttribdv(GLuint index, GLenum pname, GLdouble *params)", "void glGetVertexAttribfv(GLuint index, GLenum pname, GLfloat *params)", "void glGetVertexAttribIiv(GLuint index, GLenum pname, GLint *params)", "void glGetVertexAttribIuiv(GLuint index, GLenum pname, GLuint *params)", "void glGetVertexAttribiv(GLuint index, GLenum pname, GLint *params)", "void glGetVertexAttribLdv(GLuint index, GLenum pname, GLdouble *params)" },
+  { "void glFramebufferParameteri(GLenum target, GLenum pname, GLint param)", "void glNamedFramebufferParameteri(GLuint framebuffer, GLenum pname, GLint param)" },
+  { "void glFramebufferRenderbuffer(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer)", "void glNamedFramebufferRenderbuffer(GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer)" },
+  { "void glFramebufferTexture1D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level)", "void glFramebufferTexture2D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level)", "void glFramebufferTexture3D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint layer)", "void glFramebufferTexture(GLenum target, GLenum attachment, GLuint texture, GLint level)", "void glNamedFramebufferTexture(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level)" },
+  { "void glGetFramebufferParameteriv(GLenum target, GLenum pname, GLint *params)", "void glGetNamedFramebufferParameteriv(GLuint framebuffer, GLenum pname, GLint *param)" },
+  { "GLenum glGetGraphicsResetStatus(void)" },
+  { "void glFramebufferTextureLayer(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer)", "void glNamedFramebufferTextureLayer(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLint layer)" },
+  { "void glGetInternalformati64v(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint64 *params)", "void glGetInternalformativ(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint *params)" },
+  { "void glFrontFace(GLenum mode)" },
+  { "void glGetMultisamplefv(GLenum pname, GLuint index, GLfloat *val)" },
+  { "void glGenBuffers(GLsizei n, GLuint * buffers)" },
+  { "void glGetObjectLabel(GLenum identifier, GLuint name, GLsizei bufSize, GLsizei * length, char * label)" },
+  { "void glGenFramebuffers(GLsizei n, GLuint *ids)" },
+  { "void glGetObjectPtrLabel(void * ptr, GLsizei bufSize, GLsizei * length, char * label)" },
+  { "void glGenProgramPipelines(GLsizei n, GLuint *pipelines)" },
+  { "void glGetPointerv(GLenum pname, void ** params)" },
+  { "void glGenQueries(GLsizei n, GLuint * ids)" },
+  { "void glGetProgramiv(GLuint program, GLenum pname, GLint *params)" },
+  { "void glGenRenderbuffers(GLsizei n, GLuint *renderbuffers)" },
+  { "void glGetProgramBinary(GLuint program, GLsizei bufSize, GLsizei *length, GLenum *binaryFormat, void *binary)" },
+  { "void glGenSamplers(GLsizei n, GLuint *samplers)" },
+  { "void glGetProgramInfoLog(GLuint program, GLsizei maxLength, GLsizei *length, GLchar *infoLog)" },
+  { "void glGenTextures(GLsizei n, GLuint * textures)" },
+  { "void glGetProgramInterfaceiv(GLuint program, GLenum programInterface, GLenum pname, GLint * params)" },
+  { "void glGenTransformFeedbacks(GLsizei n, GLuint *ids)" },
+  { "void glGetProgramPipelineiv(GLuint pipeline, GLenum pname, GLint *params)" },
+  { "void glGenVertexArrays(GLsizei n, GLuint *arrays)" },
+  { "void glGetProgramPipelineInfoLog(GLuint pipeline, GLsizei bufSize, GLsizei *length, GLchar *infoLog)" },
+  { "void glGenerateMipmap(GLenum target)", "void glGenerateTextureMipmap(GLuint texture)" },
+  { "void glGetProgramResourceiv(\\n  GLuint program,\\n  GLenum programInterface,\\n  GLuint index,\\n  GLsizei propCount,\\n  const GLenum * props,\\n  GLsizei bufSize,\\n  GLsizei * length,\\n  GLint * params\\n)" },
+  { "GLuint glGetProgramResourceIndex(GLuint program, GLenum programInterface, const char * name)" },
+  { "void glGetBooleani_v(GLenum target, GLuint index, GLboolean * data)", "void glGetBooleanv(GLenum pname, GLboolean * data)", "void glGetDoublei_v(GLenum target, GLuint index, GLdouble * data)", "void glGetDoublev(GLenum pname, GLdouble * data)", "void glGetFloati_v(GLenum target, GLuint index, GLfloat * data)", "void glGetFloatv(GLenum pname, GLfloat * data)", "void glGetInteger64i_v(GLenum target, GLuint index, GLint64 * data)", "void glGetInteger64v(GLenum pname, GLint64 * data)", "void glGetIntegeri_v(GLenum target, GLuint index, GLint * data)", "void glGetIntegerv(GLenum pname, GLint * data)" },
+  { "GLint glGetProgramResourceLocation(GLuint program, GLenum programInterface, const char * name)" },
+  { "GLint glGetProgramResourceLocationIndex(GLuint program, GLenum programInterface, const char * name)" },
+  { "void glGetProgramResourceName(GLuint program, GLenum programInterface, GLuint index, GLsizei bufSize, GLsizei * length, char * name)" },
+  { "void glGetProgramStageiv(GLuint program, GLenum shadertype, GLenum pname, GLint *values)" },
+  { "void glGetQueryIndexediv(GLenum target, GLuint index, GLenum pname, GLint * params)" },
+  { "void glGetQueryBufferObjecti64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)", "void glGetQueryBufferObjectiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)", "void glGetQueryBufferObjectui64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)", "void glGetQueryBufferObjectuiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)", "void glGetQueryObjecti64v(GLuint id, GLenum pname, GLint64 * params)", "void glGetQueryObjectiv(GLuint id, GLenum pname, GLint * params)", "void glGetQueryObjectui64v(GLuint id, GLenum pname, GLuint64 * params)", "void glGetQueryObjectuiv(GLuint id, GLenum pname, GLuint * params)" },
+  { "void glGetActiveAtomicCounterBufferiv(GLuint program, GLuint bufferIndex, GLenum pname, GLint *params)" },
+  { "void glGetActiveAttrib(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name)" },
+  { "void glGetActiveSubroutineName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize, GLsizei *length, GLchar *name)" },
+  { "void glGetActiveSubroutineUniformiv(GLuint program, GLenum shadertype, GLuint index, GLenum pname, GLint *values)" },
+  { "void glGetActiveSubroutineUniformName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize, GLsizei *length, GLchar *name)" },
+  { "void glGetActiveUniform(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name)" },
+  { "void glGetActiveUniformBlockiv(GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint *params)" },
+  { "void glGetActiveUniformBlockName(GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformBlockName)" },
+  { "void glGetActiveUniformName(GLuint program, GLuint uniformIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformName)" },
+  { "void glGetActiveUniformsiv(GLuint program, GLsizei uniformCount, const GLuint *uniformIndices, GLenum pname, GLint *params)" },
+  { "void glGetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei *count, GLuint *shaders)" },
+  { "GLint glGetAttribLocation(GLuint program, const GLchar *name)" },
+  { "void glGetBufferParameteri64v(GLenum target, GLenum value, GLint64 * data)", "void glGetBufferParameteriv(GLenum target, GLenum value, GLint * data)", "void glGetNamedBufferParameteri64v(GLuint buffer, GLenum pname, GLint64 *params)", "void glGetNamedBufferParameteriv(GLuint buffer, GLenum pname, GLint *params)" },
+  { "void glGetBufferPointerv(GLenum target, GLenum pname, void ** params)", "void glGetNamedBufferPointerv(GLuint buffer, GLenum pname, void **params)" },
+  { "void glGetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, void * data)" },
+  { "void glDrawElementsInstancedBaseInstance(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLuint baseinstance)" },
+  { "void glDrawElementsInstancedBaseVertex(GLenum mode, GLsizei count, GLenum type, void *indices, GLsizei instancecount, GLint basevertex)" },
+  { "void glDrawElementsInstancedBaseVertexBaseInstance(\\n  GLenum mode,\\n  GLsizei count,\\n  GLenum type,\\n  void *indices,\\n  GLsizei instancecount,\\n  GLint basevertex,\\n  GLuint baseinstance\\n )" },
+  { "void glDrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void * indices)" },
+  { "void glDrawRangeElementsBaseVertex(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, void *indices, GLint basevertex)" },
+  { "void glDrawTransformFeedback(GLenum mode, GLuint id)" },
+  { "void glDrawTransformFeedbackInstanced(GLenum mode, GLuint id, GLsizei instancecount)" },
+  { "void glDrawTransformFeedbackStream(GLenum mode, GLuint id, GLuint stream)" },
+  { "void glDrawTransformFeedbackStreamInstanced(GLenum mode, GLuint id, GLuint stream, GLsizei instancecount)" },
+  { "void glDisable(GLenum cap)", "void glDisablei(GLenum cap, GLuint index)", "void glEnable(GLenum cap)", "void glEnablei(GLenum cap, GLuint index)" },
+  { "void glGetFramebufferAttachmentParameteriv(GLenum target, GLenum attachment, GLenum pname, GLint *params)", "void glGetNamedFramebufferAttachmentParameteriv(GLuint framebuffer, GLenum attachment, GLenum pname, GLint *params)" },
+  { "void glDisableVertexArrayAttrib(GLuint vaobj, GLuint index)", "void glDisableVertexAttribArray(GLuint index)", "void glEnableVertexArrayAttrib(GLuint vaobj, GLuint index)", "void glEnableVertexAttribArray(GLuint index)" },
+  { "GLsync glFenceSync(GLenum condition, GLbitfield flags)" },
+  { "void glFinish(void)" },
+  { "void glFlush(void)" },
+  { "void glFlushMappedBufferRange(GLenum target, GLintptr offset, GLsizeiptr length)", "void glFlushMappedNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length)" },
+  { "void glVertexAttrib1d(GLuint index, GLdouble v0)", "void glVertexAttrib1dv(GLuint index, const GLdouble *v)", "void glVertexAttrib1f(GLuint index, GLfloat v0)", "void glVertexAttrib1fv(GLuint index, const GLfloat *v)", "void glVertexAttrib1s(GLuint index, GLshort v0)", "void glVertexAttrib1sv(GLuint index, const GLshort *v)", "void glVertexAttrib2d(GLuint index, GLdouble v0, GLdouble v1)", "void glVertexAttrib2dv(GLuint index, const GLdouble *v)", "void glVertexAttrib2f(GLuint index, GLfloat v0, GLfloat v1)", "void glVertexAttrib2fv(GLuint index, const GLfloat *v)", "void glVertexAttrib2s(GLuint index, GLshort v0, GLshort v1)", "void glVertexAttrib2sv(GLuint index, const GLshort *v)", "void glVertexAttrib3d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2)", "void glVertexAttrib3dv(GLuint index, const GLdouble *v)", "void glVertexAttrib3f(GLuint index, GLfloat v0, GLfloat v1, GLfloat v2)", "void glVertexAttrib3fv(GLuint index, const GLfloat *v)", "void glVertexAttrib3s(GLuint index, GLshort v0, GLshort v1, GLshort v2)", "void glVertexAttrib3sv(GLuint index, const GLshort *v)", "void glVertexAttrib4bv(GLuint index, const GLbyte *v)", "void glVertexAttrib4d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3)", "void glVertexAttrib4dv(GLuint index, const GLdouble *v)", "void glVertexAttrib4f(GLuint index, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)", "void glVertexAttrib4fv(GLuint index, const GLfloat *v)", "void glVertexAttrib4iv(GLuint index, const GLint *v)", "void glVertexAttrib4Nbv(GLuint index, const GLbyte *v)", "void glVertexAttrib4Niv(GLuint index, const GLint *v)", "void glVertexAttrib4Nsv(GLuint index, const GLshort *v)", "void glVertexAttrib4Nub(GLuint index, GLubyte v0, GLubyte v1, GLubyte v2, GLubyte v3)", "void glVertexAttrib4Nubv(GLuint index, const GLubyte *v)", "void glVertexAttrib4Nuiv(GLuint index, const GLuint *v)", "void glVertexAttrib4Nusv(GLuint index, const GLushort *v)", "void glVertexAttrib4s(GLuint index, GLshort v0, GLshort v1, GLshort v2, GLshort v3)", "void glVertexAttrib4sv(GLuint index, const GLshort *v)", "void glVertexAttrib4ubv(GLuint index, const GLubyte *v)", "void glVertexAttrib4uiv(GLuint index, const GLuint *v)", "void glVertexAttrib4usv(GLuint index, const GLushort *v)", "void glVertexAttribI1i(GLuint index, GLint v0)", "void glVertexAttribI1iv(GLuint index, const GLint *v)", "void glVertexAttribI1ui(GLuint index, GLuint v0)", "void glVertexAttribI1uiv(GLuint index, const GLuint *v)", "void glVertexAttribI2i(GLuint index, GLint v0, GLint v1)", "void glVertexAttribI2iv(GLuint index, const GLint *v)", "void glVertexAttribI2ui(GLuint index, GLuint v0, GLuint v1)", "void glVertexAttribI2uiv(GLuint index, const GLuint *v)", "void glVertexAttribI3i(GLuint index, GLint v0, GLint v1, GLint v2)", "void glVertexAttribI3iv(GLuint index, const GLint *v)", "void glVertexAttribI3ui(GLuint index, GLuint v0, GLuint v1, GLuint v2)", "void glVertexAttribI3uiv(GLuint index, const GLuint *v)", "void glVertexAttribI4bv(GLuint index, const GLbyte *v)", "void glVertexAttribI4i(GLuint index, GLint v0, GLint v1, GLint v2, GLint v3)", "void glVertexAttribI4iv(GLuint index, const GLint *v)", "void glVertexAttribI4sv(GLuint index, const GLshort *v)", "void glVertexAttribI4ubv(GLuint index, const GLubyte *v)", "void glVertexAttribI4ui(GLuint index, GLuint v0, GLuint v1, GLuint v2, GLuint v3)", "void glVertexAttribI4uiv(GLuint index, const GLuint *v)", "void glVertexAttribI4usv(GLuint index, const GLushort *v)", "void glVertexAttribL1d(GLuint index, GLdouble v0)", "void glVertexAttribL1dv(GLuint index, const GLdouble *v)", "void glVertexAttribL2d(GLuint index, GLdouble v0, GLdouble v1)", "void glVertexAttribL2dv(GLuint index, const GLdouble *v)", "void glVertexAttribL3d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2)", "void glVertexAttribL3dv(GLuint index, const GLdouble *v)", "void glVertexAttribL4d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3)", "void glVertexAttribL4dv(GLuint index, const GLdouble *v)", "void glVertexAttribP1ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)", "void glVertexAttribP2ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)", "void glVertexAttribP3ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)", "void glVertexAttribP4ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)" },
+  { "void glVertexArrayAttribBinding(GLuint vaobj, GLuint attribindex, GLuint bindingindex)", "void glVertexAttribBinding(GLuint attribindex, GLuint bindingindex)" },
+  { "void glVertexAttribDivisor(GLuint index, GLuint divisor)" },
+  { "void glVertexArrayAttribFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset)", "void glVertexArrayAttribIFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)", "void glVertexArrayAttribLFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)", "void glVertexAttribFormat(GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset)", "void glVertexAttribIFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)", "void glVertexAttribLFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)" },
+  { "void glVertexAttribIPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer)", "void glVertexAttribLPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer)", "void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void * pointer)" },
+  { "void glVertexArrayBindingDivisor(GLuint vaobj, GLuint bindingindex, GLuint divisor)", "void glVertexBindingDivisor(GLuint bindingindex, GLuint divisor)" },
+  { "void glViewport(GLint x, GLint y, GLsizei width, GLsizei height)" },
+  { "void glViewportArrayv(GLuint first, GLsizei count, const GLfloat *v)" },
+  { "void glViewportIndexedf(GLuint index, GLfloat x, GLfloat y, GLfloat w, GLfloat h)", "void glViewportIndexedfv(GLuint index, const GLfloat *v)" },
+  { "void glWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout)" },
+  { "void glBeginConditionalRender(GLuint id, GLenum mode)", "void glEndConditionalRender(void)" },
+  { "void glBeginQuery(GLenum target, GLuint id)", "void glEndQuery(GLenum target)" },
+  { "void glBeginQueryIndexed(GLenum target, GLuint index, GLuint id)", "void glEndQueryIndexed(GLenum target, GLuint index)" },
+  { "void glBeginTransformFeedback(GLenum primitiveMode)", "void glEndTransformFeedback(void)" },
+  { "void glBindAttribLocation(GLuint program, GLuint index, const GLchar *name)" },
+  { "void glBindBuffer(GLenum target, GLuint buffer)" },
+  { "void glBindBufferBase(GLenum target, GLuint index, GLuint buffer)" },
+  { "void glBindBufferRange(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size)" },
+  { "void glBindBuffersBase(GLenum target, GLuint first, GLsizei count, const GLuint *buffers)" },
+  { "void glBindBuffersRange(GLenum target, GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLintptr *sizes)" },
+  { "void glBindFragDataLocation(GLuint program, GLuint colorNumber, const char * name)" },
+  { "void glBindFragDataLocationIndexed(GLuint program, GLuint colorNumber, GLuint index, const char *name)" },
+  { "void glBindFramebuffer(GLenum target, GLuint framebuffer)" },
+  { "void glBindImageTexture(GLuint unit, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLenum format)" },
+  { "void glBindImageTextures(GLuint first, GLsizei count, const GLuint *textures)" },
+  { "void glBindProgramPipeline(GLuint pipeline)" },
+  { "void glBindRenderbuffer(GLenum target, GLuint renderbuffer)" },
+  { "void glBindSampler(GLuint unit, GLuint sampler)" },
+  { "void glBindSamplers(GLuint first, GLsizei count, const GLuint *samplers)" },
+  { "void glBindTexture(GLenum target, GLuint texture)" },
+  { "void glBindTextureUnit(GLuint unit, GLuint texture)" },
+  { "void glBindTextures(GLuint first, GLsizei count, const GLuint *textures)" },
+  { "void glBindTransformFeedback(GLenum target, GLuint id)" },
+  { "void glBindVertexArray(GLuint array)" },
+  { "void glBindVertexBuffer(GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride)", "void glVertexArrayVertexBuffer(GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride)" },
+  { "void glBindVertexBuffers(GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizei *strides)", "void glVertexArrayVertexBuffers(GLuint vaobj, GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizei *strides)" },
+  { "void glBlendColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)" },
+  { "void glBlendEquation(GLenum mode)", "void glBlendEquationi(GLuint buf, GLenum mode)" },
+  { "void glBlendEquationSeparate(GLenum modeRGB, GLenum modeAlpha)" },
+  { "void glBlendEquationSeparatei(GLuint buf, GLenum modeRGB, GLenum modeAlpha)" },
+  { "void glBlendFunc(GLenum sfactor, GLenum dfactor)", "void glBlendFunci(GLuint buf, GLenum sfactor, GLenum dfactor)" },
+  { "void glBlendFuncSeparate(GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha)" },
+  { "void glBlendFuncSeparatei(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha)" },
+  { "void glBlitFramebuffer(\\n  GLint srcX0,\\n  GLint srcY0,\\n  GLint srcX1,\\n  GLint srcY1,\\n  GLint dstX0,\\n  GLint dstY0,\\n  GLint dstX1,\\n  GLint dstY1,\\n  GLbitfield mask,\\n  GLenum filter\\n)", "void glBlitNamedFramebuffer(\\n  GLuint readFramebuffer,\\n  GLuint drawFramebuffer,\\n  GLint srcX0,\\n  GLint srcY0,\\n  GLint srcX1,\\n  GLint srcY1,\\n  GLint dstX0,\\n  GLint dstY0,\\n  GLint dstX1,\\n  GLint dstY1,\\n  GLbitfield mask,\\n  GLenum filter\\n)" },
+  { "void glBufferData(GLenum target, GLsizeiptr size, const void * data, GLenum usage)", "void glNamedBufferData(GLuint buffer, GLsizeiptr size, const void *data, GLenum usage)" },
+  { "void glGetVertexAttribPointerv(GLuint index, GLenum pname, void **pointer)" },
+  { "void glBufferStorage(GLenum target, GLsizeiptr size, const void * data, GLbitfield flags)", "void glNamedBufferStorage(GLuint buffer, GLsizeiptr size, const void *data, GLbitfield flags)" },
+  { "void glHint(GLenum target, GLenum mode)" },
+  { "void glInvalidateBufferData(GLuint buffer)" },
+  { "void glBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, const void * data)", "void glNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, const void *data)" },
+  { "void glInvalidateBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr length)" },
+  { "void glInvalidateFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments)", "void glInvalidateNamedFramebufferData(GLuint framebuffer, GLsizei numAttachments, const GLenum *attachments)" },
+  { "GLenum glCheckFramebufferStatus(GLenum target)", "GLenum glCheckNamedFramebufferStatus(GLuint framebuffer, GLenum target)" },
+  { "void glInvalidateNamedFramebufferSubData(\\n  GLuint framebuffer,\\n  GLsizei numAttachments,\\n  const GLenum *attachments,\\n  GLint x,\\n  GLint y,\\n  GLsizei width,\\n  GLsizei height\\n)", "void glInvalidateSubFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments, GLint x, GLint y, GLint width, GLint height)" },
+  { "void glClampColor(GLenum target, GLenum clamp)" },
+  { "void glClear(GLbitfield mask)" },
+  { "void glInvalidateTexImage(GLuint texture, GLint level)" },
+  { "void glClearBufferfi(GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil)", "void glClearBufferfv(GLenum buffer, GLint drawbuffer, const GLfloat * value)", "void glClearBufferiv(GLenum buffer, GLint drawbuffer, const GLint * value)", "void glClearBufferuiv(GLenum buffer, GLint drawbuffer, const GLuint * value)", "void glClearNamedFramebufferfi(GLuint framebuffer, GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil)", "void glClearNamedFramebufferfv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLfloat *value)", "void glClearNamedFramebufferiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLint *value)", "void glClearNamedFramebufferuiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLuint *value)" },
+  { "void glInvalidateTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth)" },
+  { "GLboolean glIsBuffer(GLuint buffer)" },
+  { "GLboolean glIsEnabled(GLenum cap)", "GLboolean glIsEnabledi(GLenum cap, GLuint index)" },
+  { "GLboolean glIsFramebuffer(GLuint framebuffer)" },
+  { "GLboolean glIsProgram(GLuint program)" },
+  { "GLboolean glIsProgramPipeline(GLuint pipeline)" },
+  { "GLboolean glIsQuery(GLuint id)" },
+  { "void glClearBufferData(GLenum target, GLenum internalformat, GLenum format, GLenum type, const void * data)", "void glClearNamedBufferData(GLuint buffer, GLenum internalformat, GLenum format, GLenum type, const void *data)" },
+  { "GLboolean glIsRenderbuffer(GLuint renderbuffer)" },
+  { "void glClearBufferSubData(GLenum target, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void * data)", "void glClearNamedBufferSubData(GLuint buffer, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void *data)" },
+  { "void glClearColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)" },
+  { "void glClearDepthf(GLfloat depth)", "void glClearDepth(GLdouble depth)" },
+  { "void glClearStencil(GLint s)" },
+  { "void glClearTexImage(GLuint texture, GLint level, GLenum format, GLenum type, const void * data)" },
+  { "void glClearTexSubImage(\\n  GLuint texture,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLint zoffset,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLenum format,\\n  GLenum type,\\n  const void * data\\n)" },
+  { "GLenum glClientWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout)" },
+  { "void glClipControl(GLenum origin, GLenum depth)" },
+  { "void glColorMask(GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha)", "void glColorMaski(GLuint buf, GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha)" },
+  { "void glCompileShader(GLuint shader)" },
+  { "void glCompressedTexImage1D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void * data)" },
+  { "void glCompressedTexImage2D(\\n  GLenum target,\\n  GLint level,\\n  GLenum internalformat,\\n  GLsizei width,\\n  GLsizei height,\\n  GLint border,\\n  GLsizei imageSize,\\n  const void * data\\n)" },
+  { "void glCompressedTexImage3D(\\n  GLenum target,\\n  GLint level,\\n  GLenum internalformat,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLint border,\\n  GLsizei imageSize,\\n  const void * data\\n)" },
+  { "void glCompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void * data)", "void glCompressedTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data)" },
+  { "void glCompressedTexSubImage2D(\\n  GLenum target,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLsizei width,\\n  GLsizei height,\\n  GLenum format,\\n  GLsizei imageSize,\\n  const void * data\\n)", "void glCompressedTextureSubImage2D(\\n  GLuint texture,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLsizei width,\\n  GLsizei height,\\n  GLenum format,\\n  GLsizei imageSize,\\n  const void *data\\n)" },
+  { "void glCompressedTexSubImage3D(\\n  GLenum target,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLint zoffset,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLenum format,\\n  GLsizei imageSize,\\n  const void * data\\n)", "void glCompressedTextureSubImage3D(\\n  GLuint texture,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLint zoffset,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLenum format,\\n  GLsizei imageSize,\\n  const void *data\\n)" },
+  { "void glCopyBufferSubData(GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size)", "void glCopyNamedBufferSubData(GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size)" },
+  { "void glCopyImageSubData(\\n  GLuint srcName,\\n  GLenum srcTarget,\\n  GLint srcLevel,\\n  GLint srcX,\\n  GLint srcY,\\n  GLint srcZ,\\n  GLuint dstName,\\n  GLenum dstTarget,\\n  GLint dstLevel,\\n  GLint dstX,\\n  GLint dstY,\\n  GLint dstZ,\\n  GLsizei srcWidth,\\n  GLsizei srcHeight,\\n  GLsizei srcDepth\\n)" },
+  { "void glCopyTexImage1D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border)" },
+  { "void glCopyTexImage2D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border)" },
+  { "void glCopyTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width)", "void glCopyTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width)" },
+  { "void glCopyTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height)", "void glCopyTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height)" },
+  { "void glCopyTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height)", "void glCopyTextureSubImage3D(\\n  GLuint texture,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLint zoffset,\\n  GLint x,\\n  GLint y,\\n  GLsizei width,\\n  GLsizei height\\n)" },
+  { "void glCreateBuffers(GLsizei n, GLuint *buffers)" },
+  { "void glCreateFramebuffers(GLsizei n, GLuint *framebuffers)" },
+  { "GLuint glCreateProgram(void)" },
+  { "void glCreateProgramPipelines(GLsizei n, GLuint *pipelines)" },
+  { "void glCreateQueries(GLenum target, GLsizei n, GLuint *ids)" },
+  { "void glCreateRenderbuffers(GLsizei n, GLuint *renderbuffers)" },
+  { "void glCreateSamplers(GLsizei n, GLuint *samplers)" },
+  { "GLuint glCreateShader(GLenum shaderType)" },
+  { "GLuint glCreateShaderProgramv(GLenum type, GLsizei count, const char **strings)" },
+  { "void glCreateTextures(GLenum target, GLsizei n, GLuint *textures)" },
+  { "void glCreateTransformFeedbacks(GLsizei n, GLuint *ids)" },
+  { "void glCreateVertexArrays(GLsizei n, GLuint *arrays)" },
+  { "void glCullFace(GLenum mode)" },
+  { "void glDebugMessageCallback(DEBUGPROC callback, const void * userParam)" },
+  { "void glDebugMessageControl(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled)" },
+  { "void glDebugMessageInsert(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const char *message)" },
+  { "void glDeleteBuffers(GLsizei n, const GLuint * buffers)" },
+  { "void glDeleteFramebuffers(GLsizei n, GLuint *framebuffers)" },
+  { "void glDeleteProgram(GLuint program)" },
+  { "void glDeleteProgramPipelines(GLsizei n, const GLuint *pipelines)" },
+  { "void glDeleteQueries(GLsizei n, const GLuint * ids)" },
+  { "void glActiveShaderProgram(GLuint pipeline, GLuint program)" },
+  { "void glActiveTexture(GLenum texture)" },
+  { "void glAttachShader(GLuint program, GLuint shader)" },
+  { "void glVertexArrayElementBuffer(GLuint vaobj, GLuint buffer)" },
+  { "void glValidateProgramPipeline(GLuint pipeline)" },
+  { "void glValidateProgram(GLuint program)" },
+  { "void glUseProgramStages(GLuint pipeline, GLbitfield stages, GLuint program)" },
+  { "void glUseProgram(GLuint program)" },
+  { "GLboolean glUnmapBuffer(GLenum target)", "GLboolean glUnmapNamedBuffer(GLuint buffer)" },
+  { "void glUniformSubroutinesuiv(GLenum shadertype, GLsizei count, const GLuint *indices)" },
+  { "void glUniformBlockBinding(GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding)" },
+  { "void glTexImage3DMultisample(\\n  GLenum target,\\n  GLsizei samples,\\n  GLenum internalformat,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLboolean fixedsamplelocations\\n)" },
+  { "void glTexImage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)" },
+  { "void glTexImage1D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const void * data)" },
+  { "void glTexImage2D(\\n  GLenum target,\\n  GLint level,\\n  GLint internalformat,\\n  GLsizei width,\\n  GLsizei height,\\n  GLint border,\\n  GLenum format,\\n  GLenum type,\\n  const void * data\\n)" },
+  { "void glTexImage3D(\\n  GLenum target,\\n  GLint level,\\n  GLint internalformat,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLint border,\\n  GLenum format,\\n  GLenum type,\\n  const void * data\\n)" },
+  { "void glDepthFunc(GLenum func)" },
+  { "void glDepthRangef(GLfloat nearVal, GLfloat farVal)", "void glDepthRange(GLdouble nearVal, GLdouble farVal)" },
+  { "void glDepthMask(GLboolean flag)" },
+  { "void glDeleteVertexArrays(GLsizei n, const GLuint *arrays)" },
+  { "void glSamplerParameterf(GLuint sampler, GLenum pname, GLfloat param)", "void glSamplerParameterfv(GLuint sampler, GLenum pname, const GLfloat * params)", "void glSamplerParameteri(GLuint sampler, GLenum pname, GLint param)", "void glSamplerParameterIiv(GLuint sampler, GLenum pname, const GLint *params)", "void glSamplerParameterIuiv(GLuint sampler, GLenum pname, const GLuint *params)", "void glSamplerParameteriv(GLuint sampler, GLenum pname, const GLint * params)" },
+  { "void glDeleteTransformFeedbacks(GLsizei n, const GLuint *ids)" },
+  { "void glDeleteSync(GLsync sync)" },
+  { "GLboolean glIsSampler(GLuint id)" },
+  { "void glDeleteSamplers(GLsizei n, const GLuint * samplers)" },
+  { "GLboolean glIsShader(GLuint shader)" },
+  { "void glSampleCoverage(GLfloat value, GLboolean invert)" },
+  { "GLboolean glIsSync(GLsync sync)" },
+  { "void glNamedRenderbufferStorageMultisample(GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height)", "void glRenderbufferStorageMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height)" },
+  { "GLboolean glIsTexture(GLuint texture)" },
+  { "void glNamedRenderbufferStorage(GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height)", "void glRenderbufferStorage(GLenum target, GLenum internalformat, GLsizei width, GLsizei height)" },
+  { "GLboolean glIsTransformFeedback(GLuint id)" },
+  { "void glReleaseShaderCompiler()" },
+  { "GLboolean glIsVertexArray(GLuint array)" },
+  { "void glReadnPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLsizei bufSize, void *data)", "void glReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, void * data)" },
+  { "void glLineWidth(GLfloat width)" },
+  { "void glNamedFramebufferReadBuffer(GLuint framebuffer, GLenum mode)", "void glReadBuffer(GLenum mode)" },
+  { "void glLinkProgram(GLuint program)" },
+  { "void glPushDebugGroup(GLenum source, GLuint id, GLsizei length, const char * message)" },
+  { "void glLogicOp(GLenum opcode)" },
+  { "void glProgramUniform1f(GLuint program, GLint location, GLfloat v0)", "void glProgramUniform1fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)", "void glProgramUniform1i(GLuint program, GLint location, GLint v0)", "void glProgramUniform1iv(GLuint program, GLint location, GLsizei count, const GLint *value)", "void glProgramUniform1ui(GLuint program, GLint location, GLuint v0)", "void glProgramUniform1uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)", "void glProgramUniform2f(GLuint program, GLint location, GLfloat v0, GLfloat v1)", "void glProgramUniform2fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)", "void glProgramUniform2i(GLuint program, GLint location, GLint v0, GLint v1)", "void glProgramUniform2iv(GLuint program, GLint location, GLsizei count, const GLint *value)", "void glProgramUniform2ui(GLuint program, GLint location, GLuint v0, GLuint v1)", "void glProgramUniform2uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)", "void glProgramUniform3f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2)", "void glProgramUniform3fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)", "void glProgramUniform3i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2)", "void glProgramUniform3iv(GLuint program, GLint location, GLsizei count, const GLint *value)", "void glProgramUniform3ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2)", "void glProgramUniform3uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)", "void glProgramUniform4f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)", "void glProgramUniform4fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)", "void glProgramUniform4i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3)", "void glProgramUniform4iv(GLuint program, GLint location, GLsizei count, const GLint *value)", "void glProgramUniform4ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3)", "void glProgramUniform4uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)", "void glProgramUniformMatrix2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glProgramUniformMatrix2x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glProgramUniformMatrix2x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glProgramUniformMatrix3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glProgramUniformMatrix3x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glProgramUniformMatrix3x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glProgramUniformMatrix4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glProgramUniformMatrix4x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)", "void glProgramUniformMatrix4x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)" },
+  { "void *glMapBuffer(GLenum target, GLenum access)", "void *glMapNamedBuffer(GLuint buffer, GLenum access)" },
+  { "void glGetCompressedTexImage(GLenum target, GLint level, void * pixels)", "void glGetCompressedTextureImage(GLuint texture, GLint level, GLsizei bufSize, void *pixels)", "void glGetnCompressedTexImage(GLenum target, GLint level, GLsizei bufSize, void *pixels)" },
+  { "void *glMapBufferRange(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access)", "void *glMapNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length, GLbitfield access)" },
+  { "void glShaderBinary(GLsizei count, const GLuint *shaders, GLenum binaryFormat, const void *binary, GLsizei length)" },
+  { "void glMemoryBarrierByRegion(GLbitfield barriers)", "void glMemoryBarrier(GLbitfield barriers)" },
+  { "GLuint glGetDebugMessageLog(\\n  GLuint count,\\n  GLsizei bufSize,\\n  GLenum *sources,\\n  GLenum *types,\\n  GLuint *ids,\\n  GLenum *severities,\\n  GLsizei *lengths,\\n  GLchar *messageLog\\n)" },
+  { "void glScissor(GLint x, GLint y, GLsizei width, GLsizei height)" },
+  { "void glMinSampleShading(GLfloat value)" },
+  { "GLint glGetFragDataIndex(GLuint program, const char * name)" },
+  { "void glMultiDrawArrays(GLenum mode, const GLint * first, const GLsizei * count, GLsizei drawcount)" },
+  { "void glDepthRangeIndexed(GLuint index, GLdouble nearVal, GLdouble farVal)" },
+  { "void glMultiDrawArraysIndirect(GLenum mode, const void *indirect, GLsizei drawcount, GLsizei stride)" },
+  { "void glMultiDrawElements(GLenum mode, const GLsizei * count, GLenum type, const void * const * indices, GLsizei drawcount)" },
+  { "void glDispatchCompute(GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z)" },
+  { "void glMultiDrawElementsBaseVertex(\\n  GLenum mode,\\n  const GLsizei *count,\\n  GLenum type,\\n  const void * const *indices,\\n  GLsizei drawcount,\\n  const GLint *basevertex\\n)" },
+  { "void glDrawArrays(GLenum mode, GLint first, GLsizei count)" },
+  { "void glMultiDrawElementsIndirect(GLenum mode, GLenum type, const void *indirect, GLsizei drawcount, GLsizei stride)" },
+  { "void glDeleteTextures(GLsizei n, const GLuint * textures)" },
+  { "void glObjectLabel(GLenum identifier, GLuint name, GLsizei length, const char * label)" },
+  { "void glDrawArraysInstanced(GLenum mode, GLint first, GLsizei count, GLsizei instancecount)" },
+  { "void glObjectPtrLabel(void * ptr, GLsizei length, const char * label)" },
+  { "void glDeleteRenderbuffers(GLsizei n, GLuint *renderbuffers)" },
+  { "void glPatchParameterfv(GLenum pname, const GLfloat *values)", "void glPatchParameteri(GLenum pname, GLint value)" },
+  { "void glDrawBuffer(GLenum buf)", "void glNamedFramebufferDrawBuffer(GLuint framebuffer, GLenum buf)" },
+  { "void glDrawBuffers(GLsizei n, const GLenum *bufs)", "void glNamedFramebufferDrawBuffers(GLuint framebuffer, GLsizei n, const GLenum *bufs)" },
+  { "void glPauseTransformFeedback()" },
+  { "void glDrawElements(GLenum mode, GLsizei count, GLenum type, const void * indices)" },
+  { "void glPixelStoref(GLenum pname, GLfloat param)", "void glPixelStorei(GLenum pname, GLint param)" },
+  { "void glDrawElementsIndirect(GLenum mode, GLenum type, const void *indirect)" },
+  { "void glPointParameterf(GLenum pname, GLfloat param)", "void glPointParameterfv(GLenum pname, const GLfloat * params)", "void glPointParameteri(GLenum pname, GLint param)", "void glPointParameteriv(GLenum pname, const GLint * params)" },
+  { "void glDeleteShader(GLuint shader)" },
+  { "GLenum glGetError(void)" },
+  { "void glGetCompressedTextureSubImage(\\n  GLuint texture,\\n  GLint level,\\n  GLint xoffset,\\n  GLint yoffset,\\n  GLint zoffset,\\n  GLsizei width,\\n  GLsizei height,\\n  GLsizei depth,\\n  GLsizei bufSize,\\n  void *pixels\\n)" },
+  { "void glPointSize(GLfloat size)" },
+  { "void glPolygonMode(GLenum face, GLenum mode)" },
+  { "void glGetUniformSubroutineuiv(GLenum shadertype, GLint location, GLuint *values)" },
+  { "void glPolygonOffset(GLfloat factor, GLfloat units)" },
+  { "GLuint glGetUniformBlockIndex(GLuint program, const GLchar *uniformBlockName)" },
+  { "void glPopDebugGroup()" },
+  { "void glGetVertexArrayiv(GLuint vaobj, GLenum pname, GLint *param)" },
+  { "void glPrimitiveRestartIndex(GLuint index)" },
+  { "GLint glGetUniformLocation(GLuint program, const GLchar *name)" },
+  { "void glProgramBinary(GLuint program, GLenum binaryFormat, const void *binary, GLsizei length)" },
+  { "void glGetVertexArrayIndexed64iv(GLuint vaobj, GLuint index, GLenum pname, GLint64 *param)", "void glGetVertexArrayIndexediv(GLuint vaobj, GLuint index, GLenum pname, GLint *param)" },
+  { "void glProgramParameteri(GLuint program, GLenum pname, GLint value)" },
+  { "void glGetUniformIndices(GLuint program, GLsizei uniformCount, const GLchar **uniformNames, GLuint *uniformIndices)" },
+  { "GLint glGetFragDataLocation(GLuint program, const char * name)" },
+  { "void glGetNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, void *data)" },
+  { "void glDrawElementsInstanced(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount)" },
+  { "void glDrawElementsBaseVertex(GLenum mode, GLsizei count, GLenum type, void *indices, GLint basevertex)" },
+  { "void glDrawArraysInstancedBaseInstance(GLenum mode, GLint first, GLsizei count, GLsizei instancecount, GLuint baseinstance)" },
+  { "void glDrawArraysIndirect(GLenum mode, const void *indirect)" },
+  { "void glDispatchComputeIndirect(GLintptr indirect)" },
+  { "void glDetachShader(GLuint program, GLuint shader)" },
+  { "void glDepthRangeArrayv(GLuint first, GLsizei count, const GLdouble *v)" },
+  { "void glScissorIndexed(GLuint index, GLint left, GLint bottom, GLsizei width, GLsizei height)", "void glScissorIndexedv(GLuint index, const GLint *v)" },
+  { "void glProvokingVertex(GLenum provokeMode)" },
+  { "void glQueryCounter(GLuint id, GLenum target)" },
+  { "void glResumeTransformFeedback()" },
+  { "void glSampleMaski(GLuint maskNumber, GLbitfield mask)" },
+  { "void glScissorArrayv(GLuint first, GLsizei count, const GLint *v)" },
+  { "void glShaderSource(GLuint shader, GLsizei count, const GLchar **string, const GLint *length)" },
+  { "void glStencilFunc(GLenum func, GLint ref, GLuint mask)" },
+  { "void glShaderStorageBlockBinding(GLuint program, GLuint storageBlockIndex, GLuint storageBlockBinding)" },
+  { "void glStencilFuncSeparate(GLenum face, GLenum func, GLint ref, GLuint mask)" },
+  { "void glTexBufferRange(GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size)", "void glTextureBufferRange(GLuint texture, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizei size)" },
+  { "void glStencilMask(GLuint mask)" },
+  { "void glStencilMaskSeparate(GLenum face, GLuint mask)" },
+  { "void glStencilOp(GLenum sfail, GLenum dpfail, GLenum dppass)" },
+  { "void glStencilOpSeparate(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass)" },
+  { "void glTexBuffer(GLenum target, GLenum internalformat, GLuint buffer)", "void glTextureBuffer(GLuint texture, GLenum internalformat, GLuint buffer)" },
+  { "void glGetQueryiv(GLenum target, GLenum pname, GLint * params)" },
+  { "void glGetNamedRenderbufferParameteriv(GLuint renderbuffer, GLenum pname, GLint *params)", "void glGetRenderbufferParameteriv(GLenum target, GLenum pname, GLint *params)" },
+  { "void glGetSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat * params)", "void glGetSamplerParameterIiv(GLuint sampler, GLenum pname, GLint * params)", "void glGetSamplerParameterIuiv(GLuint sampler, GLenum pname, GLuint * params)", "void glGetSamplerParameteriv(GLuint sampler, GLenum pname, GLint * params)" },
+  { "void glGetShaderiv(GLuint shader, GLenum pname, GLint *params)" },
+  { "void glGetShaderInfoLog(GLuint shader, GLsizei maxLength, GLsizei *length, GLchar *infoLog)" },
+}
+
 return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform3iv(GLint location, GLsizei count, const GLint *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20185,8 +20512,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetShaderPrecisionFormat(GLenum shaderType, GLenum precisionType, GLint *range, GLint *precision)\n```\n'
-        .. descriptions[2],
+      value = "```c\n" .. table.concat(signatures[2], "\n") .. "\n```\n" .. descriptions[2],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20195,8 +20521,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform4iv(GLint location, GLsizei count, const GLint *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20205,8 +20530,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetShaderSource(GLuint shader, GLsizei bufSize, GLsizei *length, GLchar *source)\n```\n'
-        .. descriptions[3],
+      value = "```c\n" .. table.concat(signatures[3], "\n") .. "\n```\n" .. descriptions[3],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20215,8 +20539,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform1uiv(GLint location, GLsizei count, const GLuint *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20225,7 +20548,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nconst GLubyte *glGetString(GLenum name)\n```\n' .. descriptions[4],
+      value = "```c\n" .. table.concat(signatures[4], "\n") .. "\n```\n" .. descriptions[4],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20234,8 +20557,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform2uiv(GLint location, GLsizei count, const GLuint *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20244,8 +20566,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nconst GLubyte *glGetStringi(GLenum name, GLuint index)\n```\n'
-        .. descriptions[4],
+      value = "```c\n" .. table.concat(signatures[4], "\n") .. "\n```\n" .. descriptions[4],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20254,8 +20575,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform3uiv(GLint location, GLsizei count, const GLuint *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20264,8 +20584,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLuint glGetSubroutineIndex(GLuint program, GLenum shadertype, const GLchar *name)\n```\n'
-        .. descriptions[5],
+      value = "```c\n" .. table.concat(signatures[5], "\n") .. "\n```\n" .. descriptions[5],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20274,8 +20593,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform4uiv(GLint location, GLsizei count, const GLuint *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20284,8 +20602,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLint glGetSubroutineUniformLocation(GLuint program, GLenum shadertype, const GLchar *name)\n```\n'
-        .. descriptions[6],
+      value = "```c\n" .. table.concat(signatures[6], "\n") .. "\n```\n" .. descriptions[6],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20294,8 +20611,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniformMatrix2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20304,8 +20620,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetSynciv(GLsync sync, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values)\n```\n'
-        .. descriptions[7],
+      value = "```c\n" .. table.concat(signatures[7], "\n") .. "\n```\n" .. descriptions[7],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20314,8 +20629,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniformMatrix3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20324,8 +20638,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTexImage(GLenum target, GLint level, GLenum format, GLenum type, void * pixels)\n```\n'
-        .. descriptions[8],
+      value = "```c\n" .. table.concat(signatures[8], "\n") .. "\n```\n" .. descriptions[8],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20334,8 +20647,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureParameterIuiv(GLuint texture, GLenum pname, const GLuint *params)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20344,8 +20656,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetnTexImage(GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels)\n```\n'
-        .. descriptions[8],
+      value = "```c\n" .. table.concat(signatures[8], "\n") .. "\n```\n" .. descriptions[8],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20354,8 +20665,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexStorage1D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width)\n```\n'
-        .. descriptions[10],
+      value = "```c\n" .. table.concat(signatures[10], "\n") .. "\n```\n" .. descriptions[10],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20364,8 +20674,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTextureImage(GLuint texture, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels)\n```\n'
-        .. descriptions[8],
+      value = "```c\n" .. table.concat(signatures[8], "\n") .. "\n```\n" .. descriptions[8],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20374,8 +20683,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureStorage1D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width)\n```\n'
-        .. descriptions[10],
+      value = "```c\n" .. table.concat(signatures[10], "\n") .. "\n```\n" .. descriptions[10],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20384,8 +20692,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTexLevelParameterfv(GLenum target, GLint level, GLenum pname, GLfloat * params)\n```\n'
-        .. descriptions[11],
+      value = "```c\n" .. table.concat(signatures[11], "\n") .. "\n```\n" .. descriptions[11],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20394,8 +20701,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexStorage2D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[12],
+      value = "```c\n" .. table.concat(signatures[12], "\n") .. "\n```\n" .. descriptions[12],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20404,8 +20710,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTexLevelParameteriv(GLenum target, GLint level, GLenum pname, GLint * params)\n```\n'
-        .. descriptions[11],
+      value = "```c\n" .. table.concat(signatures[11], "\n") .. "\n```\n" .. descriptions[11],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20414,8 +20719,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureStorage2D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[12],
+      value = "```c\n" .. table.concat(signatures[12], "\n") .. "\n```\n" .. descriptions[12],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20424,8 +20728,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTextureLevelParameterfv(GLuint texture, GLint level, GLenum pname, GLfloat *params)\n```\n'
-        .. descriptions[11],
+      value = "```c\n" .. table.concat(signatures[11], "\n") .. "\n```\n" .. descriptions[11],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20434,8 +20737,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexStorage2DMultisample(\n  GLenum target,\n  GLsizei samples,\n  GLenum internalformat,\n  GLsizei width,\n  GLsizei height,\n  GLboolean fixedsamplelocations\n)\n```\n'
-        .. descriptions[13],
+      value = "```c\n" .. table.concat(signatures[13], "\n") .. "\n```\n" .. descriptions[13],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20444,8 +20746,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTextureLevelParameteriv(GLuint texture, GLint level, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[11],
+      value = "```c\n" .. table.concat(signatures[11], "\n") .. "\n```\n" .. descriptions[11],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20454,8 +20755,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureStorage2DMultisample(\n  GLuint texture,\n  GLsizei samples,\n  GLenum internalformat,\n  GLsizei width,\n  GLsizei height,\n  GLboolean fixedsamplelocations\n)\n```\n'
-        .. descriptions[13],
+      value = "```c\n" .. table.concat(signatures[13], "\n") .. "\n```\n" .. descriptions[13],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20464,8 +20764,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTexParameterfv(GLenum target, GLenum pname, GLfloat * params)\n```\n'
-        .. descriptions[14],
+      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20474,8 +20773,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexStorage3D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth)\n```\n'
-        .. descriptions[15],
+      value = "```c\n" .. table.concat(signatures[15], "\n") .. "\n```\n" .. descriptions[15],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20484,8 +20782,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTexParameteriv(GLenum target, GLenum pname, GLint * params)\n```\n'
-        .. descriptions[14],
+      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20494,8 +20791,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureStorage3D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth)\n```\n'
-        .. descriptions[15],
+      value = "```c\n" .. table.concat(signatures[15], "\n") .. "\n```\n" .. descriptions[15],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20504,8 +20800,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTexParameterIiv(GLenum target, GLenum pname, GLint * params)\n```\n'
-        .. descriptions[14],
+      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20514,8 +20809,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexStorage3DMultisample(\n  GLenum target,\n  GLsizei samples,\n  GLenum internalformat,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLboolean fixedsamplelocations\n)\n```\n'
-        .. descriptions[16],
+      value = "```c\n" .. table.concat(signatures[16], "\n") .. "\n```\n" .. descriptions[16],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20524,8 +20818,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTexParameterIuiv(GLenum target, GLenum pname, GLuint * params)\n```\n'
-        .. descriptions[14],
+      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20534,8 +20827,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureStorage3DMultisample(\n  GLuint texture,\n  GLsizei samples,\n  GLenum internalformat,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLboolean fixedsamplelocations\n)\n```\n'
-        .. descriptions[16],
+      value = "```c\n" .. table.concat(signatures[16], "\n") .. "\n```\n" .. descriptions[16],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20544,8 +20836,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTextureParameterfv(GLuint texture, GLenum pname, GLfloat *params)\n```\n'
-        .. descriptions[14],
+      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20554,8 +20845,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void * pixels)\n```\n'
-        .. descriptions[17],
+      value = "```c\n" .. table.concat(signatures[17], "\n") .. "\n```\n" .. descriptions[17],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20564,8 +20854,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTextureParameteriv(GLuint texture, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[14],
+      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20574,8 +20863,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void *pixels)\n```\n'
-        .. descriptions[17],
+      value = "```c\n" .. table.concat(signatures[17], "\n") .. "\n```\n" .. descriptions[17],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20584,8 +20872,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTextureParameterIiv(GLuint texture, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[14],
+      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20594,8 +20881,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexSubImage2D(\n  GLenum target,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLsizei width,\n  GLsizei height,\n  GLenum format,\n  GLenum type,\n  const void * pixels\n)\n```\n'
-        .. descriptions[18],
+      value = "```c\n" .. table.concat(signatures[18], "\n") .. "\n```\n" .. descriptions[18],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20604,8 +20890,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTextureParameterIuiv(GLuint texture, GLenum pname, GLuint *params)\n```\n'
-        .. descriptions[14],
+      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20614,8 +20899,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureSubImage2D(\n  GLuint texture,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLsizei width,\n  GLsizei height,\n  GLenum format,\n  GLenum type,\n  const void *pixels\n)\n```\n'
-        .. descriptions[18],
+      value = "```c\n" .. table.concat(signatures[18], "\n") .. "\n```\n" .. descriptions[18],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20624,8 +20908,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTextureSubImage(\n  GLuint texture,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLint zoffset,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLenum format,\n  GLenum type,\n  GLsizei bufSize,\n  void *pixels\n)\n```\n'
-        .. descriptions[19],
+      value = "```c\n" .. table.concat(signatures[19], "\n") .. "\n```\n" .. descriptions[19],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20634,8 +20917,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexSubImage3D(\n  GLenum target,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLint zoffset,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLenum format,\n  GLenum type,\n  const void * pixels\n)\n```\n'
-        .. descriptions[20],
+      value = "```c\n" .. table.concat(signatures[20], "\n") .. "\n```\n" .. descriptions[20],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20644,8 +20926,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTransformFeedbackiv(GLuint xfb, GLenum pname, GLint *param)\n```\n'
-        .. descriptions[21],
+      value = "```c\n" .. table.concat(signatures[21], "\n") .. "\n```\n" .. descriptions[21],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20654,8 +20935,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureSubImage3D(\n  GLuint texture,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLint zoffset,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLenum format,\n  GLenum type,\n  const void *pixels\n)\n```\n'
-        .. descriptions[20],
+      value = "```c\n" .. table.concat(signatures[20], "\n") .. "\n```\n" .. descriptions[20],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20664,8 +20944,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTransformFeedbacki_v(GLuint xfb, GLenum pname, GLuint index, GLint *param)\n```\n'
-        .. descriptions[21],
+      value = "```c\n" .. table.concat(signatures[21], "\n") .. "\n```\n" .. descriptions[21],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20674,7 +20953,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureBarrier(void)\n```\n' .. descriptions[22],
+      value = "```c\n" .. table.concat(signatures[22], "\n") .. "\n```\n" .. descriptions[22],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20683,8 +20962,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTransformFeedbacki64_v(GLuint xfb, GLenum pname, GLuint index, GLint64 *param)\n```\n'
-        .. descriptions[21],
+      value = "```c\n" .. table.concat(signatures[21], "\n") .. "\n```\n" .. descriptions[21],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20693,8 +20971,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureView(\n  GLuint texture,\n  GLenum target,\n  GLuint origtexture,\n  GLenum internalformat,\n  GLuint minlevel,\n  GLuint numlevels,\n  GLuint minlayer,\n  GLuint numlayers\n)\n```\n'
-        .. descriptions[23],
+      value = "```c\n" .. table.concat(signatures[23], "\n") .. "\n```\n" .. descriptions[23],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20703,8 +20980,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetTransformFeedbackVarying(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, char *name)\n```\n'
-        .. descriptions[24],
+      value = "```c\n" .. table.concat(signatures[24], "\n") .. "\n```\n" .. descriptions[24],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20713,8 +20989,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTransformFeedbackBufferBase(GLuint xfb, GLuint index, GLuint buffer)\n```\n'
-        .. descriptions[25],
+      value = "```c\n" .. table.concat(signatures[25], "\n") .. "\n```\n" .. descriptions[25],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20723,8 +20998,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetUniformfv(GLuint program, GLint location, GLfloat *params)\n```\n'
-        .. descriptions[26],
+      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20733,8 +21007,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTransformFeedbackBufferRange(GLuint xfb, GLuint index, GLuint buffer, GLintptr offset, GLsizei size)\n```\n'
-        .. descriptions[27],
+      value = "```c\n" .. table.concat(signatures[27], "\n") .. "\n```\n" .. descriptions[27],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20743,8 +21016,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetUniformiv(GLuint program, GLint location, GLint *params)\n```\n'
-        .. descriptions[26],
+      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20753,8 +21025,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTransformFeedbackVaryings(GLuint program, GLsizei count, const char **varyings, GLenum bufferMode)\n```\n'
-        .. descriptions[28],
+      value = "```c\n" .. table.concat(signatures[28], "\n") .. "\n```\n" .. descriptions[28],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20763,8 +21034,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetUniformuiv(GLuint program, GLint location, GLuint *params)\n```\n'
-        .. descriptions[26],
+      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20773,7 +21043,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform1f(GLint location, GLfloat v0)\n```\n' .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20782,8 +21052,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetUniformdv(GLuint program, GLint location, GLdouble *params)\n```\n'
-        .. descriptions[26],
+      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20792,8 +21061,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform2f(GLint location, GLfloat v0, GLfloat v1)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20802,8 +21070,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetnUniformfv(GLuint program, GLint location, GLsizei bufSize, GLfloat *params)\n```\n'
-        .. descriptions[26],
+      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20812,8 +21079,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform3f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20822,8 +21088,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetnUniformiv(GLuint program, GLint location, GLsizei bufSize, GLint *params)\n```\n'
-        .. descriptions[26],
+      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20832,8 +21097,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform4f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20842,8 +21106,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetVertexAttribdv(GLuint index, GLenum pname, GLdouble *params)\n```\n'
-        .. descriptions[29],
+      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20852,7 +21115,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform1i(GLint location, GLint v0)\n```\n' .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20861,8 +21124,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform2i(GLint location, GLint v0, GLint v1)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20871,8 +21133,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform3i(GLint location, GLint v0, GLint v1, GLint v2)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20881,8 +21142,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform4i(GLint location, GLint v0, GLint v1, GLint v2, GLint v3)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20891,7 +21151,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform1ui(GLint location, GLuint v0)\n```\n' .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20900,8 +21160,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFramebufferParameteri(GLenum target, GLenum pname, GLint param)\n```\n'
-        .. descriptions[30],
+      value = "```c\n" .. table.concat(signatures[30], "\n") .. "\n```\n" .. descriptions[30],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20910,8 +21169,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedFramebufferParameteri(GLuint framebuffer, GLenum pname, GLint param)\n```\n'
-        .. descriptions[30],
+      value = "```c\n" .. table.concat(signatures[30], "\n") .. "\n```\n" .. descriptions[30],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20920,8 +21178,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFramebufferRenderbuffer(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer)\n```\n'
-        .. descriptions[31],
+      value = "```c\n" .. table.concat(signatures[31], "\n") .. "\n```\n" .. descriptions[31],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20930,8 +21187,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedFramebufferRenderbuffer(GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer)\n```\n'
-        .. descriptions[31],
+      value = "```c\n" .. table.concat(signatures[31], "\n") .. "\n```\n" .. descriptions[31],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20940,8 +21196,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFramebufferTexture(GLenum target, GLenum attachment, GLuint texture, GLint level)\n```\n'
-        .. descriptions[32],
+      value = "```c\n" .. table.concat(signatures[32], "\n") .. "\n```\n" .. descriptions[32],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20950,8 +21205,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFramebufferTexture1D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level)\n```\n'
-        .. descriptions[32],
+      value = "```c\n" .. table.concat(signatures[32], "\n") .. "\n```\n" .. descriptions[32],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20960,8 +21214,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFramebufferTexture2D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level)\n```\n'
-        .. descriptions[32],
+      value = "```c\n" .. table.concat(signatures[32], "\n") .. "\n```\n" .. descriptions[32],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20970,8 +21223,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetFramebufferParameteriv(GLenum target, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[33],
+      value = "```c\n" .. table.concat(signatures[33], "\n") .. "\n```\n" .. descriptions[33],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20980,8 +21232,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFramebufferTexture3D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint layer)\n```\n'
-        .. descriptions[32],
+      value = "```c\n" .. table.concat(signatures[32], "\n") .. "\n```\n" .. descriptions[32],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20990,8 +21241,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetNamedFramebufferParameteriv(GLuint framebuffer, GLenum pname, GLint *param)\n```\n'
-        .. descriptions[33],
+      value = "```c\n" .. table.concat(signatures[33], "\n") .. "\n```\n" .. descriptions[33],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21000,8 +21250,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedFramebufferTexture(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level)\n```\n'
-        .. descriptions[32],
+      value = "```c\n" .. table.concat(signatures[32], "\n") .. "\n```\n" .. descriptions[32],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21010,7 +21259,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLenum glGetGraphicsResetStatus(void)\n```\n' .. descriptions[34],
+      value = "```c\n" .. table.concat(signatures[34], "\n") .. "\n```\n" .. descriptions[34],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21019,8 +21268,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFramebufferTextureLayer(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer)\n```\n'
-        .. descriptions[35],
+      value = "```c\n" .. table.concat(signatures[35], "\n") .. "\n```\n" .. descriptions[35],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21029,8 +21277,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetInternalformativ(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint *params)\n```\n'
-        .. descriptions[36],
+      value = "```c\n" .. table.concat(signatures[36], "\n") .. "\n```\n" .. descriptions[36],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21039,8 +21286,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedFramebufferTextureLayer(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLint layer)\n```\n'
-        .. descriptions[35],
+      value = "```c\n" .. table.concat(signatures[35], "\n") .. "\n```\n" .. descriptions[35],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21049,8 +21295,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetInternalformati64v(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint64 *params)\n```\n'
-        .. descriptions[36],
+      value = "```c\n" .. table.concat(signatures[36], "\n") .. "\n```\n" .. descriptions[36],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21059,7 +21304,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFrontFace(GLenum mode)\n```\n' .. descriptions[37],
+      value = "```c\n" .. table.concat(signatures[37], "\n") .. "\n```\n" .. descriptions[37],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21068,8 +21313,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetMultisamplefv(GLenum pname, GLuint index, GLfloat *val)\n```\n'
-        .. descriptions[38],
+      value = "```c\n" .. table.concat(signatures[38], "\n") .. "\n```\n" .. descriptions[38],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21078,7 +21322,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGenBuffers(GLsizei n, GLuint * buffers)\n```\n' .. descriptions[39],
+      value = "```c\n" .. table.concat(signatures[39], "\n") .. "\n```\n" .. descriptions[39],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21087,8 +21331,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetObjectLabel(GLenum identifier, GLuint name, GLsizei bufSize, GLsizei * length, char * label)\n```\n'
-        .. descriptions[40],
+      value = "```c\n" .. table.concat(signatures[40], "\n") .. "\n```\n" .. descriptions[40],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21097,7 +21340,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGenFramebuffers(GLsizei n, GLuint *ids)\n```\n' .. descriptions[41],
+      value = "```c\n" .. table.concat(signatures[41], "\n") .. "\n```\n" .. descriptions[41],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21106,8 +21349,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetObjectPtrLabel(void * ptr, GLsizei bufSize, GLsizei * length, char * label)\n```\n'
-        .. descriptions[42],
+      value = "```c\n" .. table.concat(signatures[42], "\n") .. "\n```\n" .. descriptions[42],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21116,8 +21358,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGenProgramPipelines(GLsizei n, GLuint *pipelines)\n```\n'
-        .. descriptions[43],
+      value = "```c\n" .. table.concat(signatures[43], "\n") .. "\n```\n" .. descriptions[43],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21126,7 +21367,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetPointerv(GLenum pname, void ** params)\n```\n' .. descriptions[44],
+      value = "```c\n" .. table.concat(signatures[44], "\n") .. "\n```\n" .. descriptions[44],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21135,7 +21376,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGenQueries(GLsizei n, GLuint * ids)\n```\n' .. descriptions[45],
+      value = "```c\n" .. table.concat(signatures[45], "\n") .. "\n```\n" .. descriptions[45],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21144,8 +21385,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetProgramiv(GLuint program, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[46],
+      value = "```c\n" .. table.concat(signatures[46], "\n") .. "\n```\n" .. descriptions[46],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21154,8 +21394,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGenRenderbuffers(GLsizei n, GLuint *renderbuffers)\n```\n'
-        .. descriptions[47],
+      value = "```c\n" .. table.concat(signatures[47], "\n") .. "\n```\n" .. descriptions[47],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21164,8 +21403,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetProgramBinary(GLuint program, GLsizei bufSize, GLsizei *length, GLenum *binaryFormat, void *binary)\n```\n'
-        .. descriptions[48],
+      value = "```c\n" .. table.concat(signatures[48], "\n") .. "\n```\n" .. descriptions[48],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21174,7 +21412,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGenSamplers(GLsizei n, GLuint *samplers)\n```\n' .. descriptions[49],
+      value = "```c\n" .. table.concat(signatures[49], "\n") .. "\n```\n" .. descriptions[49],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21183,8 +21421,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetProgramInfoLog(GLuint program, GLsizei maxLength, GLsizei *length, GLchar *infoLog)\n```\n'
-        .. descriptions[50],
+      value = "```c\n" .. table.concat(signatures[50], "\n") .. "\n```\n" .. descriptions[50],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21193,7 +21430,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGenTextures(GLsizei n, GLuint * textures)\n```\n' .. descriptions[51],
+      value = "```c\n" .. table.concat(signatures[51], "\n") .. "\n```\n" .. descriptions[51],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21202,8 +21439,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetProgramInterfaceiv(GLuint program, GLenum programInterface, GLenum pname, GLint * params)\n```\n'
-        .. descriptions[52],
+      value = "```c\n" .. table.concat(signatures[52], "\n") .. "\n```\n" .. descriptions[52],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21212,8 +21448,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGenTransformFeedbacks(GLsizei n, GLuint *ids)\n```\n'
-        .. descriptions[53],
+      value = "```c\n" .. table.concat(signatures[53], "\n") .. "\n```\n" .. descriptions[53],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21222,8 +21457,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetProgramPipelineiv(GLuint pipeline, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[54],
+      value = "```c\n" .. table.concat(signatures[54], "\n") .. "\n```\n" .. descriptions[54],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21232,7 +21466,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGenVertexArrays(GLsizei n, GLuint *arrays)\n```\n' .. descriptions[55],
+      value = "```c\n" .. table.concat(signatures[55], "\n") .. "\n```\n" .. descriptions[55],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21241,8 +21475,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetProgramPipelineInfoLog(GLuint pipeline, GLsizei bufSize, GLsizei *length, GLchar *infoLog)\n```\n'
-        .. descriptions[56],
+      value = "```c\n" .. table.concat(signatures[56], "\n") .. "\n```\n" .. descriptions[56],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21251,7 +21484,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGenerateMipmap(GLenum target)\n```\n' .. descriptions[57],
+      value = "```c\n" .. table.concat(signatures[57], "\n") .. "\n```\n" .. descriptions[57],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21260,8 +21493,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetProgramResourceiv(\n  GLuint program,\n  GLenum programInterface,\n  GLuint index,\n  GLsizei propCount,\n  const GLenum * props,\n  GLsizei bufSize,\n  GLsizei * length,\n  GLint * params\n)\n```\n'
-        .. descriptions[58],
+      value = "```c\n" .. table.concat(signatures[58], "\n") .. "\n```\n" .. descriptions[58],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21270,7 +21502,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGenerateTextureMipmap(GLuint texture)\n```\n' .. descriptions[57],
+      value = "```c\n" .. table.concat(signatures[57], "\n") .. "\n```\n" .. descriptions[57],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21279,8 +21511,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLuint glGetProgramResourceIndex(GLuint program, GLenum programInterface, const char * name)\n```\n'
-        .. descriptions[59],
+      value = "```c\n" .. table.concat(signatures[59], "\n") .. "\n```\n" .. descriptions[59],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21289,8 +21520,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetBooleanv(GLenum pname, GLboolean * data)\n```\n'
-        .. descriptions[60],
+      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21299,8 +21529,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLint glGetProgramResourceLocation(GLuint program, GLenum programInterface, const char * name)\n```\n'
-        .. descriptions[61],
+      value = "```c\n" .. table.concat(signatures[61], "\n") .. "\n```\n" .. descriptions[61],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21309,7 +21538,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetDoublev(GLenum pname, GLdouble * data)\n```\n' .. descriptions[60],
+      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21318,8 +21547,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLint glGetProgramResourceLocationIndex(GLuint program, GLenum programInterface, const char * name)\n```\n'
-        .. descriptions[62],
+      value = "```c\n" .. table.concat(signatures[62], "\n") .. "\n```\n" .. descriptions[62],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21328,7 +21556,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetFloatv(GLenum pname, GLfloat * data)\n```\n' .. descriptions[60],
+      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21337,8 +21565,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetProgramResourceName(GLuint program, GLenum programInterface, GLuint index, GLsizei bufSize, GLsizei * length, char * name)\n```\n'
-        .. descriptions[63],
+      value = "```c\n" .. table.concat(signatures[63], "\n") .. "\n```\n" .. descriptions[63],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21347,7 +21574,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetIntegerv(GLenum pname, GLint * data)\n```\n' .. descriptions[60],
+      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21356,8 +21583,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetProgramStageiv(GLuint program, GLenum shadertype, GLenum pname, GLint *values)\n```\n'
-        .. descriptions[64],
+      value = "```c\n" .. table.concat(signatures[64], "\n") .. "\n```\n" .. descriptions[64],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21366,8 +21592,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetInteger64v(GLenum pname, GLint64 * data)\n```\n'
-        .. descriptions[60],
+      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21376,8 +21601,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetQueryIndexediv(GLenum target, GLuint index, GLenum pname, GLint * params)\n```\n'
-        .. descriptions[65],
+      value = "```c\n" .. table.concat(signatures[65], "\n") .. "\n```\n" .. descriptions[65],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21386,8 +21610,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetBooleani_v(GLenum target, GLuint index, GLboolean * data)\n```\n'
-        .. descriptions[60],
+      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21396,8 +21619,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetQueryObjectiv(GLuint id, GLenum pname, GLint * params)\n```\n'
-        .. descriptions[66],
+      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21406,8 +21628,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetIntegeri_v(GLenum target, GLuint index, GLint * data)\n```\n'
-        .. descriptions[60],
+      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21416,8 +21637,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetFloati_v(GLenum target, GLuint index, GLfloat * data)\n```\n'
-        .. descriptions[60],
+      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21426,8 +21646,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetDoublei_v(GLenum target, GLuint index, GLdouble * data)\n```\n'
-        .. descriptions[60],
+      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21436,8 +21655,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetInteger64i_v(GLenum target, GLuint index, GLint64 * data)\n```\n'
-        .. descriptions[60],
+      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21446,8 +21664,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetActiveAtomicCounterBufferiv(GLuint program, GLuint bufferIndex, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[67],
+      value = "```c\n" .. table.concat(signatures[67], "\n") .. "\n```\n" .. descriptions[67],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21456,8 +21673,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetActiveAttrib(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name)\n```\n'
-        .. descriptions[68],
+      value = "```c\n" .. table.concat(signatures[68], "\n") .. "\n```\n" .. descriptions[68],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21466,8 +21682,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetActiveSubroutineName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize, GLsizei *length, GLchar *name)\n```\n'
-        .. descriptions[69],
+      value = "```c\n" .. table.concat(signatures[69], "\n") .. "\n```\n" .. descriptions[69],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21476,8 +21691,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetActiveSubroutineUniformiv(GLuint program, GLenum shadertype, GLuint index, GLenum pname, GLint *values)\n```\n'
-        .. descriptions[70],
+      value = "```c\n" .. table.concat(signatures[70], "\n") .. "\n```\n" .. descriptions[70],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21486,8 +21700,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetActiveSubroutineUniformName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize, GLsizei *length, GLchar *name)\n```\n'
-        .. descriptions[71],
+      value = "```c\n" .. table.concat(signatures[71], "\n") .. "\n```\n" .. descriptions[71],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21496,8 +21709,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetActiveUniform(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name)\n```\n'
-        .. descriptions[72],
+      value = "```c\n" .. table.concat(signatures[72], "\n") .. "\n```\n" .. descriptions[72],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21506,8 +21718,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetActiveUniformBlockiv(GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[73],
+      value = "```c\n" .. table.concat(signatures[73], "\n") .. "\n```\n" .. descriptions[73],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21516,8 +21727,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetActiveUniformBlockName(GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformBlockName)\n```\n'
-        .. descriptions[74],
+      value = "```c\n" .. table.concat(signatures[74], "\n") .. "\n```\n" .. descriptions[74],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21526,8 +21736,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetActiveUniformName(GLuint program, GLuint uniformIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformName)\n```\n'
-        .. descriptions[75],
+      value = "```c\n" .. table.concat(signatures[75], "\n") .. "\n```\n" .. descriptions[75],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21536,8 +21745,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetActiveUniformsiv(GLuint program, GLsizei uniformCount, const GLuint *uniformIndices, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[76],
+      value = "```c\n" .. table.concat(signatures[76], "\n") .. "\n```\n" .. descriptions[76],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21546,8 +21754,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei *count, GLuint *shaders)\n```\n'
-        .. descriptions[77],
+      value = "```c\n" .. table.concat(signatures[77], "\n") .. "\n```\n" .. descriptions[77],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21556,8 +21763,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLint glGetAttribLocation(GLuint program, const GLchar *name)\n```\n'
-        .. descriptions[78],
+      value = "```c\n" .. table.concat(signatures[78], "\n") .. "\n```\n" .. descriptions[78],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21566,8 +21772,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetBufferParameteriv(GLenum target, GLenum value, GLint * data)\n```\n'
-        .. descriptions[79],
+      value = "```c\n" .. table.concat(signatures[79], "\n") .. "\n```\n" .. descriptions[79],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21576,8 +21781,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetBufferParameteri64v(GLenum target, GLenum value, GLint64 * data)\n```\n'
-        .. descriptions[79],
+      value = "```c\n" .. table.concat(signatures[79], "\n") .. "\n```\n" .. descriptions[79],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21586,8 +21790,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetNamedBufferParameteriv(GLuint buffer, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[79],
+      value = "```c\n" .. table.concat(signatures[79], "\n") .. "\n```\n" .. descriptions[79],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21596,8 +21799,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetNamedBufferParameteri64v(GLuint buffer, GLenum pname, GLint64 *params)\n```\n'
-        .. descriptions[79],
+      value = "```c\n" .. table.concat(signatures[79], "\n") .. "\n```\n" .. descriptions[79],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21606,8 +21808,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetBufferPointerv(GLenum target, GLenum pname, void ** params)\n```\n'
-        .. descriptions[80],
+      value = "```c\n" .. table.concat(signatures[80], "\n") .. "\n```\n" .. descriptions[80],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21616,8 +21817,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetNamedBufferPointerv(GLuint buffer, GLenum pname, void **params)\n```\n'
-        .. descriptions[80],
+      value = "```c\n" .. table.concat(signatures[80], "\n") .. "\n```\n" .. descriptions[80],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21626,8 +21826,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, void * data)\n```\n'
-        .. descriptions[81],
+      value = "```c\n" .. table.concat(signatures[81], "\n") .. "\n```\n" .. descriptions[81],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21636,8 +21835,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawElementsInstancedBaseInstance(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLuint baseinstance)\n```\n'
-        .. descriptions[82],
+      value = "```c\n" .. table.concat(signatures[82], "\n") .. "\n```\n" .. descriptions[82],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21646,8 +21844,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawElementsInstancedBaseVertex(GLenum mode, GLsizei count, GLenum type, void *indices, GLsizei instancecount, GLint basevertex)\n```\n'
-        .. descriptions[83],
+      value = "```c\n" .. table.concat(signatures[83], "\n") .. "\n```\n" .. descriptions[83],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21656,8 +21853,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawElementsInstancedBaseVertexBaseInstance(\n  GLenum mode,\n  GLsizei count,\n  GLenum type,\n  void *indices,\n  GLsizei instancecount,\n  GLint basevertex,\n  GLuint baseinstance\n )\n```\n'
-        .. descriptions[84],
+      value = "```c\n" .. table.concat(signatures[84], "\n") .. "\n```\n" .. descriptions[84],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21666,8 +21862,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void * indices)\n```\n'
-        .. descriptions[85],
+      value = "```c\n" .. table.concat(signatures[85], "\n") .. "\n```\n" .. descriptions[85],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21676,8 +21871,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawRangeElementsBaseVertex(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, void *indices, GLint basevertex)\n```\n'
-        .. descriptions[86],
+      value = "```c\n" .. table.concat(signatures[86], "\n") .. "\n```\n" .. descriptions[86],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21686,8 +21880,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawTransformFeedback(GLenum mode, GLuint id)\n```\n'
-        .. descriptions[87],
+      value = "```c\n" .. table.concat(signatures[87], "\n") .. "\n```\n" .. descriptions[87],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21696,8 +21889,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawTransformFeedbackInstanced(GLenum mode, GLuint id, GLsizei instancecount)\n```\n'
-        .. descriptions[88],
+      value = "```c\n" .. table.concat(signatures[88], "\n") .. "\n```\n" .. descriptions[88],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21706,8 +21898,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawTransformFeedbackStream(GLenum mode, GLuint id, GLuint stream)\n```\n'
-        .. descriptions[89],
+      value = "```c\n" .. table.concat(signatures[89], "\n") .. "\n```\n" .. descriptions[89],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21716,8 +21907,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawTransformFeedbackStreamInstanced(GLenum mode, GLuint id, GLuint stream, GLsizei instancecount)\n```\n'
-        .. descriptions[90],
+      value = "```c\n" .. table.concat(signatures[90], "\n") .. "\n```\n" .. descriptions[90],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21726,7 +21916,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glEnable(GLenum cap)\n```\n' .. descriptions[91],
+      value = "```c\n" .. table.concat(signatures[91], "\n") .. "\n```\n" .. descriptions[91],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21735,8 +21925,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetNamedFramebufferAttachmentParameteriv(GLuint framebuffer, GLenum attachment, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[92],
+      value = "```c\n" .. table.concat(signatures[92], "\n") .. "\n```\n" .. descriptions[92],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21745,7 +21934,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glEnablei(GLenum cap, GLuint index)\n```\n' .. descriptions[91],
+      value = "```c\n" .. table.concat(signatures[91], "\n") .. "\n```\n" .. descriptions[91],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21754,7 +21943,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDisablei(GLenum cap, GLuint index)\n```\n' .. descriptions[91],
+      value = "```c\n" .. table.concat(signatures[91], "\n") .. "\n```\n" .. descriptions[91],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21763,7 +21952,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glEnableVertexAttribArray(GLuint index)\n```\n' .. descriptions[93],
+      value = "```c\n" .. table.concat(signatures[93], "\n") .. "\n```\n" .. descriptions[93],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21772,7 +21961,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDisableVertexAttribArray(GLuint index)\n```\n' .. descriptions[93],
+      value = "```c\n" .. table.concat(signatures[93], "\n") .. "\n```\n" .. descriptions[93],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21781,8 +21970,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glEnableVertexArrayAttrib(GLuint vaobj, GLuint index)\n```\n'
-        .. descriptions[93],
+      value = "```c\n" .. table.concat(signatures[93], "\n") .. "\n```\n" .. descriptions[93],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21791,8 +21979,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDisableVertexArrayAttrib(GLuint vaobj, GLuint index)\n```\n'
-        .. descriptions[93],
+      value = "```c\n" .. table.concat(signatures[93], "\n") .. "\n```\n" .. descriptions[93],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21801,8 +21988,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLsync glFenceSync(GLenum condition, GLbitfield flags)\n```\n'
-        .. descriptions[94],
+      value = "```c\n" .. table.concat(signatures[94], "\n") .. "\n```\n" .. descriptions[94],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21811,7 +21997,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFinish(void)\n```\n' .. descriptions[95],
+      value = "```c\n" .. table.concat(signatures[95], "\n") .. "\n```\n" .. descriptions[95],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21820,7 +22006,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFlush(void)\n```\n' .. descriptions[96],
+      value = "```c\n" .. table.concat(signatures[96], "\n") .. "\n```\n" .. descriptions[96],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21829,8 +22015,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFlushMappedBufferRange(GLenum target, GLintptr offset, GLsizeiptr length)\n```\n'
-        .. descriptions[97],
+      value = "```c\n" .. table.concat(signatures[97], "\n") .. "\n```\n" .. descriptions[97],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21839,8 +22024,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glFlushMappedNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length)\n```\n'
-        .. descriptions[97],
+      value = "```c\n" .. table.concat(signatures[97], "\n") .. "\n```\n" .. descriptions[97],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21849,8 +22033,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribP1ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21859,8 +22042,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribP2ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21869,8 +22051,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribP3ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21879,8 +22060,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribP4ui(GLuint index, GLenum type, GLboolean normalized, GLuint value)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21889,8 +22069,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribBinding(GLuint attribindex, GLuint bindingindex)\n```\n'
-        .. descriptions[99],
+      value = "```c\n" .. table.concat(signatures[99], "\n") .. "\n```\n" .. descriptions[99],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21899,8 +22078,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexArrayAttribBinding(GLuint vaobj, GLuint attribindex, GLuint bindingindex)\n```\n'
-        .. descriptions[99],
+      value = "```c\n" .. table.concat(signatures[99], "\n") .. "\n```\n" .. descriptions[99],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21909,8 +22087,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribDivisor(GLuint index, GLuint divisor)\n```\n'
-        .. descriptions[100],
+      value = "```c\n" .. table.concat(signatures[100], "\n") .. "\n```\n" .. descriptions[100],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21919,8 +22096,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribFormat(GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset)\n```\n'
-        .. descriptions[101],
+      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21929,8 +22105,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribIFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)\n```\n'
-        .. descriptions[101],
+      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21939,8 +22114,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribLFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)\n```\n'
-        .. descriptions[101],
+      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21949,8 +22123,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexArrayAttribFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset)\n```\n'
-        .. descriptions[101],
+      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21959,8 +22132,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexArrayAttribIFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)\n```\n'
-        .. descriptions[101],
+      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21969,8 +22141,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexArrayAttribLFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset)\n```\n'
-        .. descriptions[101],
+      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21979,8 +22150,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void * pointer)\n```\n'
-        .. descriptions[102],
+      value = "```c\n" .. table.concat(signatures[102], "\n") .. "\n```\n" .. descriptions[102],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21989,8 +22159,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribIPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer)\n```\n'
-        .. descriptions[102],
+      value = "```c\n" .. table.concat(signatures[102], "\n") .. "\n```\n" .. descriptions[102],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21999,8 +22168,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribLPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer)\n```\n'
-        .. descriptions[102],
+      value = "```c\n" .. table.concat(signatures[102], "\n") .. "\n```\n" .. descriptions[102],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22009,8 +22177,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexBindingDivisor(GLuint bindingindex, GLuint divisor)\n```\n'
-        .. descriptions[103],
+      value = "```c\n" .. table.concat(signatures[103], "\n") .. "\n```\n" .. descriptions[103],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22019,8 +22186,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexArrayBindingDivisor(GLuint vaobj, GLuint bindingindex, GLuint divisor)\n```\n'
-        .. descriptions[103],
+      value = "```c\n" .. table.concat(signatures[103], "\n") .. "\n```\n" .. descriptions[103],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22029,8 +22195,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glViewport(GLint x, GLint y, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[104],
+      value = "```c\n" .. table.concat(signatures[104], "\n") .. "\n```\n" .. descriptions[104],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22039,8 +22204,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glViewportArrayv(GLuint first, GLsizei count, const GLfloat *v)\n```\n'
-        .. descriptions[105],
+      value = "```c\n" .. table.concat(signatures[105], "\n") .. "\n```\n" .. descriptions[105],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22049,8 +22213,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glViewportIndexedf(GLuint index, GLfloat x, GLfloat y, GLfloat w, GLfloat h)\n```\n'
-        .. descriptions[106],
+      value = "```c\n" .. table.concat(signatures[106], "\n") .. "\n```\n" .. descriptions[106],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22059,8 +22222,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glViewportIndexedfv(GLuint index, const GLfloat *v)\n```\n'
-        .. descriptions[106],
+      value = "```c\n" .. table.concat(signatures[106], "\n") .. "\n```\n" .. descriptions[106],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22069,8 +22231,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout)\n```\n'
-        .. descriptions[107],
+      value = "```c\n" .. table.concat(signatures[107], "\n") .. "\n```\n" .. descriptions[107],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22079,8 +22240,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBeginConditionalRender(GLuint id, GLenum mode)\n```\n'
-        .. descriptions[108],
+      value = "```c\n" .. table.concat(signatures[108], "\n") .. "\n```\n" .. descriptions[108],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22089,7 +22249,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glEndConditionalRender(void)\n```\n' .. descriptions[108],
+      value = "```c\n" .. table.concat(signatures[108], "\n") .. "\n```\n" .. descriptions[108],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22098,7 +22258,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBeginQuery(GLenum target, GLuint id)\n```\n' .. descriptions[109],
+      value = "```c\n" .. table.concat(signatures[109], "\n") .. "\n```\n" .. descriptions[109],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22107,7 +22267,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glEndQuery(GLenum target)\n```\n' .. descriptions[109],
+      value = "```c\n" .. table.concat(signatures[109], "\n") .. "\n```\n" .. descriptions[109],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22116,8 +22276,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBeginQueryIndexed(GLenum target, GLuint index, GLuint id)\n```\n'
-        .. descriptions[110],
+      value = "```c\n" .. table.concat(signatures[110], "\n") .. "\n```\n" .. descriptions[110],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22126,8 +22285,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glEndQueryIndexed(GLenum target, GLuint index)\n```\n'
-        .. descriptions[110],
+      value = "```c\n" .. table.concat(signatures[110], "\n") .. "\n```\n" .. descriptions[110],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22136,8 +22294,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBeginTransformFeedback(GLenum primitiveMode)\n```\n'
-        .. descriptions[111],
+      value = "```c\n" .. table.concat(signatures[111], "\n") .. "\n```\n" .. descriptions[111],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22146,7 +22303,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glEndTransformFeedback(void)\n```\n' .. descriptions[111],
+      value = "```c\n" .. table.concat(signatures[111], "\n") .. "\n```\n" .. descriptions[111],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22155,8 +22312,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindAttribLocation(GLuint program, GLuint index, const GLchar *name)\n```\n'
-        .. descriptions[112],
+      value = "```c\n" .. table.concat(signatures[112], "\n") .. "\n```\n" .. descriptions[112],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22165,7 +22321,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindBuffer(GLenum target, GLuint buffer)\n```\n' .. descriptions[113],
+      value = "```c\n" .. table.concat(signatures[113], "\n") .. "\n```\n" .. descriptions[113],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22174,8 +22330,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindBufferBase(GLenum target, GLuint index, GLuint buffer)\n```\n'
-        .. descriptions[114],
+      value = "```c\n" .. table.concat(signatures[114], "\n") .. "\n```\n" .. descriptions[114],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22184,8 +22339,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindBufferRange(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size)\n```\n'
-        .. descriptions[115],
+      value = "```c\n" .. table.concat(signatures[115], "\n") .. "\n```\n" .. descriptions[115],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22194,8 +22348,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindBuffersBase(GLenum target, GLuint first, GLsizei count, const GLuint *buffers)\n```\n'
-        .. descriptions[116],
+      value = "```c\n" .. table.concat(signatures[116], "\n") .. "\n```\n" .. descriptions[116],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22204,8 +22357,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindBuffersRange(GLenum target, GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLintptr *sizes)\n```\n'
-        .. descriptions[117],
+      value = "```c\n" .. table.concat(signatures[117], "\n") .. "\n```\n" .. descriptions[117],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22214,8 +22366,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindFragDataLocation(GLuint program, GLuint colorNumber, const char * name)\n```\n'
-        .. descriptions[118],
+      value = "```c\n" .. table.concat(signatures[118], "\n") .. "\n```\n" .. descriptions[118],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22224,8 +22375,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindFragDataLocationIndexed(GLuint program, GLuint colorNumber, GLuint index, const char *name)\n```\n'
-        .. descriptions[119],
+      value = "```c\n" .. table.concat(signatures[119], "\n") .. "\n```\n" .. descriptions[119],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22234,8 +22384,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindFramebuffer(GLenum target, GLuint framebuffer)\n```\n'
-        .. descriptions[120],
+      value = "```c\n" .. table.concat(signatures[120], "\n") .. "\n```\n" .. descriptions[120],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22244,8 +22393,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindImageTexture(GLuint unit, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLenum format)\n```\n'
-        .. descriptions[121],
+      value = "```c\n" .. table.concat(signatures[121], "\n") .. "\n```\n" .. descriptions[121],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22254,8 +22402,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindImageTextures(GLuint first, GLsizei count, const GLuint *textures)\n```\n'
-        .. descriptions[122],
+      value = "```c\n" .. table.concat(signatures[122], "\n") .. "\n```\n" .. descriptions[122],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22264,7 +22411,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindProgramPipeline(GLuint pipeline)\n```\n' .. descriptions[123],
+      value = "```c\n" .. table.concat(signatures[123], "\n") .. "\n```\n" .. descriptions[123],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22273,8 +22420,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindRenderbuffer(GLenum target, GLuint renderbuffer)\n```\n'
-        .. descriptions[124],
+      value = "```c\n" .. table.concat(signatures[124], "\n") .. "\n```\n" .. descriptions[124],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22283,7 +22429,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindSampler(GLuint unit, GLuint sampler)\n```\n' .. descriptions[125],
+      value = "```c\n" .. table.concat(signatures[125], "\n") .. "\n```\n" .. descriptions[125],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22292,8 +22438,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindSamplers(GLuint first, GLsizei count, const GLuint *samplers)\n```\n'
-        .. descriptions[126],
+      value = "```c\n" .. table.concat(signatures[126], "\n") .. "\n```\n" .. descriptions[126],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22302,8 +22447,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindTexture(GLenum target, GLuint texture)\n```\n'
-        .. descriptions[127],
+      value = "```c\n" .. table.concat(signatures[127], "\n") .. "\n```\n" .. descriptions[127],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22312,8 +22456,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindTextureUnit(GLuint unit, GLuint texture)\n```\n'
-        .. descriptions[128],
+      value = "```c\n" .. table.concat(signatures[128], "\n") .. "\n```\n" .. descriptions[128],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22322,8 +22465,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindTextures(GLuint first, GLsizei count, const GLuint *textures)\n```\n'
-        .. descriptions[129],
+      value = "```c\n" .. table.concat(signatures[129], "\n") .. "\n```\n" .. descriptions[129],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22332,8 +22474,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindTransformFeedback(GLenum target, GLuint id)\n```\n'
-        .. descriptions[130],
+      value = "```c\n" .. table.concat(signatures[130], "\n") .. "\n```\n" .. descriptions[130],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22342,7 +22483,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindVertexArray(GLuint array)\n```\n' .. descriptions[131],
+      value = "```c\n" .. table.concat(signatures[131], "\n") .. "\n```\n" .. descriptions[131],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22351,8 +22492,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindVertexBuffer(GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride)\n```\n'
-        .. descriptions[132],
+      value = "```c\n" .. table.concat(signatures[132], "\n") .. "\n```\n" .. descriptions[132],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22361,8 +22501,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexArrayVertexBuffer(GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride)\n```\n'
-        .. descriptions[132],
+      value = "```c\n" .. table.concat(signatures[132], "\n") .. "\n```\n" .. descriptions[132],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22371,8 +22510,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBindVertexBuffers(GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizei *strides)\n```\n'
-        .. descriptions[133],
+      value = "```c\n" .. table.concat(signatures[133], "\n") .. "\n```\n" .. descriptions[133],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22381,8 +22519,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexArrayVertexBuffers(GLuint vaobj, GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizei *strides)\n```\n'
-        .. descriptions[133],
+      value = "```c\n" .. table.concat(signatures[133], "\n") .. "\n```\n" .. descriptions[133],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22391,8 +22528,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBlendColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)\n```\n'
-        .. descriptions[134],
+      value = "```c\n" .. table.concat(signatures[134], "\n") .. "\n```\n" .. descriptions[134],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22401,7 +22537,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBlendEquation(GLenum mode)\n```\n' .. descriptions[135],
+      value = "```c\n" .. table.concat(signatures[135], "\n") .. "\n```\n" .. descriptions[135],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22410,7 +22546,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBlendEquationi(GLuint buf, GLenum mode)\n```\n' .. descriptions[135],
+      value = "```c\n" .. table.concat(signatures[135], "\n") .. "\n```\n" .. descriptions[135],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22419,8 +22555,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBlendEquationSeparate(GLenum modeRGB, GLenum modeAlpha)\n```\n'
-        .. descriptions[136],
+      value = "```c\n" .. table.concat(signatures[136], "\n") .. "\n```\n" .. descriptions[136],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22429,8 +22564,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBlendEquationSeparatei(GLuint buf, GLenum modeRGB, GLenum modeAlpha)\n```\n'
-        .. descriptions[137],
+      value = "```c\n" .. table.concat(signatures[137], "\n") .. "\n```\n" .. descriptions[137],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22439,7 +22573,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBlendFunc(GLenum sfactor, GLenum dfactor)\n```\n' .. descriptions[138],
+      value = "```c\n" .. table.concat(signatures[138], "\n") .. "\n```\n" .. descriptions[138],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22448,8 +22582,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBlendFunci(GLuint buf, GLenum sfactor, GLenum dfactor)\n```\n'
-        .. descriptions[138],
+      value = "```c\n" .. table.concat(signatures[138], "\n") .. "\n```\n" .. descriptions[138],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22458,8 +22591,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBlendFuncSeparate(GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha)\n```\n'
-        .. descriptions[139],
+      value = "```c\n" .. table.concat(signatures[139], "\n") .. "\n```\n" .. descriptions[139],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22468,8 +22600,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetVertexAttribfv(GLuint index, GLenum pname, GLfloat *params)\n```\n'
-        .. descriptions[29],
+      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22478,8 +22609,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBlendFuncSeparatei(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha)\n```\n'
-        .. descriptions[140],
+      value = "```c\n" .. table.concat(signatures[140], "\n") .. "\n```\n" .. descriptions[140],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22488,8 +22618,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetVertexAttribiv(GLuint index, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[29],
+      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22498,8 +22627,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBlitFramebuffer(\n  GLint srcX0,\n  GLint srcY0,\n  GLint srcX1,\n  GLint srcY1,\n  GLint dstX0,\n  GLint dstY0,\n  GLint dstX1,\n  GLint dstY1,\n  GLbitfield mask,\n  GLenum filter\n)\n```\n'
-        .. descriptions[141],
+      value = "```c\n" .. table.concat(signatures[141], "\n") .. "\n```\n" .. descriptions[141],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22508,8 +22636,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetVertexAttribIiv(GLuint index, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[29],
+      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22518,8 +22645,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBlitNamedFramebuffer(\n  GLuint readFramebuffer,\n  GLuint drawFramebuffer,\n  GLint srcX0,\n  GLint srcY0,\n  GLint srcX1,\n  GLint srcY1,\n  GLint dstX0,\n  GLint dstY0,\n  GLint dstX1,\n  GLint dstY1,\n  GLbitfield mask,\n  GLenum filter\n)\n```\n'
-        .. descriptions[141],
+      value = "```c\n" .. table.concat(signatures[141], "\n") .. "\n```\n" .. descriptions[141],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22528,8 +22654,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetVertexAttribIuiv(GLuint index, GLenum pname, GLuint *params)\n```\n'
-        .. descriptions[29],
+      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22538,8 +22663,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBufferData(GLenum target, GLsizeiptr size, const void * data, GLenum usage)\n```\n'
-        .. descriptions[142],
+      value = "```c\n" .. table.concat(signatures[142], "\n") .. "\n```\n" .. descriptions[142],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22548,8 +22672,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetVertexAttribLdv(GLuint index, GLenum pname, GLdouble *params)\n```\n'
-        .. descriptions[29],
+      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22558,8 +22681,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedBufferData(GLuint buffer, GLsizeiptr size, const void *data, GLenum usage)\n```\n'
-        .. descriptions[142],
+      value = "```c\n" .. table.concat(signatures[142], "\n") .. "\n```\n" .. descriptions[142],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22568,8 +22690,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetVertexAttribPointerv(GLuint index, GLenum pname, void **pointer)\n```\n'
-        .. descriptions[143],
+      value = "```c\n" .. table.concat(signatures[143], "\n") .. "\n```\n" .. descriptions[143],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22578,8 +22699,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBufferStorage(GLenum target, GLsizeiptr size, const void * data, GLbitfield flags)\n```\n'
-        .. descriptions[144],
+      value = "```c\n" .. table.concat(signatures[144], "\n") .. "\n```\n" .. descriptions[144],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22588,7 +22708,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glHint(GLenum target, GLenum mode)\n```\n' .. descriptions[145],
+      value = "```c\n" .. table.concat(signatures[145], "\n") .. "\n```\n" .. descriptions[145],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22597,8 +22717,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedBufferStorage(GLuint buffer, GLsizeiptr size, const void *data, GLbitfield flags)\n```\n'
-        .. descriptions[144],
+      value = "```c\n" .. table.concat(signatures[144], "\n") .. "\n```\n" .. descriptions[144],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22607,7 +22726,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glInvalidateBufferData(GLuint buffer)\n```\n' .. descriptions[146],
+      value = "```c\n" .. table.concat(signatures[146], "\n") .. "\n```\n" .. descriptions[146],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22616,8 +22735,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, const void * data)\n```\n'
-        .. descriptions[147],
+      value = "```c\n" .. table.concat(signatures[147], "\n") .. "\n```\n" .. descriptions[147],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22626,8 +22744,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glInvalidateBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr length)\n```\n'
-        .. descriptions[148],
+      value = "```c\n" .. table.concat(signatures[148], "\n") .. "\n```\n" .. descriptions[148],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22636,8 +22753,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, const void *data)\n```\n'
-        .. descriptions[147],
+      value = "```c\n" .. table.concat(signatures[147], "\n") .. "\n```\n" .. descriptions[147],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22646,8 +22762,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glInvalidateFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments)\n```\n'
-        .. descriptions[149],
+      value = "```c\n" .. table.concat(signatures[149], "\n") .. "\n```\n" .. descriptions[149],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22656,7 +22771,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLenum glCheckFramebufferStatus(GLenum target)\n```\n' .. descriptions[150],
+      value = "```c\n" .. table.concat(signatures[150], "\n") .. "\n```\n" .. descriptions[150],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22665,8 +22780,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glInvalidateNamedFramebufferData(GLuint framebuffer, GLsizei numAttachments, const GLenum *attachments)\n```\n'
-        .. descriptions[149],
+      value = "```c\n" .. table.concat(signatures[149], "\n") .. "\n```\n" .. descriptions[149],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22675,8 +22789,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLenum glCheckNamedFramebufferStatus(GLuint framebuffer, GLenum target)\n```\n'
-        .. descriptions[150],
+      value = "```c\n" .. table.concat(signatures[150], "\n") .. "\n```\n" .. descriptions[150],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22685,8 +22798,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glInvalidateSubFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments, GLint x, GLint y, GLint width, GLint height)\n```\n'
-        .. descriptions[151],
+      value = "```c\n" .. table.concat(signatures[151], "\n") .. "\n```\n" .. descriptions[151],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22695,7 +22807,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClampColor(GLenum target, GLenum clamp)\n```\n' .. descriptions[152],
+      value = "```c\n" .. table.concat(signatures[152], "\n") .. "\n```\n" .. descriptions[152],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22704,8 +22816,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glInvalidateNamedFramebufferSubData(\n  GLuint framebuffer,\n  GLsizei numAttachments,\n  const GLenum *attachments,\n  GLint x,\n  GLint y,\n  GLsizei width,\n  GLsizei height\n)\n```\n'
-        .. descriptions[151],
+      value = "```c\n" .. table.concat(signatures[151], "\n") .. "\n```\n" .. descriptions[151],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22714,7 +22825,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClear(GLbitfield mask)\n```\n' .. descriptions[153],
+      value = "```c\n" .. table.concat(signatures[153], "\n") .. "\n```\n" .. descriptions[153],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22723,8 +22834,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glInvalidateTexImage(GLuint texture, GLint level)\n```\n'
-        .. descriptions[154],
+      value = "```c\n" .. table.concat(signatures[154], "\n") .. "\n```\n" .. descriptions[154],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22733,8 +22843,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearBufferiv(GLenum buffer, GLint drawbuffer, const GLint * value)\n```\n'
-        .. descriptions[155],
+      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22743,8 +22852,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glInvalidateTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth)\n```\n'
-        .. descriptions[156],
+      value = "```c\n" .. table.concat(signatures[156], "\n") .. "\n```\n" .. descriptions[156],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22753,8 +22861,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearBufferuiv(GLenum buffer, GLint drawbuffer, const GLuint * value)\n```\n'
-        .. descriptions[155],
+      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22763,7 +22870,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsBuffer(GLuint buffer)\n```\n' .. descriptions[157],
+      value = "```c\n" .. table.concat(signatures[157], "\n") .. "\n```\n" .. descriptions[157],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22772,8 +22879,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearBufferfv(GLenum buffer, GLint drawbuffer, const GLfloat * value)\n```\n'
-        .. descriptions[155],
+      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22782,7 +22888,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsEnabled(GLenum cap)\n```\n' .. descriptions[158],
+      value = "```c\n" .. table.concat(signatures[158], "\n") .. "\n```\n" .. descriptions[158],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22791,8 +22897,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearBufferfi(GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil)\n```\n'
-        .. descriptions[155],
+      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22801,7 +22906,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsEnabledi(GLenum cap, GLuint index)\n```\n' .. descriptions[158],
+      value = "```c\n" .. table.concat(signatures[158], "\n") .. "\n```\n" .. descriptions[158],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22810,8 +22915,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearNamedFramebufferiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLint *value)\n```\n'
-        .. descriptions[155],
+      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22820,7 +22924,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsFramebuffer(GLuint framebuffer)\n```\n' .. descriptions[159],
+      value = "```c\n" .. table.concat(signatures[159], "\n") .. "\n```\n" .. descriptions[159],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22829,8 +22933,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearNamedFramebufferuiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLuint *value)\n```\n'
-        .. descriptions[155],
+      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22839,7 +22942,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsProgram(GLuint program)\n```\n' .. descriptions[160],
+      value = "```c\n" .. table.concat(signatures[160], "\n") .. "\n```\n" .. descriptions[160],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22848,8 +22951,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearNamedFramebufferfv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLfloat *value)\n```\n'
-        .. descriptions[155],
+      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22858,7 +22960,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsProgramPipeline(GLuint pipeline)\n```\n' .. descriptions[161],
+      value = "```c\n" .. table.concat(signatures[161], "\n") .. "\n```\n" .. descriptions[161],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22867,8 +22969,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearNamedFramebufferfi(GLuint framebuffer, GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil)\n```\n'
-        .. descriptions[155],
+      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22877,7 +22978,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsQuery(GLuint id)\n```\n' .. descriptions[162],
+      value = "```c\n" .. table.concat(signatures[162], "\n") .. "\n```\n" .. descriptions[162],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22886,8 +22987,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearBufferData(GLenum target, GLenum internalformat, GLenum format, GLenum type, const void * data)\n```\n'
-        .. descriptions[163],
+      value = "```c\n" .. table.concat(signatures[163], "\n") .. "\n```\n" .. descriptions[163],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22896,7 +22996,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsRenderbuffer(GLuint renderbuffer)\n```\n' .. descriptions[164],
+      value = "```c\n" .. table.concat(signatures[164], "\n") .. "\n```\n" .. descriptions[164],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22905,8 +23005,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearNamedBufferData(GLuint buffer, GLenum internalformat, GLenum format, GLenum type, const void *data)\n```\n'
-        .. descriptions[163],
+      value = "```c\n" .. table.concat(signatures[163], "\n") .. "\n```\n" .. descriptions[163],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22915,8 +23014,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearBufferSubData(GLenum target, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void * data)\n```\n'
-        .. descriptions[165],
+      value = "```c\n" .. table.concat(signatures[165], "\n") .. "\n```\n" .. descriptions[165],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22925,8 +23023,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearNamedBufferSubData(GLuint buffer, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void *data)\n```\n'
-        .. descriptions[165],
+      value = "```c\n" .. table.concat(signatures[165], "\n") .. "\n```\n" .. descriptions[165],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22935,8 +23032,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)\n```\n'
-        .. descriptions[166],
+      value = "```c\n" .. table.concat(signatures[166], "\n") .. "\n```\n" .. descriptions[166],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22945,7 +23041,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearDepth(GLdouble depth)\n```\n' .. descriptions[167],
+      value = "```c\n" .. table.concat(signatures[167], "\n") .. "\n```\n" .. descriptions[167],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22954,7 +23050,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearDepthf(GLfloat depth)\n```\n' .. descriptions[167],
+      value = "```c\n" .. table.concat(signatures[167], "\n") .. "\n```\n" .. descriptions[167],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22963,7 +23059,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearStencil(GLint s)\n```\n' .. descriptions[168],
+      value = "```c\n" .. table.concat(signatures[168], "\n") .. "\n```\n" .. descriptions[168],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22972,8 +23068,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearTexImage(GLuint texture, GLint level, GLenum format, GLenum type, const void * data)\n```\n'
-        .. descriptions[169],
+      value = "```c\n" .. table.concat(signatures[169], "\n") .. "\n```\n" .. descriptions[169],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22982,8 +23077,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClearTexSubImage(\n  GLuint texture,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLint zoffset,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLenum format,\n  GLenum type,\n  const void * data\n)\n```\n'
-        .. descriptions[170],
+      value = "```c\n" .. table.concat(signatures[170], "\n") .. "\n```\n" .. descriptions[170],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22992,8 +23086,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLenum glClientWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout)\n```\n'
-        .. descriptions[171],
+      value = "```c\n" .. table.concat(signatures[171], "\n") .. "\n```\n" .. descriptions[171],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23002,7 +23095,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glClipControl(GLenum origin, GLenum depth)\n```\n' .. descriptions[172],
+      value = "```c\n" .. table.concat(signatures[172], "\n") .. "\n```\n" .. descriptions[172],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23011,8 +23104,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glColorMask(GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha)\n```\n'
-        .. descriptions[173],
+      value = "```c\n" .. table.concat(signatures[173], "\n") .. "\n```\n" .. descriptions[173],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23021,8 +23113,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glColorMaski(GLuint buf, GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha)\n```\n'
-        .. descriptions[173],
+      value = "```c\n" .. table.concat(signatures[173], "\n") .. "\n```\n" .. descriptions[173],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23031,7 +23122,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCompileShader(GLuint shader)\n```\n' .. descriptions[174],
+      value = "```c\n" .. table.concat(signatures[174], "\n") .. "\n```\n" .. descriptions[174],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23040,8 +23131,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCompressedTexImage1D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void * data)\n```\n'
-        .. descriptions[175],
+      value = "```c\n" .. table.concat(signatures[175], "\n") .. "\n```\n" .. descriptions[175],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23050,8 +23140,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCompressedTexImage2D(\n  GLenum target,\n  GLint level,\n  GLenum internalformat,\n  GLsizei width,\n  GLsizei height,\n  GLint border,\n  GLsizei imageSize,\n  const void * data\n)\n```\n'
-        .. descriptions[176],
+      value = "```c\n" .. table.concat(signatures[176], "\n") .. "\n```\n" .. descriptions[176],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23060,8 +23149,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCompressedTexImage3D(\n  GLenum target,\n  GLint level,\n  GLenum internalformat,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLint border,\n  GLsizei imageSize,\n  const void * data\n)\n```\n'
-        .. descriptions[177],
+      value = "```c\n" .. table.concat(signatures[177], "\n") .. "\n```\n" .. descriptions[177],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23070,8 +23158,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void * data)\n```\n'
-        .. descriptions[178],
+      value = "```c\n" .. table.concat(signatures[178], "\n") .. "\n```\n" .. descriptions[178],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23080,8 +23167,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCompressedTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data)\n```\n'
-        .. descriptions[178],
+      value = "```c\n" .. table.concat(signatures[178], "\n") .. "\n```\n" .. descriptions[178],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23090,8 +23176,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCompressedTexSubImage2D(\n  GLenum target,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLsizei width,\n  GLsizei height,\n  GLenum format,\n  GLsizei imageSize,\n  const void * data\n)\n```\n'
-        .. descriptions[179],
+      value = "```c\n" .. table.concat(signatures[179], "\n") .. "\n```\n" .. descriptions[179],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23100,8 +23185,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCompressedTextureSubImage2D(\n  GLuint texture,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLsizei width,\n  GLsizei height,\n  GLenum format,\n  GLsizei imageSize,\n  const void *data\n)\n```\n'
-        .. descriptions[179],
+      value = "```c\n" .. table.concat(signatures[179], "\n") .. "\n```\n" .. descriptions[179],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23110,8 +23194,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCompressedTexSubImage3D(\n  GLenum target,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLint zoffset,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLenum format,\n  GLsizei imageSize,\n  const void * data\n)\n```\n'
-        .. descriptions[180],
+      value = "```c\n" .. table.concat(signatures[180], "\n") .. "\n```\n" .. descriptions[180],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23120,8 +23203,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCompressedTextureSubImage3D(\n  GLuint texture,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLint zoffset,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLenum format,\n  GLsizei imageSize,\n  const void *data\n)\n```\n'
-        .. descriptions[180],
+      value = "```c\n" .. table.concat(signatures[180], "\n") .. "\n```\n" .. descriptions[180],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23130,8 +23212,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCopyBufferSubData(GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size)\n```\n'
-        .. descriptions[181],
+      value = "```c\n" .. table.concat(signatures[181], "\n") .. "\n```\n" .. descriptions[181],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23140,8 +23221,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCopyNamedBufferSubData(GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size)\n```\n'
-        .. descriptions[181],
+      value = "```c\n" .. table.concat(signatures[181], "\n") .. "\n```\n" .. descriptions[181],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23150,8 +23230,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCopyImageSubData(\n  GLuint srcName,\n  GLenum srcTarget,\n  GLint srcLevel,\n  GLint srcX,\n  GLint srcY,\n  GLint srcZ,\n  GLuint dstName,\n  GLenum dstTarget,\n  GLint dstLevel,\n  GLint dstX,\n  GLint dstY,\n  GLint dstZ,\n  GLsizei srcWidth,\n  GLsizei srcHeight,\n  GLsizei srcDepth\n)\n```\n'
-        .. descriptions[182],
+      value = "```c\n" .. table.concat(signatures[182], "\n") .. "\n```\n" .. descriptions[182],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23160,8 +23239,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCopyTexImage1D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border)\n```\n'
-        .. descriptions[183],
+      value = "```c\n" .. table.concat(signatures[183], "\n") .. "\n```\n" .. descriptions[183],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23170,8 +23248,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCopyTexImage2D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border)\n```\n'
-        .. descriptions[184],
+      value = "```c\n" .. table.concat(signatures[184], "\n") .. "\n```\n" .. descriptions[184],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23180,8 +23257,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCopyTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width)\n```\n'
-        .. descriptions[185],
+      value = "```c\n" .. table.concat(signatures[185], "\n") .. "\n```\n" .. descriptions[185],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23190,8 +23266,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCopyTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width)\n```\n'
-        .. descriptions[185],
+      value = "```c\n" .. table.concat(signatures[185], "\n") .. "\n```\n" .. descriptions[185],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23200,8 +23275,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCopyTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[186],
+      value = "```c\n" .. table.concat(signatures[186], "\n") .. "\n```\n" .. descriptions[186],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23210,8 +23284,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCopyTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[186],
+      value = "```c\n" .. table.concat(signatures[186], "\n") .. "\n```\n" .. descriptions[186],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23220,8 +23293,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCopyTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[187],
+      value = "```c\n" .. table.concat(signatures[187], "\n") .. "\n```\n" .. descriptions[187],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23230,8 +23302,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCopyTextureSubImage3D(\n  GLuint texture,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLint zoffset,\n  GLint x,\n  GLint y,\n  GLsizei width,\n  GLsizei height\n)\n```\n'
-        .. descriptions[187],
+      value = "```c\n" .. table.concat(signatures[187], "\n") .. "\n```\n" .. descriptions[187],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23240,7 +23311,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCreateBuffers(GLsizei n, GLuint *buffers)\n```\n' .. descriptions[188],
+      value = "```c\n" .. table.concat(signatures[188], "\n") .. "\n```\n" .. descriptions[188],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23249,8 +23320,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCreateFramebuffers(GLsizei n, GLuint *framebuffers)\n```\n'
-        .. descriptions[189],
+      value = "```c\n" .. table.concat(signatures[189], "\n") .. "\n```\n" .. descriptions[189],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23259,7 +23329,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLuint glCreateProgram(void)\n```\n' .. descriptions[190],
+      value = "```c\n" .. table.concat(signatures[190], "\n") .. "\n```\n" .. descriptions[190],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23268,8 +23338,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCreateProgramPipelines(GLsizei n, GLuint *pipelines)\n```\n'
-        .. descriptions[191],
+      value = "```c\n" .. table.concat(signatures[191], "\n") .. "\n```\n" .. descriptions[191],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23278,8 +23347,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCreateQueries(GLenum target, GLsizei n, GLuint *ids)\n```\n'
-        .. descriptions[192],
+      value = "```c\n" .. table.concat(signatures[192], "\n") .. "\n```\n" .. descriptions[192],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23288,8 +23356,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCreateRenderbuffers(GLsizei n, GLuint *renderbuffers)\n```\n'
-        .. descriptions[193],
+      value = "```c\n" .. table.concat(signatures[193], "\n") .. "\n```\n" .. descriptions[193],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23298,8 +23365,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCreateSamplers(GLsizei n, GLuint *samplers)\n```\n'
-        .. descriptions[194],
+      value = "```c\n" .. table.concat(signatures[194], "\n") .. "\n```\n" .. descriptions[194],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23308,7 +23374,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLuint glCreateShader(GLenum shaderType)\n```\n' .. descriptions[195],
+      value = "```c\n" .. table.concat(signatures[195], "\n") .. "\n```\n" .. descriptions[195],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23317,8 +23383,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLuint glCreateShaderProgramv(GLenum type, GLsizei count, const char **strings)\n```\n'
-        .. descriptions[196],
+      value = "```c\n" .. table.concat(signatures[196], "\n") .. "\n```\n" .. descriptions[196],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23327,8 +23392,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCreateTextures(GLenum target, GLsizei n, GLuint *textures)\n```\n'
-        .. descriptions[197],
+      value = "```c\n" .. table.concat(signatures[197], "\n") .. "\n```\n" .. descriptions[197],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23337,8 +23401,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCreateTransformFeedbacks(GLsizei n, GLuint *ids)\n```\n'
-        .. descriptions[198],
+      value = "```c\n" .. table.concat(signatures[198], "\n") .. "\n```\n" .. descriptions[198],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23347,8 +23410,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCreateVertexArrays(GLsizei n, GLuint *arrays)\n```\n'
-        .. descriptions[199],
+      value = "```c\n" .. table.concat(signatures[199], "\n") .. "\n```\n" .. descriptions[199],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23357,7 +23419,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glCullFace(GLenum mode)\n```\n' .. descriptions[200],
+      value = "```c\n" .. table.concat(signatures[200], "\n") .. "\n```\n" .. descriptions[200],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23366,8 +23428,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDebugMessageCallback(DEBUGPROC callback, const void * userParam)\n```\n'
-        .. descriptions[201],
+      value = "```c\n" .. table.concat(signatures[201], "\n") .. "\n```\n" .. descriptions[201],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23376,8 +23437,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDebugMessageControl(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled)\n```\n'
-        .. descriptions[202],
+      value = "```c\n" .. table.concat(signatures[202], "\n") .. "\n```\n" .. descriptions[202],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23386,8 +23446,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDebugMessageInsert(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const char *message)\n```\n'
-        .. descriptions[203],
+      value = "```c\n" .. table.concat(signatures[203], "\n") .. "\n```\n" .. descriptions[203],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23396,8 +23455,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteBuffers(GLsizei n, const GLuint * buffers)\n```\n'
-        .. descriptions[204],
+      value = "```c\n" .. table.concat(signatures[204], "\n") .. "\n```\n" .. descriptions[204],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23406,8 +23464,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteFramebuffers(GLsizei n, GLuint *framebuffers)\n```\n'
-        .. descriptions[205],
+      value = "```c\n" .. table.concat(signatures[205], "\n") .. "\n```\n" .. descriptions[205],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23416,7 +23473,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteProgram(GLuint program)\n```\n' .. descriptions[206],
+      value = "```c\n" .. table.concat(signatures[206], "\n") .. "\n```\n" .. descriptions[206],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23425,8 +23482,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteProgramPipelines(GLsizei n, const GLuint *pipelines)\n```\n'
-        .. descriptions[207],
+      value = "```c\n" .. table.concat(signatures[207], "\n") .. "\n```\n" .. descriptions[207],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23435,8 +23491,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteQueries(GLsizei n, const GLuint * ids)\n```\n'
-        .. descriptions[208],
+      value = "```c\n" .. table.concat(signatures[208], "\n") .. "\n```\n" .. descriptions[208],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23445,8 +23500,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib3fv(GLuint index, const GLfloat *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23455,8 +23509,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib3sv(GLuint index, const GLshort *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23465,8 +23518,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib3dv(GLuint index, const GLdouble *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23475,8 +23527,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI3iv(GLuint index, const GLint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23485,8 +23536,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI3uiv(GLuint index, const GLuint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23495,8 +23545,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4fv(GLuint index, const GLfloat *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23505,8 +23554,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4sv(GLuint index, const GLshort *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23515,8 +23563,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4dv(GLuint index, const GLdouble *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23525,8 +23572,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4iv(GLuint index, const GLint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23535,8 +23581,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4bv(GLuint index, const GLbyte *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23545,8 +23590,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4ubv(GLuint index, const GLubyte *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23555,8 +23599,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4usv(GLuint index, const GLushort *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23565,8 +23608,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4uiv(GLuint index, const GLuint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23575,8 +23617,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4Nbv(GLuint index, const GLbyte *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23585,8 +23626,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4Nsv(GLuint index, const GLshort *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23595,8 +23635,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4Niv(GLuint index, const GLint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23605,8 +23644,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4Nubv(GLuint index, const GLubyte *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23615,8 +23653,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4Nusv(GLuint index, const GLushort *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23625,8 +23662,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4Nuiv(GLuint index, const GLuint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23635,8 +23671,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI4bv(GLuint index, const GLbyte *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23645,8 +23680,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI4ubv(GLuint index, const GLubyte *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23655,8 +23689,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI4sv(GLuint index, const GLshort *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23665,8 +23698,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI4usv(GLuint index, const GLushort *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23675,8 +23707,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI4iv(GLuint index, const GLint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23685,8 +23716,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI4uiv(GLuint index, const GLuint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23695,8 +23725,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribL1dv(GLuint index, const GLdouble *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23705,8 +23734,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribL2dv(GLuint index, const GLdouble *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23715,8 +23743,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribL3dv(GLuint index, const GLdouble *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23725,8 +23752,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribL4dv(GLuint index, const GLdouble *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23735,8 +23761,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI2uiv(GLuint index, const GLuint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23745,8 +23770,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI2iv(GLuint index, const GLint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23755,8 +23779,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib2dv(GLuint index, const GLdouble *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23765,8 +23788,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib2sv(GLuint index, const GLshort *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23775,8 +23797,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib2fv(GLuint index, const GLfloat *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23785,8 +23806,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI1uiv(GLuint index, const GLuint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23795,8 +23815,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI1iv(GLuint index, const GLint *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23805,8 +23824,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib1dv(GLuint index, const GLdouble *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23815,8 +23833,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib1sv(GLuint index, const GLshort *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23825,8 +23842,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib1fv(GLuint index, const GLfloat *v)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23835,8 +23851,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribL4d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23845,8 +23860,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribL3d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23855,8 +23869,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribL2d(GLuint index, GLdouble v0, GLdouble v1)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23865,7 +23878,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribL1d(GLuint index, GLdouble v0)\n```\n' .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23874,8 +23887,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI4ui(GLuint index, GLuint v0, GLuint v1, GLuint v2, GLuint v3)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23884,8 +23896,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI4i(GLuint index, GLint v0, GLint v1, GLint v2, GLint v3)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23894,8 +23905,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4Nub(GLuint index, GLubyte v0, GLubyte v1, GLubyte v2, GLubyte v3)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23904,8 +23914,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23914,8 +23923,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glActiveShaderProgram(GLuint pipeline, GLuint program)\n```\n'
-        .. descriptions[209],
+      value = "```c\n" .. table.concat(signatures[209], "\n") .. "\n```\n" .. descriptions[209],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23924,8 +23932,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4s(GLuint index, GLshort v0, GLshort v1, GLshort v2, GLshort v3)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23934,7 +23941,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glActiveTexture(GLenum texture)\n```\n' .. descriptions[210],
+      value = "```c\n" .. table.concat(signatures[210], "\n") .. "\n```\n" .. descriptions[210],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23943,8 +23950,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib4f(GLuint index, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23953,8 +23959,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glAttachShader(GLuint program, GLuint shader)\n```\n'
-        .. descriptions[211],
+      value = "```c\n" .. table.concat(signatures[211], "\n") .. "\n```\n" .. descriptions[211],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23963,8 +23968,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI3ui(GLuint index, GLuint v0, GLuint v1, GLuint v2)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23973,8 +23977,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI3i(GLuint index, GLint v0, GLint v1, GLint v2)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23983,8 +23986,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib3d(GLuint index, GLdouble v0, GLdouble v1, GLdouble v2)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23993,8 +23995,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib3s(GLuint index, GLshort v0, GLshort v1, GLshort v2)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24003,8 +24004,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib3f(GLuint index, GLfloat v0, GLfloat v1, GLfloat v2)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24013,8 +24013,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI2ui(GLuint index, GLuint v0, GLuint v1)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24023,8 +24022,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI2i(GLuint index, GLint v0, GLint v1)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24033,8 +24031,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib2d(GLuint index, GLdouble v0, GLdouble v1)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24043,8 +24040,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib2s(GLuint index, GLshort v0, GLshort v1)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24053,8 +24049,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib2f(GLuint index, GLfloat v0, GLfloat v1)\n```\n'
-        .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24063,7 +24058,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI1ui(GLuint index, GLuint v0)\n```\n' .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24072,7 +24067,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttribI1i(GLuint index, GLint v0)\n```\n' .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24081,7 +24076,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib1d(GLuint index, GLdouble v0)\n```\n' .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24090,7 +24085,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib1s(GLuint index, GLshort v0)\n```\n' .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24099,7 +24094,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexAttrib1f(GLuint index, GLfloat v0)\n```\n' .. descriptions[98],
+      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24108,8 +24103,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glVertexArrayElementBuffer(GLuint vaobj, GLuint buffer)\n```\n'
-        .. descriptions[212],
+      value = "```c\n" .. table.concat(signatures[212], "\n") .. "\n```\n" .. descriptions[212],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24118,7 +24112,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glValidateProgramPipeline(GLuint pipeline)\n```\n' .. descriptions[213],
+      value = "```c\n" .. table.concat(signatures[213], "\n") .. "\n```\n" .. descriptions[213],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24127,7 +24121,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glValidateProgram(GLuint program)\n```\n' .. descriptions[214],
+      value = "```c\n" .. table.concat(signatures[214], "\n") .. "\n```\n" .. descriptions[214],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24136,8 +24130,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUseProgramStages(GLuint pipeline, GLbitfield stages, GLuint program)\n```\n'
-        .. descriptions[215],
+      value = "```c\n" .. table.concat(signatures[215], "\n") .. "\n```\n" .. descriptions[215],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24146,7 +24139,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUseProgram(GLuint program)\n```\n' .. descriptions[216],
+      value = "```c\n" .. table.concat(signatures[216], "\n") .. "\n```\n" .. descriptions[216],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24155,7 +24148,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glUnmapNamedBuffer(GLuint buffer)\n```\n' .. descriptions[217],
+      value = "```c\n" .. table.concat(signatures[217], "\n") .. "\n```\n" .. descriptions[217],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24164,7 +24157,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glUnmapBuffer(GLenum target)\n```\n' .. descriptions[217],
+      value = "```c\n" .. table.concat(signatures[217], "\n") .. "\n```\n" .. descriptions[217],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24173,8 +24166,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniformSubroutinesuiv(GLenum shadertype, GLsizei count, const GLuint *indices)\n```\n'
-        .. descriptions[218],
+      value = "```c\n" .. table.concat(signatures[218], "\n") .. "\n```\n" .. descriptions[218],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24183,8 +24175,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniformBlockBinding(GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding)\n```\n'
-        .. descriptions[219],
+      value = "```c\n" .. table.concat(signatures[219], "\n") .. "\n```\n" .. descriptions[219],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24193,8 +24184,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniformMatrix4x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24203,8 +24193,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniformMatrix3x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24213,8 +24202,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniformMatrix4x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24223,8 +24211,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24233,8 +24220,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniformMatrix3x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24243,8 +24229,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniformMatrix2x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24253,8 +24238,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniformMatrix4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24263,8 +24247,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureParameterIiv(GLuint texture, GLenum pname, const GLint *params)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24273,8 +24256,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureParameteriv(GLuint texture, GLenum pname, const GLint *params)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24283,8 +24265,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureParameterfv(GLuint texture, GLenum pname, const GLfloat *params)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24293,8 +24274,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexParameterIuiv(GLenum target, GLenum pname, const GLuint * params)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24303,8 +24283,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexParameterIiv(GLenum target, GLenum pname, const GLint * params)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24313,8 +24292,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexParameteriv(GLenum target, GLenum pname, const GLint * params)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24323,8 +24301,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexParameterfv(GLenum target, GLenum pname, const GLfloat * params)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24333,8 +24310,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureParameteri(GLuint texture, GLenum pname, GLint param)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24343,8 +24319,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureParameterf(GLuint texture, GLenum pname, GLfloat param)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24353,8 +24328,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexParameteri(GLenum target, GLenum pname, GLint param)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24363,8 +24337,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexImage3DMultisample(\n  GLenum target,\n  GLsizei samples,\n  GLenum internalformat,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLboolean fixedsamplelocations\n)\n```\n'
-        .. descriptions[220],
+      value = "```c\n" .. table.concat(signatures[220], "\n") .. "\n```\n" .. descriptions[220],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24373,8 +24346,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexImage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)\n```\n'
-        .. descriptions[221],
+      value = "```c\n" .. table.concat(signatures[221], "\n") .. "\n```\n" .. descriptions[221],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24383,8 +24355,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexImage1D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const void * data)\n```\n'
-        .. descriptions[222],
+      value = "```c\n" .. table.concat(signatures[222], "\n") .. "\n```\n" .. descriptions[222],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24393,8 +24364,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexParameterf(GLenum target, GLenum pname, GLfloat param)\n```\n'
-        .. descriptions[9],
+      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24403,8 +24373,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexImage2D(\n  GLenum target,\n  GLint level,\n  GLint internalformat,\n  GLsizei width,\n  GLsizei height,\n  GLint border,\n  GLenum format,\n  GLenum type,\n  const void * data\n)\n```\n'
-        .. descriptions[223],
+      value = "```c\n" .. table.concat(signatures[223], "\n") .. "\n```\n" .. descriptions[223],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24413,8 +24382,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexImage3D(\n  GLenum target,\n  GLint level,\n  GLint internalformat,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLint border,\n  GLenum format,\n  GLenum type,\n  const void * data\n)\n```\n'
-        .. descriptions[224],
+      value = "```c\n" .. table.concat(signatures[224], "\n") .. "\n```\n" .. descriptions[224],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24423,7 +24391,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDisable(GLenum cap)\n```\n' .. descriptions[91],
+      value = "```c\n" .. table.concat(signatures[91], "\n") .. "\n```\n" .. descriptions[91],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24432,7 +24400,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDepthFunc(GLenum func)\n```\n' .. descriptions[225],
+      value = "```c\n" .. table.concat(signatures[225], "\n") .. "\n```\n" .. descriptions[225],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24441,8 +24409,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDepthRange(GLdouble nearVal, GLdouble farVal)\n```\n'
-        .. descriptions[226],
+      value = "```c\n" .. table.concat(signatures[226], "\n") .. "\n```\n" .. descriptions[226],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24451,7 +24418,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDepthMask(GLboolean flag)\n```\n' .. descriptions[227],
+      value = "```c\n" .. table.concat(signatures[227], "\n") .. "\n```\n" .. descriptions[227],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24460,8 +24427,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDepthRangef(GLfloat nearVal, GLfloat farVal)\n```\n'
-        .. descriptions[226],
+      value = "```c\n" .. table.concat(signatures[226], "\n") .. "\n```\n" .. descriptions[226],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24470,8 +24436,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteVertexArrays(GLsizei n, const GLuint *arrays)\n```\n'
-        .. descriptions[228],
+      value = "```c\n" .. table.concat(signatures[228], "\n") .. "\n```\n" .. descriptions[228],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24480,8 +24445,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glSamplerParameterIiv(GLuint sampler, GLenum pname, const GLint *params)\n```\n'
-        .. descriptions[229],
+      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24490,8 +24454,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteTransformFeedbacks(GLsizei n, const GLuint *ids)\n```\n'
-        .. descriptions[230],
+      value = "```c\n" .. table.concat(signatures[230], "\n") .. "\n```\n" .. descriptions[230],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24500,8 +24463,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glSamplerParameterfv(GLuint sampler, GLenum pname, const GLfloat * params)\n```\n'
-        .. descriptions[229],
+      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24510,7 +24472,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteSync(GLsync sync)\n```\n' .. descriptions[231],
+      value = "```c\n" .. table.concat(signatures[231], "\n") .. "\n```\n" .. descriptions[231],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24519,8 +24481,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glSamplerParameterf(GLuint sampler, GLenum pname, GLfloat param)\n```\n'
-        .. descriptions[229],
+      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24529,7 +24490,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsSampler(GLuint id)\n```\n' .. descriptions[232],
+      value = "```c\n" .. table.concat(signatures[232], "\n") .. "\n```\n" .. descriptions[232],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24538,8 +24499,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteSamplers(GLsizei n, const GLuint * samplers)\n```\n'
-        .. descriptions[233],
+      value = "```c\n" .. table.concat(signatures[233], "\n") .. "\n```\n" .. descriptions[233],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24548,7 +24508,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsShader(GLuint shader)\n```\n' .. descriptions[234],
+      value = "```c\n" .. table.concat(signatures[234], "\n") .. "\n```\n" .. descriptions[234],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24557,8 +24517,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glSampleCoverage(GLfloat value, GLboolean invert)\n```\n'
-        .. descriptions[235],
+      value = "```c\n" .. table.concat(signatures[235], "\n") .. "\n```\n" .. descriptions[235],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24567,7 +24526,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsSync(GLsync sync)\n```\n' .. descriptions[236],
+      value = "```c\n" .. table.concat(signatures[236], "\n") .. "\n```\n" .. descriptions[236],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24576,8 +24535,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedRenderbufferStorageMultisample(GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[237],
+      value = "```c\n" .. table.concat(signatures[237], "\n") .. "\n```\n" .. descriptions[237],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24586,7 +24544,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsTexture(GLuint texture)\n```\n' .. descriptions[238],
+      value = "```c\n" .. table.concat(signatures[238], "\n") .. "\n```\n" .. descriptions[238],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24595,8 +24553,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedRenderbufferStorage(GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[239],
+      value = "```c\n" .. table.concat(signatures[239], "\n") .. "\n```\n" .. descriptions[239],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24605,7 +24562,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsTransformFeedback(GLuint id)\n```\n' .. descriptions[240],
+      value = "```c\n" .. table.concat(signatures[240], "\n") .. "\n```\n" .. descriptions[240],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24614,7 +24571,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glReleaseShaderCompiler()\n```\n' .. descriptions[241],
+      value = "```c\n" .. table.concat(signatures[241], "\n") .. "\n```\n" .. descriptions[241],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24623,7 +24580,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLboolean glIsVertexArray(GLuint array)\n```\n' .. descriptions[242],
+      value = "```c\n" .. table.concat(signatures[242], "\n") .. "\n```\n" .. descriptions[242],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24632,8 +24589,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, void * data)\n```\n'
-        .. descriptions[243],
+      value = "```c\n" .. table.concat(signatures[243], "\n") .. "\n```\n" .. descriptions[243],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24642,7 +24598,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glLineWidth(GLfloat width)\n```\n' .. descriptions[244],
+      value = "```c\n" .. table.concat(signatures[244], "\n") .. "\n```\n" .. descriptions[244],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24651,7 +24607,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glReadBuffer(GLenum mode)\n```\n' .. descriptions[245],
+      value = "```c\n" .. table.concat(signatures[245], "\n") .. "\n```\n" .. descriptions[245],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24660,7 +24616,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glLinkProgram(GLuint program)\n```\n' .. descriptions[246],
+      value = "```c\n" .. table.concat(signatures[246], "\n") .. "\n```\n" .. descriptions[246],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24669,8 +24625,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPushDebugGroup(GLenum source, GLuint id, GLsizei length, const char * message)\n```\n'
-        .. descriptions[247],
+      value = "```c\n" .. table.concat(signatures[247], "\n") .. "\n```\n" .. descriptions[247],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24679,7 +24634,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glLogicOp(GLenum opcode)\n```\n' .. descriptions[248],
+      value = "```c\n" .. table.concat(signatures[248], "\n") .. "\n```\n" .. descriptions[248],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24688,8 +24643,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniformMatrix4x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24698,7 +24652,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid *glMapBuffer(GLenum target, GLenum access)\n```\n' .. descriptions[250],
+      value = "```c\n" .. table.concat(signatures[250], "\n") .. "\n```\n" .. descriptions[250],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24707,8 +24661,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetCompressedTexImage(GLenum target, GLint level, void * pixels)\n```\n'
-        .. descriptions[251],
+      value = "```c\n" .. table.concat(signatures[251], "\n") .. "\n```\n" .. descriptions[251],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24717,8 +24670,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid *glMapNamedBuffer(GLuint buffer, GLenum access)\n```\n'
-        .. descriptions[250],
+      value = "```c\n" .. table.concat(signatures[250], "\n") .. "\n```\n" .. descriptions[250],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24727,8 +24679,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniformMatrix4x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24737,8 +24688,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid *glMapBufferRange(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access)\n```\n'
-        .. descriptions[252],
+      value = "```c\n" .. table.concat(signatures[252], "\n") .. "\n```\n" .. descriptions[252],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24747,8 +24697,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetCompressedTextureImage(GLuint texture, GLint level, GLsizei bufSize, void *pixels)\n```\n'
-        .. descriptions[251],
+      value = "```c\n" .. table.concat(signatures[251], "\n") .. "\n```\n" .. descriptions[251],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24757,8 +24706,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid *glMapNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length, GLbitfield access)\n```\n'
-        .. descriptions[252],
+      value = "```c\n" .. table.concat(signatures[252], "\n") .. "\n```\n" .. descriptions[252],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24767,8 +24715,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glShaderBinary(GLsizei count, const GLuint *shaders, GLenum binaryFormat, const void *binary, GLsizei length)\n```\n'
-        .. descriptions[253],
+      value = "```c\n" .. table.concat(signatures[253], "\n") .. "\n```\n" .. descriptions[253],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24777,7 +24724,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glMemoryBarrier(GLbitfield barriers)\n```\n' .. descriptions[254],
+      value = "```c\n" .. table.concat(signatures[254], "\n") .. "\n```\n" .. descriptions[254],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24786,8 +24733,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLuint glGetDebugMessageLog(\n  GLuint count,\n  GLsizei bufSize,\n  GLenum *sources,\n  GLenum *types,\n  GLuint *ids,\n  GLenum *severities,\n  GLsizei *lengths,\n  GLchar *messageLog\n)\n```\n'
-        .. descriptions[255],
+      value = "```c\n" .. table.concat(signatures[255], "\n") .. "\n```\n" .. descriptions[255],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24796,8 +24742,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glMemoryBarrierByRegion(GLbitfield barriers)\n```\n'
-        .. descriptions[254],
+      value = "```c\n" .. table.concat(signatures[254], "\n") .. "\n```\n" .. descriptions[254],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24806,8 +24751,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glScissor(GLint x, GLint y, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[256],
+      value = "```c\n" .. table.concat(signatures[256], "\n") .. "\n```\n" .. descriptions[256],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24816,7 +24760,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glMinSampleShading(GLfloat value)\n```\n' .. descriptions[257],
+      value = "```c\n" .. table.concat(signatures[257], "\n") .. "\n```\n" .. descriptions[257],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24825,8 +24769,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLint glGetFragDataIndex(GLuint program, const char * name)\n```\n'
-        .. descriptions[258],
+      value = "```c\n" .. table.concat(signatures[258], "\n") .. "\n```\n" .. descriptions[258],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24835,8 +24778,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glMultiDrawArrays(GLenum mode, const GLint * first, const GLsizei * count, GLsizei drawcount)\n```\n'
-        .. descriptions[259],
+      value = "```c\n" .. table.concat(signatures[259], "\n") .. "\n```\n" .. descriptions[259],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24845,8 +24787,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDepthRangeIndexed(GLuint index, GLdouble nearVal, GLdouble farVal)\n```\n'
-        .. descriptions[260],
+      value = "```c\n" .. table.concat(signatures[260], "\n") .. "\n```\n" .. descriptions[260],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24855,8 +24796,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glMultiDrawArraysIndirect(GLenum mode, const void *indirect, GLsizei drawcount, GLsizei stride)\n```\n'
-        .. descriptions[261],
+      value = "```c\n" .. table.concat(signatures[261], "\n") .. "\n```\n" .. descriptions[261],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24865,8 +24805,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetFramebufferAttachmentParameteriv(GLenum target, GLenum attachment, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[92],
+      value = "```c\n" .. table.concat(signatures[92], "\n") .. "\n```\n" .. descriptions[92],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24875,8 +24814,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glMultiDrawElements(GLenum mode, const GLsizei * count, GLenum type, const void * const * indices, GLsizei drawcount)\n```\n'
-        .. descriptions[262],
+      value = "```c\n" .. table.concat(signatures[262], "\n") .. "\n```\n" .. descriptions[262],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24885,8 +24823,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDispatchCompute(GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z)\n```\n'
-        .. descriptions[263],
+      value = "```c\n" .. table.concat(signatures[263], "\n") .. "\n```\n" .. descriptions[263],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24895,8 +24832,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glMultiDrawElementsBaseVertex(\n  GLenum mode,\n  const GLsizei *count,\n  GLenum type,\n  const void * const *indices,\n  GLsizei drawcount,\n  const GLint *basevertex\n)\n```\n'
-        .. descriptions[264],
+      value = "```c\n" .. table.concat(signatures[264], "\n") .. "\n```\n" .. descriptions[264],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24905,8 +24841,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawArrays(GLenum mode, GLint first, GLsizei count)\n```\n'
-        .. descriptions[265],
+      value = "```c\n" .. table.concat(signatures[265], "\n") .. "\n```\n" .. descriptions[265],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24915,8 +24850,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glMultiDrawElementsIndirect(GLenum mode, GLenum type, const void *indirect, GLsizei drawcount, GLsizei stride)\n```\n'
-        .. descriptions[266],
+      value = "```c\n" .. table.concat(signatures[266], "\n") .. "\n```\n" .. descriptions[266],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24925,8 +24859,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteTextures(GLsizei n, const GLuint * textures)\n```\n'
-        .. descriptions[267],
+      value = "```c\n" .. table.concat(signatures[267], "\n") .. "\n```\n" .. descriptions[267],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24935,8 +24868,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glObjectLabel(GLenum identifier, GLuint name, GLsizei length, const char * label)\n```\n'
-        .. descriptions[268],
+      value = "```c\n" .. table.concat(signatures[268], "\n") .. "\n```\n" .. descriptions[268],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24945,8 +24877,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawArraysInstanced(GLenum mode, GLint first, GLsizei count, GLsizei instancecount)\n```\n'
-        .. descriptions[269],
+      value = "```c\n" .. table.concat(signatures[269], "\n") .. "\n```\n" .. descriptions[269],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24955,8 +24886,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glObjectPtrLabel(void * ptr, GLsizei length, const char * label)\n```\n'
-        .. descriptions[270],
+      value = "```c\n" .. table.concat(signatures[270], "\n") .. "\n```\n" .. descriptions[270],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24965,8 +24895,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteRenderbuffers(GLsizei n, GLuint *renderbuffers)\n```\n'
-        .. descriptions[271],
+      value = "```c\n" .. table.concat(signatures[271], "\n") .. "\n```\n" .. descriptions[271],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24975,8 +24904,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPatchParameteri(GLenum pname, GLint value)\n```\n'
-        .. descriptions[272],
+      value = "```c\n" .. table.concat(signatures[272], "\n") .. "\n```\n" .. descriptions[272],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24985,7 +24913,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawBuffer(GLenum buf)\n```\n' .. descriptions[273],
+      value = "```c\n" .. table.concat(signatures[273], "\n") .. "\n```\n" .. descriptions[273],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24994,8 +24922,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPatchParameterfv(GLenum pname, const GLfloat *values)\n```\n'
-        .. descriptions[272],
+      value = "```c\n" .. table.concat(signatures[272], "\n") .. "\n```\n" .. descriptions[272],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25004,8 +24931,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawBuffers(GLsizei n, const GLenum *bufs)\n```\n'
-        .. descriptions[274],
+      value = "```c\n" .. table.concat(signatures[274], "\n") .. "\n```\n" .. descriptions[274],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25014,7 +24940,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPauseTransformFeedback()\n```\n' .. descriptions[275],
+      value = "```c\n" .. table.concat(signatures[275], "\n") .. "\n```\n" .. descriptions[275],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25023,8 +24949,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawElements(GLenum mode, GLsizei count, GLenum type, const void * indices)\n```\n'
-        .. descriptions[276],
+      value = "```c\n" .. table.concat(signatures[276], "\n") .. "\n```\n" .. descriptions[276],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25033,7 +24958,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPixelStoref(GLenum pname, GLfloat param)\n```\n' .. descriptions[277],
+      value = "```c\n" .. table.concat(signatures[277], "\n") .. "\n```\n" .. descriptions[277],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25042,8 +24967,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawElementsIndirect(GLenum mode, GLenum type, const void *indirect)\n```\n'
-        .. descriptions[278],
+      value = "```c\n" .. table.concat(signatures[278], "\n") .. "\n```\n" .. descriptions[278],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25052,7 +24976,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPixelStorei(GLenum pname, GLint param)\n```\n' .. descriptions[277],
+      value = "```c\n" .. table.concat(signatures[277], "\n") .. "\n```\n" .. descriptions[277],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25061,8 +24985,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetnCompressedTexImage(GLenum target, GLint level, GLsizei bufSize, void *pixels)\n```\n'
-        .. descriptions[251],
+      value = "```c\n" .. table.concat(signatures[251], "\n") .. "\n```\n" .. descriptions[251],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25071,8 +24994,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPointParameterf(GLenum pname, GLfloat param)\n```\n'
-        .. descriptions[279],
+      value = "```c\n" .. table.concat(signatures[279], "\n") .. "\n```\n" .. descriptions[279],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25081,7 +25003,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDeleteShader(GLuint shader)\n```\n' .. descriptions[280],
+      value = "```c\n" .. table.concat(signatures[280], "\n") .. "\n```\n" .. descriptions[280],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25090,8 +25012,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPointParameteri(GLenum pname, GLint param)\n```\n'
-        .. descriptions[279],
+      value = "```c\n" .. table.concat(signatures[279], "\n") .. "\n```\n" .. descriptions[279],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25100,7 +25021,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLenum glGetError(void)\n```\n' .. descriptions[281],
+      value = "```c\n" .. table.concat(signatures[281], "\n") .. "\n```\n" .. descriptions[281],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25109,8 +25030,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPointParameterfv(GLenum pname, const GLfloat * params)\n```\n'
-        .. descriptions[279],
+      value = "```c\n" .. table.concat(signatures[279], "\n") .. "\n```\n" .. descriptions[279],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25119,8 +25039,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetCompressedTextureSubImage(\n  GLuint texture,\n  GLint level,\n  GLint xoffset,\n  GLint yoffset,\n  GLint zoffset,\n  GLsizei width,\n  GLsizei height,\n  GLsizei depth,\n  GLsizei bufSize,\n  void *pixels\n)\n```\n'
-        .. descriptions[282],
+      value = "```c\n" .. table.concat(signatures[282], "\n") .. "\n```\n" .. descriptions[282],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25129,8 +25048,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPointParameteriv(GLenum pname, const GLint * params)\n```\n'
-        .. descriptions[279],
+      value = "```c\n" .. table.concat(signatures[279], "\n") .. "\n```\n" .. descriptions[279],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25139,8 +25057,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetnUniformdv(GLuint program, GLint location, GLsizei bufSize, GLdouble *params)\n```\n'
-        .. descriptions[26],
+      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25149,7 +25066,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPointSize(GLfloat size)\n```\n' .. descriptions[283],
+      value = "```c\n" .. table.concat(signatures[283], "\n") .. "\n```\n" .. descriptions[283],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25158,8 +25075,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetnUniformuiv(GLuint program, GLint location, GLsizei bufSize, GLuint *params)\n```\n'
-        .. descriptions[26],
+      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25168,7 +25084,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPolygonMode(GLenum face, GLenum mode)\n```\n' .. descriptions[284],
+      value = "```c\n" .. table.concat(signatures[284], "\n") .. "\n```\n" .. descriptions[284],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25177,8 +25093,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetUniformSubroutineuiv(GLenum shadertype, GLint location, GLuint *values)\n```\n'
-        .. descriptions[285],
+      value = "```c\n" .. table.concat(signatures[285], "\n") .. "\n```\n" .. descriptions[285],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25187,8 +25102,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPolygonOffset(GLfloat factor, GLfloat units)\n```\n'
-        .. descriptions[286],
+      value = "```c\n" .. table.concat(signatures[286], "\n") .. "\n```\n" .. descriptions[286],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25197,8 +25111,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLuint glGetUniformBlockIndex(GLuint program, const GLchar *uniformBlockName)\n```\n'
-        .. descriptions[287],
+      value = "```c\n" .. table.concat(signatures[287], "\n") .. "\n```\n" .. descriptions[287],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25207,7 +25120,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPopDebugGroup()\n```\n' .. descriptions[288],
+      value = "```c\n" .. table.concat(signatures[288], "\n") .. "\n```\n" .. descriptions[288],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25216,8 +25129,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetVertexArrayiv(GLuint vaobj, GLenum pname, GLint *param)\n```\n'
-        .. descriptions[289],
+      value = "```c\n" .. table.concat(signatures[289], "\n") .. "\n```\n" .. descriptions[289],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25226,7 +25138,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glPrimitiveRestartIndex(GLuint index)\n```\n' .. descriptions[290],
+      value = "```c\n" .. table.concat(signatures[290], "\n") .. "\n```\n" .. descriptions[290],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25235,8 +25147,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLint glGetUniformLocation(GLuint program, const GLchar *name)\n```\n'
-        .. descriptions[291],
+      value = "```c\n" .. table.concat(signatures[291], "\n") .. "\n```\n" .. descriptions[291],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25245,8 +25156,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramBinary(GLuint program, GLenum binaryFormat, const void *binary, GLsizei length)\n```\n'
-        .. descriptions[292],
+      value = "```c\n" .. table.concat(signatures[292], "\n") .. "\n```\n" .. descriptions[292],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25255,8 +25165,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetVertexArrayIndexed64iv(GLuint vaobj, GLuint index, GLenum pname, GLint64 *param)\n```\n'
-        .. descriptions[293],
+      value = "```c\n" .. table.concat(signatures[293], "\n") .. "\n```\n" .. descriptions[293],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25265,8 +25174,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramParameteri(GLuint program, GLenum pname, GLint value)\n```\n'
-        .. descriptions[294],
+      value = "```c\n" .. table.concat(signatures[294], "\n") .. "\n```\n" .. descriptions[294],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25275,8 +25183,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetVertexArrayIndexediv(GLuint vaobj, GLuint index, GLenum pname, GLint *param)\n```\n'
-        .. descriptions[293],
+      value = "```c\n" .. table.concat(signatures[293], "\n") .. "\n```\n" .. descriptions[293],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25285,8 +25192,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform1f(GLuint program, GLint location, GLfloat v0)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25295,8 +25201,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetUniformIndices(GLuint program, GLsizei uniformCount, const GLchar **uniformNames, GLuint *uniformIndices)\n```\n'
-        .. descriptions[295],
+      value = "```c\n" .. table.concat(signatures[295], "\n") .. "\n```\n" .. descriptions[295],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25305,8 +25210,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform2f(GLuint program, GLint location, GLfloat v0, GLfloat v1)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25315,8 +25219,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nGLint glGetFragDataLocation(GLuint program, const char * name)\n```\n'
-        .. descriptions[296],
+      value = "```c\n" .. table.concat(signatures[296], "\n") .. "\n```\n" .. descriptions[296],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25325,8 +25228,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform3f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25335,8 +25237,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, void *data)\n```\n'
-        .. descriptions[297],
+      value = "```c\n" .. table.concat(signatures[297], "\n") .. "\n```\n" .. descriptions[297],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25345,8 +25246,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform4f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25355,8 +25255,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawElementsInstanced(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount)\n```\n'
-        .. descriptions[298],
+      value = "```c\n" .. table.concat(signatures[298], "\n") .. "\n```\n" .. descriptions[298],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25365,8 +25264,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform1i(GLuint program, GLint location, GLint v0)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25375,8 +25273,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawElementsBaseVertex(GLenum mode, GLsizei count, GLenum type, void *indices, GLint basevertex)\n```\n'
-        .. descriptions[299],
+      value = "```c\n" .. table.concat(signatures[299], "\n") .. "\n```\n" .. descriptions[299],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25385,8 +25282,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform2i(GLuint program, GLint location, GLint v0, GLint v1)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25395,8 +25291,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedFramebufferDrawBuffers(GLuint framebuffer, GLsizei n, const GLenum *bufs)\n```\n'
-        .. descriptions[274],
+      value = "```c\n" .. table.concat(signatures[274], "\n") .. "\n```\n" .. descriptions[274],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25405,8 +25300,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform3i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25415,8 +25309,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedFramebufferDrawBuffer(GLuint framebuffer, GLenum buf)\n```\n'
-        .. descriptions[273],
+      value = "```c\n" .. table.concat(signatures[273], "\n") .. "\n```\n" .. descriptions[273],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25425,8 +25318,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform4i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25435,8 +25327,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawArraysInstancedBaseInstance(GLenum mode, GLint first, GLsizei count, GLsizei instancecount, GLuint baseinstance)\n```\n'
-        .. descriptions[300],
+      value = "```c\n" .. table.concat(signatures[300], "\n") .. "\n```\n" .. descriptions[300],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25445,8 +25336,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform1ui(GLuint program, GLint location, GLuint v0)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25455,8 +25345,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDrawArraysIndirect(GLenum mode, const void *indirect)\n```\n'
-        .. descriptions[301],
+      value = "```c\n" .. table.concat(signatures[301], "\n") .. "\n```\n" .. descriptions[301],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25465,8 +25354,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform2ui(GLuint program, GLint location, GLuint v0, GLuint v1)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25475,8 +25363,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDispatchComputeIndirect(GLintptr indirect)\n```\n'
-        .. descriptions[302],
+      value = "```c\n" .. table.concat(signatures[302], "\n") .. "\n```\n" .. descriptions[302],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25485,8 +25372,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform3ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25495,8 +25381,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDetachShader(GLuint program, GLuint shader)\n```\n'
-        .. descriptions[303],
+      value = "```c\n" .. table.concat(signatures[303], "\n") .. "\n```\n" .. descriptions[303],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25505,8 +25390,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform4ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25515,8 +25399,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glDepthRangeArrayv(GLuint first, GLsizei count, const GLdouble *v)\n```\n'
-        .. descriptions[304],
+      value = "```c\n" .. table.concat(signatures[304], "\n") .. "\n```\n" .. descriptions[304],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25525,8 +25408,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform1fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25535,8 +25417,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glScissorIndexed(GLuint index, GLint left, GLint bottom, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[305],
+      value = "```c\n" .. table.concat(signatures[305], "\n") .. "\n```\n" .. descriptions[305],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25545,8 +25426,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform2fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25555,8 +25435,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniformMatrix2x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25565,8 +25444,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform3fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25575,8 +25453,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniformMatrix3x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25585,8 +25462,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform4fv(GLuint program, GLint location, GLsizei count, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25595,7 +25471,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProvokingVertex(GLenum provokeMode)\n```\n' .. descriptions[306],
+      value = "```c\n" .. table.concat(signatures[306], "\n") .. "\n```\n" .. descriptions[306],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25604,8 +25480,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform1iv(GLuint program, GLint location, GLsizei count, const GLint *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25614,7 +25489,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glQueryCounter(GLuint id, GLenum target)\n```\n' .. descriptions[307],
+      value = "```c\n" .. table.concat(signatures[307], "\n") .. "\n```\n" .. descriptions[307],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25623,8 +25498,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform2iv(GLuint program, GLint location, GLsizei count, const GLint *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25633,8 +25507,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glNamedFramebufferReadBuffer(GLuint framebuffer, GLenum mode)\n```\n'
-        .. descriptions[245],
+      value = "```c\n" .. table.concat(signatures[245], "\n") .. "\n```\n" .. descriptions[245],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25643,8 +25516,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform3iv(GLuint program, GLint location, GLsizei count, const GLint *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25653,8 +25525,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glReadnPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLsizei bufSize, void *data)\n```\n'
-        .. descriptions[243],
+      value = "```c\n" .. table.concat(signatures[243], "\n") .. "\n```\n" .. descriptions[243],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25663,8 +25534,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform4iv(GLuint program, GLint location, GLsizei count, const GLint *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25673,8 +25543,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glRenderbufferStorage(GLenum target, GLenum internalformat, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[239],
+      value = "```c\n" .. table.concat(signatures[239], "\n") .. "\n```\n" .. descriptions[239],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25683,8 +25552,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform1uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25693,8 +25561,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glRenderbufferStorageMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height)\n```\n'
-        .. descriptions[237],
+      value = "```c\n" .. table.concat(signatures[237], "\n") .. "\n```\n" .. descriptions[237],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25703,8 +25570,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform2uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25713,7 +25579,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glResumeTransformFeedback()\n```\n' .. descriptions[308],
+      value = "```c\n" .. table.concat(signatures[308], "\n") .. "\n```\n" .. descriptions[308],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25722,8 +25588,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform3uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25732,8 +25597,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glSampleMaski(GLuint maskNumber, GLbitfield mask)\n```\n'
-        .. descriptions[309],
+      value = "```c\n" .. table.concat(signatures[309], "\n") .. "\n```\n" .. descriptions[309],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25742,8 +25606,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniform4uiv(GLuint program, GLint location, GLsizei count, const GLuint *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25752,8 +25615,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glSamplerParameteri(GLuint sampler, GLenum pname, GLint param)\n```\n'
-        .. descriptions[229],
+      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25762,8 +25624,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniformMatrix2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25772,8 +25633,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glSamplerParameteriv(GLuint sampler, GLenum pname, const GLint * params)\n```\n'
-        .. descriptions[229],
+      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25782,8 +25642,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniformMatrix3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25792,8 +25651,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glSamplerParameterIuiv(GLuint sampler, GLenum pname, const GLuint *params)\n```\n'
-        .. descriptions[229],
+      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25802,8 +25660,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniformMatrix4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25812,8 +25669,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glScissorArrayv(GLuint first, GLsizei count, const GLint *v)\n```\n'
-        .. descriptions[310],
+      value = "```c\n" .. table.concat(signatures[310], "\n") .. "\n```\n" .. descriptions[310],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25822,8 +25678,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniformMatrix2x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25832,8 +25687,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glScissorIndexedv(GLuint index, const GLint *v)\n```\n'
-        .. descriptions[305],
+      value = "```c\n" .. table.concat(signatures[305], "\n") .. "\n```\n" .. descriptions[305],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25842,8 +25696,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glProgramUniformMatrix3x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)\n```\n'
-        .. descriptions[249],
+      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25852,8 +25705,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glShaderSource(GLuint shader, GLsizei count, const GLchar **string, const GLint *length)\n```\n'
-        .. descriptions[311],
+      value = "```c\n" .. table.concat(signatures[311], "\n") .. "\n```\n" .. descriptions[311],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25862,8 +25714,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glStencilFunc(GLenum func, GLint ref, GLuint mask)\n```\n'
-        .. descriptions[312],
+      value = "```c\n" .. table.concat(signatures[312], "\n") .. "\n```\n" .. descriptions[312],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25872,8 +25723,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glShaderStorageBlockBinding(GLuint program, GLuint storageBlockIndex, GLuint storageBlockBinding)\n```\n'
-        .. descriptions[313],
+      value = "```c\n" .. table.concat(signatures[313], "\n") .. "\n```\n" .. descriptions[313],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25882,8 +25732,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glStencilFuncSeparate(GLenum face, GLenum func, GLint ref, GLuint mask)\n```\n'
-        .. descriptions[314],
+      value = "```c\n" .. table.concat(signatures[314], "\n") .. "\n```\n" .. descriptions[314],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25892,8 +25741,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureBufferRange(GLuint texture, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizei size)\n```\n'
-        .. descriptions[315],
+      value = "```c\n" .. table.concat(signatures[315], "\n") .. "\n```\n" .. descriptions[315],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25902,7 +25750,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glStencilMask(GLuint mask)\n```\n' .. descriptions[316],
+      value = "```c\n" .. table.concat(signatures[316], "\n") .. "\n```\n" .. descriptions[316],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25911,8 +25759,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetQueryObjectuiv(GLuint id, GLenum pname, GLuint * params)\n```\n'
-        .. descriptions[66],
+      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25921,8 +25768,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glStencilMaskSeparate(GLenum face, GLuint mask)\n```\n'
-        .. descriptions[317],
+      value = "```c\n" .. table.concat(signatures[317], "\n") .. "\n```\n" .. descriptions[317],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25931,8 +25777,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetQueryObjecti64v(GLuint id, GLenum pname, GLint64 * params)\n```\n'
-        .. descriptions[66],
+      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25941,8 +25786,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glStencilOp(GLenum sfail, GLenum dpfail, GLenum dppass)\n```\n'
-        .. descriptions[318],
+      value = "```c\n" .. table.concat(signatures[318], "\n") .. "\n```\n" .. descriptions[318],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25951,8 +25795,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetQueryObjectui64v(GLuint id, GLenum pname, GLuint64 * params)\n```\n'
-        .. descriptions[66],
+      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25961,8 +25804,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glStencilOpSeparate(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass)\n```\n'
-        .. descriptions[319],
+      value = "```c\n" .. table.concat(signatures[319], "\n") .. "\n```\n" .. descriptions[319],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25971,8 +25813,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetQueryBufferObjectiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)\n```\n'
-        .. descriptions[66],
+      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25981,8 +25822,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexBuffer(GLenum target, GLenum internalformat, GLuint buffer)\n```\n'
-        .. descriptions[320],
+      value = "```c\n" .. table.concat(signatures[320], "\n") .. "\n```\n" .. descriptions[320],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25991,8 +25831,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetQueryBufferObjectuiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)\n```\n'
-        .. descriptions[66],
+      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26001,8 +25840,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTextureBuffer(GLuint texture, GLenum internalformat, GLuint buffer)\n```\n'
-        .. descriptions[320],
+      value = "```c\n" .. table.concat(signatures[320], "\n") .. "\n```\n" .. descriptions[320],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26011,8 +25849,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetQueryBufferObjecti64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)\n```\n'
-        .. descriptions[66],
+      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26021,8 +25858,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glTexBufferRange(GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size)\n```\n'
-        .. descriptions[315],
+      value = "```c\n" .. table.concat(signatures[315], "\n") .. "\n```\n" .. descriptions[315],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26031,8 +25867,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetQueryBufferObjectui64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset)\n```\n'
-        .. descriptions[66],
+      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26041,8 +25876,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform2ui(GLint location, GLuint v0, GLuint v1)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26051,8 +25885,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetQueryiv(GLenum target, GLenum pname, GLint * params)\n```\n'
-        .. descriptions[321],
+      value = "```c\n" .. table.concat(signatures[321], "\n") .. "\n```\n" .. descriptions[321],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26061,8 +25894,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform3ui(GLint location, GLuint v0, GLuint v1, GLuint v2)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26071,8 +25903,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetRenderbufferParameteriv(GLenum target, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[322],
+      value = "```c\n" .. table.concat(signatures[322], "\n") .. "\n```\n" .. descriptions[322],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26081,8 +25912,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform4ui(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26091,8 +25921,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetNamedRenderbufferParameteriv(GLuint renderbuffer, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[322],
+      value = "```c\n" .. table.concat(signatures[322], "\n") .. "\n```\n" .. descriptions[322],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26101,8 +25930,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform1fv(GLint location, GLsizei count, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26111,8 +25939,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat * params)\n```\n'
-        .. descriptions[323],
+      value = "```c\n" .. table.concat(signatures[323], "\n") .. "\n```\n" .. descriptions[323],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26121,8 +25948,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform2fv(GLint location, GLsizei count, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26131,8 +25957,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetSamplerParameteriv(GLuint sampler, GLenum pname, GLint * params)\n```\n'
-        .. descriptions[323],
+      value = "```c\n" .. table.concat(signatures[323], "\n") .. "\n```\n" .. descriptions[323],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26141,8 +25966,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform3fv(GLint location, GLsizei count, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26151,8 +25975,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetSamplerParameterIiv(GLuint sampler, GLenum pname, GLint * params)\n```\n'
-        .. descriptions[323],
+      value = "```c\n" .. table.concat(signatures[323], "\n") .. "\n```\n" .. descriptions[323],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26161,8 +25984,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform4fv(GLint location, GLsizei count, const GLfloat *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26171,8 +25993,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetSamplerParameterIuiv(GLuint sampler, GLenum pname, GLuint * params)\n```\n'
-        .. descriptions[323],
+      value = "```c\n" .. table.concat(signatures[323], "\n") .. "\n```\n" .. descriptions[323],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26181,8 +26002,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform1iv(GLint location, GLsizei count, const GLint *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26191,8 +26011,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetShaderiv(GLuint shader, GLenum pname, GLint *params)\n```\n'
-        .. descriptions[324],
+      value = "```c\n" .. table.concat(signatures[324], "\n") .. "\n```\n" .. descriptions[324],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26201,8 +26020,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glUniform2iv(GLint location, GLsizei count, const GLint *value)\n```\n'
-        .. descriptions[1],
+      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26211,8 +26029,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = '```c\nvoid glGetShaderInfoLog(GLuint shader, GLsizei maxLength, GLsizei *length, GLchar *infoLog)\n```\n'
-        .. descriptions[325],
+      value = "```c\n" .. table.concat(signatures[325], "\n") .. "\n```\n" .. descriptions[325],
     },
     dup = 0,
     kind = lsp_kind,
