@@ -54,7 +54,7 @@ each function parameter. You can turn this on by adding the following:
 require('cmp_gl').setup_snippets()
 ```
 
-https://github.com/user-attachments/assets/def55543-9599-4c7e-b4e8-f44de6452958
+https://github.com/user-attachments/assets/9f7d935c-e1af-4c85-8850-6280297836b0
 
 ---
 
