@@ -37,7 +37,7 @@ vim.lsp.start({
 
 
 -- To enable the completions in other file types (note: will insert c-style code):
-require('cmp_gl'):enable_filetype('<filetype>')
+require('cmp_gl').enable_filetype('<filetype>')
 
 ```
 
