@@ -59,7 +59,7 @@ each function parameter. You can turn this on by calling `setup_snippets`:
 },   
 ```
 
-https://github.com/user-attachments/assets/9f7d935c-e1af-4c85-8850-6280297836b0
+https://github.com/user-attachments/assets/818e7d27-d782-4a44-95aa-79c7eae6fd45
 
 ---
 
