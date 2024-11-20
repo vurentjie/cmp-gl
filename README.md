@@ -8,7 +8,7 @@ The completion documentation for function calls is parsed from the gl4 xml files
 
 The completion for OpenGL constants (e.g GL_TRIANGLES, GL_VERTEX_ARRAY_SIZE, etc) is also added but the documentation is omitted.
 
-Currently the completions will display for c/cpp filetypes.
+By default the completions will display for c/cpp filetypes and insert c/cpp compatible code.
 
 ---
 
@@ -34,6 +34,11 @@ vim.lsp.start({
   cmd = { 'clangd', '--malloc-trim', '-j=2', '--header-insertion-decorators=false' },
   ...
 })
+
+
+-- To enable the completions in other file types (note: will insert c-style code):
+require('cmp_gl'):enable_filetype('<filetype>')
+
 ```
 
 ---
