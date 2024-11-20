@@ -12,7 +12,7 @@ By default the completions will display for c/cpp filetypes and insert c/cpp com
 
 ---
 
-Setup
+### nvim-cmp source setup:
 
 ```lua
 
@@ -35,15 +35,37 @@ vim.lsp.start({
   ...
 })
 
-
--- To enable the completions in other file types (note: will insert c-style code):
-require('cmp_gl').enable_filetype('<filetype>')
-
 ```
 
 ---
 
  ![](demo.png)
+
+---
+
+### luasnip setup:
+
+If you would prefer to use snippets, that allow jumping to each function
+parameter then you can skip add sources and instead enable snippets.
+
+If snippets are enabled, then source completion is automatically disabled to
+avoid duplication.
+
+```lua
+require('cmp_gl').setup_snippets()
+```
+
+---
+
+### Enabling/disabling filetypes:
+
+This works for both snippets and cmp sources.
+Note that this will insert c-style code.
+
+```lua
+require('cmp_gl').enable_filetype('<filetype>')
+require('cmp_gl').disable_filetype('<filetype>')
+```
 
 ---
 
