@@ -20499,11 +20499,16 @@ local signatures = {
   { "void glGetShaderInfoLog(GLuint shader, GLsizei maxLength, GLsizei *length, GLchar *infoLog)" },
 }
 
+local docs = {}
+for i = 1,#signatures do
+  docs[i] = "```c\n" .. table.concat(signatures[i], "\n") .. "\n```\n" .. descriptions[i]
+end
+
 return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20512,7 +20517,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[2], "\n") .. "\n```\n" .. descriptions[2],
+      value = docs[2],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20521,7 +20526,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20530,7 +20535,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[3], "\n") .. "\n```\n" .. descriptions[3],
+      value = docs[3],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20539,7 +20544,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20548,7 +20553,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[4], "\n") .. "\n```\n" .. descriptions[4],
+      value = docs[4],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20557,7 +20562,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20566,7 +20571,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[4], "\n") .. "\n```\n" .. descriptions[4],
+      value = docs[4],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20575,7 +20580,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20584,7 +20589,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[5], "\n") .. "\n```\n" .. descriptions[5],
+      value = docs[5],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20593,7 +20598,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20602,7 +20607,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[6], "\n") .. "\n```\n" .. descriptions[6],
+      value = docs[6],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20611,7 +20616,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20620,7 +20625,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[7], "\n") .. "\n```\n" .. descriptions[7],
+      value = docs[7],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20629,7 +20634,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20638,7 +20643,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[8], "\n") .. "\n```\n" .. descriptions[8],
+      value = docs[8],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20647,7 +20652,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20656,7 +20661,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[8], "\n") .. "\n```\n" .. descriptions[8],
+      value = docs[8],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20665,7 +20670,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[10], "\n") .. "\n```\n" .. descriptions[10],
+      value = docs[10],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20674,7 +20679,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[8], "\n") .. "\n```\n" .. descriptions[8],
+      value = docs[8],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20683,7 +20688,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[10], "\n") .. "\n```\n" .. descriptions[10],
+      value = docs[10],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20692,7 +20697,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[11], "\n") .. "\n```\n" .. descriptions[11],
+      value = docs[11],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20701,7 +20706,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[12], "\n") .. "\n```\n" .. descriptions[12],
+      value = docs[12],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20710,7 +20715,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[11], "\n") .. "\n```\n" .. descriptions[11],
+      value = docs[11],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20719,7 +20724,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[12], "\n") .. "\n```\n" .. descriptions[12],
+      value = docs[12],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20728,7 +20733,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[11], "\n") .. "\n```\n" .. descriptions[11],
+      value = docs[11],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20737,7 +20742,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[13], "\n") .. "\n```\n" .. descriptions[13],
+      value = docs[13],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20746,7 +20751,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[11], "\n") .. "\n```\n" .. descriptions[11],
+      value = docs[11],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20755,7 +20760,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[13], "\n") .. "\n```\n" .. descriptions[13],
+      value = docs[13],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20764,7 +20769,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
+      value = docs[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20773,7 +20778,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[15], "\n") .. "\n```\n" .. descriptions[15],
+      value = docs[15],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20782,7 +20787,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
+      value = docs[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20791,7 +20796,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[15], "\n") .. "\n```\n" .. descriptions[15],
+      value = docs[15],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20800,7 +20805,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
+      value = docs[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20809,7 +20814,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[16], "\n") .. "\n```\n" .. descriptions[16],
+      value = docs[16],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20818,7 +20823,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
+      value = docs[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20827,7 +20832,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[16], "\n") .. "\n```\n" .. descriptions[16],
+      value = docs[16],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20836,7 +20841,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
+      value = docs[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20845,7 +20850,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[17], "\n") .. "\n```\n" .. descriptions[17],
+      value = docs[17],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20854,7 +20859,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
+      value = docs[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20863,7 +20868,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[17], "\n") .. "\n```\n" .. descriptions[17],
+      value = docs[17],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20872,7 +20877,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
+      value = docs[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20881,7 +20886,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[18], "\n") .. "\n```\n" .. descriptions[18],
+      value = docs[18],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20890,7 +20895,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[14], "\n") .. "\n```\n" .. descriptions[14],
+      value = docs[14],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20899,7 +20904,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[18], "\n") .. "\n```\n" .. descriptions[18],
+      value = docs[18],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20908,7 +20913,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[19], "\n") .. "\n```\n" .. descriptions[19],
+      value = docs[19],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20917,7 +20922,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[20], "\n") .. "\n```\n" .. descriptions[20],
+      value = docs[20],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20926,7 +20931,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[21], "\n") .. "\n```\n" .. descriptions[21],
+      value = docs[21],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20935,7 +20940,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[20], "\n") .. "\n```\n" .. descriptions[20],
+      value = docs[20],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20944,7 +20949,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[21], "\n") .. "\n```\n" .. descriptions[21],
+      value = docs[21],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20953,7 +20958,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[22], "\n") .. "\n```\n" .. descriptions[22],
+      value = docs[22],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20962,7 +20967,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[21], "\n") .. "\n```\n" .. descriptions[21],
+      value = docs[21],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20971,7 +20976,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[23], "\n") .. "\n```\n" .. descriptions[23],
+      value = docs[23],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20980,7 +20985,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[24], "\n") .. "\n```\n" .. descriptions[24],
+      value = docs[24],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20989,7 +20994,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[25], "\n") .. "\n```\n" .. descriptions[25],
+      value = docs[25],
     },
     dup = 0,
     kind = lsp_kind,
@@ -20998,7 +21003,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
+      value = docs[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21007,7 +21012,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[27], "\n") .. "\n```\n" .. descriptions[27],
+      value = docs[27],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21016,7 +21021,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
+      value = docs[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21025,7 +21030,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[28], "\n") .. "\n```\n" .. descriptions[28],
+      value = docs[28],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21034,7 +21039,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
+      value = docs[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21043,7 +21048,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21052,7 +21057,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
+      value = docs[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21061,7 +21066,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21070,7 +21075,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
+      value = docs[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21079,7 +21084,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21088,7 +21093,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
+      value = docs[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21097,7 +21102,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21106,7 +21111,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
+      value = docs[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21115,7 +21120,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21124,7 +21129,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21133,7 +21138,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21142,7 +21147,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21151,7 +21156,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21160,7 +21165,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[30], "\n") .. "\n```\n" .. descriptions[30],
+      value = docs[30],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21169,7 +21174,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[30], "\n") .. "\n```\n" .. descriptions[30],
+      value = docs[30],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21178,7 +21183,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[31], "\n") .. "\n```\n" .. descriptions[31],
+      value = docs[31],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21187,7 +21192,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[31], "\n") .. "\n```\n" .. descriptions[31],
+      value = docs[31],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21196,7 +21201,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[32], "\n") .. "\n```\n" .. descriptions[32],
+      value = docs[32],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21205,7 +21210,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[32], "\n") .. "\n```\n" .. descriptions[32],
+      value = docs[32],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21214,7 +21219,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[32], "\n") .. "\n```\n" .. descriptions[32],
+      value = docs[32],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21223,7 +21228,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[33], "\n") .. "\n```\n" .. descriptions[33],
+      value = docs[33],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21232,7 +21237,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[32], "\n") .. "\n```\n" .. descriptions[32],
+      value = docs[32],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21241,7 +21246,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[33], "\n") .. "\n```\n" .. descriptions[33],
+      value = docs[33],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21250,7 +21255,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[32], "\n") .. "\n```\n" .. descriptions[32],
+      value = docs[32],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21259,7 +21264,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[34], "\n") .. "\n```\n" .. descriptions[34],
+      value = docs[34],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21268,7 +21273,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[35], "\n") .. "\n```\n" .. descriptions[35],
+      value = docs[35],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21277,7 +21282,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[36], "\n") .. "\n```\n" .. descriptions[36],
+      value = docs[36],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21286,7 +21291,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[35], "\n") .. "\n```\n" .. descriptions[35],
+      value = docs[35],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21295,7 +21300,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[36], "\n") .. "\n```\n" .. descriptions[36],
+      value = docs[36],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21304,7 +21309,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[37], "\n") .. "\n```\n" .. descriptions[37],
+      value = docs[37],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21313,7 +21318,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[38], "\n") .. "\n```\n" .. descriptions[38],
+      value = docs[38],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21322,7 +21327,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[39], "\n") .. "\n```\n" .. descriptions[39],
+      value = docs[39],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21331,7 +21336,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[40], "\n") .. "\n```\n" .. descriptions[40],
+      value = docs[40],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21340,7 +21345,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[41], "\n") .. "\n```\n" .. descriptions[41],
+      value = docs[41],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21349,7 +21354,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[42], "\n") .. "\n```\n" .. descriptions[42],
+      value = docs[42],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21358,7 +21363,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[43], "\n") .. "\n```\n" .. descriptions[43],
+      value = docs[43],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21367,7 +21372,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[44], "\n") .. "\n```\n" .. descriptions[44],
+      value = docs[44],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21376,7 +21381,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[45], "\n") .. "\n```\n" .. descriptions[45],
+      value = docs[45],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21385,7 +21390,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[46], "\n") .. "\n```\n" .. descriptions[46],
+      value = docs[46],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21394,7 +21399,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[47], "\n") .. "\n```\n" .. descriptions[47],
+      value = docs[47],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21403,7 +21408,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[48], "\n") .. "\n```\n" .. descriptions[48],
+      value = docs[48],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21412,7 +21417,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[49], "\n") .. "\n```\n" .. descriptions[49],
+      value = docs[49],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21421,7 +21426,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[50], "\n") .. "\n```\n" .. descriptions[50],
+      value = docs[50],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21430,7 +21435,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[51], "\n") .. "\n```\n" .. descriptions[51],
+      value = docs[51],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21439,7 +21444,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[52], "\n") .. "\n```\n" .. descriptions[52],
+      value = docs[52],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21448,7 +21453,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[53], "\n") .. "\n```\n" .. descriptions[53],
+      value = docs[53],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21457,7 +21462,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[54], "\n") .. "\n```\n" .. descriptions[54],
+      value = docs[54],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21466,7 +21471,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[55], "\n") .. "\n```\n" .. descriptions[55],
+      value = docs[55],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21475,7 +21480,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[56], "\n") .. "\n```\n" .. descriptions[56],
+      value = docs[56],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21484,7 +21489,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[57], "\n") .. "\n```\n" .. descriptions[57],
+      value = docs[57],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21493,7 +21498,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[58], "\n") .. "\n```\n" .. descriptions[58],
+      value = docs[58],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21502,7 +21507,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[57], "\n") .. "\n```\n" .. descriptions[57],
+      value = docs[57],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21511,7 +21516,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[59], "\n") .. "\n```\n" .. descriptions[59],
+      value = docs[59],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21520,7 +21525,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
+      value = docs[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21529,7 +21534,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[61], "\n") .. "\n```\n" .. descriptions[61],
+      value = docs[61],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21538,7 +21543,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
+      value = docs[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21547,7 +21552,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[62], "\n") .. "\n```\n" .. descriptions[62],
+      value = docs[62],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21556,7 +21561,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
+      value = docs[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21565,7 +21570,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[63], "\n") .. "\n```\n" .. descriptions[63],
+      value = docs[63],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21574,7 +21579,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
+      value = docs[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21583,7 +21588,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[64], "\n") .. "\n```\n" .. descriptions[64],
+      value = docs[64],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21592,7 +21597,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
+      value = docs[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21601,7 +21606,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[65], "\n") .. "\n```\n" .. descriptions[65],
+      value = docs[65],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21610,7 +21615,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
+      value = docs[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21619,7 +21624,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
+      value = docs[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21628,7 +21633,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
+      value = docs[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21637,7 +21642,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
+      value = docs[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21646,7 +21651,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
+      value = docs[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21655,7 +21660,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[60], "\n") .. "\n```\n" .. descriptions[60],
+      value = docs[60],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21664,7 +21669,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[67], "\n") .. "\n```\n" .. descriptions[67],
+      value = docs[67],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21673,7 +21678,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[68], "\n") .. "\n```\n" .. descriptions[68],
+      value = docs[68],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21682,7 +21687,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[69], "\n") .. "\n```\n" .. descriptions[69],
+      value = docs[69],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21691,7 +21696,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[70], "\n") .. "\n```\n" .. descriptions[70],
+      value = docs[70],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21700,7 +21705,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[71], "\n") .. "\n```\n" .. descriptions[71],
+      value = docs[71],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21709,7 +21714,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[72], "\n") .. "\n```\n" .. descriptions[72],
+      value = docs[72],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21718,7 +21723,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[73], "\n") .. "\n```\n" .. descriptions[73],
+      value = docs[73],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21727,7 +21732,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[74], "\n") .. "\n```\n" .. descriptions[74],
+      value = docs[74],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21736,7 +21741,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[75], "\n") .. "\n```\n" .. descriptions[75],
+      value = docs[75],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21745,7 +21750,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[76], "\n") .. "\n```\n" .. descriptions[76],
+      value = docs[76],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21754,7 +21759,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[77], "\n") .. "\n```\n" .. descriptions[77],
+      value = docs[77],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21763,7 +21768,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[78], "\n") .. "\n```\n" .. descriptions[78],
+      value = docs[78],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21772,7 +21777,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[79], "\n") .. "\n```\n" .. descriptions[79],
+      value = docs[79],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21781,7 +21786,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[79], "\n") .. "\n```\n" .. descriptions[79],
+      value = docs[79],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21790,7 +21795,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[79], "\n") .. "\n```\n" .. descriptions[79],
+      value = docs[79],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21799,7 +21804,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[79], "\n") .. "\n```\n" .. descriptions[79],
+      value = docs[79],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21808,7 +21813,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[80], "\n") .. "\n```\n" .. descriptions[80],
+      value = docs[80],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21817,7 +21822,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[80], "\n") .. "\n```\n" .. descriptions[80],
+      value = docs[80],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21826,7 +21831,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[81], "\n") .. "\n```\n" .. descriptions[81],
+      value = docs[81],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21835,7 +21840,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[82], "\n") .. "\n```\n" .. descriptions[82],
+      value = docs[82],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21844,7 +21849,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[83], "\n") .. "\n```\n" .. descriptions[83],
+      value = docs[83],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21853,7 +21858,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[84], "\n") .. "\n```\n" .. descriptions[84],
+      value = docs[84],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21862,7 +21867,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[85], "\n") .. "\n```\n" .. descriptions[85],
+      value = docs[85],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21871,7 +21876,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[86], "\n") .. "\n```\n" .. descriptions[86],
+      value = docs[86],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21880,7 +21885,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[87], "\n") .. "\n```\n" .. descriptions[87],
+      value = docs[87],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21889,7 +21894,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[88], "\n") .. "\n```\n" .. descriptions[88],
+      value = docs[88],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21898,7 +21903,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[89], "\n") .. "\n```\n" .. descriptions[89],
+      value = docs[89],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21907,7 +21912,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[90], "\n") .. "\n```\n" .. descriptions[90],
+      value = docs[90],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21916,7 +21921,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[91], "\n") .. "\n```\n" .. descriptions[91],
+      value = docs[91],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21925,7 +21930,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[92], "\n") .. "\n```\n" .. descriptions[92],
+      value = docs[92],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21934,7 +21939,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[91], "\n") .. "\n```\n" .. descriptions[91],
+      value = docs[91],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21943,7 +21948,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[91], "\n") .. "\n```\n" .. descriptions[91],
+      value = docs[91],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21952,7 +21957,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[93], "\n") .. "\n```\n" .. descriptions[93],
+      value = docs[93],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21961,7 +21966,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[93], "\n") .. "\n```\n" .. descriptions[93],
+      value = docs[93],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21970,7 +21975,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[93], "\n") .. "\n```\n" .. descriptions[93],
+      value = docs[93],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21979,7 +21984,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[93], "\n") .. "\n```\n" .. descriptions[93],
+      value = docs[93],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21988,7 +21993,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[94], "\n") .. "\n```\n" .. descriptions[94],
+      value = docs[94],
     },
     dup = 0,
     kind = lsp_kind,
@@ -21997,7 +22002,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[95], "\n") .. "\n```\n" .. descriptions[95],
+      value = docs[95],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22006,7 +22011,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[96], "\n") .. "\n```\n" .. descriptions[96],
+      value = docs[96],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22015,7 +22020,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[97], "\n") .. "\n```\n" .. descriptions[97],
+      value = docs[97],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22024,7 +22029,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[97], "\n") .. "\n```\n" .. descriptions[97],
+      value = docs[97],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22033,7 +22038,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22042,7 +22047,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22051,7 +22056,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22060,7 +22065,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22069,7 +22074,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[99], "\n") .. "\n```\n" .. descriptions[99],
+      value = docs[99],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22078,7 +22083,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[99], "\n") .. "\n```\n" .. descriptions[99],
+      value = docs[99],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22087,7 +22092,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[100], "\n") .. "\n```\n" .. descriptions[100],
+      value = docs[100],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22096,7 +22101,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
+      value = docs[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22105,7 +22110,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
+      value = docs[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22114,7 +22119,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
+      value = docs[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22123,7 +22128,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
+      value = docs[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22132,7 +22137,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
+      value = docs[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22141,7 +22146,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[101], "\n") .. "\n```\n" .. descriptions[101],
+      value = docs[101],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22150,7 +22155,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[102], "\n") .. "\n```\n" .. descriptions[102],
+      value = docs[102],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22159,7 +22164,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[102], "\n") .. "\n```\n" .. descriptions[102],
+      value = docs[102],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22168,7 +22173,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[102], "\n") .. "\n```\n" .. descriptions[102],
+      value = docs[102],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22177,7 +22182,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[103], "\n") .. "\n```\n" .. descriptions[103],
+      value = docs[103],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22186,7 +22191,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[103], "\n") .. "\n```\n" .. descriptions[103],
+      value = docs[103],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22195,7 +22200,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[104], "\n") .. "\n```\n" .. descriptions[104],
+      value = docs[104],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22204,7 +22209,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[105], "\n") .. "\n```\n" .. descriptions[105],
+      value = docs[105],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22213,7 +22218,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[106], "\n") .. "\n```\n" .. descriptions[106],
+      value = docs[106],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22222,7 +22227,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[106], "\n") .. "\n```\n" .. descriptions[106],
+      value = docs[106],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22231,7 +22236,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[107], "\n") .. "\n```\n" .. descriptions[107],
+      value = docs[107],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22240,7 +22245,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[108], "\n") .. "\n```\n" .. descriptions[108],
+      value = docs[108],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22249,7 +22254,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[108], "\n") .. "\n```\n" .. descriptions[108],
+      value = docs[108],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22258,7 +22263,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[109], "\n") .. "\n```\n" .. descriptions[109],
+      value = docs[109],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22267,7 +22272,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[109], "\n") .. "\n```\n" .. descriptions[109],
+      value = docs[109],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22276,7 +22281,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[110], "\n") .. "\n```\n" .. descriptions[110],
+      value = docs[110],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22285,7 +22290,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[110], "\n") .. "\n```\n" .. descriptions[110],
+      value = docs[110],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22294,7 +22299,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[111], "\n") .. "\n```\n" .. descriptions[111],
+      value = docs[111],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22303,7 +22308,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[111], "\n") .. "\n```\n" .. descriptions[111],
+      value = docs[111],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22312,7 +22317,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[112], "\n") .. "\n```\n" .. descriptions[112],
+      value = docs[112],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22321,7 +22326,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[113], "\n") .. "\n```\n" .. descriptions[113],
+      value = docs[113],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22330,7 +22335,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[114], "\n") .. "\n```\n" .. descriptions[114],
+      value = docs[114],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22339,7 +22344,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[115], "\n") .. "\n```\n" .. descriptions[115],
+      value = docs[115],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22348,7 +22353,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[116], "\n") .. "\n```\n" .. descriptions[116],
+      value = docs[116],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22357,7 +22362,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[117], "\n") .. "\n```\n" .. descriptions[117],
+      value = docs[117],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22366,7 +22371,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[118], "\n") .. "\n```\n" .. descriptions[118],
+      value = docs[118],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22375,7 +22380,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[119], "\n") .. "\n```\n" .. descriptions[119],
+      value = docs[119],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22384,7 +22389,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[120], "\n") .. "\n```\n" .. descriptions[120],
+      value = docs[120],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22393,7 +22398,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[121], "\n") .. "\n```\n" .. descriptions[121],
+      value = docs[121],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22402,7 +22407,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[122], "\n") .. "\n```\n" .. descriptions[122],
+      value = docs[122],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22411,7 +22416,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[123], "\n") .. "\n```\n" .. descriptions[123],
+      value = docs[123],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22420,7 +22425,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[124], "\n") .. "\n```\n" .. descriptions[124],
+      value = docs[124],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22429,7 +22434,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[125], "\n") .. "\n```\n" .. descriptions[125],
+      value = docs[125],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22438,7 +22443,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[126], "\n") .. "\n```\n" .. descriptions[126],
+      value = docs[126],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22447,7 +22452,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[127], "\n") .. "\n```\n" .. descriptions[127],
+      value = docs[127],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22456,7 +22461,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[128], "\n") .. "\n```\n" .. descriptions[128],
+      value = docs[128],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22465,7 +22470,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[129], "\n") .. "\n```\n" .. descriptions[129],
+      value = docs[129],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22474,7 +22479,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[130], "\n") .. "\n```\n" .. descriptions[130],
+      value = docs[130],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22483,7 +22488,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[131], "\n") .. "\n```\n" .. descriptions[131],
+      value = docs[131],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22492,7 +22497,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[132], "\n") .. "\n```\n" .. descriptions[132],
+      value = docs[132],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22501,7 +22506,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[132], "\n") .. "\n```\n" .. descriptions[132],
+      value = docs[132],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22510,7 +22515,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[133], "\n") .. "\n```\n" .. descriptions[133],
+      value = docs[133],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22519,7 +22524,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[133], "\n") .. "\n```\n" .. descriptions[133],
+      value = docs[133],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22528,7 +22533,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[134], "\n") .. "\n```\n" .. descriptions[134],
+      value = docs[134],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22537,7 +22542,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[135], "\n") .. "\n```\n" .. descriptions[135],
+      value = docs[135],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22546,7 +22551,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[135], "\n") .. "\n```\n" .. descriptions[135],
+      value = docs[135],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22555,7 +22560,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[136], "\n") .. "\n```\n" .. descriptions[136],
+      value = docs[136],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22564,7 +22569,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[137], "\n") .. "\n```\n" .. descriptions[137],
+      value = docs[137],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22573,7 +22578,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[138], "\n") .. "\n```\n" .. descriptions[138],
+      value = docs[138],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22582,7 +22587,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[138], "\n") .. "\n```\n" .. descriptions[138],
+      value = docs[138],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22591,7 +22596,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[139], "\n") .. "\n```\n" .. descriptions[139],
+      value = docs[139],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22600,7 +22605,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
+      value = docs[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22609,7 +22614,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[140], "\n") .. "\n```\n" .. descriptions[140],
+      value = docs[140],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22618,7 +22623,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
+      value = docs[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22627,7 +22632,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[141], "\n") .. "\n```\n" .. descriptions[141],
+      value = docs[141],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22636,7 +22641,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
+      value = docs[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22645,7 +22650,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[141], "\n") .. "\n```\n" .. descriptions[141],
+      value = docs[141],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22654,7 +22659,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
+      value = docs[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22663,7 +22668,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[142], "\n") .. "\n```\n" .. descriptions[142],
+      value = docs[142],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22672,7 +22677,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[29], "\n") .. "\n```\n" .. descriptions[29],
+      value = docs[29],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22681,7 +22686,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[142], "\n") .. "\n```\n" .. descriptions[142],
+      value = docs[142],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22690,7 +22695,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[143], "\n") .. "\n```\n" .. descriptions[143],
+      value = docs[143],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22699,7 +22704,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[144], "\n") .. "\n```\n" .. descriptions[144],
+      value = docs[144],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22708,7 +22713,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[145], "\n") .. "\n```\n" .. descriptions[145],
+      value = docs[145],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22717,7 +22722,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[144], "\n") .. "\n```\n" .. descriptions[144],
+      value = docs[144],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22726,7 +22731,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[146], "\n") .. "\n```\n" .. descriptions[146],
+      value = docs[146],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22735,7 +22740,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[147], "\n") .. "\n```\n" .. descriptions[147],
+      value = docs[147],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22744,7 +22749,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[148], "\n") .. "\n```\n" .. descriptions[148],
+      value = docs[148],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22753,7 +22758,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[147], "\n") .. "\n```\n" .. descriptions[147],
+      value = docs[147],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22762,7 +22767,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[149], "\n") .. "\n```\n" .. descriptions[149],
+      value = docs[149],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22771,7 +22776,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[150], "\n") .. "\n```\n" .. descriptions[150],
+      value = docs[150],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22780,7 +22785,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[149], "\n") .. "\n```\n" .. descriptions[149],
+      value = docs[149],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22789,7 +22794,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[150], "\n") .. "\n```\n" .. descriptions[150],
+      value = docs[150],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22798,7 +22803,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[151], "\n") .. "\n```\n" .. descriptions[151],
+      value = docs[151],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22807,7 +22812,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[152], "\n") .. "\n```\n" .. descriptions[152],
+      value = docs[152],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22816,7 +22821,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[151], "\n") .. "\n```\n" .. descriptions[151],
+      value = docs[151],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22825,7 +22830,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[153], "\n") .. "\n```\n" .. descriptions[153],
+      value = docs[153],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22834,7 +22839,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[154], "\n") .. "\n```\n" .. descriptions[154],
+      value = docs[154],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22843,7 +22848,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
+      value = docs[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22852,7 +22857,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[156], "\n") .. "\n```\n" .. descriptions[156],
+      value = docs[156],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22861,7 +22866,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
+      value = docs[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22870,7 +22875,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[157], "\n") .. "\n```\n" .. descriptions[157],
+      value = docs[157],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22879,7 +22884,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
+      value = docs[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22888,7 +22893,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[158], "\n") .. "\n```\n" .. descriptions[158],
+      value = docs[158],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22897,7 +22902,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
+      value = docs[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22906,7 +22911,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[158], "\n") .. "\n```\n" .. descriptions[158],
+      value = docs[158],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22915,7 +22920,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
+      value = docs[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22924,7 +22929,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[159], "\n") .. "\n```\n" .. descriptions[159],
+      value = docs[159],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22933,7 +22938,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
+      value = docs[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22942,7 +22947,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[160], "\n") .. "\n```\n" .. descriptions[160],
+      value = docs[160],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22951,7 +22956,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
+      value = docs[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22960,7 +22965,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[161], "\n") .. "\n```\n" .. descriptions[161],
+      value = docs[161],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22969,7 +22974,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[155], "\n") .. "\n```\n" .. descriptions[155],
+      value = docs[155],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22978,7 +22983,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[162], "\n") .. "\n```\n" .. descriptions[162],
+      value = docs[162],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22987,7 +22992,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[163], "\n") .. "\n```\n" .. descriptions[163],
+      value = docs[163],
     },
     dup = 0,
     kind = lsp_kind,
@@ -22996,7 +23001,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[164], "\n") .. "\n```\n" .. descriptions[164],
+      value = docs[164],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23005,7 +23010,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[163], "\n") .. "\n```\n" .. descriptions[163],
+      value = docs[163],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23014,7 +23019,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[165], "\n") .. "\n```\n" .. descriptions[165],
+      value = docs[165],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23023,7 +23028,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[165], "\n") .. "\n```\n" .. descriptions[165],
+      value = docs[165],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23032,7 +23037,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[166], "\n") .. "\n```\n" .. descriptions[166],
+      value = docs[166],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23041,7 +23046,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[167], "\n") .. "\n```\n" .. descriptions[167],
+      value = docs[167],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23050,7 +23055,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[167], "\n") .. "\n```\n" .. descriptions[167],
+      value = docs[167],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23059,7 +23064,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[168], "\n") .. "\n```\n" .. descriptions[168],
+      value = docs[168],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23068,7 +23073,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[169], "\n") .. "\n```\n" .. descriptions[169],
+      value = docs[169],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23077,7 +23082,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[170], "\n") .. "\n```\n" .. descriptions[170],
+      value = docs[170],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23086,7 +23091,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[171], "\n") .. "\n```\n" .. descriptions[171],
+      value = docs[171],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23095,7 +23100,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[172], "\n") .. "\n```\n" .. descriptions[172],
+      value = docs[172],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23104,7 +23109,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[173], "\n") .. "\n```\n" .. descriptions[173],
+      value = docs[173],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23113,7 +23118,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[173], "\n") .. "\n```\n" .. descriptions[173],
+      value = docs[173],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23122,7 +23127,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[174], "\n") .. "\n```\n" .. descriptions[174],
+      value = docs[174],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23131,7 +23136,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[175], "\n") .. "\n```\n" .. descriptions[175],
+      value = docs[175],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23140,7 +23145,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[176], "\n") .. "\n```\n" .. descriptions[176],
+      value = docs[176],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23149,7 +23154,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[177], "\n") .. "\n```\n" .. descriptions[177],
+      value = docs[177],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23158,7 +23163,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[178], "\n") .. "\n```\n" .. descriptions[178],
+      value = docs[178],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23167,7 +23172,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[178], "\n") .. "\n```\n" .. descriptions[178],
+      value = docs[178],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23176,7 +23181,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[179], "\n") .. "\n```\n" .. descriptions[179],
+      value = docs[179],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23185,7 +23190,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[179], "\n") .. "\n```\n" .. descriptions[179],
+      value = docs[179],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23194,7 +23199,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[180], "\n") .. "\n```\n" .. descriptions[180],
+      value = docs[180],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23203,7 +23208,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[180], "\n") .. "\n```\n" .. descriptions[180],
+      value = docs[180],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23212,7 +23217,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[181], "\n") .. "\n```\n" .. descriptions[181],
+      value = docs[181],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23221,7 +23226,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[181], "\n") .. "\n```\n" .. descriptions[181],
+      value = docs[181],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23230,7 +23235,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[182], "\n") .. "\n```\n" .. descriptions[182],
+      value = docs[182],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23239,7 +23244,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[183], "\n") .. "\n```\n" .. descriptions[183],
+      value = docs[183],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23248,7 +23253,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[184], "\n") .. "\n```\n" .. descriptions[184],
+      value = docs[184],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23257,7 +23262,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[185], "\n") .. "\n```\n" .. descriptions[185],
+      value = docs[185],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23266,7 +23271,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[185], "\n") .. "\n```\n" .. descriptions[185],
+      value = docs[185],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23275,7 +23280,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[186], "\n") .. "\n```\n" .. descriptions[186],
+      value = docs[186],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23284,7 +23289,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[186], "\n") .. "\n```\n" .. descriptions[186],
+      value = docs[186],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23293,7 +23298,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[187], "\n") .. "\n```\n" .. descriptions[187],
+      value = docs[187],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23302,7 +23307,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[187], "\n") .. "\n```\n" .. descriptions[187],
+      value = docs[187],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23311,7 +23316,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[188], "\n") .. "\n```\n" .. descriptions[188],
+      value = docs[188],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23320,7 +23325,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[189], "\n") .. "\n```\n" .. descriptions[189],
+      value = docs[189],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23329,7 +23334,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[190], "\n") .. "\n```\n" .. descriptions[190],
+      value = docs[190],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23338,7 +23343,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[191], "\n") .. "\n```\n" .. descriptions[191],
+      value = docs[191],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23347,7 +23352,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[192], "\n") .. "\n```\n" .. descriptions[192],
+      value = docs[192],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23356,7 +23361,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[193], "\n") .. "\n```\n" .. descriptions[193],
+      value = docs[193],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23365,7 +23370,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[194], "\n") .. "\n```\n" .. descriptions[194],
+      value = docs[194],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23374,7 +23379,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[195], "\n") .. "\n```\n" .. descriptions[195],
+      value = docs[195],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23383,7 +23388,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[196], "\n") .. "\n```\n" .. descriptions[196],
+      value = docs[196],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23392,7 +23397,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[197], "\n") .. "\n```\n" .. descriptions[197],
+      value = docs[197],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23401,7 +23406,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[198], "\n") .. "\n```\n" .. descriptions[198],
+      value = docs[198],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23410,7 +23415,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[199], "\n") .. "\n```\n" .. descriptions[199],
+      value = docs[199],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23419,7 +23424,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[200], "\n") .. "\n```\n" .. descriptions[200],
+      value = docs[200],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23428,7 +23433,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[201], "\n") .. "\n```\n" .. descriptions[201],
+      value = docs[201],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23437,7 +23442,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[202], "\n") .. "\n```\n" .. descriptions[202],
+      value = docs[202],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23446,7 +23451,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[203], "\n") .. "\n```\n" .. descriptions[203],
+      value = docs[203],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23455,7 +23460,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[204], "\n") .. "\n```\n" .. descriptions[204],
+      value = docs[204],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23464,7 +23469,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[205], "\n") .. "\n```\n" .. descriptions[205],
+      value = docs[205],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23473,7 +23478,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[206], "\n") .. "\n```\n" .. descriptions[206],
+      value = docs[206],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23482,7 +23487,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[207], "\n") .. "\n```\n" .. descriptions[207],
+      value = docs[207],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23491,7 +23496,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[208], "\n") .. "\n```\n" .. descriptions[208],
+      value = docs[208],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23500,7 +23505,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23509,7 +23514,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23518,7 +23523,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23527,7 +23532,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23536,7 +23541,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23545,7 +23550,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23554,7 +23559,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23563,7 +23568,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23572,7 +23577,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23581,7 +23586,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23590,7 +23595,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23599,7 +23604,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23608,7 +23613,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23617,7 +23622,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23626,7 +23631,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23635,7 +23640,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23644,7 +23649,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23653,7 +23658,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23662,7 +23667,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23671,7 +23676,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23680,7 +23685,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23689,7 +23694,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23698,7 +23703,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23707,7 +23712,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23716,7 +23721,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23725,7 +23730,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23734,7 +23739,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23743,7 +23748,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23752,7 +23757,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23761,7 +23766,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23770,7 +23775,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23779,7 +23784,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23788,7 +23793,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23797,7 +23802,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23806,7 +23811,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23815,7 +23820,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23824,7 +23829,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23833,7 +23838,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23842,7 +23847,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23851,7 +23856,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23860,7 +23865,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23869,7 +23874,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23878,7 +23883,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23887,7 +23892,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23896,7 +23901,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23905,7 +23910,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23914,7 +23919,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23923,7 +23928,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[209], "\n") .. "\n```\n" .. descriptions[209],
+      value = docs[209],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23932,7 +23937,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23941,7 +23946,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[210], "\n") .. "\n```\n" .. descriptions[210],
+      value = docs[210],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23950,7 +23955,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23959,7 +23964,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[211], "\n") .. "\n```\n" .. descriptions[211],
+      value = docs[211],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23968,7 +23973,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23977,7 +23982,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23986,7 +23991,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -23995,7 +24000,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24004,7 +24009,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24013,7 +24018,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24022,7 +24027,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24031,7 +24036,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24040,7 +24045,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24049,7 +24054,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24058,7 +24063,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24067,7 +24072,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24076,7 +24081,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24085,7 +24090,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24094,7 +24099,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[98], "\n") .. "\n```\n" .. descriptions[98],
+      value = docs[98],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24103,7 +24108,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[212], "\n") .. "\n```\n" .. descriptions[212],
+      value = docs[212],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24112,7 +24117,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[213], "\n") .. "\n```\n" .. descriptions[213],
+      value = docs[213],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24121,7 +24126,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[214], "\n") .. "\n```\n" .. descriptions[214],
+      value = docs[214],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24130,7 +24135,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[215], "\n") .. "\n```\n" .. descriptions[215],
+      value = docs[215],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24139,7 +24144,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[216], "\n") .. "\n```\n" .. descriptions[216],
+      value = docs[216],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24148,7 +24153,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[217], "\n") .. "\n```\n" .. descriptions[217],
+      value = docs[217],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24157,7 +24162,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[217], "\n") .. "\n```\n" .. descriptions[217],
+      value = docs[217],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24166,7 +24171,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[218], "\n") .. "\n```\n" .. descriptions[218],
+      value = docs[218],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24175,7 +24180,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[219], "\n") .. "\n```\n" .. descriptions[219],
+      value = docs[219],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24184,7 +24189,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24193,7 +24198,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24202,7 +24207,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24211,7 +24216,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24220,7 +24225,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24229,7 +24234,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24238,7 +24243,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24247,7 +24252,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24256,7 +24261,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24265,7 +24270,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24274,7 +24279,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24283,7 +24288,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24292,7 +24297,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24301,7 +24306,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24310,7 +24315,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24319,7 +24324,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24328,7 +24333,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24337,7 +24342,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[220], "\n") .. "\n```\n" .. descriptions[220],
+      value = docs[220],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24346,7 +24351,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[221], "\n") .. "\n```\n" .. descriptions[221],
+      value = docs[221],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24355,7 +24360,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[222], "\n") .. "\n```\n" .. descriptions[222],
+      value = docs[222],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24364,7 +24369,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[9], "\n") .. "\n```\n" .. descriptions[9],
+      value = docs[9],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24373,7 +24378,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[223], "\n") .. "\n```\n" .. descriptions[223],
+      value = docs[223],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24382,7 +24387,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[224], "\n") .. "\n```\n" .. descriptions[224],
+      value = docs[224],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24391,7 +24396,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[91], "\n") .. "\n```\n" .. descriptions[91],
+      value = docs[91],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24400,7 +24405,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[225], "\n") .. "\n```\n" .. descriptions[225],
+      value = docs[225],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24409,7 +24414,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[226], "\n") .. "\n```\n" .. descriptions[226],
+      value = docs[226],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24418,7 +24423,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[227], "\n") .. "\n```\n" .. descriptions[227],
+      value = docs[227],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24427,7 +24432,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[226], "\n") .. "\n```\n" .. descriptions[226],
+      value = docs[226],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24436,7 +24441,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[228], "\n") .. "\n```\n" .. descriptions[228],
+      value = docs[228],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24445,7 +24450,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
+      value = docs[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24454,7 +24459,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[230], "\n") .. "\n```\n" .. descriptions[230],
+      value = docs[230],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24463,7 +24468,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
+      value = docs[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24472,7 +24477,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[231], "\n") .. "\n```\n" .. descriptions[231],
+      value = docs[231],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24481,7 +24486,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
+      value = docs[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24490,7 +24495,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[232], "\n") .. "\n```\n" .. descriptions[232],
+      value = docs[232],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24499,7 +24504,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[233], "\n") .. "\n```\n" .. descriptions[233],
+      value = docs[233],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24508,7 +24513,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[234], "\n") .. "\n```\n" .. descriptions[234],
+      value = docs[234],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24517,7 +24522,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[235], "\n") .. "\n```\n" .. descriptions[235],
+      value = docs[235],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24526,7 +24531,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[236], "\n") .. "\n```\n" .. descriptions[236],
+      value = docs[236],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24535,7 +24540,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[237], "\n") .. "\n```\n" .. descriptions[237],
+      value = docs[237],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24544,7 +24549,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[238], "\n") .. "\n```\n" .. descriptions[238],
+      value = docs[238],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24553,7 +24558,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[239], "\n") .. "\n```\n" .. descriptions[239],
+      value = docs[239],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24562,7 +24567,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[240], "\n") .. "\n```\n" .. descriptions[240],
+      value = docs[240],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24571,7 +24576,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[241], "\n") .. "\n```\n" .. descriptions[241],
+      value = docs[241],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24580,7 +24585,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[242], "\n") .. "\n```\n" .. descriptions[242],
+      value = docs[242],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24589,7 +24594,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[243], "\n") .. "\n```\n" .. descriptions[243],
+      value = docs[243],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24598,7 +24603,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[244], "\n") .. "\n```\n" .. descriptions[244],
+      value = docs[244],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24607,7 +24612,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[245], "\n") .. "\n```\n" .. descriptions[245],
+      value = docs[245],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24616,7 +24621,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[246], "\n") .. "\n```\n" .. descriptions[246],
+      value = docs[246],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24625,7 +24630,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[247], "\n") .. "\n```\n" .. descriptions[247],
+      value = docs[247],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24634,7 +24639,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[248], "\n") .. "\n```\n" .. descriptions[248],
+      value = docs[248],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24643,7 +24648,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24652,7 +24657,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[250], "\n") .. "\n```\n" .. descriptions[250],
+      value = docs[250],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24661,7 +24666,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[251], "\n") .. "\n```\n" .. descriptions[251],
+      value = docs[251],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24670,7 +24675,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[250], "\n") .. "\n```\n" .. descriptions[250],
+      value = docs[250],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24679,7 +24684,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24688,7 +24693,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[252], "\n") .. "\n```\n" .. descriptions[252],
+      value = docs[252],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24697,7 +24702,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[251], "\n") .. "\n```\n" .. descriptions[251],
+      value = docs[251],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24706,7 +24711,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[252], "\n") .. "\n```\n" .. descriptions[252],
+      value = docs[252],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24715,7 +24720,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[253], "\n") .. "\n```\n" .. descriptions[253],
+      value = docs[253],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24724,7 +24729,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[254], "\n") .. "\n```\n" .. descriptions[254],
+      value = docs[254],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24733,7 +24738,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[255], "\n") .. "\n```\n" .. descriptions[255],
+      value = docs[255],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24742,7 +24747,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[254], "\n") .. "\n```\n" .. descriptions[254],
+      value = docs[254],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24751,7 +24756,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[256], "\n") .. "\n```\n" .. descriptions[256],
+      value = docs[256],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24760,7 +24765,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[257], "\n") .. "\n```\n" .. descriptions[257],
+      value = docs[257],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24769,7 +24774,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[258], "\n") .. "\n```\n" .. descriptions[258],
+      value = docs[258],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24778,7 +24783,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[259], "\n") .. "\n```\n" .. descriptions[259],
+      value = docs[259],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24787,7 +24792,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[260], "\n") .. "\n```\n" .. descriptions[260],
+      value = docs[260],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24796,7 +24801,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[261], "\n") .. "\n```\n" .. descriptions[261],
+      value = docs[261],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24805,7 +24810,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[92], "\n") .. "\n```\n" .. descriptions[92],
+      value = docs[92],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24814,7 +24819,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[262], "\n") .. "\n```\n" .. descriptions[262],
+      value = docs[262],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24823,7 +24828,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[263], "\n") .. "\n```\n" .. descriptions[263],
+      value = docs[263],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24832,7 +24837,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[264], "\n") .. "\n```\n" .. descriptions[264],
+      value = docs[264],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24841,7 +24846,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[265], "\n") .. "\n```\n" .. descriptions[265],
+      value = docs[265],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24850,7 +24855,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[266], "\n") .. "\n```\n" .. descriptions[266],
+      value = docs[266],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24859,7 +24864,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[267], "\n") .. "\n```\n" .. descriptions[267],
+      value = docs[267],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24868,7 +24873,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[268], "\n") .. "\n```\n" .. descriptions[268],
+      value = docs[268],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24877,7 +24882,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[269], "\n") .. "\n```\n" .. descriptions[269],
+      value = docs[269],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24886,7 +24891,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[270], "\n") .. "\n```\n" .. descriptions[270],
+      value = docs[270],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24895,7 +24900,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[271], "\n") .. "\n```\n" .. descriptions[271],
+      value = docs[271],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24904,7 +24909,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[272], "\n") .. "\n```\n" .. descriptions[272],
+      value = docs[272],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24913,7 +24918,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[273], "\n") .. "\n```\n" .. descriptions[273],
+      value = docs[273],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24922,7 +24927,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[272], "\n") .. "\n```\n" .. descriptions[272],
+      value = docs[272],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24931,7 +24936,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[274], "\n") .. "\n```\n" .. descriptions[274],
+      value = docs[274],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24940,7 +24945,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[275], "\n") .. "\n```\n" .. descriptions[275],
+      value = docs[275],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24949,7 +24954,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[276], "\n") .. "\n```\n" .. descriptions[276],
+      value = docs[276],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24958,7 +24963,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[277], "\n") .. "\n```\n" .. descriptions[277],
+      value = docs[277],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24967,7 +24972,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[278], "\n") .. "\n```\n" .. descriptions[278],
+      value = docs[278],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24976,7 +24981,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[277], "\n") .. "\n```\n" .. descriptions[277],
+      value = docs[277],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24985,7 +24990,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[251], "\n") .. "\n```\n" .. descriptions[251],
+      value = docs[251],
     },
     dup = 0,
     kind = lsp_kind,
@@ -24994,7 +24999,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[279], "\n") .. "\n```\n" .. descriptions[279],
+      value = docs[279],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25003,7 +25008,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[280], "\n") .. "\n```\n" .. descriptions[280],
+      value = docs[280],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25012,7 +25017,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[279], "\n") .. "\n```\n" .. descriptions[279],
+      value = docs[279],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25021,7 +25026,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[281], "\n") .. "\n```\n" .. descriptions[281],
+      value = docs[281],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25030,7 +25035,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[279], "\n") .. "\n```\n" .. descriptions[279],
+      value = docs[279],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25039,7 +25044,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[282], "\n") .. "\n```\n" .. descriptions[282],
+      value = docs[282],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25048,7 +25053,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[279], "\n") .. "\n```\n" .. descriptions[279],
+      value = docs[279],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25057,7 +25062,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
+      value = docs[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25066,7 +25071,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[283], "\n") .. "\n```\n" .. descriptions[283],
+      value = docs[283],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25075,7 +25080,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[26], "\n") .. "\n```\n" .. descriptions[26],
+      value = docs[26],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25084,7 +25089,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[284], "\n") .. "\n```\n" .. descriptions[284],
+      value = docs[284],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25093,7 +25098,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[285], "\n") .. "\n```\n" .. descriptions[285],
+      value = docs[285],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25102,7 +25107,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[286], "\n") .. "\n```\n" .. descriptions[286],
+      value = docs[286],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25111,7 +25116,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[287], "\n") .. "\n```\n" .. descriptions[287],
+      value = docs[287],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25120,7 +25125,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[288], "\n") .. "\n```\n" .. descriptions[288],
+      value = docs[288],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25129,7 +25134,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[289], "\n") .. "\n```\n" .. descriptions[289],
+      value = docs[289],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25138,7 +25143,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[290], "\n") .. "\n```\n" .. descriptions[290],
+      value = docs[290],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25147,7 +25152,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[291], "\n") .. "\n```\n" .. descriptions[291],
+      value = docs[291],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25156,7 +25161,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[292], "\n") .. "\n```\n" .. descriptions[292],
+      value = docs[292],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25165,7 +25170,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[293], "\n") .. "\n```\n" .. descriptions[293],
+      value = docs[293],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25174,7 +25179,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[294], "\n") .. "\n```\n" .. descriptions[294],
+      value = docs[294],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25183,7 +25188,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[293], "\n") .. "\n```\n" .. descriptions[293],
+      value = docs[293],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25192,7 +25197,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25201,7 +25206,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[295], "\n") .. "\n```\n" .. descriptions[295],
+      value = docs[295],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25210,7 +25215,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25219,7 +25224,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[296], "\n") .. "\n```\n" .. descriptions[296],
+      value = docs[296],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25228,7 +25233,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25237,7 +25242,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[297], "\n") .. "\n```\n" .. descriptions[297],
+      value = docs[297],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25246,7 +25251,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25255,7 +25260,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[298], "\n") .. "\n```\n" .. descriptions[298],
+      value = docs[298],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25264,7 +25269,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25273,7 +25278,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[299], "\n") .. "\n```\n" .. descriptions[299],
+      value = docs[299],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25282,7 +25287,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25291,7 +25296,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[274], "\n") .. "\n```\n" .. descriptions[274],
+      value = docs[274],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25300,7 +25305,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25309,7 +25314,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[273], "\n") .. "\n```\n" .. descriptions[273],
+      value = docs[273],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25318,7 +25323,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25327,7 +25332,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[300], "\n") .. "\n```\n" .. descriptions[300],
+      value = docs[300],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25336,7 +25341,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25345,7 +25350,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[301], "\n") .. "\n```\n" .. descriptions[301],
+      value = docs[301],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25354,7 +25359,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25363,7 +25368,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[302], "\n") .. "\n```\n" .. descriptions[302],
+      value = docs[302],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25372,7 +25377,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25381,7 +25386,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[303], "\n") .. "\n```\n" .. descriptions[303],
+      value = docs[303],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25390,7 +25395,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25399,7 +25404,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[304], "\n") .. "\n```\n" .. descriptions[304],
+      value = docs[304],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25408,7 +25413,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25417,7 +25422,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[305], "\n") .. "\n```\n" .. descriptions[305],
+      value = docs[305],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25426,7 +25431,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25435,7 +25440,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25444,7 +25449,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25453,7 +25458,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25462,7 +25467,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25471,7 +25476,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[306], "\n") .. "\n```\n" .. descriptions[306],
+      value = docs[306],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25480,7 +25485,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25489,7 +25494,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[307], "\n") .. "\n```\n" .. descriptions[307],
+      value = docs[307],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25498,7 +25503,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25507,7 +25512,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[245], "\n") .. "\n```\n" .. descriptions[245],
+      value = docs[245],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25516,7 +25521,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25525,7 +25530,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[243], "\n") .. "\n```\n" .. descriptions[243],
+      value = docs[243],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25534,7 +25539,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25543,7 +25548,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[239], "\n") .. "\n```\n" .. descriptions[239],
+      value = docs[239],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25552,7 +25557,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25561,7 +25566,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[237], "\n") .. "\n```\n" .. descriptions[237],
+      value = docs[237],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25570,7 +25575,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25579,7 +25584,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[308], "\n") .. "\n```\n" .. descriptions[308],
+      value = docs[308],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25588,7 +25593,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25597,7 +25602,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[309], "\n") .. "\n```\n" .. descriptions[309],
+      value = docs[309],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25606,7 +25611,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25615,7 +25620,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
+      value = docs[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25624,7 +25629,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25633,7 +25638,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
+      value = docs[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25642,7 +25647,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25651,7 +25656,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[229], "\n") .. "\n```\n" .. descriptions[229],
+      value = docs[229],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25660,7 +25665,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25669,7 +25674,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[310], "\n") .. "\n```\n" .. descriptions[310],
+      value = docs[310],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25678,7 +25683,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25687,7 +25692,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[305], "\n") .. "\n```\n" .. descriptions[305],
+      value = docs[305],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25696,7 +25701,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[249], "\n") .. "\n```\n" .. descriptions[249],
+      value = docs[249],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25705,7 +25710,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[311], "\n") .. "\n```\n" .. descriptions[311],
+      value = docs[311],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25714,7 +25719,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[312], "\n") .. "\n```\n" .. descriptions[312],
+      value = docs[312],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25723,7 +25728,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[313], "\n") .. "\n```\n" .. descriptions[313],
+      value = docs[313],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25732,7 +25737,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[314], "\n") .. "\n```\n" .. descriptions[314],
+      value = docs[314],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25741,7 +25746,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[315], "\n") .. "\n```\n" .. descriptions[315],
+      value = docs[315],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25750,7 +25755,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[316], "\n") .. "\n```\n" .. descriptions[316],
+      value = docs[316],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25759,7 +25764,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
+      value = docs[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25768,7 +25773,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[317], "\n") .. "\n```\n" .. descriptions[317],
+      value = docs[317],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25777,7 +25782,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
+      value = docs[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25786,7 +25791,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[318], "\n") .. "\n```\n" .. descriptions[318],
+      value = docs[318],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25795,7 +25800,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
+      value = docs[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25804,7 +25809,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[319], "\n") .. "\n```\n" .. descriptions[319],
+      value = docs[319],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25813,7 +25818,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
+      value = docs[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25822,7 +25827,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[320], "\n") .. "\n```\n" .. descriptions[320],
+      value = docs[320],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25831,7 +25836,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
+      value = docs[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25840,7 +25845,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[320], "\n") .. "\n```\n" .. descriptions[320],
+      value = docs[320],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25849,7 +25854,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
+      value = docs[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25858,7 +25863,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[315], "\n") .. "\n```\n" .. descriptions[315],
+      value = docs[315],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25867,7 +25872,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[66], "\n") .. "\n```\n" .. descriptions[66],
+      value = docs[66],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25876,7 +25881,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25885,7 +25890,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[321], "\n") .. "\n```\n" .. descriptions[321],
+      value = docs[321],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25894,7 +25899,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25903,7 +25908,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[322], "\n") .. "\n```\n" .. descriptions[322],
+      value = docs[322],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25912,7 +25917,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25921,7 +25926,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[322], "\n") .. "\n```\n" .. descriptions[322],
+      value = docs[322],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25930,7 +25935,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25939,7 +25944,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[323], "\n") .. "\n```\n" .. descriptions[323],
+      value = docs[323],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25948,7 +25953,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25957,7 +25962,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[323], "\n") .. "\n```\n" .. descriptions[323],
+      value = docs[323],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25966,7 +25971,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25975,7 +25980,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[323], "\n") .. "\n```\n" .. descriptions[323],
+      value = docs[323],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25984,7 +25989,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -25993,7 +25998,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[323], "\n") .. "\n```\n" .. descriptions[323],
+      value = docs[323],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26002,7 +26007,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26011,7 +26016,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[324], "\n") .. "\n```\n" .. descriptions[324],
+      value = docs[324],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26020,7 +26025,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[1], "\n") .. "\n```\n" .. descriptions[1],
+      value = docs[1],
     },
     dup = 0,
     kind = lsp_kind,
@@ -26029,7 +26034,7 @@ return {
   {
     documentation = {
       kind = 'markdown',
-      value = "```c\n" .. table.concat(signatures[325], "\n") .. "\n```\n" .. descriptions[325],
+      value = docs[325],
     },
     dup = 0,
     kind = lsp_kind,
