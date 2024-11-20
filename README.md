@@ -48,10 +48,15 @@ vim.lsp.start({
 This is optional.
 
 If *luasnip* is setup then snippets might be preferred as they allow jumping to
-each function parameter. You can turn this on by adding the following:
+each function parameter. You can turn this on by calling `setup_snippets`:
 
 ```lua
-require('cmp_gl').setup_snippets()
+{
+   'vurentjie/cmp-gl',
+   config = function()
+     require('cmp_gl').setup_snippets()
+   end,
+},   
 ```
 
 https://github.com/user-attachments/assets/9f7d935c-e1af-4c85-8850-6280297836b0
