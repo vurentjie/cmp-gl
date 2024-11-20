@@ -14,7 +14,7 @@ There are two ways to enable completions:
 
 ---
 
-### 1. nvim-cmp source setup:
+### Option 1: nvim-cmp source setup:
 
 ```lua
 
@@ -45,13 +45,12 @@ vim.lsp.start({
 
 ---
 
-### 2. luasnip setup:
+### Option 2: luasnip setup:
 
 If *luasnip* is setup and snippets should be preferred as they allow jumping to
 each function parameter.
 
-When snippets are enabled, then source completion is automatically disabled to
-avoid duplication.
+When snippets are enabled, then some source completions are disabled to avoid duplication.
 
 ```lua
 require('cmp_gl').setup_snippets()
@@ -59,9 +58,8 @@ require('cmp_gl').setup_snippets()
 
 ---
 
-### enabling/disabling filetypes:
+### Enabling/disabling filetypes:
 
-This works for both snippets and cmp sources.
 Note that this will insert c-style code.
 
 ```lua

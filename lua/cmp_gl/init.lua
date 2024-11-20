@@ -7,8 +7,8 @@ end
 
 function source:complete(_, callback)
   local ft = vim.bo.filetype
-  if filetypes[ft] and not filetypes[ft].snippets then
-    local ok, result = pcall(require, string.format('cmp_gl.sources.gl'))
+  if filetypes[ft] then
+    local ok, result = pcall(require, filetypes[ft].snippets and 'cmp_gl.sources.gl_constant' or 'cmp_gl.sources.gl')
     if ok then
       return callback({
         items = result,
@@ -41,7 +41,6 @@ function source.setup_snippets()
         local ok, ls = pcall(require, 'luasnip')
         if ok then
           if not filetypes[ft].snippets then
-            print('loaded snippets')
             filetypes[ft].snippets = true
             ls.add_snippets(nil, {
               [ft] = require('cmp_gl.sources.gl_snippets'),
