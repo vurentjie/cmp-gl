@@ -62,7 +62,7 @@ vim.lsp.start({
 This is optional.
 
 If _luasnip_ is setup then snippets might be preferred as they allow jumping to
-each function parameter. You can turn this on by calling `setup_snippets`:
+each function parameter.
 
 ```lua
 -- lazy spec
