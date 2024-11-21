@@ -1,5 +1,7 @@
 # cmp-gl
+
 ---
+
 nvim-cmp source completions and snippets for OpenGL api functions.
 
 This is helpful when using libraries like glad that obfuscate the underlying api with macros.
@@ -39,7 +41,7 @@ vim.lsp.start({
 
 ```
 
- ![](demo.png)
+![](demo.png)
 
 ---
 
@@ -47,16 +49,19 @@ vim.lsp.start({
 
 This is optional.
 
-If *luasnip* is setup then snippets might be preferred as they allow jumping to
+If _luasnip_ is setup then snippets might be preferred as they allow jumping to
 each function parameter. You can turn this on by calling `setup_snippets`:
 
 ```lua
+-- lazy spec
 {
-   'vurentjie/cmp-gl',
-   config = function()
-     require('cmp_gl').setup_snippets()
-   end,
-},   
+  'vurentjie/cmp-gl',
+  config = function()
+    require('cmp_gl').setup({
+      snippets = true
+    })
+  end,
+},
 ```
 
 https://github.com/user-attachments/assets/818e7d27-d782-4a44-95aa-79c7eae6fd45
@@ -65,7 +70,7 @@ https://github.com/user-attachments/assets/818e7d27-d782-4a44-95aa-79c7eae6fd45
 
 ### Enabling/disabling filetypes:
 
-If you want to see completions in other filetypes you can do that but note that this will still insert c-style code. 
+If you want to see completions in other filetypes you can do that but note that this will still insert c-style code.
 
 ```lua
 require('cmp_gl').enable_filetype('<filetype>')

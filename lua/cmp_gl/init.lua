@@ -55,8 +55,11 @@ function source.setup_snippets()
       end
     end,
   })
-  if ft then
-    filetypes[ft] = nil
+end
+
+function source.setup(opts)
+  if opts and opts.snippets then
+    source.setup_snippets()
   end
 end
 
