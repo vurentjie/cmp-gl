@@ -12,9 +12,11 @@ The completion for OpenGL constants (e.g GL_TRIANGLES, GL_VERTEX_ARRAY_SIZE, etc
 
 By default the completions will display for c/cpp filetypes and insert c/cpp compatible code.
 
-There are two steps to enable completions:
+If you are looking for completions for GLSL, checkout [glsl_analyzer](https://github.com/nolanderc/glsl_analyzer).
 
 ---
+
+There are two steps to enable completions:
 
 ### Step 1: nvim-cmp source setup:
 
@@ -87,6 +89,3 @@ require('cmp_gl').enable_filetype('<filetype>')
 require('cmp_gl').disable_filetype('<filetype>')
 ```
 
----
-
-If you are looking for completions for GLSL, checkout [glsl_analyzer](https://github.com/nolanderc/glsl_analyzer).
