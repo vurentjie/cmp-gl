@@ -39,6 +39,18 @@ vim.lsp.start({
   ...
 })
 
+-- for convenience you can move the cursor to the first param of a function
+-- for better interactions see "snippets" sections below
+-- lazy spec
+{
+  'vurentjie/cmp-gl',
+  config = function()
+    require('cmp_gl').setup({
+      move_cursor = true
+    })
+  end,
+},
+
 ```
 
 ![](demo.png)

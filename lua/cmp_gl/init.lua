@@ -1,5 +1,13 @@
-local filetypes = { c = {}, cpp = {} }
+local config = {
+  move_cursor = false,
+  filetypes = { c = {}, cpp = {} }
+}
+
 local source = {}
+
+local function t(str)
+  return vim.api.nvim_replace_termcodes(str, true, true, true)
+end
 
 function source.new()
   return setmetatable({}, { __index = source })
@@ -7,8 +15,8 @@ end
 
 function source:complete(_, callback)
   local ft = vim.bo.filetype
-  if filetypes[ft] then
-    local ok, result = pcall(require, filetypes[ft].snippets and 'cmp_gl.sources.gl_constant' or 'cmp_gl.sources.gl')
+  if config.filetypes[ft] then
+    local ok, result = pcall(require, config.filetypes[ft].snippets and 'cmp_gl.sources.gl_constant' or 'cmp_gl.sources.gl')
     if ok then
       return callback({
         items = result,
@@ -17,15 +25,26 @@ function source:complete(_, callback)
   end
 end
 
+function source:execute(completion_item, callback)
+  if config.move_cursor then
+    local txt = completion_item.insertText
+    if txt and txt:find('%(') then
+      vim.cmd('norm! ?(' .. t('<cr>'))
+      vim.cmd('norm! /,' .. t('<cr>'))
+    end
+  end
+  callback(completion_item)
+end
+
 function source.enable_filetype(ft)
   if ft then
-    filetypes[ft] = {}
+    config.filetypes[ft] = {}
   end
 end
 
 function source.disable_filetype(ft)
   if ft then
-    filetypes[ft] = nil
+    config.filetypes[ft] = nil
   end
 end
 
@@ -37,11 +56,11 @@ function source.setup_snippets()
     callback = function(params)
       local buf = params.buf
       local ft = vim.bo[buf].filetype
-      if ft and filetypes[ft] then
+      if ft and config.filetypes[ft] then
         local ok, ls = pcall(require, 'luasnip')
         if ok then
-          if not filetypes[ft].snippets then
-            filetypes[ft].snippets = true
+          if not config.filetypes[ft].snippets then
+            config.filetypes[ft].snippets = true
             ls.add_snippets(nil, {
               [ft] = require('cmp_gl.sources.gl_snippets'),
             })
@@ -58,9 +77,11 @@ function source.setup_snippets()
 end
 
 function source.setup(opts)
-  if opts and opts.snippets then
+  opts = opts or {}
+  if opts.snippets then
     source.setup_snippets()
   end
+  config.move_cursor = opts.move_cursor == true
 end
 
 return source
