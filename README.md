@@ -57,9 +57,7 @@ vim.lsp.start({
 
 ---
 
-### Step 2: luasnip setup:
-
-This is optional.
+### Step 2: luasnip setup (optional):
 
 If _luasnip_ is setup then snippets might be preferred as they allow jumping to
 each function parameter.
