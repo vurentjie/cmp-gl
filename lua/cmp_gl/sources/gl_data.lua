@@ -678,7 +678,7 @@ requested by the user with the component argument of glTexImage1D, glTexImage2D,
 glTexImage3D, glCopyTexImage1D, and glCopyTexImage2D. The initial value is 0.
 
 `GL_TEXTURE_COMPRESSED` `params` returns a single boolean value indicating if the texture
-image is stored in a compressed internal format. The initiali value is `GL_FALSE`.
+image is stored in a compressed internal format. The initial value is `GL_FALSE`.
 
 `GL_TEXTURE_COMPRESSED_IMAGE_SIZE` `params` returns a single integer value, the number of
 unsigned bytes of the compressed texture image that would be returned from glGetCompressedTexImage.
