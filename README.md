@@ -34,6 +34,7 @@ You need to specify `provider=blink|nvim-cmp` in the setup to enable the complet
     config = function()
       require('cmp_gl').setup({
         provider = 'blink',
+        snippets = false,  -- if you prefer snippets that allow jumping to each param
       })
     end,
   },
@@ -56,11 +57,9 @@ You need to specify `provider=blink|nvim-cmp` in the setup to enable the complet
 
 There are two steps to enable completions:
 
-### Step 1: nvim-cmp source setup:
-
 ```lua
 
--- Place cmp_gl above nvim_lsp
+-- Place cmp_gl above nvim_lsp in the sources
 
 require('cmp').setup({
   sources = {
@@ -79,15 +78,13 @@ vim.lsp.start({
   ...
 })
 
--- for convenience you can move the cursor to the first param of a function
--- for better interactions see "snippets" sections below
--- lazy spec
 {
   'vurentjie/cmp-gl',
   config = function()
     require('cmp_gl').setup({
       provider = 'nvim-cmp',
-      move_cursor = true
+      move_cursor = true, -- jump to the first function param after completion (ignored for snippets)
+      snippets = false,  -- if you prefer snippets that allow jumping to each param
     })
   end,
 },
@@ -95,25 +92,6 @@ vim.lsp.start({
 ```
 
 ![](demo.png)
-
----
-
-### Step 2: luasnip for nvim-cmp setup (optional):
-
-If _luasnip_ is setup then snippets might be preferred as they allow jumping to
-each function parameter.
-
-```lua
--- lazy spec
-{
-  'vurentjie/cmp-gl',
-  config = function()
-    require('cmp_gl').setup({
-      snippets = true
-    })
-  end,
-},
-```
 
 https://github.com/user-attachments/assets/818e7d27-d782-4a44-95aa-79c7eae6fd45
 

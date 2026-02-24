@@ -53,7 +53,8 @@ local function setup_provider(provider)
       local items = {}
       if config.filetypes[ft] then
         local use_snippets = config.filetypes[ft].snippets
-        local ok, data = pcall(require, 'cmp_gl.sources.gl')
+        local ok, data =
+          pcall(require, use_snippets and 'cmp_gl.sources.gl_constant' or 'cmp_gl.sources.gl')
         if ok and type(data) == 'table' then
           items = data
         end
@@ -125,10 +126,11 @@ function source.setup(opts)
     return
   end
 
+  if opts.snippets then
+    source.setup_snippets()
+  end
+
   if config.provider == 'nvim-cmp' then
-    if opts.snippets then
-      source.setup_snippets()
-    end
     config.move_cursor = opts.move_cursor == true
   end
 end
