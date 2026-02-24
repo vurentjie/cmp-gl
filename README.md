@@ -2,19 +2,57 @@
 
 ---
 
-nvim-cmp source completions and snippets for OpenGL api functions.
+Source completions and snippets for OpenGL api functions for
+[nvim-cmp](https://github.com/hrsh7th/nvim-cmp) or
+[blink.cmp](https://github.com/saghen/blink.cmp).
 
-This is helpful when using libraries like glad that obfuscate the underlying api with macros.
+This is helpful when using libraries like glad that obfuscate the underlying api
+with macros.
 
-The completion documentation for function calls is parsed from the gl4 xml files found at [KhronosGroup/OpenGL-Refpages](https://github.com/KhronosGroup/OpenGL-Refpages/tree/main/gl4).
+The completion documentation for function calls is parsed from the gl4 xml files
+found at
+[KhronosGroup/OpenGL-Refpages](https://github.com/KhronosGroup/OpenGL-Refpages/tree/main/gl4).
 
-The completion for OpenGL constants (e.g GL_TRIANGLES, GL_VERTEX_ARRAY_SIZE, etc) is also added but the documentation is omitted.
+The completion for OpenGL constants (e.g GL_TRIANGLES, GL_VERTEX_ARRAY_SIZE,
+etc) is also added but the documentation is omitted.
 
-By default the completions will display for c/cpp filetypes and insert c/cpp compatible code.
+By default the completions will display for c/cpp filetypes and insert c/cpp
+compatible code.
 
-If you are looking for completions for GLSL, checkout [glsl_analyzer](https://github.com/nolanderc/glsl_analyzer).
+If you are looking for completions for GLSL, checkout
+[glsl_analyzer](https://github.com/nolanderc/glsl_analyzer).
+
+You need to specify `provider=blink|nvim-cmp` in the setup to enable the completions.
 
 ---
+
+## blink.cmp setup:
+
+```lua
+  {
+    'vurentjie/cmp-gl',
+    config = function()
+      require('cmp_gl').setup({
+        provider = 'blink',
+      })
+    end,
+  },
+  {
+    'saghen/blink.cmp',
+      opts = {
+      sources = {
+        default = { 'cmp_gl' },
+        providers = {
+          cmp_gl = {
+            name = 'cmp_gl',
+            module = 'cmp_gl',
+        }
+      }
+    }
+  }
+```
+
+## nvim-cmp setup:
 
 There are two steps to enable completions:
 
@@ -48,6 +86,7 @@ vim.lsp.start({
   'vurentjie/cmp-gl',
   config = function()
     require('cmp_gl').setup({
+      provider = 'nvim-cmp',
       move_cursor = true
     })
   end,
@@ -59,7 +98,7 @@ vim.lsp.start({
 
 ---
 
-### Step 2: luasnip setup (optional):
+### Step 2: luasnip for nvim-cmp setup (optional):
 
 If _luasnip_ is setup then snippets might be preferred as they allow jumping to
 each function parameter.
@@ -82,7 +121,8 @@ https://github.com/user-attachments/assets/818e7d27-d782-4a44-95aa-79c7eae6fd45
 
 ### Enabling/disabling filetypes:
 
-If you want to see completions in other filetypes you can do that but note that this will still insert c-style code.
+If you want to see completions in other filetypes you can do that but note that
+this will still insert c-style code.
 
 ```lua
 require('cmp_gl').enable_filetype('<filetype>')

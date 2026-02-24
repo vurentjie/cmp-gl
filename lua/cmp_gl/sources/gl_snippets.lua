@@ -1,5 +1,10 @@
+local ls_ok, ls = pcall(require, 'luasnip')
+if not ls_ok then
+  vim.notify('Warning (cmp-gl): luasnip not found. Snippets will not be loaded', vim.log.levels.WARN)
+  return {}
+end
+
 local data = require('cmp_gl.sources.gl_function')
-local ls = require('luasnip')
 
 local snip = ls.snippet
 local text = ls.text_node
