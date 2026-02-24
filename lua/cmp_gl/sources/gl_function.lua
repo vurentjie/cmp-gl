@@ -4,7 +4,15 @@ local docs = data.docs
 local insert = data.insert
 local lsp_func = 3
 
-return {
+return vim.tbl_map(function(entry)
+  local doc = entry.documentation.value
+  if entry.signature and doc[1][entry.signature] then
+    entry.documentation.value = '```c\n' .. table.concat(doc[1][entry.signature], '\n') .. '\n```\n' .. doc[2]
+  else
+    entry.documentation.value = '```c\n' .. table.concat(doc[1], '\n') .. '\n```\n' .. doc[2]
+  end
+  return entry
+end, {
   {
     documentation = {
       kind = 'markdown',
@@ -13,6 +21,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform3iv',
+    signature = 'glUniform3',
     insertText = insert.glUniform3iv,
   },
   {
@@ -33,6 +42,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform4iv',
+    signature = 'glUniform4',
     insertText = insert.glUniform4iv,
   },
   {
@@ -53,6 +63,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform1uiv',
+    signature = 'glUniform1',
     insertText = insert.glUniform1uiv,
   },
   {
@@ -73,6 +84,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform2uiv',
+    signature = 'glUniform2',
     insertText = insert.glUniform2uiv,
   },
   {
@@ -93,6 +105,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform3uiv',
+    signature = 'glUniform3',
     insertText = insert.glUniform3uiv,
   },
   {
@@ -113,6 +126,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform4uiv',
+    signature = 'glUniform4',
     insertText = insert.glUniform4uiv,
   },
   {
@@ -133,6 +147,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniformMatrix2fv',
+    signature = 'glUniformMatrix2',
     insertText = insert.glUniformMatrix2fv,
   },
   {
@@ -153,6 +168,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniformMatrix3fv',
+    signature = 'glUniformMatrix3',
     insertText = insert.glUniformMatrix3fv,
   },
   {
@@ -613,6 +629,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform1f',
+    signature = 'glUniform1',
     insertText = insert.glUniform1f,
   },
   {
@@ -633,6 +650,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform2f',
+    signature = 'glUniform2',
     insertText = insert.glUniform2f,
   },
   {
@@ -653,6 +671,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform3f',
+    signature = 'glUniform3',
     insertText = insert.glUniform3f,
   },
   {
@@ -673,6 +692,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform4f',
+    signature = 'glUniform4',
     insertText = insert.glUniform4f,
   },
   {
@@ -693,6 +713,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform1i',
+    signature = 'glUniform1',
     insertText = insert.glUniform1i,
   },
   {
@@ -703,6 +724,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform2i',
+    signature = 'glUniform2',
     insertText = insert.glUniform2i,
   },
   {
@@ -713,6 +735,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform3i',
+    signature = 'glUniform3',
     insertText = insert.glUniform3i,
   },
   {
@@ -723,6 +746,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform4i',
+    signature = 'glUniform4',
     insertText = insert.glUniform4i,
   },
   {
@@ -733,6 +757,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform1ui',
+    signature = 'glUniform1',
     insertText = insert.glUniform1ui,
   },
   {
@@ -4103,6 +4128,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniformMatrix4x3fv',
+    signature = 'glUniformMatrix4',
     insertText = insert.glUniformMatrix4x3fv,
   },
   {
@@ -4113,6 +4139,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniformMatrix3x4fv',
+    signature = 'glUniformMatrix3',
     insertText = insert.glUniformMatrix3x4fv,
   },
   {
@@ -4123,6 +4150,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniformMatrix4x2fv',
+    signature = 'glUniformMatrix4',
     insertText = insert.glUniformMatrix4x2fv,
   },
   {
@@ -4133,6 +4161,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniformMatrix2x4fv',
+    signature = 'glUniformMatrix2',
     insertText = insert.glUniformMatrix2x4fv,
   },
   {
@@ -4143,6 +4172,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniformMatrix3x2fv',
+    signature = 'glUniformMatrix3',
     insertText = insert.glUniformMatrix3x2fv,
   },
   {
@@ -4153,6 +4183,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniformMatrix2x3fv',
+    signature = 'glUniformMatrix2',
     insertText = insert.glUniformMatrix2x3fv,
   },
   {
@@ -4163,6 +4194,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniformMatrix4fv',
+    signature = 'glUniformMatrix4',
     insertText = insert.glUniformMatrix4fv,
   },
   {
@@ -5983,6 +6015,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform2ui',
+    signature = 'glUniform2',
     insertText = insert.glUniform2ui,
   },
   {
@@ -6003,6 +6036,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform3ui',
+    signature = 'glUniform3',
     insertText = insert.glUniform3ui,
   },
   {
@@ -6023,6 +6057,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform4ui',
+    signature = 'glUniform4',
     insertText = insert.glUniform4ui,
   },
   {
@@ -6043,6 +6078,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform1fv',
+    signature = 'glUniform1',
     insertText = insert.glUniform1fv,
   },
   {
@@ -6063,6 +6099,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform2fv',
+    signature = 'glUniform2',
     insertText = insert.glUniform2fv,
   },
   {
@@ -6083,6 +6120,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform3fv',
+    signature = 'glUniform3',
     insertText = insert.glUniform3fv,
   },
   {
@@ -6103,6 +6141,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform4fv',
+    signature = 'glUniform4',
     insertText = insert.glUniform4fv,
   },
   {
@@ -6123,6 +6162,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform1iv',
+    signature = 'glUniform1',
     insertText = insert.glUniform1iv,
   },
   {
@@ -6143,6 +6183,7 @@ return {
     dup = 0,
     kind = lsp_func,
     label = 'glUniform2iv',
+    signature = 'glUniform2',
     insertText = insert.glUniform2iv,
   },
   {
@@ -6155,4 +6196,4 @@ return {
     label = 'glGetShaderInfoLog',
     insertText = insert.glGetShaderInfoLog,
   },
-}
+})

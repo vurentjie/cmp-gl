@@ -29,6 +29,8 @@ local function setup_provider(provider)
           return callback({
             items = result,
           })
+        else
+          vim.notify(result, vim.log.levels.ERROR)
         end
       end
     end
@@ -53,10 +55,12 @@ local function setup_provider(provider)
       local items = {}
       if config.filetypes[ft] then
         local use_snippets = config.filetypes[ft].snippets
-        local ok, data =
+        local ok, result =
           pcall(require, use_snippets and 'cmp_gl.sources.gl_constant' or 'cmp_gl.sources.gl')
-        if ok and type(data) == 'table' then
-          items = data
+        if ok and type(result) == 'table' then
+          items = result
+        else
+          vim.notify(result, vim.log.levels.ERROR)
         end
       end
 

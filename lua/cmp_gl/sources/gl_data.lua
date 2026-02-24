@@ -22113,39 +22113,53 @@ June 1999. https://opencontent.org/openpub/.
 
 local signatures = {
   {
-    'void glUniform1f(GLint location, GLfloat v0)',
-    'void glUniform1fv(GLint location, GLsizei count, const GLfloat *value)',
-    'void glUniform1i(GLint location, GLint v0)',
-    'void glUniform1iv(GLint location, GLsizei count, const GLint *value)',
-    'void glUniform1ui(GLint location, GLuint v0)',
-    'void glUniform1uiv(GLint location, GLsizei count, const GLuint *value)',
-    'void glUniform2f(GLint location, GLfloat v0, GLfloat v1)',
-    'void glUniform2fv(GLint location, GLsizei count, const GLfloat *value)',
-    'void glUniform2i(GLint location, GLint v0, GLint v1)',
-    'void glUniform2iv(GLint location, GLsizei count, const GLint *value)',
-    'void glUniform2ui(GLint location, GLuint v0, GLuint v1)',
-    'void glUniform2uiv(GLint location, GLsizei count, const GLuint *value)',
-    'void glUniform3f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2)',
-    'void glUniform3fv(GLint location, GLsizei count, const GLfloat *value)',
-    'void glUniform3i(GLint location, GLint v0, GLint v1, GLint v2)',
-    'void glUniform3iv(GLint location, GLsizei count, const GLint *value)',
-    'void glUniform3ui(GLint location, GLuint v0, GLuint v1, GLuint v2)',
-    'void glUniform3uiv(GLint location, GLsizei count, const GLuint *value)',
-    'void glUniform4f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)',
-    'void glUniform4fv(GLint location, GLsizei count, const GLfloat *value)',
-    'void glUniform4i(GLint location, GLint v0, GLint v1, GLint v2, GLint v3)',
-    'void glUniform4iv(GLint location, GLsizei count, const GLint *value)',
-    'void glUniform4ui(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3)',
-    'void glUniform4uiv(GLint location, GLsizei count, const GLuint *value)',
-    'void glUniformMatrix2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
-    'void glUniformMatrix2x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
-    'void glUniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
-    'void glUniformMatrix3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
-    'void glUniformMatrix3x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
-    'void glUniformMatrix3x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
-    'void glUniformMatrix4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
-    'void glUniformMatrix4x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
-    'void glUniformMatrix4x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
+    glUniform1 = {
+      'void glUniform1f(GLint location, GLfloat v0)',
+      'void glUniform1fv(GLint location, GLsizei count, const GLfloat *value)',
+      'void glUniform1i(GLint location, GLint v0)',
+      'void glUniform1iv(GLint location, GLsizei count, const GLint *value)',
+      'void glUniform1ui(GLint location, GLuint v0)',
+      'void glUniform1uiv(GLint location, GLsizei count, const GLuint *value)',
+    },
+    glUniform2 = {
+      'void glUniform2f(GLint location, GLfloat v0, GLfloat v1)',
+      'void glUniform2fv(GLint location, GLsizei count, const GLfloat *value)',
+      'void glUniform2i(GLint location, GLint v0, GLint v1)',
+      'void glUniform2iv(GLint location, GLsizei count, const GLint *value)',
+      'void glUniform2ui(GLint location, GLuint v0, GLuint v1)',
+      'void glUniform2uiv(GLint location, GLsizei count, const GLuint *value)',
+    },
+    glUniform3 = {
+      'void glUniform3f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2)',
+      'void glUniform3fv(GLint location, GLsizei count, const GLfloat *value)',
+      'void glUniform3i(GLint location, GLint v0, GLint v1, GLint v2)',
+      'void glUniform3iv(GLint location, GLsizei count, const GLint *value)',
+      'void glUniform3ui(GLint location, GLuint v0, GLuint v1, GLuint v2)',
+      'void glUniform3uiv(GLint location, GLsizei count, const GLuint *value)',
+    },
+    glUniform4 = {
+      'void glUniform4f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)',
+      'void glUniform4fv(GLint location, GLsizei count, const GLfloat *value)',
+      'void glUniform4i(GLint location, GLint v0, GLint v1, GLint v2, GLint v3)',
+      'void glUniform4iv(GLint location, GLsizei count, const GLint *value)',
+      'void glUniform4ui(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3)',
+      'void glUniform4uiv(GLint location, GLsizei count, const GLuint *value)',
+    },
+    glUniformMatrix2 = {
+      'void glUniformMatrix2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
+      'void glUniformMatrix2x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
+      'void glUniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
+    },
+    glUniformMatrix3 = {
+      'void glUniformMatrix3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
+      'void glUniformMatrix3x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
+      'void glUniformMatrix3x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
+    },
+    glUniformMatrix4 = {
+      'void glUniformMatrix4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
+      'void glUniformMatrix4x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
+      'void glUniformMatrix4x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)',
+    },
   },
   {
     'void glGetShaderPrecisionFormat(GLenum shaderType, GLenum precisionType, GLint *range, GLint *precision)',
@@ -23649,7 +23663,7 @@ local insert = {
 
 local docs = {}
 for i = 1, #signatures do
-  docs[i] = '```c\n' .. table.concat(signatures[i], '\n') .. '\n```\n' .. descriptions[i]
+  docs[i] = { signatures[i], descriptions[i] }
 end
 
 return {
