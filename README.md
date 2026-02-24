@@ -93,7 +93,6 @@ vim.lsp.start({
 
 ![](demo.png)
 
-https://github.com/user-attachments/assets/818e7d27-d782-4a44-95aa-79c7eae6fd45
 
 ---
 
