@@ -2,6 +2,7 @@ local config = {
   move_cursor = false,
   filetypes = { c = {}, cpp = {} },
   provider = nil,
+  items_by_label = nil,
 }
 
 local source = {}
@@ -137,6 +138,24 @@ function source.setup(opts)
   if config.provider == 'nvim-cmp' then
     config.move_cursor = opts.move_cursor == true
   end
+end
+
+function source.get_item(label)
+  if not config.items_by_label then
+    config.items_by_label = {}
+
+    local ok, result = pcall(require, 'cmp_gl.sources.gl')
+    if ok then
+      for _, item in ipairs(result) do
+        config.items_by_label[item.label] = item
+      end
+    else
+      vim.notify(result, vim.log.levels.ERROR)
+    end
+  end
+
+  local parseLabel = label:match('^[a-zA-Z0-9_-]+')
+  return config.items_by_label[parseLabel]
 end
 
 return source
