@@ -63,6 +63,7 @@ There are two steps to enable completions:
 
 require('cmp').setup({
   sources = {
+    { name = 'luansip' }, -- if snippets is true then luasnip is required as a source
     { name = 'cmp_gl' },
     { name = 'nvim_lsp' },
   },
@@ -84,7 +85,7 @@ vim.lsp.start({
     require('cmp_gl').setup({
       provider = 'nvim-cmp',
       move_cursor = true, -- jump to the first function param after completion (ignored for snippets)
-      snippets = false,  -- if you prefer snippets that allow jumping to each param
+      snippets = false,  -- if you prefer snippets that allow jumping to each param 
     })
   end,
 },
