@@ -17352,6 +17352,198 @@ correspond to a single pixel.
 `bufSize` Specifies the size of the buffer `data` for `glReadnPixels` function.
 
 `data` Returns the pixel data.
+
+---
+### Description
+
+`glReadPixels` and `glReadnPixels` return pixel data from the frame buffer,
+starting with the pixel whose lower left corner is at location (x, y), into
+client memory starting at location data. Several parameters control the
+processing of the pixel data before it is placed into client memory. These
+parameters are set with `glPixelStore`. This reference page describes the
+effects on `glReadPixels` and `glReadnPixels` of most, but not all of the
+parameters specified by these three commands.
+
+If a non-zero named buffer object is bound to the `GL_PIXEL_PACK_BUFFER` target
+(see `glBindBuffer`) while a block of pixels is requested, data is treated as a
+byte offset into the buffer object's data store rather than a pointer to client
+memory.
+
+`glReadPixels` and `glReadnPixels` return values from each pixel with lower left
+corner at (x+i,y+j) for 0<=i<width and 0<=j<height. This pixel is said to be the
+ith pixel in the j th row. Pixels are returned in row order from the lowest to
+the highest row, left to right in each row.
+
+format specifies the format for the returned pixel values; accepted values are:
+
+- `GL_STENCIL_INDEX`
+  Stencil values are read from the stencil buffer.
+- `GL_DEPTH_COMPONENT`
+  Depth values are read from the depth buffer. Each component is converted to
+  floating point such that the minimum depth value maps to 0 and the maximum value
+  maps to 1. Each component is clamped to the range [0,1].
+- `GL_DEPTH_STENCIL`
+  Values are taken from both the depth and stencil buffers. The type parameter
+  must be `GL_UNSIGNED_INT_24_8` or `GL_FLOAT_32_UNSIGNED_INT_24_8_REV`.
+
+- `GL_RED`, `GL_GREEN`, `GL_BLUE`, `GL_RGB`, `GL_BGR`, `GL_RGBA`, `GL_BGRA`
+  Color values are taken from the color buffer.
+
+Finally, the indices or components are converted to the proper format, as
+specified by type. If format is `GL_STENCIL_INDEX` and type is not `GL_FLOAT`,
+each index is masked with the mask value given in the following table. If type
+is `GL_FLOAT`, then each integer index is converted to sin`gle`-precision
+floating-point format.
+
+If format is `GL_RED`, `GL_GREEN`, `GL_BLUE`, `GL_RGB`, `GL_BGR`, `GL_RGBA`, or
+`GL_BGRA` and type is not `GL_FLOAT`, each component is multiplied by the
+multiplier shown in the following table. If type is `GL_FLOAT`, then each
+component is passed as is (or converted to the client's sin`gle`-precision
+floating-point format if it is different from the one used by the GL).
+
+┌─────────────────────────────────────┬───────────────┬─────────────────────────────┐
+│type                                 │Index Mask     │Component Mask               │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_BYTE                     │2^8 - 1        │(2^8 - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_BYTE                              │2^7 - 1        │((2^8 - 1)c - 1)/2           │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_SHORT                    │2^16 - 1       │(2^16 - 1)c                  │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_SHORT                             │2^15 - 1       │((2^16 - 1)c - 1)/2          │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_INT                      │2^32 - 1       │(2^32 - 1)c                  │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_INT                               │2^31 - 1       │((2^32 - 1)c - 1)/2          │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_HALF_FLOAT                        │none           │c                            │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_FLOAT                             │none           │c                            │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_BYTE_3_3_2               │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_BYTE_2_3_3_REV           │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_SHORT_5_6_5              │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_SHORT_5_6_5_REV          │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_SHORT_4_4_4_4            │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_SHORT_4_4_4_4_REV        │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_SHORT_5_5_5_1            │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_SHORT_1_5_5_5_REV        │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_INT_8_8_8_8              │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_INT_8_8_8_8_REV          │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_INT_10_10_10_2           │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_INT_2_10_10_10_REV       │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_INT_24_8                 │2^N - 1        │(2^N - 1)c                   │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_INT_10F_11F_11F_REV      │--             │Special                      │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_UNSIGNED_INT_5_9_9_9_REV          │--             │Special                      │
+├─────────────────────────────────────┼───────────────┼─────────────────────────────┤
+│GL_FLOAT_32_UNSIGNED_INT_24_8_REV    │none           │c(Depth only)                │
+└─────────────────────────────────────┴───────────────┴─────────────────────────────┘
+
+Return values are placed in memory as follows. If format is `GL_STENCIL_INDEX`,
+`GL_DEPTH_COMPONENT`, `GL_RED`, `GL_GREEN`, or `GL_BLUE`, a sin`gle` value is
+returned and the data for the i-th pixel in the jth row is placed in location
+(j)width+i. `GL_RGB` and `GL_BGR` return three values, `GL_RGBA` and `GL_BGRA`
+return four values for each pixel, with all values corresponding to a sin`gle`
+pixel occupying contiguous space in data. Storage parameters set by
+`glPixelStore`, such as `GL_PACK_LSB_FIRST` and `GL_PACK_SWAP_BYTES`, affect the
+way that data is written into memory. See `glPixelStore` for a description.
+
+`glReadnPixels` function will only handle the call if bufSize is at least of the
+size required to store the requested data. Otherwise, it will generate a
+`GL_INVALID_OPERATION` error.
+
+---
+### Notes
+
+Values for pixels that lie outside the window connected to the current GL
+context are undefined.
+
+If an error is generated, no change is made to the contents of data.
+
+---
+### Errors
+
+- `GL_INVALID_ENUM` is generated if format or type is not an accepted value.
+
+- `GL_INVALID_VALUE` is generated if either width or height is negative.
+
+- `GL_INVALID_OPERATION` is generated if format is `GL_STENCIL_INDEX` and there
+  is no stencil buffer.
+
+- `GL_INVALID_OPERATION` is generated if format is `GL_DEPTH_COMPONENT` and
+  there is no depth buffer.
+
+- `GL_INVALID_OPERATION` is generated if format is `GL_DEPTH_STENCIL` and there
+  is no depth buffer or if there is no stencil buffer.
+
+- `GL_INVALID_ENUM` is generated if format is `GL_DEPTH_STENCIL` and type is not
+  `GL_UNSIGNED_INT_24_8` or `GL_FLOAT_32_UNSIGNED_INT_24_8_REV`.
+
+- `GL_INVALID_OPERATION` is generated if type is one of
+  `GL_UNSIGNED_BYTE_3_3_2`, `GL_UNSIGNED_BYTE_2_3_3_REV`,
+  `GL_UNSIGNED_SHORT_5_6_5`, or `GL_UNSIGNED_SHORT_5_6_5_REV` and format is not
+  `GL_RGB`.
+
+- `GL_INVALID_OPERATION` is generated if type is one of
+  `GL_UNSIGNED_SHORT_4_4_4_4`, `GL_UNSIGNED_SHORT_4_4_4_4_REV`,
+  `GL_UNSIGNED_SHORT_5_5_5_1`, `GL_UNSIGNED_SHORT_1_5_5_5_REV`,
+  `GL_UNSIGNED_INT_8_8_8_8`, `GL_UNSIGNED_INT_8_8_8_8_REV`,
+  `GL_UNSIGNED_INT_10_10_10_2`, or `GL_UNSIGNED_INT_2_10_10_10_REV` and format
+  is neither `GL_RGBA` nor `GL_BGRA`.
+
+- `GL_INVALID_OPERATION` is generated if a non-zero buffer object name is bound
+  to the `GL_PIXEL_PACK_BUFFER` target and the buffer object's data store is
+  currently mapped.
+
+- `GL_INVALID_OPERATION` is generated if a non-zero buffer object name is bound
+  to the `GL_PIXEL_PACK_BUFFER` target and the data would be packed to the
+  buffer object such that the memory writes required would exceed the data store
+  size.
+
+- `GL_INVALID_OPERATION` is generated if a non-zero buffer object name is bound
+  to the `GL_PIXEL_PACK_BUFFER` target and data is not evenly divisible into the
+  number of bytes needed to store in memory a datum indicated by type.
+
+- `GL_INVALID_OPERATION` is generated if `GL_READ_FRAMEBUFFER_BINDING` is
+  non-zero, the read framebuffer is complete, and the value of
+  `GL_SAMPLE_BUFFERS` for the read framebuffer is greater than zero.
+
+- `GL_INVALID_OPERATION` is generated by `glReadnPixels` if the buffer size
+  required to store the requested data is greater than bufSize.
+
+---
+### Associated Gets
+
+`glGet` with argument `GL_PIXEL_PACK_BUFFER_BINDING`
+
+---
+### See Also
+
+`glPixelStore`, `glReadBuffer`
+
+---
+### Copyright
+
+Copyright © 1991-2006 Silicon Graphics, Inc.
+Copyright © 2010-2014 Khronos Group.
+This document is licensed under the SGI Free Software B License.
+For details, see
+https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
+
 ]],
   [[Specify the width of rasterized lines
 
