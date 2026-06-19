@@ -19995,7 +19995,6 @@ They are as follows:
 The following table gives the type, initial value, and range of valid values for
 each storage parameter that can be set with `glPixelStore`.
 
-  Initial Value Valid Range
 ┌───────────────────────┬──────┬───────────────┬────────────┐
 │pname                  │Type  │Initial Value  │Valid Range │
 ├───────────────────────┼──────┼───────────────┼────────────┤
