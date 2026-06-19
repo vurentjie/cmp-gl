@@ -8452,7 +8452,10 @@ enable or disable that capability for all indices, resepectively.
 
 ---
 ## See Also
-`glActiveTexture`, `glBlendFunc`, `glCullFace`, `glDepthFunc`, `glDepthRange`, `glGet`, `glIsEnabled`, `glLineWidth`, `glLogicOp`, `glPointSize`, `glPolygonMode`, `glPolygonOffset`, `glSampleCoverage`, `glScissor`, `glStencilFunc`, `glStencilOp`, `glTexImage`1D, `glTexImage`2D, `glTexImage`3D
+`glActiveTexture`, `glBlendFunc`, `glCullFace`, `glDepthFunc`, `glDepthRange`,
+`glGet`, `glIsEnabled`, `glLineWidth`, `glLogicOp`, `glPointSize`,
+`glPolygonMode`, `glPolygonOffset`, `glSampleCoverage`, `glScissor`,
+`glStencilFunc`, `glStencilOp`, `glTexImage1D`, `glTexImage2D`, `glTexImage3D`
 
 ---
 ## Copyright
@@ -19814,6 +19817,270 @@ and `GL_PACK_ALIGNMENT`. Six more affect the unpacking of pixel data from memory
 `GL_UNPACK_SKIP_IMAGES`, and `GL_UNPACK_ALIGNMENT`.
 
 `param` Specifies the value that `pname` is set to.
+
+---
+### Description
+
+`glPixelStore` sets pixel storage modes that affect the operation of subsequent
+`glReadPixels` as well as the unpacking of texture patterns (see `glTexImage1D`,
+`glTexImage2D`, `glTexImage3D`, `glTexSubImage1D`, `glTexSubImage2D`,
+`glTexSubImage3D`), `glCompressedTexImage1D`, `glCompressedTexImage2D`,
+`glCompressedTexImage3D`, `glCompressedTexSubImage1D`,
+`glCompressedTexSubImage2D` or `glCompressedTexSubImage1D`.
+
+"pname" is a symbolic constant indicating the parameter to be set, and param is
+the new value. Six of the twelve storage parameters affect how pixel data is
+returned to client memory. They are as follows:
+
+- `GL_PACK_SWAP_BYTES` If true, byte ordering for multibyte color components,
+  depth components, or stencil indices is reversed. That is, if a four-byte
+  component consists of bytes b0, b1, b2, b3, it is stored in memory as b3, b2,
+  b1, b0 if `GL_PACK_SWAP_BYTES` is true. `GL_PACK_SWAP_BYTES` has no effect on
+  the memory order of components within a pixel, only on the order of bytes
+  within components or indices. For example, the three components of a `GL_RGB`
+  format pixel are always stored with red first, green second, and blue third,
+  regardless of the value of `GL_PACK_SWAP_BYTES.`
+
+- `GL_PACK_LSB_FIRST` If true, bits are ordered within a byte from least
+  significant to most significant; otherwise, the first bit in each byte is the
+  most significant one.
+
+- `GL_PACK_ROW_LENGTH` If greater than 0, `GL_PACK_ROW_LENGTH` defines the
+  number of pixels in a row. If the first pixel of a row is placed at location p
+  in memory, then the location of the first pixel of the next row is obtained by
+  skipping
+
+  `k = { nl if s>=a, as⌈snl/a⌉ if s<a }`
+
+  components or indices, where
+  - `n` is the number of components or indices in a pixel,
+  - `l` is the number of pixels in a row (`GL_PACK_ROW_LENGTH` if it is greater
+    than 0, the width argument to the pixel routine otherwise),
+  - `a` is the value of `GL_PACK_ALIGNMENT,` and
+  - `s` is the size, in bytes, of a single component (if a<s, then it is as if
+    a=s)
+
+  In the case of 1-bit values, the location of the next row is obtained by
+  skipping `k=8a⌈nl/8a⌉` components or indices.
+
+  The word component in this description refers to the nonindex values red,
+  green, blue, alpha, and depth. Storage format `GL_RGB,` for example, has three
+  components per pixel: first red, then green, and finally blue.
+
+- `GL_PACK_IMAGE_HEIGHT` If greater than 0, `GL_PACK_IMAGE_HEIGHT` defines the
+  number of pixels in an image three-dimensional texture volume, where image is
+  defined by all pixels sharing the same third dimension index. If the first
+  pixel of a row is placed at location p in memory, then the location of the
+  first pixel of the next row is obtained by skipping
+
+  `k={ nlh if s>=a, as⌈snlh/a⌉ if s<a }`
+
+  components or indices, where
+  - `n` is the number of components or indices in a pixel,
+  - `l` is the number of pixels in a row (`GL_PACK_ROW_LENGTH` if it is
+    greater than 0, the width argument to `glTexImage3D` otherwise),
+  - `h` is the number of rows in a pixel image (`GL_PACK_IMAGE_HEIGHT` if it is greater than
+    0, the height argument to the `glTexImage3D` routine otherwise),
+  - `a` is the value of `GL_PACK_ALIGNMENT,` and
+  - `s` is the size, in bytes, of a single component (if a<s, then it is as if a=s).
+
+  The word component in this description refers to the nonindex values red,
+  green, blue, alpha, and depth. Storage format `GL_RGB,` for example, has three
+  components per pixel: first red, then green, and finally blue.
+
+- `GL_PACK_SKIP_PIXELS,` `GL_PACK_SKIP_ROWS,` and `GL_PACK_SKIP_IMAGES`
+  These values are provided as a convenience to the programmer; they provide no
+  functionality that cannot be duplicated simply by incrementing the pointer
+  passed to `glReadPixels`. Setting `GL_PACK_SKIP_PIXELS` to i is equivalent to
+  incrementing the pointer by in components or indices, where n is the number of
+  components or indices in each pixel. Setting `GL_PACK_SKIP_ROWS` to j is
+  equivalent to incrementing the pointer by jm components or indices, where m is
+  the number of components or indices per row, as just computed in the
+  `GL_PACK_ROW_LENGTH` section. Setting `GL_PACK_SKIP_IMAGES` to k is equivalent
+  to incrementing the pointer by kp, where p is the number of components or
+  indices per image, as computed in the `GL_PACK_IMAGE_HEIGHT` section.
+
+- `GL_PACK_ALIGNMENT`
+  Specifies the alignment requirements for the start of each pixel row in memory.
+  The allowable values are 1 (byte-alignment), 2 (rows aligned to even-numbered
+  bytes), 4 (word-alignment), and 8 (rows start on double-word boundaries).
+
+---
+
+The other six of the twelve storage parameters affect how pixel data is read
+from client memory. These values are significant for `glTexImage1D`,
+`glTexImage2D`, `glTexImage3D`, `glTexSubImage1D`, `glTexSubImage2D`, and
+`glTexSubImage3D`
+
+They are as follows:
+
+- `GL_UNPACK_SWAP_BYTES`
+  If true, byte ordering for multibyte color components, depth components, or
+  stencil indices is reversed. That is, if a four-byte component consists of bytes
+  b0 , b1, b2, b3, it is taken from memory as b3, b2, b1, b0 if
+  `GL_UNPACK_SWAP_BYTES` is true. `GL_UNPACK_SWAP_BYTES` has no effect on the
+  memory order of components within a pixel, only on the order of bytes within
+  components or indices. For example, the three components of a `GL_RGB` format
+  pixel are always stored with red first, green second, and blue third, regardless
+  of the value of `GL_UNPACK_SWAP_BYTES.`
+
+- `GL_UNPACK_LSB_FIRST`
+  If true, bits are ordered within a byte from least significant to most
+  significant; otherwise, the first bit in each byte is the most significant one.
+
+- `GL_UNPACK_ROW_LENGTH`
+  If greater than 0, `GL_UNPACK_ROW_LENGTH` defines the number of pixels in a row.
+  If the first pixel of a row is placed at location p in memory, then the location
+  of the first pixel of the next row is obtained by skipping
+
+  `k={nl if s>=a, as⌈snl/a⌉ if s<a}`
+
+  components or indices, where
+
+  - `n` is the number of components or indices in a pixel,
+  - `l` is the number of pixels in a row (`GL_UNPACK_ROW_LENGTH` if it is greater
+    than 0, the width argument to the pixel routine otherwise),
+  - `a` is the value of `GL_UNPACK_ALIGNMENT,` and s is the size, in bytes, of a
+    single component (if a<s, then it is as if a=s).
+
+  In the case of 1-bit values, the location of the next row is obtained by skipping
+
+  `k=8a⌈nl/8a⌉`
+
+  components or indices.
+
+  The word component in this description refers to the nonindex values red, green,
+  blue, alpha, and depth. Storage format `GL_RGB,` for example, has three
+  components per pixel: first red, then green, and finally blue.
+
+- `GL_UNPACK_IMAGE_HEIGHT`
+
+  If greater than 0, `GL_UNPACK_IMAGE_HEIGHT` defines the number of pixels in an
+  image of a three-dimensional texture volume. Where ``image'' is defined by all
+  pixel sharing the same third dimension index. If the first pixel of a row is
+  placed at location p in memory, then the location of the first pixel of the next
+  row is obtained by skipping
+
+  `k={nlh if s>=a, as⌈snlh/a⌉ if s<a}`
+
+  components or indices, where
+  - `n` is the number of components or indices in a pixel,
+  - `l` is the number of pixels in a row (`GL_UNPACK_ROW_LENGTH` if it is greater
+    than 0, the width argument to `glTexImage3D` otherwise),
+  - `h` is the number of rows in an image (`GL_UNPACK_IMAGE_HEIGHT` if it is
+    greater than 0, the height argument to `glTexImage3D` otherwise),
+  - `a` is the value of `GL_UNPACK_ALIGNMENT,` and
+  - `s` is the size, in bytes, of a single component (if a<s, then it is as if
+    a=s).
+
+  The word component in this description refers to the nonindex values red, green,
+  blue, alpha, and depth. Storage format `GL_RGB,` for example, has three
+  components per pixel: first red, then green, and finally blue.
+
+- `GL_UNPACK_SKIP_PIXELS` and `GL_UNPACK_SKIP_ROWS`
+  These values are provided as a convenience to the programmer; they provide no
+  functionality that cannot be duplicated by incrementing the pointer passed to
+  `glTexImage1D`, `glTexImage2D`, `glTexSubImage1D` or `glTexSubImage2D`. Setting
+  `GL_UNPACK_SKIP_PIXELS` to i is equivalent to incrementing the pointer by in
+  components or indices, where n is the number of components or indices in each
+  pixel. Setting `GL_UNPACK_SKIP_ROWS` to j is equivalent to incrementing the
+  pointer by jk components or indices, where k is the number of components or
+  indices per row, as just computed in the `GL_UNPACK_ROW_LENGTH` section.
+
+- `GL_UNPACK_ALIGNMENT`
+  Specifies the alignment requirements for the start of each pixel row in memory.
+  The allowable values are 1 (byte-alignment), 2 (rows aligned to even-numbered
+  bytes), 4 (word-alignment), and 8 (rows start on double-word boundaries).
+
+The following table gives the type, initial value, and range of valid values for
+each storage parameter that can be set with `glPixelStore`.
+
+  Initial Value Valid Range
+┌───────────────────────┬──────┬───────────────┬────────────┐
+│pname                  │Type  │Initial Value  │Valid Range │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_PACK_SWAP_BYTES     │bool  │false          │true/false  │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_PACK_LSB_FIRST      │bool  │false          │true/false  │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_PACK_ROW_LENGTH     │int   │0              │[0,∞)       │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_PACK_IMAGE_HEIGHT   │int   │0              │[0,∞)       │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_PACK_SKIP_ROWS      │int   │0              │[0,∞)       │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_PACK_SKIP_PIXELS    │int   │0              │[0,∞)       │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_PACK_SKIP_IMAGES    │int   │0              │[0,∞)       │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_PACK_ALIGNMENT      │int   │4              │1,2,4,8     │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_UNPACK_SWAP_BYTES   │bool  │false          │true/false  │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_UNPACK_LSB_FIRST    │bool  │false          │true/false  │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_UNPACK_ROW_LENGTH   │int   │0              │[0,∞)       │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_UNPACK_IMAGE_HEIGHT │int   │0              │[0,∞)       │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_UNPACK_SKIP_ROWS    │int   │0              │[0,∞)       │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_UNPACK_SKIP_PIXELS  │int   │0              │[0,∞)       │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_UNPACK_SKIP_IMAGES  │int   │0              │[0,∞)       │
+├───────────────────────┼──────┼───────────────┼────────────┤
+│GL_UNPACK_ALIGNMENT    │int   │4              │1,2,4,8     │
+└───────────────────────┴──────┴───────────────┴────────────┘
+
+`glPixelStoref` can be used to set any pixel store parameter. If the parameter
+type is boolean, then if param is 0, the parameter is false; otherwise it is set
+to true. If pname is an integer type parameter, param is rounded to the nearest
+integer.
+
+Likewise, `glPixelStorei` can also be used to set any of the pixel store
+parameters. Boolean parameters are set to false if param is 0 and true
+otherwise. Errors
+
+`GL_INVALID_ENUM` is generated if pname is not an accepted value.
+
+`GL_INVALID_VALUE` is generated if a negative row length, pixel skip, or row
+skip value is specified, or if alignment is specified as other than 1, 2, 4,
+or 8.
+
+---
+### Associated Gets
+
+`glGet` with argument `GL_PACK_SWAP_BYTES`
+`glGet` with argument `GL_PACK_LSB_FIRST`
+`glGet` with argument `GL_PACK_ROW_LENGTH`
+`glGet` with argument `GL_PACK_IMAGE_HEIGHT`
+`glGet` with argument `GL_PACK_SKIP_ROWS`
+`glGet` with argument `GL_PACK_SKIP_PIXELS`
+`glGet` with argument `GL_PACK_SKIP_IMAGES`
+`glGet` with argument `GL_PACK_ALIGNMENT`
+`glGet` with argument `GL_UNPACK_SWAP_BYTES`
+`glGet` with argument `GL_UNPACK_LSB_FIRST`
+`glGet` with argument `GL_UNPACK_ROW_LENGTH`
+`glGet` with argument `GL_UNPACK_IMAGE_HEIGHT`
+`glGet` with argument `GL_UNPACK_SKIP_ROWS`
+`glGet` with argument `GL_UNPACK_SKIP_PIXELS`
+`glGet` with argument `GL_UNPACK_SKIP_IMAGES`
+`glGet` with argument `GL_UNPACK_ALIGNMENT`
+
+---
+### See Also
+
+`glReadPixels`, `glTexImage1D`, `glTexImage2D`, `glTexImage3D`,
+`glTexSubImage1D`, `glTexSubImage2D`, `glTexSubImage3D`,
+`glCompressedTexImage1D`, `glCompressedTexImage2D`, `glCompressedTexImage3D`,
+`glCompressedTexSubImage1D`, `glCompressedTexSubImage2D`,
+`glCompressedTexSubImage1D`
+
+Copyright © 1991-2006 Silicon Graphics, Inc.
+Copyright © 2010-2014 Khronos Group.
+This document is licensed under the SGI Free Software B License.
+For details, see
+https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
   [[Render indexed primitives from array data, taking parameters from memory
 
@@ -20329,6 +20596,36 @@ polygon. The initial value is 0.
 `units` Is multiplied by an implementation-specific value to create a constant depth offset.
 
 The initial value is 0.
+
+### Description
+
+When `GL_POLYGON_OFFSET_FILL,` `GL_POLYGON_OFFSET_LINE,` or
+`GL_POLYGON_OFFSET_POINT` is enabled, each fragment's depth value will be offset
+after it is interpolated from the depth values of the appropriate vertices. The
+value of the offset is `factor×DZ+r×units`, where `DZ` is a measurement of the
+change in depth relative to the screen area of the polygon, and `r` is the
+smallest value that is guaranteed to produce a resolvable offset for a given
+implementation. The offset is added before the depth test is performed and
+before the value is written into the depth buffer.
+
+`glPolygonOffset` is useful for rendering hidden-line images, for applying decals
+to surfaces, and for rendering solids with highlighted edges.
+
+### Associated Gets
+
+`glIsEnabled` with argument `GL_POLYGON_OFFSET_FILL,` `GL_POLYGON_OFFSET_LINE,` or
+`GL_POLYGON_OFFSET_POINT.`
+
+`glGet` with argument `GL_POLYGON_OFFSET_FACTOR` or `GL_POLYGON_OFFSET_UNITS.`
+
+### See Also
+
+`glPolygonOffsetClamp`, `glDepthFunc`, `glEnable`, `glGet`, `glIsEnabled` Copyright
+
+Copyright © 1991-2006 Silicon Graphics, Inc. Copyright © 2010-2014 Khronos
+Group. This document is licensed under the SGI Free Software B License. For
+details, see
+https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt.
 ]],
   [[Retrieve the index of a named uniform block
 
@@ -21069,6 +21366,59 @@ https://opencontent.org/openpub/.
 `instancecount` Specifies the number of instances of the specified range of indices to be
 rendered.
 `baseinstance` Specifies the base instance for use in fetching instanced vertex attributes.
+
+### Description
+
+`glDrawArraysInstancedBaseInstance` behaves identically to `glDrawArrays` except
+that instancecount instances of the range of elements are executed and the value
+of the internal counter instanceID advances for each iteration. instanceID is an
+internal 32-bit integer counter that may be read by a vertex shader as
+`gl_InstanceID.`
+
+`glDrawArraysInstancedBaseInstance` has the same effect as:
+
+```c
+  if ( mode or count is invalid )
+    generate appropriate error
+  else {
+    for (int i = 0; i < instancecount ; i++) {
+      instanceID = i;
+      `glDrawArrays`(mode, first, count);
+    }
+    instanceID = 0;
+  }
+```
+
+Specific vertex attributes may be classified as instanced through the use of
+`glVertexAttribDivisor`. Instanced vertex attributes supply per-instance vertex
+data to the vertex shader. The index of the vertex fetched from the enabled
+instanced vertex attribute arrays is calculated as:
+⌊`gl_InstanceIDdivisor⌋+baseInstance`
+
+. Note that baseinstance does not affect the shader-visible value of
+`gl_InstanceID.`
+
+### Errors
+
+`GL_INVALID_ENUM` is generated if mode is not one of the accepted values.
+
+`GL_INVALID_OPERATION` is generated if a geometry shader is active and mode is
+incompatible with the input primitive type of the geometry shader in the
+currently installed program object.
+
+`GL_INVALID_VALUE` is generated if count or instancecount is negative.
+
+`GL_INVALID_OPERATION` is generated if a non-zero buffer object name is bound to
+an enabled array and the buffer object's data store is currently mapped.
+
+### See Also
+
+`glDrawArrays`, `glDrawElementsInstanced` Copyright
+
+Copyright © 2011-2014 Khronos Group. This material may be distributed subject to
+the terms and conditions set forth in the Open Publication License, v 1.0, 8
+June 1999.
+https://opencontent.org/openpub/.
 ]],
   [[Render primitives from array data, taking parameters from memory
 
